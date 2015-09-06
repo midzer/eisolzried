@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Übung"
+date:   2015-07-09
+---
+
+06.07.15: Zuerst übten wir mit den Steckleiterteilen eine potentielle Katzenrettung auf dem Dach. Anschließend kompletter Wasseraufbau von einem Unterflurhydranten.
+

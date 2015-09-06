@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Leck in LKW-Tank"
+date:   2015-08-12
+---
+
+Am 08.08.15 um kurz vor 14 Uhr wurde die Feuerwehr Eisolzried alarmiert, weil eine Ölspur auf der Fahrbahn zwischen Eisolzried und Eisolzrieder See entdeckt wurde. Zusätzliche Unterstützung kam vom THW Dachau und der Feuerwehr Feldgeding um die ca. 2km lange Ölspur mit Ölbinder zu binden und anschließend zu beseitigen. Die Feuerwehr Eisolzried war mit 13 Feuerwehrleuten vor Ort, der Einsatz dauerte insgesamt etwa 2 Stunden.
+
+![Ölspur 1]({{ site.url }}/assets/einsatz/oelspur1.jpg)
+
+![Ölspur 2]({{ site.url }}/assets/einsatz/oelspur2.jpg)
+
