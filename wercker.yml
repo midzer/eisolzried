@@ -22,7 +22,7 @@ deploy:
         token: $GIT_TOKEN
         domain: feuerwehr-eisolzried.de
         basedir: _site
-    - pdutourgeerling/gitftp@1.0.1
+    - pdutourgeerling/gitftp@1.0.1:
         destination: $FTP_URL
         username: $FTP_USERNAME
         password: $FTP_PASSWORD
