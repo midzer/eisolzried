@@ -29,7 +29,7 @@ build:
         name: jekyll doctor
         code: bundle exec jekyll doctor
      # Build it finally
-     - script:
+    - script:
         name: generate production site
         code: bundle exec jekyll build    
 deploy:
