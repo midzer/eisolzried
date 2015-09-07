@@ -22,13 +22,3 @@ deploy:
         token: $GIT_TOKEN
         domain: feuerwehr-eisolzried.de
         basedir: _site
-    - install-packages:
-        packages: lftp
-    - script:
-        name: prepare lftp settings
-        code: |
-          mkdir -p $HOME/.lftp
-          echo "set ssl:verify-certificate no" > $HOME/.lftp/rc
-    - script:
-        name: sync with remote
-        code: lftp -e "set ftp:ssl-allow no;mirror -R _site/ webseiten/" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_URL
