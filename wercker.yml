@@ -29,9 +29,6 @@ build:
     - script:
         name: jekyll doctor
         code: bundle exec jekyll doctor
-    - script:
-        name: sass compile
-        code: bundle exec sass --style compressed assets/scss/styles.scss:assets/css/styles.min.css --debug-info
      
      # Build it finally
      - script:
