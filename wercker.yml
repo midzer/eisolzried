@@ -23,18 +23,15 @@ build:
   steps:
     # Install dependencies
     - bundle-install
-    
     # Execute jeykyll doctor command to validate the
     # site against a list of known issues.
     - script:
         name: jekyll doctor
         code: bundle exec jekyll doctor
-     
      # Build it finally
      - script:
         name: generate production site
-        code: bundle exec jekyll build
-        
+        code: bundle exec jekyll build    
 deploy:
   steps:
     - install-packages:
