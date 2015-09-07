@@ -1,4 +1,4 @@
-box: wercker/ruby
+box: phusion/passenger-ruby22
 build:
   steps:
     # Install dependencies defined in Gemfile
