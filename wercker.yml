@@ -33,7 +33,7 @@ build:
      # Build it finally
      - script:
         name: generate production site
-        code: bundle exec jekyll build --trace
+        code: bundle exec jekyll build
         
 deploy:
   steps:
