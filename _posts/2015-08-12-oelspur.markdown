@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Leck in LKW-Tank"
+title:  "Lange Ölspur"
 date:   2015-08-12
 ---
 
