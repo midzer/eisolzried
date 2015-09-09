@@ -12,7 +12,7 @@ images:
     text: Unser TSF
 ---
 
-### Mannschaft
+### Gruppe
 
 <ul class="page">
   {% include gal.html image="gruppe2013.jpg" %}
