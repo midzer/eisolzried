@@ -2,6 +2,11 @@
 layout: post
 title:  "Floßfahrt"
 date:   2015-06-15
+imgfolder: /images/2015/feiern
+images:
+  - name: flossfahrt.jpg
+    thumb: flossfahrt-thumb.jpg
+    text: Floßfahrt 1
 ---
 
 Am frühen Morgen des 13. Juni 15 begaben wir uns mit 2 Bussen Richtung Wolfratshausen, um eine Floßfahrt auf der Isar zu machen. Das Wetter war stabil und wir freuten uns auf den erlebnisreichen Tag. An der Ablagestelle angekommen wurde noch schnell eine kleine Notdurft verrichtet und das Proviant auf das 7x18m große Floß geladen. Leinen los!
@@ -12,5 +17,6 @@ Nach einem Zwischenstop an einem Biergarten ging die Fahrt auf die letzte Etappe
 
 Fazit: es war ein sehr gelungener Tag mit vielen schönen Momenten, guter Laune und viel Action. Überragende Highlights waren die 3 langen Wasserrutschen und die kleine Aloisius Kabine zum Wasser lassen hinten am Floß :)
 
-![Floßfahrt 2015]({{ site.url }}/assets/ausflug/flossfahrt2015.jpg)
-
+<ul class="posts">
+  {% include gal.html %}
+</ul>

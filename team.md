@@ -2,11 +2,21 @@
 layout: page
 title: Team
 permalink: /team/
+imgfolder: /images
+images:
+  - name: gruppe2013.jpg
+    thumb: gruppe2013-thumb.jpg
+    text: Gruppe 2013
+  - name: tsf.jpg
+    thumb: tsf-thumb.jpg
+    text: Unser TSF
 ---
 
 ### Mannschaft
 
-![Gruppe 2013](/assets/team/gruppe2013.jpg)
+<ul class="page">
+  {% include gal.html image="gruppe2013.jpg" %}
+</ul>
 
 Kommandant: Thomas Hörmann\\
 Stellv. Kommandant: Matthias Schönwetter\\
@@ -17,7 +27,9 @@ Stellv. Jugendwart: Andreas Hörmann
 
 ### Fahrzeug
 
-![Fahrzeug TSF](/assets/team/fahrzeug_tsf.jpg)
+<ul class="page">
+  {% include gal.html image="tsf.jpg" %}
+</ul>
 
 Funkrufname: Florian Eisolzried 44/1\\
 Typ: TSF\\
