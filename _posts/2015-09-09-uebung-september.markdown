@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Übung im September"
-date:   2015-09-10
+date:   2015-09-09
 imgfolder: /images/2015/uebungen
 images:
   - name: september1.jpg
