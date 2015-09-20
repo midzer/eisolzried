@@ -64,7 +64,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 .site-title:visited {
   display: block;
   color: #de002a;
-  font-size: 26px;
+  font-size: 36px;
   letter-spacing: -1px;
   float: left;
   line-height: 56px;
@@ -73,14 +73,14 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   padding-top: 20px;
 }
 
-.site-nav {
-  float: right;
+.navbar {
+  float: left;
   line-height: 56px;
 }
 
-.site-nav .menu-icon { display: none; }
+.navbar .menu-icon { display: none; }
 
-.site-nav .page-link {
+.navbar .page-link {
   margin-left: 20px;
   color: #de002a;
   letter-spacing: -.5px;
@@ -193,7 +193,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
-  font-size: 42px;
+  font-size: 32px;
   letter-spacing: -1.75px;
   line-height: 1;
   font-weight: 300;
