@@ -78,7 +78,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   line-height: 56px;
 }
 
-.navbar .menu-icon { display: none; }
+.navbar .menu-icon { display: inline; }
 
 .navbar .page-link {
   margin-left: 20px;
