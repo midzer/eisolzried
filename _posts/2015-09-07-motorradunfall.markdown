@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Motorradunfall bei Berkirchen-Lus"
+title:  "Motorradunfall bei Bergkirchen-Lus"
 date:   2015-09-07
 ---
 
