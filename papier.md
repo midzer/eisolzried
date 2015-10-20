@@ -26,195 +26,195 @@ permalink: /papier/
         <th>Magg</th>
     </tr>
     <tr>
-        <th>1</th>
-        <th>Tii</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
+        <td>1</td>
+        <td>Tii</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
     </tr>
     <tr>
-        <th>2</th>
-        <th>Christian</th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
+        <td>2</td>
+        <td>Christian</td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
     </tr>
     <tr>
-        <th>3</th>
-        <th>LJ</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>3</td>
+        <td>LJ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <th>4</th>
-        <th>Schaffa</th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
+        <td>4</td>
+        <td>Schaffa</td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <th>5</th>
-        <th>Thomas</th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
+        <td>5</td>
+        <td>Thomas</td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
     </tr>
     <tr>
-        <th>6</th>
-        <th>Lungl</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
+        <td>6</td>
+        <td>Lungl</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
     </tr>
     <tr>
-        <th>7</th>
-        <th>Tii</th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
+        <td>7</td>
+        <td>Tii</td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <th>8</th>
-        <th>Schäds</th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
+        <td>8</td>
+        <td>Schäds</td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
     </tr>
     <tr>
-        <th>9</th>
-        <th>Fonse</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
+        <td>9</td>
+        <td>Fonse</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
     </tr>
     <tr>
-        <th>10</th>
-        <th>Heigl</th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
+        <td>10</td>
+        <td>Heigl</td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <th>11</th>
-        <th>Naze</th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
+        <td>11</td>
+        <td>Naze</td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
     </tr>
     <tr>
-        <th>12</th>
-        <th>Hanse</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th><span class="ion ion-checkmark"></span></th>
+        <td>12</td>
+        <td>Hanse</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><span class="ion ion-checkmark"></span></td>
     </tr>
 </table>
