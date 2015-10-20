@@ -31,30 +31,30 @@ permalink: /papier/
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
     </tr>
     <tr>
         <th>2</th>
         <th>Christian</th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
     </tr>
     <tr>
@@ -77,32 +77,32 @@ permalink: /papier/
         <th>4</th>
         <th>Schaffa</th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
     </tr>
     <tr>
         <th>5</th>
         <th>Thomas</th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
     </tr>
     <tr>
@@ -111,46 +111,46 @@ permalink: /papier/
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
     </tr>
     <tr>
         <th>7</th>
         <th>Tii</th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
     </tr>
     <tr>
         <th>8</th>
         <th>Schäds</th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
     </tr>
     <tr>
@@ -159,46 +159,46 @@ permalink: /papier/
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
     </tr>
     <tr>
         <th>10</th>
         <th>Heigl</th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
     </tr>
     <tr>
         <th>11</th>
         <th>Naze</th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
     </tr>
     <tr>
@@ -207,14 +207,14 @@ permalink: /papier/
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
         <th></th>
         <th></th>
         <th></th>
-        <th><span class="fa fa-check fa-fw"></span></th>
+        <th><span class="ion ion-checkmark"></span></th>
     </tr>
 </table>

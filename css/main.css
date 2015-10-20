@@ -400,14 +400,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 
 }
 
-/* font awesome addon */
-/* ----------------------------------------------------------*/
-
-[class^="fa-"], [class*=" fa-"] {
-    display: inline-block;
-    width: 100%;
-}
-
-td span {
+td span{
     text-align:center;
 }
