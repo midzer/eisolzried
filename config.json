@@ -393,7 +393,8 @@
     "component-animations.less"
   ],
   "js": [
-    "collapse.js"
+    "collapse.js",
+    "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=4a79e74c35a9e1063230"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=2f21e96eadf8e479ab5d"
 }
