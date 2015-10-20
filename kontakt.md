@@ -9,7 +9,7 @@ permalink: /kontakt/
 Bürgerhaus Deutenhausen-Eisolzried\\
 Feldbergstraße 13\\
 85232 Bergkirchen/Deutenhausen\\
-E-Mail: [info@feuerwehr-eisolzried.de](mailto://info@feuerwehr-eisolzried.de)
+<span class="ion ion-email"></span> [info@feuerwehr-eisolzried.de](mailto://info@feuerwehr-eisolzried.de)
 
 ### Anfahrt
 
