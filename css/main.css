@@ -73,14 +73,14 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   padding-top: 20px;
 }
 
-.navbar {
-  float: left;
+.site-nav {
+  float: right;
   line-height: 56px;
 }
 
-.navbar .menu-icon { display: none; }
+.site-nav .menu-icon { display: none; }
 
-.navbar .page-link {
+.site-nav .page-link {
   margin-left: 20px;
   color: #de002a;
   letter-spacing: -.5px;
