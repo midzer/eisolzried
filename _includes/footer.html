@@ -17,16 +17,16 @@
 
     <div class="footer-col-2 column">
       <ul>
-		<li>
-          <a href="https://www.facebook.com/groups/116302461784414/">
+        {% if site.facebook_group %}<li>
+          <a href="https://www.facebook.com/groups/{{ site.facebook_group }}">
             <span class="ion ion-fw ion-social-facebook"></span>
             <span class="username">FF Eisolzried</span>
           </a>
-        </li>
+        </li>{% endif %}
         {% if site.github_username %}<li>
           <a href="https://github.com/{{ site.github_username }}">
             <span class="ion ion-fw ion-social-github"></span>
-            <span class="username">{{ site.github_username }}</span>
+            <span class="username">eisolzried</span>
           </a>
         </li>{% endif %}
       </ul>

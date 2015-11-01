@@ -4,7 +4,8 @@ email: info@feuerwehr-eisolzried.de
 description: "Aktuelle Neuigkeiten, Termine und Wissenswertes über die Feuerwehr Eisolzried im Bürgerhaus Deutenhausen-Eisolzried in der Gemeinde Bergkirchen"
 baseurl: ""
 url: "http://feuerwehr-eisolzried.de"
-github_username:  midzer/eisolzried
+github_username: midzer/eisolzried
+facebook_group: 116302461784414
 
 # Build settings
 markdown: kramdown
