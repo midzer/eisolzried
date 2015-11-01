@@ -20,6 +20,8 @@ Alle aktiven und passiven Mitglieder der Feuerwehr Eisolzried mit Ehrenmitglied 
   {% include gal.html image="gruppe2013.jpg" %}
 </ul>
 
+Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter 17 passive und 3 Ehrenmitglieder. (Stand: Oktober 2015)
+
 <table>
   <tr>
     <th></th>
