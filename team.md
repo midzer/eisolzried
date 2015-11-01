@@ -14,6 +14,8 @@ images:
 
 ### Gruppe
 
+Alle aktiven und passiven Mitglieder der Feuerwehr Eisolzried mit Ehrenmitglied Hubert Huber vor dem Feuerwehr- und Bürgerhaus im Sommer 2013:
+
 <ul class="page">
   {% include gal.html image="gruppe2013.jpg" %}
 </ul>
