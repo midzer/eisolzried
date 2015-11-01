@@ -18,12 +18,26 @@ images:
   {% include gal.html image="gruppe2013.jpg" %}
 </ul>
 
-Kommandant: Thomas Hörmann\\
-Stellv. Kommandant: Matthias Schönwetter\\
-Vorstand: Bernhard Schmidbauer\\
-Stellv. Vorstand: Andreas Straucher\\
-Jugendwart: Christian Schuster\\
-Stellv. Jugendwart: Andreas Hörmann
+<table>
+  <tr>
+    <th></th>
+    <th>Kommandant</th>
+    <th>Vorstand</th>
+    <th>Jugendwart</th>
+  </tr>
+  <tr>
+    <td>Erster</td>
+    <td>Thomas Hörmann</td>
+    <td>Bernhard Schmidbauer</td>
+    <td>Christian Schuster</td>
+  </tr>
+  <tr>
+    <td>Zweiter</td>
+    <td>Matthias Schönwetter</td>
+    <td>Andreas Straucher</td>
+    <td>Andreas Hörmann</td>
+  </tr>
+</table>
 
 ### Fahrzeug
 
