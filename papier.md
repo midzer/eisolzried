@@ -8,8 +8,10 @@ permalink: /papier/
     table, td, th { border: 1px solid black; }
 </style>
 
-<table>
-    <tr>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
         <th>Monat</th>
         <th>Fahrer</th>
         <th>Andi</th>
@@ -24,8 +26,10 @@ permalink: /papier/
         <th>Förster</th>
         <th>Fichtl</th>
         <th>Magg</th>
-    </tr>
-    <tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
         <td>1</td>
         <td>Tii</td>
         <td></td>
@@ -40,8 +44,8 @@ permalink: /papier/
         <td></td>
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>2</td>
         <td>Christian</td>
         <td><span class="ion ion-checkmark"></span></td>
@@ -56,8 +60,8 @@ permalink: /papier/
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>3</td>
         <td>LJ</td>
         <td></td>
@@ -72,8 +76,8 @@ permalink: /papier/
         <td></td>
         <td></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>4</td>
         <td>Schaffa</td>
         <td></td>
@@ -88,8 +92,8 @@ permalink: /papier/
         <td><span class="ion ion-checkmark"></span></td>
         <td></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>5</td>
         <td>Thomas</td>
         <td><span class="ion ion-checkmark"></span></td>
@@ -104,8 +108,8 @@ permalink: /papier/
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>6</td>
         <td>Lungl</td>
         <td></td>
@@ -120,8 +124,8 @@ permalink: /papier/
         <td></td>
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>7</td>
         <td>Tii</td>
         <td></td>
@@ -136,8 +140,8 @@ permalink: /papier/
         <td><span class="ion ion-checkmark"></span></td>
         <td></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>8</td>
         <td>Schäds</td>
         <td><span class="ion ion-checkmark"></span></td>
@@ -152,8 +156,8 @@ permalink: /papier/
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>9</td>
         <td>Fonse</td>
         <td></td>
@@ -168,8 +172,8 @@ permalink: /papier/
         <td></td>
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>10</td>
         <td>Heigl</td>
         <td></td>
@@ -184,8 +188,8 @@ permalink: /papier/
         <td><span class="ion ion-checkmark"></span></td>
         <td></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>11</td>
         <td>Naze</td>
         <td><span class="ion ion-checkmark"></span></td>
@@ -200,8 +204,8 @@ permalink: /papier/
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
         <td></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>12</td>
         <td>Hanse</td>
         <td></td>
@@ -216,5 +220,7 @@ permalink: /papier/
         <td></td>
         <td></td>
         <td><span class="ion ion-checkmark"></span></td>
-    </tr>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>
