@@ -6,13 +6,13 @@ permalink: /links/
 
 ### Behörden
 
-[Gemeinde](http://www.bergkirchen.de/)
+[Gemeinde Bergkirchen](http://www.bergkirchen.de/)
 
-[Kreisfeuerwehrverband](http://kfv-dachau.de/)
+[Kreisfeuerwehrverband Dachau](http://kfv-dachau.de/)
 
-[Landratsamt](http://www.landratsamt-dachau.de/)
+[Landratsamt Dachau](http://www.landratsamt-dachau.de/)
 
-[Landesfeuerwehrverband](http://www.lfv-bayern.de/)
+[Landesfeuerwehrverband Bayern](http://www.lfv-bayern.de/)
 
 ### Feuerwehren
 
@@ -22,5 +22,5 @@ permalink: /links/
 
 ### Freunde
 
-[Bürgerhaus](http://www.buergerhaus-deutenhausen-eisolzried.de/)
+[Bürgerhaus Deutenhausen-Eisolzried](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 
