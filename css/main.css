@@ -42,6 +42,22 @@ a:visited { color: #ae002a; }
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
+/* Site header */
+
+.navbar-default .navbar-brand {
+  color: #de002a;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ae002a;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #de002a;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ae002a;
+}
+
 /* Site footer */
 
 .site-footer {
