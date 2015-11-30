@@ -22,32 +22,31 @@ Alle Mitglieder der Feuerwehr Eisolzried mit Ehrenmitglied Hubert Huber vor dem 
 
 Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlicher, 17 Passive und 3 Ehrenmitglieder. (Stand: Oktober 2015)
 
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Kommandant</th>
-        <th>Vorstand</th>
-        <th>Jugendwart</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Erster</td>
-        <td>Thomas Hörmann</td>
-        <td>Bernhard Schmidbauer</td>
-        <td>Christian Schuster</td>
-      </tr>
-      <tr>
-        <td>Zweiter</td>
-        <td>Matthias Schönwetter</td>
-        <td>Andreas Straucher</td>
-        <td>Andreas Hörmann</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Kommandant</th>
+      <th>Vorstand</th>
+      <th>Jugendwart</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Erster</td>
+      <td>Thomas Hörmann</td>
+      <td>Bernhard Schmidbauer</td>
+      <td>Christian Schuster</td>
+    </tr>
+    <tr>
+      <td>Zweiter</td>
+      <td>Matthias Schönwetter</td>
+      <td>Andreas Straucher</td>
+      <td>Andreas Hörmann</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Fahrzeug
 
