@@ -55,6 +55,8 @@ Zusammen mit der Feuerwehr Feldgeding hat die Feuerwehr Eisolzried dieses Jahr w
 
 Es wurde super gearbeitet und Schiedsrichter Ernst Zethner, Rainer Zollbrecht und Franz Bründler hatten nur eine Kleinigkeit zu bemängeln. Robert Axtner bedankte sich im Namen der Gemeinde für die Einsatzbereitschaft und lud die Mannschaft im Anschluss zum gemeinsamen Essen ins Gasthaus Burgmayr ein.
 
+Von der Feuerwehr Eisolzried haben Markus Asam, Johann Funk, Florian Lunglmeyr, Andreas Hörmann, Michael Hörmann, Thomas Hörmann und Markus Reischl teilgenommen.
+
 (Zusammenfassung eines Artikels im Regionalteil der Printausgabe der Dachauer Nachrichten)
 
 <ul class="posts">
