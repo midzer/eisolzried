@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Papiersammlung 2015
+title: Papiersammlung 2016
 permalink: /papier/
 ---
 
