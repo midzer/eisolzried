@@ -193,9 +193,6 @@ a:visited { color: #ae002a; }
   margin-right: auto;
 }
 
-.post-content tr:nth-child(even) {background: #CCC}
-.post-content tr:nth-child(odd) {background: #FFF}
-
 .post-content td {
   vertical-align: top;
   padding-right: 50px;
