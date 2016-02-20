@@ -8,7 +8,7 @@ permalink: /papier/
     table, td, th { border: 1px solid black; }
 </style>
 
-<table>
+<table class="table-responsive">
   <thead>
     <tr>
       <th>Monat</th>
