@@ -1,0 +1,11 @@
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"   : "{{ post.title | escape }}",
+      "content" : "{{ post.content | strip_html | strip_newlines | escape | remove_chars | strip }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
