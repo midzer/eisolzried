@@ -238,9 +238,6 @@ a:visited { color: #ae002a; }
   margin: 30px 0;
 }
 
-.post-content ul,
-.post-content ol { padding-left: 20px; }
-
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
@@ -254,9 +251,6 @@ a:visited { color: #ae002a; }
 }
 
 .post code { padding: 1px 5px; }
-
-.post ul,
-.post ol { margin-left: 1.35em; }
 
 .post pre code {
   border: 0;
@@ -356,8 +350,6 @@ a:visited { color: #ae002a; }
   .post-content h3 { font-size: 22px; }
   .post-content h4 { font-size: 18px; }
   .post-content blockquote { padding-left: 10px; }
-  .post-content ul,
-  .post-content ol { padding-left: 10px; }
 
   .site-footer .column {
     float: none;
