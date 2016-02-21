@@ -3,6 +3,7 @@ layout: page
 title: Willkommen bei der Feuerwehr Eisolzried
 customjs:
   - jekyll-search.min
+  - longlist.min
 ---
 
 ![Taferl](/assets/taferl.png){: .pull-left style="margin-right: 10px"}
@@ -49,7 +50,6 @@ Und nun viel Spaß beim Stöbern :)
   </li>
 {% endfor %}
 </ul>
-
 <script type="text/javascript">
   longlist(document.getElementById('news'), document.getElementById('posts'), {'perPage': 6});
 </script>
