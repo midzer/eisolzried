@@ -2,8 +2,9 @@
 
 <div id="drcal"></div>
 <script type="text/javascript">
-  var data = $.get("data/ffw.eisolzried@gmail.com.ics", function () {
-    console.log("data received");
+  $.get("data/ffw.eisolzried@gmail.com.ics", function (data) {
+    console.log("Received following data:", data);
+    console.log($.icalendar.parse(data));
 });
   var cal = drcal({'weekdays': ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
                    'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
@@ -13,8 +14,12 @@
     var dayNum = document.createElement('div');
     dayNum.className = 'daynum';
     dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
+    var dayEvent = document.createElement('div');
+    dayNum.className = 'dayevent';
+    dayNum.appendChild(document.createTextNode("test"));
     var div = document.createElement('div');
     div.appendChild(dayNum);
+    div.appendChild(dayEvent);
     event.detail.element.appendChild(div);
   });
   cal.changeMonth(new Date());
