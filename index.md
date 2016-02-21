@@ -19,10 +19,10 @@ Und nun viel Spaß beim Stöbern :)
     <div class="col-sm-6">
         <div class="list-group">
 
-<div class="panel-heading" markdown="1">
+<div id="news" class="panel-heading" markdown="1">
 ### Neuigkeiten
 
-<ul class="posts">
+<ul id="posts" class="posts">
 {% for post in site.posts %}
   <li>
     <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -30,6 +30,20 @@ Und nun viel Spaß beim Stöbern :)
   </li>
 {% endfor %}
 </ul>
+
+<script type="text/javascript">
+  longlist(document.getElementById('news'), document.getElementById('posts'), {'perPage': 6});
+</script>
+<style type="text/css">
+  .paging-controls {text-align: center;}
+  .paging-controls a {color: #de002a;}
+  .paging-controls a:visited {color: #ae002a;}
+  .paging-controls .prev {float: left;}
+  .paging-controls .prev:before {content: "< neuere";}
+  .paging-controls .next {float: right;}
+  .paging-controls .next:after {content: "ältere >";}
+  .paging-controls .elipsis:before {content: " ... ";}
+</style>
 
 <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
 </div>
