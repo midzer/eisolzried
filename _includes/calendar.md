@@ -2,8 +2,7 @@
 
 <div id="drcal"></div>
 <script type="text/javascript">
-  var promise = $.get("data/ffw.eisolzried@gmail.com.ics");
-  promise.then(buildCal);
+  $.get("data/ffw.eisolzried@gmail.com.ics").then(buildCal);
 
   function buildCal(data) {
     var jCal = ICAL.parse(data);
