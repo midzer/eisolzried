@@ -73,7 +73,7 @@ Und nun viel Spaß beim Stöbern :)
         <div class="list-group">
 
 <div class="panel-heading" markdown="1">
-{% include termine.md %}
+{% include calendar.md %}
 </div>
 
         </div>
