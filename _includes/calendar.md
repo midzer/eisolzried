@@ -61,6 +61,7 @@
     document.getElementById('drcal').appendChild(cal);
   }
 </script>
+<noscript>Bitte Javascript aktivieren um den Kalender zu sehen</noscript>
 <style type="text/css">
 #drcal .calendar {border-collapse: collapse;}
 #drcal .calendar th {text-align: center;}
