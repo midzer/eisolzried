@@ -94,9 +94,13 @@
 #drcal .calendar .selected {background-color: #F3F3F3;}
 #drcal .calendar .extra {color: #AEAEAE;}
 #drcal .calendar .daynum {
-  position: absolute;
-  top: 0.5ex;
-  right: 0.5ex;
+  float: right;
+  padding-right: 0.5ex;
+}
+#drcal .calendar .dayevent {
+  margin: auto;
+  width: 60%;
+  color: #de002a;
 }
 </style>
 
