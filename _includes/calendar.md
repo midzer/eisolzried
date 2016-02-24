@@ -1,6 +1,8 @@
 ### Termine
 
+<div class="table-responsive">
 <div id="drcal"></div>
+</div>
 <script type="text/javascript">
   $.get("data/ffw.eisolzried@gmail.com.ics").then(buildCal);
 
@@ -57,7 +59,6 @@
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].className += ' btn';
     }
-    cal.classList.add('table-responsive');
     document.getElementById('drcal').appendChild(cal);
   }
 </script>

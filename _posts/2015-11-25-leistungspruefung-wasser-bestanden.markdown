@@ -74,6 +74,39 @@ images:
 
 Im Frühjahr wurde eine Leistungsprüfung Wasser erfolgreich abgelegt.
 
+<div class="table-responsive">
+<table>
+  <thead>
+    <tr>
+      <th>Gruppenführer</th>
+      <th>Maschinist</th>
+      <th>Melder</th>
+      <th>Angriffstrupp</th>
+      <th>Wassertrupp</th>
+      <th>Schlauchtrupp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Andreas Straucher</td>
+      <td>Matthias Schönwetter</td>
+      <td>Michael Brummer</td>
+      <td>Peter Brummer</td>
+      <td>Martin Kreitmeier</td>
+      <td>Tobias Riedl</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Melanie Thies</td>
+      <td>Markus Heigl</td>
+      <td>Thomas Gürster</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 |---------------+------------+--------+---------------+-------------+---------------|
 | Gruppenführer | Maschinist | Melder | Angriffstrupp | Wassertrupp | Schlauchtrupp |
 |---------------|------------|--------|---------------|-------------|---------------|
