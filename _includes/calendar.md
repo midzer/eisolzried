@@ -100,7 +100,6 @@
 }
 #drcal .calendar .dayevent {
   margin: auto;
-  width: 60%;
   color: #de002a;
 }
 </style>
