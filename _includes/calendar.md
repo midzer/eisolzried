@@ -57,7 +57,7 @@
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].className += ' btn';
     }
-    cal.className += ' table-responsive';
+    cal.classList.add('table-responsive');
     document.getElementById('drcal').appendChild(cal);
   }
 </script>
