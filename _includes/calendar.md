@@ -1,8 +1,6 @@
 ### Termine
 
-<div class="table-responsive">
-<div id="drcal"></div>
-</div>
+<div id="drcal" class="table-responsive"></div>
 <script type="text/javascript">
   $.get("data/ffw.eisolzried@gmail.com.ics").then(buildCal);
 
