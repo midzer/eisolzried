@@ -97,9 +97,6 @@
   float: right;
   padding-right: 0.5ex;
 }
-#drcal .calendar .dayevent {
-  margin: auto;
-  color: #de002a;
-}
+#drcal .calendar .dayevent {color: #de002a;}
 </style>
 
