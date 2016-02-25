@@ -55,7 +55,7 @@
     });
     var buttons = cal.querySelectorAll('button');
     for (var i = 0; i < buttons.length; i++) {
-      buttons[i].className += ' btn';
+      buttons[i].classList.add('btn');
     }
     document.getElementById('drcal').appendChild(cal);
   }
