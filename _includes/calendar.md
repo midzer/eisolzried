@@ -7,7 +7,7 @@
   function buildCal(data) {
     var jCal = ICAL.parse(data);
     var comp = new ICAL.Component(jCal);
-    var vevents = comp.getAllSubcomponents("vevent");
+    var vevents = comp.getAllSubcomponents('vevent');
     var cal = drcal({
       'weekdays': ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
       'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
