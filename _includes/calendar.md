@@ -62,7 +62,10 @@
 </script>
 <noscript>Bitte Javascript aktivieren um den Kalender zu sehen</noscript>
 <style type="text/css">
-#drcal .calendar {border-collapse: collapse;}
+#drcal .calendar {
+  border-collapse: collapse;
+  width: calc(100% - 2px);
+}
 #drcal .calendar th {text-align: center;}
 #drcal .calendar td {
   border: 1px solid #AEAEAE;
