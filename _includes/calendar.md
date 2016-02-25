@@ -46,9 +46,9 @@
     cal.addEventListener('click', function(event) {
       if (event.target.tagName === 'DIV') {
         event.preventDefault();
-        if (selected) selected.className = '';
+        if (selected) selected.classList.remove('selected');
         selected = event.target;
-        selected.className = 'selected';
+        selected.classList.add('selected');
       }
     });
     var buttons = cal.querySelectorAll('button');
