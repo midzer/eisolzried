@@ -8,7 +8,6 @@
     var jCal = ICAL.parse(data);
     var comp = new ICAL.Component(jCal);
     var vevents = comp.getAllSubcomponents("vevent");
-
     var cal = drcal({
       'weekdays': ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
       'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
@@ -17,12 +16,11 @@
       'startDay': 1
     });
     cal.addEventListener('drcal.renderDay', function(event) {
+      var day = document.createElement('div');
       var dayNum = document.createElement('div');
       dayNum.className = 'daynum';
       dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
-      var div = document.createElement('div');
-      div.appendChild(dayNum);
-
+      day.appendChild(dayNum);
       var time = new ICAL.Time({
         year: event.detail.date.getFullYear(),
         month: event.detail.date.getMonth() + 1,
@@ -38,10 +36,10 @@
           var dayEvent = document.createElement('div');
           dayEvent.className = 'dayevent';
           dayEvent.appendChild(document.createTextNode(ev.summary));
-          div.appendChild(dayEvent);
+          day.appendChild(dayEvent);
         }
       }
-      event.detail.element.appendChild(div);
+      event.detail.element.appendChild(day);
     });
     cal.changeMonth(new Date());
     selected = null;
