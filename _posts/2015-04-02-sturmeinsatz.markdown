@@ -29,6 +29,5 @@ Einsatzdauer: 1,5 Stunden
 
 Einsatzkräfte: 7 Personen
 
-<ul class="posts">
-  {% include gal.html %}
-</ul>
+{% include gal.html %}
+

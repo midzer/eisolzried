@@ -11,3 +11,4 @@ Ein Feuerwehrmann der Feuerwehr Eisolzried nahm daran erfolgreich teil.
 Der Kreisfeuerwehrverband berichtete darüber [hier][kfv].
 
 [kfv]: http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=867
+

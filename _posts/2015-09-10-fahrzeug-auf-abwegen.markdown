@@ -18,6 +18,5 @@ Aus Unachtsamkeit geriet der Fahrer von einem Feldweg ab und landete so unglück
 
 Nach unserem Eintreffen wurde das Fahrzeug aus dem Graben geschoben. Es wurde kein Umweltschaden festgestellt.
 
-<ul class="posts">
-  {% include gal.html %}
-</ul>
+{% include gal.html %}
+

@@ -21,6 +21,5 @@ Der neue Vorstand Bernhard Schmidbauer bedankte sich bei allen die diesen Abend 
 
 Die Auktionatoren Georg Sturm und Michael Trinkl brachten die zahlreichen gespendeten Sachpreise mit Stimmung und Witz an den Mann oder die Frau. In geselliger Runde wurde noch zusammen gefeiert und dabei die ersteigerten Schmankerl für den Gaumen gleich probiert.
 
-<ul class="posts">
-  {% include gal.html %}
-</ul>
+{% include gal.html %}
+

@@ -31,6 +31,5 @@ Zur Übung im September am 07.09.2015 stand dieses Mal Wasserentnahme aus der Ma
 
 Nach kurzer Einweisung des Gruppenführers der Löschgruppe Eisolzried wurden Saugschläuche gekuppelt, Verkehrsabsicherung und Beleuchtung aufgebaut und der Löschaufbau zur "Brandstelle" errichtet.
 
-<ul class="posts">
-  {% include gal.html %}
-</ul>
+{% include gal.html %}
+

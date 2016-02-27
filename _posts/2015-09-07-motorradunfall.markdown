@@ -9,3 +9,4 @@ Aus noch ungeklärter Ursache kam am Sonntagabend, 06.09.15, ein junger Motorrad
 Zum Glück stellte sich nach Eintreffen der Rettungskräfte von Notarzt, BRK, Polizei, THW und der Feuerwehr Eisolzried heraus, dass er sich nur relativ leicht verletzte.
 
 Die Feuerwehr Eisolzried übernahm die Verkehrsabsicherung und unterstützte bei der Patientenrettung.
+

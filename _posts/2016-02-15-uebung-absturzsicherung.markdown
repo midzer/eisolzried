@@ -28,6 +28,5 @@ Zur Februarübung stand Absturzsicherung auf dem Plan.
 
 Unsere fünf erprobten "Spezialisten" an der Absturzsicherung bildeten diesmal in einer dreistündigen Übung die gesamte Mannschaft in dieser wichtigen Ausrüstung aus.
 
-<ul class="posts">
-  {% include gal.html %}
-</ul>
+{% include gal.html %}
+
