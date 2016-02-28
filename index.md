@@ -30,7 +30,7 @@ Und nun viel Spaß beim Stöbern :)
 
 <div id="search-container">
   <input type="text" id="search-input" placeholder="Suchen...">
-  <ul id="results-container"></ul>
+  <ul id="results-container" class="list-unstyled"></ul>
 </div>
 
 <script type="text/javascript">
