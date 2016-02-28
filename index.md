@@ -54,7 +54,7 @@ Und nun viel Spaß beim Stöbern :)
 {% endfor %}
 </ul>
 <script type="text/javascript">
-  longlist(document.getElementById('news'), document.getElementById('posts'), {'perPage': 6});
+  longlist(document.getElementById('news'), document.getElementById('posts'), {'perPage': 5});
 </script>
 <style type="text/css">
   .paging-controls {text-align: center;}
