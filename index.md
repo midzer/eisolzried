@@ -43,7 +43,7 @@ Und nun viel Spaß beim Stöbern :)
         limit: 10,
         fuzzy: false,
         exclude: ['Welcome']
-      })
+      });
 </script>
 
 <ul id="posts" class="posts">
