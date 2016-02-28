@@ -59,44 +59,4 @@
   }
 </script>
 <noscript>Bitte Javascript aktivieren um den Kalender zu sehen</noscript>
-<style type="text/css">
-#drcal .calendar {
-  border-collapse: collapse;
-  width: calc(100% - 2px);
-}
-#drcal .calendar th {text-align: center;}
-#drcal .calendar td {
-  border: 1px solid #AEAEAE;
-  width: 6em;
-  height: 5em;
-  padding: 0;
-}
-#drcal .calendar td > div {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  cursor: pointer;
-}
-#drcal .calendar thead tr:first-child th {
-  font-size: large;
-  padding-bottom: 0.5em;
-}
-#drcal .calendar thead tr:last-child th {
-  font-weight: normal;
-  font-size: small;
-  color: #939393;
-}
-#drcal .calendar .prev {float: left;}
-#drcal .calendar .prev:before {content: "<";}
-#drcal .calendar .next {float: right;}
-#drcal .calendar .next:after {content: ">";}
-#drcal .calendar .today, .calendar .today.selected { background-color: #E9EFF8;}
-#drcal .calendar .selected {background-color: #F3F3F3;}
-#drcal .calendar .extra {color: #AEAEAE;}
-#drcal .calendar .daynum {
-  float: right;
-  padding-right: 0.5ex;
-}
-#drcal .calendar .dayevent {color: #de002a;}
-</style>
 

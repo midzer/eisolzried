@@ -359,8 +359,47 @@ a:visited { color: #ae002a; }
 
 }
 
-/* Button styles */
+/* Calendar styles */
 /* ----------------------------------------------------------*/
+
+.calendar {
+  border-collapse: collapse;
+  width: calc(100% - 2px);
+}
+.calendar th {text-align: center;}
+.calendar td {
+  border: 1px solid #AEAEAE;
+  width: 6em;
+  height: 5em;
+  padding: 0;
+}
+.calendar td > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.calendar thead tr:first-child th {
+  font-size: large;
+  padding-bottom: 0.5em;
+}
+.calendar thead tr:last-child th {
+  font-weight: normal;
+  font-size: small;
+  color: #939393;
+}
+.calendar .prev {float: left;}
+.calendar .prev:before {content: "<";}
+.calendar .next {float: right;}
+.calendar .next:after {content: ">";}
+.calendar .today, .calendar .today.selected { background-color: #E9EFF8;}
+.calendar .selected {background-color: #F3F3F3;}
+.calendar .extra {color: #AEAEAE;}
+.calendar .daynum {
+  float: right;
+  padding-right: 0.5ex;
+}
+.calendar .dayevent {color: #de002a;}
 
 .calendar .btn {
   background-color: #e6e6e6;
@@ -396,4 +435,16 @@ a:visited { color: #ae002a; }
   color:#333;
   text-decoration:none;
 }
+
+/* Longlist styles */
+/* ----------------------------------------------------------*/
+
+.paging-controls {text-align: center;}
+.paging-controls a {color: #de002a;}
+.paging-controls a:visited {color: #ae002a;}
+.paging-controls .prev {float: left;}
+.paging-controls .prev:before {content: "< neuere";}
+.paging-controls .next {float: right;}
+.paging-controls .next:after {content: "ältere >";}
+.paging-controls .elipsis:before {content: " ... ";}
 

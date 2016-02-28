@@ -32,6 +32,7 @@ Und nun viel Spaß beim Stöbern :)
   <input type="text" id="search-input" placeholder="Suchen...">
   <ul id="results-container"></ul>
 </div>
+
 <script type="text/javascript">
       SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
@@ -53,19 +54,10 @@ Und nun viel Spaß beim Stöbern :)
   </li>
 {% endfor %}
 </ul>
+
 <script type="text/javascript">
   longlist(document.getElementById('news'), document.getElementById('posts'), {'perPage': 5});
 </script>
-<style type="text/css">
-  .paging-controls {text-align: center;}
-  .paging-controls a {color: #de002a;}
-  .paging-controls a:visited {color: #ae002a;}
-  .paging-controls .prev {float: left;}
-  .paging-controls .prev:before {content: "< neuere";}
-  .paging-controls .next {float: right;}
-  .paging-controls .next:after {content: "ältere >";}
-  .paging-controls .elipsis:before {content: " ... ";}
-</style>
 
 <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
 </div>
@@ -83,3 +75,4 @@ Und nun viel Spaß beim Stöbern :)
     </div>
 
 </div>
+
