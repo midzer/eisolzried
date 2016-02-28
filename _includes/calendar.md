@@ -1,7 +1,9 @@
 ### Termine
 
 <div id="drcal" class="table-responsive"></div>
+<div id="popup"></div>
 <script type="text/javascript">
+  var popup = $("#popup").dialog({ autoOpen: false, width: 150});
   $.get("data/ffw.eisolzried@gmail.com.ics").then(buildCal);
 
   function buildCal(data) {
@@ -16,39 +18,39 @@
       'startDay': 1
     });
     cal.addEventListener('drcal.renderDay', function(event) {
-      var day = document.createElement('div');
       var dayNum = document.createElement('div');
       dayNum.className = 'daynum';
       dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
-      day.appendChild(dayNum);
-      var time = new ICAL.Time({
-        year: event.detail.date.getFullYear(),
-        month: event.detail.date.getMonth() + 1,
-        day: event.detail.date.getDate()
-      });
+      event.detail.element.appendChild(dayNum);
+      var time = ICAL.Time.fromJSDate(event.detail.date);
       for (var k in vevents) {
         var ev = new ICAL.Event(vevents[k]);
         var expand = ev.iterator(time);
         var next = expand.next();
-        if (next.day == time.day &&
-          next.month == time.month &&
-          next.year == time.year) {
+        if (next.compare(time) == 0) {
           var dayEvent = document.createElement('div');
           dayEvent.className = 'dayevent';
           dayEvent.appendChild(document.createTextNode(ev.summary));
-          day.appendChild(dayEvent);
+          event.detail.element.appendChild(dayEvent);
         }
       }
-      event.detail.element.appendChild(day);
     });
     cal.changeMonth(new Date());
-    selected = null;
     cal.addEventListener('click', function(event) {
-      if (event.target.tagName === 'DIV') {
-        event.preventDefault();
-        if (selected) selected.classList.remove('selected');
-        selected = event.target;
-        selected.classList.add('selected');
+      if (event.target.tagName == 'DIV') {
+        var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
+        for (var k in vevents) {
+          var ev = new ICAL.Event(vevents[k]);
+          var expand = ev.iterator(time);
+          var next = expand.next();
+          if (next.compare(time) == 0) {
+            popup.html(ev.description + " im " + ev.location + " am " + ev.startDate.toString());
+            popup.dialog("option", "title", ev.summary);
+            popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
+            popup.dialog("open");
+            break;
+          }
+        }
       }
     });
     var buttons = cal.querySelectorAll('button');
