@@ -38,7 +38,7 @@ Und nun viel Spaß beim Stöbern :)
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: 'search.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
         noResultsText: 'Keine Suchergebnisse',
         limit: 10,
         fuzzy: false,
