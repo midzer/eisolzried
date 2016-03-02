@@ -2,13 +2,11 @@
 layout: page
 title: Team
 permalink: /team/
-imgfolder: /images
+imgfolder: /images/team
 images:
   - name: gruppe2013.jpg
-    thumb: gruppe2013-thumb.jpg
     text: Gruppe 2013
   - name: tsf.jpg
-    thumb: tsf-thumb.jpg
     text: Unser TSF
 ---
 

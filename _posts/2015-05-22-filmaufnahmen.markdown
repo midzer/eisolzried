@@ -5,16 +5,12 @@ date:   2015-05-22
 imgfolder: /images/2015/einsaetze
 images:
   - name: film1.jpg
-    thumb: film1-thumb.jpg
     text: Film 1
   - name: film2.jpg
-    thumb: film2-thumb.jpg
     text: Film 2
   - name: film3.jpg
-    thumb: film3-thumb.jpg
     text: Film 3
   - name: film4.jpg
-    thumb: film4-thumb.jpg
     text: Film 4
 ---
 

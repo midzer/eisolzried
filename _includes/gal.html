@@ -3,7 +3,7 @@
   {% if include.image == null or include.image == image.name %}
     <li>
       <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
-        <img src="{{ page.imgfolder }}/{{ image.thumb }}" title="{{ image.text }}" alt="{{ image.text }}">
+        <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
       </a>
     </li>
   {% endif %}

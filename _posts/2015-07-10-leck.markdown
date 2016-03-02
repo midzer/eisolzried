@@ -5,10 +5,8 @@ date:   2015-07-10
 imgfolder: /images/2015/einsaetze
 images:
   - name: leck1.jpg
-    thumb: leck1-thumb.jpg
     text: Leck 1
   - name: leck2.jpg
-    thumb: leck2-thumb.jpg
     text: Leck 2
 ---
 

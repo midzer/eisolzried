@@ -5,10 +5,8 @@ date:   2015-07-10
 imgfolder: /images/2015/uebungen
 images:
   - name: sandsack1.jpg
-    thumb: sandsack1-thumb.jpg
     text: Sandsack 1
   - name: sandsack2.jpg
-    thumb: sandsack2-thumb.jpg
     text: Sandsack 2
 ---
 

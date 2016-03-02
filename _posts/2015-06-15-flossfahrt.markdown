@@ -5,10 +5,8 @@ date:   2015-06-15
 imgfolder: /images/2015/feiern
 images:
   - name: flossfahrt1.jpg
-    thumb: flossfahrt1-thumb.jpg
     text: Floßfahrt 1
   - name: flossfahrt2.jpg
-    thumb: flossfahrt2-thumb.jpg
     text: Floßfahrt 2
 ---
 

@@ -5,61 +5,42 @@ permalink: /chronik/
 imgfolder: /images/chronik
 images:
   - name: AmtsBlatt1879.jpg
-    thumb: AmtsBlatt1879-thumb.jpg
     text: Amtsblatt 1879
   - name: Anmeldung1903.jpg
-    thumb: Anmeldung1903-thumb.jpg
     text: Anmeldung 1903
   - name: Bereicht1913.jpg
-    thumb: Bereicht1913-thumb.jpg
     text: Bereicht 1913
   - name: Ehrenmitglied.jpg
-    thumb: Ehrenmitglied-thumb.jpg
     text: Ehrenmitglied
   - name: ErsteHilfe.jpg
-    thumb: ErsteHilfe-thumb.jpg
     text: Erste Hilfe
   - name: Fahnenweihe1958.jpg
-    thumb: Fahnenweihe1958-thumb.jpg
     text: Fahnenweihe 1958
   - name: Feuerwehrhaus_alt_aussen.jpg
-    thumb: Feuerwehrhaus_alt_aussen-thumb.jpg
     text: Feuerwehrhaus alt aussen
   - name: Funkgeraet.jpg
-    thumb: Funkgeraet-thumb.jpg
     text: Funkgerät
   - name: Funklehr.jpg
-    thumb: Funklehr-thumb.jpg
     text: Funklehrgang
   - name: Gruendungsfest70.jpg
-    thumb: Gruendungsfest70-thumb.jpg
     text: Gruendungsfest 1970
   - name: Gruendungsfest90.jpg
-    thumb: Gruendungsfest90-thumb.jpg
     text: Gruendungsfest 1990
   - name: Heigl1996.jpg
-    thumb: Heigl1996-thumb.jpg
     text: Heigl 1996
   - name: JLP1996.jpg
-    thumb: JLP1996-thumb.jpg
     text: Jugendleistungsprüfung 1996
   - name: kupferstich_eisolzried.jpg
-    thumb: kupferstich_eisolzried-thumb.jpg
     text: Kupferstich Eisolzried
   - name: Leistungspruefung1963.jpg
-    thumb: Leistungspruefung1963-thumb.jpg
     text: Leistungsprüfung 1963
   - name: Schadenfeuer1910.jpg
-    thumb: Schadenfeuer1910-thumb.jpg
     text: Schadenfeuer 1910
   - name: Schlossbrand1894.jpg
-    thumb: Schlossbrand1894-thumb.jpg
     text: Schlossbrand 1894
   - name: Schlossgut1966.jpg
-    thumb: Schlossgut1966-thumb.jpg
     text: Schlossgut 1966
   - name: Sieg1996.jpg
-    thumb: Sieg1996-thumb.jpg
     text: Turniersieg 1996
 ---
 
@@ -161,3 +142,4 @@ In den letzten zehn Jahren ist ein drastischer Rückgang der Brandeinsätze fest
 {% include gal.html image="Heigl1996.jpg" %}
 
 Wir hoffen, dass der positive Geist, der die Feuerwehr in den 100 Jahren begleitet hat, sich auch im zukünftigen Wirken der Freiwilligen Feuerwehr Eisolzried widerspiegelt.
+

@@ -5,12 +5,9 @@ date:   2015-12-06
 imgfolder: /images/2015/feiern
 images:
   - name: weihnachtsfeier1.jpg
-    thumb: weihnachtsfeier1-thumb.jpg
     text: Weihnachtsfeier 1
   - name: weihnachtsfeier2.jpg
-    thumb: weihnachtsfeier2-thumb.jpg
     text: Weihnachtsfeier 2
-
 ---
 
 ... werd's wieda ruhiga. Mit diesem Zitat von Karl Valentin schloss der dritte Bürgermeister Robert Axtner gestern seine Rede im Gasthaus Burgmayr in Eisolzried.

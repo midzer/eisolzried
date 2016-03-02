@@ -5,10 +5,8 @@ date:   2015-11-30
 imgfolder: /images/2015/einsaetze
 images:
   - name: rehunfall1.jpg
-    thumb: rehunfall1-thumb.jpg
     text: Rehunfall 1
   - name: rehunfall2.jpg
-    thumb: rehunfall2-thumb.jpg
     text: Rehunfall 2
 ---
 

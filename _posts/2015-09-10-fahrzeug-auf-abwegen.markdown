@@ -5,10 +5,8 @@ date:   2015-09-10
 imgfolder: /images/2015/einsaetze
 images:
   - name: fahrzeug1.jpg
-    thumb: fahrzeug1-thumb.jpg
     text: Fahrzeug 1
   - name: fahrzeug2.jpg
-    thumb: fahrzeug2-thumb.jpg
     text: Fahrzeug 2
 ---
 

@@ -5,10 +5,8 @@ date:   2015-08-12
 imgfolder: /images/2015/einsaetze
 images:
   - name: oelspur1.jpg
-    thumb: oelspur1-thumb.jpg
     text: Ölspur 1
   - name: oelspur2.jpg
-    thumb: oelspur2-thumb.jpg
     text: Ölspur 2
 ---
 
