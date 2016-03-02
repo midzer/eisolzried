@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Übung"
+title:  "Übung Absturzsicherung und Löschaufbau"
 date:   2015-06-03
 ---
 

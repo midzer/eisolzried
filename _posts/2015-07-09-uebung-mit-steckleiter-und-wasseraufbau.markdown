@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Übung"
+title:  "Übung mit Steckleiter und Wasseraufbau"
 date:   2015-07-09
 ---
 
