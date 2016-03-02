@@ -1,41 +1,21 @@
 <footer class="site-footer">
 
-  <div class="wrap">
-
-    <!--<h2 class="footer-heading">{{ site.title }}</h2>-->
-
-    <div class="footer-col-1 column">
-      <ul>
-        <li>
-          <a href="/impressum/">Impressum</a>
-        </li>
-        <li>
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/assets/license.png" alt="CC BY-NC-SA"></a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-col-2 column">
-      <ul>
-        {% if site.facebook_group %}<li>
-          <a href="https://www.facebook.com/groups/{{ site.facebook_group }}">
-            <span class="ion ion-fw ion-social-facebook"></span>
-            <span class="username">FF Eisolzried</span>
-          </a>
-        </li>{% endif %}
-        {% if site.github_username %}<li>
-          <a href="https://github.com/{{ site.github_username }}">
-            <span class="ion ion-fw ion-social-github"></span>
-            <span class="username">eisolzried</span>
-          </a>
-        </li>{% endif %}
-      </ul>
-    </div>
-
-    <div class="footer-col-3 column">
-      <p class="text">{{ site.description }}</p>
-    </div>
-
+  <div class="wrap text-center">
+    {% if site.facebook_group %}
+    <a href="https://www.facebook.com/groups/{{ site.facebook_group }}">
+      <span class="ion ion-fw ion-social-facebook"></span>
+      <span class="username">FF Eisolzried</span>
+    </a>
+    {% endif %}
+    {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}">
+      <span class="ion ion-fw ion-social-github"></span>
+      <span class="username">eisolzried</span>
+    </a>
+    {% endif %}
+    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/assets/license.png" alt="CC BY-NC-SA"></a>
+    <a href="/impressum/">Impressum</a>
   </div>
 
 </footer>
+
