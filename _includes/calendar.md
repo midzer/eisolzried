@@ -10,6 +10,10 @@
     var jCal = ICAL.parse(data);
     var comp = new ICAL.Component(jCal);
     var vevents = comp.getAllSubcomponents('vevent');
+    var ev = [];
+    for (var i in vevents) {
+        ev[i] = new ICAL.Event(vevents[i]);
+    }
     var cal = drcal({
       'weekdays': ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
       'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
@@ -23,14 +27,13 @@
       dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
       event.detail.element.appendChild(dayNum);
       var time = ICAL.Time.fromJSDate(event.detail.date);
-      for (var k in vevents) {
-        var ev = new ICAL.Event(vevents[k]);
-        var expand = ev.iterator(time);
+      for (var i in ev) {
+        var expand = ev[i].iterator(time);
         var next = expand.next();
         if (next.compare(time) == 0) {
           var dayEvent = document.createElement('div');
           dayEvent.className = 'dayevent';
-          dayEvent.appendChild(document.createTextNode(ev.summary));
+          dayEvent.appendChild(document.createTextNode(ev[i].summary));
           event.detail.element.appendChild(dayEvent);
         }
       }
@@ -39,13 +42,12 @@
     cal.addEventListener('click', function(event) {
       if (event.target.tagName == 'DIV') {
         var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
-        for (var k in vevents) {
-          var ev = new ICAL.Event(vevents[k]);
-          var expand = ev.iterator(time);
+        for (var i in ev) {
+          var expand = ev[i].iterator(time);
           var next = expand.next();
           if (next.compare(time) == 0) {
-            popup.html(ev.description + " im " + ev.location + " um " + ev.startDate.toJSDate().toTimeString());
-            popup.dialog("option", "title", ev.summary);
+            popup.html(ev[i].description + " im " + ev[i].location + " um " + ev[i].startDate.toJSDate().toTimeString());
+            popup.dialog("option", "title", ev[i].summary);
             popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
             popup.dialog("open");
             break;
