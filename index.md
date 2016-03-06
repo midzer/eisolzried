@@ -26,7 +26,7 @@ Und nun viel Spaß beim Stöbern :)
     <div class="col-sm-6">
         <div class="list-group">
 
-<div id="news" class="panel-heading" markdown="1">
+<div class="panel-heading" markdown="1">
 ### Neuigkeiten
 
 <div id="search-container">
@@ -57,7 +57,7 @@ Und nun viel Spaß beim Stöbern :)
 </ul>
 
 <script type="text/javascript">
-  longlist(document.getElementById('news'), document.getElementById('posts'), {'perPage': 5});
+  longlist(document.getElementById('posts'), {'perPage': 5});
 </script>
 
 <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
