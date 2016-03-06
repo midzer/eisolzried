@@ -44,7 +44,7 @@
           var expand = ev.iterator(time);
           var next = expand.next();
           if (next.compare(time) == 0) {
-            popup.html(ev.description + " im " + ev.location + " am " + ev.startDate.toString());
+            popup.html(ev.description + " im " + ev.location + " um " + ev.startDate.toJSDate().toTimeString());
             popup.dialog("option", "title", ev.summary);
             popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
             popup.dialog("open");
