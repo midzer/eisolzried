@@ -321,12 +321,13 @@ a:visited { color: #ae002a; }
 .calendar .today { background-color: #E9EFF8;}
 .calendar .extra {color: #AEAEAE;}
 .calendar .daynum {
-  float: right;
+  text-align: right;
   padding-right: 0.5ex;
 }
 .calendar .dayevent {
   color: #de002a;
   cursor: pointer;
+  padding-left: 0.5ex;
 }
 
 .calendar .btn {
