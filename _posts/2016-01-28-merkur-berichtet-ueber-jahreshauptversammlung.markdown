@@ -2,6 +2,12 @@
 layout: post
 title:  "Merkur berichtet über Jahreshauptversammlung"
 date:   2016-01-28
+imgfolder: /images/2016/feiern
+images:
+  - name: jahreshauptversammlung1.jpg
+    text: Jahreshauptversammlung 1
+  - name: jahreshauptversammlung2.jpg
+    text: Jahreshauptversammlung 2
 ---
 
 Am 22.01.16 fand die Jahreshauptversammlung der Feuerwehr Eisolzried im Gasthaus Burgmayr in Eisolzried statt.
@@ -11,4 +17,8 @@ Am 22.01.16 fand die Jahreshauptversammlung der Feuerwehr Eisolzried im Gasthaus
 Der Münchner Merkur stellte einen ausführlichen [Artikel][artikel] über die Versammlung online.
 
 [artikel]: http://www.merkur.de/lokales/dachau/landkreis/jahresversammlung-feuerwehr-eisolzried-neues-fahrzeug-wird-sehnsuechtig-erwartet-6072202.html
+
+Neben einem offiziellen Pressefoto entstanden weitere sensationelle Aufnahmen. Es lebe die Situationskomik!
+
+{% include gal.html %}
 
