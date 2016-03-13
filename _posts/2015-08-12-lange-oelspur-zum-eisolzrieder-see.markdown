@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lange Ölspur"
+title:  "Lange Ölspur zum Eisolzrieder See"
 date:   2015-08-12
 imgfolder: /images/2015/einsaetze
 images:

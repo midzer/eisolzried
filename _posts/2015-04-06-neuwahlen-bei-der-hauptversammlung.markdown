@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jahreshauptversammlung"
+title:  "Neuwahlen bei der Hauptversammlung"
 date:   2015-04-06
 ---
 

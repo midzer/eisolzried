@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sturmeinsatz"
+title:  "Sturmeinsatz im Brunnenweg"
 date:   2015-04-02
 imgfolder: /images/2015/einsaetze
 images:

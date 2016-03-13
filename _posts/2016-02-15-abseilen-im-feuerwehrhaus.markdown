@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Übung Absturzsicherung"
+title:  "Abseilen im Feuerwehrhaus"
 date:   2016-02-15
 imgfolder: /images/2016/uebungen
 images:
@@ -18,7 +18,7 @@ images:
     text: Absturzsicherung 6
 ---
 
-Zur Februarübung stand Absturzsicherung auf dem Plan.
+Zur Februarübung stand Absturzsicherung auf dem Programm.
 
 Unsere fünf erprobten "Spezialisten" an der Absturzsicherung bildeten diesmal in einer dreistündigen Übung die gesamte Mannschaft in dieser wichtigen Ausrüstung aus.
 

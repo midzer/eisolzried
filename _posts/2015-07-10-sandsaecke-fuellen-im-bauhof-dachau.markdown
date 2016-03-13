@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sandsackfüllübung"
+title:  "Sandsäcke füllen im Bauhof Dachau"
 date:   2015-07-10
 imgfolder: /images/2015/uebungen
 images:

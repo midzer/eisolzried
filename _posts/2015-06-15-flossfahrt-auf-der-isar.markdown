@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Floßfahrt"
+title:  "Floßfahrt auf der Isar"
 date:   2015-06-15
 imgfolder: /images/2015/feiern
 images:

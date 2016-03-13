@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Übung im September"
+title:  "Wasserentnahme aus Fluß"
 date:   2015-09-09
 imgfolder: /images/2015/uebungen
 images:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Merkur berichtet über Jahreshauptversammlung"
+title:  "Rückblick auf ein ereignisreiches Jahr"
 date:   2016-01-28
 imgfolder: /images/2016/feiern
 images:
