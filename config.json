@@ -378,6 +378,7 @@
     "@blockquote-border-color": "@gray-lighter",
     "@page-header-border-color": "@gray-lighter",
     "@dl-horizontal-offset": "@component-offset-horizontal",
+    "@dl-horizontal-breakpoint": "@grid-float-breakpoint",
     "@hr-border": "@gray-lighter"
   },
   "css": [
@@ -398,5 +399,5 @@
     "collapse.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=52ce2f405243bb9a8f5c"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=0a26aad4aaa6cc5ecf77d631382a4b1c"
 }
