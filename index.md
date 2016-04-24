@@ -10,7 +10,7 @@ customjs:
   - drcal.min
 ---
 
-![Taferl](/assets/taferl.png){: .pull-left style="margin-right: 10px"}
+![Taferl](/assets/taferl.png){: .pull-left height="200" width="184" style="margin-right: 10px"}
 
 {:intro: .clearfix}
 Wir sind eine aktive Feuerwehr in Oberbayern, die überwiegend aus einem jungen Team besteht.
