@@ -4,7 +4,7 @@ title: Willkommen bei der Feuerwehr Eisolzried
 customjs:
   - jekyll-search.min
   - longlist.min
-  - jquery-1.11.3.min
+  - jquery-2.2.3.min
   - jquery-ui.min
   - ical.min
   - drcal.min
