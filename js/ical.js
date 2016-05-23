@@ -634,15 +634,9 @@ ICAL.design = (function() {
       fromICAL: function(aValue) {
         // from: 20120901
         // to: 2012-09-01
-        var result = aValue.substr(0, 4) + '-' +
-                     aValue.substr(4, 2) + '-' +
-                     aValue.substr(6, 2);
-
-        if (aValue[8] === 'Z') {
-          result += 'Z';
-        }
-
-        return result;
+        return aValue.substr(0, 4) + '-' +
+               aValue.substr(4, 2) + '-' +
+               aValue.substr(6, 2);
       },
 
       toICAL: function(aValue) {
@@ -654,15 +648,9 @@ ICAL.design = (function() {
           return aValue;
         }
 
-        var result = aValue.substr(0, 4) +
-                     aValue.substr(5, 2) +
-                     aValue.substr(8, 2);
-
-        if (aValue[10] === 'Z') {
-          result += 'Z';
-        }
-
-        return result;
+        return aValue.substr(0, 4) +
+               aValue.substr(5, 2) +
+               aValue.substr(8, 2);
       }
     },
     "date-time": {
@@ -1416,9 +1404,11 @@ ICAL.stringify = (function() {
    *        jCal/jCard property array
    * @param {ICAL.design.designSet} designSet
    *        The design data to use for this property
+   * @param {Boolean} noFold
+   *        If true, the line is not folded
    * @return {String}       The iCalendar/vCard string
    */
-  stringify.property = function(property, designSet) {
+  stringify.property = function(property, designSet, noFold) {
     var name = property[0].toUpperCase();
     var jsName = property[0];
     var params = property[1];
@@ -1515,7 +1505,7 @@ ICAL.stringify = (function() {
       line += stringify.value(property[3], valueType, designSet, false);
     }
 
-    return ICAL.helpers.foldline(line);
+    return noFold ? line : ICAL.helpers.foldline(line);
   };
 
   /**
@@ -1943,7 +1933,7 @@ ICAL.parse = (function() {
     var result = {};
     var name, lcname;
     var value, valuePos = -1;
-    var type, multiValue;
+    var type, multiValue, mvdelim;
 
     // find the next '=' sign
     // use lastParam and pos to find name
@@ -1967,28 +1957,25 @@ ICAL.parse = (function() {
 
       if (lcname in designSet.param) {
         multiValue = designSet.param[lcname].multiValue;
+        if (designSet.param[lcname].multiValueSeparateDQuote) {
+          mvdelim = parser._rfc6868Escape('"' + multiValue + '"');
+        }
       }
 
       var nextChar = line[pos + 1];
       if (nextChar === '"') {
         valuePos = pos + 2;
         pos = helpers.unescapedIndexOf(line, '"', valuePos);
-        if (multiValue && pos !== -1) {
-          var mvpos = pos;
-          var extendValue = true;
-          while (extendValue) {
-            var nextMDelim = helpers.unescapedIndexOf(line, multiValue, mvpos + 1);
-            var nextPDelim = helpers.unescapedIndexOf(line, PARAM_DELIMITER, mvpos + 1);
-            var nextVDelim = helpers.unescapedIndexOf(line, VALUE_DELIMITER, mvpos + 1);
-            var nextDQuote = helpers.unescapedIndexOf(line, '"', mvpos + 1);
-            if (nextDQuote > nextMDelim && (nextPDelim > nextDQuote || nextVDelim > nextDQuote)) {
-              mvpos = helpers.unescapedIndexOf(line, '"', nextDQuote + 1);
-            } else {
-              extendValue = false;
+        if (multiValue && pos != -1) {
+            var extendedValue = true;
+            while (extendedValue) {
+              if (line[pos + 1] == multiValue && line[pos + 2] == '"') {
+                pos = helpers.unescapedIndexOf(line, '"', pos + 3);
+              } else {
+                extendedValue = false;
+              }
             }
           }
-          pos = mvpos;
-        }
         if (pos === -1) {
           throw new ParserError(
             'invalid line (no matching double quote) "' + line + '"'
@@ -2027,7 +2014,8 @@ ICAL.parse = (function() {
 
       value = parser._rfc6868Escape(value);
       if (multiValue) {
-        result[lcname] = parser._parseMultiValue(value, multiValue, type, [], null, designSet);
+        var delimiter = mvdelim || multiValue;
+        result[lcname] = parser._parseMultiValue(value, delimiter, type, [], null, designSet);
       } else {
         result[lcname] = parser._parseValue(value, type, designSet);
       }
@@ -2438,14 +2426,16 @@ ICAL.Component = (function() {
     },
 
     _removeObjectByIndex: function(jCalIndex, cache, index) {
+      cache = cache || [];
       // remove cached version
-      if (cache && cache[index]) {
+      if (cache[index]) {
         var obj = cache[index];
         if ("parent" in obj) {
             obj.parent = null;
         }
-        cache.splice(index, 1);
       }
+
+      cache.splice(index, 1);
 
       // remove it from the jCal
       this.jCal[jCalIndex].splice(index, 1);
@@ -3052,9 +3042,9 @@ ICAL.Property = (function() {
      * The string representation of this component.
      * @return {String}
      */
-    toICAL: function() {
+    toICALString: function() {
       return ICAL.stringify.property(
-        this.jCal, this._designSet
+        this.jCal, this._designSet, true
       );
     }
   };
@@ -3062,10 +3052,12 @@ ICAL.Property = (function() {
   /**
    * Create an {@link ICAL.Property} by parsing the passed iCalendar string.
    *
-   * @param {String} str        The iCalendar string to parse
+   * @param {String} str                        The iCalendar string to parse
+   * @param {ICAL.design.designSet=} designSet  The design data to use for this property
+   * @return {ICAL.Property}                    The created iCalendar property
    */
-  Property.fromString = function(str) {
-    return new Property(ICAL.parse.property(str));
+  Property.fromString = function(str, designSet) {
+    return new Property(ICAL.parse.property(str, designSet));
   };
 
   return Property;
@@ -8169,7 +8161,7 @@ ICAL.RecurExpansion = (function() {
    *
    * var expand = new ICAL.RecurExpansion({
    *   component: event,
-   *   start: event.getFirstPropertyValue('DTSTART')
+   *   dtstart: event.getFirstPropertyValue('dtstart')
    * });
    *
    * // remember there are infinite rules
