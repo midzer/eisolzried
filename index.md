@@ -2,12 +2,12 @@
 layout: page
 title: Willkommen bei der Feuerwehr Eisolzried
 customjs:
-  - jekyll-search.min
-  - longlist.min
-  - jquery-2.2.3.min
-  - jquery-ui.min
   - ical.min
   - drcal.min
+  - jquery-ui.min
+  - longlist.min
+  - jekyll-search.min
+  - main
 ---
 
 ![Taferl](/assets/taferl.png){: .pull-left height="200" width="184" style="margin-right: 10px"}
@@ -34,19 +34,6 @@ Und nun viel Spaß beim Stöbern :)
   <ul id="results-container" class="list-unstyled"></ul>
 </div>
 
-<script type="text/javascript">
-      SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: 'search.json',
-        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-        noResultsText: 'Keine Suchergebnisse',
-        limit: 10,
-        fuzzy: false,
-        exclude: ['Welcome']
-      });
-</script>
-
 <ul id="posts" class="posts">
 {% for post in site.posts %}
   <li>
@@ -55,10 +42,6 @@ Und nun viel Spaß beim Stöbern :)
   </li>
 {% endfor %}
 </ul>
-
-<script type="text/javascript">
-  longlist(document.getElementById('posts'), {'perPage': 5});
-</script>
 
 <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
 </div>
