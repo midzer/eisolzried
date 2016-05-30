@@ -1,5 +1,5 @@
 var popup = $("#popup").dialog({ autoOpen: false, width: 150 });
-$.get("data/ffw.eisolzried@gmail.com.ics").then(buildCal);
+$.get("data/termine.ics").then(buildCal);
 
 function hasEventInDate(event, time)
 {
