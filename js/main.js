@@ -1,6 +1,22 @@
 var popup = $("#popup").dialog({ autoOpen: false, width: 150 });
 $.get("data/ffw.eisolzried@gmail.com.ics").then(buildCal);
 
+function hasEventInDate(event, time)
+{
+  if (event.isRecurring()) {
+    var expand = event.iterator(time);
+    if (expand.next().compare(time) == 0) {
+      return true;
+    }
+  }
+  else if (event.startDate.day == time.day &&
+           event.startDate.month == time.month &&
+           event.startDate.year == time.year) {
+    return true;
+  }
+  return false;
+}
+
 function buildCal(data) {
   var jCal = ICAL.parse(data);
   var comp = new ICAL.Component(jCal);
@@ -22,9 +38,7 @@ function buildCal(data) {
     event.detail.element.appendChild(dayNum);
     var time = ICAL.Time.fromJSDate(event.detail.date);
     for (var i in ev) {
-      var expand = ev[i].iterator(time);
-      var next = expand.next();
-      if (next.compare(time) == 0) {
+      if (hasEventInDate(ev[i], time)) {
         var dayEvent = document.createElement('div');
         dayEvent.className = 'dayevent';
         dayEvent.appendChild(document.createTextNode(ev[i].summary));
@@ -37,9 +51,7 @@ function buildCal(data) {
     if (event.target.tagName == 'DIV') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
       for (var i in ev) {
-        var expand = ev[i].iterator(time);
-        var next = expand.next();
-        if (next.compare(time) == 0) {
+        if (hasEventInDate(ev[i], time)) {
           popup.html(ev[i].description + " im " + ev[i].location + " um " + ev[i].startDate.toJSDate().toTimeString());
           popup.dialog("option", "title", ev[i].summary);
           popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
