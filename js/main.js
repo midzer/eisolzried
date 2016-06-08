@@ -1,4 +1,4 @@
-var popup = $("#popup").dialog({ autoOpen: false, width: 150 });
+var popup = $("#popup").dialog({ autoOpen: false, width: 200 });
 $.get("data/termine.ics").then(buildCal);
 
 function hasEventInDate(event, time)
