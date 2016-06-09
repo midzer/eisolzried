@@ -18,6 +18,8 @@ permalink: /links/
 
 [Günding](http://feuerwehr-guending.de/)
 
+[Lauterbach](http://fw-lauterbach.de/)
+
 [Thonstetten](http://www.ff-thonstetten.de/)
 
 ### Freunde
