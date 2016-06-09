@@ -365,7 +365,10 @@ a:visited { color: #ae002a; }
   text-decoration:none;
 }
 
-#popup {
+/* Calendar popup */
+/* ----------------------------------------------------------*/
+
+.ui-dialog-content {
   font-weight: normal;
   font-size: small;
 }

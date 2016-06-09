@@ -1,4 +1,3 @@
-var popup = $("#popup").dialog({ autoOpen: false, width: 200 });
 $.get("data/termine.ics").then(buildCal);
 
 function hasEventInDate(event, time)
@@ -15,6 +14,18 @@ function hasEventInDate(event, time)
     return true;
   }
   return false;
+}
+
+function createEventDetails(parent, event)
+{
+  parent.append($("<p>" + "Treffpunkt: " + event.location + "<br />" +
+                  "Beginn: " + event.startDate.toJSDate().toTimeString().substring(0, 5) + "<br />" +
+                  "Ende: " + event.endDate.toJSDate().toTimeString().substring(0, 5) + "</p>"));
+  parent.append($("<p>" + event.description + "</p>"));
+  var attachments = event.attachments;
+  for (var i in attachments) {
+    parent.append($("<a href=\"" + attachments[i].getFirstValue() + "\">Zusatzinfo</a>"));
+  }
 }
 
 function buildCal(data) {
@@ -52,10 +63,13 @@ function buildCal(data) {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
       for (var i in ev) {
         if (hasEventInDate(ev[i], time)) {
-          popup.html(ev[i].description + " im " + ev[i].location + " um " + ev[i].startDate.toJSDate().toTimeString());
-          popup.dialog("option", "title", ev[i].summary);
-          popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
-          popup.dialog("open");
+          var popup = $('<div />');
+          popup.html(createEventDetails(popup, ev[i]));
+          popup.dialog({
+            width: 200,
+            title: ev[i].summary,
+            position: { my: "left bottom", at: "right top", of: event.target }
+          });
           break;
         }
       }
@@ -80,3 +94,4 @@ limit: 10,
 fuzzy: false,
 exclude: ['Welcome']
 });
+
