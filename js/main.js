@@ -64,7 +64,7 @@ function buildCal(data) {
     if (event.target.tagName == 'DIV') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
       for (var i in ev) {
-        if (hasEventInDate(ev[i], time)) {
+        if (hasEventInDate(ev[i], time) && event.target.innerHTML == ev[i].summary) {
           popup.html(createEventDetails(ev[i]));
           popup.dialog("option", "title", ev[i].summary);
           popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
