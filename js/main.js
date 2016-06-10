@@ -16,16 +16,17 @@ function hasEventInDate(event, time)
   return false;
 }
 
-function createEventDetails(parent, event)
+function createEventDetails(event)
 {
-  parent.append($("<p>" + "Treffpunkt: " + event.location + "<br />" +
-                  "Beginn: " + event.startDate.toJSDate().toTimeString().substring(0, 5) + "<br />" +
-                  "Ende: " + event.endDate.toJSDate().toTimeString().substring(0, 5) + "</p>"));
-  parent.append($("<p>" + event.description + "</p>"));
+  var details = "<p>" + "Treffpunkt: " + event.location + "<br />" +
+                "Beginn: " + event.startDate.toJSDate().toTimeString().substring(0, 5) + "<br />" +
+                "Ende: " + event.endDate.toJSDate().toTimeString().substring(0, 5) + "</p>";
+  details += "<p>" + event.description + "</p>";
   var attachments = event.attachments;
   for (var i in attachments) {
-    parent.append($("<a href=\"" + attachments[i].getFirstValue() + "\">Zusatzinfo</a>"));
+    details += "<a href=\"" + attachments[i].getFirstValue() + "\">Zusatzinfo</a>";
   }
+  return details;
 }
 
 function buildCal(data) {
@@ -58,18 +59,16 @@ function buildCal(data) {
     }
   });
   cal.changeMonth(new Date());
+  var popup = $('<div />').dialog({ autoOpen: false, width: 200 });
   cal.addEventListener('click', function(event) {
     if (event.target.tagName == 'DIV') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
       for (var i in ev) {
         if (hasEventInDate(ev[i], time)) {
-          var popup = $('<div />');
-          popup.html(createEventDetails(popup, ev[i]));
-          popup.dialog({
-            width: 200,
-            title: ev[i].summary,
-            position: { my: "left bottom", at: "right top", of: event.target }
-          });
+          popup.html(createEventDetails(ev[i]));
+          popup.dialog("option", "title", ev[i].summary);
+          popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
+          popup.dialog("open");
           break;
         }
       }
