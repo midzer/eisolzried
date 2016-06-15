@@ -12,3 +12,5 @@ Danach kehrte die Festgemeinde zum Bürgerhaus zurück, in dem es nun Freibier s
 
 Wir bedanken uns bei allen Helferinnen und Helfern für dieses gelungene Fest.
 
+Der Merkur berichtete in einem [Artikel](http://www.merkur.de/lokales/dachau/feuerwehr-eisolzried-feuerwehrfahrzeug-weihe-eingeweiht-6464716.html).
+
