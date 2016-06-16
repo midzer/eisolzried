@@ -10,53 +10,54 @@ customjs:
   - main
 ---
 
-![Taferl](/assets/taferl.png){: .pull-left height="200" width="184" style="margin-right: 10px"}
+<div class="row">
 
-{:intro: .clearfix}
-Wir sind eine aktive Feuerwehr in Oberbayern, die überwiegend aus einem jungen Team besteht.
+  <div class="col-md-4">
+   <img src="/assets/taferl.png" alt="Taferl" height="300" width="276"/>
+  </div>
 
-Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
+<div class="col-md-8" markdown="1">
+{% include intro.md %}
+</div>
 
-Diese Webseite wird ständig weiterentwickelt und überarbeitet; also schau gerne öfter rein. Bei konkreten Fragen scheue Dich nicht uns zu [kontaktieren](/kontakt).
-
-Und nun viel Spaß beim Stöbern :)
-{: intro}
+</div>
 
 <div class="row">
-    <div class="col-sm-6">
-        <div class="list-group">
 
+  <div class="col-sm-6">
+    <div class="list-group">
 <div class="panel-heading" markdown="1">
 ### Neuigkeiten
 
 <div id="search-container">
-  <input type="text" id="search-input" placeholder="Suchen...">
-  <ul id="results-container" class="list-unstyled"></ul>
+ <input type="text" id="search-input" placeholder="Suchen...">
+ <ul id="results-container" class="list-unstyled"></ul>
 </div>
 
 <ul id="posts" class="posts">
 {% for post in site.posts %}
-  <li>
-    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </li>
+ <li>
+  <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+ </li>
 {% endfor %}
 </ul>
 
 <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
 </div>
 
-        </div>
     </div>
-    <div class="col-sm-6">
-        <div class="list-group">
+  </div>
+
+  <div class="col-sm-6">
+    <div class="list-group">
 
 <div class="panel-heading" markdown="1">
 {% include calendar.md %}
 </div>
 
-        </div>
     </div>
+  </div>
 
 </div>
 
