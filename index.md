@@ -7,7 +7,7 @@ customjs:
   - jquery-ui.min
   - longlist.min
   - jekyll-search.min
-  - main
+  - main.min
 ---
 
 <div class="row">
