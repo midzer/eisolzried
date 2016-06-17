@@ -6,7 +6,6 @@ customjs:
   - drcal.min
   - jquery-ui.min
   - longlist.min
-  - jekyll-search.min
   - main.min
 ---
 
@@ -26,14 +25,9 @@ customjs:
 
   <div class="col-sm-6">
     <div class="list-group">
+
 <div class="panel-heading" markdown="1">
 ### Neuigkeiten
-
-<div id="search-container">
- <input type="text" id="search-input" placeholder="Suchen...">
- <ul id="results-container" class="list-unstyled"></ul>
-</div>
-
 <ul id="posts" class="posts">
 {% for post in site.posts %}
  <li>
@@ -42,7 +36,6 @@ customjs:
  </li>
 {% endfor %}
 </ul>
-
 <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
 </div>
 

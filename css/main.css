@@ -59,6 +59,12 @@ a:visited { color: #ae002a; }
   color: #ae002a;
 }
 
+/* Bootstrap fix */
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+
 /* Site footer */
 
 .site-footer {
@@ -289,7 +295,6 @@ a:visited { color: #ae002a; }
   .post-content h3 { font-size: 22px; }
   .post-content h4 { font-size: 18px; }
   .post-content blockquote { padding-left: 10px; }
-
 }
 
 /* Calendar styles */
