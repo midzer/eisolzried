@@ -11,11 +11,11 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{{ site.baseurl }}/">Feuerwehr Eisolzried</a>
-      <form class="navbar-form navbar-left">
-        <div class="form-group" id="search-container">
-          <input type="search" class="form-control" id="search-input" placeholder="Suchen...">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group search">
+          <input type="text" class="form-control" id="search-input" placeholder="Suchen...">
+          <ul class="search-results" id="results-container"></ul>
         </div>
-        <ul id="results-container" class="list-unstyled"></ul>
       </form>
     </div>
 
