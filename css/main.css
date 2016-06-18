@@ -399,7 +399,7 @@ a:visited { color: #ae002a; }
 .search-results {
   display: none;
   position: absolute;
-  top: 75px;
+  margin-top: 16px;
   z-index: 10;
   background: #fdfdfd;
   border: 1px solid;
