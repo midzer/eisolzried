@@ -1,4 +1,4 @@
-Wir sind eine aktive Feuerwehr in Oberbayern, die überwiegend aus einem jungen Team besteht.
+Wir sind eine aktive Feuerwehr aus der Gemeinde Bergkirchen in Oberbayern, die überwiegend aus einem jungen Team besteht.
 
 Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
 
