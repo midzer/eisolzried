@@ -8,142 +8,191 @@ als [PDF](/data/satzung.pdf) oder [ODT](/data/satzung.odt)
 
 - - -
 
-Die Gemeinde Bergkirchen erläßt auf Grund von Art. 23 Satz 1 und Art. 24 Abs. 1 Nr. 1 der Gemeindeordnung folgende **S a t z u n g**
+### § 1 Name, Sitz, Geschäftsjahr
 
-### I. Allgemeines
+(1) Der Verein führt den Namen „ Freiwillige Feuerwehr Eisolzried e.V. “. Er soll in das Vereinsregister eingetragen werden.
 
-§ 1 Organisation, Rechtsgrundlagen
+(2) Der Verein hat seinen Sitz in Deutenhausen
 
-(1) Die Freiwillige Feuerwehr Eisolzried ist eine öffentliche Einrichtung der Gemeinde. Zur Gewinnung der notwendigen Anzahl von Feuerwehrdienstleistenden bedient  sie sich der Unterstützung des Vereins „Freiwillige Feuerwehr Eisolzried e.V.“.
+(3) Geschäftsjahr des Vereins ist das Kalenderjahr.
 
-(2) Rechtsgrundlage für die Freiwillige Feuerwehr, vor allem für die Rechte und Pflichten ihrer Feuerwehrdienstleistenden, sind das Bayerische Feuerwehrgesetz (BayFwG), die zu seiner Ausführung erlassenen Rechtsvorschriften und diese Satzung.
 
-§ 2 Freiwillige Leistungen
+### § 2 Vereinszweck
 
-(1) Die Freiwillige Feuerwehr kann aufgrund dieser Satzung insbesondere folgende freiwillige Leistungen erbringen:
+(1) Zweck des Vereins ist die Unterstützung der Freiwilligen Feuerwehr Eisolzried, ins-besondere durch die Werbung und das Stellen von Einsatzkräften. Dabei verfolgt er ausschließlich und unmittelbar gemeinnützige Zwecke im Sinne der §§ 51 bis 68 der Abgabeordnung.
 
-1. Hilfeleistung, die nicht zu den gesetzlichen Aufgaben der Feuerwehr gehören (z.B. - jeweils auf Antrag des Eigentümers oder Nutzungsberechtigten - das Stellen von Wachen nach dem Ende der Brandgefahr oder das Abräumen von Schadensstellen, soweit es nicht zur Abwehr weiterer Gefahren notwendig ist),
+(2) Der Verein ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke. Mittel des Vereins dürfen nur für die satzungsmäßigen Zwecke verwendet werden. Die Mitglieder erhalten keine Gewinnanteile und in Ihrer Eigenschaft als Mitglieder auch keine sonstigen Zuwendungen aus Vereinsmitteln. Es darf keine Person durch Verwaltungsausgaben, die den Zwecken des Vereins fremd sind, oder durch unverhältnismäßig hohe Vergütungen begünstigt werden.
 
-2. Überlassung von Gerät oder Material zum Gebrauch oder Verbrauch.
+(3) Die Vereinsämter sind Ehrenämter.
 
-(2) Voraussetzung freiwilliger Leistungen ist, daß die Einsatzbereitschaft der Freiwilligen Feuerwehr zur Erfüllung ihrer gesetzlichen Aufgaben dadurch nicht beeinträchtigt wird. Auf die Gewährung freiwilliger Leistungen besteht kein Rechtsanspruch.
 
-(3) Über die Gewährung von Leistungen im Sinne von Absatz 1 Nrn. 1 und 2 entscheidet der Kommandant, soweit die Leistungen in unmittelbarem Zusammenhang mit dem Einsatz der Feuerwehr erbracht werden.
+### § 3 Mitglieder
 
-### II. Personal
+(1) Mitglieder des Vereins können sein:
 
-§ 3
+1. Feuerwehrdienstleistende (aktive Mitglieder),
 
-(1) Die Wahl des Kommandanten findet bei einer Dienstversammlung statt. Die Gemeinde lädt hierzu die Feuerwehrdienstleistenden mindestens zwei Wochen vor dem Wahltag ein.
+2. ehemalige Feuerwehrdienstleistende (passive Mitglieder),
 
-(2) Der Bürgermeister oder ein Stellvertreter oder Beauftragter (Art. 39 GO) leitet die Wahl. Ihm stehen zwei von der Versammlung durch Zuruf bestimmte Beisitzer zur Seite. Werden mehr als zwei Personen durch Zuruf vorgeschlagen, findet eine Wahl zwischen den vorgeschlagenen Personen statt. Der Wahlleiter und die Beisitzer bilden den Wahlausschuß. Wer selbst Wahlbewerber ist, kann nicht Mitglied des Wahlausschusses sein. Der Wahlausschuß wird daher erst nach Abgabe der Wahlvorschläge gebildet.
+3. fördernde Mitglieder,
 
-(3) Jeder Wahlberechtigte hat eine Stimme. Stellvertretung ist nicht zulässig.
+4. Ehrenmitglieder.
 
-(4) Der Wahlleiter erläutert die Grundsätze des Wahlverfahrens.
+(2) Zu den aktiven Mitgliedern zählen auch die Feuerwehranwärter. Personen, die aus dem aktiven Feuerwehrdienst ausscheiden, werden passive Mitglieder, wenn sie nicht aus dem Verein austreten.
+Fördernde Mitglieder unterstützen den Verein insbesondere durch besondere finanzielle Beiträge oder besondere Dienstleistungen. Zu Ehrenmitglieder können Personen ernannt werden, die sich als Feuerwehrdienstleistende oder auf sonstige Weise um das Feuerwehrwesen besondere Verdienste erworben haben.
 
-1. Wahlvorschläge, Schriftlichkeit der Wahl
 
-Die Wahlberechtigten schlagen wählbare Teilnehmer schriftlich oder durch Zuruf der Wahlversammlung zur Wahl vor. Der Wahlleiter nennt die Vorgeschlagenen und befragt sie, ob sie sich der Wahl stellen wollen. Die Vorschläge können mündlich begründet werden; über sie kann auch eine Aussprache stattfinden. Sie wird geschlossen, wenn keine Wortmeldungen mehr vorliegen oder wenn die Versammlung mit Mehrheit der Wahlberechtigten den Schluß der Aussprache beschließt.
+### § 4 Erwerb der Mitgliedschaft
 
-Die Wahl wird schriftlich mit Stimmzetteln durchgeführt; diese dürfen kein äußerliches Kennzeichen tragen, das sie von den im gleichen Wahlgang verwendeten Stimmzetteln unterscheidet. Der Wahlleiter läßt auf die Stimmzettel die Namen der wählbaren und zur Kandidatur bereiten Bewerber setzen. Wird nur ein oder kein Bewerber zur Wahl vorgeschlagen, so wird die Wahl ohne Bindung an einen Bewerber durchgeführt.
+(1) Mitglied des Vereins kann jede Person werden, die das 14. Lebensjahr vollendet hat. Sie soll ihren Wohnsitz in Deutenhausen/Eisolzried haben und für den Feuerwehrdienst geeignet sein.
 
-2. Wahlgang, Stimmabgabe
+(2) Der Antrag zur Aufnahme in den Verein ist schriftlich beim Vorstand einzureichen. Minderjährige müssen die Zustimmmung ihrer (ihres) gesetzlichen Vertreter(s) nachweisen.
 
-Die Wahl ist geheim; die Möglichkeit geheimer Stimmabgabe ist vom Wahlleiter sicherzustellen. Gewählt wird durch Ankreuzen des im Stimmzettel angeführten Bewerbers. Steht nur ein Bewerber zur Wahl, so kann dadurch gewählt werden, daß der Wahlvorschlag in einer jeden Zweifel ausschließenden Weise (z.B. mit „Ja“ oder „Nein“ oder mit Durchstreichen des Namens des Bewerbers) gekennzeichnet oder daß der Stimmzettel unverändert abgegeben wird. Wird der aufgeführte Bewerber durchgestrichen oder enthält der Stimmzettel keinen vorgeschlagenen Bewerber, so kann auch ein nicht zur Wahl vorgeschlagener wählbarer Feuerwehrdienstleistender durch handschriftliche Eintragung seines Namens gewählt werden.
+(3) Über die Aufnahme entscheidet der Vorstand. Er ist nicht verpflichtet, etwaige Ablehnungsgründe anzugeben.
 
-Der Wahlberechtigte hat den ausgefüllten Stimmzettel zusammenzufalten und dem Wahlleiter oder dem von diesem bestimmten Beisitzer zu übergeben. Der Wahlausschuß prüft die Stimmberechtigung des Abstimmenden. Bei Bedarf hat die Gemeinde hierzu vor der Wahl eine Wählerliste anzulegen. Wird die Stimmberechtigung anerkannt, so ist der Stimmzettel in einen Behälter zu legen. Der Wahlausschuß prüft vor Beginn des Wahlgangs, ob der Behälter leer ist. Wird der Stimmberechtigung eines Anwesenden widersprochen, entscheidet der Wahlausschuß.
+(4) Die Ernennung zum Ehrenmitglied erfolgt auf Vorschlag des Vorstandes durch die Mitgliederversammlung mit der Mehrheit der von zwei Drittel der erschienenen und abstimmenden Mitglieder.
 
-3. Feststellung des Wahlergebnisses, Losentscheid
 
-Nach Abschluß der Wahl prüft der Wahlausschuß den Inhalt der Stimmzettel, zählt sie aus und stellt das Wahlergebnis fest. Gewählt ist, wer mehr als die Hälfte der abgegebenen gültigen Stimmen erhält. Leere Stimmzettel sind ungültig, es sei denn, es stand nur ein Bewerber zur Wahl. Erhält kein Bewerber diese Mehrheit, so findet Stichwahl unter den Bewerbern statt, die bei der ersten Wahl die höchste Stimmzahl erhalten haben. Bei Stimmengleichheit von mehr als zwei Bewerbern entscheidet das Los darüber, wer in die Stichwahl kommt. Die Wahl wird auch wiederholt, wenn nur ein oder kein Bewerber zur Wahl vorgeschlagen war und kein Feuerwehrdienstleistender mehr als die Hälfte der abgegebenen gültigen Stimmen erhalten hat. Bei der Stichwahl ist der Bewerber gewählt, der von den gültigen abgegebenen Stimmen die höchste Stimmenzahl erhält. Bei gleicher Stimmenzahl entscheidet das Los, das der Wahlleiter sofort nach Feststellung des Ergebnisses der Stichwahl in der Versammlung ziehen läßt.
+### § 5 Beendigung der Mitgliedschaft
 
-4. Wahlannahme
+(1) Die Mitgliedschaft endet:
 
-Nach der Wahl befragt der Wahlleiter den Gewählten, ob er die Wahl annimmt. Lehnt er ab, ist die Wahl zu wiederholen.
+1. mit dem Tod des Mitglieds,
 
+2. durch Austritt,
 
-(5) Der Wahlleiter läßt über die Wahl, die Feststellung des Wahlergebnisses und die Wahlannahme eine Niederschrift fertigen, die er und die Beisitzer unterzeichnen.
+3. durch Streichung von der Mitgliederliste,
 
-(6) Die Absätze 1 bis 5 gelten für die Wahl des Stellvertreters des Feuerwehrkommandanten entsprechend.
+4. durch Ausschluß.
 
-§ 4 Verpflichtung
+(2) Der Austritt ist dann wirksam, wenn er dem Vorstand gegenüber schriftlich erklärt worden ist.
 
-Der Kommandant verpflichtet neu aufgenommene ehrenamtliche Feuerwehrdienstleistende durch Handschlag zur Erfüllung ihrer Pflichten nach den für die Feuerwehren geltenden Rechts- und Verwaltungsvorschriften. Er soll ihnen eine Satzung für die Freiwillige Feuerwehr überreichen.
+(3) Ein Mitglied kann durch Beschluß des Vorstands von der Mitgliederliste gestrichen werden, wenn es trotz zweimaliger Mahnung mit der Erfüllung seiner Beitragspflicht im Rückstand ist. Die Streichung darf erst beschlossen werden, wenn seit der Absendung des zweiten Mahnschreibens drei Monate verstrichen sind. Dem Mitglied ist die Streichung schriftlich mitzuteilen.
 
-§ 5 Übertragung besonderer Aufgaben
+(4) Ein Mitglied kann, wenn es gegen die Vereinsinteressen gröblich verstoßen hat, durch Beschluß des Vorstands aus dem Verein ausgeschlossen werden. Vor der Entscheidung ist dem Betroffenen unter Setzung einer angemessenen Frist Gelegenheit zu geben, sich schriftlich oder persönlich gegenüber dem Vorstand zu rechtfertigen.
+Dem Betroffenen ist der Ausschluß schriftlich mitzuteilen. Gegen den Ausschluß steht ihm das Recht der Berufung an die Mitgliederversammlung zu. Die Berufung muß innerhalb einer Frist von einem Monat ab Zugang des Ausschlußbeschlusses beim Vorstand eingelegt sein. Ist die Berufung rechtzeitig eingelegt, hat der Vorstand sie der nächsten Mitgliederversammlung zur Entscheidung vorzulegen. Geschieht das nicht, gilt der Ausschlußbeschluß als nicht erlassen.
 
-Zur Erfüllung besonderer Aufgaben sind geeignete Feuerwehrdienstleistende zu bestellen (z.B. Jugendwart, Gerätewart). Für die Bestellung ehrenamtlicher Feuerwehrdienstleistender ist der Kommandant zuständig.
 
-§ 6 Persönliche Ausstattung
+### § 6 Mitgliedsbeiträge
 
-Die Feuerwehrdienstleistenden haben die empfangene persönliche Ausstattung pfleglich zu behandeln und nach dem Ausscheiden aus dem Feuerwehrdienst zurückzugeben. Für verlorengegangene oder durch außerdienstlichen Gebrauch beschädigte oder unbrauchbar gewordene Teile der Ausstattung kann die Gemeinde Ersatz verlangen.
+Von den Mitgliedern wird ein Jahresbeitrag erhoben, dessen Höhe der Vorstand festsetzt. Ehrenmitglieder sind von der Beitragspflicht befreit.
 
-§ 7 Anzeigepflicht bei Schäden
 
-Feuerwehrdienstleistende haben dem Kommandanten unverzüglich zu melden:
+### § 7 Organe des Vereins
 
-- im Dienst erlittene (eigene) Körper- und Sachschäden
+Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
 
-- Verlust oder Schäden an der persönlichen Ausstattung und der sonstigen Ausrüstung der Feuerwehr.
 
-Soweit Ansprüche für oder gegen die Gemeinde in Frage kommen, hat der Kommandant die Meldung an die Gemeinde weiterzuleiten. Hat die Gemeinde nach § 1552 RVO und § 22 der Satzung des Bayerischen Gemeindeunfallversicherungsverbandes eine Unfallanzeige zu erstatten, so ist sie unverzüglich (bei Unfällen mit Todesfolge oder mit mehr als drei Verletzten sofort) zu unterrichten.
+### § 8 Vorstand
 
-§ 8 Dienstverhinderung
+(1) Der Vorstand besteht aus folgenden Vereinsmitgliedern:
 
-Von der gesetzlichen Verpflichtung zur Leistung des Feuerwehrdienstes (Art. 6 Abs. 1 Satz 2 BayFwG) sind Feuerwehrdienstleistende nur befreit, soweit sie vorrangigen rechtlichen Pflichten nachkommen müssen oder dringende wirtschaftliche oder persönliche Gründe dies rechtfertigen. Für das Fernbleiben von Ausbildungsveranstaltungen in diesen Fällen haben sich Feuerwehrdienstleistende vor der Veranstaltung beim Kommandanten zu entschuldigen. Im übrigen haben Feuerwehrdienstleistende dem Kommandanten Mitteilung zu machen, wenn sie länger als fünf Wochen vom Wohnort abwesend oder durch andere Umstände an der Ausübung des Feuerwehrdienstes gehindert sein werden. Der Wegzug aus der Gemeinde ist in jedem Fall zu melden.
+1.1 dem Vorsitzenden,
 
-§ 9 Pflichtverletzungen
+1.2 dem stellvertretenden Vorsitzenden,
 
-Der Kommandant kann Verletzungen von Dienstpflichten durch folgende Maßnahmen ahnden:
+1.3 dem Schriftführer,
 
-- mündlicher oder schriftlicher Verweis
+1.4 dem Kassenwart,
 
-- Androhung des Ausschlusses
+1.5 dem Zeugwart,
 
-- Ausschluß (Art. 6 Abs. 3 Satz 2 BayFwG, § 10 Abs. 2 dieser Satzung).
+1.6 dem Kommandanten der Freiwilligen Feuerwehr Eisolzried und dessen Stellvertreter, soweit sie dem Verein angehören und nicht in eine Funktion gemäß 1.1 bis 1.4 gewählt werden,
 
-§ 10 Austritt und Ausschluß
+1.7 den aktiven Führungsdienstgraden der Freiwilligen Feuerwehr Eisolzried, soweit sie dem Verein angehören und nicht in eine Funktion gemäß 1.1 bis 1.4 gewählt werden.
 
-(1) Der Austritt aus der Freiwilligen Feuerwehr ist dem Kommandanten gegenüber schriftlich zu erklären.
+(2) Die unter Absatz 1 Nr. 1.1 bis 1.4 genannten Vorstandsmitglieder werden von der Mitgliederversammlung auf sechs Jahre gewählt. Der Vorsitzende ist in geheimer Abstimmung zu wählen. Die Vorstandsmitglieder bleiben auch nach dem Ablauf ihrer Amtszeit bis zur Neuwahl im Amt.
 
-(2) Der Feuerwehrkommandant hat einem Feuerwehrdienstleistenden, den er gemäß Art. 6 Abs. 3 Satz 2 BayFwG wegen gröblicher Verletzung seiner Dienstpflichten vom Feuerwehrdienst ausschließen will, Gelegenheit zu geben, sich zu den für die Entscheidung erheblichen Tatsachen zu äußern.
+(3) Die aktiven Führungsdienstgrade werden durch den Kommandanten und dessen Stellvertreter ernannt und abberufen; ihre Amtszeit endet mit Austritt aus dem aktiven Dienst.
+(4) Außer durch Tod erlischt das Amt eines Vorstandsmitglieds mit dem Ausschluß aus dem Verein, durch Amtsenthebung und Rücktritt. Die Mitgliederversammlung kann jederzeit den gesamten Vorstand oder einzelne seiner Mitglieder ihres Amtes entheben. Die Vorstandsmitglieder können jederzeit schriftlich ihren Rücktritt erklären.
 
-Eine gröbliche Verletzung  von Dienstpflichten ist insbesondere gegeben bei 
 
-- unehrenhaften Verhalten im Dienst
+### § 9 Zuständigkeit des Vorstands
 
-- grobem Vergehen gegen Kameraden im Dienst
+(1) Der Vorstand ist für alle Angelegenheiten des Vereins zuständig, die nicht durch diese Satzung anderen Vereinsorganen vorbehalten sind. Er hat vor allem folgende Aufgaben:
+1. Vorbereitung der Mitgliederversammlung und Aufstellung der Tagesordnung,
 
-- fortgesetzter Nachlässigkeit oder Nichtbefolgen dienstlicher Anordnungen
+2. Einberufung der Mitgliederversammlung durch den Vorsitzenden oder stellvertretenden 	Vorsitzenden,
 
-- Trunkenheit im Dienst
+3. Vollzug der Beschlüsse der Mitgliederversammlung,
 
-- Aufhetzen zum Nichtbeachten von Anordnungen
+4. Verwaltung des Vereinsvermögens,
 
-- dienstwidriger Benutzung oder mutwilliger Beschädigung von Dienstkleidung, Geräten und sonstigen Ausrüstungsgegenständen der Feuerwehr.
+5. Erstellung des Jahres- und Kassenberichts,
 
-Der Feuerwehrkommandant hat dem Ausgeschlossenen den Ausschluß schriftlich zu erklären.
+6. Beschlußfassung über Aufnahme, Streichung und Ausschluß von Vereinsmitgliedern,
 
-### III. Besondere Pflichten des Kommandanten
+7. Beschlußfassung über Ehrungen und Vorschläge für Ehrenmitgliedschaften.
 
-§ 11 Dienst- und Ausbildungsplan
+(2) Der Vorsitzende oder der stellvertretende Vorsitzende vertreten jeweils allein den Verein gerichtlich und außergerichtlich. Rechtsgeschäfte mit einem Betrag über 500,-- DM sind für den Verein nur verbindlich, wenn der Vorstand zugestimmt hat.
 
-(1) Der Kommandant stellt jährlich (wenn nötig auch für kürzere Zeiträume) einen Dienst- und Ausbildungsplan auf. In dem Plan ist jeden Monat mindestens eine Übung oder ein Unterricht vorzusehen. Zu den Übungen können auch geeignete Sportveranstaltungen der Feuerwehr gehören.
 
-§ 12 Dienstreisen
+## § 10 Sitzung des Vorstandes
 
-Der Kommandant hat dafür zur sorgen, daß vor Dienstreisen von Feuerwehrdienstleistenden die Genehmigung der Gemeinde eingeholt wird (vgl. auch Art. 8 Abs. 1 Satz 3 BayFwG). Er hat auch für seine Dienstreisen die Genehmigung der Gemeinde einzuholen.
+(1) Für die Sitzung des Vorstands sind die Mitglieder vom Vorsitzenden, bei seiner Verhinderung vom stellvertretenden Vorsitzenden rechtzeitig, jedoch mindestens eine Woche vorher einzuladen. Der Vorstand ist beschlußfähig, wenn mindestens die Hälfte der Mitglieder anwesend sind. Im Falle der Beschlußunfähigkeit ist innerhalb von 2 Wochen eine neue Vorstandssitzung mit gleicher Tagesordnung einzuberufen, die dann ohne Rücksicht auf die Zahl der erschienen Vorstandsmitglieder beschlußfähig ist.
 
-§ 13 Jahresbericht
+(2) Der Vorstand entscheidet mit einfacher Mehrheit der abgegebenen gültigen Stimmen. Bei Stimmengleichheit entscheidet die Stimme des Vorsitzenden bzw. des die Sitzung leitenden Vorstandsmitglieds.
 
-(1) Der Kommandant unterrichtet die Gemeinde zum Ende des Kalenderjahres über den Personalstand der Freiwilligen Feuerwehr. Neu eingetretene oder aus dem Feuerwehrdienst ausgeschiedene Mitglieder sind namentlich mitzuteilen. In dem Bericht ist die Anzahl der Mannschafts- und Führungsdienstgrade und der Feuerwehrdienstleistenden anzugeben, die über das übliche Maß hinaus Feuerwehrdienst leisten (vgl. Art. 11 Abs. 1 Satz 2 BayFwG). Soweit die Gemeinde nicht über einzelne Einsätze unterrichtet wird, ist im Jahresbericht auch eine Übersicht über die Einsätze des abgelaufenen Jahres zu geben.
+(3) Für die Benennung von Ehrenmitgliedern ist eine 4/5 Mehrheit notwendig.
 
-(2) Die Unterrichtspflichten gemäß Art. 6 Abs. 3 Satz 2 BayFwG, § 7 Satz 2 und § 11 Abs. 2 dieser Satzung bleiben unberührt.
+(4) Über die Sitzung des Vorstands ist vom Schriftführer ein Protokoll aufzunehmen. Die Niederschrift soll Ort und Zeit der Vorstandssitzung, die Namen der Teilnehmer, die Beschlüsse und das Abstimmungsergebnis enthalten.
 
-### IV.
 
-§ 14 Inkrafttreten
+### § 11 Kassenführung
 
-Die Satzung tritt am $DATUM in Kraft.
+(1) Die zur Erreichung des Vereinszweckes notwendigen Mittel werden insbesondere aus Beiträgen und Spenden aufgebracht. Die Mittel des Vereins dürfen nur für die satzungsmäßigen Zwecke verwendet werden.
+
+(2) Der Kassenwart hat über die Kassengeschäfte Buch zu führen und eine Jahresrechnung zu erstellen. Zahlungen dürfen nur aufgrund von Auszahlungsanordnungen des Vorsitzenden oder - bei dessen Verhinderung - des stellvertretenden Vorsitzenden geleistet werden.
+
+(3) Die Jahresrechnung ist von zwei Kassenprüfern, die nicht dem Vorstand angehören, zu prüfen. Sie ist der Mitgliederversammlung zur Genehmigung vorzulegen.
+
+
+### § 12 Mitgliederversammlung
+
+(1) Die Mitgliederversammlung ist für folgende Angelegenheiten zuständig:
+
+1. Entgegennahme des Jahres- und Kassenberichts, Genehmigung der Jahresrechnung, Ent-	lastung des Vorstands,
+
+2. Wahl und Abberufung der Mitglieder des Vorstands und der Kassenprüfer,
+
+3. Beschlußfassung über Änderung der Satzung und über die Auflösung des Vereins,
+
+4. Beschlußfassung über die Berufung gegen einen Ausschlußbeschluß des Vorstands,
+
+
+(2) Die ordentliche Mitgliederversammlung findet jährlich mindestens einmal statt. Außerdem muß die Mitgliederversammlung einberufen werden, wenn das Interesse des Vereins es erfordert oder wenn die Einberufung von einem Fünftel der Mitglieder unter Angabe des Zwecks und der Gründe vom Vorstand schriftlich verlangt wird.
+
+(3) Jede Mitgliederversammlung wird vom Vorsitzenden, bei seiner Verhinderung vom stellvertretenden Vorsitzenden, unter Einhaltung einer Frist von zwei Wochen schriftlich einberufen. Dabei ist die vorgesehene Tagesordnung mitzuteilen.
+
+(4) Jedes Mitglied kann bis spätestens eine Woche vor dem Tag der Mitgliederversammlung beim Vorsitzenden schriftlich beantragen, daß weitere Angelegenheiten nachträglich auf die Tagesordnung gesetzt werden. Über Anträge und Ergänzung der Tagesordnung, die erst in der Versammlung gestellt werden, beschießt die Mitgliederversammlung.
+
+
+## § 13 Beschlußfassung der Mitgliederversammlung
+
+(1) Die Mitgliederversammlung wird vom Vorsitzenden, bei seiner Verhinderung vom stellvertretenden Vorsitzenden oder einem anderen Vorstandsmitglied geleitet. Bei Wahlen kann die Versammlungsleitung für die Dauer des Wahlgangs und der vorhergehenden Aussprache einem Wahlausschuß übertragen werden.
+
+(2) In der Mitgliederversammlung ist jedes  anwesende Mitglied - ausgenommen förderndes Mitglied - stimmberechtigt.
+
+(3) Soweit die Satzung nichts anderes bestimmt, entscheidet bei der Beschlußfassung die einfache Mehrheit der abgegebenen Stimmen; Stimmenthaltungen bleiben außer Betracht. Zur Änderung der Satzung und zur Auflösung des Vereins ist eine Mehrheit von drei Viertel der abgegebenen Stimmen erforderlich.
+
+(4) Die Art der Abstimmung wird grundsätzlich vom Vorsitzenden als Versammlungsleiter festgesetzt. Die Abstimmung muß jedoch geheim durchgeführt werden, wenn ein Fünftel der erschienen Mitglieder dies beantragt.
+
+(5) Über den Verlauf der Mitgliederversammlung ist ein Protokoll aufzunehmen, das vom Vorsitzenden zu unterzeichnen ist und von jedem Vereinsmitglied eingesehen werden kann. Die Niederschrift soll Ort und Zeit der Versammlung, die Zahl der erschienen Mitglieder, die Person des Versammlungsleiters, die Tagesordnung, die Beschlüsse, die Abstimmungsergebnisse und die Art der Abstimmung enthalten.
+
+
+### § 14 Ehrungen
+
+An Personen, die sich im Feuerwehrdienst oder auf andere Weise besondere Verdienste um das Feuerwehrwesen erworben haben, kann die Ehrenmitgliedschaft des Vereins verliehen werden.
+
+
+### § 15 Auflösung
+
+Die Auflösung des Vereins kann nur in einer zu diesem Zweck einberufenen Mitglieder-versammlung beschlossen werden. Bei Auflösung des Vereins, bei Entziehung oder Verlust seiner Rechtsfähigkeit oder bei Wegfall seines bisherigen Zwecks fällt das Vermögen des Vereins an die Gemeinde Bergkirchen, die es unmittelbar und ausschließlich für das Feuerwehrwesen zu verwenden hat.
+
+
+### § 16
+
+Die Satzung tritt am 24.03.1995 in Kraft. 
+
+Auf das Versammlungsprotokoll wird Bezug genommen.
 
