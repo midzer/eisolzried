@@ -15,9 +15,13 @@ customjs:
    <img src="/assets/taferl.png" alt="Taferl" height="300" width="276"/>
   </div>
 
-<div class="col-md-8" markdown="1">
+<div class="col-md-4" markdown="1">
 {% include intro.md %}
 </div>
+
+  <div class="col-md-4">
+   <img src="/assets/wappen.png" alt="Wappen Bergkirchen" height="300" width="284"/>
+  </div>
 
 </div>
 
