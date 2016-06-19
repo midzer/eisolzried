@@ -12,7 +12,7 @@ customjs:
 <div class="row">
 
   <div class="col-md-4">
-   <img src="/assets/taferl.png" alt="Taferl" height="300" width="276"/>
+   <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried" height="300" width="276"/>
   </div>
 
 <div class="col-md-4" markdown="1">
