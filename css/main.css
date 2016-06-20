@@ -19,9 +19,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #de002a; text-decoration: none; }
-a:hover   { color: #ae002a; text-decoration: underline; }
-a:visited { color: #ae002a; }
+a         { color: #d72629; text-decoration: none; }
+a:hover   { color: #ab1e21; text-decoration: underline; }
+a:visited { color: #ab1e21; }
 
 /* Utility */
 
@@ -46,17 +46,17 @@ a:visited { color: #ae002a; }
 /* Site header */
 
 .navbar-default .navbar-brand {
-  color: #de002a;
+  color: #d72629;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #ae002a;
+  color: #ab1e21;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #de002a;
+  color: #d72629;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #ae002a;
+  color: #ab1e21;
 }
 
 /* Site footer */
@@ -325,7 +325,7 @@ a:visited { color: #ae002a; }
   padding-right: 0.5ex;
 }
 .calendar .dayevent {
-  color: #de002a;
+  color: #d72629;
   cursor: pointer;
   padding-left: 0.5ex;
 }
@@ -377,8 +377,8 @@ a:visited { color: #ae002a; }
 /* ----------------------------------------------------------*/
 
 .paging-controls {text-align: center;}
-.paging-controls a {color: #de002a;}
-.paging-controls a:visited {color: #ae002a;}
+.paging-controls a {color: #d72629;}
+.paging-controls a:visited {color: #ab1e21;}
 .paging-controls .prev {float: left;}
 .paging-controls .prev:before {content: "< neuere";}
 .paging-controls .next {float: right;}
