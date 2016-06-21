@@ -10,7 +10,7 @@ images:
     text: Unser TSF
 ---
 
-### Gruppe
+## Gruppe
 
 Alle Mitglieder der Feuerwehr Eisolzried mit Ehrenmitglied Hubert Huber vor dem Feuerwehr- und Bürgerhaus im Sommer 2013:
 
@@ -45,7 +45,7 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
 </table>
 </div>
 
-### Fahrzeug
+## Fahrzeug
 
 {% include gal.html image="tsf.jpg" %}
 

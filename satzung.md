@@ -8,7 +8,7 @@ als [PDF](/data/satzung.pdf) oder [ODT](/data/satzung.odt) zum herunterladen
 
 - - -
 
-### § 1 Name, Sitz, Geschäftsjahr
+## § 1 Name, Sitz, Geschäftsjahr
 
 (1) Der Verein führt den Namen „ Freiwillige Feuerwehr Eisolzried e.V. “. Er soll in das Vereinsregister eingetragen werden.
 
@@ -17,7 +17,7 @@ als [PDF](/data/satzung.pdf) oder [ODT](/data/satzung.odt) zum herunterladen
 (3) Geschäftsjahr des Vereins ist das Kalenderjahr.
 
 
-### § 2 Vereinszweck
+## § 2 Vereinszweck
 
 (1) Zweck des Vereins ist die Unterstützung der Freiwilligen Feuerwehr Eisolzried, ins-besondere durch die Werbung und das Stellen von Einsatzkräften. Dabei verfolgt er ausschließlich und unmittelbar gemeinnützige Zwecke im Sinne der §§ 51 bis 68 der Abgabeordnung.
 
@@ -26,7 +26,7 @@ als [PDF](/data/satzung.pdf) oder [ODT](/data/satzung.odt) zum herunterladen
 (3) Die Vereinsämter sind Ehrenämter.
 
 
-### § 3 Mitglieder
+## § 3 Mitglieder
 
 (1) Mitglieder des Vereins können sein:
 
@@ -42,7 +42,7 @@ als [PDF](/data/satzung.pdf) oder [ODT](/data/satzung.odt) zum herunterladen
 Fördernde Mitglieder unterstützen den Verein insbesondere durch besondere finanzielle Beiträge oder besondere Dienstleistungen. Zu Ehrenmitglieder können Personen ernannt werden, die sich als Feuerwehrdienstleistende oder auf sonstige Weise um das Feuerwehrwesen besondere Verdienste erworben haben.
 
 
-### § 4 Erwerb der Mitgliedschaft
+## § 4 Erwerb der Mitgliedschaft
 
 (1) Mitglied des Vereins kann jede Person werden, die das 14. Lebensjahr vollendet hat. Sie soll ihren Wohnsitz in Deutenhausen/Eisolzried haben und für den Feuerwehrdienst geeignet sein.
 
@@ -53,7 +53,7 @@ Fördernde Mitglieder unterstützen den Verein insbesondere durch besondere fina
 (4) Die Ernennung zum Ehrenmitglied erfolgt auf Vorschlag des Vorstandes durch die Mitgliederversammlung mit der Mehrheit der von zwei Drittel der erschienenen und abstimmenden Mitglieder.
 
 
-### § 5 Beendigung der Mitgliedschaft
+## § 5 Beendigung der Mitgliedschaft
 
 (1) Die Mitgliedschaft endet:
 
@@ -73,17 +73,17 @@ Fördernde Mitglieder unterstützen den Verein insbesondere durch besondere fina
 Dem Betroffenen ist der Ausschluß schriftlich mitzuteilen. Gegen den Ausschluß steht ihm das Recht der Berufung an die Mitgliederversammlung zu. Die Berufung muß innerhalb einer Frist von einem Monat ab Zugang des Ausschlußbeschlusses beim Vorstand eingelegt sein. Ist die Berufung rechtzeitig eingelegt, hat der Vorstand sie der nächsten Mitgliederversammlung zur Entscheidung vorzulegen. Geschieht das nicht, gilt der Ausschlußbeschluß als nicht erlassen.
 
 
-### § 6 Mitgliedsbeiträge
+## § 6 Mitgliedsbeiträge
 
 Von den Mitgliedern wird ein Jahresbeitrag erhoben, dessen Höhe der Vorstand festsetzt. Ehrenmitglieder sind von der Beitragspflicht befreit.
 
 
-### § 7 Organe des Vereins
+## § 7 Organe des Vereins
 
 Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
 
 
-### § 8 Vorstand
+## § 8 Vorstand
 
 (1) Der Vorstand besteht aus folgenden Vereinsmitgliedern:
 
@@ -107,7 +107,7 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
 (4) Außer durch Tod erlischt das Amt eines Vorstandsmitglieds mit dem Ausschluß aus dem Verein, durch Amtsenthebung und Rücktritt. Die Mitgliederversammlung kann jederzeit den gesamten Vorstand oder einzelne seiner Mitglieder ihres Amtes entheben. Die Vorstandsmitglieder können jederzeit schriftlich ihren Rücktritt erklären.
 
 
-### § 9 Zuständigkeit des Vorstands
+## § 9 Zuständigkeit des Vorstands
 
 (1) Der Vorstand ist für alle Angelegenheiten des Vereins zuständig, die nicht durch diese Satzung anderen Vereinsorganen vorbehalten sind. Er hat vor allem folgende Aufgaben:
 1. Vorbereitung der Mitgliederversammlung und Aufstellung der Tagesordnung,
@@ -138,7 +138,7 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
 (4) Über die Sitzung des Vorstands ist vom Schriftführer ein Protokoll aufzunehmen. Die Niederschrift soll Ort und Zeit der Vorstandssitzung, die Namen der Teilnehmer, die Beschlüsse und das Abstimmungsergebnis enthalten.
 
 
-### § 11 Kassenführung
+## § 11 Kassenführung
 
 (1) Die zur Erreichung des Vereinszweckes notwendigen Mittel werden insbesondere aus Beiträgen und Spenden aufgebracht. Die Mittel des Vereins dürfen nur für die satzungsmäßigen Zwecke verwendet werden.
 
@@ -147,7 +147,7 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
 (3) Die Jahresrechnung ist von zwei Kassenprüfern, die nicht dem Vorstand angehören, zu prüfen. Sie ist der Mitgliederversammlung zur Genehmigung vorzulegen.
 
 
-### § 12 Mitgliederversammlung
+## § 12 Mitgliederversammlung
 
 (1) Die Mitgliederversammlung ist für folgende Angelegenheiten zuständig:
 
@@ -180,17 +180,17 @@ Organe des Vereins sind der Vorstand und die Mitgliederversammlung.
 (5) Über den Verlauf der Mitgliederversammlung ist ein Protokoll aufzunehmen, das vom Vorsitzenden zu unterzeichnen ist und von jedem Vereinsmitglied eingesehen werden kann. Die Niederschrift soll Ort und Zeit der Versammlung, die Zahl der erschienen Mitglieder, die Person des Versammlungsleiters, die Tagesordnung, die Beschlüsse, die Abstimmungsergebnisse und die Art der Abstimmung enthalten.
 
 
-### § 14 Ehrungen
+## § 14 Ehrungen
 
 An Personen, die sich im Feuerwehrdienst oder auf andere Weise besondere Verdienste um das Feuerwehrwesen erworben haben, kann die Ehrenmitgliedschaft des Vereins verliehen werden.
 
 
-### § 15 Auflösung
+## § 15 Auflösung
 
 Die Auflösung des Vereins kann nur in einer zu diesem Zweck einberufenen Mitglieder-versammlung beschlossen werden. Bei Auflösung des Vereins, bei Entziehung oder Verlust seiner Rechtsfähigkeit oder bei Wegfall seines bisherigen Zwecks fällt das Vermögen des Vereins an die Gemeinde Bergkirchen, die es unmittelbar und ausschließlich für das Feuerwehrwesen zu verwenden hat.
 
 
-### § 16
+## § 16
 
 Die Satzung tritt am 24.03.1995 in Kraft. 
 

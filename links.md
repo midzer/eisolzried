@@ -4,7 +4,7 @@ title: Links
 permalink: /links/
 ---
 
-### Behörden
+## Behörden
 
 [Gemeinde Bergkirchen](http://www.bergkirchen.de/)
 
@@ -14,7 +14,7 @@ permalink: /links/
 
 [Landesfeuerwehrverband Bayern](http://www.lfv-bayern.de/)
 
-### Feuerwehren
+## Feuerwehren
 
 [Günding](http://feuerwehr-guending.de/)
 
@@ -22,7 +22,7 @@ permalink: /links/
 
 [Thonstetten](http://www.ff-thonstetten.de/)
 
-### Freunde
+## Freunde
 
 [Bürgerhaus Deutenhausen-Eisolzried](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 

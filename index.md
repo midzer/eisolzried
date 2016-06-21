@@ -31,7 +31,7 @@ customjs:
     <div class="list-group">
 
 <div class="panel-heading" markdown="1">
-### Neuigkeiten
+## Neuigkeiten
 <ul id="posts" class="posts">
 {% for post in site.posts %}
  <li>

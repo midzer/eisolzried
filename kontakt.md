@@ -4,7 +4,7 @@ title: Kontakt
 permalink: /kontakt/
 ---
 
-### Postanschrift
+## Postanschrift
 
 Bürgerhaus Deutenhausen-Eisolzried\\
 Feldbergstraße 13\\
