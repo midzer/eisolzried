@@ -5,8 +5,8 @@ description: "Aktuelle Neuigkeiten, Termine und Wissenswertes über die Feuerweh
 baseurl: ""
 url: "http://feuerwehr-eisolzried.de"
 github_username: midzer/eisolzried
-facebook_group: 116302461784414
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
