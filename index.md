@@ -20,7 +20,7 @@ customjs:
 </div>
 
   <div class="col-md-4">
-   <img src="/assets/wappen.png" alt="Wappen Bergkirchen" height="300" width="284"/>
+   <img src="/assets/wappen.png" alt="Wappen Bergkirchen" height="300" width="300"/>
   </div>
 
 </div>
