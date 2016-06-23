@@ -7,7 +7,17 @@ images:
   - name: gruppe2013.jpg
     text: Gruppe 2013
   - name: tsf.jpg
-    text: Unser TSF
+    text: Tragkraftspritzenfahrzeug
+  - name: mlf1.jpg
+    text: Mittleres Löschfahrzeug 1
+  - name: mlf2.jpg
+    text: Mittleres Löschfahrzeug 2
+  - name: mlf3.jpg
+    text: Mittleres Löschfahrzeug 3
+  - name: mlf4.jpg
+    text: Mittleres Löschfahrzeug 4
+  - name: mlf5.jpg
+    text: Mittleres Löschfahrzeug 5
 ---
 
 ## Gruppe
@@ -45,12 +55,51 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
 </table>
 </div>
 
-## Fahrzeug
+## Fahrzeuge
+
+<div class="table-responsive">
+<table>
+  <thead>
+    <tr>
+      <th>Typ</th>
+      <th>Bezeichnung</th>
+      <th>Fahrgestell</th>
+      <th>Ausbau</th>
+      <th>Funkrufname</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MLF</td>
+      <td>Mittleres Löschfahrzeug</td>
+      <td>MAN 7,5t</td>
+      <td>Lentner</td>
+      <td>Florian Eisolzried 47/1</td>
+    </tr>
+    <tr>
+      <td>TSF</td>
+      <td>Tragkraftspritzenfahrzeug</td>
+      <td>VW LT</td>
+      <td>Bachert</td>
+      <td>Florian Eisolzried 44/1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+### MLF
+
+{% include gal.html image="mlf1.jpg" %}
+
+{% include gal.html image="mlf2.jpg" %}
+
+{% include gal.html image="mlf3.jpg" %}
+
+{% include gal.html image="mlf4.jpg" %}
+
+{% include gal.html image="mlf5.jpg" %}
+
+### TSF
 
 {% include gal.html image="tsf.jpg" %}
-
-Funkrufname: Florian Eisolzried 44/1\\
-Typ: TSF\\
-Fahrgestell: VW LT\\
-Ausbau: Bachert
 
