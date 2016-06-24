@@ -41,8 +41,8 @@ function buildCal(data) {
   }
   var cal = drcal({
     'weekdays': ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
-    'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
-    ],
+    'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September',
+               'Oktober', 'November', 'Dezember'],
     'startDay': 1
   });
   cal.addEventListener('drcal.renderDay', function(event) {
@@ -69,7 +69,11 @@ function buildCal(data) {
         if (hasEventInDate(ev[i], time) && event.target.innerHTML == ev[i].summary) {
           popup.html(createEventDetails(ev[i]));
           popup.dialog("option", "title", ev[i].summary);
-          popup.dialog("option", "position", { my: "left bottom", at: "right top", of: event.target });
+          popup.dialog("option", "position", { my: "top+20",
+                                               at: "bottom+20",
+                                               of: event,
+                                               collision: "flipfit",
+                                               within: document.getElementById('drcal') });
           popup.dialog("open");
           break;
         }
