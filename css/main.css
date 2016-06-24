@@ -69,6 +69,7 @@ a:visited { color: #ab1e21; }
   display: block;
 }
 
+.ui-dialog,
 .dropdown-menu,
 .search-results {
   display: none;
@@ -120,6 +121,7 @@ a:visited { color: #ab1e21; }
   margin-bottom: -1px;
 }
 
+.ui-dialog-content,
 .dropdown-menu > li > a,
 .search-results a {
   display: block;
@@ -133,6 +135,7 @@ a:visited { color: #ab1e21; }
   border-radius: 3px;
 }
 
+.ui-dialog-titlebar,
 .dropdown-menu > li > a:hover,
 .search-results a:hover {
   color: white;
