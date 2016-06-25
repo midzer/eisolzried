@@ -14,7 +14,7 @@ body {
 }
 
 a         { color: #d72629; text-decoration: none; }
-a:hover   { color: #ab1e21; text-decoration: underline; }
+a:hover   { color: #d72629; text-decoration: underline; }
 a:visited { color: #ab1e21; }
 
 /* Utility */
