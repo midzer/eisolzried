@@ -67,8 +67,8 @@ a:visited { color: #ab1e21; }
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 .navbar-default .navbar-nav > li > a:hover:before {
