@@ -40,7 +40,7 @@ customjs:
  </li>
 {% endfor %}
 </ul>
-<p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
 </div>
 
     </div>
