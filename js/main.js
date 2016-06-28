@@ -2,17 +2,17 @@ longlist(document.getElementById('posts'), {'perPage': 5});
 
 $.get("data/termine.ics").then(buildCal);
 
-function hasEventInDate(event, time)
+function hasEventInDate(event, time, timezone)
 {
   if (event.isRecurring()) {
     var expand = event.iterator(time);
-    if (expand.next().compare(time) == 0) {
+    if (expand.next().compare(time) == 0)
       return true;
-    }
   }
-  else if (event.startDate.day == time.day &&
-           event.startDate.month == time.month &&
-           event.startDate.year == time.year) {
+  else if ((event.startDate.compareDateOnlyTz(time, timezone) == -1 &&
+            event.endDate.compareDateOnlyTz(time, timezone) == 1) ||
+           event.startDate.compareDateOnlyTz(time, timezone) == 0 ||
+           event.endDate.compareDateOnlyTz(time, timezone) == 0) {
     return true;
   }
   return false;
@@ -39,6 +39,10 @@ function buildCal(data) {
   for (var i in vevents) {
       ev[i] = new ICAL.Event(vevents[i]);
   }
+  var timezoneComp = comp.getFirstSubcomponent('vtimezone');
+  var tzid = timezoneComp.getFirstPropertyValue('tzid');
+  var timezone = new ICAL.Timezone({ component: timezoneComp,
+                                     tzid: tzid });
   var cal = drcal({
     'weekdays': ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
     'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September',
@@ -52,7 +56,7 @@ function buildCal(data) {
     event.detail.element.appendChild(dayNum);
     var time = ICAL.Time.fromJSDate(event.detail.date);
     for (var i in ev) {
-      if (hasEventInDate(ev[i], time)) {
+      if (hasEventInDate(ev[i], time, timezone)) {
         var dayEvent = document.createElement('div');
         dayEvent.className = 'dayevent';
         dayEvent.appendChild(document.createTextNode(ev[i].summary));
@@ -66,7 +70,7 @@ function buildCal(data) {
     if (event.target.tagName == 'DIV') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
       for (var i in ev) {
-        if (hasEventInDate(ev[i], time) && event.target.innerHTML == ev[i].summary) {
+        if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
           popup.html(createEventDetails(ev[i]));
           popup.dialog("option", "title", ev[i].summary);
           popup.dialog("option", "position", { my: "top+20",
