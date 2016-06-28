@@ -1,4 +1,7 @@
 _site
 .sass-cache
+data/protokolle
 impressum.md
+intern.md
+robots.txt
 

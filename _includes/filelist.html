@@ -1,0 +1,9 @@
+<ul>
+{% for file in page.files %}
+  <li>
+    <a href="{{ page.filefolder }}/{{ file.name }}">{{ file.text }}</a>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
