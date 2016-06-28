@@ -431,9 +431,11 @@ a:visited { color: #ab1e21; }
   padding-right: 0.5ex;
 }
 .calendar .dayevent {
+  font-size: 12px;
   color: #d72629;
   cursor: pointer;
   padding-left: 0.5ex;
+  padding-right: 0.5ex;
 }
 
 .calendar .btn {
