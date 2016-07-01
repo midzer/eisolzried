@@ -47,9 +47,10 @@ function buildCal(data) {
   var comp = new ICAL.Component(jCal);
   var vevents = comp.getAllSubcomponents('vevent');
   var ev = [];
-  for (var i in vevents) {
+  for (var i = 0; i < vevents.length; i++) {
       ev[i] = new ICAL.Event(vevents[i]);
   }
+  var evLength = ev.length;
   var timezoneComp = comp.getFirstSubcomponent('vtimezone');
   var tzid = timezoneComp.getFirstPropertyValue('tzid');
   var timezone = new ICAL.Timezone({ component: timezoneComp,
@@ -66,7 +67,7 @@ function buildCal(data) {
     dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
     event.detail.element.appendChild(dayNum);
     var time = ICAL.Time.fromJSDate(event.detail.date);
-    for (var i in ev) {
+    for (var i = 0; i < evLength; i++) {
       if (hasEventInDate(ev[i], time, timezone)) {
         var dayEvent = document.createElement('div');
         dayEvent.className = 'dayevent';
@@ -80,7 +81,7 @@ function buildCal(data) {
   cal.addEventListener('click', function(event) {
     if (event.target.tagName == 'DIV') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
-      for (var i in ev) {
+      for (var i = 0; i < evLength; i++) {
         if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
           popup.html(createEventDetails(ev[i]));
           popup.dialog('option', 'title', ev[i].summary);
