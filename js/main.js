@@ -1,6 +1,6 @@
 longlist(document.getElementById('posts'), {'perPage': 5});
 
-$.get("data/termine.ics").then(buildCal);
+$.get('data/termine.ics').then(buildCal);
 
 function hasEventInDate(event, time, timezone)
 {
@@ -20,13 +20,13 @@ function hasEventInDate(event, time, timezone)
 
 function createEventDetails(event)
 {
-  var details = "<p>" + "Treffpunkt: " + event.location + "<br />" +
-                "Beginn: " + event.startDate.toJSDate().toTimeString().substring(0, 5) + "<br />" +
-                "Ende: " + event.endDate.toJSDate().toTimeString().substring(0, 5) + "</p>";
-  details += "<p>" + event.description + "</p>";
+  var details = '<p>' + 'Treffpunkt: ' + event.location + '<br />' +
+                'Beginn: ' + event.startDate.toJSDate().toTimeString().substring(0, 5) + '<br />' +
+                'Ende: ' + event.endDate.toJSDate().toTimeString().substring(0, 5) + '</p>';
+  details += '<p>' + event.description + '</p>';
   var attachments = event.attachments;
   for (var i in attachments) {
-    details += "<a href=\"" + attachments[i].getFirstValue() + "\">Zusatzinfo</a>";
+    details += '<a href=\"' + attachments[i].getFirstValue() + '\">Zusatzinfo</a>';
   }
   return details;
 }
@@ -68,17 +68,17 @@ function buildCal(data) {
   var popup = $('<div />').dialog({ autoOpen: false, width: 200 });
   cal.addEventListener('click', function(event) {
     if (event.target.tagName == 'DIV') {
-      var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute("date"));
+      var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
       for (var i in ev) {
         if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
           popup.html(createEventDetails(ev[i]));
-          popup.dialog("option", "title", ev[i].summary);
-          popup.dialog("option", "position", { my: "top+20",
-                                               at: "bottom+20",
+          popup.dialog('option', 'title', ev[i].summary);
+          popup.dialog('option', 'position', { my: 'top+20',
+                                               at: 'bottom+20',
                                                of: event,
-                                               collision: "flipfit",
+                                               collision: 'flipfit',
                                                within: document.getElementById('drcal') });
-          popup.dialog("open");
+          popup.dialog('open');
           break;
         }
       }
