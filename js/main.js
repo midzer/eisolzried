@@ -20,13 +20,24 @@ function hasEventInDate(event, time, timezone)
 
 function createEventDetails(event)
 {
-  var details = '<p>' + 'Treffpunkt: ' + event.location + '<br />' +
-                'Beginn: ' + event.startDate.toJSDate().toTimeString().substring(0, 5) + '<br />' +
-                'Ende: ' + event.endDate.toJSDate().toTimeString().substring(0, 5) + '</p>';
-  details += '<p>' + event.description + '</p>';
+  var details = '<p>';
+  details += 'Treffpunkt: ';
+  details += event.location;
+  details += '<br />';
+  details += 'Beginn: ';
+  details += event.startDate.toJSDate().toTimeString().substring(0, 5);
+  details += '<br />';
+  details += 'Ende: ';
+  details += event.endDate.toJSDate().toTimeString().substring(0, 5);
+  details += '</p>';
+  details += '<p>';
+  details += event.description;
+  details += '</p>';
   var attachments = event.attachments;
   for (var i in attachments) {
-    details += '<a href=\"' + attachments[i].getFirstValue() + '\">Zusatzinfo</a>';
+    details += '<a href=\"';
+    details += attachments[i].getFirstValue();
+    details += '\">Zusatzinfo</a>';
   }
   return details;
 }
