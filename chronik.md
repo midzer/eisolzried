@@ -42,6 +42,8 @@ images:
     text: Schlossgut 1966
   - name: Sieg1996.jpg
     text: Turniersieg 1996
+  - name: Tafel100Jahre.jpg
+    text: Tafel 100 Jahre
 ---
 
 {% include gal.html image="kupferstich_eisolzried.jpg" %}
@@ -142,4 +144,6 @@ In den letzten zehn Jahren ist ein drastischer Rückgang der Brandeinsätze fest
 {% include gal.html image="Heigl1996.jpg" %}
 
 Wir hoffen, dass der positive Geist, der die Feuerwehr in den 100 Jahren begleitet hat, sich auch im zukünftigen Wirken der Freiwilligen Feuerwehr Eisolzried widerspiegelt.
+
+{% include gal.html image="Tafel100Jahre.jpg" %}
 
