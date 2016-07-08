@@ -1,12 +1,21 @@
+{% if include.image == null %}
 <ul class="list-unstyled">
-{% for image in page.images %}
-  {% if include.image == null or include.image == image.name %}
-    <li>
-      <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
-        <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
-      </a>
-    </li>
-  {% endif %}
-{% endfor %}
+  {% for image in page.images %}
+  <li>
+    <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
+      <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
+    </a>
+  </li>
+  {% endfor %}
 </ul>
+{% else %}
+  {% for image in page.images %}
+    {% if include.image == image.name %}
+<a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
+  <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
+</a>
+    {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
