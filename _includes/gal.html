@@ -10,7 +10,7 @@
 </ul>
 {% else %}
   {% for image in page.images %}
-    {% if include.image == image.name %}
+    {% if image.name == include.image %}
 <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
   <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
 </a>
