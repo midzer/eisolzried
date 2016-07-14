@@ -61,8 +61,9 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
         .domain([0, yStackMax])
         .range([height, 0]);
 
-    var color = d3.scale.ordinal()
-        .range(["#98ABC5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c"]);
+    var color = d3.scale.linear()
+        .domain([0, n - 1])
+        .range(["#aad", "#556"]);
       
     var xAxis = d3.svg.axis()
         .scale(x)
@@ -111,7 +112,7 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
         .text("Anzahl");
 
     var legend = svg.selectAll(".legend")
-      .data(color.domain().slice().reverse())
+      .data(headers.reverse())
       .enter().append("g")
         .attr("class", "legend")
         .attr("transform", function(d, i) { return "translate(-250," + i * 20 + ")"; })
@@ -121,7 +122,7 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
       .attr("x", width - 18)
       .attr("width", 18)
       .attr("height", 18)
-      .style("fill", color);
+      .style("fill", function(d, i) { return color(i); });
     
     legend.selectAll("text .legend")
       .data([headers.slice().reverse()])
