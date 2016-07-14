@@ -9,4 +9,4 @@ github_username: midzer/eisolzried
 # Build settings
 markdown: kramdown
 permalink: pretty
-
+exclude: [/charts]
