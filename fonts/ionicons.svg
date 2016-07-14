@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2016-6-28: Created.
+2016-7-14: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Tue Jun 28 21:41:03 2016
+Created by FontForge 20120731 at Thu Jul 14 02:10:29 2016
  By midzer,,,
 Created by midzer,,, with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -53,6 +53,8 @@ d="M414 338c1 -2 2 -4 2 -6s-1 -4 -2 -6l-249 -320c-2 -2 -5 -6 -9 -6s-8 3 -10 5s-1
     <glyph glyph-name="ion-link" unicode="&#xf1fe;" horiz-adv-x="384" 
 d="M192 240v0v0v0zM304 288c44 0 80 -36 80 -80v-32c0 -44 -36 -80 -80 -80h-112c-33 0 -60 20 -73 48c-4 10 -7 20 -7 32v32h48v-32c0 -18 14 -32 32 -32h112c18 0 32 14 32 32v32c0 18 -14 32 -32 32v0h-16c-6 31 -32 48 -32 48h48zM266 240c4 -10 6 -21 6 -32v-32v0h-48
 v0v32c0 18 -14 32 -32 32v0h-112c-18 0 -32 -14 -32 -32v-32c0 -18 14 -32 32 -32h16c6 -31 32 -48 32 -48h-48c-44 0 -80 36 -80 80v32c0 44 36 80 80 80h112c33 0 62 -20 74 -48z" />
+    <glyph glyph-name="ion-stats-bars" unicode="&#xf2b5;" horiz-adv-x="352" 
+d="M96 32v320h64v-320h-64zM0 32v96h64v-96h-64zM192 32v160h64v-160h-64zM288 32v224h64v-224h-64z" />
     <glyph glyph-name="ion-clock" unicode="&#xf26e;" 
 d="M224 416c124 0 224 -100 224 -224s-100 -224 -224 -224s-224 100 -224 224s100 224 224 224zM360 56c10 10 19 21 26 33l-27 16l8 14l27 -16c13 25 21 52 22 81h-32v16h32c-1 29 -9 56 -22 81l-27 -16l-8 14l27 16c-7 12 -16 23 -26 33s-21 19 -33 26l-16 -27l-14 8
 l16 27c-25 13 -52 21 -81 22v-32h-16v32c-29 -1 -56 -9 -81 -22l16 -27l-14 -8l-16 27c-12 -7 -23 -16 -33 -26s-19 -21 -26 -33l27 -16l-8 -14l-27 16c-13 -25 -21 -52 -22 -81h32v-16h-32c1 -29 9 -56 22 -81l27 16l8 -14l-27 -16c7 -12 16 -23 26 -33s21 -19 33 -26
