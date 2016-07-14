@@ -10,3 +10,4 @@ github_username: midzer/eisolzried
 markdown: kramdown
 permalink: pretty
 keep_files: [/charts]
+exclude: [config.json,Gemfile,README.md]
