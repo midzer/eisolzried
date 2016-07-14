@@ -494,3 +494,14 @@ a:visited { color: #ad0f15; }
 .paging-controls .next:after {content: "ältere >";}
 .paging-controls .elipsis:before {content: " ... ";}
 
+/* Chart styles */
+/* ----------------------------------------------------------*/
+
+iframe {
+  border: solid 1px #eee;
+  border-bottom: solid 1px #ccc;
+}
+
+h2, iframe {
+  width: 100%;
+}

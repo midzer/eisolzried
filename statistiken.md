@@ -2,20 +2,19 @@
 layout: page
 title: Statistiken
 permalink: /statistiken/
-customjs:
-  - d3.min
-  - statistiken.min
 ---
 
-## Mitgliederentwicklung
+<div class="row">
 
-<form>
-  <label><input type="radio" name="mode" value="grouped"> Gruppiert</label>
-  <label><input type="radio" name="mode" value="stacked" checked> Gschichtelt</label>
-</form>
-<style>
-.axis path {
-  display: none;
-}
-</style>
-<svg></svg>
+<div class="col-md-6" markdown="1">
+## Mitgliederentwicklung
+<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="/charts/mitgliederentwicklung" marginwidth="0" marginheight="0" style="height:500px;" scrolling="no"></iframe>
+</div>
+
+<div class="col-md-6" markdown="1">
+## Einsätze
+
+>>Daten werden momentan erhoben und sind bald verfügbar
+</div>
+
+</div>
