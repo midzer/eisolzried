@@ -13,9 +13,9 @@ body {
   padding-top: 60px;
 }
 
-a         { color: #da131a; text-decoration: none; }
+a         { color: #da131a; fill: #da131a; text-decoration: none; }
 a:hover   { color: #da131a; text-decoration: underline; }
-a:visited { color: #ad0f15; }
+a:visited { color: #ad0f15; fill: #ad0f15; }
 
 /* Utility */
 
@@ -504,4 +504,19 @@ iframe {
 
 h2, iframe {
   width: 100%;
+}
+
+.chart-pop {
+  position: absolute;
+  right: 10px;
+}
+
+.chart-pop svg {
+  margin-left: 0.3em;
+  position: relative;
+  top: 3px;
+}
+
+.chart-info {
+  max-width: 450px;
 }
