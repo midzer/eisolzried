@@ -10,10 +10,13 @@
 </head>
 
 <body>
-
 <style>
 .axis path {
   display: none;
+}
+.axis line, .axis path {
+  stroke: #333;
+  shape-rendering: crispEdges;
 }
 form {
   position: absolute;
@@ -67,14 +70,11 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
       
     var xAxis = d3.svg.axis()
         .scale(x)
-        .tickSize(10)
-        .tickPadding(6)
         .orient("bottom");
 
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left")
-        .tickFormat(d3.format(".2s"));
 
     var layer = svg.selectAll(".layer")
       .data(layers)
@@ -105,7 +105,7 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
         .attr("transform", "translate(20,0)")
         .call(yAxis)
       .append("text")
-        .attr("x", 2)
+        .attr("x", 5)
         .attr("y", y(y.ticks(10).pop()))
         .attr("dy", "0.35em")
         .style("text-anchor", "start")
@@ -182,7 +182,6 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
     };
 });
 </script>
-
 </body>
 
 </html>
