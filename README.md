@@ -2,18 +2,12 @@
 
 Diese Webseite wird mit [jekyll](http://jekyllrb.com) gebaut.
 
-Um sie lokal zu testen, benötigst du zuerst das Rubygem "bundler":
-
-```
-gem install bundler
-```
-
-Danach dieses Repository clonen, die Abhängigkeiten automatisch installieren und starten:
+Um sie lokal zu testen, sollte folgendes genügen:
 
 ```
 git clone https://github.com/midzer/eisolzried.git
 cd eisolzried
-bundle install
+gem install jekyll
 jekyll serve
 ```
 
