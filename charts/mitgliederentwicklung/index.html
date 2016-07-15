@@ -90,6 +90,9 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
         .attr("width", x.rangeBand())
         .attr("height", 0);
 
+    rect.append("svg:title")
+        .text(function(d) { return d.y; });
+
     rect.transition()
         .delay(function(d, i) { return i * 10; })
         .attr("y", function(d) { return y(d.y0 + d.y); })
