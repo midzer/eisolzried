@@ -13,3 +13,5 @@ jekyll serve
 
 Sollte alles geklappt haben, ist die Webseite nun im Browser über http://127.0.0.1:4000 zu finden.
 
+Die Produktivversion wird mit `JEKYLL_ENV=production jekyll build` gebaut.
+
