@@ -118,7 +118,7 @@ d3.csv("/data/mitgliederentwicklung.csv", function (data){
       .data(headers.reverse())
       .enter().append("g")
         .attr("class", "legend")
-        .attr("transform", function(d, i) { return "translate(-250," + i * 20 + ")"; })
+        .attr("transform", function(d, i) { return "translate(-300," + i * 20 + ")"; })
         .style("font", "10px sans-serif");
        
     legend.append("rect")
