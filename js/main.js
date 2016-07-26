@@ -71,26 +71,21 @@ function buildCal(data) {
       if (hasEventInDate(ev[i], time, timezone)) {
         var dayEvent = document.createElement('div');
         dayEvent.className = 'dayevent';
+        dayEvent.setAttribute('data-toggle', 'modal');
+        dayEvent.setAttribute('data-target', '.bs-example-modal-sm');
         dayEvent.appendChild(document.createTextNode(ev[i].summary));
         event.detail.element.appendChild(dayEvent);
       }
     }
   });
   cal.changeMonth(new Date());
-  var popup = $('<div />').dialog({ autoOpen: false, width: 200 });
   cal.addEventListener('click', function(event) {
     if (event.target.tagName == 'DIV') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
       for (var i = 0; i < evLength; i++) {
         if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
-          popup.html(createEventDetails(ev[i]));
-          popup.dialog('option', 'title', ev[i].summary);
-          popup.dialog('option', 'position', { my: 'top+20',
-                                               at: 'bottom+20',
-                                               of: event,
-                                               collision: 'flipfit',
-                                               within: document.getElementById('drcal') });
-          popup.dialog('open');
+          $('.modal-body').html(createEventDetails(ev[i]));
+          $('.modal-title').html(ev[i].summary);
           break;
         }
       }

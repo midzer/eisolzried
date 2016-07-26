@@ -93,7 +93,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   display: block;
 }
 
-.ui-dialog,
 .dropdown-menu,
 .search-results {
   display: none;
@@ -145,7 +144,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   margin-bottom: -1px;
 }
 
-.ui-dialog-content,
 .dropdown-menu > li > a,
 .search-results a {
   display: block;
@@ -159,8 +157,8 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   border-radius: 3px;
 }
 
+.modal-header,
 .dropdown-toggle[aria-expanded="true"],
-.ui-dialog-titlebar,
 .dropdown-menu > li > a:hover,
 .search-results a:hover {
   color: white !important;

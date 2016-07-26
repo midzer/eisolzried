@@ -392,14 +392,17 @@
     "navbar.less",
     "panels.less",
     "responsive-embed.less",
+    "close.less",
     "component-animations.less",
-    "dropdowns.less"
+    "dropdowns.less",
+    "modals.less"
   ],
   "js": [
     "dropdown.js",
+    "modal.js",
     "tab.js",
     "collapse.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=681627ceb27425b5a69df379d3703578"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=b79c21ecc2221745c23f3569d252ace5"
 }
