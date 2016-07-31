@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2016-7-14: Created.
+2016-7-31: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Thu Jul 14 02:10:29 2016
+Created by FontForge 20120731 at Sun Jul 31 13:54:12 2016
  By midzer,,,
 Created by midzer,,, with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -22,7 +22,7 @@ Created by midzer,,, with FontForge 2.0 (http://fontforge.sf.net)
     bbox="0 -32 448 416"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F11B-F31A"
+    unicode-range="U+F11B-F393"
   />
     <missing-glyph />
     <glyph glyph-name="ion-locked" unicode="&#xf200;" horiz-adv-x="384" 
@@ -44,6 +44,8 @@ c-1 -6 4 -6 1 -18c-5 -23 -7 -14 -9 -28c-6 -36 -16 -28 -16 -47c0 -29 -2 -23 39 -3
 c-1 -15 -2 -22 -3 -29s5 -8 2 -23c-6 -29 -9 -18 -12 -36c-8 -46 -20 -30 -20 -54c0 -32 -2 -36 31 -48c6 -2 11 -4 19 -7c54 -21 67 -33 69 -43c1 -6 2 -28 2 -47v-30z" />
     <glyph glyph-name="ion-flame" unicode="&#xf31a;" horiz-adv-x="256" 
 d="M1 128c-11 109 72 224 159 288c-26 -145 97 -142 96 -288c-1 -120 -105 -160 -128 -160s-114 26 -127 160zM88 80c0 -44 40 -80 40 -80s41 36 41 80s-41 80 -41 80s-40 -36 -40 -80z" />
+    <glyph glyph-name="ion-android-map" unicode="&#xf393;" horiz-adv-x="384" 
+d="M373 384c6 0 11 -5 11 -11v-322c0 -5 -3 -9 -7 -10l-121 -41l-128 45s-105 -41 -108 -42s-7 -3 -9 -3c-6 0 -11 5 -11 11v322c0 5 3 9 7 10l121 41l128 -45s103 40 108 42s7 3 9 3zM256 43v254l-128 44v-254z" />
     <glyph glyph-name="ion-chatbox" unicode="&#xf11b;" horiz-adv-x="416" 
 d="M76 48c-42 0 -76 31 -76 71v209c0 40 34 72 76 72h264c42 0 76 -32 76 -72v-209c0 -40 -34 -71 -76 -71h-4v-64s-79 54 -86 59s-7 5 -21 5h-153z" />
     <glyph glyph-name="ion-document" unicode="&#xf12f;" horiz-adv-x="288" 
