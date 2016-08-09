@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Willkommen bei der Feuerwehr Eisolzried
+title: Griaß Gohd nahad
 customjs:
   - /js/ical.min.js
   - /js/drcal.min.js
   - /js/longlist.min.js
   - /js/main.min.js
+lang: by
 ---
 
 <div class="row">
@@ -15,13 +16,13 @@ customjs:
   </div>
 
 <div class="col-md-4" markdown="1">
-Wir sind eine aktive Feuerwehr aus der Gemeinde Bergkirchen in Oberbayern, die überwiegend aus einem jungen Team besteht.
+Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san.
 
-Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
+Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
 
-Diese Webseite wird ständig weiterentwickelt und überarbeitet; also schau gerne öfter rein. Bei konkreten Fragen scheue Dich nicht uns zu [kontaktieren](/kontakt).
+An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei, wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt) di hoid.
 
-Und nun viel Spaß beim Stöbern :)
+Gnua vazoid, vui Spaß beim umschaun :)
 </div>
 
   <div class="col-md-4">
@@ -36,7 +37,7 @@ Und nun viel Spaß beim Stöbern :)
     <div class="list-group">
 
 <div class="panel-heading" markdown="1">
-## Neuigkeiten
+## Neis
 <ul id="posts" class="posts">
 {% for post in site.posts %}
 {% if page.lang == post.lang %}
@@ -47,7 +48,7 @@ Und nun viel Spaß beim Stöbern :)
 {% endif %}
 {% endfor %}
 </ul>
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">As neiaste bstoin</a></p>
 </div>
 
     </div>
@@ -57,10 +58,10 @@ Und nun viel Spaß beim Stöbern :)
     <div class="list-group">
 
 <div class="panel-heading" markdown="1">
-## Termine
+## Wos zum doa is
 <div id="drcal" class="table-responsive"></div>
-<noscript>Bitte Javascript aktivieren um den Kalender zu sehen</noscript>
-<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">iCalendar herunterladen</a></p>
+<noscript>Schoit bittschen Javascript o, damitsd an Kalenda seng konnst</noscript>
+<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">An Kalenda obelohn</a></p>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Termindetails">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
