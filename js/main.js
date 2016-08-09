@@ -1,6 +1,6 @@
 longlist(document.getElementById('posts'), {'perPage': 5});
 
-$.get('data/termine.ics').then(buildCal);
+$.get('/data/termine.ics').then(buildCal);
 
 function hasEventInDate(event, time, timezone)
 {
