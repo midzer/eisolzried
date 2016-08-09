@@ -37,7 +37,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
     <div class="list-group">
 
 <div class="panel-heading" markdown="1">
-## Neis
+## Wos neis gibt
 <ul id="posts" class="posts">
 {% for post in site.posts %}
 {% if page.lang == post.lang %}
