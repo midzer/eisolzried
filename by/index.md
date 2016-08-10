@@ -20,7 +20,7 @@ Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Lei
 
 Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
 
-An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei, wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt) di hoid.
+An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt) di hoid.
 
 Gnua vazoid, vui Spaß beim umschaun :)
 </div>
@@ -48,7 +48,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
 {% endif %}
 {% endfor %}
 </ul>
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">As neiaste bstoin</a></p>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">As neiaste bschtoin</a></p>
 </div>
 
     </div>
@@ -60,7 +60,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
 <div class="panel-heading" markdown="1">
 ## Wos zum doa is
 <div id="drcal" class="table-responsive"></div>
-<noscript>Schoit bittschen Javascript o, damitsd an Kalenda seng konnst</noscript>
+<noscript>Schoit bittschen Javascript o, damitsd an Kalenda seng kohnst</noscript>
 <p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">An Kalenda obelohn</a></p>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Termindetails">
   <div class="modal-dialog modal-sm" role="document">

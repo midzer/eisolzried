@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Oide Gschichtn
+title: Wos ois bassierd is
 permalink: /by/chronik/
 imgfolder: /images/chronik
 images:

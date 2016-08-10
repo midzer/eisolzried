@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mia
+title: Des san mia
 permalink: /by/team/
 imgfolder: /images/team
 images:

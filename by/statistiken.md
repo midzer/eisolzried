@@ -14,7 +14,7 @@ lang: by
 <a target="_blank" title="Mitgliederentwicklung in einem neuen Fenster öffnen" href="/charts/mitgliederentwicklung">Aufmacha<svg height="16" width="12"><path d="M11 10h1v3c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3v1H1v10h10V10zM6 2l2.25 2.25-3.25 3.25 1.5 1.5 3.25-3.25 2.25 2.25V2H6z"></path></svg></a>
 </div>
 <div class="chart-info">
-Zum seng is wiavui Midglieda mir vo 1990 bis 2015 ghabt hom. Jäda Boikn hoaßt fünf Jooor und bedeit de oanzelna Sachan. Verstorbene Leid san ned dabei.
+Zum seng is wiavui Midglieda mir vo 1990 bis 2015 ghapt hom. Jäda Boikn hoaßt fünf Johr und bedeit de oanzelna Sachan. Verstorbene Leid san ned dabei.
 </div>
 </div>
 
