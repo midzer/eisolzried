@@ -19,10 +19,17 @@
         <div class="search">
           <input type="text" class="form-control" id="search-input" placeholder="durchsuchen...">
           <ul class="search-results" id="results-container"></ul>
-          <a href="{{ page.url | remove_language }}"><img src="/assets/de.png" alt="Flagge Deutschland" height="19" width="32"/></a>
-          <a href="/by{{ page.url | remove_language }}"><img src="/assets/by.png" alt="Flagge Bayern" height="19" width="32"/></a>
         </div>
       </form>
+      <ul class="nav navbar-nav navbar-left">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="ion ion-ios-world"></span> Sprache <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ page.url | remove_language }}"><img src="/assets/de.png" alt="Flagge Deutschland" height="19" width="32"/> Deutsch</a></li>
+            <li><a href="/by{{ page.url | remove_language }}"><img src="/assets/by.png" alt="Flagge Bayern" height="19" width="32"/> Boarisch</a></li>
+          </ul>
+        </li>
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         {% assign lang = '' %}
         {% if page.lang == 'by' %}
