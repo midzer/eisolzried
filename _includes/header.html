@@ -10,7 +10,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.url }}">Feuerwehr Eisolzried</a>
+      {% assign lang = '' %}
+        {% if page.lang == 'by' %}
+          {% assign lang = '/by' %}
+      {% endif %}
+      <a class="navbar-brand" href="{{ lang }}{{ site.baseurl }}/">Feuerwehr Eisolzried</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,10 +35,6 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        {% assign lang = '' %}
-        {% if page.lang == 'by' %}
-          {% assign lang = '/by' %}
-        {% endif %}
         <li><a href="{{ lang }}/team"><span class="ion ion-flame"></span> Team</a></li>
         <li><a href="{{ lang }}/karten"><span class="ion ion-android-map"></span> Karten</a></li>
         <li class="dropdown">
