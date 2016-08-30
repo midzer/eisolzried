@@ -15,11 +15,11 @@ categories:
   - by
 ---
 
-Mit de Feiaweala vo Voigading und Günding samma am Samstog, 25. Juni 2016 zua Feiaweaschui nohch Geretsria gfahrn. Mir warn sechse, davo zwoa Gruppnführa, zwoa Maschinistn und fünfe de wo Atemschutz hom.
+Mit de Feiaweala vo Foigading und Günding samma am Samstog, 25. Juni 2016 zua Feiaweaschui nohch Geretsria gfahrn. Mir warn sechse, davo zwoa Gruppnführa, zwoa Maschinistn und fünfe de wo Atemschutz hom.
 
-An dem Dog homma mehrare Sachan g'übt: z'erscht is a Brand vo a Wohnung simuliert worn wobei a oa Person g'feit hod. De Eilzriada hom übanoma, Voigading hod mit eanam HLF 40/1 g'hoifa.
+An dem Dog homma mehrare Sachan g'übt: z'erscht is a Brand vo a Wohnung simuliert worn wobei a oa Person g'feit hod. De Eilzriada hom übanoma, Foigading hod mit eanam HLF 40/1 g'hoifa.
 
-Danoch war Voidgading dro und mir ham mit Atemschutz bei am Mehrfamilienhaus g'hoifa, des wo brennd hod. Mehrara Leid warn a vermisst. G'raacht hods wiad Sau und de Leid mim Atemschutz hom g'suacht und mit Lüfter entraacht.
+Danoch war Foidgading dro und mir ham mit Atemschutz bei am Mehrfamilienhaus g'hoifa, des wo brennd hod. Mehrara Leid warn a vermisst. G'raacht hods wiad Sau und de Leid mim Atemschutz hom g'suacht und mit Lüfter entraacht.
 
 A jäds Szenario homs danohch mit de Ausbilder besprocha. De Gruppn is a oiwei duachgschmischt worn. De Ausbilder hom a vazoid wia ma si am besten mit de Fahrzeig aufstoid, wenn ma am Einsatz o'kimmt.
 
