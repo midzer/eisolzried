@@ -26,3 +26,7 @@ permalink: /links/
 
 [Bürgerhaus Deutenhausen-Eisolzried](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 
+## Spiele
+
+[Firefighter Pinball](http://b10b.com/firefighterpinball/)
+
