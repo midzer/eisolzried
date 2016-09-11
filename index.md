@@ -25,7 +25,7 @@ Und nun viel Spaß beim Stöbern :)
 </div>
 
   <div class="col-md-4">
-   <img src="/assets/wappen.png" alt="Wappen Bergkirchen" height="300" width="300"/>
+   <img src="/assets/wappen.png" alt="Wappen Bergkirchen" height="300" width="275"/>
   </div>
 
 </div>
