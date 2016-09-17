@@ -1,6 +1,7 @@
 _site
 .sass-cache
 data/protokolle
+data/media
 impressum.md
 intern.md
 by/intern.md
