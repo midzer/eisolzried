@@ -3,6 +3,7 @@ layout: page
 title: Des san mia
 permalink: /by/team/
 imgfolder: /images/team
+vidfolder: /videos/team/
 images:
   - name: gruppe2013.jpg
     text: Gruppe 2013
@@ -18,6 +19,9 @@ images:
     text: Mittleres Löschfahrzeug 4
   - name: mlf5.jpg
     text: Mittleres Löschfahrzeug 5
+videos:
+  - name: abfahrt-lentner.mp4
+    type: mp4
 lang: by
 ---
 
@@ -90,11 +94,7 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
 
 ### MLF
 
-<video controls muted>
-  <source src="/data/video/abfahrt-lentner.webm" type='video/webm; codecs="vp8, vorbis"'>
-  <source src="/data/video/abfahrt-lentner.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-Mit dem wos du surfst mog des Video ned.
-</video>
+{% include vid.html %}
 
 {% include gal.html image="mlf1.jpg" %}
 

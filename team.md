@@ -3,6 +3,7 @@ layout: page
 title: Team
 permalink: /team/
 imgfolder: /images/team
+vidfolder: /videos/team/
 images:
   - name: gruppe2013.jpg
     text: Gruppe 2013
@@ -18,6 +19,9 @@ images:
     text: Mittleres Löschfahrzeug 4
   - name: mlf5.jpg
     text: Mittleres Löschfahrzeug 5
+videos:
+  - name: abfahrt-lentner.mp4
+    type: mp4
 ---
 
 ## Gruppe
@@ -89,11 +93,7 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
 
 ### MLF
 
-<video controls muted>
-  <source src="/data/video/abfahrt-lentner.webm" type='video/webm; codecs="vp8, vorbis"'>
-  <source src="/data/video/abfahrt-lentner.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-Dein Browser unterstützt das Video tag nicht.
-</video>
+{% include vid.html %}
 
 {% include gal.html image="mlf1.jpg" %}
 
