@@ -522,7 +522,7 @@ h2, iframe {
 
 video {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 640px;
   max-width: 90%;
 }
