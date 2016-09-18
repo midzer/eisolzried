@@ -496,6 +496,7 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 iframe {
   border: solid 1px #eee;
   border-bottom: solid 1px #ccc;
+  height: 500px;
 }
 
 h2, iframe {
@@ -517,7 +518,7 @@ h2, iframe {
   max-width: 450px;
 }
 
-/* Chart styles */
+/* Video styles */
 /* ----------------------------------------------------------*/
 
 video {
