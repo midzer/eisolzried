@@ -89,13 +89,11 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
 
 ### MLF
 
-<div style="text-align: center">
-  <video style="width:640px;max-width:90%;" controls muted>
-    <source src="/data/video/abfahrt-lentner.webm" type='video/webm; codecs="vp8, vorbis"'>
-    <source src="/data/video/abfahrt-lentner.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-  Dein Browser unterstützt das Video tag nicht.
-  </video>
-</div>
+<video controls muted>
+  <source src="/data/video/abfahrt-lentner.webm" type='video/webm; codecs="vp8, vorbis"'>
+  <source src="/data/video/abfahrt-lentner.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+Dein Browser unterstützt das Video tag nicht.
+</video>
 
 {% include gal.html image="mlf1.jpg" %}
 

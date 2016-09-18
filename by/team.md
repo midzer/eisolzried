@@ -90,13 +90,11 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
 
 ### MLF
 
-<div style="text-align: center">
-  <video style="width:640px;max-width:90%;" controls muted>
-    <source src="/data/video/abfahrt-lentner.webm" type='video/webm; codecs="vp8, vorbis"'>
-    <source src="/data/video/abfahrt-lentner.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-  Mit dem wos du surfst mog des Video ned.
-  </video>
-</div>
+<video controls muted>
+  <source src="/data/video/abfahrt-lentner.webm" type='video/webm; codecs="vp8, vorbis"'>
+  <source src="/data/video/abfahrt-lentner.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+Mit dem wos du surfst mog des Video ned.
+</video>
 
 {% include gal.html image="mlf1.jpg" %}
 

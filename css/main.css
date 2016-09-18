@@ -251,8 +251,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 
 .post-content { margin: 0 0 30px; }
 
-.post-content > * { margin: 20px 0; }
-
 .post-content img {
   max-width: 90%;
   display: block;
@@ -518,3 +516,14 @@ h2, iframe {
 .chart-info {
   max-width: 450px;
 }
+
+/* Chart styles */
+/* ----------------------------------------------------------*/
+
+video {
+  display: block;
+  margin: 0 auto;
+  width: 640px;
+  max-width: 90%;
+}
+
