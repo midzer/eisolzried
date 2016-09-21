@@ -2,7 +2,7 @@ _site
 .sass-cache
 data/protokolle
 videos
-images/media
+images
 impressum.md
 intern.md
 by/intern.md
