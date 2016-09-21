@@ -3,7 +3,7 @@
   {% for image in page.images %}
   <li>
     <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
-      <img class="lazyload" data-src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
+      <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
     </a>
   </li>
   {% endfor %}
@@ -12,7 +12,7 @@
   {% for image in page.images %}
     {% if image.name == include.image %}
 <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
-  <img class="lazyload" data-src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
+  <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}" width="640">
 </a>
     {% break %}
     {% endif %}

@@ -25,8 +25,6 @@ layout: compress
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="{{ "/js/jquery-2.2.4.min.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/ls.unveilhooks.min.js" | prepend: site.baseurl }}" async=""></script>
-  <script src="{{ "/js/lazysizes.min.js" | prepend: site.baseurl }}" async=""></script>
   {% if page.customjs %}
     {% for file in page.customjs %}
     <script src="{{ file | prepend: site.baseurl }}"></script>

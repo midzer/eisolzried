@@ -1,6 +1,6 @@
 {% for video in page.videos %}
   {% if include.video == null or video.name == include.video %}
-<video class="lazyload" controls muted data-poster="{{ page.vidfolder }}thumbs/{{ video.name | append:'.jpg'}}" preload="none">
+<video controls muted preload="metadata">
     {% if video.type == 'mp4' %}
   <source src="{{ page.vidfolder }}{{ video.name }}" type="video/mp4">
     {% elsif video.type == 'webm' %}
