@@ -61,7 +61,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
 ## Wos zum doa is
 <div id="drcal" class="table-responsive"></div>
 <noscript>Schoit bittschen Javascript o, damitsd an Kalenda seng kohnst</noscript>
-<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">An Kalenda obelohn</a></p>
+<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">An Kalenda obelohn&#9196;</a></p>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Termindetails">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">

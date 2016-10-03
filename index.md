@@ -60,7 +60,7 @@ Und nun viel Spaß beim Stöbern :)
 ## Termine
 <div id="drcal" class="table-responsive"></div>
 <noscript>Bitte Javascript aktivieren um den Kalender zu sehen</noscript>
-<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">iCalendar herunterladen</a></p>
+<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">iCalendar herunterladen&#9196;</a></p>
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Termindetails">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">

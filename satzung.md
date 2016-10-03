@@ -4,7 +4,7 @@ title: Satzung
 permalink: /satzung/
 ---
 
-als [PDF](/data/satzung.pdf) oder [ODT](/data/satzung.odt) zum herunterladen
+als [PDF&#9196;](/data/satzung.pdf) oder [ODT&#9196;](/data/satzung.odt) zum herunterladen
 
 - - -
 
