@@ -417,9 +417,9 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   color: #939393;
 }
 .calendar .prev {float: left;}
-.calendar .prev:before {content: "<";}
+.calendar .prev:before {content: "\00AB";}
 .calendar .next {float: right;}
-.calendar .next:after {content: ">";}
+.calendar .next:after {content: "\00BB";}
 .calendar .today { background-color: #E9EFF8;}
 .calendar .extra {color: #AEAEAE;}
 .calendar .daynum {
@@ -485,9 +485,9 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 .paging-controls a {color: #da131a;}
 .paging-controls a:visited {color: #ad0f15;}
 .paging-controls .prev {float: left;}
-.paging-controls .prev:before {content: "< neuere";}
+.paging-controls .prev:before {content: "\00AB  neuere";}
 .paging-controls .next {float: right;}
-.paging-controls .next:after {content: "ältere >";}
+.paging-controls .next:after {content: "ältere \00BB";}
 .paging-controls .elipsis:before {content: " ... ";}
 
 /* Chart styles */
