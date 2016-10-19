@@ -33,15 +33,15 @@ permalink: /papier/
       <td>1</td>
       <td>Thomas</td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
     </tr>
@@ -52,13 +52,13 @@ permalink: /papier/
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
     </tr>
     <tr>
@@ -83,26 +83,26 @@ permalink: /papier/
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
     </tr>
     <tr>
       <td>5</td>
       <td>Miche</td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
@@ -112,10 +112,10 @@ permalink: /papier/
     <tr>
       <td>6</td>
       <td>Lungl</td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
@@ -133,42 +133,42 @@ permalink: /papier/
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
     </tr>
     <tr>
       <td>8</td>
       <td>Schäds</td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><i class="icon-ok"></i></td>
     </tr>
     <tr>
       <td>9</td>
       <td>Tii</td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
@@ -177,30 +177,30 @@ permalink: /papier/
       <td>10</td>
       <td>Lungl</td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>11</td>
       <td>Lu</td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
-      <td></td>
-      <td></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td></td>
+      <td></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
       <td></td>
@@ -213,12 +213,12 @@ permalink: /papier/
       <td></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
       <td></td>
-      <td><span class="ion ion-checkmark"></span></td>
+      <td><i class="icon-ok"></i></td>
       <td></td>
     </tr>
   </tbody>
