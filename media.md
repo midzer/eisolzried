@@ -44,52 +44,29 @@ images:
   - name: c0cb9e157bfe364a.jpg
     text: Öltank
 videos:
-  - name: 085b2405bb0e1b26.mp4
-    type: mp4
-  - name: 1bb7a9c1e5dc939e.mp4
-    type: mp4
-  - name: a434152214563b1b.mp4
-    type: mp4
-  - name: cbf329f6fec1d3ce.mp4
-    type: mp4
-  - name: d6cefe498d73d0df.mp4
-    type: mp4
-  - name: a8977dfaa1e47e98.mp4
-    type: mp4
-  - name: e815c5273fe808a3.mp4
-    type: mp4
-  - name: 45f03e589ab6eef2.mp4
-    type: mp4
-  - name: 0f9e4ea61a1ac824.mp4
-    type: mp4
-  - name: 810ca7772d9af5e1.mp4
-    type: mp4
-  - name: 96f926d03b41b813.mp4
-    type: mp4
-  - name: e8089989336b5858.mp4
-    type: mp4
-  - name: c6f37e33f2943b1b.mp4
-    type: mp4
-  - name: 775b42f0d94b302e.mp4
-    type: mp4
-  - name: f06579974220e741.mp4
-    type: mp4
-  - name: c6cac031d01090b7.mp4
-    type: mp4
-  - name: e887dc7ff1766acf.mp4
-    type: mp4
-  - name: 6ff368ac1cc2678c.mp4
-    type: mp4
-  - name: dcec0da9605ab34a.mp4
-    type: mp4
-  - name: 60c21ae4efd362bf.mp4
-    type: mp4
-  - name: 171e6f93b04a2aef.mp4
-    type: mp4
-  - name: e09033ff66b31136.mp4
-    type: mp4
-  - name: 3e25798ee24a76b8.mp4
-    type: mp4
+  - name: 085b2405bb0e1b26
+  - name: 1bb7a9c1e5dc939e
+  - name: a434152214563b1b
+  - name: cbf329f6fec1d3ce
+  - name: d6cefe498d73d0df
+  - name: a8977dfaa1e47e98
+  - name: e815c5273fe808a3
+  - name: 45f03e589ab6eef2
+  - name: 0f9e4ea61a1ac824
+  - name: 810ca7772d9af5e1
+  - name: 96f926d03b41b813
+  - name: e8089989336b5858
+  - name: c6f37e33f2943b1b
+  - name: 775b42f0d94b302e
+  - name: f06579974220e741
+  - name: c6cac031d01090b7
+  - name: e887dc7ff1766acf
+  - name: 6ff368ac1cc2678c
+  - name: dcec0da9605ab34a
+  - name: 60c21ae4efd362bf
+  - name: 171e6f93b04a2aef
+  - name: e09033ff66b31136
+  - name: 3e25798ee24a76b8
 ---
 
 <ul class="nav nav-tabs">

@@ -20,8 +20,7 @@ images:
   - name: mlf5.jpg
     text: Mittleres Löschfahrzeug 5
 videos:
-  - name: abfahrt-lentner.mp4
-    type: mp4
+  - name: abfahrt-lentner
 ---
 
 ## Gruppe
