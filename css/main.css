@@ -398,12 +398,11 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 
 .calendar {
   border-collapse: collapse;
-  width: calc(100% - 2px);
 }
 .calendar th {text-align: center;}
 .calendar td {
   border: 1px solid #AEAEAE;
-  width: 6em;
+  width: 5em;
   height: 5em;
   padding: 0;
 }
