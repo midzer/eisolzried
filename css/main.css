@@ -345,8 +345,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 
 @media screen and (max-width: 600px) {
 
-  .wrap { padding: 0 12px; }
-
   .site-nav {
     position: fixed;
     z-index: 10;
