@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Wos ois bassierd is
+title: Oids
 permalink: /by/chronik/
 imgfolder: /images/chronik
 images:

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Wo mia san
+title: Kontakt
 permalink: /by/kontakt/
 lang: by
 ---

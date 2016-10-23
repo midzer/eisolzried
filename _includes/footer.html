@@ -3,7 +3,11 @@
   <div class="wrap text-center">
     {% if site.github_username %}
     <a href="https://github.com/{{ site.github_username }}">
+      {% if page.lang == 'by' %}
+      <i class="icon-github"></i>Soß
+      {% else %}
       <i class="icon-github"></i>Quelltext
+      {% endif %}
     </a>&nbsp;
     {% endif %}
     <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow" target="_blank"><img src="/assets/license.png" alt="Creative Commons BY-NC-SA" height="15" width="80"></a>&nbsp;
