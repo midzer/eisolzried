@@ -44,6 +44,7 @@ images:
     text: Turniersieg 1996
   - name: Tafel100Jahre.jpg
     text: Tafel 100 Jahre
+lang: by
 ---
 
 {% include gal.html image="kupferstich_eisolzried.jpg" %}

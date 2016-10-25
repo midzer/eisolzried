@@ -2,6 +2,7 @@
 layout: page
 title: Karten
 permalink: /karten/
+lang: de
 ---
 
 <div class="row">

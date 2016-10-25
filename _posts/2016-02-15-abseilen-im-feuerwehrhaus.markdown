@@ -16,6 +16,7 @@ images:
     text: Absturzsicherung 5
   - name: absturzsicherung6.jpg
     text: Absturzsicherung 6
+lang: de
 ---
 
 Zur Februarübung stand Absturzsicherung auf dem Programm.

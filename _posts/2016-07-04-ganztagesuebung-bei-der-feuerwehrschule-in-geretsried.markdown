@@ -10,6 +10,7 @@ images:
     text: Geretsried 2
   - name: geretsried3.jpg
     text: Geretsried 3
+lang: de
 ---
 
 Zusammen mit den Feuerwehren aus Feldgeding und Günding ging es am Samstag, 25. Juni 2016 zur Feuerwehrschule Geretsried. Von der Eisolzrieder Wehr beteiligten sich sechs Mann, davon zwei mit Gruppenführer-, zwei mit Maschinisten- und fünf mit Atemschutzausbildung.

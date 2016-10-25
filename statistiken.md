@@ -2,6 +2,7 @@
 layout: page
 title: Statistiken
 permalink: /statistiken/
+lang: de
 ---
 
 <div class="row">

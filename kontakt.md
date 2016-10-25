@@ -2,6 +2,7 @@
 layout: page
 title: Kontakt
 permalink: /kontakt/
+lang: de
 ---
 
 ## Postanschrift

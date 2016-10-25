@@ -8,6 +8,7 @@ images:
     text: Rehunfall 1
   - name: rehunfall2.jpg
     text: Rehunfall 2
+lang: de
 ---
 
 In der Nacht von 19. auf 20. November 2015 ereignete sich auf der Kreisstraße DAH5 zwischen Eisolzried und Priel ein Verkehrsunfall.

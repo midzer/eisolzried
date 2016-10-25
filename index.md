@@ -6,6 +6,7 @@ customjs:
   - /js/drcal.min.js
   - /js/longlist.min.js
   - /js/main.min.js
+lang: de
 ---
 
 <div class="row">

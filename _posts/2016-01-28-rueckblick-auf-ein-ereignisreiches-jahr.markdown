@@ -8,6 +8,7 @@ images:
     text: Jahreshauptversammlung 1
   - name: jahreshauptversammlung2.jpg
     text: Jahreshauptversammlung 2
+lang: de
 ---
 
 Am 22.01.16 fand die Jahreshauptversammlung der Feuerwehr Eisolzried im Gasthaus Burgmayr in Eisolzried statt.

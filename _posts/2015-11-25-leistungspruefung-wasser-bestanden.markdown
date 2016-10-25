@@ -48,6 +48,7 @@ images:
     text: Wasser 21
   - name: wasser22.jpg
     text: Wasser 22
+lang: de
 ---
 
 Im Frühjahr wurde eine Leistungsprüfung Wasser erfolgreich abgelegt.

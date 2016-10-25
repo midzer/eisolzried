@@ -8,6 +8,7 @@ images:
     text: Unfall 1
   - name: unfall2.jpg
     text: Unfall 2
+lang: de
 ---
 
 Am 22.12.2015 ereignete sich ein schwerer Verkehrsunfall auf der Landstraße zwischen Eisolzried und Bergkirchen GADA bei der Abzweigung Richtung Palsweis. Die Feuerwehr Eisolzried wurde gegen 16:30 Uhr alarmiert und kümmerte sich zusammen mit dem THW und Malteser um die Unfallbeteiligten, welche zum Glück glimpflich davon kamen. Zusätzlich wurde der Verkehr abgesichert.

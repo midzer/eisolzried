@@ -12,6 +12,7 @@ images:
     text: Juliübung 3
   - name: juliuebung4.jpg
     text: Juliübung 4
+lang: de
 ---
 
 Zur Übung im Juli wurde mit dem neuen Fahrzeug am Wendehammer in der Birkenstraße geübt. Neben der Verkehrsabsicherung wurde ein Löschaufbau mit Wasserversorgung vom Unterflurhydranten errichtet.

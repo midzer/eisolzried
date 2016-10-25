@@ -67,6 +67,7 @@ videos:
   - name: 171e6f93b04a2aef
   - name: e09033ff66b31136
   - name: 3e25798ee24a76b8
+lang: de
 ---
 
 <ul class="nav nav-tabs">

@@ -2,6 +2,7 @@
 layout: post
 title:  "Einladung zur Fahrzeugweihe"
 date:   2016-05-30
+lang: de
 ---
 
 Die Feuerwehr Eisolzried veranstaltet am Sonntag, 05.06.2016 einen Festtag mit Fahrzeugweihe.

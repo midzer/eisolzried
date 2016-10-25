@@ -44,6 +44,7 @@ images:
     text: Fahrzeugweihe 19
   - name: fahrzeugweihe20.jpg
     text: Fahrzeugweihe 20
+lang: de
 ---
 
 Am Sonntag, den 05. Juni 2016, um 8 Uhr war Treffpunkt am Feuerwehrhaus der freiwilligen Feuerwehr Eisolzried. Zusammen mit Marschkapelle und Fahnenabordnungen startete der Festzug in Richtung Nikolauskirche in Deutenhausen. Nach dem Gottesdienst ging die Festtagsgemeinde ins Freie und Pfarrer Hack segnete und weihte das neue Fahrzeug.

@@ -8,6 +8,7 @@ images:
     text: Kleinbrand 1
   - name: kleinbrand2.jpg
     text: Kleinbrand 2
+lang: de
 ---
 
 Heute nachmittag gegen 15:30 Uhr wurden die Feuerwehren Eisolzried und Lauterbach alarmiert, weil Rauchentwicklung an einem kleinen Wäldchen nahe der Verbindungsstraße zwischen Eisolzried und Eisolzrieder See gemeldet wurde.

@@ -1,69 +1,19 @@
 <header class="site-header">
-{% if page.lang == 'by' %}
-{% assign lang = '/by' %}
+{% assign lang = nil %}
+{% if page.lang != 'de' %}
+  {% assign lang = page.lang | prepend: '/'%}
+{% endif %}
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Navigation umschoitn</span>
+        <span class="sr-only">{{ site.data.strings.[page.lang].toggle_navigation }}</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ lang }}{{ site.baseurl }}/">Feiawea Eilzria</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <div class="search">
-        <form class="navbar-form navbar-left" role="search">
-          <span class="icon icon-search"></span>
-          <input type="text" class="form-control" id="search-input" placeholder="duachsuacha...">
-          <ul class="search-results" id="results-container"></ul>
-        </form>
-      </div>
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-globe"></i>Sproch <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ page.url | remove_language }}"><img src="/assets/de.png" alt="Flagge Deutschland" height="19" width="32"/> Deitsch</a></li>
-            <li><a href="/by{{ page.url | remove_language }}"><img src="/assets/by.png" alt="Flagge Bayern" height="19" width="32"/> Boarisch</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ lang }}/team"><i class="icon-fire"></i>Mia</a></li>
-        <li><a href="{{ lang }}/karten"><i class="icon-map"></i>Kartn</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-users"></i>Varein <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/data/mitgliedsantrag.pdf"><i class="icon-user-add"></i>Mitmacha</a></li>
-            <li><a href="{{ lang }}/chronik"><i class="icon-history"></i>Oids</a></li>
-            <li><a href="{{ lang }}/satzung"><i class="icon-doc"></i>Satzung</a></li>
-            <li><a href="{{ lang }}/statistiken"><i class="icon-chart-bar"></i>Statistikn</a></li>
-            <li><a href="{{ lang }}/intern"><i class="icon-lock"></i>Intern</a></li>
-          </ul>
-        </li>
-        <li><a href="{{ lang }}/media"><i class="icon-cloud"></i>Matrial</a></li>
-        <li><a href="{{ lang }}/links"><i class="icon-link"></i>Links</a></li>
-        <li><a href="{{ lang }}/kontakt"><i class="icon-comment"></i>Kontakt</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
-</nav>
-{% else %}
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Navigation umschalten</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">Feuerwehr Eisolzried</a>
+      <a class="navbar-brand" href="{{ lang }}{{ site.baseurl }}/">{{ site.data.strings.[page.lang].firefighters_eisolzried }}</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,32 +27,31 @@
       </div>
       <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-globe"></i>Sprache <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-globe"></i>{{ site.data.strings.[page.lang].language }} <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="{{ page.url | remove_language }}"><img src="/assets/de.png" alt="Flagge Deutschland" height="19" width="32"/> Deutsch</a></li>
-            <li><a href="/by{{ page.url | remove_language }}"><img src="/assets/by.png" alt="Flagge Bayern" height="19" width="32"/> Bayrisch</a></li>
+            <li><a href="{{ page.url | remove_language }}"><img src="/assets/de.png" alt="Flagge Deutschland" height="19" width="32"/> {{ site.data.strings.[page.lang].german }}</a></li>
+            <li><a href="/by{{ page.url | remove_language }}"><img src="/assets/by.png" alt="Flagge Bayern" height="19" width="32"/> {{ site.data.strings.[page.lang].bavarian }}</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/team"><i class="icon-fire"></i>Team</a></li>
-        <li><a href="/karten"><i class="icon-map"></i>Karten</a></li>
+        {% for link in site.data.navigation.[page.lang] %}
+        {% if link.submenu %}
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-users"></i>Verein <span class="caret"></span></a>
+          <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ link.icon }}"></i>{{ link.title }} <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/data/mitgliedsantrag.pdf"><i class="icon-user-add"></i>Mitmachen</a></li>
-            <li><a href="/chronik"><i class="icon-history"></i>Chronik</a></li>
-            <li><a href="/satzung"><i class="icon-doc"></i>Satzung</a></li>
-            <li><a href="/statistiken"><i class="icon-chart-bar"></i>Statistiken</a></li>
-            <li><a href="/intern"><i class="icon-lock"></i>Intern</a></li>
+          {% for sublink in link.submenu %}
+          <li><a href="{{ sublink.url }}"><i class="{{ sublink.icon }}"></i>{{ sublink.title }}</a></li>
+          {% endfor %}
           </ul>
         </li>
-        <li><a href="/media"><i class="icon-cloud"></i>Media</a></li>
-        <li><a href="/links"><i class="icon-link"></i>Links</a></li>
-        <li><a href="/kontakt"><i class="icon-comment"></i>Kontakt</a></li>
+        {% else %}
+        <li><a href="{{ link.url }}"><i class="{{ link.icon }}"></i>{{ link.title }}</a></li>
+        {% endif %}
+        {% endfor %}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
-{% endif %}
+
 </header>

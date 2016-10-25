@@ -21,6 +21,7 @@ images:
     text: Mittleres Löschfahrzeug 5
 videos:
   - name: abfahrt-lentner
+lang: de
 ---
 
 ## Gruppe

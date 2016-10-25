@@ -2,6 +2,7 @@
 layout: page
 title: Links
 permalink: /links/
+lang: de
 ---
 
 ## Behörden

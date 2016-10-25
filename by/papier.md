@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Papiersammlung 2016
-permalink: /papier/
-lang: de
+permalink: /by/papier/
+lang: by
 ---
 
 <style>

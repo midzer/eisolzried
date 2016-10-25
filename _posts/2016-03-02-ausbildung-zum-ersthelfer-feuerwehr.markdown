@@ -30,6 +30,7 @@ images:
     text: Ersthelfer 12
   - name: ersthelfer13.jpg
     text: Ersthelfer 13
+lang: de
 ---
 
 Am 23. Januar 2016 fand bei der Feuerwehr Karlsfeld die erste Ausbildung in diesem Jahr zum Ersthelfer Feuerwehr statt.

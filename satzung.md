@@ -2,6 +2,7 @@
 layout: page
 title: Satzung
 permalink: /satzung/
+lang: de
 ---
 
 als [PDF&#9196;](/data/satzung.pdf) oder [ODT&#9196;](/data/satzung.odt) zum herunterladen

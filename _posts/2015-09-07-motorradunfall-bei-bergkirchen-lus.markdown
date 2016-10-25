@@ -2,6 +2,7 @@
 layout: post
 title:  "Motorradunfall bei Bergkirchen-Lus"
 date:   2015-09-07
+lang: de
 ---
 
 Aus noch ungeklärter Ursache kam am Sonntagabend, 06.09.15, ein junger Motorradfahrer auf der Verlängerung der Zweigstraße bei Bergkirchen-Lus Richtung Eisolzrieder See von der Fahrbahn ab und überschlug sich mehrmals am angrenzenden Feld.
