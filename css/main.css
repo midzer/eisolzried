@@ -77,6 +77,12 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   transform: scaleX(1);
 }
 
+.navbar-default .navbar-nav > li.active-nav-item {
+  -moz-box-shadow: inset #da131a 0 -2px 0 0;
+  -webkit-box-shadow: inset #da131a 0 -2px 0 0;
+  box-shadow: inset #da131a 0 -2px 0 0;
+}
+
 .form-control:focus {
   border-color: #da131a;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);

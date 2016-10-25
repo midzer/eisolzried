@@ -37,7 +37,14 @@
       <ul class="nav navbar-nav navbar-right">
         {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}
-        <li class="dropdown">
+          {% assign active = nil %}
+          {% for sublink in link.submenu %}
+            {% if page.url contains sublink.url %}
+            {% assign active = 'active-nav-item' %}
+            {% break %}
+            {% endif %}
+          {% endfor %}
+        <li class="dropdown {{ active }}">
           <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ link.icon }}"></i>{{ link.title }} <span class="caret"></span></a>
           <ul class="dropdown-menu">
           {% for sublink in link.submenu %}
@@ -46,7 +53,11 @@
           </ul>
         </li>
         {% else %}
-        <li><a href="{{ link.url }}"><i class="{{ link.icon }}"></i>{{ link.title }}</a></li>
+        {% assign active = nil %}
+        {% if page.url contains link.url %}
+          {% assign active = 'active-nav-item' %}
+        {% endif %}
+        <li class="{{ active }}"><a href="{{ link.url }}"><i class="{{ link.icon }}"></i>{{ link.title }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>
