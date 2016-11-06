@@ -42,7 +42,7 @@ Und nun viel Spaß beim Stöbern :)
 {% for post in site.posts %}
 {% if page.lang == post.lang %}
  <li>
-  <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <span class="post-date">{{ post.date | localize: "%e. %B %Y" }}</span>
   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
  </li>
 {% endif %}
