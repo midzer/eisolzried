@@ -542,3 +542,16 @@ video {
   max-width: 90%;
 }
 
+/* Gallery styles */
+/* ----------------------------------------------------------*/
+.gallery img {
+  max-width: 100%;
+  border: 2px solid #fdfdfd;
+  transition: border-color 0.5s ease-out;  
+}
+
+.gallery img:hover {
+  border-color: #da131a;
+  transition: none;
+}
+
