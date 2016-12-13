@@ -5,6 +5,28 @@ permalink: /by/media/
 imgfolder: /images/media
 vidfolder: /videos/media/
 images:
+  - name: 5a9590bf10c59c43.jpg
+    text: Ausräumen und Zuordnen
+  - name: 8b1ae4f22e828fb4.jpg
+    text: Feuerwehrfahrrad
+  - name: 9f08d9860453ec40.jpg
+    text: Nachts auf dem Feldweg
+  - name: 62ac4ddd084d9dff.jpg
+    text: In der U-Bahn
+  - name: 949c8c81b07da1a9.jpg
+    text: Klippe
+  - name: 526263aa47ab5d45.jpg
+    text: DDR-Feuerwehrfahrzeug
+  - name: 7279775298ae1765.jpg
+    text: Feuerwehrfahrzeugestern
+  - name: a988281f430643eb.jpg
+    text: Drehleiter eingepackt
+  - name: aeb5301414fae6b9.jpg
+    text: Feuerwehrfahrzeug auf Schienen
+  - name: c73272e16b2e7d3f.jpg
+    text: Fahrzeuge spritzen Wasser
+  - name: f7ac4aa68435b694.jpg
+    text: Chemieschutzanzug
   - name: 30fd4a12e6be1b03.jpg
     text: Traktor
   - name: e91de833a69c3c87.jpg
@@ -44,6 +66,10 @@ images:
   - name: c0cb9e157bfe364a.jpg
     text: Öltank
 videos:
+  - name: 0a000010e9d2fa50
+  - name: 344d9d66c0cf0b37
+  - name: 32829e5b685800c8
+  - name: 94090edc56e5a49d
   - name: 085b2405bb0e1b26
   - name: 1bb7a9c1e5dc939e
   - name: a434152214563b1b
