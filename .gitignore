@@ -1,5 +1,7 @@
 _site
 .sass-cache
+.bundle
+vendor
 data/protokolle
 videos
 images
@@ -7,4 +9,3 @@ impressum.md
 intern.md
 by/intern.md
 robots.txt
-
