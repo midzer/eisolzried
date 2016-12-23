@@ -2,10 +2,11 @@
 layout: page
 title: Willkommen bei der Feuerwehr Eisolzried
 customjs:
-  - /js/ical.min.js
-  - /js/drcal.min.js
-  - /js/longlist.min.js
-  - /js/main.min.js
+  - path: /js/ical.min.js
+  - path: /js/drcal.min.js
+  - path: /js/longlist.min.js
+  - path: /js/main.min.js
+    attr: async
 lang: de
 ---
 

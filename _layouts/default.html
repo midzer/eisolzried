@@ -29,14 +29,13 @@ layout: compress
   <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
   {% if page.customjs %}
     {% for file in page.customjs %}
-    <script src="{{ file | prepend: site.baseurl }}"></script>
+    <script src="{{ file.path | prepend: site.baseurl }}" {{ file.attr }}></script>
     {% endfor %}
   {% endif %}
   <script src="{{ "/js/jekyll-search.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/navbar.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/navbar.min.js" | prepend: site.baseurl }}" async></script>
+  <script src="{{ "/js/lightbox.min.js" | prepend: site.baseurl }}" async></script>
   <script src="{{ "/js/snowstorm.min.js" | prepend: site.baseurl }}" async></script>
   </body>
 
 </html>
-
