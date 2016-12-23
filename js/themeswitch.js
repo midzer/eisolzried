@@ -29,7 +29,3 @@ if (!localStorage.getItem('theme')) {
     localStorage.setItem('theme', 'light');
 }
 setTheme();
-
-document.getElementById('theme-switch').onclick = function() {
-    switchTheme();
-};

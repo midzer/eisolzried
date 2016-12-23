@@ -9,3 +9,6 @@ fuzzy: false,
 exclude: ['Welcome']
 });
 
+document.getElementById('theme-switch').onclick = function() {
+    switchTheme();
+};
