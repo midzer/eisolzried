@@ -9,6 +9,31 @@ fuzzy: false,
 exclude: ['Welcome']
 });
 
+function switchTheme() {
+    var newTheme;
+    if (localStorage.getItem('theme') == 'light') {
+        newTheme = 'dark';
+    }
+    else {
+        newTheme = 'light';
+    }
+    localStorage.setItem('theme', newTheme);
+}
+
+function setIcon() {
+    var icon;
+    if (localStorage.getItem('theme') == 'light') {
+        icon = 'moon';
+    }
+    else {
+        icon = 'sun';
+    }
+    document.getElementById('theme-icon').setAttribute('class', 'icon-' + icon);
+}
+
 document.getElementById('theme-switch').onclick = function() {
     switchTheme();
+    setTheme();
+    setIcon();
 };
+setIcon();
