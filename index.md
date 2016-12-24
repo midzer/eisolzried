@@ -13,7 +13,7 @@ lang: de
 <div class="row">
 
   <div class="col-md-4">
-   <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried" height="300" width="276"/>
+   <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
   </div>
 
 <div class="col-md-4" markdown="1">
@@ -27,7 +27,7 @@ Und nun viel Spaß beim Stöbern :)
 </div>
 
   <div class="col-md-4">
-   <img src="/assets/wappen.png" alt="Wappen Bergkirchen" height="300" width="275"/>
+   <img src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
   </div>
 
 </div>
