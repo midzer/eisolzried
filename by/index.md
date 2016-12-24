@@ -11,11 +11,11 @@ lang: by
 
 <div class="row">
 
-  <div class="col-md-4">
+  <div class="col-sm-4">
    <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
   </div>
 
-<div class="col-md-4" markdown="1">
+<div class="col-sm-4" markdown="1">
 Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san.
 
 Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
@@ -25,7 +25,7 @@ An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei wennst mogst. Wennst w
 Gnua vazoid, vui Spaß beim umschaun :)
 </div>
 
-  <div class="col-md-4">
+  <div class="col-sm-4">
    <img src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
   </div>
 

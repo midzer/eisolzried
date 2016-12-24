@@ -12,11 +12,11 @@ lang: de
 
 <div class="row">
 
-  <div class="col-md-4">
+  <div class="col-sm-4">
    <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
   </div>
 
-<div class="col-md-4" markdown="1">
+<div class="col-sm-4" markdown="1">
 Wir sind eine aktive Feuerwehr aus der Gemeinde Bergkirchen in Oberbayern, die überwiegend aus einem jungen Team besteht.
 
 Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
@@ -26,7 +26,7 @@ Diese Webseite wird ständig weiterentwickelt und überarbeitet; also schau gern
 Und nun viel Spaß beim Stöbern :)
 </div>
 
-  <div class="col-md-4">
+  <div class="col-sm-4">
    <img src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
   </div>
 
