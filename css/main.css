@@ -351,6 +351,7 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 /* Bootstrap Column Style fixes */
 .list-group {
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
+  border-radius: 1em;
 }
 .list-group img {
   max-width: 100%;
@@ -554,4 +555,3 @@ video {
   border-color: #da131a;
   transition: none;
 }
-
