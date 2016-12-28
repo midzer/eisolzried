@@ -555,3 +555,13 @@ video {
   border-color: #da131a;
   transition: none;
 }
+
+/* Chatbox styles */
+/* ----------------------------------------------------------*/
+.chatbox {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+#messages { list-style-type: none; }
+#messages li:nth-child(odd) { background: #f5f5f5; }

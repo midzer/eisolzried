@@ -5,6 +5,7 @@ customjs:
   - path: /js/ical.min.js
   - path: /js/drcal.min.js
   - path: /js/longlist.min.js
+  - path: /js/socket.io.min.js
   - path: /js/main.min.js
     attr: async
 lang: de
@@ -34,7 +35,7 @@ Und nun viel Spaß beim Stöbern :)
 
 <div class="row">
 
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div class="list-group">
 
 <div class="panel-heading" markdown="1">
@@ -80,5 +81,27 @@ Und nun viel Spaß beim Stöbern :)
     </div>
   </div>
 
+   <div class="col-sm-3">
+    <div class="list-group">
+
+<div class="panel-heading" markdown="1">
+## Chat
+<div class="panel panel-default">
+  <div class="panel-body chatbox">
+    <ul id="messages"></ul>
+  </div>
+</div>
+<form action="">
+<div class="input-group">
+  <input id="m" type="text" autocomplete="off" class="form-control" placeholder="schreiben..." aria-label="Chateingabefeld">
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="button">Senden</button>
+  </span>
+</div><!-- /input-group -->
+</form>
 </div>
 
+    </div>
+  </div>
+
+</div>
