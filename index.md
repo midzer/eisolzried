@@ -91,11 +91,11 @@ Und nun viel Spaß beim Stöbern :)
     <ul id="messages"></ul>
   </div>
 </div>
-<form action="">
+<form id="chatinput">
 <div class="input-group">
   <input id="m" type="text" autocomplete="off" class="form-control" placeholder="schreiben..." aria-label="Chateingabefeld">
   <span class="input-group-btn">
-    <button class="btn btn-default" type="button">Senden</button>
+    <button class="btn btn-default" type="submit">Senden</button>
   </span>
 </div><!-- /input-group -->
 </form>

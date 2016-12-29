@@ -91,11 +91,11 @@ Gnua vazoid, vui Spaß beim umschaun :)
     <ul id="messages"></ul>
   </div>
 </div>
-<form action="">
+<form id="chatinput">
 <div class="input-group">
   <input id="m" type="text" autocomplete="off" class="form-control" placeholder="schreim..." aria-label="Chateingabefeld">
   <span class="input-group-btn">
-    <button class="btn btn-default" type="button">Sendn</button>
+    <button class="btn btn-default" type="submit">Sendn</button>
   </span>
 </div><!-- /input-group -->
 </form>
