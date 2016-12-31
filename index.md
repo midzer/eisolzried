@@ -93,7 +93,7 @@ Und nun viel Spaß beim Stöbern :)
 </div>
 <form id="chatform">
 <div class="input-group">
-  <input id="m" type="text" autocomplete="off" class="form-control" placeholder="schreiben..." aria-label="Chateingabefeld">
+  <input id="chatinput" type="text" autocomplete="off" class="form-control" placeholder="schreiben..." aria-label="Chateingabefeld">
   <span class="input-group-btn">
     <button class="btn btn-default" type="submit">Senden</button>
   </span>

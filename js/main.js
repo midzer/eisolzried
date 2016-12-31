@@ -100,8 +100,8 @@ function buildCal(data) {
 
 var socket = io.connect('https://feuerwehr-eisolzried.de:62187');
 $('#chatform').submit(function(){
-  socket.emit('chat message', $('#m').val());
-  $('#m').val('');
+  socket.emit('chat message', $('#chatinput').val());
+  $('#chatinput').val('');
   return false;
 });
 socket.on('chat message', function(msg){
