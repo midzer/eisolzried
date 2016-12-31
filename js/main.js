@@ -98,13 +98,19 @@ function buildCal(data) {
   document.getElementById('drcal').appendChild(cal);
 }
 
+function addMessage(msg) {
+  $('#messages').append($('<li>').text(msg));
+  $(".chatbox").scrollTop($(".chatbox")[0].scrollHeight);
+}
+
 var socket = io.connect('https://feuerwehr-eisolzried.de:62187');
 $('#chatform').submit(function(){
-  socket.emit('chat message', $('#chatinput').val());
+  var msg = $('#chatinput').val();
+  addMessage(msg);
+  socket.emit('chat message', msg);
   $('#chatinput').val('');
   return false;
 });
 socket.on('chat message', function(msg){
-  $('#messages').append($('<li>').text(msg));
-  $(".chatbox").scrollTop($(".chatbox")[0].scrollHeight);
+  addMessage(msg);
 });
