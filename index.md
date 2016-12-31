@@ -91,7 +91,7 @@ Und nun viel Spaß beim Stöbern :)
     <ul id="messages"></ul>
   </div>
 </div>
-<form id="chatinput">
+<form id="chatform">
 <div class="input-group">
   <input id="m" type="text" autocomplete="off" class="form-control" placeholder="schreiben..." aria-label="Chateingabefeld">
   <span class="input-group-btn">

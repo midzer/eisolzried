@@ -99,7 +99,7 @@ function buildCal(data) {
 }
 
 var socket = io.connect('https://feuerwehr-eisolzried.de:62187');
-$('#chatinput').submit(function(){
+$('#chatform').submit(function(){
   socket.emit('chat message', $('#m').val());
   $('#m').val('');
   return false;

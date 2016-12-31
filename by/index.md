@@ -91,7 +91,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
     <ul id="messages"></ul>
   </div>
 </div>
-<form id="chatinput">
+<form id="chatform">
 <div class="input-group">
   <input id="m" type="text" autocomplete="off" class="form-control" placeholder="schreim..." aria-label="Chateingabefeld">
   <span class="input-group-btn">
