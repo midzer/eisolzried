@@ -72,7 +72,7 @@ function buildCal(data) {
         var dayEvent = document.createElement('div');
         dayEvent.className = 'dayevent';
         dayEvent.setAttribute('data-toggle', 'modal');
-        dayEvent.setAttribute('data-target', '.bs-example-modal-sm');
+        dayEvent.setAttribute('data-target', '.event-modal');
         dayEvent.appendChild(document.createTextNode(ev[i].summary));
         event.detail.element.appendChild(dayEvent);
       }
