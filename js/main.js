@@ -73,6 +73,7 @@ function buildCal(data) {
         dayEvent.className = 'dayevent';
         dayEvent.setAttribute('data-toggle', 'modal');
         dayEvent.setAttribute('data-target', '.event-modal');
+        dayEvent.setAttribute('title', ev[i].summary);
         dayEvent.appendChild(document.createTextNode(ev[i].summary));
         event.detail.element.appendChild(dayEvent);
       }
