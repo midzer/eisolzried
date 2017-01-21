@@ -412,14 +412,12 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 /* Calendar styles */
 /* ----------------------------------------------------------*/
 
-.calendar {
-  border-collapse: collapse;
-}
 .calendar th {text-align: center;}
 .calendar td {
   border: 1px solid #AEAEAE;
   width: 5em;
   height: 5em;
+  max-width: 5em;
   padding: 0;
 }
 .calendar thead tr:first-child th {
@@ -442,11 +440,13 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   padding-right: 0.5ex;
 }
 .calendar .dayevent {
-  font-size: 12px;
+  font-size: 11px;
   color: #da131a;
   cursor: pointer;
   padding-left: 0.5ex;
-  padding-right: 0.5ex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .calendar .btn {
@@ -483,14 +483,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   background-position: 0 -15px;
   color:#333;
   text-decoration:none;
-}
-
-/* Calendar popup */
-/* ----------------------------------------------------------*/
-
-.ui-dialog-content {
-  font-weight: normal;
-  font-size: small;
 }
 
 /* Longlist styles */
