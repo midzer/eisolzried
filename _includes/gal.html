@@ -13,9 +13,11 @@
 {% else %}
   {% for image in page.images %}
     {% if image.name == include.image %}
+<div class="gallery">
 <a href="{{ page.imgfolder }}/{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
   <img src="{{ page.imgfolder }}/thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
 </a>
+</div>
     {% break %}
     {% endif %}
   {% endfor %}
