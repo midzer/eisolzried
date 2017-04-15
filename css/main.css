@@ -552,7 +552,7 @@ video {
 /* ----------------------------------------------------------*/
 .chatbox {
   height: 400px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #messages { list-style-type: none; }
