@@ -1,10 +1,9 @@
 {% for video in page.videos %}
   {% if include.video == null or video.name == include.video %}
-<video controls muted preload="metadata">
-  <source src="{{ page.vidfolder }}{{ video.name }}.webm" type='video/webm;codecs="vp9, vorbis"'>
-  <source src="{{ page.vidfolder }}{{ video.name }}.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+<video controls preload="metadata">
+  <source src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
+  <source src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
   Dein Browser unterstützt das Video tag nicht.
 </video>
   {% endif %}
 {% endfor %}
-
