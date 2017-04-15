@@ -65,21 +65,16 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   left: 0;
   background-color: #da131a;
   visibility: hidden;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0.1s;
   transition: all 0.3s ease-in-out 0.1s;
 }
 
 .navbar-default .navbar-nav > li > a:hover:before {
   visibility: visible;
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
 .navbar-default .navbar-nav > li.active-nav-item {
-  -moz-box-shadow: inset #da131a 0 -2px 0 0;
-  -webkit-box-shadow: inset #da131a 0 -2px 0 0;
   box-shadow: inset #da131a 0 -2px 0 0;
 }
 
@@ -120,11 +115,7 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   border: 1px solid;
   border-color: #cbcfe2 #c8cee7 #c4c7d7;
   border-radius: 3px;
-  background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);
-  background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
-  background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);
   background-image: linear-gradient(to bottom, #fdfdfd, #eceef4);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .search-results:hover {
@@ -181,11 +172,7 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   color: white !important;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  background-image: -webkit-linear-gradient(top, #da131a, #ad0f15);
-  background-image: -moz-linear-gradient(top, #da131a, #ad0f15);
-  background-image: -o-linear-gradient(top, #da131a, #ad0f15);
   background-image: linear-gradient(to bottom, #da131a, #ad0f15);
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
 }
 
@@ -321,8 +308,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   border: 1px solid #d5d5e9;
   background-color: #eef;
   padding: 8px 12px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   font-size: 15px;
   overflow:scroll;
@@ -341,8 +326,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -368,8 +351,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
     z-index: 10;
     top: 14px; right: 8px;
     background-color: white;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
   }
@@ -452,11 +433,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 .calendar .btn {
   background-color: #e6e6e6;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
   background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -465,17 +441,8 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   line-height: normal;
   border: 1px solid #ccc;
   border-bottom-color: #bbb;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 0.3s linear all;
-  -moz-transition: 0.3s linear all;
-  -ms-transition: 0.3s linear all;
-  -o-transition: 0.3s linear all;
   transition: 0.3s linear all;
 }
 
