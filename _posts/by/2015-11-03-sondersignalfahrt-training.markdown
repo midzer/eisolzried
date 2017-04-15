@@ -2,7 +2,7 @@
 layout: post
 title:  "Sondasignalfahrt Training"
 date:   2015-11-03
-imgfolder: /images/2015/uebungen
+imgfolder: /images/2015/uebungen/
 images:
   - name: sondersignalfahrt1.jpg
     text: Sondersignalfahrt 1

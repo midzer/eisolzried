@@ -2,7 +2,7 @@
 layout: post
 title:  "Abseilen im Feuerwehrhaus"
 date:   2016-02-15
-imgfolder: /images/2016/uebungen
+imgfolder: /images/2016/uebungen/
 images:
   - name: absturzsicherung1.jpg
     text: Absturzsicherung 1

@@ -2,7 +2,7 @@
 layout: page
 title: Media
 permalink: /media/
-imgfolder: /images/media
+imgfolder: /images/media/
 vidfolder: /videos/media/
 images:
   - name: 5a9590bf10c59c43.jpg

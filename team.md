@@ -2,7 +2,7 @@
 layout: page
 title: Team
 permalink: /team/
-imgfolder: /images/team
+imgfolder: /images/team/
 vidfolder: /videos/team/
 images:
   - name: gruppe2013.jpg

@@ -2,7 +2,7 @@
 layout: post
 title:  "Leistungsprüfung THL erfolgreich"
 date:   2015-10-29
-imgfolder: /images/2015/uebungen
+imgfolder: /images/2015/uebungen/
 images:
   - name: thl01.jpg
     text: THL 1

@@ -2,7 +2,7 @@
 layout: post
 title:  "Rehunfall bei Priel"
 date:   2015-11-30
-imgfolder: /images/2015/einsaetze
+imgfolder: /images/2015/einsaetze/
 images:
   - name: rehunfall1.jpg
     text: Rehunfall 1

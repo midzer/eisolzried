@@ -2,7 +2,7 @@
 layout: post
 title:  "THL übn mit da Feiawea Foigading"
 date:   2016-04-21
-imgfolder: /images/2016/uebungen
+imgfolder: /images/2016/uebungen/
 images:
   - name: thl-feldgeding01.jpg
     text: THL Feldgeding 1

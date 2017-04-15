@@ -2,7 +2,7 @@
 layout: post
 title:  "Ganztagesübung bei der Feuerwehrschule in Geretsried"
 date:   2016-07-04
-imgfolder: /images/2016/uebungen
+imgfolder: /images/2016/uebungen/
 images:
   - name: geretsried1.jpg
     text: Geretsried 1

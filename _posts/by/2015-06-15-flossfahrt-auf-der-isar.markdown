@@ -2,7 +2,7 @@
 layout: post
 title:  "Floßfahrt auf da Isar"
 date:   2015-06-15
-imgfolder: /images/2015/feiern
+imgfolder: /images/2015/feiern/
 images:
   - name: flossfahrt1.jpg
     text: Floßfahrt 1

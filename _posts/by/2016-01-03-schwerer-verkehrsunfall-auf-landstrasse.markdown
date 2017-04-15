@@ -2,7 +2,7 @@
 layout: post
 title:  "Schwara Vakeasunfoi auf da Landstraß"
 date:   2016-01-03
-imgfolder: /images/2016/einsaetze
+imgfolder: /images/2016/einsaetze/
 images:
   - name: unfall1.jpg
     text: Unfall 1

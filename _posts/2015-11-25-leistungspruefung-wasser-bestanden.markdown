@@ -2,7 +2,7 @@
 layout: post
 title:  "Leistungsprüfung Wasser bestanden"
 date:   2015-11-25
-imgfolder: /images/2015/uebungen
+imgfolder: /images/2015/uebungen/
 images:
   - name: wasser01.jpg
     text: Wasser 1

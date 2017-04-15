@@ -2,7 +2,7 @@
 layout: post
 title:  "Sandsäcke füllen im Bauhof Dachau"
 date:   2015-07-10
-imgfolder: /images/2015/uebungen
+imgfolder: /images/2015/uebungen/
 images:
   - name: sandsack1.jpg
     text: Sandsack 1

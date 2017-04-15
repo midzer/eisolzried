@@ -2,7 +2,7 @@
 layout: post
 title:  "Gloabrand g'löscht"
 date:   2015-12-07
-imgfolder: /images/2015/einsaetze
+imgfolder: /images/2015/einsaetze/
 images:
   - name: kleinbrand1.jpg
     text: Kleinbrand 1

@@ -2,7 +2,7 @@
 layout: post
 title:  "Leck in LKW-Tank"
 date:   2015-07-10
-imgfolder: /images/2015/einsaetze
+imgfolder: /images/2015/einsaetze/
 images:
   - name: leck1.jpg
     text: Leck 1

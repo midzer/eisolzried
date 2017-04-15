@@ -2,7 +2,7 @@
 layout: page
 title: Chronik
 permalink: /chronik/
-imgfolder: /images/chronik
+imgfolder: /images/chronik/
 images:
   - name: AmtsBlatt1879.jpg
     text: Amtsblatt 1879
