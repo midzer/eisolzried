@@ -23,3 +23,10 @@ compress_html:
   profile: false
   startings: [html, head, body]
 
+gems:
+- jekyll-autoprefixer
+
+autoprefixer:
+  only_production: true
+  browsers:
+  - last 2 versions
