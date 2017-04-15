@@ -93,7 +93,7 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
 
 ### MLF
 
-{% include vid.html %}
+{% include vid.html video="abfahrt-lentner" %}
 
 {% include gal.html image="mlf1.jpg" %}
 

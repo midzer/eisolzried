@@ -93,7 +93,7 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
 
 ### MLF
 
-{% include vid.html %}
+{% include vid.html video="abfahrt-lentner" %}
 
 {% include gal.html image="mlf1.jpg" %}
 

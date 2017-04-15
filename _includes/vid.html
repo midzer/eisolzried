@@ -1,9 +1,26 @@
-{% for video in page.videos %}
-  {% if include.video == null or video.name == include.video %}
-<video controls preload="metadata">
+{% if include.video == null %}
+<div class="row">
+  {% for video in page.videos %}
+    <div class="col-lg-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <video class="embed-responsive-item" controls preload="metadata">
+          <source src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
+          <source src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
+          Dein Browser unterstützt das Video tag nicht.
+        </video>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% else %}
+  {% for video in page.videos %}
+    {% if video.name == include.video %}
+<video class="embed-responsive-item" controls preload="metadata">
   <source src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
   <source src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
   Dein Browser unterstützt das Video tag nicht.
 </video>
-  {% endif %}
-{% endfor %}
+    {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
