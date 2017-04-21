@@ -5,10 +5,10 @@ Diese statische Webseite wird mit [jekyll](http://jekyllrb.com) gebaut. Um sie l
 ```
 git clone https://github.com/midzer/eisolzried.git
 cd eisolzried
-gem install jekyll bundler
+(sudo) gem install jekyll bundler
 bundle
-bundle exec jekyll serve
+jekyll serve
 ```
 
-Nun ist die Webseite im Browser über http://localhost:4000 zu finden. Die Produktivversion wird mit `JEKYLL_ENV=production bundle exec jekyll build` gebaut.
+Nun ist die Webseite im Browser über http://localhost:4000 zu finden. Die Produktivversion wird mit `JEKYLL_ENV=production jekyll build` gebaut.
 
