@@ -145,18 +145,18 @@ lang: de
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#bilder">Bilder</a></li>
   <li><a data-toggle="tab" href="#videos">Videos</a></li>
+  <li><a data-toggle="tab" href="#animiertes">Animiertes</a></li>
 </ul>
 
 <div class="tab-content">
-  <div id="bilder" class="tab-pane fade in active" markdown="1">
+  <div id="bilder" class="tab-pane fade in active">
 {% include gal.html %}
-
-![Crash](/images/media/efacc3a1c117821d.gif)
-
-![Spongebob](/images/media/a148feb684f37282.gif)
   </div>
   <div id="videos" class="tab-pane fade">
 {% include vid.html %}
   </div>
+  <div id="animiertes" class="tab-pane fade" markdown="1">
+![Crash](/images/media/animated/efacc3a1c117821d.gif)
+![Spongebob](/images/media/animated/a148feb684f37282.gif)
+  </div>
 </div>
-
