@@ -390,6 +390,16 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   .post-content blockquote { padding-left: 10px; }
 }
 
+.post-nav a {
+  width: 50%;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.post-nav .next-post {
+  text-align: right;
+}
+
 /* Calendar styles */
 /* ----------------------------------------------------------*/
 
