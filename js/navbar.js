@@ -10,8 +10,8 @@ function setTheme(local) {
         icon = 'moon';
         css = ''
     }
-    document.getElementById('theme-link').setAttribute('href', css);
-    document.getElementById('theme-icon').setAttribute('class', 'icon-' + icon);
+    document.getElementById('theme-link').href = css;
+    document.getElementById('theme-icon').className = 'icon-' + icon;
     localStorage.setItem('theme', theme);
 }
 
