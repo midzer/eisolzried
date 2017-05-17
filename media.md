@@ -156,7 +156,7 @@ lang: de
 {% include vid.html %}
   </div>
   <div id="animiertes" class="tab-pane fade" markdown="1">
-![Crash](/images/media/animated/efacc3a1c117821d.gif)
-![Spongebob](/images/media/animated/a148feb684f37282.gif)
+![Crash](/images/media/animated/efacc3a1c117821d.webp)
+![Spongebob](/images/media/animated/a148feb684f37282.webp)
   </div>
 </div>
