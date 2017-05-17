@@ -1,14 +1,3 @@
-SimpleJekyllSearch({
-searchInput: document.getElementById('search-input'),
-resultsContainer: document.getElementById('results-container'),
-json: '/search.json',
-searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-noResultsText: '<li><a>Nix gfunna!</a></li>',
-limit: 5,
-fuzzy: false,
-exclude: ['Welcome']
-});
-
 function setTheme(local) {
     var theme, icon, css;
     if (local == 'light') {
@@ -21,14 +10,10 @@ function setTheme(local) {
         icon = 'moon';
         css = ''
     }
-    localStorage.setItem('theme', theme);
-    document.getElementById('theme-icon').setAttribute('class', 'icon-' + icon);
     document.getElementById('theme-link').setAttribute('href', css);
+    document.getElementById('theme-icon').setAttribute('class', 'icon-' + icon);
+    localStorage.setItem('theme', theme);
 }
-
-document.getElementById('theme-switch').onclick = function() {
-    setTheme(localStorage.getItem('theme'));
-};
 
 if (localStorage.getItem('theme') == 'dark') {
     setTheme('light');
@@ -36,3 +21,18 @@ if (localStorage.getItem('theme') == 'dark') {
 else {
     localStorage.setItem('theme', 'light');
 }
+
+document.getElementById('theme-switch').onclick = function() {
+    setTheme(localStorage.getItem('theme'));
+};
+
+SimpleJekyllSearch({
+searchInput: document.getElementById('search-input'),
+resultsContainer: document.getElementById('results-container'),
+json: '/search.json',
+searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+noResultsText: '<li><a>Nix gfunna!</a></li>',
+limit: 5,
+fuzzy: false,
+exclude: ['Welcome']
+});
