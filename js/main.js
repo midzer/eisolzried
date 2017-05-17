@@ -1,5 +1,3 @@
-$('.gallery a').simpleLightbox();
-
 // 5. Convert node list of all images with data-src attributed to array
 var imgs = document.querySelectorAll('img[data-src]');
 if (! ('IntersectionObserver' in window)) {
@@ -29,3 +27,16 @@ if (! ('IntersectionObserver' in window)) {
   // 6. Observe each image derived from the array above
   imgs.forEach(img => observer.observe(img));
 }
+
+$('.gallery a').simpleLightbox();
+
+SimpleJekyllSearch({
+searchInput: document.getElementById('search-input'),
+resultsContainer: document.getElementById('results-container'),
+json: '/search.json',
+searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+noResultsText: '<li><a>Nix gfunna!</a></li>',
+limit: 5,
+fuzzy: false,
+exclude: ['Welcome']
+});
