@@ -15,46 +15,8 @@ lang: de
 
   <hr>
 
-  <section class="share">
-  {% if page.lang == 'by' %}
-  Den Beitrog weidagehm
-  {% else %}
-  Diesen Beitrag teilen
-  {% endif %}
-  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ page.url}}">
-    <span class="share-icon icon-facebook"></span>
-  </a>
-  <a target="_blank" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ page.url}}">
-    <span class="share-icon icon-twitter"></span>
-  </a>
-  <a target="_blank" href="https://plus.google.com/share?url={{ site.url}}{{ page.url}}">
-    <span class="share-icon icon-gplus"></span>
-  </a>
-  </section>
+  {% include social.html %}
 
-  {% assign sorted-posts = site.posts | where: "lang",page.lang %}
-  {% for post in sorted-posts %}
-    {% if post.url == page.url and page.lang == post.lang %}
-      {% assign post_index0 = forloop.index0 %}
-      {% assign post_index1 = forloop.index %}
-    {% endif %}
-  {% endfor %}
-  {% for post in sorted-posts %}
-    {% if post_index0 == forloop.index %}
-      {% assign next_post = post %}
-    {% endif %}
-    {% if post_index1 == forloop.index0 %}
-      {% assign prev_post = post %}
-    {% endif %}
-  {% endfor %}
-
-  <nav class="post-nav">
-  {% if prev_post %}
-    <a href="{{ prev_post.url }}">&laquo; {{ prev_post.title }}</a>
-  {% endif %}
-  {% if next_post %}
-    <a class="next-post" href="{{ next_post.url }}">{{ next_post.title }} &raquo;</a>
-  {% endif %}
-  </nav>
+  {% include post-nav.html %}
 
 </div>

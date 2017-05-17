@@ -1,0 +1,17 @@
+<section class="share">
+  {% if page.lang == 'by' %}
+  Den Beitrog weidagehm
+  {% else %}
+  Diesen Beitrag teilen
+  {% endif %}
+  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ page.url}}">
+    <span class="share-icon icon-facebook"></span>
+  </a>
+  <a target="_blank" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ page.url}}">
+    <span class="share-icon icon-twitter"></span>
+  </a>
+  <a target="_blank" href="https://plus.google.com/share?url={{ site.url}}{{ page.url}}">
+    <span class="share-icon icon-gplus"></span>
+  </a>
+  </section>
+  
