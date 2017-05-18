@@ -6,7 +6,7 @@
     <div class="col-xs-6 col-sm-4 col-md-3">
       <a href="{{ page.imgfolder }}{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
       {% if loopindex > 16 %}
-        <img class="invisible img-responsive img-rounded" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+        <img class="img-responsive img-rounded" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
       {% else %}
         <img class="img-responsive img-rounded" src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
       {% endif %}
