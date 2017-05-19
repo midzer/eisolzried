@@ -25,7 +25,7 @@ function load(element) {
 // 1. Convert node list of all elements with data-src attributed to array
 var els = document.querySelectorAll('.lazy');
 if (! ('IntersectionObserver' in window)) {
-  console.log('Intersection Observers not supported');
+  console.log('Intersection Observer not supported');
   for (var i = 0; i < els.length; i++) {
       load(els[i]);
   }
