@@ -1,21 +1,24 @@
 function replaceSrc(element) {
+    element.src = element.dataset.src;
+    element.removeAttribute('data-src');
+}
+
+function addLoaded(element) {
+    element.classList.add('loaded');
+}
+
+function load(element) {
     if (element.nodeName == 'VIDEO') {
         var sources = element.getElementsByTagName('source');
         for (let i = 0; i < sources.length; i++) {
-            sources[i].src = sources[i].dataset.src;
-            sources[i].removeAttribute('data-src');
+            replaceSrc(sources[i]);
         }
         element.load();
-        element.onloadstart = function() {
-            element.classList.add('loaded');
-        };
+        element.onloadstart = function() { addLoaded(element) };
     }
     else {
-        element.src = element.dataset.src;
-        element.removeAttribute('data-src');
-        element.onload = function() {
-            element.classList.add('loaded');
-        }
+        replaceSrc(element);
+        element.onload = function() { addLoaded(element) };
     }
 }
 
@@ -24,7 +27,7 @@ var els = document.querySelectorAll('.lazy');
 if (! ('IntersectionObserver' in window)) {
   console.log('Intersection Observers not supported');
   for (var i = 0; i < els.length; i++) {
-      replaceSrc(els[i]);
+      load(els[i]);
   }
 } else {
   // 2. Create the IntersectionObserver and bind it to the function we want it to work with
@@ -37,7 +40,7 @@ if (! ('IntersectionObserver' in window)) {
       changes.forEach(change => {
           if (change.isIntersecting) {
               // 4. take url from `data-src` attribute
-              replaceSrc(change.target);
+              load(change.target);
 
               // 5. Stop observing the current target
               observer.unobserve(change.target);
