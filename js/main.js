@@ -6,6 +6,9 @@ function replaceSrc(element) {
             sources[i].removeAttribute('data-src');
         }
         element.load();
+        element.onloadstart = function() {
+            element.classList.add('loaded');
+        };
     }
     else {
         element.src = element.dataset.src;

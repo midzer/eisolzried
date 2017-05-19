@@ -544,7 +544,7 @@ video {
   margin: 0 10px;
 }
 
-img.loaded {
+img.loaded, video.loaded {
   animation: fadeIn 1s both;
 }
 @keyframes fadeIn {
