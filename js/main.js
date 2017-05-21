@@ -55,13 +55,34 @@ if (! ('IntersectionObserver' in window)) {
 
 $('.gallery a').simpleLightbox();
 
-SimpleJekyllSearch({
-searchInput: document.getElementById('search-input'),
-resultsContainer: document.getElementById('results-container'),
-json: '/search.json',
-searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-noResultsText: '<li><a>Nix gfunna!</a></li>',
-limit: 5,
-fuzzy: false,
-exclude: ['Welcome']
+const endpoint = '/search.json';
+const pages = [];
+fetch(endpoint)
+    .then(blob => blob.json())
+    .then(data => pages.push(...data))
+function findResults(termToMatch, pages) {
+    return pages.filter(item => {
+        const regex = new RegExp(termToMatch, 'gi');
+        return item.title.match(regex) || item.content.match(regex);
+    });
+}
+function displayResults() {
+    const resultsArray = findResults(this.value, pages);
+    const html = resultsArray.map(item => {
+        return `
+            <li><a href="${item.url}">${item.title}</a></li>`;
+    }).join('');
+    if ((resultsArray.length == 0) || (this.value == '')) {
+        resultsList.innerHTML = `<p>Nix gfunna!</p>`;
+    } else {
+        resultsList.innerHTML = html;
+    }
+}
+const field = document.querySelector('#search-input');
+const resultsList = document.querySelector('#results-container');
+field.addEventListener('keyup', displayResults);
+field.addEventListener('keypress', function(event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+    }
 });
