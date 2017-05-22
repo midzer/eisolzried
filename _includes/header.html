@@ -25,19 +25,14 @@
           <ul class="search-results" id="results-container"></ul>
         </form>
       </div>
+      <button id="language-btn" type="button" class="btn btn-default navbar-btn">
+        <img id="flag-img" height="19" width="32"/>
+      </button>
       <button id="theme-switch" type="button" class="btn btn-default navbar-btn">
         <i id="theme-icon" class="icon-moon"></i>
       </button>
       <script src="{{ "/js/navbar.min.js" | prepend: site.baseurl }}"></script>
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-globe"></i>{{ site.data.strings.[page.lang].language }} <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ page.url | remove_language }}"><img src="/assets/de.png" alt="Flagge Deutschland" height="19" width="32"/> {{ site.data.strings.[page.lang].german }}</a></li>
-            <li><a href="/by{{ page.url | remove_language }}"><img src="/assets/by.png" alt="Flagge Bayern" height="19" width="32"/> {{ site.data.strings.[page.lang].bavarian }}</a></li>
-          </ul>
-        </li>
-      </ul>
+
       <ul class="nav navbar-nav navbar-right">
         {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}
