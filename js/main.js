@@ -55,7 +55,7 @@ if (! ('IntersectionObserver' in window)) {
 
 $('.gallery a').simpleLightbox();
 
-const endpoint = '/search.json';
+const endpoint = '/assets/search.json';
 const pages = [];
 fetch(endpoint)
     .then(blob => blob.json())
