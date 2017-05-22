@@ -31,6 +31,14 @@
       <button id="theme-switch" type="button" class="btn btn-default navbar-btn">
         <i id="theme-icon" class="icon-moon"></i>
       </button>
+      <button id="siren-btn" type="button" class="btn btn-default navbar-btn">
+        <i id="siren-icon" class="icon-volume-up"></i>
+      </button>
+      <audio id="siren-player" loop preload="none">
+        <source src="/assets/siren.ogg" type="audio/ogg">
+        <source src="/assets/siren.mp3" type="audio/mpeg">
+      Dein Browser unterstützt den Audio tag nicht.
+      </audio>
       <script src="{{ "/js/navbar.min.js" | prepend: site.baseurl }}"></script>
 
       <ul class="nav navbar-nav navbar-right">

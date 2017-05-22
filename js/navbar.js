@@ -43,3 +43,20 @@ else {
 document.getElementById('theme-switch').onclick = function() {
     setTheme(localStorage.getItem('theme'));
 };
+
+document.getElementById('siren-btn').onclick = function() {
+    var player = document.getElementById('siren-player');
+    var icon;
+    if (player.paused) {
+        if (player.readyState == 0) {
+            player.load();
+        }
+        player.play();
+        icon = 'volume-off';
+    }
+    else {
+        player.pause();
+        icon = 'volume-up';
+    }
+    document.getElementById('siren-icon').className = 'icon-' + icon;
+};
