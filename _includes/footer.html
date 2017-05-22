@@ -2,7 +2,7 @@
 
   <div class="wrap text-center">
     {% if site.github_username %}
-    <a target="_blank"  href="https://github.com/{{ site.github_username }}">
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
       <i class="icon-github"></i>
       {% if page.lang == 'by' %}
       Soß
@@ -11,9 +11,8 @@
       {% endif %}
     </a>&nbsp;
     {% endif %}
-    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow" target="_blank"><img src="/assets/license.png" alt="Creative Commons BY-NC-SA" height="15" width="80"></a>&nbsp;
+    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="nofollow noopener"><img src="/assets/license.png" alt="Creative Commons BY-NC-SA" height="15" width="80"></a>&nbsp;
     <a href="/impressum">Impressum</a>
   </div>
 
 </footer>
-
