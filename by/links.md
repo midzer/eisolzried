@@ -27,3 +27,8 @@ lang: by
 
 [Bürgahaus Deinhausn-Eilzria](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 
+## Spui
+
+[Firefighter "Krause"](http://firefighter.pixelactivity.de/)
+
+[Firefighter Pinball](http://b10b.com/firefighterpinball/)

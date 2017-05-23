@@ -29,5 +29,6 @@ lang: de
 
 ## Spiele
 
-[Firefighter Pinball](http://b10b.com/firefighterpinball/)
+[Firefighter "Krause"](http://firefighter.pixelactivity.de/)
 
+[Firefighter Pinball](http://b10b.com/firefighterpinball/)
