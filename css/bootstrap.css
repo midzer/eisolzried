@@ -1,12 +1,12 @@
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*!
- * Generated using the Bootstrap Customizer (<none>)
- * Config saved to config.json and <none>
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/customize/?id=a82768d133f3db720a1a21ce8407469c)
+ * Config saved to config.json and https://gist.github.com/a82768d133f3db720a1a21ce8407469c
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -3589,6 +3589,44 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444444;
 }
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  list-style: none;
+  text-align: center;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #777777;
+  background-color: #ffffff;
+  cursor: not-allowed;
+}
 .panel {
   margin-bottom: 20px;
   background-color: #ffffff;
@@ -4126,6 +4164,8 @@ button.close {
 .navbar-header:after,
 .navbar-collapse:before,
 .navbar-collapse:after,
+.pager:before,
+.pager:after,
 .panel-body:before,
 .panel-body:after,
 .modal-header:before,
@@ -4145,6 +4185,7 @@ button.close {
 .navbar:after,
 .navbar-header:after,
 .navbar-collapse:after,
+.pager:after,
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after {

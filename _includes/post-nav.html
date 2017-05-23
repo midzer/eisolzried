@@ -13,13 +13,18 @@
       {% assign prev_post = post %}
     {% endif %}
   {% endfor %}
-
-  <nav class="post-nav">
-  {% if prev_post %}
-    <a href="{{ prev_post.url }}">&laquo; {{ prev_post.title }}</a>
-  {% endif %}
-  {% if next_post %}
-    <a class="next-post" href="{{ next_post.url }}">{{ next_post.title }} &raquo;</a>
-  {% endif %}
-  </nav>
   
+<nav aria-label="Wechsle zu vorherigen oder nächsten Beitrag">
+  <ul class="pager">
+    {% if prev_post %}
+    <li class="previous">
+      <a href="{{ prev_post.url }}"><span aria-hidden="true">&larr;</span> {{ prev_post.title }}</a>
+    </li>
+    {% endif %}
+    {% if next_post %}
+    <li class="next">
+      <a href="{{ next_post.url }}">{{ next_post.title }} <span aria-hidden="true">&rarr;</span></a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>

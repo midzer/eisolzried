@@ -391,6 +391,7 @@
     "input-groups.less",
     "navs.less",
     "navbar.less",
+    "pager.less",
     "panels.less",
     "responsive-embed.less",
     "close.less",
@@ -405,5 +406,5 @@
     "collapse.js",
     "transition.js"
   ],
-  "customizerUrl": "<none>"
+  "customizerUrl": "https://getbootstrap.com/customize/?id=a82768d133f3db720a1a21ce8407469c"
 }
