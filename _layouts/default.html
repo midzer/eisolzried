@@ -25,11 +25,6 @@ layout: compress
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="{{ "/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-  {% if page.customjs %}
-    {% for file in page.customjs %}
-    <script src="{{ file.path | prepend: site.baseurl }}" {{ file.attr }}></script>
-    {% endfor %}
-  {% endif %}
   <script src="{{ "/js/simple-lightbox.min.js" | prepend: site.baseurl }}"></script>
   <!--[if IE]>
   <script src="{{ "/js/fetch.js" | prepend: site.baseurl }}"></script>
@@ -37,6 +32,11 @@ layout: compress
   <script src="{{ "/js/main.min.js" | prepend: site.baseurl }}" async></script>
   <!--<script src="{{ "/js/preload.min.js" | prepend: site.baseurl }}" async></script>-->
   <!--<script src="{{ "/js/snowstorm.min.js" | prepend: site.baseurl }}" async></script>-->
+  {% if page.customjs %}
+    {% for file in page.customjs %}
+    <script src="{{ file.path | prepend: site.baseurl }}" {{ file.attr }}></script>
+    {% endfor %}
+  {% endif %}
   </body>
 
 </html>
