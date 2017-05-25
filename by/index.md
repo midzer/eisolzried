@@ -5,7 +5,7 @@ customjs:
   - path: /js/ical.min.js
   - path: /js/drcal.min.js
   - path: /js/longlist.min.js
-  - path: /js/socket.io.min.js
+  - path: /js/socket.io.js
   - path: /js/index.min.js
     attr: async
 lang: by

@@ -104,7 +104,7 @@ function addMessage(msg) {
   $(".chatbox").scrollTop($(".chatbox")[0].scrollHeight);
 }
 
-var socket = io.connect('https://feuerwehr-eisolzried.de:62187');
+var socket = io.connect('wss://feuerwehr-eisolzried.de:62187');
 $('#chatform').submit(function(){
   var msg = $('#chatinput').val();
   addMessage(msg);
