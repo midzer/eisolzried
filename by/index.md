@@ -13,24 +13,25 @@ lang: by
 
 <div class="row">
 
-  <div class="col-sm-4">
-   <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
+  <div class="col-sm-5">
+{% include carousel.html %}
   </div>
 
-<div class="col-sm-4" markdown="1">
-Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san.
+<div class="col-sm-7" markdown="1">
+Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
 
-Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
+An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt) di hoid. Gnua vazoid, vui Spaß beim umschaun :)
 
-An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt) di hoid.
-
-Gnua vazoid, vui Spaß beim umschaun :)
+<div class="row">
+  <div class="col-sm-6">
+    <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>    
+  </div>
+  <div class="col-sm-6">
+    <img src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
+  </div>
 </div>
 
-  <div class="col-sm-4">
-   <img src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
-  </div>
-
+</div>
 </div>
 
 <div class="row">

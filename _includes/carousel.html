@@ -1,0 +1,52 @@
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="/images/index/wasser14.jpg" alt="Leistungsprüfung Wasser 2015">
+      <div class="carousel-caption">
+        {% if page.lang == 'by' %}
+        <h3>Bei uns gäd da Pansn ob!</h3>
+        {% else %}
+        <h3>Bei uns gehts ab!</h3>
+        {% endif %}
+      </div>
+    </div>
+    <div class="item">
+      <img src="/images/index/thl15.jpg" alt="Leistungsprüfung THL 2015">
+      <div class="carousel-caption">
+        {% if page.lang == 'by' %}
+        <h3>...mid vui Gaudi</h3>
+        {% else %}
+        <h3>...mit viel Spaß</h3>
+        {% endif %}
+      </div>
+    </div>
+    <div class="item">
+      <img src="/images/index/flossfahrt2.jpg" alt="Floßfahrt 2015">
+      <div class="carousel-caption">
+        {% if page.lang == 'by' %}
+        <h3>...und freile Griabigkeid</h3>
+        {% else %}
+        <h3>...und natürlich Geselligkeit</h3>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Vorheriges</span>
+  </a>
+  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Nächstes</span>
+  </a>
+</div>

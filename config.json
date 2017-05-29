@@ -397,14 +397,16 @@
     "close.less",
     "component-animations.less",
     "dropdowns.less",
-    "modals.less"
+    "modals.less",
+    "carousel.less"
   ],
   "js": [
+    "carousel.js",
     "dropdown.js",
     "modal.js",
     "tab.js",
     "collapse.js",
     "transition.js"
   ],
-  "customizerUrl": "https://getbootstrap.com/customize/?id=a82768d133f3db720a1a21ce8407469c"
+  "customizerUrl": "https://getbootstrap.com/customize/?id=60796b92d4530b33488e1d5412326006"
 }
