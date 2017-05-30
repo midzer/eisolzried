@@ -1,9 +1,9 @@
 <section class="share">
-  {% if page.lang == 'by' %}
-  Den Beitrog weidagehm
-  {% else %}
-  Diesen Beitrag teilen
-  {% endif %}
+{% if page.lang == 'by' %}
+Den Beitrog weidagehm
+{% else %}
+Diesen Beitrag teilen
+{% endif %}
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ page.url}}" rel="nofollow noopener">
     <span class="share-icon icon-facebook"></span>
   </a>

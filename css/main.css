@@ -331,16 +331,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 
 .post pre.terminal code { background-color: #333; }
 
-/* Bootstrap Column Style fixes */
-.list-group {
-  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
-  border-radius: 1em;
-}
-.list-group img {
-  max-width: 100%;
-  text-align: middle;
-}
-
 /* media queries */
 /* ----------------------------------------------------------*/
 
@@ -540,4 +530,10 @@ img.loaded, video.loaded {
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* Bootstrap overrides */
+/* ----------------------------------------------------------*/
+.row {
+  padding-bottom: 10px;
 }
