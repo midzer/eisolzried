@@ -71,10 +71,10 @@ if (els.length > 0) {
     }
 
     if (! ('IntersectionObserver' in window)) {
-    console.log('Intersection Observer not supported');
-    for (var i = 0; i < els.length; i++) {
-        load(els[i]);
-    }
+        console.log('Intersection Observer not supported');
+        for (var i = 0; i < els.length; i++) {
+            load(els[i]);
+        }
     } else {
     // 2. Create the IntersectionObserver and bind it to the function we want it to work with
     var observer = new IntersectionObserver(onChange, {
@@ -92,10 +92,8 @@ if (els.length > 0) {
 
                 // 5. Stop observing the current target
                 observer.unobserve(change.target);
-
-                console.log('lazy loaded element');
             }
-            })
+        })
     }
     // 6. Observe each image derived from the array above
     els.forEach(el => observer.observe(el));
