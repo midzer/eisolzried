@@ -2,21 +2,18 @@
 layout: default
 lang: de
 ---
-<div class="post">
-
-  <header class="post-header">
+<article>
+  <div class="page-header">
     <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date | localize: "%e. %B %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+  </div>
 
-  <article class="post-content">
   {{ content }}
-  </article>
 
-  <hr>
+</article>
 
-  {% include social.html %}
+<hr>
 
-  {% include post-nav.html %}
+{% include social.html %}
 
-</div>
+{% include post-nav.html %}
