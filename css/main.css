@@ -408,7 +408,9 @@ video {
 .gallery img {
   max-width: 100%;
   border: 2px solid #fdfdfd;
-  transition: border-color 0.5s ease-out;  
+  transition: border-color 0.5s ease-out;
+  margin-top: 10px;		
+  margin-bottom: 10px;
 }
 
 .gallery img:hover {
