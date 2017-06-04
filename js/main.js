@@ -84,9 +84,12 @@ if (els.length > 0) {
     function onChange(changes) {
         // 3. For each element that we want to change
         changes.forEach(change => {
-            // Edge 15 doesn't support isIntersecting, but we can infer it from intersectionRatio
+            // Edge 15 doesn't support isIntersecting, but we can infer it
             // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
-            if (change.intersectionRatio > 0) {
+            // https://github.com/WICG/IntersectionObserver/issues/211
+            const isIntersecting = (typeof change.isIntersecting === 'boolean') ?
+            change.isIntersecting : change.intersectionRect.height > 0;
+            if (isIntersecting) {
                 // 4. take url from `data-src` attribute
                 load(change.target);
 
