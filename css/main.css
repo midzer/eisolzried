@@ -192,8 +192,12 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 }
 
 .page-content img {
-  max-width: 60%;
-  text-align: center;
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .embed-container { 
