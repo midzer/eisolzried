@@ -156,7 +156,7 @@ lang: de
 {% include vid.html %}
   </div>
   <div id="animiertes" class="tab-pane fade" markdown="1">
-![Crash](){:class="lazy" data-src="/images/media/animated/efacc3a1c117821d.webp"}
-![Spongebob](){:class="lazy" data-src="/images/media/animated/a148feb684f37282.webp"}
+![Crash](){:class="lazy img-responsive" data-src="/images/media/animated/efacc3a1c117821d.webp"}
+![Spongebob](){:class="lazy img-responsive" data-src="/images/media/animated/a148feb684f37282.webp"}
   </div>
 </div>
