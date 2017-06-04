@@ -1,18 +1,11 @@
 {% if include.video == null %}
 <div class="row">
   {% for video in page.videos %}
-  {% assign loopindex = forloop.index %}
     <div class="col-md-6">
       <div class="embed-responsive embed-responsive-16by9">
-        {% if loopindex > 6 %}
         <video class="lazy embed-responsive-item" controls preload="metadata">
           <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
           <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">  
-        {% else %}
-        <video class="embed-responsive-item" controls preload="metadata">
-          <source src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
-          <source src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
-        {% endif %}
         Dein Browser unterstützt das Video tag nicht.
         </video>
       </div>
