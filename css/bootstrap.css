@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (https://getbootstrap.com/customize/?id=60796b92d4530b33488e1d5412326006)
- * Config saved to config.json and https://gist.github.com/60796b92d4530b33488e1d5412326006
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/customize/?id=107168074a7c3e2f35faafed155ec664)
+ * Config saved to config.json and https://gist.github.com/107168074a7c3e2f35faafed155ec664
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -247,6 +247,8 @@ img {
   vertical-align: middle;
 }
 .img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
@@ -3628,6 +3630,32 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #777777;
   background-color: #ffffff;
   cursor: not-allowed;
+}
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.thumbnail > img,
+.thumbnail a > img {
+  margin-left: auto;
+  margin-right: auto;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #337ab7;
+}
+.thumbnail .caption {
+  padding: 9px;
+  color: #333333;
 }
 .panel {
   margin-bottom: 20px;

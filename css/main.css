@@ -186,15 +186,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   background-color: #fff;
 }
 
-.page-content img {
-  max-width: 90%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .page-content table {
   margin-left: auto;
   margin-right: auto;
@@ -382,21 +373,6 @@ video {
   max-width: 90%;
 }
 
-/* Gallery styles */
-/* ----------------------------------------------------------*/
-.gallery img {
-  max-width: 100%;
-  border: 2px solid #fdfdfd;
-  transition: border-color 0.5s ease-out;
-  margin-top: 10px;		
-  margin-bottom: 10px;
-}
-
-.gallery img:hover {
-  border-color: #da131a;
-  transition: none;
-}
-
 /* Chatbox styles */
 /* ----------------------------------------------------------*/
 .chatbox {
@@ -423,3 +399,13 @@ img.loaded, video.loaded {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+/* Gallery styles */
+/* ----------------------------------------------------------*/
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #da131a;
+}
+
+.top-buffer { margin-top: 10px; }

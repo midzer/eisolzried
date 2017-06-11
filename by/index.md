@@ -35,7 +35,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
   </div><!-- col-sm-7 -->
 </div><!-- row -->
 
-<div class="row">
+<div class="row top-buffer">
   
   <div class="col-sm-3">
     <div class="panel panel-default">
