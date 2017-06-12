@@ -40,7 +40,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
   <div class="col-sm-3">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Wos neis gibt</h3>
+        <h3 class="title">Wos neis gibt</h3>
       </div>
       <div class="panel-body">
 {% include posts.html %}
@@ -51,7 +51,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
   <div class="col-sm-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Wos zum doa is</h3>
+        <h3 class="title">Wos zum doa is</h3>
       </div>
       <div class="panel-body">
 {% include calendar.html %}
@@ -62,7 +62,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
   <div class="col-sm-3">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Chat</h3>
+        <h3 class="title">Chat</h3>
       </div>
       <div class="panel-body">
 {% include chat.html %}

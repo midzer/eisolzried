@@ -408,4 +408,10 @@ a.thumbnail.active {
   border-color: #da131a;
 }
 
+/* Helper styles */
+/* ----------------------------------------------------------*/
 .top-buffer { margin-top: 10px; }
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
