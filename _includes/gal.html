@@ -1,24 +1,28 @@
 {% if include.image == null %}
 <div class="row top-buffer">
-{% for image in page.images %}
-{% assign loopindex = forloop.index %}
-  <div class="col-xs-6 col-sm-4 col-md-3">
-    <a href="{{ page.imgfolder }}{{ image.name }}" class="thumbnail" data-lightbox="1" title="{{ image.text }}">
-    {% if loopindex > 16 %}
-      <img class="lazy" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-    {% else %}
-      <img src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-    {% endif %}
-    </a>
+  <div class="gallery">
+  {% for image in page.images %}
+  {% assign loopindex = forloop.index %}
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <a href="{{ page.imgfolder }}{{ image.name }}" class="thumbnail" data-lightbox="1" title="{{ image.text }}">
+      {% if loopindex > 16 %}
+        <img class="lazy" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+      {% else %}
+        <img src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+      {% endif %}
+      </a>
+    </div>
+  {% endfor %}
   </div>
-{% endfor %}
 </div>
 {% else %}
   {% for image in page.images %}
     {% if image.name == include.image %}
-<a href="{{ page.imgfolder }}{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
-  <img class="img-responsive center-block" src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-</a>
+<div class="gallery">
+  <a href="{{ page.imgfolder }}{{ image.name }}" data-lightbox="1" title="{{ image.text }}">
+    <img class="img-responsive center-block" src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+  </a>
+</div>
     {% break %}
     {% endif %}
   {% endfor %}
