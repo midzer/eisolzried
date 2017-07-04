@@ -10,12 +10,14 @@
     {
      "src": "assets/favicon.png",
      "sizes": "196x196",
-     "type": "image\/png"
+     "type": "image\/png",
+     "density": 4.0
     },
     {
      "src": "assets/favicon-512x512.png",
      "sizes": "512x512",
-     "type": "image\/png"
+     "type": "image\/png",
+     "density": 4.0
     }
   ]
 }
