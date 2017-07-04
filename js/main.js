@@ -1,17 +1,12 @@
 // Language switch
 var path = window.location.pathname;
 var langBtn = document.getElementById('language-btn');
-var langImg = document.getElementById('flag-img');
 if (path.indexOf("/by/") === -1) {
-    langImg.src = '/assets/by.png';
-    langImg.alt = 'Flagge Bayern';
     langBtn.onclick = function() {
         window.location = '/by'.concat(path);
     };
 }
 else {
-    langImg.src = '/assets/de.png';
-    langImg.alt = 'Flagge Deutschland';
     langBtn.onclick = function() {
         window.location = path.replace('/by','');;
     };

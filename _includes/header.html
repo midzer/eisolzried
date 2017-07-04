@@ -25,8 +25,13 @@
           <ul class="search-results" id="results-container"></ul>
         </form>
       </div>
+      
       <button id="language-btn" type="button" class="btn btn-default navbar-btn">
-        <img id="flag-img" height="19" width="32"/>
+      {% if page.lang == 'by' %}
+        <img src="/assets/de.png" alt="Flagge Deutschland" height="19" width="32"/>
+      {% else %}
+        <img src="/assets/by.png" alt="Flagge Bayern" height="19" width="32"/>
+      {% endif %}
       </button>
       <button id="theme-switch" type="button" class="btn btn-default navbar-btn">
         <i id="theme-icon" class="icon-moon"></i>
