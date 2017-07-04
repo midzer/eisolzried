@@ -5,7 +5,7 @@ gulp.task('default', function(callback) {
   var rootDir = '_site';
 
   swPrecache.write(`${rootDir}/service-worker.js`, {
-    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}'],
+    staticFileGlobs: [rootDir + '/**/*.{js,html,css,svg,eot,ttf,woff,woff2}'],
     stripPrefix: rootDir
   }, callback);
 });
