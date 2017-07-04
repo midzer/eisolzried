@@ -1,0 +1,22 @@
+{
+  "name": "Feuerwehr Eisolzried",
+  "lang": "de",
+  "short_name": "eisolzried",
+  "theme_color": "#da131a",
+  "background_color": "#fdfdfd",
+  "display": "standalone",
+  "orientation": "natural",
+  "start_url": "/",
+  "icons": [
+    {
+     "src": "assets/favicon.png",
+     "sizes": "196x196",
+     "type": "image\/png"
+    },
+    {
+     "src": "assets/favicon-512x512.png",
+     "sizes": "512x512",
+     "type": "image\/png"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ github_username: midzer/eisolzried
 markdown: kramdown
 permalink: pretty
 keep_files: [/charts]
-exclude: [vendor,config.json,Gemfile,README.md]
+exclude: [vendor,config.json,Gemfile,README.md,node_modules]
 
 # Compress HTML
 compress_html:

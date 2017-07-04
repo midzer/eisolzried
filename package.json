@@ -1,0 +1,13 @@
+{
+  "name": "ff-chat",
+  "version": "0.0.1",
+  "description": "chat with other fire fighters",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "sw-precache": "^5.2.0"
+  }
+}
