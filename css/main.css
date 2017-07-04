@@ -408,6 +408,10 @@ a.thumbnail.active {
   border-color: #da131a;
 }
 
+.gallery > a > img {
+  padding-bottom: 15px;
+}
+
 /* Helper styles */
 /* ----------------------------------------------------------*/
 .top-buffer { margin-top: 10px; }
