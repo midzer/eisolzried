@@ -27,11 +27,6 @@ if ('IntersectionObserver' in window &&
 }
 
 
-// Use :root element of the document for .contains() calls because older IEs
-// support Node.prototype.contains only on Element nodes.
-var docElement = document.documentElement;
-
-
 /**
  * An IntersectionObserver registry. This registry exists to hold a strong
  * reference to IntersectionObserver instances currently observering a target
@@ -55,12 +50,19 @@ function IntersectionObserverEntry(entry) {
   this.intersectionRect = entry.intersectionRect || getEmptyRect();
   this.isIntersecting = !!entry.intersectionRect;
 
-  // Calculates the intersection ratio. Sets it to 0 if the target area is 0.
+  // Calculates the intersection ratio.
   var targetRect = this.boundingClientRect;
   var targetArea = targetRect.width * targetRect.height;
   var intersectionRect = this.intersectionRect;
   var intersectionArea = intersectionRect.width * intersectionRect.height;
-  this.intersectionRatio = targetArea ? (intersectionArea / targetArea) : 0;
+
+  // Sets intersection ratio.
+  if (targetArea) {
+    this.intersectionRatio = intersectionArea / targetArea;
+  } else {
+    // If area is zero and is intersecting, sets to 1, otherwise to 0
+    this.intersectionRatio = this.isIntersecting ? 1 : 0;
+  }
 }
 
 
@@ -317,7 +319,9 @@ IntersectionObserver.prototype._checkForIntersections = function() {
       intersectionRect: intersectionRect
     });
 
-    if (rootIsInDom && rootContainsTarget) {
+    if (!oldEntry) {
+      this._queuedEntries.push(newEntry);
+    } else if (rootIsInDom && rootContainsTarget) {
       // If the new entry intersection ratio has crossed any of the
       // thresholds, add a new entry.
       if (this._hasCrossedThreshold(oldEntry, newEntry)) {
@@ -366,8 +370,12 @@ IntersectionObserver.prototype._computeTargetAndRootIntersection =
     var parentRect = null;
 
     // If we're at the root element, set parentRect to the already
-    // calculated rootRect.
-    if (parent == this.root || parent.nodeType != 1) {
+    // calculated rootRect. And since <body> and <html> cannot be clipped
+    // to a rect that's not also the document rect, consider them root too.
+    if (parent == this.root ||
+        parent == document.body ||
+        parent == document.documentElement ||
+        parent.nodeType != 1) {
       atRoot = true;
       parentRect = rootRect;
     }
@@ -483,7 +491,7 @@ IntersectionObserver.prototype._hasCrossedThreshold =
  * @private
  */
 IntersectionObserver.prototype._rootIsInDom = function() {
-  return !this.root || docElement.contains(this.root);
+  return !this.root || containsDeep(document, this.root);
 };
 
 
@@ -494,7 +502,7 @@ IntersectionObserver.prototype._rootIsInDom = function() {
  * @private
  */
 IntersectionObserver.prototype._rootContainsTarget = function(target) {
-  return (this.root || docElement).contains(target);
+  return containsDeep(this.root || document, target);
 };
 
 
@@ -619,8 +627,15 @@ function computeRectIntersection(rect1, rect2) {
  * @return {Object} The (possibly shimmed) rect of the element.
  */
 function getBoundingClientRect(el) {
-  var rect = el.getBoundingClientRect();
-  if (!rect) return;
+  var rect;
+
+  try {
+      rect = el.getBoundingClientRect();
+  } catch (e) {/* ignore Windows 7 IE11 "Unspecified error" */}
+
+  if (!rect) {
+      return getEmptyRect();
+  }
 
   // Older IE
   if (!rect.width || !rect.height) {
@@ -651,6 +666,29 @@ function getEmptyRect() {
     width: 0,
     height: 0
   };
+}
+
+/**
+ * Checks to see if a parent element contains a child elemnt (including inside
+ * shadow DOM).
+ * @param {Node} parent The parent element.
+ * @param {Node} child The child element.
+ * @return {boolean} True if the parent node contains the child node.
+ */
+function containsDeep(parent, child) {
+  var node = child;
+  while (node) {
+    // Check if the node is a shadow root, if it is get the host.
+    if (node.nodeType == 11 && node.host) {
+      node = node.host;
+    }
+
+    if (node == parent) return true;
+
+    // Traverse upwards in the DOM.
+    node = node.parentNode;
+  }
+  return false;
 }
 
 
