@@ -25,10 +25,10 @@ Und nun viel Spaß beim Stöbern :)
 
   <div class="row">
     <div class="col-sm-6">
-      <img src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>    
+      <img class="lazy" data-src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>    
     </div>
     <div class="col-sm-6">
-      <img src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
+      <img class="lazy" data-src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
     </div>
   </div>
 
