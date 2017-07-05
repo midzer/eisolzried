@@ -1,5 +1,7 @@
+// Longlist
 longlist(document.getElementById('posts'), {'perPage': 5});
 
+// Calendar
 $.get('/data/termine.ics').then(buildCal);
 
 function hasEventInDate(event, time, timezone)
@@ -99,6 +101,7 @@ function buildCal(data) {
   document.getElementById('drcal').appendChild(cal);
 }
 
+// Chat
 function addMessage(msg) {
   $('#messages').append($('<li>').text(msg));
   $(".chatbox").scrollTop($(".chatbox")[0].scrollHeight);
