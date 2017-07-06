@@ -2,7 +2,7 @@
 layout: post
 title:  "Ausbildung zum Ersthoifa Feiawea"
 date:   2016-03-02
-imgfolder: /images/2016/uebungen/
+imgfolder: /assets/images/2016/uebungen/
 images:
   - name: ersthelfer01.jpg
     text: Ersthelfer 1

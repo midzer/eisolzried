@@ -2,7 +2,7 @@
 layout: post
 title:  "Wasserentnahme aus Fluß"
 date:   2015-09-09
-imgfolder: /images/2015/uebungen/
+imgfolder: /assets/images/2015/uebungen/
 images:
   - name: september1.jpg
     text: September Übung 1

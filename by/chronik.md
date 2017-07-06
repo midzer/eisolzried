@@ -2,7 +2,7 @@
 layout: page
 title: Oids
 permalink: /by/chronik/
-imgfolder: /images/chronik/
+imgfolder: /assets/images/chronik/
 images:
   - name: AmtsBlatt1879.jpg
     text: Amtsblatt 1879

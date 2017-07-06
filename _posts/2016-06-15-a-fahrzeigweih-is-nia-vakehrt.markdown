@@ -2,7 +2,7 @@
 layout: post
 title:  "A Fahrzeigweih is nia vakehrt"
 date:   2016-06-15
-imgfolder: /images/2016/feiern/
+imgfolder: /assets/images/2016/feiern/
 images:
   - name: fahrzeugweihe01.jpg
     text: Fahrzeugweihe 1

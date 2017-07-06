@@ -10,23 +10,4 @@ github_username: midzer/eisolzried
 markdown: kramdown
 permalink: pretty
 keep_files: [/charts]
-exclude: [vendor,config.json,Gemfile,README.md,node_modules,package.json,package-lock.json,gulpfile.js]
-
-# Compress HTML
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  ignore:
-    envs: [development]
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
-
-gems:
-- jekyll-autoprefixer
-
-autoprefixer:
-  only_production: true
-  browsers:
-  - last 2 versions
+exclude: [vendor,config.json,Gemfile,README.md,node_modules,package.json,package-lock.json,gulpfile.babel.js]

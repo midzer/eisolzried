@@ -7,28 +7,29 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-    <!--[if IE]><link rel="shortcut icon" href="/assets/favicon.ico"><![endif]-->
+    <!--[if IE]><link rel="shortcut icon" href="/assets/icons/favicon.ico"><![endif]-->
 
     <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
-    <link rel="apple-touch-icon-precomposed" href="/assets/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/icons/apple-touch-icon-precomposed.png">
 
     <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-    <link rel="icon" href="/assets/favicon.png">
+    <link rel="icon" href="/assets/icons/favicon.png">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap_purified.min.css" | prepend: site.baseurl }}">
-
-    <!-- Fontello -->
-    <link rel="stylesheet" href="{{ "/css/fontello.min.css" | prepend: site.baseurl }}">
-
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="{{ "/css/simplelightbox.min.css" | prepend: site.baseurl }}">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.min.css" | prepend: site.baseurl }}">
+    {% if jekyll.environment == "production" %}
+      {% assign ext = '.min.css' %}
+    {% else %}
+      {% assign ext = '.css' %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ "/assets/css/main" | append: ext | prepend: site.baseurl }}">
 
     <!-- Theme CSS -->
     <link id="theme-link" rel="stylesheet">
+
+    <!-- loadCSS & its polyfill-->
+    <script>
+      !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+      !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+    </script>
 
     <!-- Manifest -->
     <link rel="manifest" href="/manifest.json">

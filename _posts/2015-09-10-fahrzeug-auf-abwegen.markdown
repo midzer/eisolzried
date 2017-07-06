@@ -2,7 +2,7 @@
 layout: post
 title:  "Fahrzeug auf Abwegen"
 date:   2015-09-10
-imgfolder: /images/2015/einsaetze/
+imgfolder: /assets/images/2015/einsaetze/
 images:
   - name: fahrzeug1.jpg
     text: Fahrzeug 1

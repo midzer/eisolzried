@@ -2,7 +2,7 @@
 layout: post
 title:  "Obspean fürs Fernsehn"
 date:   2015-05-22
-imgfolder: /images/2015/einsaetze/
+imgfolder: /assets/images/2015/einsaetze/
 images:
   - name: film1.jpg
     text: Film 1

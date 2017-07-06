@@ -1,5 +1,5 @@
 ---
-layout: compress
+layout: default
 ---
 <!DOCTYPE html>
 <html lang="de-DE">
@@ -23,21 +23,16 @@ layout: compress
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="{{ "/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/js/simple-lightbox.min.js" | prepend: site.baseurl }}"></script>
   <!--[if IE]>
-  <script src="{{ "/js/fetch.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/fetch.js" | prepend: site.baseurl }}"></script>
   <![endif]-->
-  <script src="{{ "/js/main.min.js" | prepend: site.baseurl }}" async></script>
-  <script src="{{ "/js/service-worker-registration.min.js" | prepend: site.baseurl }}" async></script>
-  <!--<script src="{{ "/js/preload.min.js" | prepend: site.baseurl }}" async></script>-->
-  <!--<script src="{{ "/js/snowstorm.min.js" | prepend: site.baseurl }}" async></script>-->
-  {% if page.customjs %}
-    {% for file in page.customjs %}
-    <script src="{{ file.path | prepend: site.baseurl }}" {{ file.attr }}></script>
+  <script src="{{ "/assets/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}"></script>
+  {% if page.js %}
+    {% for script in page.js %}
+    <script {{ script.attr }} src="{{ "/assets/js/" | append: script.name | append: '.js' | prepend: site.baseurl }}"></script>
     {% endfor %}
   {% endif %}
+  <script async src="{{ "/assets/js/bundle.min.js" | prepend: site.baseurl }}"></script>
   </body>
 
 </html>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Lange Ölspua zum Eilzriada Sä"
 date:   2015-08-12
-imgfolder: /images/2015/einsaetze/
+imgfolder: /assets/images/2015/einsaetze/
 images:
   - name: oelspur1.jpg
     text: Ölspur 1

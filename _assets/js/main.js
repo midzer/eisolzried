@@ -18,7 +18,7 @@ function setTheme(local) {
     if (local == 'light') {
         theme = 'dark';
         icon = 'sun';
-        css = '/css/dark-theme.min.css';
+        css = '/assets/css/dark-theme.min.css';
     }
     else  {
         theme = 'light';
@@ -51,7 +51,7 @@ if (els.length > 0) {
     else {
         console.log('Intersection Observer not supported, loading polyfill');
         var js = document.createElement('script');
-        js.src = '/js/intersection-observer.min.js';
+        js.src = '/assets/js/intersection-observer.min.js';
         js.onload = function() {
             lazyLoad(els);
         };
@@ -114,7 +114,7 @@ if (els.length > 0) {
 $('.gallery a').simpleLightbox();
 
 // Custom search
-const endpoint = '/assets/search.json';
+const endpoint = '/assets/data/search.json';
 const pages = [];
 fetch(endpoint)
     .then(blob => blob.json())

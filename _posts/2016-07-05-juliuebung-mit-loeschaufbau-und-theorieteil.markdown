@@ -2,7 +2,7 @@
 layout: post
 title:  "Juliübung mit Löschaufbau und Theorieteil"
 date:   2016-07-05
-imgfolder: /images/2016/uebungen/
+imgfolder: /assets/images/2016/uebungen/
 images:
   - name: juliuebung1.jpg
     text: Juliübung 1

@@ -2,7 +2,7 @@
 layout: post
 title:  "Obseiln im Feiaweahaisl"
 date:   2016-02-15
-imgfolder: /images/2016/uebungen/
+imgfolder: /assets/images/2016/uebungen/
 images:
   - name: absturzsicherung1.jpg
     text: Absturzsicherung 1

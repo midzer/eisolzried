@@ -2,7 +2,7 @@
 layout: post
 title:  "Sandsäck fülln im Bauhof Dacha"
 date:   2015-07-10
-imgfolder: /images/2015/uebungen/
+imgfolder: /assets/images/2015/uebungen/
 images:
   - name: sandsack1.jpg
     text: Sandsack 1

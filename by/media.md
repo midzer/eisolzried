@@ -2,8 +2,8 @@
 layout: page
 title: Matrial
 permalink: /by/media/
-imgfolder: /images/media/
-vidfolder: /videos/media/
+imgfolder: /assets/images/media/
+vidfolder: /assets/videos/media/
 images:
   - name: 2eee8c4f84aa1d79.jpg
     text: Lego
@@ -156,7 +156,7 @@ lang: by
 {% include vid.html %}
   </div>
   <div id="animiertes" class="tab-pane fade" markdown="1">
-![Crash](){:class="lazy img-responsive" data-src="/images/media/animated/efacc3a1c117821d.webp"}
-![Spongebob](){:class="lazy img-responsive" data-src="/images/media/animated/a148feb684f37282.webp"}
+![Crash](){:class="lazy img-responsive" data-src="/assets/images/media/animated/efacc3a1c117821d.webp"}
+![Spongebob](){:class="lazy img-responsive" data-src="/assets/images/media/animated/a148feb684f37282.webp"}
   </div>
 </div>

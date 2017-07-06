@@ -2,8 +2,8 @@
 layout: page
 title: Mia
 permalink: /by/team/
-imgfolder: /images/team/
-vidfolder: /videos/team/
+imgfolder: /assets/images/team/
+vidfolder: /assets/videos/team/
 images:
   - name: gruppe2013.jpg
     text: Gruppe 2013

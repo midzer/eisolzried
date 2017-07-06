@@ -3,8 +3,8 @@ _site
 .bundle
 vendor
 data/protokolle
-videos
-images
+assets/videos
+_assets/images
 _images
 impressum.md
 intern.md

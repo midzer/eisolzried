@@ -2,7 +2,7 @@
 layout: post
 title:  "Wenn die staade Zeit vorbei is"
 date:   2015-12-06
-imgfolder: /images/2015/feiern/
+imgfolder: /assets/images/2015/feiern/
 images:
   - name: weihnachtsfeier1.jpg
     text: Weihnachtsfeier 1

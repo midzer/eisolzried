@@ -1,12 +1,10 @@
 ---
 layout: page
 title: Willkommen bei der Feuerwehr Eisolzried
-customjs:
-  - path: /js/ical.min.js
-  - path: /js/drcal.min.js
-  - path: /js/longlist.min.js
-  - path: /js/socket.io.js
-  - path: /js/index.min.js
+js:
+  - name: ical.min
+  - name: socket.io
+  - name: bundleIndex.min
     attr: async
 lang: de
 ---
@@ -25,10 +23,10 @@ Und nun viel Spaß beim Stöbern :)
 
   <div class="row">
     <div class="col-sm-6">
-      <img class="lazy" data-src="/assets/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>    
+      <img class="lazy" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>    
     </div>
     <div class="col-sm-6">
-      <img class="lazy" data-src="/assets/wappen.png" alt="Wappen Bergkirchen"/>
+      <img class="lazy" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"/>
     </div>
   </div>
 

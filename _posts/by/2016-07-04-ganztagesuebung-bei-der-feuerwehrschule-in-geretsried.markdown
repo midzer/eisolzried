@@ -2,7 +2,7 @@
 layout: post
 title:  "An ganzn Dog übn bei da Feiaweaschui Geretsria"
 date:   2016-07-04
-imgfolder: /images/2016/uebungen/
+imgfolder: /assets/images/2016/uebungen/
 images:
   - name: geretsried1.jpg
     text: Geretsried 1
