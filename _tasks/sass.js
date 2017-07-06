@@ -54,10 +54,10 @@ gulp.task('sass:prod', () => {
       onError: browserSync.notify,
     }))
     .pipe($.autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }))
-    /*.pipe($.cleanCss({
+    .pipe($.cleanCss({
       keepBreaks: false,
       keepSpecialComments: true,
-    }))*/
+    }))
     .pipe($.rename({ extname: '.min.css' }))
     .pipe(gulp.dest('_site/assets/css'));
 });
