@@ -2,10 +2,9 @@
 layout: page
 title: Willkommen bei der Feuerwehr Eisolzried
 js:
-  - name: ical.min
-  - name: socket.io
-  - name: bundleIndex.min
-    attr: async
+  - ical.min
+  - socket.io
+  - bundleIndex.min
 lang: de
 ---
 

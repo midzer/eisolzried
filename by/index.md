@@ -2,10 +2,9 @@
 layout: page
 title: Griaß Gohd nahad
 js:
-  - name: ical.min
-  - name: socket.io
-  - name: bundleIndex.min
-    attr: async
+  - ical.min
+  - socket.io
+  - bundleIndex.min
 lang: by
 ---
 

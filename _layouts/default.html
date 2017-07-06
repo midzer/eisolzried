@@ -24,15 +24,15 @@ layout: default
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <!--[if IE]>
-  <script src="{{ "/assets/fetch.js" | prepend: site.baseurl }}"></script>
+  <script defer src="{{ "/assets/fetch.js" | prepend: site.baseurl }}"></script>
   <![endif]-->
-  <script src="{{ "/assets/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}"></script>
+  <script defer src="{{ "/assets/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}"></script>
+  <script defer src="{{ "/assets/js/bundle.min.js" | prepend: site.baseurl }}"></script>
   {% if page.js %}
     {% for script in page.js %}
-    <script {{ script.attr }} src="{{ "/assets/js/" | append: script.name | append: '.js' | prepend: site.baseurl }}"></script>
+    <script defer src="{{ "/assets/js/" | append: script | append: '.js' | prepend: site.baseurl }}"></script>
     {% endfor %}
   {% endif %}
-  <script async src="{{ "/assets/js/bundle.min.js" | prepend: site.baseurl }}"></script>
   </body>
 
 </html>
