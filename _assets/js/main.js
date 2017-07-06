@@ -1,44 +1,3 @@
-// Language switch
-var path = window.location.pathname;
-var langBtn = document.getElementById('language-btn');
-if (path.indexOf("/by/") === -1) {
-    langBtn.onclick = function() {
-        window.location = '/by'.concat(path);
-    };
-}
-else {
-    langBtn.onclick = function() {
-        window.location = path.replace('/by','');;
-    };
-}
-
-// Theme switch
-function setTheme(local) {
-    var theme, icon, css;
-    if (local == 'light') {
-        theme = 'dark';
-        icon = 'sun';
-        css = '/assets/css/dark-theme.min.css';
-    }
-    else  {
-        theme = 'light';
-        icon = 'moon';
-        css = ''
-    }
-    document.getElementById('theme-link').href = css;
-    document.getElementById('theme-icon').className = 'icon-' + icon;
-    localStorage.setItem('theme', theme);
-}
-if (localStorage.getItem('theme') == 'dark') {
-    setTheme('light');
-}
-else {
-    localStorage.setItem('theme', 'light');
-}
-document.getElementById('theme-switch').onclick = function() {
-    setTheme(localStorage.getItem('theme'));
-};
-
 // Lazy load images and videos
 // 1. Convert node list of all elements with data-src attributed to array
 var els = document.querySelectorAll('.lazy');
@@ -110,8 +69,64 @@ if (els.length > 0) {
     }
 }
 
-// Simple lightbox
-$('.gallery a').simpleLightbox();
+// Theme switch
+function setTheme(local) {
+    var theme, icon, css;
+    if (local == 'light') {
+        theme = 'dark';
+        icon = 'sun';
+        css = '/assets/css/dark-theme.min.css';
+    }
+    else  {
+        theme = 'light';
+        icon = 'moon';
+        css = ''
+    }
+    document.getElementById('theme-link').href = css;
+    document.getElementById('theme-icon').className = 'icon-' + icon;
+    localStorage.setItem('theme', theme);
+}
+if (localStorage.getItem('theme') == 'dark') {
+    setTheme('light');
+}
+else {
+    localStorage.setItem('theme', 'light');
+}
+document.getElementById('theme-switch').onclick = function() {
+    setTheme(localStorage.getItem('theme'));
+};
+
+// Language switch
+var path = window.location.pathname;
+var langBtn = document.getElementById('language-btn');
+if (path.indexOf("/by/") === -1) {
+    langBtn.onclick = function() {
+        window.location = '/by'.concat(path);
+    };
+}
+else {
+    langBtn.onclick = function() {
+        window.location = path.replace('/by','');;
+    };
+}
+
+// Siren player
+document.getElementById('siren-btn').onclick = function() {
+    var player = document.getElementById('siren-player');
+    var icon;
+    if (player.paused) {
+        if (player.readyState == 0) {
+            player.load();
+        }
+        player.play();
+        icon = 'volume-off';
+    }
+    else {
+        player.pause();
+        icon = 'volume-up';
+    }
+    document.getElementById('siren-icon').className = 'icon-' + icon;
+};
 
 // Custom search
 const endpoint = '/assets/data/search.json';
@@ -146,20 +161,5 @@ field.addEventListener('keypress', function(event) {
     }
 });
 
-// Siren player
-document.getElementById('siren-btn').onclick = function() {
-    var player = document.getElementById('siren-player');
-    var icon;
-    if (player.paused) {
-        if (player.readyState == 0) {
-            player.load();
-        }
-        player.play();
-        icon = 'volume-off';
-    }
-    else {
-        player.pause();
-        icon = 'volume-up';
-    }
-    document.getElementById('siren-icon').className = 'icon-' + icon;
-};
+// Simple lightbox
+$('.gallery a').simpleLightbox();
