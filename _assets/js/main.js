@@ -9,7 +9,7 @@ if (els.length > 0) {
     }
     else {
         console.log('Intersection Observer not supported, loading polyfill');
-        $.getScript('/assets/js/intersection-observer.min.js').done(lazyLoad(els));
+        $.getScript('/assets/js/intersection-observer.min.js').then(lazyLoad(els));
     }
     function lazyLoad(els) {
         // 2. Create the IntersectionObserver and bind it to the function we want it to work with
