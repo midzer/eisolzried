@@ -14,7 +14,7 @@ if (els.length > 0) {
     function lazyLoad(els) {
         // 2. Create the IntersectionObserver and bind it to the function we want it to work with
         var observer = new IntersectionObserver(onChange, {
-            threshold: 0.25
+            rootMargin: '200px 0px'
         });
 
         function replaceSrc(element) {
