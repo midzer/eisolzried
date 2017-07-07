@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Willkommen bei der Feuerwehr Eisolzried
+title: Willkommen
 js:
   - ical.min
   - bundleIndex.min

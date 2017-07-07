@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Griaß Gohd nahad
+title: Servus
 js:
   - ical.min
   - bundleIndex.min
