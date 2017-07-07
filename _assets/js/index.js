@@ -107,14 +107,15 @@ function addMessage(msg) {
   $(".chatbox").scrollTop($(".chatbox")[0].scrollHeight);
 }
 
-var socket = io.connect('wss://feuerwehr-eisolzried.de:62187');
-$('#chatform').submit(function(){
+var ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187');
+$('#chatform').submit(function() {
   var msg = $('#chatinput').val();
   addMessage(msg);
-  socket.emit('chat message', msg);
   $('#chatinput').val('');
+  ws.send(msg);
   return false;
 });
-socket.on('chat message', function(msg){
-  addMessage(msg);
-});
+
+ws.onmessage = function(msg) {
+  addMessage(msg.data);
+};

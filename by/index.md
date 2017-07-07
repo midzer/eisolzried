@@ -3,7 +3,6 @@ layout: page
 title: Griaß Gohd nahad
 js:
   - ical.min
-  - socket.io
   - bundleIndex.min
 lang: by
 ---
