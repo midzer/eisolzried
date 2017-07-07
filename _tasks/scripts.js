@@ -11,6 +11,7 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 const srcFiles = [
   '_assets/js/simple-lightbox.js',
+  '_assets/js/intersection-observer.js',
   '_assets/js/main.js',
   '_assets/js/service-worker-registration.js',
   '_assets/js/bootstrap.js'

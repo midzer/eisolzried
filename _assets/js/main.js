@@ -1,65 +1,52 @@
-// Lazy load images and videos
-// 1. Convert node list of all elements with data-src attributed to array
-var els = document.querySelectorAll('.lazy');
-if (els.length > 0) {
-    if ('IntersectionObserver' in window &&
-    'IntersectionObserverEntry' in window &&
-    'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
-        lazyLoad(els);
+function query(selector) {
+  return Array.from(document.querySelectorAll(selector));
+}
+
+function replaceSrc(element) {
+    element.src = element.dataset.src;
+    element.removeAttribute('data-src');
+}
+function addLoaded(element) {
+    element.classList.add('loaded');
+}
+function load(element) {
+    if (element.nodeName == 'VIDEO') {
+        var sources = element.getElementsByTagName('source');
+        for (let i = 0; i < sources.length; i++) {
+            replaceSrc(sources[i]);
+        }
+        element.load();
+        element.onloadstart = function() { addLoaded(element) };
     }
     else {
-        console.log('Intersection Observer not supported, loading polyfill');
-        $.getScript('/assets/js/intersection-observer.min.js').then(lazyLoad(els));
-    }
-    function lazyLoad(els) {
-        // 2. Create the IntersectionObserver and bind it to the function we want it to work with
-        var observer = new IntersectionObserver(onChange, {
-            rootMargin: '200px 0px'
-        });
-
-        function replaceSrc(element) {
-            element.src = element.dataset.src;
-            element.removeAttribute('data-src');
-        }
-        function addLoaded(element) {
-            element.classList.add('loaded');
-        }
-        function load(element) {
-            if (element.nodeName == 'VIDEO') {
-                var sources = element.getElementsByTagName('source');
-                for (let i = 0; i < sources.length; i++) {
-                    replaceSrc(sources[i]);
-                }
-                element.load();
-                element.onloadstart = function() { addLoaded(element) };
-            }
-            else {
-                replaceSrc(element);
-                element.onload = function() { addLoaded(element) };
-            }
-        }
-        
-        function onChange(changes) {
-            // 3. For each element that we want to change
-            changes.forEach(change => {
-                // Edge 15 doesn't support isIntersecting, but we can infer it
-                // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
-                // https://github.com/WICG/IntersectionObserver/issues/211
-                const isIntersecting = (typeof change.isIntersecting === 'boolean') ?
-                change.isIntersecting : change.intersectionRect.height > 0;
-                if (isIntersecting) {
-                    // 4. take url from `data-src` attribute
-                    load(change.target);
-
-                    // 5. Stop observing the current target
-                    observer.unobserve(change.target);
-                }
-            })
-        }
-        // 6. Observe each image derived from the array above
-        els.forEach(el => observer.observe(el));
+        replaceSrc(element);
+        element.onload = function() { addLoaded(element) };
     }
 }
+
+// Pre-load items that are within 2 multiples of the visible viewport height.
+var observer = new IntersectionObserver(function(changes) {
+    changes.forEach(function(change) {
+        // Edge 15 doesn't support isIntersecting, but we can infer it
+        // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
+        // https://github.com/WICG/IntersectionObserver/issues/211
+        const isIntersecting = (typeof change.isIntersecting === 'boolean') ?
+        change.isIntersecting : change.intersectionRect.height > 0;
+        if (isIntersecting) {
+            load(change.target);
+
+            // 5. Stop observing the current target
+            observer.unobserve(change.target);
+        }
+    });
+  },
+  { rootMargin: "200% 0%" }
+);
+
+// Set up lazy loading
+query(".lazy").forEach(function(item) {
+  observer.observe(item);
+});
 
 // Theme switch
 function setTheme(local) {
