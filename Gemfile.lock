@@ -20,6 +20,8 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
+    jekyll-seo-tag (2.2.3)
+      jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.13.2)
@@ -44,6 +46,7 @@ PLATFORMS
 DEPENDENCIES
   i18n
   jekyll
+  jekyll-seo-tag
 
 BUNDLED WITH
    1.14.6

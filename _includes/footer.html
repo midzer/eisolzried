@@ -1,8 +1,7 @@
 <footer class="site-footer">
 
   <div class="wrap text-center">
-    {% if site.github_username %}
-    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
+    <a href="{{ site.repo }}" target="_blank" rel="noopener">
       <i class="icon-github"></i>
       {% if page.lang == 'by' %}
       Soß
@@ -10,7 +9,6 @@
       Quelltext
       {% endif %}
     </a>&nbsp;
-    {% endif %}
     <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="nofollow noopener"><img src="/assets/icons/license.png" alt="Creative Commons BY-NC-SA" height="15" width="80"></a>&nbsp;
     <a href="/impressum">Impressum</a>
   </div>
