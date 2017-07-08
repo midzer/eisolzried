@@ -1,6 +1,3 @@
-// Longlist
-longlist(document.getElementById('posts'), {'perPage': 5});
-
 // Calendar
 $.get('/data/termine.ics').then(buildCal);
 
@@ -58,7 +55,7 @@ function buildCal(data) {
   var timezone = new ICAL.Timezone({ component: timezoneComp,
                                      tzid: tzid });
   var cal = drcal({
-    'weekdays': ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+    'weekdays': ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
     'months': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September',
                'Oktober', 'November', 'Dezember'],
     'startDay': 1
@@ -118,4 +115,16 @@ $('#chatform').submit(function() {
 
 ws.onmessage = function(msg) {
   addMessage(msg.data);
+};
+
+// Load more posts
+document.getElementById('posts-btn').onclick = function() {
+  var els = document.querySelectorAll('.hidden');
+  for (var i = 0; i < 8; i++) {
+    if (els.length == i) {
+      this.classList.add('hidden');
+      break;
+    }
+    els[i].classList.remove('hidden');
+  }
 };

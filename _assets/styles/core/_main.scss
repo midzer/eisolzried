@@ -214,6 +214,10 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   color: #818181;
 }
 
+#posts-btn {
+  display: block;
+  width: 100%;
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/
@@ -326,16 +330,9 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   text-decoration:none;
 }
 
-/* Longlist styles */
-/* ----------------------------------------------------------*/
-.paging-controls {text-align: center;}
-.paging-controls a {color: #da131a;}
-.paging-controls a:visited {color: #ad0f15;}
-.paging-controls .prev {float: left;}
-.paging-controls .prev:before {content: "\00AB  neuere";}
-.paging-controls .next {float: right;}
-.paging-controls .next:after {content: "ältere \00BB";}
-.paging-controls .elipsis:before {content: " ... ";}
+table {
+  max-width: 99%; /*ugly fix to remove scrollbar for small calendars*/
+}
 
 /* Chart styles */
 /* ----------------------------------------------------------*/
@@ -376,7 +373,7 @@ video {
 /* Chatbox styles */
 /* ----------------------------------------------------------*/
 .chatbox {
-  height: 400px;
+  height: 350px;
   overflow-y: auto;
 }
 

@@ -18,7 +18,6 @@ const srcFiles = [
 ];
 const srcFilesIndex = [
   '_assets/js/drcal.js',
-  '_assets/js/longlist.js',
   '_assets/js/index.js'
 ];
 

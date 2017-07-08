@@ -1,7 +1,12 @@
 <ul id="posts" class="posts">
 {% for post in site.posts %}
+{% assign loopindex = forloop.index %}
   {% if page.lang == post.lang %}
+  {% if loopindex > 16 %}
+  <li class="hidden">  
+  {% else %}
   <li>
+  {% endif %}
     <span class="post-date">{{ post.date | localize: "%e. %B %Y" }}</span>
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </li>
@@ -9,7 +14,11 @@
 {% endfor %}
 </ul>
 {% if page.lang == 'by' %}
-<a href="{{ "/feed.xml" | prepend: site.baseurl }}">As neiaste bschtoin</a>
+<button id="posts-btn" type="button" class="btn btn-default">Meara</button>
+<br>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">As neiaste bschtoin</a></p>
 {% else %}
-<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a>
+<button id="posts-btn" type="button" class="btn btn-default">Mehr</button>
+<br>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
 {% endif %}
