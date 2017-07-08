@@ -24,15 +24,12 @@ layout: default
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <!--[if IE]>
-  <script defer src="{{ "/assets/fetch.js" | prepend: site.baseurl }}"></script>
+  <script defer src="{{ "/assets/js/fetch.js" | prepend: site.baseurl }}"></script>
   <![endif]-->
-  <script defer src="{{ "/assets/js/jquery-3.2.1.min.js" | prepend: site.baseurl }}"></script>
+  <script defer src="{{ "/assets/js/bootstrap-native.min.js" | prepend: site.baseurl }}"></script>
+  <script defer src="{{ "/assets/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
+  <script defer src="{{ "/assets/js/ical.min.js" | prepend: site.baseurl }}"></script>
   <script defer src="{{ "/assets/js/bundle.min.js" | prepend: site.baseurl }}"></script>
-  {% if page.js %}
-    {% for script in page.js %}
-    <script defer src="{{ "/assets/js/" | append: script | append: '.js' | prepend: site.baseurl }}"></script>
-    {% endfor %}
-  {% endif %}
   </body>
 
 </html>

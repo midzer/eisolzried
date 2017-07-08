@@ -8,11 +8,11 @@ import del from 'del';
 const reload = browserSync.reload;
 
 gulp.task('build', ['clean'], function(cb) {
-  runSequence('jekyll', 'scripts', 'scriptsIndex', 'sass', 'imagemin', 'iconmin', 'icons', 'precache', cb);
+  runSequence('jekyll', 'scripts', 'sass', 'imagemin', 'iconmin', 'icons', 'precache', cb);
 });
 
 gulp.task('build:prod', ['clean'], function(cb) {
-  runSequence('jekyll:prod', 'scripts', 'scriptsIndex', 'sass:prod', 'imagemin', 'iconmin', 'icons', 'critical', 'htmlmin', 'precache:prod', cb);
+  runSequence('jekyll:prod', 'scripts', 'sass:prod', 'imagemin', 'iconmin', 'icons', 'critical', 'htmlmin', 'precache:prod', cb);
 });
 
 gulp.task('clean', del.bind(null, ['_site'], {dot: true}));

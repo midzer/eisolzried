@@ -1,6 +1,4 @@
 // Calendar
-$.get('/data/termine.ics').then(buildCal);
-
 function hasEventInDate(event, time, timezone)
 {
   if (event.isRecurring()) {
@@ -68,10 +66,10 @@ function buildCal(data) {
     var time = ICAL.Time.fromJSDate(event.detail.date);
     for (var i = 0; i < evLength; i++) {
       if (hasEventInDate(ev[i], time, timezone)) {
-        var dayEvent = document.createElement('div');
+        var dayEvent = document.createElement('button');
         dayEvent.className = 'dayevent';
         dayEvent.setAttribute('data-toggle', 'modal');
-        dayEvent.setAttribute('data-target', '.event-modal');
+        dayEvent.setAttribute('data-target', '#event-modal');
         dayEvent.setAttribute('title', ev[i].summary);
         dayEvent.appendChild(document.createTextNode(ev[i].summary));
         event.detail.element.appendChild(dayEvent);
@@ -79,13 +77,27 @@ function buildCal(data) {
     }
   });
   cal.changeMonth(new Date());
+
+  var modal = new Modal(document.getElementById('event-modal'));
   cal.addEventListener('click', function(event) {
-    if (event.target.tagName == 'DIV') {
+    if (event.target.tagName == 'BUTTON') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
       for (var i = 0; i < evLength; i++) {
         if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
-          $('.modal-body').html(createEventDetails(ev[i]));
-          $('.modal-title').html(ev[i].summary);
+          var content = 
+            '<div class="modal-header">'
+              +'<button type="button" class="close" data-dismiss="modal" aria-label="Schließen">'
+                +'<span aria-hidden="true">&times;</span>'
+              +'</button>'
+              +'<h4 class="modal-title">' + ev[i].summary + '</h4>'
+            +'</div>'
+            +'<div class="modal-body">'
+              +'<p>' + createEventDetails(ev[i]) + '</p>'
+            +'</div>';
+          console.log(modal);
+          console.log(content);
+          modal.setContent(content);
+          modal.show();
           break;
         }
       }
@@ -98,20 +110,42 @@ function buildCal(data) {
   document.getElementById('drcal').appendChild(cal);
 }
 
+fetch('/assets/data/termine.ics')
+.then(function(response) {
+  return response.text();
+}).then(function(data) {
+	buildCal(data);
+});
+
 // Chat
 function addMessage(msg) {
-  $('#messages').append($('<li>').text(msg));
-  $(".chatbox").scrollTop($(".chatbox")[0].scrollHeight);
+  var content = document.createElement('li');
+  content.textContent = msg;
+  document.getElementById('messages').append(content);
+  var box = document.getElementById("chat-box");
+  box.scrollTop = box.scrollHeight;
+}
+
+function sendMessage(ws) {
+  var input = document.getElementById('chat-input');
+  var msg = input.value;
+  addMessage(msg);
+  input.value = '';
+  ws.send(msg);
 }
 
 var ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187');
-$('#chatform').submit(function() {
-  var msg = $('#chatinput').val();
-  addMessage(msg);
-  $('#chatinput').val('');
-  ws.send(msg);
-  return false;
-});
+
+document.getElementById('chat-btn').onclick = function() {
+  sendMessage(ws);
+};
+
+document.getElementById('chat-form').onkeypress = function(event) {
+  if (event.keyCode == 13) {
+    sendMessage(ws);
+    event.preventDefault();
+  }
+};
 
 ws.onmessage = function(msg) {
   addMessage(msg.data);

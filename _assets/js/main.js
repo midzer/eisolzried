@@ -140,5 +140,10 @@ field.addEventListener('keypress', function(event) {
     }
 });
 
-// Simple lightbox
-$('.gallery a').simpleLightbox();
+// Lightbox
+lightbox(".lightbox", {
+    close: false,
+    counter: false,
+    zoom: false,
+    docClose: true
+});

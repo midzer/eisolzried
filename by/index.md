@@ -1,9 +1,6 @@
 ---
 layout: page
 title: Servus
-js:
-  - ical.min
-  - bundleIndex.min
 lang: by
 ---
 

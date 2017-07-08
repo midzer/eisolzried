@@ -10,15 +10,11 @@ import webpack from 'webpack-stream';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 const srcFiles = [
-  '_assets/js/simple-lightbox.js',
   '_assets/js/intersection-observer.js',
   '_assets/js/main.js',
-  '_assets/js/service-worker-registration.js',
-  '_assets/js/bootstrap.js'
-];
-const srcFilesIndex = [
   '_assets/js/drcal.js',
-  '_assets/js/index.js'
+  '_assets/js/index.js',
+  '_assets/js/service-worker-registration.js'
 ];
 
 const webpackConfig = {
@@ -28,7 +24,7 @@ const webpackConfig = {
       loader: 'babel-loader',
       exclude: '/node_modules/',
       query: {
-        presets: ['es2015']
+        compact: false,
       }
     }],
   },
@@ -45,19 +41,5 @@ gulp.task('scripts', () => {
     .pipe(webpack(webpackConfig))
     .pipe($.uglify())
     .pipe($.rename('bundle.min.js'))
-    .pipe(gulp.dest('_site/assets/js'));
-});
-
-gulp.task('scriptsIndex', () => {
-  return gulp.src(srcFilesIndex)
-    .pipe(plumber({
-      errorHandler: (err) => {
-        gutil.log(gutil.colors.red(err));
-        this.emit('end');
-      },
-    }))
-    .pipe(webpack(webpackConfig))
-    .pipe($.uglify())
-    .pipe($.rename('bundleIndex.min.js'))
     .pipe(gulp.dest('_site/assets/js'));
 });

@@ -1,9 +1,6 @@
 ---
 layout: page
 title: Willkommen
-js:
-  - ical.min
-  - bundleIndex.min
 lang: de
 ---
 
