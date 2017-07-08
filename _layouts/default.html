@@ -8,7 +8,11 @@ layout: default
 
   <body>
 
-  {% include header.html %}
+    <!--[if IE]>
+    <div class="alert alert-warning" role="alert">Hmm, dein Browser ist ziemlich veraltet. Warum steigst du nicht auf <a href="https://browsehappy.com/">etwas moderneres</a> um?</div>
+    <![endif]-->
+
+    {% include header.html %}
 
   <main>
     <div class="page-content">
@@ -20,12 +24,6 @@ layout: default
 
   {% include footer.html %}
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <!--[if IE]>
-  <script defer src="{{ "/assets/js/fetch.js" | prepend: site.baseurl }}"></script>
-  <![endif]-->
   <script defer src="{{ "/assets/js/bootstrap-native.min.js" | prepend: site.baseurl }}"></script>
   <script defer src="{{ "/assets/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
   <script defer src="{{ "/assets/js/ical.min.js" | prepend: site.baseurl }}"></script>
