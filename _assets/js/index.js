@@ -47,7 +47,6 @@ function buildCal(data) {
   for (var i = 0; i < vevents.length; i++) {
       ev[i] = new ICAL.Event(vevents[i]);
   }
-  var evLength = ev.length;
   var timezoneComp = comp.getFirstSubcomponent('vtimezone');
   var tzid = timezoneComp.getFirstPropertyValue('tzid');
   var timezone = new ICAL.Timezone({ component: timezoneComp,
@@ -64,7 +63,7 @@ function buildCal(data) {
     dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
     event.detail.element.appendChild(dayNum);
     var time = ICAL.Time.fromJSDate(event.detail.date);
-    for (var i = 0; i < evLength; i++) {
+    for (var i = 0; i < ev.length; i++) {
       if (hasEventInDate(ev[i], time, timezone)) {
         var dayEvent = document.createElement('button');
         dayEvent.className = 'dayevent';
@@ -82,7 +81,7 @@ function buildCal(data) {
   cal.addEventListener('click', function(event) {
     if (event.target.tagName == 'BUTTON') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
-      for (var i = 0; i < evLength; i++) {
+      for (var i = 0; i < ev.length; i++) {
         if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
           var content = 
             '<div class="modal-header">'
@@ -94,8 +93,6 @@ function buildCal(data) {
             +'<div class="modal-body">'
               +'<p>' + createEventDetails(ev[i]) + '</p>'
             +'</div>';
-          console.log(modal);
-          console.log(content);
           modal.setContent(content);
           modal.show();
           break;
@@ -114,7 +111,7 @@ fetch('/assets/data/termine.ics')
 .then(function(response) {
   return response.text();
 }).then(function(data) {
-	buildCal(data);
+  buildCal(data);
 });
 
 // Chat
