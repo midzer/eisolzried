@@ -2,8 +2,7 @@
 function hasEventInDate(event, time, timezone)
 {
   if (event.isRecurring()) {
-    var expand = event.iterator(time);
-    if (expand.next().compare(time) == 0)
+    if (event.iterator(time).next().compare(time) == 0)
       return true;
   }
   else if ((event.startDate.compareDateOnlyTz(time, timezone) == -1 &&
