@@ -9,8 +9,8 @@ const config = {
   inline: true,
   base: '_site',
   minify: true,
-  width: 1280,
-  height: 800,
+  width: 1300,
+  height: 900,
   ignore: ['@font-face'],
 };
 
