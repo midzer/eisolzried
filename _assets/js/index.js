@@ -1,19 +1,13 @@
 // Calendar
-function hasEventInDate(events, index, time, timezone)
+function hasEventInDate(event, time, timezone)
 {
-  if (events[index].isRecurring()) {
-    if (events[index].iterator(time).next().compare(time) == 0) {
-
-      // recurring events can only appear once a month
-      // remove from array to gain some more performance
-      events.splice(index, 1);
-      return true;
-    }
+  if (event.isRecurring()) {
+    return event.iterator(time).next().compare(time) == 0;
   }
-  else if ((events[index].startDate.compareDateOnlyTz(time, timezone) == -1 &&
-            events[index].endDate.compareDateOnlyTz(time, timezone) == 1) ||
-           events[index].startDate.compareDateOnlyTz(time, timezone) == 0 ||
-           events[index].endDate.compareDateOnlyTz(time, timezone) == 0) {
+  else if ((event.startDate.compareDateOnlyTz(time, timezone) == -1 &&
+            event.endDate.compareDateOnlyTz(time, timezone) == 1) ||
+           event.startDate.compareDateOnlyTz(time, timezone) == 0 ||
+           event.endDate.compareDateOnlyTz(time, timezone) == 0) {
     return true;
   }
   return false;
@@ -76,7 +70,7 @@ function buildCal(data) {
     event.detail.element.appendChild(clone);
     var time = ICAL.Time.fromJSDate(event.detail.date);
     for (var i = 0; i < ev.length; i++) {
-      if (hasEventInDate(ev, i, time, timezone)) {
+      if (hasEventInDate(ev[i], time, timezone)) {
         clone = dayEvent.cloneNode();
         clone.setAttribute('title', ev[i].summary);
         clone.appendChild(document.createTextNode(ev[i].summary));
@@ -88,10 +82,10 @@ function buildCal(data) {
 
   var modal = new Modal(document.getElementById('event-modal'));
   cal.addEventListener('click', function(event) {
-    if (event.target.tagName == 'BUTTON') {
+    if (event.target.className == 'dayevent') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
       for (var i = 0; i < ev.length; i++) {
-        if (hasEventInDate(ev, i, time, timezone) && event.target.innerHTML == ev[i].summary) {
+        if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
           var content = 
             '<div class="modal-header">'
               +'<button type="button" class="close" data-dismiss="modal" aria-label="Schließen">'
@@ -111,7 +105,9 @@ function buildCal(data) {
   });
   var buttons = cal.querySelectorAll('button');
   for (var i = 0; i < buttons.length; i++) {
-    buttons[i].classList.add('btn');
+    if (buttons[i].className != 'dayevent') {
+      buttons[i].classList.add('btn');
+    }
   }
   document.getElementById('drcal').appendChild(cal);
 }
