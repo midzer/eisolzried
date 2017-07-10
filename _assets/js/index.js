@@ -1,14 +1,19 @@
 // Calendar
-function hasEventInDate(event, time, timezone)
+function hasEventInDate(events, index, time, timezone)
 {
-  if (event.isRecurring()) {
-    if (event.iterator(time).next().compare(time) == 0)
+  if (events[index].isRecurring()) {
+    if (events[index].iterator(time).next().compare(time) == 0) {
+
+      // recurring events can only appear once a month
+      // remove from array to gain some more performance
+      events.splice(index, 1);
       return true;
+    }
   }
-  else if ((event.startDate.compareDateOnlyTz(time, timezone) == -1 &&
-            event.endDate.compareDateOnlyTz(time, timezone) == 1) ||
-           event.startDate.compareDateOnlyTz(time, timezone) == 0 ||
-           event.endDate.compareDateOnlyTz(time, timezone) == 0) {
+  else if ((events[index].startDate.compareDateOnlyTz(time, timezone) == -1 &&
+            events[index].endDate.compareDateOnlyTz(time, timezone) == 1) ||
+           events[index].startDate.compareDateOnlyTz(time, timezone) == 0 ||
+           events[index].endDate.compareDateOnlyTz(time, timezone) == 0) {
     return true;
   }
   return false;
@@ -56,21 +61,26 @@ function buildCal(data) {
                'Oktober', 'November', 'Dezember'],
     'startDay': 1
   });
+
+  var clone;
+  var dayNum = document.createElement('div');
+  dayNum.className = 'daynum';
+  var dayEvent = document.createElement('button');
+  dayEvent.className = 'dayevent';
+  dayEvent.setAttribute('data-toggle', 'modal');
+  dayEvent.setAttribute('data-target', '#event-modal');
+  
   cal.addEventListener('drcal.renderDay', function(event) {
-    var dayNum = document.createElement('div');
-    dayNum.className = 'daynum';
-    dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
-    event.detail.element.appendChild(dayNum);
+    clone = dayNum.cloneNode();
+    clone.appendChild(document.createTextNode(event.detail.date.getDate()));
+    event.detail.element.appendChild(clone);
     var time = ICAL.Time.fromJSDate(event.detail.date);
     for (var i = 0; i < ev.length; i++) {
-      if (hasEventInDate(ev[i], time, timezone)) {
-        var dayEvent = document.createElement('button');
-        dayEvent.className = 'dayevent';
-        dayEvent.setAttribute('data-toggle', 'modal');
-        dayEvent.setAttribute('data-target', '#event-modal');
-        dayEvent.setAttribute('title', ev[i].summary);
-        dayEvent.appendChild(document.createTextNode(ev[i].summary));
-        event.detail.element.appendChild(dayEvent);
+      if (hasEventInDate(ev, i, time, timezone)) {
+        clone = dayEvent.cloneNode();
+        clone.setAttribute('title', ev[i].summary);
+        clone.appendChild(document.createTextNode(ev[i].summary));
+        event.detail.element.appendChild(clone);
       }
     }
   });
@@ -81,7 +91,7 @@ function buildCal(data) {
     if (event.target.tagName == 'BUTTON') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
       for (var i = 0; i < ev.length; i++) {
-        if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
+        if (hasEventInDate(ev, i, time, timezone) && event.target.innerHTML == ev[i].summary) {
           var content = 
             '<div class="modal-header">'
               +'<button type="button" class="close" data-dismiss="modal" aria-label="Schließen">'
