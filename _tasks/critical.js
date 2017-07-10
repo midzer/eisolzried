@@ -11,7 +11,7 @@ const config = {
   minify: true,
   width: 1300,
   height: 900,
-  ignore: ['@font-face'],
+  ignore: ['@font-face']
 };
 
 gulp.task('critical', () => {
