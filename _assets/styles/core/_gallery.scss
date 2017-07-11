@@ -1,0 +1,9 @@
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: $brand-primary;
+}
+
+.gallery > a > img {
+  padding-bottom: 15px;
+}

@@ -1,0 +1,24 @@
+iframe {
+  border: solid 1px #eee;
+  border-bottom: solid 1px #ccc;
+  height: 500px;
+}
+
+h2, iframe {
+  width: 100%;
+}
+
+.chart-pop {
+  position: absolute;
+  right: 10px;
+}
+
+.chart-pop svg {
+  margin-left: 0.3em;
+  position: relative;
+  top: 3px;
+}
+
+.chart-info {
+  max-width: 450px;
+}

@@ -5,19 +5,11 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
-
 body {
-  background-color: #fdfdfd;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
-a         { color: #da131a; fill: #da131a; text-decoration: none; }
-a:hover   { color: #da131a; text-decoration: underline; }
-a:visited { color: #ad0f15; fill: #ad0f15; }
-
 /* Utility */
-
 .wrap:before,
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
@@ -29,31 +21,10 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 }
 
 .page-content .wrap {
-  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
-
-
-/* Layout Styles */
-/* ----------------------------------------------------------*/
 
 /* Site header */
-.navbar-default .navbar-brand {
-  color: #da131a;
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #da131a;
-}
-
-.navbar-default .navbar-nav > li > a {
-  position: relative;
-  color: #da131a;
-  text-decoration: none;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: #da131a;
-}
-
 .navbar-default .navbar-nav > li > a:before {
   content: "";
   position: absolute;
@@ -61,7 +32,7 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #da131a;
+  background-color: $white;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0.1s;
@@ -73,11 +44,11 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 }
 
 .navbar-default .navbar-nav > li.active-nav-item {
-  box-shadow: inset #da131a 0 -2px 0 0;
+  box-shadow: inset $white 0 -2px 0 0;
 }
 
 .form-control:focus {
-  border-color: #da131a;
+  border-color: $brand-primary;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
@@ -108,22 +79,23 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   position: absolute;
   margin-top: 16px;
   z-index: 10;
-  background: #fdfdfd;
+  background: $white;
   border: 1px solid;
   border-color: #cbcfe2 #c8cee7 #c4c7d7;
   border-radius: 3px;
-  background-image: linear-gradient(to bottom, #fdfdfd, #eceef4);
+  background-image: linear-gradient(to bottom, $white, #eceef4);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-.search-results:hover {
-  display: block;
-}
+
+.search-results:hover,
 .search-results li {
   display: block;
 }
+
 .search-results li:first-child {
   margin-top: -1px;
 }
+
 .search-results li:first-child:before, .search-results li:first-child:after {
   content: '';
   display: block;
@@ -134,17 +106,21 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   margin-left: -5px;
   border: 5px outset transparent;
 }
+
 .search-results li:first-child:before {
   border-bottom: 5px solid #c4c7d7;
   top: -11px;
 }
+
 .search-results li:first-child:after {
-  border-bottom: 5px solid #fdfdfd;
+  border-bottom: 5px solid $white;
   top: -10px;
 }
+
 .search-results li:first-child:hover:before, .search-results li:first-child:hover:after {
   display: none;
 }
+
 .search-results li:last-child {
   margin-bottom: -1px;
 }
@@ -157,7 +133,6 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
   padding: 6px 6px 6px 10px;
   color: #808394;
   font-weight: 500;
-  text-shadow: 0 1px white;
   border: 1px solid transparent;
   border-radius: 3px;
 }
@@ -166,16 +141,14 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 .dropdown-toggle[aria-expanded="true"],
 .dropdown-menu > li > a:hover,
 .search-results a:hover {
-  color: white !important;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  color: $white !important;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, #da131a, #ad0f15);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
+  background-image: linear-gradient(to bottom, $brand-primary, darken($brand-primary, 6.5%));
 }
 
 /* Site footer */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid $gray-lighter;
   padding: 30px 0;
 }
 
@@ -183,7 +156,7 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 /* ----------------------------------------------------------*/
 .page-content {
   padding: 30px 0;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .page-content table {
@@ -211,7 +184,7 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 .posts .post-date {
   display: block;
   font-size: 15px;
-  color: #818181;
+  color: $gray;
 }
 
 #posts-btn {
@@ -223,142 +196,12 @@ a:visited { color: #ad0f15; fill: #ad0f15; }
 /* ----------------------------------------------------------*/
 .meta {
   font-size: 15px;
-  color: #818181;
+  color: $gray;
   margin-top: 5px;
-}
-
-/* media queries */
-/* ----------------------------------------------------------*/
-@media screen and (max-width: 600px) {
-
-  .site-nav {
-    position: fixed;
-    z-index: 10;
-    top: 14px; right: 8px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #e8e8e8;
-  }
-
-  .site-nav .menu-icon {
-    display: block;
-    font-size: 24px;
-    color: #505050;
-    float: right;
-    width: 36px;
-    text-align: center;
-    line-height: 36px;
-  }
-
-  .site-nav .menu-icon svg { width: 18px; height: 16px; }
-
-  .site-nav .trigger {
-    clear: both;
-    margin-bottom: 5px;
-    display: none;
-  }
-
-  .site-nav:hover .trigger { display: block; }
-
-  .site-nav .page-link {
-    display: block;
-    text-align: right;
-    line-height: 1.25;
-    padding: 5px 10px;
-    margin: 0;
-  }
-}
-
-/* Calendar styles */
-/* ----------------------------------------------------------*/
-.calendar th {text-align: center;}
-.calendar td {
-  border: 1px solid #AEAEAE;
-  width: 5em;
-  height: 5em;
-  max-width: 5em;
-  padding: 0;
-}
-.calendar thead tr:first-child th {
-  font-size: large;
-  padding-bottom: 0.5em;
-}
-.calendar thead tr:last-child th {
-  font-weight: normal;
-  font-size: small;
-  color: #939393;
-}
-.calendar .prev {float: left;}
-.calendar .prev:before {content: "\00AB";}
-.calendar .next {float: right;}
-.calendar .next:after {content: "\00BB";}
-.calendar .today { background-color: #E9EFF8;}
-.calendar .extra {color: #AEAEAE;}
-.calendar .daynum {
-  text-align: right;
-  padding-right: 0.5ex;
-}
-.calendar .dayevent {
-  font-size: 11px;
-  color: #da131a;
-  cursor: pointer;
-  padding-left: 0.5ex;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.calendar .btn {
-  background-color: #e6e6e6;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  color: #333;
-  font-size: 13px;
-  line-height: normal;
-  border: 1px solid #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
-  transition: 0.3s linear all;
-}
-
-.calendar .btn:hover {
-  background-position: 0 -15px;
-  color:#333;
-  text-decoration:none;
 }
 
 table {
   max-width: 99%; /*ugly fix to remove scrollbar for small calendars*/
-}
-
-/* Chart styles */
-/* ----------------------------------------------------------*/
-iframe {
-  border: solid 1px #eee;
-  border-bottom: solid 1px #ccc;
-  height: 500px;
-}
-
-h2, iframe {
-  width: 100%;
-}
-
-.chart-pop {
-  position: absolute;
-  right: 10px;
-}
-
-.chart-pop svg {
-  margin-left: 0.3em;
-  position: relative;
-  top: 3px;
-}
-
-.chart-info {
-  max-width: 450px;
 }
 
 /* Video styles */
@@ -370,40 +213,12 @@ video {
   max-width: 90%;
 }
 
-/* Chatbox styles */
-/* ----------------------------------------------------------*/
-.chat-box {
-  height: 350px;
-  overflow-y: auto;
-}
-
-#messages { list-style-type: none; }
-#messages li:nth-child(odd) { background: #f5f5f5; }
-
-/* Share styles */
-/* ----------------------------------------------------------*/
-.share {
-  font-weight: bold;
-}
-.share-icon {
-  margin: 0 10px;
-}
-
-/* Gallery styles */
-/* ----------------------------------------------------------*/
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: #da131a;
-}
-
-.gallery > a > img {
-  padding-bottom: 15px;
-}
-
 /* Helper styles */
 /* ----------------------------------------------------------*/
-.top-buffer { margin-top: 10px; }
+.top-buffer {
+  margin-top: 10px;
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 0;
