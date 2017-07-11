@@ -1,7 +1,7 @@
 _site
 .sass-cache
 .bundle
-vendor
+/vendor
 data/protokolle
 assets/videos
 _assets/images

@@ -1,0 +1,229 @@
+.lightbox {
+
+}
+
+.lightbox-zoom {
+  border: 0;
+  box-shadow: none;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+  .lightbox-zoom img {
+    display: block;
+  }
+
+  .lightbox-zoom-icon {
+    background: #fff;
+    bottom: 0;
+    color: #2727a4;
+    line-height: 1;
+    padding: .306em .5em;
+    position: absolute;
+    right: 0
+  }
+
+.lightbox-no-scroll {
+  overflow-y: hidden;
+}
+
+
+/* Overlay */
+.lightbox-overlay {
+  background: rgba(17, 17, 17, .8);
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 32;
+  overflow: hidden;
+}
+
+  .lightbox-overlay *,
+  .lightbox-overlay *::before,
+  .lightbox-overlay *::after {
+    box-sizing: inherit;
+  }
+
+  .lightbox-overlay[aria-hidden="true"] {
+    display: none;
+  }
+
+
+/* Slider */
+.lightbox-slider {
+  -webkit-transition: left .3s ease, -webkit-transform .3s ease;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: left .3s ease, -webkit-transform .3s ease;
+  transition: left .3s ease, transform .3s ease, -webkit-transform .3s ease;
+  transition: left .3s ease, transform .3s ease;
+  white-space: nowrap;
+}
+
+
+/* Content */
+.lightbox-content {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+  .lightbox-figure-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+    .lightbox-content figure {
+      margin: 0;
+      position: relative;
+    }
+
+      .lightbox-content img {
+        display: block;
+        height: auto;
+        max-height: 85vh;
+        max-width: 85vw;
+        width: auto;
+      }
+
+      .lightbox-content figcaption {
+        background: rgba(17, 17, 17, .8);
+        bottom: 0;
+        color: #fff;
+        display: block;
+        left: 0;
+        padding: .25em .5em;
+        position: absolute;
+        white-space: initial;
+        width: 100%;
+      }
+
+
+.lightbox-overlay button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6em;
+  height: 1.6em;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 1.6em;
+}
+
+  .lightbox-overlay button:focus {
+    border: 1px solid #fff;
+    outline: 0;
+  }
+
+  .lightbox-overlay button:disabled {
+    cursor: default;
+    opacity: .5;
+  }
+
+  .lightbox-overlay button[aria-label="Previous"],
+  .lightbox-overlay button[aria-label="Next"] {
+    top: 50%;
+    top: calc(50% - (1.6em / 2));
+  }
+
+    .lightbox-overlay button[aria-label="Previous"] {
+      left: 2%;
+    }
+
+    .lightbox-overlay button[aria-label="Next"] {
+      right: 2%;
+    }
+
+  .lightbox-overlay button[aria-label="Close"] {
+    top: 1em;
+    right: 2%;
+  }
+
+.lightbox-counter {
+  background: transparent;
+  color: #fff;
+  font-size: 1.15em;
+  left: 2%;
+  position: absolute;
+  top: 1em;
+}
+
+
+.lightbox-loader {
+  width: 5em;
+  height: 5em;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.5em;
+  margin-left: -2.5em;
+}
+
+  .lightbox-loader::before {
+    -webkit-animation: spin 1s infinite;
+    animation: spin 1s infinite;
+    border-radius: 100%;
+    border: .5em solid #9f9f9f;
+    border-top-color: #2727a4;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
