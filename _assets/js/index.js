@@ -91,10 +91,10 @@ function buildCal(data) {
   var clone;
   var dayNum = document.createElement('div');
   dayNum.className = 'daynum';
-  var dayEvent = document.createElement('button');
+  var dayEvent = document.createElement('a');
   dayEvent.className = 'dayevent';
   dayEvent.setAttribute('data-toggle', 'modal');
-  dayEvent.setAttribute('data-target', '#event-modal');
+  dayEvent.href = '#event-modal';
 
   var ev = [];
   cal.addEventListener('drcal.renderDay', function(event) {
@@ -143,9 +143,7 @@ function buildCal(data) {
   });
   var buttons = cal.querySelectorAll('button');
   for (var i = 0; i < buttons.length; i++) {
-    if (buttons[i].className != 'dayevent') {
-      buttons[i].classList.add('btn');
-    }
+    buttons[i].classList.add('btn');
   }
   document.getElementById('drcal').appendChild(cal);
 }
