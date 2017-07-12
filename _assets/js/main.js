@@ -40,7 +40,7 @@ var observer = new IntersectionObserver(function(changes) {
         }
     });
   },
-  { rootMargin: "10% 0%" }
+  { rootMargin: "25% 0%" }
 );
 
 // Set up lazy loading
