@@ -1,9 +1,9 @@
 de:
   - title: Team
-    url: /team
+    url: /team/
     icon: icon-fire
   - title: Karten
-    url: /karten
+    url: /karten/
     icon: icon-map
   - title: Verein
     url: #
@@ -13,32 +13,32 @@ de:
         url: /data/mitgliedsantrag.pdf
         icon: icon-user-add
       - title: Chronik
-        url: /chronik
+        url: /chronik/
         icon: icon-history
       - title: Satzung
-        url: /satzung
+        url: /satzung/
         icon: icon-doc
       - title: Statistiken
-        url: /statistiken
+        url: /statistiken/
         icon: icon-chart-bar
       - title: Intern
-        url: /intern
+        url: /intern/
         icon: icon-lock
   - title: Media
-    url: /media
+    url: /media/
     icon: icon-cloud
   - title: Links
-    url: /links
+    url: /links/
     icon: icon-link
   - title: Kontakt
-    url: /kontakt
+    url: /kontakt/
     icon: icon-comment
 by:
   - title: Mia
-    url: /by/team
+    url: /by/team/
     icon: icon-fire
   - title: Kartn
-    url: /by/karten
+    url: /by/karten/
     icon: icon-map
   - title: Varein
     url: /by/#
@@ -48,23 +48,23 @@ by:
         url: /data/mitgliedsantrag.pdf
         icon: icon-user-add
       - title: Oids
-        url: /by/chronik
+        url: /by/chronik/
         icon: icon-history
       - title: Satzung
-        url: /by/satzung
+        url: /by/satzung/
         icon: icon-doc
       - title: Statistikn
-        url: /by/statistiken
+        url: /by/statistiken/
         icon: icon-chart-bar
       - title: Intern
-        url: /by/intern
+        url: /by/intern/
         icon: icon-lock
   - title: Matrial
-    url: /by/media
+    url: /by/media/
     icon: icon-cloud
   - title: Links
-    url: /by/links
+    url: /by/links/
     icon: icon-link
   - title: Kontakt
-    url: /by/kontakt
+    url: /by/kontakt/
     icon: icon-comment
