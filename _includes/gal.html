@@ -20,7 +20,7 @@
     {% if image.name == include.image %}
 <div class="gallery">
   <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
-    <img class="img-responsive center-block" src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+    <img class="lazy img-responsive center-block" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
   </a>
 </div>
     {% break %}
