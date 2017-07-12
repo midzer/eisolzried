@@ -69,81 +69,39 @@ body {
   color: #bbb;
 }
 
-.search input:focus + .search-results {
-  display: block;
-}
-
-.dropdown-menu,
 .search-results {
   display: none;
   position: absolute;
   margin-top: 16px;
   z-index: 10;
-  background: $white;
-  border: 1px solid;
-  border-color: #cbcfe2 #c8cee7 #c4c7d7;
-  border-radius: 3px;
-  background-image: linear-gradient(to bottom, $white, #eceef4);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.search-results:hover,
-.search-results li {
+.search input:focus + .search-results {
   display: block;
 }
 
-.search-results li:first-child {
-  margin-top: -1px;
+.search-results,
+.dropdown-menu,
+ {
+  color: $white;
+  background-color: $brand-primary;
+  border-color: darken($btn-primary-bg, 5%);
 }
 
-.search-results li:first-child:before, .search-results li:first-child:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 50%;
-  margin-left: -5px;
-  border: 5px outset transparent;
-}
-
-.search-results li:first-child:before {
-  border-bottom: 5px solid #c4c7d7;
-  top: -11px;
-}
-
-.search-results li:first-child:after {
-  border-bottom: 5px solid $white;
-  top: -10px;
-}
-
-.search-results li:first-child:hover:before, .search-results li:first-child:hover:after {
-  display: none;
-}
-
-.search-results li:last-child {
-  margin-bottom: -1px;
-}
-
-.dropdown-menu > li > a,
-.search-results a {
+.search-results > li > a,
+.dropdown-menu > li > a {
   display: block;
   position: relative;
   margin: 0 -1px;
   padding: 6px 6px 6px 10px;
-  color: #808394;
-  font-weight: 500;
-  border: 1px solid transparent;
-  border-radius: 3px;
+  color: $white;
 }
 
-.modal-header,
-.dropdown-toggle[aria-expanded="true"],
-.dropdown-menu > li > a:hover,
-.search-results a:hover {
-  color: $white !important;
+.search-results > li > a:hover,
+.dropdown-menu > li > a:hover {
+  color: $link-color !important;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, $brand-primary, darken($brand-primary, 6.5%));
+  background-color: $white;
 }
 
 /* Site footer */
