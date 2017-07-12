@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "übung für Maschinistn am Woidberg"
+title:  "Übung für Maschinistn am Woidberg"
 date:   2016-10-12
 lang: by
 categories:
