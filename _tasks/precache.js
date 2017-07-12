@@ -11,7 +11,6 @@ function writeServiceWorkerFile(rootDir, handleFetch, callback) {
     handleFetch,
     logger: gutil.log,
     staticFileGlobs: [
-      `${rootDir}/index.html`,
       `${rootDir}/**/*.html`,
       `${rootDir}/assets/{css,data,js,icons,font}/*`
     ],
