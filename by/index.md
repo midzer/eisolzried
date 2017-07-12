@@ -56,8 +56,8 @@ Gnua vazoid, vui Spaß beim umschaun :)
         </div>
       </div><!-- col-sm-8 -->
       <div class="col-sm-4">
-        <img class="lazy img-responsive" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
-        <img class="lazy img-responsive" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"/>
+        <img class="lazy img-responsive center-block" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
+        <img class="lazy img-responsive center-block" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"/>
       </div><!-- col-sm-4 -->
     </div><!-- row -->
   </div><!-- col-sm-8 -->
