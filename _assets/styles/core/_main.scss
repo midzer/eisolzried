@@ -118,7 +118,7 @@ body {
   background-color: $white;
 }
 
-.page-content table {
+.page-content table:not(.calendar) {
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,10 +157,6 @@ body {
   font-size: 15px;
   color: $gray;
   margin-top: 5px;
-}
-
-table {
-  max-width: 99%; /*ugly fix to remove scrollbar for small calendars*/
 }
 
 /* Video styles */
