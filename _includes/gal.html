@@ -6,7 +6,7 @@
     <div class="col-xs-6 col-sm-4 col-md-3">
       <a href="{{ page.imgfolder }}{{ image.name }}" class="thumbnail lightbox" title="{{ image.text }}">
       {% if loopindex > 16 %}
-        <img class="lazy" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+        <img class="lazy" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
       {% else %}
         <img src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
       {% endif %}
@@ -20,7 +20,7 @@
     {% if image.name == include.image %}
 <div class="gallery">
   <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
-    <img class="lazy img-responsive center-block" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+    <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
   </a>
 </div>
     {% break %}
