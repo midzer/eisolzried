@@ -31,7 +31,11 @@ Gnua vazoid, vui Spaß beim umschaun :)
   <div class="col-sm-8">
     <div class="row">
       <div class="col-sm-8">
+        <div class="panel panel-default">
+          <div class="panel-body">
 {% include carousel.html %}
+          </div>
+        </div>
       </div><!-- col-sm-8 -->
       <div class="col-sm-4">
         <div class="panel panel-default">
@@ -39,7 +43,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
             <h3 class="title">Chat</h3>
           </div>
           <div class="panel-body">
-      {% include chat.html %}
+{% include chat.html %}
           </div>
         </div>
       </div><!-- col-sm-4 -->
@@ -51,13 +55,17 @@ Gnua vazoid, vui Spaß beim umschaun :)
             <h3 class="title">Wos zum doa is</h3>
           </div>
           <div class="panel-body">
-      {% include calendar.html %}
+{% include calendar.html %}
           </div>
         </div>
       </div><!-- col-sm-8 -->
       <div class="col-sm-4">
-        <img class="lazy img-responsive center-block" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <img class="lazy img-responsive center-block" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
         <img class="lazy img-responsive center-block" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"/>
+          </div>
+        </div>
       </div><!-- col-sm-4 -->
     </div><!-- row -->
   </div><!-- col-sm-8 -->
