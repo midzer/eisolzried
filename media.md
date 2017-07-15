@@ -5,6 +5,26 @@ permalink: /media/
 imgfolder: /assets/images/media/
 vidfolder: /assets/videos/media/
 images:
+  - name: 00a72b1dda99e856.jpg
+    text: LF müde
+  - name: 0ffaf34d6da88116.jpg
+    text: Mannschaft ruht sich aus
+  - name: 2e35484d483b8b30.jpg
+    text: Feuerwehrengel
+  - name: 88bb558e58f20ab1.jpg
+    text: Ein Herz für Tiere
+  - name: 8675cab077f60b83.jpg
+    text: Auto auf den Gleisen
+  - name: 77652ceb04399780.jpg
+    text: Nachwuchs gesucht
+  - name: 500486447836562f.jpg
+    text: Amphibienfahrzeug
+  - name: ad102faa9bdc1d27.jpg
+    text: Waldbrand in Portugal
+  - name: bb169d0ccf00814e.jpg
+    text: Dodge
+  - name: f61b08ea5d86f0d3.jpg
+    text: Klassikfahrzeuge
   - name: 2eee8c4f84aa1d79.jpg
     text: Lego
   - name: 5eee7a886712f8e3.jpg
@@ -94,6 +114,19 @@ images:
   - name: c0cb9e157bfe364a.jpg
     text: Öltank
 videos:
+  - name: 2c51d55d6eb24997
+  - name: 5b85d6f548dfd077
+  - name: 7a10dcbab96956b7
+  - name: 46e00dcd995e6483
+  - name: 66b4c65337c320a5
+  - name: 2982f12127002142
+  - name: 64755e573f00f762
+  - name: b8e3eddcbb99e851
+  - name: ca70906dae8cc700
+  - name: dbe470bb106869b4
+  - name: dd19e127a37c4fa1
+  - name: eecd642c1b6b13f1
+  - name: fceffb51d18a2c31
   - name: 0d3d98ab52f0e4fe
   - name: 1f262ed5987b6ff8
   - name: 498f0df7f02e3662
