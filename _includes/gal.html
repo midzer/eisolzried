@@ -2,14 +2,9 @@
 <div class="row top-buffer">
   <div class="gallery">
   {% for image in page.images %}
-  {% assign loopindex = forloop.index %}
     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
       <a href="{{ page.imgfolder }}{{ image.name }}" class="thumbnail lightbox" title="{{ image.text }}">
-      {% if loopindex > 16 %}
         <img class="lazy" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-      {% else %}
-        <img src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-      {% endif %}
       </a>
     </div>
   {% endfor %}
