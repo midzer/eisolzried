@@ -50,18 +50,18 @@ query(".lazy").forEach(function(item) {
 
 // Theme switch
 function setTheme(local) {
-    var theme, icon, css;
+    var theme, icon, disabled;
     if (local == 'light') {
         theme = 'dark';
         icon = 'sun';
-        css = '/assets/css/dark-theme.min.css';
+        disabled = false;
     }
     else  {
         theme = 'light';
         icon = 'moon';
-        css = ''
+        disabled = true;
     }
-    document.getElementById('theme-link').href = css;
+    document.getElementById('theme-link').disabled = disabled;
     document.getElementById('theme-icon').className = 'icon-' + icon;
     localStorage.setItem('theme', theme);
 }
