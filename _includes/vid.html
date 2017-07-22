@@ -16,8 +16,8 @@
   {% for video in page.videos %}
     {% if video.name == include.video %}
 <video class="lazy embed-responsive-item" controls preload="metadata">
-  <source src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
-  <source src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
+  <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
+  <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
   Dein Browser unterstützt das Video tag nicht.
 </video>
     {% break %}
