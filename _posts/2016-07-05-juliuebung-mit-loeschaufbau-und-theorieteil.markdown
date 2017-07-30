@@ -20,4 +20,3 @@ Zur Übung im Juli wurde mit dem neuen Fahrzeug am Wendehammer in der Birkenstra
 Nach der Rückkehr ins Feuerwehrhaus und Aufhängen der nassen Schläuche in den Schlauchturm erklärten die Ausbilder die richtige Handhabung der Utensilien aus dem Rettungskoffer.
 
 {% include gal.html %}
-
