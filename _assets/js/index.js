@@ -108,7 +108,14 @@ function buildCal(data) {
         clone.setAttribute('title', ev[i].summary);
         clone.appendChild(document.createTextNode(ev[i].summary));
         event.detail.element.appendChild(clone);
-      }
+        if (event.detail.date.toDateString() == new Date().toDateString()) {
+          var snackbar = document.getElementById("snackbar")
+          snackbar.classList.add("snackbar--active");
+          setTimeout(function(){
+            snackbar.classList.remove("snackbar--active");
+          }, 5000);
+        }
+      };
     }
   });
 
