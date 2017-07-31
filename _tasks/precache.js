@@ -14,6 +14,10 @@ function writeServiceWorkerFile(rootDir, handleFetch, callback) {
       `${rootDir}/**/*.html`,
       `${rootDir}/assets/{css,data,js,icons,font}/*`
     ],
+    runtimeCaching: [{
+      urlPattern: '/',
+      handler: 'networkFirst'
+    }],
     stripPrefix: `${rootDir}/`,
     verbose: true,
   };
