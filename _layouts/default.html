@@ -20,15 +20,8 @@ layout: default
 
   {% include footer.html %}
 
-  <script defer src="{{ "/assets/js/bootstrap-native.min.js" | prepend: site.baseurl }}"></script>
-  <script defer src="{{ "/assets/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
-  <script defer src="{{ "/assets/js/bundle.min.js" | prepend: site.baseurl }}"></script>
-
-  {% if page.js %}
-    {% for script in page.js %}
-      <script defer src="{{ "/assets/js/" | append: script | append: '.js' | prepend: site.baseurl }}"></script>
-    {% endfor %}
-  {% endif %}
+  {% include scripts.html %}
+  
   </body>
 
 </html>
