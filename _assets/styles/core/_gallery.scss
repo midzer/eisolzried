@@ -7,3 +7,16 @@ a.thumbnail.active {
 .gallery > a > img {
   padding-bottom: 15px;
 }
+
+.lazy {
+  will-change: transition, opacity;
+}
+
+img.loaded, video.loaded {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
