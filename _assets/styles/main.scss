@@ -12,9 +12,15 @@
 // partials for site-wide styling
 //--------------------
 
-@import "core/main";
+@import "core/base";
+@import "core/navbar";
+@import "core/footer";
+@import "core/page";
+@import "core/posts";
+@import "core/video";
 @import "core/calendar";
 @import "core/gallery";
 @import "core/chatbox";
 @import "core/share";
 @import "core/chart";
+@import "core/helper";

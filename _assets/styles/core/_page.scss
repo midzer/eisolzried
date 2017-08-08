@@ -1,0 +1,28 @@
+.wrap:before,
+.wrap:after { content:""; display:table; }
+.wrap:after { clear: both; }
+.wrap {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+  zoom: 1;  
+}
+
+.page-content .wrap {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.page-content {
+  padding: 30px 0;
+  background-color: $white;
+}
+
+.page-content table:not(.calendar) {
+  margin-left: auto;
+  margin-right: auto;
+}
+ 		
+.page-content td {
+  vertical-align: top;
+  padding-right: 50px;
+}
