@@ -49,31 +49,31 @@ query(".lazy").forEach(function(item) {
 });
 
 // Theme switch
-function setTheme(local) {
-    var theme, icon, disabled;
-    if (local == 'light') {
-        theme = 'dark';
-        icon = 'sun';
+function setTheme(theme) {
+    var disabled, icon;
+    if (theme == 'dark') {
         disabled = false;
+        icon = 'sun';
     }
-    else  {
-        theme = 'light';
-        icon = 'moon';
+    else {
         disabled = true;
+        icon = 'moon';
     }
     document.getElementById('theme-link').disabled = disabled;
     document.getElementById('theme-icon').className = 'icon-' + icon;
     localStorage.setItem('theme', theme);
 }
-if (localStorage.getItem('theme') == 'dark') {
-    setTheme('light');
-}
-else {
-    localStorage.setItem('theme', 'light');
-}
 document.getElementById('theme-switch').onclick = function() {
-    setTheme(localStorage.getItem('theme'));
+    if (localStorage.getItem('theme') == 'dark') {
+        setTheme('light');
+    }
+    else {
+        setTheme('dark');
+    }
 };
+if (localStorage.getItem('theme') == 'dark') {
+    setTheme('dark');
+}
 
 // Language switch
 var path = window.location.pathname;
