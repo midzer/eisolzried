@@ -8,7 +8,7 @@ import browserSync from 'browser-sync';
 const reload = browserSync.reload;
 
 gulp.task('jekyll', done => {
-  return childProcess.spawn('jekyll', ['build', '--drafts'], {stdio: 'inherit'})
+  return childProcess.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts'], {stdio: 'inherit'})
   .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
   .on('close', done);
 });
@@ -19,6 +19,6 @@ gulp.task('jekyll:prod', done => {
   var productionEnv = process.env;
       productionEnv.JEKYLL_ENV = 'production';
 
-  return childProcess.spawn('jekyll', ['build'], {stdio: 'inherit' , env: productionEnv})
+  return childProcess.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit' , env: productionEnv})
   .on('close', done);
 });
