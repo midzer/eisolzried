@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 gem 'jekyll'
-gem 'i18n'
-gem 'jekyll-seo-tag'
+
+group :jekyll_plugins do
+    gem 'i18n'
+    gem 'jekyll-seo-tag'
+end

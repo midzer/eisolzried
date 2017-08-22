@@ -29,5 +29,6 @@ keep_files:
   - charts
 
 # Plugin settings
-gems:
+plugins:
+  - i18n
   - jekyll-seo-tag
