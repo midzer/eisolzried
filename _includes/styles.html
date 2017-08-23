@@ -6,10 +6,3 @@
 
 <link rel="stylesheet" href="{{ '/assets/css/main' | append: ext | prepend: site.baseurl }}">
 <link rel="stylesheet" id="theme-link" href="{{ '/assets/css/dark-theme.min.css' |  prepend: site.baseurl }}">
-
-<script>
-  if (localStorage.getItem('theme') != 'dark') {
-    document.getElementById('theme-link').disabled = true;
-    localStorage.setItem('theme', 'light');
-  }
-</script>
