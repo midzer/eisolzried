@@ -1,10 +1,8 @@
 <div id="drcal" class="table-responsive"></div>
 <br>
 {% if page.lang == 'by' %}
-  <noscript>Schoit bittschen Javascript o, damitsd an Kalenda seng kohnst</noscript>
   <p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">An Kalenda obelohn&#9196;</a></p>
 {% else %}
-  <noscript>Bitte Javascript aktivieren um den Kalender zu sehen</noscript>
   <p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">iCalendar herunterladen&#9196;</a></p>
 {% endif %}
 <div id="event-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Termindetails" aria-hidden="true">
