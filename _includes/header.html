@@ -45,31 +45,33 @@
       Dein Browser unterstützt den Audio tag nicht.
       </audio> 
       <ul class="nav navbar-nav navbar-right">
-        {% for link in site.data.navigation.[page.lang] %}
+      {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}
           {% assign active = nil %}
           {% for sublink in link.submenu %}
             {% if page.url contains sublink.url %}
-            {% assign active = 'active-nav-item' %}
-            {% break %}
+              {% assign active = 'active-nav-item' %}
+              {% break %}
             {% endif %}
           {% endfor %}
         <li class="dropdown {{ active }}">
           <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% include icon.html icon=link.icon %}{{ link.title }} <span class="caret"></span></a>
           <ul class="dropdown-menu">
           {% for sublink in link.submenu %}
-          <li><a href="{{ sublink.url }}">{% include icon.html icon=sublink.icon %}{{ sublink.title }}</a></li>
+            <li><a href="{{ sublink.url }}">{% include icon.html icon=sublink.icon %}{{ sublink.title }}</a></li>
           {% endfor %}
           </ul>
         </li>
         {% else %}
-        {% assign active = nil %}
-        {% if page.url contains link.url %}
-          {% assign active = 'active-nav-item' %}
+          {% if page.url contains link.url %}
+          <li class="active-nav-item">
+          {% else %}
+          <li>
+          {% endif %}
+            <a href="{{ link.url }}">{% include icon.html icon=link.icon %}{{ link.title }}</a>
+          </li>
         {% endif %}
-        <li class="{{ active }}"><a href="{{ link.url }}">{% include icon.html icon=link.icon %}{{ link.title }}</a></li>
-        {% endif %}
-        {% endfor %}
+      {% endfor %}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
