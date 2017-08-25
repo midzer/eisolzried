@@ -12,7 +12,7 @@ gulp.task('imagemin', () => {
 });
 
 gulp.task('iconmin', () => {
-  return gulp.src('_assets/icons/**/*')
+  return gulp.src('_assets/icons/**/*.png')
     .pipe($.imagemin())
     .pipe(gulp.dest('_site/assets/icons'));
 });
