@@ -10,7 +10,7 @@ function setTheme(theme) {
         icon = 'moon';
     }
     document.getElementById('theme-link').disabled = disabled;
-    document.getElementById('theme-icon').className = 'icon-' + icon;
+    document.getElementById('theme-icon').href.baseVal = '/assets/icons/sprite.svg#' + icon;
     localStorage.setItem('theme', theme);
 }
 if (localStorage.getItem('theme') != 'dark') {
@@ -100,13 +100,13 @@ document.getElementById('siren-btn').onclick = function() {
             player.load();
         }
         player.play();
-        icon = 'volume-off';
+        icon = 'volume-2';
     }
     else {
         player.pause();
-        icon = 'volume-up';
+        icon = 'play';
     }
-    document.getElementById('siren-icon').className = 'icon-' + icon;
+    document.getElementById('siren-icon').href.baseVal = '/assets/icons/sprite.svg#' + icon;
 };
 
 // Custom search

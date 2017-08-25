@@ -16,9 +16,9 @@
 {% if page.lang == 'by' %}
 <button id="posts-btn" type="button" class="btn btn-default">Meara</button>
 <br>
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">As neiaste bschtoin</a></p>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% include icon.html icon="cast" %}As neiaste bschtoin</a></p>
 {% else %}
 <button id="posts-btn" type="button" class="btn btn-default">Mehr</button>
 <br>
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS abonnieren</a></p>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% include icon.html icon="cast" %}RSS abonnieren</a></p>
 {% endif %}

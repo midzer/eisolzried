@@ -1,0 +1,13 @@
+{% if include.id %}
+<span class="icon icon--{{ include.icon }}">
+    <svg role="img" aria-hidden="true">
+        <use id="{{ include.id }}" href="{{ "/assets/icons/sprite.svg#" | prepend: site.baseurl | append: include.icon }}"></use>
+    </svg>
+</span>
+{% else %}
+<span class="icon icon--{{ include.icon }}">
+    <svg role="img" aria-hidden="true">
+        <use href="{{ "/assets/icons/sprite.svg#" | prepend: site.baseurl | append: include.icon }}"></use>
+    </svg>
+</span>
+{% endif %}

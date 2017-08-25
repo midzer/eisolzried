@@ -34,15 +34,15 @@ lang: de
       <td>1</td>
       <td>Thomas</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
     </tr>
@@ -53,13 +53,13 @@ lang: de
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
     </tr>
     <tr>
@@ -84,26 +84,26 @@ lang: de
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
     </tr>
     <tr>
       <td>5</td>
       <td>Miche</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -113,10 +113,10 @@ lang: de
     <tr>
       <td>6</td>
       <td>Lungl</td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -134,42 +134,42 @@ lang: de
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
     </tr>
     <tr>
       <td>8</td>
       <td>Schäds</td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>{% include icon.html icon="check" %}</td>
     </tr>
     <tr>
       <td>9</td>
       <td>Tii</td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -178,30 +178,30 @@ lang: de
       <td>10</td>
       <td>Lungl</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>11</td>
       <td>Lu</td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
-      <td></td>
-      <td></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td></td>
+      <td></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -214,12 +214,12 @@ lang: de
       <td></td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td><i class="icon-ok"></i></td>
+      <td>{% include icon.html icon="check" %}</td>
       <td></td>
     </tr>
   </tbody>

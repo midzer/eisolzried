@@ -5,7 +5,7 @@ permalink: /satzung/
 lang: de
 ---
 
-als [PDF&#9196;](/data/satzung.pdf) oder [ODT&#9196;](/data/satzung.odt) zum herunterladen
+als [{% include icon.html icon="download" %}PDF](/data/satzung.pdf) oder [{% include icon.html icon="download" %}ODT](/data/satzung.odt) zum herunterladen.
 
 - - -
 

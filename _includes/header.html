@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="search">
         <form class="navbar-form navbar-left" role="search">
-          <span class="icon icon-search"></span>
+          {% include icon.html icon="search" %}
           <input type="text" class="form-control" id="search-input" placeholder="{{ site.data.strings.[page.lang].search }}">
           <ul class="search-results list-unstyled" id="results-container"></ul>
         </form>
@@ -34,10 +34,10 @@
       {% endif %}
       </button>
       <button id="theme-switch" type="button" class="btn btn-default navbar-btn">
-        <i id="theme-icon" class="icon-moon"></i>
+        {% include icon.html icon="moon" id="theme-icon" %}
       </button>
       <button id="siren-btn" type="button" class="btn btn-default navbar-btn">
-        <i id="siren-icon" class="icon-volume-up"></i>
+        {% include icon.html icon="play" id="siren-icon" %}
       </button>
       <audio id="siren-player" loop preload="none">
         <source src="/assets/audio/siren.ogg" type="audio/ogg">
@@ -55,10 +55,10 @@
             {% endif %}
           {% endfor %}
         <li class="dropdown {{ active }}">
-          <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="{{ link.icon }}"></i>{{ link.title }} <span class="caret"></span></a>
+          <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% include icon.html icon=link.icon %}{{ link.title }} <span class="caret"></span></a>
           <ul class="dropdown-menu">
           {% for sublink in link.submenu %}
-          <li><a href="{{ sublink.url }}"><i class="{{ sublink.icon }}"></i>{{ sublink.title }}</a></li>
+          <li><a href="{{ sublink.url }}">{% include icon.html icon=sublink.icon %}{{ sublink.title }}</a></li>
           {% endfor %}
           </ul>
         </li>
@@ -67,7 +67,7 @@
         {% if page.url contains link.url %}
           {% assign active = 'active-nav-item' %}
         {% endif %}
-        <li class="{{ active }}"><a href="{{ link.url }}"><i class="{{ link.icon }}"></i>{{ link.title }}</a></li>
+        <li class="{{ active }}"><a href="{{ link.url }}">{% include icon.html icon=link.icon %}{{ link.title }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>

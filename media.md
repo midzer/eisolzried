@@ -176,9 +176,9 @@ lang: de
 ---
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#bilder">Bilder</a></li>
-  <li><a data-toggle="tab" href="#videos">Videos</a></li>
-  <li><a data-toggle="tab" href="#animiertes">Animiertes</a></li>
+  <li class="active"><a data-toggle="tab" href="#bilder">{% include icon.html icon="image" %}Bilder</a></li>
+  <li><a data-toggle="tab" href="#videos">{% include icon.html icon="video" %}Videos</a></li>
+  <li><a data-toggle="tab" href="#animiertes">{% include icon.html icon="repeat" %}Animiertes</a></li>
 </ul>
 
 <div class="tab-content">

@@ -1,0 +1,29 @@
+// SVG Icon Styles
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 3px;
+  
+    svg {
+        width: 100%;
+        height: 100%;
+        stroke: currentColor;
+    }
+
+    &.icon--search {
+        position: absolute;
+        margin-left: 7px;
+        margin-top: 7px;
+        color: #bbb;
+    }
+
+    &.icon--info,
+    &.icon--activity,
+    &.icon--message-circle,
+    &.icon--calendar {
+        width: 26px;
+        height: 26px;
+    }
+}

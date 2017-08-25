@@ -5,7 +5,7 @@ permalink: /by/satzung/
 lang: by
 ---
 
-ois [PDF&#9196;](/data/satzung.pdf) oda [ODT&#9196;](/data/satzung.odt) obelohn
+ois [{% include icon.html icon="download" %}PDF](/data/satzung.pdf) oda [{% include icon.html icon="download" %}ODT](/data/satzung.odt) obelohn.
 
 - - -
 

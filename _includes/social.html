@@ -1,17 +1,15 @@
 <section class="share">
+{% include icon.html icon="share-2" %}
 {% if page.lang == 'by' %}
 Den Beitrog weidagehm
 {% else %}
 Diesen Beitrag teilen
 {% endif %}
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ page.url}}" rel="nofollow noopener">
-    <span class="share-icon icon-facebook"></span>
+    {% include icon.html icon="facebook" %}
   </a>
   <a href="http://twitter.com/share?text={{ page.title }}&url={{ site.url}}{{ page.url}}" rel="nofollow noopener">
-    <span class="share-icon icon-twitter"></span>
+    {% include icon.html icon="twitter" %}
   </a>
-  <a href="https://plus.google.com/share?url={{ site.url}}{{ page.url}}" rel="nofollow noopener">
-    <span class="share-icon icon-gplus"></span>
-  </a>
-  </section>
+</section>
   

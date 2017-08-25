@@ -9,8 +9,7 @@ lang: de
 
 Bürgerhaus Deutenhausen-Eisolzried\\
 Feldbergstraße 13\\
-85232 Bergkirchen/Deutenhausen\\
-<i class="icon-mail"></i>info<span class="hidden">.nospam</span>@feuerwehr-eisolzried.de
+85232 Bergkirchen/Deutenhausen
+{% include icon.html icon="mail" %}info<span class="hidden">.nospam</span>@feuerwehr-eisolzried.de
 
-Standort in der [OpenStreetMap](http://www.openstreetmap.org/node/670854444)
-
+Standort in der [OpenStreetMap](http://www.openstreetmap.org/node/670854444).
