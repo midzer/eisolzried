@@ -1,21 +1,13 @@
 // SVG Icon Styles
 .icon {
-    display: inline-block;
     width: 16px;
     height: 16px;
     vertical-align: middle;
-    margin-right: 3px;
-  
-    svg {
-        width: 100%;
-        height: 100%;
-        stroke: currentColor;
-    }
 
     &.icon--search {
         position: absolute;
-        margin-left: 7px;
-        margin-top: 7px;
+        margin-left: 10px;
+        margin-top: 10px;
         color: #bbb;
     }
 
