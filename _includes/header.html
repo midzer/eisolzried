@@ -18,13 +18,11 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
-      <div class="search">
-        <form class="navbar-form navbar-left" role="search">
-          {% include icon.html icon="search" %}
-          <input type="text" class="form-control" id="search-input" placeholder="{{ site.data.strings.[page.lang].search }}">
-          <ul class="search-results list-unstyled" id="results-container"></ul>
-        </form>
-      </div>
+      <form class="navbar-form navbar-left" role="search">
+        {% include icon.html icon="search" %}
+        <input type="text" class="form-control" id="search-input" placeholder="{{ site.data.strings.[page.lang].search }}">
+        <ul class="dropdown-menu search-results" id="results-container"></ul>
+      </form>
       
       <button id="language-btn" type="button" class="btn btn-default navbar-btn">
       {% if page.lang == 'by' %}

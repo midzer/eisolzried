@@ -28,35 +28,26 @@
 
 /* Search and dropdown styles*/
 /* ----------------------------------------------------------*/
-.search {
-  position: relative;
-}
-
-.search input {
-  padding-left: 30px;
-}
-
 .search-results {
   display: none;
-  position: absolute;
-  margin-top: 16px;
-  z-index: 10;
+  top: initial;
+  left: initial;
 }
 
-.search-results:hover,
-.search input:focus + .search-results {
+#search-input {
+  text-indent: 20px;
+}
+
+#search-input:focus:not(:placeholder-shown) + .search-results {
   display: block;
 }
 
-.search-results,
-.dropdown-menu,
- {
+.dropdown-menu {
   color: $white;
   background-color: $brand-primary;
   border-color: darken($btn-primary-bg, 5%);
 }
 
-.search-results > li > a,
 .dropdown-menu > li > a {
   display: block;
   position: relative;
@@ -65,7 +56,6 @@
   color: $white;
 }
 
-.search-results > li > a:hover,
 .dropdown-menu > li > a:hover {
   color: $link-color !important;
   text-decoration: none;
