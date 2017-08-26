@@ -38,6 +38,7 @@
   text-indent: 20px;
 }
 
+.search-results:hover,
 #search-input:focus:not(:placeholder-shown) + .search-results {
   display: block;
 }
