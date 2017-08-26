@@ -12,7 +12,7 @@ gulp.task('build', ['clean'], function(cb) {
 });
 
 gulp.task('build:prod', ['clean'], function(cb) {
-  runSequence('jekyll:prod', 'scripts', 'sass:prod', 'imagemin', 'iconmin', 'icons', 'critical', 'htmlmin', 'precache:prod', cb);
+  runSequence('jekyll:prod', 'scripts', 'sass:prod', 'imagemin:prod', 'iconmin', 'icons', 'critical', 'htmlmin', 'precache:prod', cb);
 });
 
 gulp.task('clean', del.bind(null, ['_site'], {dot: true}));
