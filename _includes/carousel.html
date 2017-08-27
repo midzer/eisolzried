@@ -11,31 +11,40 @@
     <div class="item active">
       <img class="lazy" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/wasser14.jpg" alt="Leistungsprüfung Wasser 2015">
       <div class="carousel-caption">
-        {% if page.lang == 'by' %}
-        <h3>Bei uns gäd da Pansn ob {% include icon.html icon="trending-up" %}</h3>
-        {% else %}
-        <h3>Bei uns gehts ab {% include icon.html icon="trending-up" %}</h3>
-        {% endif %}
+        <h3>
+          {% if page.lang == 'by' %}
+          Bei uns gäd da Pansn ob
+          {% else %}
+          Bei uns gehts ab
+          {% endif %}
+          {% include icon.html icon="trending-up" %}
+        </h3>
       </div>
     </div>
     <div class="item">
       <img class="lazy" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/thl15.jpg" alt="Leistungsprüfung THL 2015">
       <div class="carousel-caption">
-        {% if page.lang == 'by' %}
-        <h3>...mid vui Gaudi {% include icon.html icon="heart" %}</h3>
-        {% else %}
-        <h3>...mit viel Spaß {% include icon.html icon="heart" %}</h3>
-        {% endif %}
+        <h3>
+          {% if page.lang == 'by' %}
+          ...mid vui Gaudi
+          {% else %}
+          ...mit viel Spaß
+          {% endif %}
+          {% include icon.html icon="heart" %}
+        </h3>
       </div>
     </div>
     <div class="item">
       <img class="lazy" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/flossfahrt2.jpg" alt="Floßfahrt 2015">
       <div class="carousel-caption">
-        {% if page.lang == 'by' %}
-        <h3>...und a Griabigkeid {% include icon.html icon="thumbs-up" %}</h3>
-        {% else %}
-        <h3>...und auch Geselligkeit {% include icon.html icon="thumbs-up" %}</h3>
-        {% endif %}
+        <h3>
+          {% if page.lang == 'by' %}
+          ...und a Griabigkeid
+          {% else %}
+          ...und auch Geselligkeit
+          {% endif %}
+          {% include icon.html icon="thumbs-up" %}
+        </h3>
       </div>
     </div>
   </div>

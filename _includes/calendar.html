@@ -1,10 +1,11 @@
 <div id="drcal" class="table-responsive"></div>
 <br>
 {% if page.lang == 'by' %}
-  <p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">{% include icon.html icon="download" %}An Kalenda obelohn</a></p>
+{% assign download = 'An Kalenda obeloon' %}
 {% else %}
-  <p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">{% include icon.html icon="download" %}iCalendar herunterladen</a></p>
+{% assign download = 'iCalendar herunterladen' %}
 {% endif %}
+<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">{% include icon.html icon="download" %}{{ download }}</a></p>
 <div id="event-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Termindetails" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
