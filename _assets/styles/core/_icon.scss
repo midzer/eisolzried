@@ -19,9 +19,9 @@
         height: 32px;
     }
 
-    &.icon--trending-up,
-    &.icon--heart,
-    &.icon--thumbs-up {
+    .carousel-caption &.icon--trending-up,
+    .carousel-caption &.icon--heart,
+    .carousel-caption &.icon--thumbs-up {
         width: 26px;
         height: 26px;
     }
