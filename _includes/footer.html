@@ -1,16 +1,24 @@
 <footer class="site-footer">
 
   <div class="wrap text-center">
-    <a href="{{ site.repo }}" target="_blank" rel="noopener">
+    <a class="footer-item" href="{{ site.repo }}" target="_blank" rel="noopener">
       {% include icon.html icon="github" %}
       {% if page.lang == 'by' %}
       Soß
       {% else %}
       Quelltext
       {% endif %}
-    </a>&nbsp;
-    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="nofollow noopener"><img src="/assets/icons/license.png" alt="Creative Commons BY-NC-SA" height="15" width="80"></a>&nbsp;
-    <a href="/impressum">Impressum</a>
+    </a>
+    <a class="footer-item" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="nofollow noopener"><img src="/assets/icons/license.png" alt="Creative Commons BY-NC-SA" height="15" width="80"></a>
+    <a class="footer-item" href="/impressum/">Impressum</a>
+    <div class="footer-item">
+      {% if page.lang == 'by' %}
+      Mid <3 baud vo 
+      {% else %}
+      Mit <3 gebaut von 
+      {% endif %}
+      <a href="https://rohner.io/" target="_blank" rel="noopener">Rohner Solutions</a>
+    </div>
   </div>
 
 </footer>

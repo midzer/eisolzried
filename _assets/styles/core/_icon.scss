@@ -14,11 +14,15 @@
     &.icon--info,
     &.icon--activity,
     &.icon--message-circle,
-    &.icon--calendar,
+    &.icon--calendar {
+        width: 32px;
+        height: 32px;
+    }
+
     &.icon--trending-up,
     &.icon--heart,
     &.icon--thumbs-up {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
     }
 }
