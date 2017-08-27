@@ -12,7 +12,7 @@ js:
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="title">Intro</h3>
+        <h2 class="panel-title">{% include icon.html icon="info" %}Intro</h2>
       </div>
 <div class="panel-body" markdown="1">
 Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
@@ -24,7 +24,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="title">Wos neis gibt</h3>
+        <h2 class="panel-title">{% include icon.html icon="activity" %}Wos neis gibt</h2>
       </div>
       <div class="panel-body">
 {% include posts.html %}
@@ -44,7 +44,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
       <div class="col-sm-4">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="title">Chat</h3>
+            <h2 class="panel-title">{% include icon.html icon="message-circle" %}Chat</h2>
           </div>
           <div class="panel-body">
 {% include chat.html %}
@@ -56,7 +56,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
       <div class="col-sm-8">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="title">Wos zum doa is</h3>
+            <h2 class="panel-title">{% include icon.html icon="calendar" %}Wos zum doa is</h2>
           </div>
           <div class="panel-body">
 {% include calendar.html %}

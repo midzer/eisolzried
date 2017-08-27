@@ -12,7 +12,7 @@ js:
   <div class="col-sm-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="title">{% include icon.html icon="info" %}Intro</h3>
+        <h2 class="panel-title">{% include icon.html icon="info" %}Intro</h2>
       </div>
 <div class="panel-body" markdown="1">
 Wir sind eine aktive Feuerwehr aus der Gemeinde Bergkirchen in Oberbayern, die überwiegend aus einem jungen Team besteht. Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
@@ -24,7 +24,7 @@ Und nun viel Spaß beim Stöbern :)
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="title">{% include icon.html icon="activity" %}Neuigkeiten</h3>
+        <h2 class="panel-title">{% include icon.html icon="activity" %}Neuigkeiten</h2>
       </div>
       <div class="panel-body">
 {% include posts.html %}
@@ -44,7 +44,7 @@ Und nun viel Spaß beim Stöbern :)
       <div class="col-sm-4">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="title">{% include icon.html icon="message-circle" %}Chat</h3>
+            <h2 class="panel-title">{% include icon.html icon="message-circle" %}Chat</h2>
           </div>
           <div class="panel-body">
 {% include chat.html %}
@@ -56,7 +56,7 @@ Und nun viel Spaß beim Stöbern :)
       <div class="col-sm-8">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="title">{% include icon.html icon="calendar" %}Termine</h3>
+            <h2 class="panel-title">{% include icon.html icon="calendar" %}Termine</h2>
           </div>
           <div class="panel-body">
 {% include calendar.html %}
