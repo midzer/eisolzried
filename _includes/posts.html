@@ -13,12 +13,20 @@
   {% endif %}
 {% endfor %}
 </ul>
-{% if page.lang == 'by' %}
-<button id="posts-btn" type="button" class="btn btn-default">Meara</button>
+<button id="posts-btn" type="button" class="btn btn-default">
+  {% include icon.html icon="plus" %}
+  {% if page.lang == 'by' %}
+  Meara
+  {% else %}
+  Mehr
+  {% endif %}
+</button>
 <br>
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% include icon.html icon="cast" %}As neiaste bschtoin</a></p>
-{% else %}
-<button id="posts-btn" type="button" class="btn btn-default">Mehr</button>
-<br>
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% include icon.html icon="cast" %}RSS abonnieren</a></p>
-{% endif %}
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+  {% include icon.html icon="cast" %}
+  {% if page.lang == 'by' %}
+  As neiaste bschtoin
+  {% else %}
+  RSS abonnieren
+  {% endif %}
+</a></p>
