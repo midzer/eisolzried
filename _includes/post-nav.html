@@ -1,6 +1,6 @@
 {% assign sorted-posts = site.posts | where: "lang",page.lang %}
   {% for post in sorted-posts %}
-    {% if post.url == page.url and page.lang == post.lang %}
+    {% if post.url == page.url %}
       {% assign post_index0 = forloop.index0 %}
       {% assign post_index1 = forloop.index %}
     {% endif %}

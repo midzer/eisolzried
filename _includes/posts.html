@@ -1,8 +1,7 @@
 <ul id="posts" class="posts">
-{% for post in site.posts %}
-{% assign loopindex = forloop.index %}
-  {% if page.lang == post.lang %}
-  {% if loopindex > 16 %}
+{% assign sorted-posts = site.posts | where: "lang",page.lang %}
+{% for post in sorted-posts %}
+  {% if forloop.index > 8 %}
   <li class="hidden">  
   {% else %}
   <li>
@@ -10,7 +9,6 @@
     <span class="post-date">{{ post.date | localize: "%e. %B %Y" }}</span>
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </li>
-  {% endif %}
 {% endfor %}
 </ul>
 <button id="posts-btn" type="button" class="btn btn-default">
