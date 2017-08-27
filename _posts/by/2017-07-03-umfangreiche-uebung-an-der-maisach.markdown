@@ -55,6 +55,7 @@ videos:
   - name: juliuebung1
   - name: juliuebung2
 lang: by
+tags: uebungen
 categories:
   - by
 ---

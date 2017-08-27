@@ -3,6 +3,7 @@ layout: post
 title:  "Ausbildung am Feialöschgeräd in Laudabo"
 date:   2016-10-10
 lang: by
+tags: uebungen
 categories:
   - by
 ---

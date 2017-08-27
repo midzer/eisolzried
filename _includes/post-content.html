@@ -1,0 +1,17 @@
+<article>
+  <div class="page-header">
+    <h3>{{ post.title }}</h3>
+    <p class="post-meta">
+        {{ post.date | localize: "%e. %B %Y" }}
+        {% if post.author %} • {{ post.author }}{% endif %}
+        {% if post.meta %} • {{ post.meta }}{% endif %}
+    </p>
+  </div>
+
+  {{ post.content }}
+
+</article>
+
+<hr>
+
+{% include social.html %}

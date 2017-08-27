@@ -55,6 +55,7 @@ videos:
   - name: juliuebung1
   - name: juliuebung2
 lang: de
+tags: uebungen
 ---
 
 Bei hervorragendem Wetter ging es zur Juliübung diesmal an die Maisach in Eisolzried, um einen fiktiven Brand eines Mähdreschers auf der angrenzenden Wiese zu löschen.

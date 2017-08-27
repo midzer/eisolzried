@@ -31,6 +31,7 @@ images:
   - name: ersthelfer13.jpg
     text: Ersthelfer 13
 lang: by
+tags: uebungen
 categories:
   - by
 ---

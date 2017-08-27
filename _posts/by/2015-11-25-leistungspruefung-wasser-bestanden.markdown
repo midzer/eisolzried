@@ -49,6 +49,7 @@ images:
   - name: wasser22.jpg
     text: Wasser 22
 lang: by
+tags: uebungen
 categories:
   - by
 ---

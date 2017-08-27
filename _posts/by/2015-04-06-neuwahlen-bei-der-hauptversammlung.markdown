@@ -3,6 +3,7 @@ layout: post
 title:  "Neuwahlen bei der Hauptversammlung"
 date:   2015-04-06
 lang: by
+tags: allgemeines
 categories:
   - by
 ---

@@ -11,6 +11,7 @@ images:
   - name: geretsried3.jpg
     text: Geretsried 3
 lang: by
+tags: uebungen
 categories:
   - by
 ---

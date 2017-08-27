@@ -9,6 +9,7 @@ images:
   - name: flossfahrt2.jpg
     text: Floßfahrt 2
 lang: by
+tags: allgemeines
 categories:
   - by
 ---

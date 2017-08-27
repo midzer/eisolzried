@@ -23,6 +23,7 @@ images:
   - name: gemeindeuebung9.jpg
     text: Gemeindeübung 9
 lang: by
+tags: uebungen
 categories:
   - by
 ---

@@ -9,6 +9,7 @@ images:
   - name: sandsack2.jpg
     text: Sandsack 2
 lang: de
+tags: uebungen
 ---
 
 Am 07.07.15, 19.00 Uhr fand eine Übung im Stadtbauhof Dachau statt. Sie wurde vom Landratsamt und der Kreisbrandinspektion organisiert.

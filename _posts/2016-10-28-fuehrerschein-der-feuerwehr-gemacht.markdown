@@ -3,6 +3,7 @@ layout: post
 title:  "Führerschein der Feuerwehr gemacht"
 date:   2016-10-28
 lang: de
+tags: uebungen
 ---
 
 Im Oktober absolvierten Peter Brummer, Florian Lunglmeyr und Matthias Schönwetter die Prüfung für den Feuerwehrführerschein. Dieser erlaubt es unser neues mittleres Löschfahrzeug zu fahren.

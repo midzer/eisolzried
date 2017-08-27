@@ -9,6 +9,7 @@ images:
   - name: weihnachtsfeier2.jpg
     text: Weihnachtsfeier 2
 lang: by
+tags: allgemeines
 categories:
   - by
 ---

@@ -17,6 +17,7 @@ images:
   - name: neues-fahrzeug6.jpg
     text: Neues Fahrzeug 6
 lang: by
+tags: allgemeines
 categories:
   - by
 ---

@@ -17,6 +17,7 @@ images:
   - name: neues-fahrzeug6.jpg
     text: Neues Fahrzeug 6
 lang: de
+tags: allgemeines
 ---
 
 Am Freitag, 22. April war es endlich so weit: wir holten unser neues Fahrzeug von der Firma Lentner in Hohenlinden ab.

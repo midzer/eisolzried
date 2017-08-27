@@ -3,6 +3,7 @@ layout: post
 title:  "Übung für Maschinisten am Waldberg"
 date:   2016-10-12
 lang: de
+tags: uebungen
 ---
 
 Es fand eine Extraübung am Waldberg statt dessen Übungszweck die Wasserförderung über Höhenunterschiede war.

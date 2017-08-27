@@ -13,6 +13,7 @@ images:
   - name: sturm4.jpg
     text: Sturm 4
 lang: de
+tags: einsaetze
 ---
 
 31.03.15 - Sturmtief "Niklas"

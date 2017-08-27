@@ -9,6 +9,7 @@ images:
   - name: jahreshauptversammlung2.jpg
     text: Jahreshauptversammlung 2
 lang: by
+tags: allgemeines
 categories:
   - by
 ---

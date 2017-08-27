@@ -6,7 +6,7 @@
   {% else %}
   <li>
   {% endif %}
-    <span class="post-date">{{ post.date | localize: "%e. %B %Y" }}</span>
+    <div class="post-meta">{{ post.date | localize: "%e. %B %Y" }}</div>
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </li>
 {% endfor %}

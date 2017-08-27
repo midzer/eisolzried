@@ -3,6 +3,7 @@ layout: post
 title:  "Neuer Atemschutzträger"
 date:   2015-10-02
 lang: de
+tags: uebungen
 ---
 
 Vom 07.09.2015 bis 19.09.2015 fand eine Ausbildung von Atemschutzträgern durch die Kreisbrandinspektion Dachau statt.

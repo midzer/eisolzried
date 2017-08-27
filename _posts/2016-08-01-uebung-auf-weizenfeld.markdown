@@ -3,6 +3,7 @@ layout: post
 title:  "Übung auf Weizenfeld"
 date:   2016-08-01
 lang: de
+tags: uebungen
 ---
 
 Diesen Monat fand unsere monatliche Übung auf einem abgeernteten Weizenfeld statt.

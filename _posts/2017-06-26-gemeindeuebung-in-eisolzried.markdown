@@ -23,6 +23,7 @@ images:
   - name: gemeindeuebung9.jpg
     text: Gemeindeübung 9
 lang: de
+tags: uebungen
 ---
 
 Am heutigen Abend ab 19 Uhr fand die jährliche gemeinsame Übung aller Gemeindefeuerwehren der Gemeinde in Eisolzried statt.

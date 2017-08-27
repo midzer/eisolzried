@@ -25,6 +25,7 @@ images:
   - name: thl-feldgeding10.jpg
     text: THL Feldgeding 10
 lang: by
+tags: uebungen
 categories:
   - by
 ---

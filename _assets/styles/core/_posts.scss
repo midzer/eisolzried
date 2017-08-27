@@ -1,15 +1,14 @@
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 20px; }
+.posts li { padding-bottom: 15px; }
 
-.posts .post-link {
+.post-link {
   font-size: 20px;
   letter-spacing: -0.5px;
   line-height: 1;
 }
 
-.posts .post-date {
-  display: block;
+.post-meta {
   font-size: 15px;
   color: $gray;
 }
@@ -17,10 +16,4 @@
 #posts-btn {
   display: block;
   width: 100%;
-}
-
-.meta {
-  font-size: 15px;
-  color: $gray;
-  margin-top: 5px;
 }

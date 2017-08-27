@@ -25,6 +25,7 @@ images:
   - name: thl-feldgeding10.jpg
     text: THL Feldgeding 10
 lang: de
+tags: uebungen
 ---
 
 Zur Übung im April ging es diesmal zum Feuerwehrhaus nach Feldgeding.

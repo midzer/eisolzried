@@ -35,6 +35,7 @@ images:
   - name: thl15.jpg
     text: THL 15
 lang: de
+tags: uebungen
 ---
 
 Zusammen mit der Feuerwehr Feldgeding hat die Feuerwehr Eisolzried dieses Jahr wieder eine THL-Leistungsprüfung erfolgreich abgelegt.

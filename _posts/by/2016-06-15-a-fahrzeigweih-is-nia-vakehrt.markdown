@@ -45,6 +45,7 @@ images:
   - name: fahrzeugweihe20.jpg
     text: Fahrzeugweihe 20
 lang: by
+tags: allgemeines
 categories:
   - by
 ---

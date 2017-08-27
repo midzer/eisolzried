@@ -17,6 +17,7 @@ images:
   - name: absturzsicherung6.jpg
     text: Absturzsicherung 6
 lang: by
+tags: uebungen
 categories:
   - by
 ---

@@ -3,6 +3,7 @@ layout: post
 title:  "Brand vo a Steckdosn im GADA"
 date:   2016-07-01
 lang: by
+tags: einsaetze
 categories:
   - by
 ---

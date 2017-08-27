@@ -3,6 +3,7 @@ layout: post
 title:  "Gemeinsam üben im GADA"
 date:   2016-10-17
 lang: de
+tags: uebungen
 ---
 
 Zusammen mit den Feuerwehren der Gemeinde Bergkirchen fand eine Übung im GADA statt.

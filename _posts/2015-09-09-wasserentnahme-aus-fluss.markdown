@@ -19,6 +19,7 @@ images:
   - name: september7.jpg
     text: September Übung 7
 lang: de
+tags: uebungen
 ---
 
 Zur Übung im September am 07.09.2015 stand dieses Mal Wasserentnahme aus der Maisach auf dem Plan.

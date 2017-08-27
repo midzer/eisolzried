@@ -3,6 +3,7 @@ layout: post
 title:  "Unfall auf Kreisstraße"
 date:   2016-10-23
 lang: de
+tags: einsaetze
 ---
 
 Die Feuerwehr Eisolzried wurde in der Früh um 5 Uhr mit der Meldung alarmiert eine Person ist im PKW eingeschlossen.

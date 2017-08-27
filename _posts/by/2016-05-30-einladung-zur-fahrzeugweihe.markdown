@@ -3,6 +3,7 @@ layout: post
 title:  "Eig'lohn seids zua Fahrzeigweih"
 date:   2016-05-30
 lang: by
+tags: allgemeines
 categories:
   - by
 ---

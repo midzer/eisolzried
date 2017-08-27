@@ -3,6 +3,7 @@ layout: post
 title:  "Füraschein vo da Feiawea gmacht"
 date:   2016-10-28
 lang: by
+tags: uebungen
 categories:
   - by
 ---

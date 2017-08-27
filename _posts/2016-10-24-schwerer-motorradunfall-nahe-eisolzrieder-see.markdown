@@ -3,6 +3,7 @@ layout: post
 title:  "Schwerer Verkehrsunfall nahe Eisolzrieder See"
 date:   2016-10-24
 lang: de
+tags: einsaetze
 ---
 
 Gestern ereignete sich bei einem Motorradtreffen am Eisolzrieder See ein schwerer Unfall bei dem die Feuerwehr Eisolzried die Absperrung der Straße übernahm.
