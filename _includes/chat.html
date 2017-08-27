@@ -3,9 +3,16 @@
 </div>
 <form id="chat-form">
   <div class="input-group">
-    <input id="chat-input" type="text" autocomplete="off" class="form-control" placeholder="schreiben..." aria-label="Chateingabefeld">
+    {% if page.lang == 'by' %}
+    {% assign write = 'schreim...' %}
+    {% assign send = 'Sendn' %}
+    {% else %}
+    {% assign write = 'schreiben...' %}
+    {% assign send = 'Senden' %}
+    {% endif %}
+    <input id="chat-input" type="text" autocomplete="off" class="form-control" placeholder="{{ write }}" aria-label="Chateingabefeld">
     <span class="input-group-btn">
-      <button id="chat-btn" class="btn btn-default" type="button">Senden</button>
+      <button id="chat-btn" class="btn btn-default" type="button">{{ send }}</button>
     </span>
   </div><!-- /input-group -->
 </form>
