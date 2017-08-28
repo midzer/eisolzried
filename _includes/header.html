@@ -40,11 +40,7 @@
       <button id="siren-btn" type="button" class="btn btn-default navbar-btn">
         {% include icon.html icon="play" id="siren-icon" %}
       </button>
-      <audio id="siren-player" loop preload="none">
-        <source src="/assets/audio/siren.ogg" type="audio/ogg">
-        <source src="/assets/audio/siren.mp3" type="audio/mpeg">
-      Dein Browser unterstützt den Audio tag nicht.
-      </audio> 
+      {% include audio-player.html audio='siren' %}
       <ul class="nav navbar-nav navbar-right">
       {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}

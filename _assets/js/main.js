@@ -91,22 +91,36 @@ else {
     };
 }
 
-// Siren player
-document.getElementById('siren-btn').onclick = function() {
-    var player = document.getElementById('siren-player');
-    var icon;
+// Audio Player
+function toggleAudio(player) {
     if (player.paused) {
         if (player.readyState == 0) {
             player.load();
         }
         player.play();
-        icon = 'volume-2';
     }
     else {
         player.pause();
-        icon = 'play';
     }
-    document.getElementById('siren-icon').href.baseVal = '/assets/icons/sprite.svg#' + icon;
+}
+
+// Siren player
+document.getElementById('siren-btn').onclick = function() {
+    var player = document.getElementById('siren-player');
+    document.getElementById('siren-icon').href.baseVal = '/assets/icons/sprite.svg#' + (player.paused ? 'volume-2' : 'play');
+    toggleAudio(player);
+};
+
+// Fire run
+document.getElementById('fire-station').onclick = function() {
+    var truck = document.getElementById("fire-truck");
+    if (truck.style.animationPlayState == "paused" || truck.style.animationPlayState == "") {
+        truck.style.animationPlayState = "running";
+    }
+    else {
+        truck.style.animationPlayState = "paused";
+    }
+    toggleAudio(document.getElementById('fire-run-player'));
 };
 
 // Custom search

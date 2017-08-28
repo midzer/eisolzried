@@ -25,4 +25,22 @@
         width: 26px;
         height: 26px;
     }
+
+    &.icon--fire-truck {
+        width: 52px;
+        height: 32px;
+    }
+    &.icon--home {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+span .icon--fire-truck,
+span .icon--home {
+    margin-top: 20px;
+}
+
+span .icon--home {
+    cursor: pointer;
 }

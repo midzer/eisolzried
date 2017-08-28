@@ -5,6 +5,7 @@ lang: de
 <article>
   <div class="page-header">
     <h1>{{ page.title }}</h1>
+    {% include fire-run-animation.html %}
     <p class="post-meta">
         {{ page.date | localize: "%e. %B %Y" }}
         {% if page.author %} • {{ page.author }}{% endif %}
