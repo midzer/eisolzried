@@ -7,7 +7,7 @@ import del from 'del';
 
 const reload = browserSync.reload;
 
-gulp.task('build', ['clean'], function(cb) {
+gulp.task('build', function(cb) {
   runSequence('jekyll', 'scripts', 'sass', 'imagemin', 'iconmin', 'icons', 'precache', cb);
 });
 
