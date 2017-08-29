@@ -9,11 +9,12 @@ a.thumbnail.active {
 }
 
 .lazy {
-  will-change: transition, opacity;
+  opacity: 0;
 }
 
 img.loaded, video.loaded {
   animation: fadeIn 0.6s ease-in;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
