@@ -124,7 +124,7 @@ document.getElementById('fire-station').onclick = function() {
 };
 
 // Custom search
-const endpoint = '/assets/data/search.json';
+const endpoint = '/search.json';
 const pages = [];
 fetch(endpoint)
     .then(blob => blob.json())
