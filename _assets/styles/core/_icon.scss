@@ -1,13 +1,13 @@
 // SVG Icon Styles
 .icon {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    vertical-align: sub;
 
     &.icon--search {
         position: absolute;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 9px;
+        margin-top: 9px;
         color: #bbb;
     }
 
@@ -15,24 +15,24 @@
     &.icon--activity,
     &.icon--message-circle,
     &.icon--calendar {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
     }
 
     .carousel-caption &.icon--trending-up,
     .carousel-caption &.icon--heart,
     .carousel-caption &.icon--thumbs-up {
-        width: 26px;
-        height: 26px;
+        width: 30px;
+        height: 30px;
     }
 
     &.icon--fire-truck {
-        width: 52px;
-        height: 32px;
+        width: 70px;
+        height: 43px;
     }
     &.icon--home {
-        width: 32px;
-        height: 32px;
+        width: 43px;
+        height: 43px;
     }
 }
 

@@ -199,7 +199,7 @@ ws.onmessage = function(msg) {
 // Load more posts
 document.getElementById('posts-btn').onclick = function() {
   var els = document.querySelectorAll('.hidden');
-  for (var i = 0; i < 8; i++) {
+  for (var i = 0; i < 6; i++) {
     if (els.length == i) {
       this.classList.add('hidden');
       break;

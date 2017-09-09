@@ -13,7 +13,6 @@ gulp.task('copy', () => {
     '_assets/audio/**',
     '_assets/css/**',
     '_assets/data/**',
-    '_assets/fonts/**',
     '_assets/videos/**'
   ], {
     base: '_assets',

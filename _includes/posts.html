@@ -1,7 +1,7 @@
 <ul id="posts" class="posts">
 {% assign sorted-posts = site.posts | where: "lang",page.lang %}
 {% for post in sorted-posts %}
-  {% if forloop.index > 8 %}
+  {% if forloop.index > 6 %}
   <li class="hidden">  
   {% else %}
   <li>
