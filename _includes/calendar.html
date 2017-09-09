@@ -5,7 +5,7 @@
 {% else %}
 {% assign download = 'iCalendar herunterladen' %}
 {% endif %}
-<p><a href="{{ "/data/termine.ics" | prepend: site.baseurl }}">{% include icon.html icon="download" %}{{ download }}</a></p>
+<p><a href="{{ "/assets/data/termine.ics" | prepend: site.baseurl }}">{% include icon.html icon="download" %}{{ download }}</a></p>
 <div id="event-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Termindetails" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">

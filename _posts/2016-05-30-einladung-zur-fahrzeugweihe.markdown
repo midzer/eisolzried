@@ -10,5 +10,5 @@ Die Feuerwehr Eisolzried veranstaltet am Sonntag, 05.06.2016 einen Festtag mit F
 
 Alle Mitbürgerinnen und Mitbürger aus Deutenhausen und Eisolzried sind herzlich eingeladen. Die ausführliche Einladung mit Festablauf findest Du [hier][einladung].
 
-[einladung]: /data/2016-06-05_Einladung Fahrzeugweihe_alle.pdf
+[einladung]: /assets/data/2016-06-05_Einladung Fahrzeugweihe_alle.pdf
 
