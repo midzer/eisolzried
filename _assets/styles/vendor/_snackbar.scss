@@ -56,4 +56,29 @@
     color: $white;
     float: left;
   }
+
+  &__action {
+    background: transparent;
+    border: none;
+    color: $white;
+    float: right;
+    text-transform: uppercase;
+    padding: 14px 24px 14px 12px;
+    overflow: hidden;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+    &:not([aria-hidden]) {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
 }

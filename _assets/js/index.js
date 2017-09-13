@@ -13,8 +13,7 @@ function hasEventInDate(event, time, timezone) {
   return isBetween(event.startDate, event.endDate, time, timezone);
 }
 
-function createEventDetails(event)
-{
+function createEventDetails(event) {
   var details = '<p>';
   details += 'Treffpunkt: ';
   details += event.location;
@@ -88,6 +87,22 @@ function buildCal(data) {
     return ev;
   }
 
+  var modal = new Modal(document.getElementById('event-modal'));
+  function showModal(event) {
+    var content = 
+    '<div class="modal-header">'
+      +'<button type="button" class="close" data-dismiss="modal" aria-label="Schließen">'
+        +'<span aria-hidden="true">&times;</span>'
+      +'</button>'
+      +'<h4 class="modal-title">' + event.summary + '</h4>'
+    +'</div>'
+    +'<div class="modal-body">'
+      +'<p>' + createEventDetails(event) + '</p>'
+    +'</div>';
+    modal.setContent(content);
+    modal.show();
+  }
+
   var clone;
   var dayNum = document.createElement('div');
   dayNum.className = 'daynum';
@@ -109,11 +124,16 @@ function buildCal(data) {
         clone.appendChild(document.createTextNode(ev[i].summary));
         event.detail.element.appendChild(clone);
         if (event.detail.date.toDateString() == new Date().toDateString()) {
-          var snackbar = document.getElementById("snackbar")
-          snackbar.classList.add("snackbar--active");
-          setTimeout(function(){
-            snackbar.classList.remove("snackbar--active");
-          }, 5000);
+          var handler = function () {
+            showModal(ev[i]);
+          }
+          var data = {
+            message: 'Heute ist was los!',
+            timeout: 5000,
+            actionHandler: handler,
+            actionText: 'Zeigen'
+          };
+          snackbar.showSnackbar(data);
         }
       };
     }
@@ -125,24 +145,12 @@ function buildCal(data) {
 
   cal.changeMonth(new Date());
 
-  var modal = new Modal(document.getElementById('event-modal'));
   cal.addEventListener('click', function(event) {
     if (event.target.className == 'dayevent') {
       var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
       for (var i = 0; i < ev.length; i++) {
         if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
-          var content = 
-            '<div class="modal-header">'
-              +'<button type="button" class="close" data-dismiss="modal" aria-label="Schließen">'
-                +'<span aria-hidden="true">&times;</span>'
-              +'</button>'
-              +'<h4 class="modal-title">' + ev[i].summary + '</h4>'
-            +'</div>'
-            +'<div class="modal-body">'
-              +'<p>' + createEventDetails(ev[i]) + '</p>'
-            +'</div>';
-          modal.setContent(content);
-          modal.show();
+          showModal(ev[i]);
           break;
         }
       }

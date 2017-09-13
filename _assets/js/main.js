@@ -163,3 +163,6 @@ lightbox(".lightbox", {
     zoom: false,
     docClose: true
 });
+
+// Snackbar
+window.snackbar = new Snackbar(document.getElementById("snackbar"));

@@ -42,10 +42,25 @@ if ('serviceWorker' in navigator) {
                 // It's the perfect time to display a "New content is available; please refresh."
                 // message in the page's interface.
                 console.log('New or updated content is available.');
+                const handler = function () {
+                  window.location.reload();
+                }
+                var data = {
+                  message: 'Auf der Seite gibts was neues!',
+                  timeout: 60000,
+                  actionHandler: handler,
+                  actionText: 'Update'
+                };
+                snackbar.showSnackbar(data);
               } else {
                 // At this point, everything has been precached.
                 // It's the perfect time to display a "Content is cached for offline use." message.
                 console.log('Content is now available offline!');
+                var data = {
+                  message: 'Die Seite ist jetzt auch offline verfügbar!',
+                  timeout: 5000
+                };
+                snackbar.showSnackbar(data);
               }
               break;
 
