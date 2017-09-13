@@ -22,6 +22,52 @@ images:
     text: Gemeindeübung 8
   - name: gemeindeuebung9.jpg
     text: Gemeindeübung 9
+  - name: gemeindeuebung10.jpg
+    text: Gemeindeübung 10
+  - name: gemeindeuebung11.jpg
+    text: Gemeindeübung 11
+  - name: gemeindeuebung12.jpg
+    text: Gemeindeübung 12
+  - name: gemeindeuebung13.jpg
+    text: Gemeindeübung 13
+  - name: gemeindeuebung14.jpg
+    text: Gemeindeübung 14
+  - name: gemeindeuebung15.jpg
+    text: Gemeindeübung 15
+  - name: gemeindeuebung16.jpg
+    text: Gemeindeübung 16
+  - name: gemeindeuebung17.jpg
+    text: Gemeindeübung 17
+  - name: gemeindeuebung18.jpg
+    text: Gemeindeübung 18
+  - name: gemeindeuebung19.jpg
+    text: Gemeindeübung 19
+  - name: gemeindeuebung20.jpg
+    text: Gemeindeübung 20
+  - name: gemeindeuebung21.jpg
+    text: Gemeindeübung 21
+  - name: gemeindeuebung22.jpg
+    text: Gemeindeübung 22
+  - name: gemeindeuebung23.jpg
+    text: Gemeindeübung 23
+  - name: gemeindeuebung24.jpg
+    text: Gemeindeübung 24
+  - name: gemeindeuebung25.jpg
+    text: Gemeindeübung 25
+  - name: gemeindeuebung26.jpg
+    text: Gemeindeübung 26
+  - name: gemeindeuebung27.jpg
+    text: Gemeindeübung 27
+  - name: gemeindeuebung28.jpg
+    text: Gemeindeübung 28
+  - name: gemeindeuebung29.jpg
+    text: Gemeindeübung 29
+  - name: gemeindeuebung30.jpg
+    text: Gemeindeübung 30
+  - name: gemeindeuebung31.jpg
+    text: Gemeindeübung 31
+  - name: gemeindeuebung32.jpg
+    text: Gemeindeübung 32
 lang: by
 tags: uebungen
 categories:
