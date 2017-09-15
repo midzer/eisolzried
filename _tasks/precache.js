@@ -8,16 +8,12 @@ import path from 'path';
 function writeServiceWorkerFile(rootDir, handleFetch, callback) {
   const config = {
     cacheId: 'ff-eisolzried',
-    handleFetch,
+    handleFetch: handleFetch,
     logger: gutil.log,
     staticFileGlobs: [
       `${rootDir}/**/*.html`,
       `${rootDir}/assets/{css,data,js,icons,font}/*`
     ],
-    runtimeCaching: [{
-      urlPattern: '/',
-      handler: 'networkFirst'
-    }],
     stripPrefix: `${rootDir}/`,
     verbose: true,
   };
