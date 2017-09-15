@@ -13,6 +13,7 @@ gulp.task('copy', () => {
     '!_assets/js/service-worker-registration.js',
     '_assets/audio/**',
     '_assets/css/**',
+    '!_assets/css/dark-theme.css',
     '_assets/data/**',
     '_assets/videos/**'
   ], {

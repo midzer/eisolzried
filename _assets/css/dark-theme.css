@@ -1,0 +1,40 @@
+.panel-default > .panel-heading,
+body {
+    color: #fdfdfd;
+}
+
+.chatbox,
+.modal-body,
+.modal-header,
+.page-content,
+.panel-default,
+body {
+    background-color: #212121;
+}
+
+.panel-default > .panel-heading {
+    background-color: #313131;
+    border-color: #424242;
+}
+
+.panel-default {
+    border-color: #424242;
+}
+
+#messages li:nth-child(odd),
+.calendar .today {
+    background-color: #424242;
+}
+
+.site-footer {
+    border-top: 1px solid #424242;
+    background-color: #212121;
+}
+
+.page-content .wrap {
+    box-shadow: 0 0 15px rgba(255,255,255,.4);
+}
+
+.page-header {
+    border-bottom: 1px solid #424242;
+}
