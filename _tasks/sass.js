@@ -10,9 +10,8 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 const AUTOPREFIXER_BROWSERS = [
   '> 1%',
-  'last 3 versions',
-  'Firefox ESR',
-  'Opera 12.1'
+  'last 2 versions',
+  'Firefox ESR'
 ];
 
 const sourcefiles = [
