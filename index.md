@@ -3,7 +3,7 @@ layout: page
 title: Willkommen
 lang: de
 js:
-  - index.min
+  - index
 ---
 
 <div class="row">

@@ -5,75 +5,76 @@ import gutil from 'gulp-util';
 import plumber from 'gulp-plumber';
 import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
-import webpack from 'webpack-stream';
+import webpack from 'webpack';
+import webpackStream from 'webpack-stream';
+import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
+import path from 'path';
+
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
-const srcFiles = [
-  'node_modules/bootstrap.native/dist/polyfill.js',
-  'node_modules/bootstrap.native/dist/bootstrap-native.js',
-  'node_modules/intersection-observer/intersection-observer.js',
-  '_assets/js/snackbar.js',
-  '_assets/js/main.js',
-  '_assets/js/service-worker-registration.js'
-];
-
-const srcFilesIndex = [
-  'node_modules/ical.js/build/ical.js',
-  '_assets/js/drcal.js',
-  '_assets/js/index.js'
-];
 
 const webpackConfig = {
+  entry: {
+    main: './_assets/js/main.js',
+    index: './_assets/js/index.js',
+    vendor : [
+      'bootstrap.native/dist/polyfill.js',
+      'bootstrap.native/dist/bootstrap-native.js',
+      'intersection-observer/intersection-observer.js',
+      'ical.js/build/ical.js',
+      './_assets/js/snackbar.js',
+      './_assets/js/service-worker-registration.js',
+      './_assets/js/drcal.js'
+    ]
+  },
+  output: {
+    filename: '[name].js',
+  },
   module: {
-    rules: [{
-      test: /\.js$/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: [
-            ['env', {
-              modules: false,
-              useBuiltIns: true,
-              targets: {
-                browsers: [
-                  '> 1%',
-                  'last 2 versions',
-                  'Firefox ESR',
-                ],
-              },
-            }],
-          ],
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|vendor)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['env', {
+                modules: false,
+                useBuiltIns: true,
+                targets: {
+                  browsers: [
+                    '> 1%',
+                    'last 2 versions',
+                    'Firefox ESR'
+                  ],
+                },
+              }],
+            ],
+          },
         },
-      },
-    }],
-  }
+      }
+    ],
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+        name: 'vendor',
+        minChunks: Infinity,
+        filename: '[name].js'
+    }),
+    new UglifyJSPlugin()
+  ]
 };
 
 gulp.task('scripts', () => {
-  return gulp.src(srcFiles)
+  return gulp.src('')
     .pipe(plumber({
       errorHandler: (err) => {
         gutil.log(gutil.colors.red(err));
         this.emit('end');
       },
     }))
-    .pipe(webpack(webpackConfig))
-    .pipe($.uglify())
-    .pipe($.rename('bundle.min.js'))
-    .pipe(gulp.dest('_site/assets/js'));
-});
-
-gulp.task('scriptsIndex', () => {
-  return gulp.src(srcFilesIndex)
-    .pipe(plumber({
-      errorHandler: (err) => {
-        gutil.log(gutil.colors.red(err));
-        this.emit('end');
-      },
-    }))
-    .pipe(webpack(webpackConfig))
-    .pipe($.uglify())
-    .pipe($.rename('index.min.js'))
+    .pipe(webpackStream(webpackConfig, webpack))
     .pipe(gulp.dest('_site/assets/js'));
 });
