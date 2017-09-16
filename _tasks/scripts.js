@@ -15,16 +15,17 @@ const reload = browserSync.reload;
 
 const webpackConfig = {
   entry: {
-    main: './_assets/js/main.js',
-    index: './_assets/js/index.js',
-    vendor : [
-      'bootstrap.native/dist/polyfill.js',
+    main: [
       'bootstrap.native/dist/bootstrap-native.js',
       'intersection-observer/intersection-observer.js',
-      'ical.js/build/ical.js',
       './_assets/js/snackbar.js',
-      './_assets/js/service-worker-registration.js',
-      './_assets/js/drcal.js'
+      './_assets/js/main.js',
+      './_assets/js/service-worker-registration.js'
+    ],
+    index: [
+      'ical.js/build/ical.js',
+      './_assets/js/drcal.js',
+      './_assets/js/index.js'
     ]
   },
   output: {
@@ -57,11 +58,6 @@ const webpackConfig = {
     ],
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
-        minChunks: Infinity,
-        filename: '[name].js'
-    }),
     new UglifyJSPlugin()
   ]
 };
