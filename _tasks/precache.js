@@ -15,7 +15,7 @@ function writeServiceWorkerFile(rootDir, handleFetch, callback) {
       `${rootDir}/assets/{css,data,js,icons,font}/*`
     ],
     stripPrefix: `${rootDir}/`,
-    verbose: true,
+    verbose: false,
   };
 
   swPrecache.write(path.join(rootDir, 'service-worker.js'), config, callback);
