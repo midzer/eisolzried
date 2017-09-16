@@ -8,7 +8,6 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
 import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
-import path from 'path';
 
 
 const $ = gulpLoadPlugins();
