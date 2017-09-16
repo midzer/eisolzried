@@ -1,0 +1,7 @@
+<link rel="preload" href="{{ "/assets/js/lightbox.min.js" | prepend: site.baseurl }}" as="script">
+<link rel="preload" href="{{ "/assets/js/main.js" | prepend: site.baseurl }}" as="script">
+{% if page.js %}
+{% for script in page.js %}
+  <link rel="preload" href="{{ "/assets/js/" | append: script | append: '.js' | prepend: site.baseurl }}" as="script">
+{% endfor %}
+{% endif %}
