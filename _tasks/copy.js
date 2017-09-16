@@ -4,16 +4,10 @@ import gulp from 'gulp';
 
 gulp.task('copy', () => {
   return gulp.src([
-    '_assets/js/*.js',
-    '!_assets/js/drcal.js',
-    '!_assets/js/index.js',
-    '!_assets/js/intersection-observer.js',
-    '!_assets/js/snackbar.js',
-    '!_assets/js/main.js',
-    '!_assets/js/service-worker-registration.js',
+    '_assets/js/d3.min.js',
+    '_assets/js/lightbox.min.js',
     '_assets/audio/**',
-    '_assets/css/**',
-    '!_assets/css/dark-theme.css',
+    '_assets/css/dark-theme.min.css',
     '_assets/data/**',
     '_assets/videos/**'
   ], {

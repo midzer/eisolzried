@@ -3,8 +3,6 @@ layout: page
 title: Willkommen
 lang: de
 js:
-  - ical.min
-  - drcal.min
   - index.min
 ---
 

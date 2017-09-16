@@ -3,8 +3,6 @@ layout: page
 title: Servus
 lang: by
 js:
-  - ical.min
-  - drcal.min
   - index.min
 ---
 
