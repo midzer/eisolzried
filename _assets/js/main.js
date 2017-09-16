@@ -1,24 +1,24 @@
 // Theme switch
 function setTheme(theme) {
-    var disabled, icon;
+    var rel, icon;
     if (theme == 'dark') {
-        disabled = false;
+        rel = 'stylesheet';
         icon = 'sun';
     }
     else {
-        disabled = true;
+        rel = 'prefetch';
         icon = 'moon';
     }
-    document.getElementById('theme-link').disabled = disabled;
+    document.getElementById('theme-link').rel = rel;
     document.getElementById('theme-icon').href.baseVal = '/assets/icons/sprite.svg#' + icon;
     localStorage.setItem('theme', theme);
 }
 
-if (localStorage.getItem('theme') != 'dark') {
-    setTheme('light');
+if (localStorage.getItem('theme') == 'dark') {
+    setTheme('dark');
 }
 else {
-    setTheme('dark');
+    setTheme('light');
 }
 document.getElementById('theme-switch').onclick = function() {
     if (localStorage.getItem('theme') == 'dark') {
