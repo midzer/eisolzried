@@ -3,6 +3,7 @@
     width: 18px;
     height: 18px;
     vertical-align: sub;
+    fill: currentColor;
 
     &.icon--search {
         position: absolute;
@@ -17,6 +18,12 @@
     &.icon--calendar {
         width: 36px;
         height: 36px;
+    }
+
+    &.icon--by,
+    &.icon--de {
+        width: 27px;
+        height: 18px;
     }
 
     .carousel-caption &.icon--trending-up,

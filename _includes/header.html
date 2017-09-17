@@ -26,13 +26,11 @@
       
       <button id="language-btn" type="button" class="btn btn-default navbar-btn">
       {% if page.lang == 'by' %}
-      {% assign country = 'Deutschland' %}
-      {% assign code = 'de' %}
+        {% include icon.html icon='de' %}
       {% else %}
-      {% assign country = 'Bayern' %}
-      {% assign code = 'by' %}
+        {% include icon.html icon='by' %}
       {% endif %}
-      <img src="/assets/icons/{{ code }}.png" alt="Flagge {{ country }}" height="19" width="32"/>
+      
       </button>
       <button id="theme-switch" type="button" class="btn btn-default navbar-btn">
         {% include icon.html icon="moon" id="theme-icon" %}
