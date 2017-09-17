@@ -16,7 +16,6 @@ const reload = browserSync.reload;
 const webpackConfig = {
   entry: {
     main: [
-      'bootstrap.native/dist/bootstrap-native.js',
       'intersection-observer/intersection-observer.js',
       './_assets/js/snackbar.js',
       './_assets/js/main.js',
