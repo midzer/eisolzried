@@ -9,13 +9,13 @@
   "orientation": "any",
   "icons": [
     {
-     "src": "assets/icons/favicon.png",
+     "src": "assets/favicons/favicon.png",
      "sizes": "196x196",
      "type": "image\/png",
      "density": 4.0
     },
     {
-     "src": "assets/icons/favicon-512x512.png",
+     "src": "assets/favicons/favicon-512x512.png",
      "sizes": "512x512",
      "type": "image\/png",
      "density": 4.0

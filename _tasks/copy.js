@@ -10,7 +10,8 @@ gulp.task('copy', () => {
     '_assets/audio/**',
     '_assets/css/dark-theme.min.css',
     '_assets/data/**',
-    '_assets/videos/**'
+    '_assets/videos/**',
+    '_assets/favicons/**'
   ], {
     base: '_assets',
   })
