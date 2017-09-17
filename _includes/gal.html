@@ -1,23 +1,19 @@
 {% if include.image == null %}
 <div class="row top-buffer">
-  <div class="gallery">
   {% for image in page.images %}
-    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-      <a href="{{ page.imgfolder }}{{ image.name }}" class="thumbnail lightbox" title="{{ image.text }}">
-        <img class="lazy" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-      </a>
-    </div>
-  {% endfor %}
+  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <a href="{{ page.imgfolder }}{{ image.name }}" class="thumbnail lightbox" title="{{ image.text }}">
+      <img class="lazy" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+    </a>
   </div>
+  {% endfor %}
 </div>
 {% else %}
   {% for image in page.images %}
     {% if image.name == include.image %}
-<div class="gallery">
-  <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
-    <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-  </a>
-</div>
+<a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
+  <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+</a>
     {% break %}
     {% endif %}
   {% endfor %}
