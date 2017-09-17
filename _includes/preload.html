@@ -6,3 +6,5 @@
   <link rel="preload" href="{{ "/assets/js/" | append: script | append: '.js' | prepend: site.baseurl }}" as="script">
 {% endfor %}
 {% endif %}
+<link rel="prefetch" href="{{ "/search.json" | prepend: site.baseurl }}">
+<link rel="prefetch" href="{{ "/assets/data/termine.ics" | prepend: site.baseurl }}">
