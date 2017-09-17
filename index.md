@@ -32,14 +32,14 @@ Und nun viel Spaß beim Stöbern :)
 
   <div class="col-sm-8">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <div class="panel panel-default">
           <div class="panel-body">
 {% include carousel.html %}    
           </div>
         </div>
-      </div><!-- col-sm-8 -->
-      <div class="col-sm-4">
+      </div><!-- col-md-8 -->
+      <div class="col-md-4">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">{% include icon.html icon="message-circle" %}Chat</h2>
@@ -48,10 +48,10 @@ Und nun viel Spaß beim Stöbern :)
 {% include chat.html %}
           </div>
         </div>
-      </div><!-- col-sm-4 -->
+      </div><!-- col-md-4 -->
     </div><!-- row -->
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">{% include icon.html icon="calendar" %}Termine</h2>
@@ -60,15 +60,15 @@ Und nun viel Spaß beim Stöbern :)
 {% include calendar.html %}
           </div>
         </div>
-      </div><!-- col-sm-8 -->
-      <div class="col-sm-4">
+      </div><!-- col-md-8 -->
+      <div class="col-md-4">
         <div class="panel panel-default">
           <div class="panel-body">
             <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
             <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"/>
           </div>
         </div>
-      </div><!-- col-sm-4 -->
+      </div><!-- col-md-4 -->
     </div><!-- row -->
   </div><!-- col-sm-8 -->
 </div><!-- row -->
