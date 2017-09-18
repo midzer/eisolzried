@@ -21,10 +21,16 @@ const webpackConfig = {
       './_assets/js/main.js',
       './_assets/js/service-worker-registration.js'
     ],
-    index: [
+    calendar: [
       'ical.js/build/ical.js',
       './_assets/js/drcal.js',
-      './_assets/js/index.js'
+      './_assets/js/calendar.js'
+    ],
+    moreposts: [
+      './_assets/js/moreposts.js'
+    ],
+    chatbox: [
+      './_assets/js/chatbox.js'
     ]
   },
   output: {

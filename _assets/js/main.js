@@ -43,18 +43,38 @@ function addLoaded(element) {
     element.classList.add('loaded');
 }
 
+function loadScript(src) {
+    return new Promise(function(resolve, reject) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = '/assets/js/' + src.id + '.js';
+        script.onload = function() {
+            resolve(script.src);
+            addLoaded(src);
+        };
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+}
+
 function load(element) {
     if (element.nodeName == 'VIDEO') {
+        // <video> element
+        element.onloadstart = function() { addLoaded(element) };
         var sources = element.getElementsByTagName('source');
         for (let i = 0; i < sources.length; i++) {
             replaceSrc(sources[i]);
         }
         element.load();
-        element.onloadstart = function() { addLoaded(element) };
     }
-    else {
-        replaceSrc(element);
+    else if (element.nodeName == 'IMG') {
+        // <img> element
         element.onload = function() { addLoaded(element) };
+        replaceSrc(element);
+    }
+    else if (element.nodeName == 'DIV' || element.nodeName == 'BUTTON') {
+        // <div> or <button> element
+        loadScript(element);
     }
 }
 

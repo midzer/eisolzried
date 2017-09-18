@@ -3,7 +3,9 @@ layout: page
 title: Servus
 lang: by
 js:
-  - index
+  - moreposts
+  - chatbox
+  - calendar
 ---
 
 <div class="row">

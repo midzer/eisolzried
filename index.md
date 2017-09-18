@@ -3,7 +3,9 @@ layout: page
 title: Willkommen
 lang: de
 js:
-  - index
+  - moreposts
+  - chatbox
+  - calendar
 ---
 
 <div class="row">

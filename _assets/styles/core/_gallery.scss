@@ -8,7 +8,7 @@ a.thumbnail.active {
   opacity: 0;
 }
 
-img.loaded, video.loaded {
+img.loaded, video.loaded, div.loaded, button.loaded {
   animation: fadeIn 0.5s ease-in;
   animation-fill-mode: forwards;
 }
