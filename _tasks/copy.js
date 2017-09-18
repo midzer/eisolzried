@@ -8,7 +8,6 @@ gulp.task('copy', () => {
     '_assets/js/d3.min.js',
     '_assets/js/lightbox.min.js',
     '_assets/audio/**',
-    '_assets/css/dark-theme.min.css',
     '_assets/data/**',
     '_assets/videos/**',
     '_assets/favicons/**'

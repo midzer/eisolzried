@@ -15,7 +15,8 @@ const AUTOPREFIXER_BROWSERS = [
 ];
 
 const sourcefiles = [
-  '_assets/styles/main.scss'
+  '_assets/styles/main.scss',
+  '_assets/styles/dark-theme.css'
 ];
 
 gulp.task('sass', () => {
