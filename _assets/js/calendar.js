@@ -61,6 +61,7 @@ function buildCal(data) {
             year: cal.year()
         });
         start.adjust(-6, 0, 0, 0);
+        
         var end = ICAL.Time.fromData({
             day: 6,
             month: cal.month() + 1,
@@ -70,18 +71,14 @@ function buildCal(data) {
         var ev = [];
         for (var i = 0; i < vevents.length; i++) {
             var event = new ICAL.Event(vevents[i]);
-            if (event.isRecurring()) {
+            if (event.isRecurring() ||
+            (isBetween(start, end, event.startDate, timezone) && isBetween(start, end, event.endDate, timezone))) {
                 // We have to check all recurring events in a month
-                ev.push(event);
-            }
-            else {
+                // or
                 // Is event really within a month page?
                 // Beware we show some days before and after month
                 // from time to time
-                if (isBetween(start, end, event.startDate, timezone) &&
-                isBetween(start, end, event.endDate, timezone)) {
                 ev.push(event);
-                }
             }
         }
         return ev;
