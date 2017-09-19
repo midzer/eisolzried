@@ -8,7 +8,9 @@
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
-    "babel-loader": "^6.2.2",
+    "ajv": "^5.2.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.9.0",
     "bootstrap.native": "^2.0.14",

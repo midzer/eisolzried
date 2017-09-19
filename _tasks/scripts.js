@@ -16,13 +16,14 @@ const reload = browserSync.reload;
 const webpackConfig = {
   entry: {
     main: [
-      'intersection-observer/intersection-observer.js',
+      'bootstrap.native',
+      'intersection-observer',
       './_assets/js/snackbar.js',
       './_assets/js/main.js',
       './_assets/js/service-worker-registration.js'
     ],
     calendar: [
-      'ical.js/build/ical.js',
+      'ical.js',
       './_assets/js/drcal.js',
       './_assets/js/calendar.js'
     ],
@@ -63,7 +64,7 @@ const webpackConfig = {
     ],
   },
   plugins: [
-    new UglifyJSPlugin()
+    new UglifyJSPlugin({ sourceMap: true })
   ]
 };
 
