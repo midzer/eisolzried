@@ -9,7 +9,7 @@ js:
 ---
 
 <div class="row">
-  <div class="col-sm-4">
+  <div class="col-xs-12 col-sm-6 col-lg-4">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h2 class="panel-title">{% include icon.html icon="info" %}Intro</h2>
@@ -30,18 +30,18 @@ Gnua vazoid, vui Spaß beim umschaun :)
 {% include posts.html %}
       </div>
     </div>
-  </div><!-- col-sm-4 -->
+  </div><!-- col-xs-12 col-sm-6 col-lg-4 -->
 
-  <div class="col-sm-8">
+  <div class="col-xs-12 col-sm-6 col-lg-8">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="panel panel-default">
           <div class="panel-body">
 {% include carousel.html %}
           </div>
         </div>
-      </div><!-- col-md-8 -->
-      <div class="col-md-4">
+      </div><!-- col-lg-8 -->
+      <div class="col-lg-4">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">{% include icon.html icon="message-circle" %}Chat</h2>
@@ -50,10 +50,10 @@ Gnua vazoid, vui Spaß beim umschaun :)
 {% include chat.html %}
           </div>
         </div>
-      </div><!-- col-md-4 -->
+      </div><!-- col-lg-4 -->
     </div><!-- row -->
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">{% include icon.html icon="calendar" %}Wos zum doa is</h2>
@@ -62,8 +62,8 @@ Gnua vazoid, vui Spaß beim umschaun :)
 {% include calendar.html %}
           </div>
         </div>
-      </div><!-- col-md-8 -->
-      <div class="col-md-4">
+      </div><!-- col-lg-8 -->
+      <div class="col-lg-4">
         <div class="panel panel-default">
           <div class="panel-body">
             <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
@@ -71,7 +71,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
             <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/Bayerisches_Feuerwehrwappen.jpg" alt="Bayerisches Feuerwehrwappen"/>
           </div>
         </div>
-      </div><!-- col-md-4 -->
+      </div><!-- col-lg-4 -->
     </div><!-- row -->
-  </div><!-- col-sm-8 -->
+  </div><!-- col-xs-12 col-sm-6 col-lg-8 -->
 </div><!-- row -->
