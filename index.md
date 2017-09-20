@@ -9,7 +9,7 @@ js:
 ---
 
 <div class="row">
-  <div class="col-xs-12 col-sm-6 col-lg-4">
+  <div class="col-sm-6 col-lg-4">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h2 class="panel-title">{% include icon.html icon="info" %}Intro</h2>
@@ -30,9 +30,9 @@ Und nun viel Spaß beim Stöbern :)
 {% include posts.html %}
       </div>
     </div>
-  </div><!-- col-xs-12 col-sm-6 col-lg-4 -->
+  </div><!-- col-sm-6 col-lg-4 -->
 
-  <div class="col-xs-12 col-sm-6 col-lg-8">
+  <div class="col-sm-6 col-lg-8">
     <div class="row">
       <div class="col-lg-8">
         <div class="panel panel-default">
@@ -73,5 +73,5 @@ Und nun viel Spaß beim Stöbern :)
         </div>
       </div><!-- col-lg-4 -->
     </div><!-- row -->
-  </div><!-- col-xs-12 col-sm-6 col-lg-8 -->
+  </div><!-- col-sm-6 col-lg-8 -->
 </div><!-- row -->
