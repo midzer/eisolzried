@@ -68,6 +68,7 @@ Und nun viel Spaß beim Stöbern :)
           <div class="panel-body">
             <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
             <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"/>
+            <img class="lazy img-responsive center-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/Bayerisches_Feuerwehrwappen.jpg" alt="Bayerisches Feuerwehrwappen"/>
           </div>
         </div>
       </div><!-- col-md-4 -->
