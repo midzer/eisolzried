@@ -2,6 +2,7 @@
   "name": "Feuerwehr Eisolzried",
   "lang": "de",
   "short_name": "Eisolzried",
+  "description": "Latest news, dates and more from fire department in Eisolzried, Bavaria",
   "theme_color": "#da131a",
   "background_color": "#fdfdfd",
   "display": "standalone",
