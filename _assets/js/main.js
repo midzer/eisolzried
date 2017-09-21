@@ -193,3 +193,23 @@ lightbox(".lightbox", {
 
 // Snackbar
 window.snackbar = new Snackbar(document.getElementById("snackbar"));
+
+// Bottombar
+var bottomBar = document.getElementById('bottombar');
+var ticking = false;
+function requestTick() {
+    if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+    }
+}
+
+function update() {
+    var percent = 100 * window.pageYOffset / (document.body.clientHeight - window.innerHeight);
+    bottomBar.style.width = percent + '%';
+    
+    // allow further rAFs to be called
+    ticking = false;
+}
+
+window.addEventListener('scroll', requestTick, false);
