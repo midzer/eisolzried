@@ -6,6 +6,7 @@ a.thumbnail.active {
 
 .lazy {
   opacity: 0;
+  will-change: opacity;
 }
 
 img.loaded, video.loaded, div.loaded, button.loaded {
