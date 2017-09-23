@@ -21,4 +21,5 @@
   height: 100%;
   background-color: $brand-primary;
   transition: width .3s linear;
+  will-change: width;
 }

@@ -196,21 +196,25 @@ window.snackbar = new Snackbar(document.getElementById("snackbar"));
 
 // Progressbar
 var progressBar = document.getElementById('progress-bar');
-var timer;
-
-function onScroll() {
-    clearInterval(timer);
-    timer = setTimeout(requestTick, 20);
-}
+var ticking = false;
 
 function requestTick() {
-    requestAnimationFrame(update);
+    if ('requestIdleCallback' in window) {
+        if (!ticking) {
+            ticking = true;
+            requestIdleCallback(update, { timeout: 100 });
+        }
+    }
+    else {
+        requestAnimationFrame(update);
+    }
 }
 
 function update() {
     var percent = 100 * window.pageYOffset / (document.body.clientHeight - window.innerHeight);
     progressBar.style.width = percent + '%';
     progressBar.setAttribute("aria-valuenow", percent);
+    ticking = false;
 }
 
-window.addEventListener('scroll', onScroll, false);
+window.addEventListener('scroll', requestTick, false);
