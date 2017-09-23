@@ -175,21 +175,4 @@ videos:
 lang: de
 ---
 
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#bilder">{% include icon.html icon="image" %}Bilder</a></li>
-  <li><a data-toggle="tab" href="#videos">{% include icon.html icon="video" %}Videos</a></li>
-  <li><a data-toggle="tab" href="#animiertes">{% include icon.html icon="repeat" %}Animiertes</a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="bilder" class="tab-pane fade in active">
-{% include gal.html %}
-  </div>
-  <div id="videos" class="tab-pane fade">
-{% include vid.html %}
-  </div>
-  <div id="animiertes" class="tab-pane fade" markdown="1">
-![Crash](){:class="lazy img-responsive" data-src="/assets/images/media/animated/efacc3a1c117821d.webp"}
-![Spongebob](){:class="lazy img-responsive" data-src="/assets/images/media/animated/a148feb684f37282.webp"}
-  </div>
-</div>
+{% include media.html %}
