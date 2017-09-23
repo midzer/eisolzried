@@ -204,12 +204,7 @@ function onScroll() {
 }
 
 function requestTick() {
-    if ('requestIdleCallback' in window) {
-        requestIdleCallback(update);
-    }
-    else {
-        requestAnimationFrame(update);
-    }
+    requestAnimationFrame(update);
 }
 
 function update() {
