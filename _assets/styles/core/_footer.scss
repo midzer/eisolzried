@@ -7,12 +7,18 @@
   padding: 10px;
 }
 
-#bottombar {
+.bottom-bar {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   height: 3px;
+  background-color: rgba(0,0,0,.3);
+}
+
+.progress-bar {
   width: 0%;
+  height: 100%;
   background-color: $brand-primary;
+  transition: width .3s linear;
 }

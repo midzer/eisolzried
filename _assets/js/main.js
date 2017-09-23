@@ -194,22 +194,28 @@ lightbox(".lightbox", {
 // Snackbar
 window.snackbar = new Snackbar(document.getElementById("snackbar"));
 
-// Bottombar
-var bottomBar = document.getElementById('bottombar');
-var ticking = false;
+// Progressbar
+var progressBar = document.getElementById('progress-bar');
+var timer;
+
+function onScroll() {
+    clearInterval(timer);
+    timer = setTimeout(requestTick, 20);
+}
+
 function requestTick() {
-    if (!ticking) {
-        ticking = true;
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(update);
+    }
+    else {
         requestAnimationFrame(update);
     }
 }
 
 function update() {
     var percent = 100 * window.pageYOffset / (document.body.clientHeight - window.innerHeight);
-    bottomBar.style.width = percent + '%';
-    
-    // allow further rAFs to be called
-    ticking = false;
+    progressBar.style.width = percent + '%';
+    progressBar.setAttribute("aria-valuenow", percent);
 }
 
-window.addEventListener('scroll', requestTick, false);
+window.addEventListener('scroll', onScroll, false);
