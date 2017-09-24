@@ -31,7 +31,7 @@ document.getElementById('theme-switch').onclick = function() {
 
 // Set up lazy loading
 function query(selector) {
-  return Array.from(document.querySelectorAll(selector));
+    return Array.from(document.querySelectorAll(selector));
 }
 
 function replaceSrc(element) {
@@ -39,7 +39,12 @@ function replaceSrc(element) {
     element.removeAttribute('data-src');
 }
 
+function removeHint() {
+    this.style.willChange = 'auto';
+}
+
 function addLoaded(element) {
+    element.addEventListener('animationend', removeHint);
     element.classList.add('loaded');
 }
 
