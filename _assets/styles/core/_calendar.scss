@@ -1,5 +1,5 @@
 .calendar {
-  width: 427px;
+  width: 430px;
 }
 
 .calendar th {text-align: center;}
@@ -10,15 +10,18 @@
   max-width: 5em;
   padding: 0;
 }
+
 .calendar thead tr:first-child th {
   font-size: large;
   padding-bottom: 0.5em;
 }
+
 .calendar thead tr:last-child th {
   font-weight: normal;
   font-size: small;
   color: #939393;
 }
+
 .calendar .prev {float: left;}
 .calendar .prev:before {content: "\00AB";}
 .calendar .next {float: right;}
@@ -29,6 +32,7 @@
   text-align: right;
   padding-right: 0.5ex;
 }
+
 .calendar .dayevent {
   font-size: 11px;
   color: #da131a;
