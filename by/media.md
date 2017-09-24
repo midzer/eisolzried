@@ -5,6 +5,20 @@ permalink: /by/media/
 imgfolder: /assets/images/media/
 vidfolder: /assets/videos/media/
 images:
+  - name: 8e351b1fddeb6301.jpg
+    text: Rauch an Decke
+  - name: b730cf7034ba62fb.jpg
+    text: Piepmatz
+  - name: d5aafad904f841ac.jpg
+    text: Helfer bei Waldbrand
+  - name: e2cc44c14aedea86.jpg
+    text: Seilbahn Höhenrettung über Fluss
+  - name: ee9b3695266e1dfa.jpg
+    text: Postauto müde
+  - name: efcd6f6f1abe64f1.jpg
+    text: Zeitungsartikel mit feuerspeiender Kuh
+  - name: f84174ae3c74c00b.jpg
+    text: Feuerwehrmannschaft auf dem Weg zum Brandherd
   - name: 00a72b1dda99e856.jpg
     text: LF müde
   - name: 0ffaf34d6da88116.jpg
@@ -114,6 +128,12 @@ images:
   - name: c0cb9e157bfe364a.jpg
     text: Öltank
 videos:
+  - name: 5ece60ec338680c7
+  - name: 5f250ca75f7155db
+  - name: 622ccf535b3f7e6d
+  - name: 85206a08f13d1dd5
+  - name: 735466c39b110803
+  - name: d65bb9cb0b6384a3
   - name: 2c51d55d6eb24997
   - name: 5b85d6f548dfd077
   - name: 7a10dcbab96956b7
