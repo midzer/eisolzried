@@ -7,7 +7,7 @@ function addMessage(msg) {
     box.scrollTop = box.scrollHeight;
 }
 
-function sendMessage(ws) {
+function sendMessage() {
     var input = document.getElementById('chat-input');
     var msg = input.value;
     addMessage(msg);
@@ -21,12 +21,12 @@ ws.onmessage = function(msg) {
 };
 
 document.getElementById('chat-btn').onclick = function() {
-    sendMessage(ws);
+    sendMessage();
 };
 
 document.getElementById('chat-form').onkeypress = function(event) {
     if (event.keyCode == 13) {
-        sendMessage(ws);
+        sendMessage();
         event.preventDefault();
     }
 };
