@@ -3,6 +3,23 @@
 {% for year in postsByYear %}
 <h2>{{ year.name }}</h2>
 {% for post in year.items %}
-  {% include post-content.html %}
+<article>
+  <div class="page-header">
+    <h3>{{ post.title }}</h3>
+    <p class="post-meta">
+      {{ post.date | localize: "%e. %B %Y" }}
+      {% if post.author %} • {{ post.author }}{% endif %}
+      {% if post.meta %} • {{ post.meta }}{% endif %}
+    </p>
+  </div>
+  
+  {{ post.content }}
+  
+  <hr>
+    
+  {% include social.html index=post.index %}
+  
+</article>
+  
 {% endfor %}
 {% endfor %}

@@ -30,10 +30,6 @@ document.getElementById('theme-switch').onclick = function() {
 };
 
 // Set up lazy loading
-function query(selector) {
-    return Array.from(document.querySelectorAll(selector));
-}
-
 function replaceSrc(element) {
     element.src = element.dataset.src;
     element.removeAttribute('data-src');
@@ -58,7 +54,9 @@ function loadScript(src) {
             addLoaded(src);
         };
         script.onerror = reject;
-        document.head.appendChild(script);
+        if (document.head.lastChild != script) {
+            document.head.appendChild(script);
+        }
     });
 }
 
@@ -77,9 +75,13 @@ function load(element) {
         element.onload = function() { addLoaded(element) };
         replaceSrc(element);
     }
-    else if (element.nodeName == 'DIV' || element.nodeName == 'BUTTON') {
-        // <div> or <button> element
+    else if (element.hasAttribute('id')) {
+        // any element with an id
         loadScript(element);
+    }
+    else {
+        // just do the animation
+        addLoaded(element);
     }
 }
 

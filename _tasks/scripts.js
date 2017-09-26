@@ -19,6 +19,7 @@ const webpackConfig = {
       'bootstrap.native',
       'intersection-observer',
       './_assets/js/snackbar.js',
+      './_assets/js/helper.js',
       './_assets/js/main.js',
       './_assets/js/service-worker-registration.js'
     ],
@@ -32,6 +33,9 @@ const webpackConfig = {
     ],
     chatbox: [
       './_assets/js/chatbox.js'
+    ],
+    ratebox: [
+      './_assets/js/ratebox.js'
     ]
   },
   output: {
