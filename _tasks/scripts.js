@@ -34,8 +34,8 @@ const webpackConfig = {
     chatbox: [
       './_assets/js/chatbox.js'
     ],
-    ratebox: [
-      './_assets/js/ratebox.js'
+    socialbox: [
+      './_assets/js/socialbox.js'
     ]
   },
   output: {

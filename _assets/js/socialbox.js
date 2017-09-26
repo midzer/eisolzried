@@ -1,6 +1,6 @@
 // Rate
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de:63244');
-const rateboxes = query(".ratebox");
+const socialboxes = query(".socialbox");
 
 function sendMessage(node, score) {
     let msg = {
@@ -11,7 +11,7 @@ function sendMessage(node, score) {
 }
 
 ws.onopen = function() {
-    rateboxes.forEach(function(item) {
+    socialboxes.forEach(function(item) {
         sendMessage(item);
     });
 };
@@ -22,8 +22,8 @@ function matchesIndex(element) {
 
 ws.onmessage = function(msg) {
     let incoming = JSON.parse(msg.data);
-    let item = rateboxes.find(matchesIndex, incoming.index);
-    item.lastElementChild.textContent = incoming.score;
+    let item = socialboxes.find(matchesIndex, incoming.index);
+    item.firstElementChild.lastElementChild.textContent = incoming.score;
 };
 
 query(".plus-btn").forEach(function(item) {

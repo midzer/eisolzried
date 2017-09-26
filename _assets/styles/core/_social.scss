@@ -1,6 +1,10 @@
-.social {
+.socialbox {
   font-weight: bold;
-  padding-bottom: 10px;
+
+  div {
+    display: inline-block;
+    padding: 10px;
+  }
 }
 
 .share-link {

@@ -1,11 +1,11 @@
-<div class="social">
+<div id="socialbox" class="lazy socialbox" data-index="{{ include.index }}">
     {% if post.lang == 'by' %}
     Den Beidrog
     {% else %}
     Diesen Beitrag
     {% endif %}
     
-    <span id="ratebox" class="lazy ratebox" data-index="{{ include.index }}">
+    <div>
         {% include icon.html icon="star" %}
         {% if post.lang == 'by' %}
         bewertn
@@ -19,9 +19,9 @@
             {% include icon.html icon="minus" %}
         </button>
         <span>0</span>
-    </span>
+    </div>
 
-    <span class="lazy sharebox" data-index="{{ include.index }}">
+    <div>
         {% include icon.html icon="share-2" %}
         {% if post.lang == 'by' %}
         weidagehm
@@ -34,6 +34,6 @@
         <a class="share-link" href="http://twitter.com/share?text={{ post.title }}&url={{ site.url}}{{ post.url}}" rel="nofollow noopener">
             {% include icon.html icon="twitter" %}
         </a>
-    </span>
+    </div>
 
 </div>

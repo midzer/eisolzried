@@ -79,10 +79,6 @@ function load(element) {
         // any element with an id
         loadScript(element);
     }
-    else {
-        // just do the animation
-        addLoaded(element);
-    }
 }
 
 // Pre-load items that are within 2 multiples of the visible viewport height.
