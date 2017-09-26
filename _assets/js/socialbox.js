@@ -30,14 +30,14 @@ query(".plus-btn").forEach(function(item) {
     item.onclick = function() {
         let newScore = Number(item.parentNode.lastElementChild.textContent) + 1;
         item.parentNode.lastElementChild.textContent = newScore;
-        sendMessage(item.parentNode, newScore);
+        sendMessage(item.parentNode.parentNode, newScore);
     }
 });
 
 query(".minus-btn").forEach(function(item) {
     item.onclick = function() {
-        let newScore = parseInt(item.parentNode.lastElementChild.textContent) - 1;
+        let newScore = Number(item.parentNode.lastElementChild.textContent) - 1;
         item.parentNode.lastElementChild.textContent = newScore;
-        sendMessage(item.parentNode, newScore);
+        sendMessage(item.parentNode.parentNode, newScore);
     }
 });
