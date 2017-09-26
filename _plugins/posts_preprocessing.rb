@@ -12,11 +12,13 @@ Jekyll::Hooks.register :site, :post_read do |site|
             item.data['index'] = deIndex
             deIndex += 1
         end
-        
-        prev_item = revPosts[i+2]
+
+        next_item = nil;
         if i > 1
             next_item = revPosts[i-2]
         end
+        
+        prev_item = revPosts[i+2]
         
         unless next_item.nil?
             item.data['next_url'] = next_item.url
