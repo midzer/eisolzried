@@ -27,6 +27,10 @@ lang: by
 
 [Bürgahaus Deinhausn-Eilzria](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 
+## Junga
+
+[![Ich will zur Jugendfeuerwehr](){:class="lazy img-responsive" data-src="/assets/images/links/jugendfeuerwehr.png"}](https://www.ich-will-zur-jugendfeuerwehr.de/)
+
 ## Spui
 
 [Firefighter "Krause"](http://firefighter.pixelactivity.de/)

@@ -27,6 +27,10 @@ lang: de
 
 [Bürgerhaus Deutenhausen-Eisolzried](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 
+## Jugend
+
+[![Ich will zur Jugendfeuerwehr](){:class="lazy img-responsive" data-src="/assets/images/links/jugendfeuerwehr.png"}](https://www.ich-will-zur-jugendfeuerwehr.de/)
+
 ## Spiele
 
 [Firefighter "Krause"](http://firefighter.pixelactivity.de/)
