@@ -7,8 +7,6 @@ import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
-import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
-
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -68,7 +66,7 @@ const webpackConfig = {
     ],
   },
   plugins: [
-    new UglifyJSPlugin({ sourceMap: true })
+    new webpack.optimize.UglifyJsPlugin()
   ]
 };
 
