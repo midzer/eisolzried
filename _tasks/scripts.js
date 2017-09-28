@@ -49,8 +49,8 @@ const webpackConfig = {
           options: {
             presets: [
               ['env', {
-                modules: false,
-                useBuiltIns: true
+                //modules: false,
+                //useBuiltIns: true
               }],
             ],
           },
