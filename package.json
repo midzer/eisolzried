@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "homepage of eisolzried fire department",
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.15.5",
     "fontfaceobserver": "^1.7.3",
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
-    "ajv": "^5.2.2",
+    "ajv": "^5.2.3",
     "babel-core": "^6.26.0",
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.6.0",
