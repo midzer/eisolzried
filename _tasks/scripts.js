@@ -50,14 +50,7 @@ const webpackConfig = {
             presets: [
               ['env', {
                 modules: false,
-                useBuiltIns: true,
-                targets: {
-                  browsers: [
-                    '> 1%',
-                    'last 2 versions',
-                    'Firefox ESR'
-                  ],
-                },
+                useBuiltIns: true
               }],
             ],
           },
