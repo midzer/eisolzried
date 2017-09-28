@@ -12,11 +12,6 @@
     "> 5%",
     "last 3 versions"
   ],
-  "dependencies": {
-    "express": "^4.15.5",
-    "fontfaceobserver": "^1.7.3",
-    "socket.io": "^2.0.3"
-  },
   "devDependencies": {
     "ajv": "^5.2.3",
     "babel-core": "^6.26.0",
