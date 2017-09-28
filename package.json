@@ -2,6 +2,16 @@
   "name": "ff-eisolzried",
   "version": "0.0.1",
   "description": "homepage of eisolzried fire department",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midzer/eisolzried"
+  },
+  "author": "@midzer",
+  "license": "MIT",
+  "browserslist": [
+    "> 5%",
+    "last 3 versions"
+  ],
   "dependencies": {
     "express": "^4.15.5",
     "fontfaceobserver": "^1.7.3",
