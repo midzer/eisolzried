@@ -17,7 +17,7 @@
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.9.0",
-    "bootstrap.native": "^2.0.15",
+    "bootstrap.native": "^2.0.16",
     "browser-sync": "^2.2.0",
     "critical": "^0.8.4",
     "del": "^2.2.2",
