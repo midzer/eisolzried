@@ -14,12 +14,10 @@ const reload = browserSync.reload;
 const webpackConfig = {
   entry: {
     main: [
-      'bootstrap.native',
       'intersection-observer',
       './_assets/js/snackbar.js',
       './_assets/js/helper.js',
-      './_assets/js/main.js',
-      './_assets/js/service-worker-registration.js'
+      './_assets/js/main.js'
     ],
     calendar: [
       'ical.js',
@@ -43,7 +41,7 @@ const webpackConfig = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|vendor)/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {

@@ -95,7 +95,6 @@ function buildCal(data) {
         +'<div class="modal-body">'
         +'<p>' + createEventDetails(event) + '</p>'
         +'</div>';
-        var modal = new Modal(document.getElementById('event-modal'));
         modal.setContent(content);
         modal.show();
     }

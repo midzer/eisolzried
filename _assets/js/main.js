@@ -1,3 +1,6 @@
+// CommonJS imports
+import { Modal } from 'bootstrap.native';
+
 // Theme switch
 function setTheme(theme) {
     var rel, icon;
@@ -221,3 +224,5 @@ function update() {
 }
 
 window.addEventListener('scroll', requestTick, false);
+
+window.modal = new Modal(document.getElementById('event-modal'));
