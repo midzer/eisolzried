@@ -29,7 +29,7 @@ lang: de
 
 ## Jugend
 
-[![Ich will zur Jugendfeuerwehr](){:class="lazy img-responsive" data-src="/assets/images/links/jugendfeuerwehr.png"}](https://www.ich-will-zur-jugendfeuerwehr.de/)
+[![Ich will zur Jugendfeuerwehr](){:class="lazy img-fluid" data-src="/assets/images/links/jugendfeuerwehr.png"}](https://www.ich-will-zur-jugendfeuerwehr.de/)
 
 ## Spiele
 

@@ -2,7 +2,8 @@
 // VENDOR STYLES
 //--------------------
 
-@import "vendor/bootstrap";
+@import "vendor/custom";
+@import "vendor/bootstrap/bootstrap";
 @import "vendor/lightbox";
 @import "vendor/snackbar";
 
@@ -11,7 +12,6 @@
 // partials for site-wide styling
 //--------------------
 
-@import "core/base";
 @import "core/navbar";
 @import "core/footer";
 @import "core/page";

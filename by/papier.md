@@ -5,12 +5,7 @@ permalink: /by/papier/
 lang: by
 ---
 
-<style>
-    table, td, th { border: 1px solid black; }
-</style>
-
-<div class="table-responsive">
-<table>
+<table class="table table-responsive">
   <thead>
     <tr>
       <th>Monat</th>
@@ -224,5 +219,3 @@ lang: by
     </tr>
   </tbody>
 </table>
-</div>
-

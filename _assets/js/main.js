@@ -1,5 +1,5 @@
 // CommonJS imports
-import { Modal } from 'bootstrap.native';
+import { Modal } from 'bootstrap.native/dist/bootstrap-native-v4';
 
 // Theme switch
 function setTheme(theme) {
@@ -170,8 +170,7 @@ function findResults(termToMatch, pages) {
 function displayResults() {
     const resultsArray = findResults(this.value, pages);
     const html = resultsArray.map(item => {
-        return `
-            <li><a href="${item.url}">${item.title}</a></li>`;
+        return `<a class="dropdown-item" href="${item.url}">${item.title}</a>`;
     }).join('');
     if ((resultsArray.length == 0) || (this.value == '')) {
         resultsList.innerHTML = `<p>Nix gfunna!</p>`;
@@ -225,4 +224,5 @@ function update() {
 
 window.addEventListener('scroll', requestTick, false);
 
+// Modal
 window.modal = new Modal(document.getElementById('event-modal'));

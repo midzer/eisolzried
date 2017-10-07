@@ -17,7 +17,8 @@ const webpackConfig = {
       'intersection-observer',
       './_assets/js/snackbar.js',
       './_assets/js/helper.js',
-      './_assets/js/main.js'
+      './_assets/js/main.js',
+      './_assets/js/service-worker-registration.js'
     ],
     calendar: [
       'ical.js',

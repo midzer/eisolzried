@@ -1,5 +1,5 @@
 <div id="chatbox" class="lazy chatbox">
-  <ul id="messages"></ul>
+  <ul id="chat-messages" class="list-unstyled"></ul>
 </div>
 <form id="chat-form">
   <div class="input-group">
@@ -12,7 +12,7 @@
     {% endif %}
     <input id="chat-input" type="text" autocomplete="off" class="form-control" placeholder="{{ write }}" aria-label="Chateingabefeld">
     <span class="input-group-btn">
-      <button id="chat-btn" class="btn btn-default" type="button">{{ send }}</button>
+      <button id="chat-btn" class="btn btn-outline-primary" type="button">{{ send }}</button>
     </span>
   </div><!-- /input-group -->
 </form>

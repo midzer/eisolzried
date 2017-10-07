@@ -9,26 +9,26 @@
 {% endif %}
 
 <ul class="nav nav-tabs" role="tablist">
-  <li role="presentation" class="active">
-    <a href="#bilder" data-toggle="tab" data-height="true" aria-controls="bilder" role="tab">{% include icon.html icon="image" %}{{ pictures }}</a>
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#bilder" role="tab" aria-controls="bilder" aria-expanded="true">{% include icon.html icon="image" %}{{ pictures }}</a>
   </li>
-  <li role="presentation">
-    <a href="#videos" data-toggle="tab" data-height="true" aria-controls="videos" role="tab">{% include icon.html icon="video" %}{{ videos }}</a>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-expanded="true">{% include icon.html icon="video" %}{{ videos }}</a>
   </li>
-  <li role="presentation">
-    <a href="#animiertes" data-toggle="tab" data-height="true" aria-controls="animiertes" role="tab">{% include icon.html icon="repeat" %}{{ animations }}</a>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#animiertes" role="tab" aria-controls="animiertes" aria-expanded="true">{% include icon.html icon="repeat" %}{{ animations }}</a>
   </li>
 </ul>
   
 <div class="tab-content">
-  <div role="tabpanel" id="bilder" class="tab-pane active">
+  <div role="tabpanel" id="bilder" class="tab-pane active" aria-labelledby="bilder-tab">
 {% include gal.html %}
   </div>
-  <div role="tabpanel" id="videos" class="tab-pane">
+  <div role="tabpanel" id="videos" class="tab-pane" aria-labelledby="videos-tab">
 {% include vid.html %}
   </div>
-  <div role="tabpanel" id="animiertes" class="tab-pane" markdown="1">
-![Crash](){:class="lazy img-responsive" data-src="/assets/images/media/animated/efacc3a1c117821d.webp"}
-![Spongebob](){:class="lazy img-responsive" data-src="/assets/images/media/animated/a148feb684f37282.webp"}
+  <div role="tabpanel" id="animiertes" class="tab-pane" aria-labelledby="animiertes-tab" markdown="1">
+![Crash](){:class="lazy img-fluid" data-src="/assets/images/media/animated/efacc3a1c117821d.webp"}
+![Spongebob](){:class="lazy img-fluid" data-src="/assets/images/media/animated/a148feb684f37282.webp"}
   </div>
 </div>

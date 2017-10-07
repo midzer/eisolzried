@@ -1,11 +1,11 @@
 // Load more posts
 document.getElementById('moreposts').onclick = function() {
-    var els = document.querySelectorAll('.hidden');
+    var els = document.querySelectorAll('li[hidden]');
     for (var i = 0; i < 6; i++) {
         if (els.length == i) {
-            this.classList.add('hidden');
+            this.setAttribute('hidden', '');
             break;
         }
-        els[i].classList.remove('hidden');
+        els[i].removeAttribute('hidden');
     }
 };

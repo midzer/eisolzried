@@ -1,10 +1,11 @@
 .site-footer {
-  border-top: 1px solid $gray-lighter;
-  padding: 20px 0;
+  border-top: 1px solid $gray-200;
+  margin-top: 2rem;
+  padding: 1rem 0;
 }
 
 .footer-item {
-  padding: 10px;
+  padding: 0.5rem;
 }
 
 .bottom-bar {
@@ -19,7 +20,7 @@
 .progress-bar {
   width: 0%;
   height: 100%;
-  background-color: $brand-primary;
+  background-color: map-get($theme-colors, "primary");
   transition: width .3s linear;
   will-change: width;
 }

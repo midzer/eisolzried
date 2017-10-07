@@ -1,13 +1,13 @@
 <nav aria-label="Wechsle zu vorherigen oder nächsten Beitrag">
-  <ul class="pager">
+  <ul class="pagination">
     {% if page.prev_url %}
-    <li class="previous">
-      <a href="{{ page.prev_url }}">{% include icon.html icon="arrow-left" %}{{ page.prev_title }}</a>
+    <li class="page-item">
+      <a class="page-link" href="{{ page.prev_url }}">{% include icon.html icon="arrow-left" %}{{ page.prev_title }}</a>
     </li>
     {% endif %}
     {% if page.next_url %}
-    <li class="next">
-      <a href="{{ page.next_url }}">{{ page.next_title }}{% include icon.html icon="arrow-right" %}</span></a>
+    <li class="page-item">
+      <a class="page-link" href="{{ page.next_url }}">{{ page.next_title }}{% include icon.html icon="arrow-right" %}</a>
     </li>
     {% endif %}
   </ul>

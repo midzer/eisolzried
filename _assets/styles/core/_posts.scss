@@ -1,6 +1,6 @@
-.posts { list-style-type: none; }
-
-.posts li { padding-bottom: 15px; }
+#posts li {
+  padding-bottom: 1rem;
+}
 
 .post-link {
   font-size: 22px;
@@ -10,7 +10,7 @@
 
 .post-meta {
   font-size: 17px;
-  color: $gray;
+  color: $gray-700;
   flex: 0 1 100%;
 }
 

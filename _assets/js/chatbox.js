@@ -2,7 +2,7 @@
 function addMessage(msg) {
     var content = document.createElement('li');
     content.textContent = msg;
-    document.getElementById('messages').append(content);
+    document.getElementById('chat-messages').append(content);
     var box = document.getElementById("chatbox");
     box.scrollTop = box.scrollHeight;
 }

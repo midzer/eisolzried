@@ -5,13 +5,6 @@
     vertical-align: sub;
     fill: currentColor;
 
-    &.icon--search {
-        position: absolute;
-        margin-left: 9px;
-        margin-top: 9px;
-        color: #bbb;
-    }
-
     &.icon--info,
     &.icon--activity,
     &.icon--message-circle,
@@ -41,11 +34,6 @@
         width: 43px;
         height: 43px;
     }
-}
-
-span .icon--fire-truck,
-span .icon--home {
-    margin-top: 20px;
 }
 
 span .icon--home {

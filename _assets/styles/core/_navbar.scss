@@ -1,5 +1,5 @@
-/* Site header */
-.navbar-default .navbar-nav > li > a:before {
+/* Navbar */
+.nav-link:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -7,59 +7,50 @@
   bottom: 0;
   left: 0;
   background-color: $white;
-  visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0.1s;
 }
 
-.navbar-default .navbar-nav > li > a:hover:before {
-  visibility: visible;
+.nav-link:hover:before {
   transform: scaleX(1);
 }
 
-.navbar-default .navbar-nav > li.active-nav-item {
+.active-nav-item {
   box-shadow: inset $white 0 -2px 0 0;
 }
 
-.form-control:focus {
-  border-color: $brand-primary;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.nav-item {
+  // fixes hover effekt for bootstrap
+  position: relative;
 }
 
 /* Search and dropdown styles*/
 /* ----------------------------------------------------------*/
-.search-results {
-  display: none;
-  top: initial;
-  left: initial;
-}
-
 #search-input {
   text-indent: 20px;
   width: 175px;
 }
 
-.search-results:hover,
-#search-input:focus:not(:placeholder-shown) + .search-results {
+#results-container:hover,
+#search-input:focus:not(:placeholder-shown) + #results-container {
   display: block;
 }
 
 .dropdown-menu {
   color: $white;
-  background-color: $brand-primary;
-  border-color: darken($btn-primary-bg, 5%);
+  background-color: map-get($theme-colors, "primary");
+  border-color: darken(map-get($theme-colors, "primary"), 5%);
 }
 
-.dropdown-menu > li > a {
-  display: block;
-  position: relative;
-  margin: 0 -1px;
-  padding: 6px 6px 6px 10px;
+.dropdown-item {
   color: $white;
 }
 
-.dropdown-menu > li > a:hover {
-  color: $link-color !important;
-  text-decoration: none;
-  background-color: $white;
+.dropdown-item:hover {
+  color: $link-color;
 }

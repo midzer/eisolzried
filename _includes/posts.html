@@ -1,8 +1,8 @@
-<ul id="posts" class="posts">
+<ul id="posts" class="list-unstyled">
 {% assign sorted-posts = site.posts | where: "lang",page.lang %}
 {% for post in sorted-posts %}
   {% if forloop.index > 6 %}
-  <li class="hidden">  
+  <li hidden>
   {% else %}
   <li>
   {% endif %}
@@ -11,7 +11,7 @@
   </li>
 {% endfor %}
 </ul>
-<button id="moreposts" type="button" class="lazy btn btn-default">
+<button id="moreposts" type="button" class="lazy btn btn-outline-primary">
   {% include icon.html icon="plus" %}
   {% if page.lang == 'by' %}
   Meara
