@@ -58,6 +58,11 @@ const webpackConfig = {
     ],
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "main",
+      minChunks: Infinity
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.optimize.UglifyJsPlugin()
   ]
 };
