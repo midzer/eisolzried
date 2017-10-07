@@ -14,6 +14,7 @@ const reload = browserSync.reload;
 const webpackConfig = {
   entry: {
     main: [
+      'rqrauhvmra__tobi',
       'intersection-observer',
       './_assets/js/snackbar.js',
       './_assets/js/helper.js',

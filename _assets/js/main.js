@@ -189,12 +189,14 @@ field.addEventListener('keypress', function(event) {
 });
 
 // Lightbox
-lightbox(".lightbox", {
-    close: false,
-    counter: false,
-    zoom: false,
-    docClose: true
-});
+if (query('.lightbox').length) {
+    require('rqrauhvmra__tobi')({
+        close: false,
+        counter: false,
+        zoom: false,
+        docClose: true
+    });
+}
 
 // Snackbar
 window.snackbar = new Snackbar(document.getElementById("snackbar"));
