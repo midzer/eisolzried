@@ -120,13 +120,12 @@ function buildCal(data) {
                 clone.appendChild(document.createTextNode(ev[i].summary));
                 event.detail.element.appendChild(clone);
                 if (event.detail.date.toDateString() == new Date().toDateString()) {
-                    var handler = function () {
-                        showModal(ev[i]);
-                    }
                     var data = {
                         message: 'Heute ist was los!',
                         timeout: 5000,
-                        actionHandler: handler,
+                        actionHandler: function () {
+                            showModal(ev[i]);
+                        },
                         actionText: 'Zeigen'
                     };
                     snackbar.showSnackbar(data);

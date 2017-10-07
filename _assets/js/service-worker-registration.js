@@ -67,13 +67,12 @@ if (navigator.serviceWorker && navigator.serviceWorker.controller) {
   navigator.serviceWorker.controller.onstatechange = function(e) {
     if (e.target.state === 'redundant') {
       console.log('New or updated content is available.');
-      const handler = function () {
-        window.location.reload();
-      }
       var data = {
         message: 'Auf der Seite gibts was neues!',
         timeout: 60000,
-        actionHandler: handler,
+        actionHandler: function () {
+          window.location.reload();
+        },
         actionText: 'Update'
       };
       snackbar.showSnackbar(data);
