@@ -39,7 +39,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
         </div>
       </div><!-- col-xl-8 -->
       <div class="col-xl-4">
-        <div class="card">
+        <div class="card h-100">
           <h2 class="card-header">{% include icon.html icon="message-circle" %}Chat</h2>
           <div class="card-body">
 {% include chat.html %}

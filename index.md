@@ -39,7 +39,7 @@ Und nun viel Spaß beim Stöbern :)
         </div>
       </div><!-- col-xl-8 -->
       <div class="col-xl-4">
-        <div class="card">
+        <div class="card h-100">
           <h2 class="card-header">{% include icon.html icon="message-circle" %}Chat</h2>
           <div class="card-body">
 {% include chat.html %}
