@@ -68,7 +68,7 @@ Gnua vazoid, vui Spaß beim umschaun :)
           <div class="card-body">
             <img class="lazy img-fluid mx-auto d-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/taferl.png" alt="Taferl Feuerwehr Eisolzried"/>
             <img class="lazy img-fluid mx-auto d-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"/>
-            <img class="lazy img-fluid mx-auto d-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/Bayerisches_Feuerwehrwappen.jpg" alt="Bayerisches Feuerwehrwappen"/>
+            <img class="lazy img-fluid mx-auto d-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/feuerwehrwappen.png" alt="Bayerisches Feuerwehrwappen"/>
           </div>
         </div>
       </div><!-- col-xl-4 -->
