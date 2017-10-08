@@ -19,7 +19,7 @@ Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Lei
 
 An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt) di hoid.
 
-Gnua vazoid, vui Spaß beim umschaun :)
+Gnua vazoid, vui Spaß beim Umschaun :)
 </div>
     </div>
     <div class="card mt-4">
