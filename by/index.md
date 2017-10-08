@@ -11,9 +11,7 @@ js:
 <div class="row">
   <div class="col-md-6 col-xl-4">
     <div class="card">
-      <div class="card-header">
-        <h2>{% include icon.html icon="info" %}Intro</h2>
-      </div>
+      <h2 class="card-header">{% include icon.html icon="info" %}Intro</h2>
 <div class="card-body" markdown="1">
 Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
 {:.card-text}
@@ -26,9 +24,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
 </div>
     </div>
     <div class="card mt-4">
-      <div class="card-header">
-        <h2>{% include icon.html icon="activity" %}Wos neis gibt</h2>
-      </div>
+      <h2 class="card-header">{% include icon.html icon="activity" %}Wos neis gibt</h2>
       <div class="card-body">
 {% include posts.html %}
       </div>
@@ -46,9 +42,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
       </div><!-- col-xl-8 -->
       <div class="col-xl-4">
         <div class="card">
-          <div class="card-header">
-            <h2>{% include icon.html icon="message-circle" %}Chat</h2>
-          </div>
+          <h2 class="card-header">{% include icon.html icon="message-circle" %}Chat</h2>
           <div class="card-body">
 {% include chat.html %}
           </div>
@@ -58,9 +52,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
     <div class="row">
       <div class="col-xl-8">
         <div class="card mt-4">
-          <div class="card-header">
-            <h2>{% include icon.html icon="calendar" %}Wos zum doa is</h2>
-          </div>
+          <h2 class="card-header">{% include icon.html icon="calendar" %}Wos zum doa is</h2>
           <div class="card-body">
 {% include calendar.html %}
           </div>

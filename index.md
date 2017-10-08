@@ -11,9 +11,7 @@ js:
 <div class="row">
   <div class="col-md-6 col-xl-4">
     <div class="card">
-      <div class="card-header">
-        <h2>{% include icon.html icon="info" %}Intro</h2>
-      </div>
+      <h2 class="card-header">{% include icon.html icon="info" %}Intro</h2>
 <div class="card-body" markdown="1">
 Wir sind eine aktive Feuerwehr aus der Gemeinde Bergkirchen in Oberbayern, die überwiegend aus einem jungen Team besteht. Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
 {:.card-text}
@@ -26,9 +24,7 @@ Und nun viel Spaß beim Stöbern :)
 </div>
     </div>
     <div class="card mt-4">
-      <div class="card-header">
-        <h2>{% include icon.html icon="activity" %}Neuigkeiten</h2>
-      </div>
+      <h2 class="card-header">{% include icon.html icon="activity" %}Neuigkeiten</h2>
       <div class="card-body">
 {% include posts.html %}
       </div>
@@ -46,9 +42,7 @@ Und nun viel Spaß beim Stöbern :)
       </div><!-- col-xl-8 -->
       <div class="col-xl-4">
         <div class="card">
-          <div class="card-header">
-            <h2>{% include icon.html icon="message-circle" %}Chat</h2>
-          </div>
+          <h2 class="card-header">{% include icon.html icon="message-circle" %}Chat</h2>
           <div class="card-body">
 {% include chat.html %}
           </div>
@@ -58,9 +52,7 @@ Und nun viel Spaß beim Stöbern :)
     <div class="row">
       <div class="col-xl-8">
         <div class="card mt-4">
-          <div class="card-header">
-            <h2>{% include icon.html icon="calendar" %}Termine</h2>
-          </div>
+          <h2 class="card-header">{% include icon.html icon="calendar" %}Termine</h2>
           <div class="card-body">
 {% include calendar.html %}
           </div>
