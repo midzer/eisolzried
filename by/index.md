@@ -9,7 +9,7 @@ js:
 ---
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-6 col-lg-5">
     <div class="card">
 {% include carousel.html %}
 <div class="card-body" markdown="1">
@@ -24,38 +24,38 @@ Gnua vazoid, vui Spaß beim Umschaun :)
 {:.card-text}
 </div>
     </div>
-  </div><!-- col-md-6 -->
-  <div class="col-md-6">
+  </div><!-- col-md-6 col-lg-5 -->
+  <div class="col-md-6 col-lg-4">
     <div class="card">
       <div class="card-body">
         <h2 class="card-title">{% include icon.html icon="activity" %}Wos neis gibt</h2>
 {% include posts.html %}
       </div>
     </div>
-  </div><!-- col-md-6 -->
+  </div><!-- col-md-6 col-lg-4 -->
+  <div class="col-md-6 col-lg-3">
+    <div class="card">
+      <div class="card-body">
+{% include wappen.html %}
+      </div>
+    </div>
+  </div><!-- col-md-6 col-lg-3 -->
 </div><!-- row -->
 <div class="row top-buffer">
-  <div class="col-md-5">
+  <div class="col-lg-5">
     <div class="card">
       <div class="card-body">
         <h2 class="card-title">{% include icon.html icon="calendar" %}Wos zum doa is</h2>
 {% include calendar.html %}
       </div>
     </div>
-  </div><!-- col-md-5 -->
-  <div class="col-md-4">
+  </div><!-- col-lg-5 -->
+  <div class="col-md-7">
     <div class="card">          
       <div class="card-body">
         <h2 class="card-title">{% include icon.html icon="message-circle" %}Chat</h2>
 {% include chat.html %}
       </div>
     </div>
-  </div><!-- col-md-4 -->
-  <div class="col-md-3">
-    <div class="card">
-      <div class="card-body">
-{% include wappen.html %}
-      </div>
-    </div>
-  </div><!-- col-md-3 -->
+  </div><!-- col-lg-7 -->
 </div><!-- row -->
