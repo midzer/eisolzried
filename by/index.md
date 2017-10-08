@@ -35,9 +35,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
     <div class="row">
       <div class="col-xl-8">
         <div class="card">
-          <div class="card-body">
 {% include carousel.html %}
-          </div>
         </div>
       </div><!-- col-xl-8 -->
       <div class="col-xl-4">
