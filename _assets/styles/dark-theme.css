@@ -21,7 +21,7 @@ body,
 }
 
 .calendar .today,
-#messages li:nth-child(odd) {
+#chat-messages li:nth-child(odd) {
     background-color: #424242;
 }
 
