@@ -20,11 +20,13 @@
   {% endif %}
 </button>
 <br>
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-  {% include icon.html icon="cast" %}
-  {% if page.lang == 'by' %}
-  As neiaste bschtoin
-  {% else %}
-  RSS abonnieren
-  {% endif %}
-</a></p>
+<p class="card-text">
+  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+    {% include icon.html icon="cast" %}
+    {% if page.lang == 'by' %}
+    As neiaste bschtoin
+    {% else %}
+    RSS abonnieren
+    {% endif %}
+  </a>
+</p>

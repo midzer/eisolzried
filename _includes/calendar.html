@@ -5,6 +5,8 @@
 {% else %}
 {% assign download = 'iCalendar herunterladen' %}
 {% endif %}
-<a href="{{ "/assets/data/termine.ics" | prepend: site.baseurl }}">
-  {% include icon.html icon="download" %}{{ download }}
-</a>
+<p class="card-text">
+  <a href="{{ "/assets/data/termine.ics" | prepend: site.baseurl }}">
+    {% include icon.html icon="download" %}{{ download }}
+  </a>    
+</p>
