@@ -1,4 +1,3 @@
-.card-header,
 body {
     color: #fdfdfd;
 }
@@ -9,11 +8,6 @@ body,
 .chatbox,
 .card {
     background-color: #212121;
-}
-
-.card-header {
-    background-color: #313131;
-    border-color: #424242;
 }
 
 .card {
