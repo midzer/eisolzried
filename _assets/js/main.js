@@ -44,14 +44,15 @@ function addLoaded(element) {
     element.classList.add('loaded');
 }
 
-function loadScript(src) {
+function loadScript(element) {
     return new Promise(function(resolve, reject) {
         const script = document.createElement('script');
         script.async = true;
-        script.src = '/assets/js/' + src.id + '.js';
+        script.src = element.dataset.script;
+        element.removeAttribute('data-script');
         script.onload = function() {
             resolve(script.src);
-            addLoaded(src);
+            addLoaded(element);
         };
         script.onerror = reject;
         if (document.head.lastChild != script) {
@@ -75,8 +76,8 @@ function load(element) {
         element.onload = function() { addLoaded(element) };
         replaceSrc(element);
     }
-    else if (element.hasAttribute('id')) {
-        // any element with an id
+    else if (element.hasAttribute('data-script')) {
+        // any element with data-script
         loadScript(element);
     }
 }
