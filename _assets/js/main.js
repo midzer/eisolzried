@@ -48,8 +48,8 @@ function loadScript(element) {
     return new Promise(function(resolve, reject) {
         const script = document.createElement('script');
         script.async = true;
-        script.src = element.dataset.script;
-        element.removeAttribute('data-script');
+        script.src = element.dataset.src;
+        element.removeAttribute('data-src');
         script.onload = function() {
             resolve(script.src);
             addLoaded(element);
@@ -76,8 +76,8 @@ function load(element) {
         element.onload = function() { addLoaded(element) };
         replaceSrc(element);
     }
-    else if (element.hasAttribute('data-script')) {
-        // any element with data-script
+    else {
+        // any element with data-src
         loadScript(element);
     }
 }
