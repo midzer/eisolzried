@@ -2,22 +2,26 @@
 <div class="row top-buffer">
   {% for video in page.videos %}
     <div class="col-md-6">
-      <video class="lazy embed-responsive-item" controls preload="metadata">
-        <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
-        <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">  
-      Dein Browser unterstützt das Video tag nicht.
-      </video>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video class="lazy embed-responsive-item" controls preload="metadata">
+          <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
+          <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">  
+        Dein Browser unterstützt das Video tag nicht.
+        </video>
+      </div>
     </div>
   {% endfor %}
 </div>
 {% else %}
   {% for video in page.videos %}
     {% if video.name == include.video %}
-<video class="lazy embed-responsive-item" controls preload="metadata">
-  <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
-  <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
-  Dein Browser unterstützt das Video tag nicht.
-</video>
+<div class="embed-responsive embed-responsive-16by9">
+  <video class="lazy embed-responsive-item" controls preload="metadata">
+    <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
+    <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video tag nicht.
+  </video>
+</div>
     {% break %}
     {% endif %}
   {% endfor %}
