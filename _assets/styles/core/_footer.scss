@@ -8,7 +8,7 @@
   padding: 0.5rem;
 }
 
-.bottom-bar {
+.bottombar {
   position: fixed;
   left: 0;
   right: 0;
@@ -17,7 +17,7 @@
   background-color: rgba(0,0,0,.3);
 }
 
-.progress-bar {
+.progressbar {
   width: 0%;
   height: 100%;
   background-color: map-get($theme-colors, "primary");

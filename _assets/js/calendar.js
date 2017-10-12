@@ -112,15 +112,15 @@ function buildCal(data) {
         clone = dayNum.cloneNode();
         clone.appendChild(document.createTextNode(event.detail.date.getDate()));
         event.detail.element.appendChild(clone);
-        var time = ICAL.Time.fromJSDate(event.detail.date);
-        for (var i = 0; i < ev.length; i++) {
+        const time = ICAL.Time.fromJSDate(event.detail.date);
+        for (let i = 0; i < ev.length; i++) {
             if (hasEventInDate(ev[i], time, timezone)) {
                 clone = dayEvent.cloneNode();
                 clone.setAttribute('title', ev[i].summary);
                 clone.appendChild(document.createTextNode(ev[i].summary));
                 event.detail.element.appendChild(clone);
                 if (event.detail.date.toDateString() == new Date().toDateString()) {
-                    var data = {
+                    let data = {
                         message: 'Heute ist was los!',
                         timeout: 5000,
                         actionHandler: function () {
@@ -142,8 +142,8 @@ function buildCal(data) {
 
     cal.addEventListener('click', function(event) {
         if (event.target.className == 'dayevent') {
-            var time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
-            for (var i = 0; i < ev.length; i++) {
+            const time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
+            for (let i = 0; i < ev.length; i++) {
                 if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
                     showModal(ev[i]);
                     break;
@@ -151,8 +151,8 @@ function buildCal(data) {
             }
         }
     });
-    var buttons = cal.querySelectorAll('button');
-    for (var i = 0; i < buttons.length; i++) {
+    const buttons = cal.querySelectorAll('button');
+    for (let i = 0; i < buttons.length; i++) {
         buttons[i].classList.add('btn');
     }
     document.getElementById('calendar').appendChild(cal);

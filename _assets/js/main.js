@@ -197,10 +197,10 @@ if (query('.lightbox').length) {
 }
 
 // Snackbar
-window.snackbar = new Snackbar(document.getElementById("snackbar"));
+window.snackbar = new Snackbar(query('.snackbar')[0]);
 
 // Progressbar
-var progressBar = document.getElementById('progress-bar');
+var progressBar = query('.progressbar')[0];
 var ticking = false;
 
 function requestTick() {
@@ -216,7 +216,7 @@ function requestTick() {
 }
 
 function update() {
-    var percent = 100 * window.pageYOffset / (document.body.clientHeight - window.innerHeight);
+    let percent = 100 * window.pageYOffset / (document.body.clientHeight - window.innerHeight);
     progressBar.style.width = percent + '%';
     progressBar.setAttribute("aria-valuenow", percent);
     ticking = false;

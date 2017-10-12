@@ -1,21 +1,21 @@
 // Chat
+const chatbox = query('.chatbox')[0];
 function addMessage(msg) {
-    var content = document.createElement('li');
+    let content = document.createElement('li');
     content.textContent = msg;
     document.getElementById('chat-messages').append(content);
-    var box = document.getElementById("chatbox");
-    box.scrollTop = box.scrollHeight;
+    chatbox.scrollTop = chatbox.scrollHeight;
 }
 
 function sendMessage() {
-    var input = document.getElementById('chat-input');
-    var msg = input.value;
+    let input = document.getElementById('chat-input');
+    let msg = input.value;
     addMessage(msg);
     input.value = '';
     ws.send(msg);
 }
 
-var ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187');
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187');
 ws.onmessage = function(msg) {
     addMessage(msg.data);
 };
