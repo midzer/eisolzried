@@ -26,8 +26,8 @@ const webpackConfig = {
       './_assets/js/drcal.js',
       './_assets/js/calendar.js'
     ],
-    moreposts: [
-      './_assets/js/moreposts.js'
+    posts: [
+      './_assets/js/posts.js'
     ],
     chatbox: [
       './_assets/js/chatbox.js'

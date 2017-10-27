@@ -1,4 +1,4 @@
-<ul id="posts" class="list-unstyled">
+<ul id="posts" class="lazy list-unstyled" data-src="/assets/js/posts.js">
 {% assign sorted-posts = site.posts | where: "lang",page.lang %}
 {% for post in sorted-posts %}
   {% if forloop.index > 7 %}
@@ -7,11 +7,11 @@
   <li>
   {% endif %}
     <div class="post-meta">{{ post.date | localize: "%e. %B %Y" }}</div>
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.index }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
-<button id="moreposts" type="button" class="lazy btn btn-outline-primary d-block mx-auto" data-src="/assets/js/moreposts.js">
+<button id="moreposts" type="button" class="btn btn-outline-primary d-block mx-auto">
   {% include icon.html icon="plus" %}
   {% if page.lang == 'by' %}
   Meara
