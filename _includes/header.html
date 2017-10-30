@@ -47,10 +47,10 @@
             {% endif %}
           {% endfor %}
           <li class="nav-item dropdown {{ active }}">
-            <a class="nav-link dropdown-toggle" href="{{ link.url }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {% include icon.html icon=link.icon %}{{ link.title }}
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               {% for sublink in link.submenu %}
               <a class="dropdown-item" href="{{ sublink.url }}">
                 {% include icon.html icon=sublink.icon %}{{ sublink.title }}

@@ -6,7 +6,6 @@ de:
     url: /karten/
     icon: map
   - title: Verein
-    url: #
     icon: briefcase
     submenu:
       - title: Mitmachen
@@ -41,7 +40,6 @@ by:
     url: /by/karten/
     icon: map
   - title: Varein
-    url: /by/#
     icon: briefcase
     submenu:
       - title: Mitmacha
