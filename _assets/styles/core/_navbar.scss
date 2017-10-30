@@ -42,8 +42,8 @@
 
 .dropdown-menu {
   color: $white;
-  background-color: map-get($theme-colors, "primary");
-  border-color: darken(map-get($theme-colors, "primary"), 5%);
+  background-color: $primary;
+  border-color: darken($primary, 5%);
 }
 
 .dropdown-item {

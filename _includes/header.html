@@ -2,7 +2,7 @@
 {% if page.lang != 'de' %}
   {% assign lang = page.lang | prepend: '/'%}
 {% endif %}
-<nav class="navbar navbar-expand-xl navbar-dark bg-primary" role="navigation">
+<nav class="navbar navbar-expand-xl navbar-dark bg-gradient-primary" role="navigation">
   <div class="container">
     <a class="navbar-brand" href="{{ lang }}{{ site.baseurl }}/">{{ site.data.strings.[page.lang].firefighters_eisolzried }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="{{ site.data.strings.[page.lang].toggle_navigation }}">

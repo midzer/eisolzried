@@ -20,7 +20,7 @@
 .progressbar {
   width: 0%;
   height: 100%;
-  background-color: map-get($theme-colors, "primary");
+  background-color: $primary;
   transition: width .3s linear;
   will-change: width;
 }

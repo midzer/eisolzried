@@ -19,7 +19,7 @@
   bottom: 0;
   left: 50%;
   cursor: default;
-  background-color: map-get($theme-colors, "primary");
+  background-color: $primary;
   z-index: 3;
   display: block;
   display: flex;
