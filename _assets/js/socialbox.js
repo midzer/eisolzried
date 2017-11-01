@@ -2,23 +2,30 @@
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de:63244');
 const socialboxes = query(".socialbox");
 
-function sendMessage(node, score) {
-    let msg = {
+function composeMsg(node, score) {
+    const msg = {
         index: Number(node.getAttribute('data-index')),
         score: score
     };
-    ws.send(JSON.stringify(msg));
+    return msg;
 }
 
-ws.onopen = function() {
-    socialboxes.forEach(function(item) {
-        sendMessage(item);
-    });
-};
+function updateScore(item, score) {
+    item.parentNode.lastElementChild.textContent = score;
+    const msg = composeMsg(item.parentNode.parentNode, score);
+    ws.send(JSON.stringify(msg));
+}
 
 function matchesIndex(element) {
     return element.getAttribute('data-index') == this;
 }
+
+ws.onopen = function() {
+    socialboxes.forEach(function(item) {
+        const msg = composeMsg(item, undefined);
+        ws.send(JSON.stringify(msg));
+    });
+};
 
 ws.onmessage = function(msg) {
     let incoming = JSON.parse(msg.data);
@@ -28,17 +35,13 @@ ws.onmessage = function(msg) {
 
 query(".plus-btn").forEach(function(item) {
     item.onclick = function() {
-        let newScore = Number(item.parentNode.lastElementChild.textContent) + 1;
-        item.parentNode.lastElementChild.textContent = newScore;
-        sendMessage(item.parentNode.parentNode, newScore);
+        updateScore(item, Number(item.parentNode.lastElementChild.textContent) + 1);
     }
 });
 
 query(".minus-btn").forEach(function(item) {
     item.onclick = function() {
-        let newScore = Number(item.parentNode.lastElementChild.textContent) - 1;
-        item.parentNode.lastElementChild.textContent = newScore;
-        sendMessage(item.parentNode.parentNode, newScore);
+        updateScore(item, Number(item.parentNode.lastElementChild.textContent) - 1);
     }
 });
 
