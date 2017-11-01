@@ -41,3 +41,22 @@ query(".minus-btn").forEach(function(item) {
         sendMessage(item.parentNode.parentNode, newScore);
     }
 });
+
+// Share
+if (navigator.share) {
+    let url = document.location.href;
+    const canonicalElement = document.querySelector('link[rel=canonical]');
+    if (canonicalElement !== null) {
+        url = canonicalElement.href;
+    }
+    query(".share-btn").forEach(function(item) {
+        item.onclick = function() {
+            navigator.share({
+                title: document.title,
+                url: url
+            })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+        }
+    });
+}
