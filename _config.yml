@@ -16,6 +16,7 @@ seo:
 # Build settings
 markdown: kramdown
 permalink: pretty
+include: ['_pages']
 exclude:
   - vendor
   - config.json

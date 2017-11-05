@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Willkommen
-lang: de
+title: Servus
+permalink: /by/
+lang: by
 js:
   - posts
   - chatbox
@@ -14,13 +15,13 @@ js:
 {% include carousel.html %}
 <div class="card-body" markdown="1">
 <h2 class="card-title">{% include icon.html icon="info" %}Intro</h2>
-Wir sind eine aktive Feuerwehr aus der Gemeinde Bergkirchen in Oberbayern, die überwiegend aus einem jungen Team besteht. Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
+Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
 {:.card-text}
 
-Diese Webseite wird ständig weiterentwickelt und überarbeitet; also schau gerne öfter rein. Bei konkreten Fragen scheue Dich nicht uns zu [kontaktieren](/kontakt).
+An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt) di hoid.
 {:.card-text}
 
-Und nun viel Spaß beim Stöbern :)
+Gnua vazoid, vui Spaß beim Umschaun :)
 {:.card-text}
 </div>
     </div>
@@ -28,7 +29,7 @@ Und nun viel Spaß beim Stöbern :)
   <div class="col-md-6 col-lg-4">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="activity" %}Neuigkeiten</h2>
+        <h2 class="card-title">{% include icon.html icon="activity" %}Wos neis gibt</h2>
 {% include posts.html %}
       </div>
     </div>
@@ -45,13 +46,13 @@ Und nun viel Spaß beim Stöbern :)
   <div class="col-lg-5">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="calendar" %}Termine</h2>
+        <h2 class="card-title">{% include icon.html icon="calendar" %}Wos zum doa is</h2>
 {% include calendar.html %}
       </div>
     </div>
   </div><!-- col-lg-5 -->
-  <div class="col-lg-7">
-    <div class="card">
+  <div class="col-md-7">
+    <div class="card">          
       <div class="card-body">
         <h2 class="card-title">{% include icon.html icon="message-circle" %}Chat</h2>
 {% include chat.html %}
