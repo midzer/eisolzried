@@ -34,6 +34,10 @@ const webpackConfig = {
     ],
     socialbox: [
       './_assets/js/socialbox.js'
+    ],
+    statistics: [
+      'chartist',
+      './_assets/js/statistics.js'
     ]
   },
   output: {

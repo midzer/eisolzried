@@ -19,6 +19,8 @@
     "babel-register": "^6.9.0",
     "bootstrap.native": "^2.0.19",
     "browser-sync": "^2.2.0",
+    "chartist": "^0.11.0",
+    "chartist-plugin-legend": "^0.6.2",
     "critical": "^1.0.0",
     "del": "^3.0.0",
     "gulp": "^3.8.8",

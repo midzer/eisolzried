@@ -1,24 +1,47 @@
-iframe {
-  border: solid 1px #eee;
-  border-bottom: solid 1px #ccc;
-  height: 500px;
-}
-
-h2, iframe {
-  width: 100%;
-}
-
-.chart-pop {
-  position: absolute;
-  right: 10px;
-}
-
-.chart-pop svg {
-  margin-left: 0.3em;
+.ct-legend {
   position: relative;
-  top: 3px;
+  z-index: 10;
+  list-style: none;
+  text-align: center;
 }
 
-.chart-info {
-  max-width: 450px;
+.ct-legend li {
+  position: relative;
+  padding-left: 23px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ct-legend li:before {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  content: '';
+  border: 3px solid transparent;
+  border-radius: 2px;
+}
+
+.ct-legend li.inactive:before {
+  background: transparent;
+}
+
+.ct-legend .ct-legend-inside {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ct-legend.ct-legend-inside li{
+  display: block;
+  margin: 0;
+}
+
+@for $i from 0 to length($ct-series-colors) {
+  .ct-series-#{$i}:before {
+      background-color: nth($ct-series-colors, $i + 1);
+      border-color: nth($ct-series-colors, $i + 1);
+  }
 }
