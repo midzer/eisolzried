@@ -5,6 +5,20 @@ permalink: /by/media/
 imgfolder: /assets/images/media/
 vidfolder: /assets/videos/media/
 images:
+  - name: 1acc4c0398f13a52.jpg
+    text: Unimog-Feuerwehrauto im Einsatz
+  - name: 1b31963fbec859aa.jpg
+    text: Schaummittel im Einsatz
+  - name: 3bb5c4c99695efd3.jpg
+    text: Bäume in Allee umgefallen
+  - name: 6aa7135bb62b8b00.jpg
+    text: CSA im Supermarkt
+  - name: 74d3dfcdb6e31240.jpg
+    text: Bundeswehr-Feuerwehrauto
+  - name: 407d10fb32abbb44.jpg
+    text: Schaummittel ausgelaufen
+  - name: e0556509f8023b01.jpg
+    text: VW-Feuerwehrauto
   - name: 8e351b1fddeb6301.jpg
     text: Rauch an Decke
   - name: b730cf7034ba62fb.jpg
@@ -128,6 +142,10 @@ images:
   - name: c0cb9e157bfe364a.jpg
     text: Öltank
 videos:
+  - name: 5b505d8b17eba02b
+  - name: 126c8af2b6aef3f5
+  - name: 202c960d58fc500d
+  - name: 1050440c8ea6372b
   - name: 5ece60ec338680c7
   - name: 5f250ca75f7155db
   - name: 622ccf535b3f7e6d
