@@ -7,7 +7,8 @@ gulp.task('copy', () => {
     '_assets/audio/**',
     '_assets/data/**',
     '_assets/videos/**',
-    '_assets/favicons/**'
+    '_assets/favicons/**',
+    '_assets/js/snowstorm.min.js',
   ], {
     base: '_assets',
   })
