@@ -21,7 +21,7 @@
     "browser-sync": "^2.2.0",
     "chartist": "^0.11.0",
     "chartist-plugin-legend": "^0.6.2",
-    "critical": "^1.0.0",
+    "critical": "^0.8.4",
     "del": "^3.0.0",
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "^4.0.0",
