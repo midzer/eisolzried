@@ -26,7 +26,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
 </div>
     </div>
   </div><!-- col-md-6 col-lg-5 -->
-  <div class="col-md-6 col-lg-4">
+  <div class="col-md-6 col-lg-4 d-flex align-content-around flex-wrap">
     <div class="card">
       <div class="card-body">
         <h2 class="card-title">{% include icon.html icon="activity" %}Wos neis gibt</h2>
@@ -34,7 +34,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
       </div>
     </div>
   </div><!-- col-md-6 col-lg-4 -->
-  <div class="col-md-6 col-lg-3">
+  <div class="col-md-6 col-lg-3 d-flex align-content-around flex-wrap">
     <div class="card">
       <div class="card-body">
 {% include wappen.html %}
@@ -51,7 +51,7 @@ Gnua vazoid, vui Spaß beim Umschaun :)
       </div>
     </div>
   </div><!-- col-lg-5 -->
-  <div class="col-md-7">
+  <div class="col-lg-7 d-flex align-content-around flex-wrap">
     <div class="card">          
       <div class="card-body">
         <h2 class="card-title">{% include icon.html icon="message-circle" %}Chat</h2>
