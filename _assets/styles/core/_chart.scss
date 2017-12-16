@@ -3,40 +3,40 @@
   z-index: 10;
   list-style: none;
   text-align: center;
-}
 
-.ct-legend li {
-  position: relative;
-  padding-left: 23px;
-  margin-right: 10px;
-  margin-bottom: 3px;
-  cursor: pointer;
-  display: inline-block;
-}
+  li {
+    position: relative;
+    padding-left: 23px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+  }
 
-.ct-legend li:before {
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  left: 0;
-  content: '';
-  border: 3px solid transparent;
-  border-radius: 2px;
-}
+  li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+  }
 
-.ct-legend li.inactive:before {
-  background: transparent;
-}
+  li.inactive:before {
+    background: transparent;
+  }
 
-.ct-legend .ct-legend-inside {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+  .ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
-.ct-legend.ct-legend-inside li{
-  display: block;
-  margin: 0;
+  .ct-legend-inside li{
+    display: block;
+    margin: 0;
+  }
 }
 
 @for $i from 0 to length($ct-series-colors) {
