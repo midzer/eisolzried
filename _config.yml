@@ -26,6 +26,7 @@ exclude:
   - package.json
   - package-lock.json
   - gulpfile.babel.js
+  - yarn.lock
 keep_files:
   - charts
 
