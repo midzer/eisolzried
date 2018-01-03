@@ -19,7 +19,6 @@ permalink: pretty
 include: ['_pages']
 exclude:
   - vendor
-  - config.json
   - Gemfile
   - README.md
   - node_modules
