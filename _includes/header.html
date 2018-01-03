@@ -10,32 +10,33 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <form class="form-inline my-2 my-lg-0">
+      <form class="form-inline">
         <div class="input-group mr-sm-2">
-          <span class="input-group-addon">
-            {% include icon.html icon="search" %}
-          </span>
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              {% include icon.html icon="search" %}
+            </span>
+          </div>
           <input id="search-input" class="form-control" type="text" placeholder="{{ site.data.strings.[page.lang].search }}" aria-label="{{ site.data.strings.[page.lang].search }}">
           <div id="results-container" class="dropdown-menu"></div>
         </div>
-        <div class="btn-group my-2 my-sm-0" role="group" aria-label="Navbar buttons">
-          <button id="language-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sprache wechseln">
-            {% if page.lang == 'by' %}
-              {% include icon.html icon='de' %}
-            {% else %}
-              {% include icon.html icon='by' %}
-            {% endif %}      
-          </button>
-          <button id="theme-switch" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Hintergrundfarbe ändern">
-            {% include icon.html icon="moon" id="theme-icon" %}
-          </button>
-          <button id="siren-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sirene einschalten">
-            {% include icon.html icon="play" id="siren-icon" %}
-          </button>
-        </div>
-        {% include audio-player.html audio='siren' %}
       </form>
-
+      <div class="btn-group my-2 my-sm-0" role="group" aria-label="Navbar buttons">
+        <button id="language-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sprache wechseln">
+          {% if page.lang == 'by' %}
+            {% include icon.html icon='de' %}
+          {% else %}
+            {% include icon.html icon='by' %}
+          {% endif %}      
+        </button>
+        <button id="theme-switch" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Hintergrundfarbe ändern">
+          {% include icon.html icon="moon" id="theme-icon" %}
+        </button>
+        <button id="siren-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sirene einschalten">
+          {% include icon.html icon="play" id="siren-icon" %}
+        </button>
+      </div>
+      {% include audio-player.html audio='siren' %}
       <ul class="navbar-nav">
         {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}

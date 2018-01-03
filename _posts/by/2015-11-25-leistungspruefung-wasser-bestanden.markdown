@@ -56,7 +56,8 @@ categories:
 
 Im Frühjahr homma d'Leistungsprüfung Wassa mit Erfoig obg'legt.
 
-<table class="table table-responsive">
+<div class="table-responsive">
+<table class="table">
   <thead>
     <tr>
       <th>Gruppenführer</th>
@@ -86,5 +87,6 @@ Im Frühjahr homma d'Leistungsprüfung Wassa mit Erfoig obg'legt.
     </tr>
   </tbody>
 </table>
+</div>
 
 {% include gal.html %}

@@ -32,7 +32,8 @@ Alle Mitglieder der Feuerwehr Eisolzried mit Ehrenmitglied Hubert Huber vor dem 
 
 Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlicher, 17 Passive und 3 Ehrenmitglieder. (Stand: Oktober 2015)
 
-<table class="table table-responsive">
+<div class="table-responsive">
+<table class="table">
   <thead>
     <tr>
       <th></th>
@@ -56,10 +57,12 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
     </tr>
   </tbody>
 </table>
+</div>
 
 ## Fahrzeuge
 
-<table class="table table-responsive">
+<div class="table-responsive">
+<table class="table">
   <thead>
     <tr>
       <th>Typ</th>
@@ -86,6 +89,7 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
     </tr>
   </tbody>
 </table>
+</div>
 
 ### MLF
 

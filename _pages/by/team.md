@@ -32,7 +32,8 @@ Olle Midglieda vo da Feiawea Eilzria und da Hubert ois Ehrenmidglied vorm Feiawe
 
 Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 2015)
 
-<table class="table table-responsive">
+<div class="table-responsive">
+<table class="table">
   <thead>
     <tr>
       <th></th>
@@ -56,10 +57,12 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
     </tr>
   </tbody>
 </table>
+</div>
 
 ## Fahrzeig
 
-<table class="table table-responsive">
+<div class="table-responsive">
+<table class="table">
   <thead>
     <tr>
       <th>Typ</th>
@@ -86,6 +89,7 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
     </tr>
   </tbody>
 </table>
+</div>
 
 ### MLF
 

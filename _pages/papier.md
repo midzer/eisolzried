@@ -5,7 +5,8 @@ permalink: /papier/
 lang: de
 ---
 
-<table class="table table-responsive">
+<div class="table-responsive">
+<table class="table">
   <thead>
     <tr>
       <th>Monat</th>
@@ -219,3 +220,4 @@ lang: de
     </tr>
   </tbody>
 </table>
+</div>
