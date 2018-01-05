@@ -12,7 +12,7 @@ function composeMsg(node, score) {
 
 function updateScore(item, score) {
     item.parentNode.lastElementChild.textContent = score;
-    const msg = composeMsg(item.parentNode.parentNode, score);
+    const msg = composeMsg(findUpElement(item, "socialbox"), score);
     ws.send(JSON.stringify(msg));
 }
 
@@ -30,7 +30,7 @@ ws.onopen = function() {
 ws.onmessage = function(msg) {
     let incoming = JSON.parse(msg.data);
     let item = socialboxes.find(matchesIndex, incoming.index);
-    item.firstElementChild.lastElementChild.textContent = incoming.score;
+    item.querySelector("span").textContent = incoming.score;
 };
 
 query(".plus-btn").forEach(function(item) {

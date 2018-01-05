@@ -17,13 +17,13 @@ lang: de
         {% if page.tags %} • {% include icon.html icon="tag" %}<a href="{{ lang }}/{{ page.tags }}/">{{ page.tags }}</a>{% endif %}
     </p>
   </div>
-
   {{ content }}
-
-  <hr>
-  
-  {% include social.html index=page.index %}
-  
-  {% include post-nav.html %}
-
 </article>
+
+<hr>
+  
+{% include social.html index=page.index %}
+
+<hr>
+
+{% include post-nav.html %}

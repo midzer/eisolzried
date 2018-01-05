@@ -16,14 +16,12 @@
       {% if post.meta %} • {{ post.meta }}{% endif %}
     </p>
   </div>
-  
   {{ post.content }}
-  
-  <hr>
-    
-  {% include social.html index=post.index %}
-  
 </article>
+
+<hr>
+    
+{% include social.html index=post.index %}
   
 {% endfor %}
 {% endfor %}
