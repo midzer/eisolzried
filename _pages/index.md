@@ -60,3 +60,4 @@ Und nun viel Spaß beim Stöbern :)
     </div>
   </div><!-- col-lg-7 -->
 </div><!-- row -->
+<img class="lazy img-fluid rounded mt-3" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="/assets/images/index/kirche1997.jpg" alt="Luftaufnahme der Kirche St. Nikolaus in Deutenhausen"/>
