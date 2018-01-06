@@ -5,6 +5,18 @@ permalink: /media/
 imgfolder: /assets/images/media/
 vidfolder: /assets/videos/media/
 images:
+  - name: 52a6433ec11d9e64.jpg
+    text: Abgestürzter Triebwagen
+  - name: 6862ac5337ea70ea.jpg
+    text: Abhängen im CSA
+  - name: 24017de4684e77d4.jpg
+    text: Baby retten Comic
+  - name: 76814e6a396c73fb.jpg
+    text: Löschflugzeug Waldbrand
+  - name: bf11e91841953277.jpg
+    text: Drei Feuerwehrleute im CSA
+  - name: da58dcf2ff571598.jpg
+    text: Roter Unimog
   - name: 1acc4c0398f13a52.jpg
     text: Unimog-Feuerwehrauto im Einsatz
   - name: 1b31963fbec859aa.jpg
@@ -142,6 +154,18 @@ images:
   - name: c0cb9e157bfe364a.jpg
     text: Öltank
 videos:
+  - name: 6d90ab135b810b9a
+  - name: 08ccee5e5a3338f8
+  - name: 8cdd57784ad27c97
+  - name: 20ed009dd0d44a4b
+  - name: 54ab54c0395f091c
+  - name: 205d686a21ce2327
+  - name: afddf58caf70a2aa
+  - name: bd24dae02f71de3e
+  - name: c6d43496122753b5
+  - name: c178cae1ccc05ee5
+  - name: cd587e3dd162f16f
+  - name: f7edb47f7b7ec4f7
   - name: 5b505d8b17eba02b
   - name: 126c8af2b6aef3f5
   - name: 202c960d58fc500d
