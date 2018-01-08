@@ -7,17 +7,7 @@ import critical from 'critical';
 
 const config = {
   inline: true,
-  base: '_site',
-  css: ['_site/assets/css/main.min.css'],
-  minify: true,
-  dimensions: [{
-        height: 640,
-        width: 360
-    }, {
-        height: 900,
-        width: 1300
-  }],
-  ignore: ['@font-face']
+  base: '_site/'
 };
 
 gulp.task('critical', () => {
