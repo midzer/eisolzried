@@ -1,20 +1,11 @@
-{% if include.image == null %}
-<div class="card-columns top-buffer">
-{% for image in page.images %}
-  <div class="card border-primary">
-    <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
-      <img class="lazy card-img" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-    </a>
-  </div>
-{% endfor %}
-</div>
+{% if include.media == true %}
+{% assign images = site.data.media.images %}
 {% else %}
-  {% for image in page.images %}
-    {% if image.name == include.image %}
-<a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
-  <img class="lazy img-fluid mx-auto d-block" src="{{ '/assets/icons/transparent.png' | prepend: site.baseurl }}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
-</a>
-    {% break %}
-    {% endif %}
-  {% endfor %}
+{% assign images = page.images %}
 {% endif %}
+
+<div class="card-columns top-buffer">
+    {% for image in images %}
+        {% include image_card.html %}
+    {% endfor %}
+</div>

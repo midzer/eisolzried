@@ -1,26 +1,15 @@
-{% if include.video == null %}
+{% if include.media == true %}
+{% assign videos = site.data.media.videos %}
+{% else %}
+{% assign videos = videos.images %}
+{% endif %}
+
 <div class="row top-buffer">
-  {% for video in page.videos %}
+  {% for video in videos %}
     <div class="col-md-6">
       <div class="embed-responsive embed-responsive-16by9">
-        <video class="lazy" controls preload="metadata">
-          <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
-          <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">  
-        Dein Browser unterstützt das Video tag nicht.
-        </video>
+        {% include video.html name=video.name %}
       </div>
     </div>
   {% endfor %}
 </div>
-{% else %}
-  {% for video in page.videos %}
-    {% if video.name == include.video %}
-<video class="lazy" controls preload="metadata">
-  <source data-src="{{ page.vidfolder }}{{ video.name }}.webm" type="video/webm">
-  <source data-src="{{ page.vidfolder }}{{ video.name }}.mp4" type="video/mp4">
-  Dein Browser unterstützt das Video tag nicht.
-</video>
-    {% break %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
