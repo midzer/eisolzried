@@ -27,6 +27,10 @@ lang: de
 
 [Bürgerhaus Deutenhausen-Eisolzried](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 
+## Hosting
+
+[![Uberspace badge](){:class="lazy img-fluid" data-src="/assets/images/links/uberspace.png"}](https://uberspace.de/)
+
 ## Jugend
 
 [![Ich will zur Jugendfeuerwehr](){:class="lazy img-fluid" data-src="/assets/images/links/jugendfeuerwehr.png"}](https://www.ich-will-zur-jugendfeuerwehr.de/)

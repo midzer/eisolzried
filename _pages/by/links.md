@@ -27,6 +27,10 @@ lang: by
 
 [Bürgahaus Deinhausn-Eilzria](http://www.buergerhaus-deutenhausen-eisolzried.de/)
 
+## Hosting
+
+[![Uberspace badge](){:class="lazy img-fluid" data-src="/assets/images/links/uberspace.png"}](https://uberspace.de/)
+
 ## Junga
 
 [![Ich will zur Jugendfeuerwehr](){:class="lazy img-fluid" data-src="/assets/images/links/jugendfeuerwehr.png"}](https://www.ich-will-zur-jugendfeuerwehr.de/)
