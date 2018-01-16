@@ -40,3 +40,7 @@ lang: by
 [Firefighter "Krause"](http://firefighter.pixelactivity.de/)
 
 [Firefighter Pinball](http://b10b.com/firefighterpinball/)
+
+[Hot Spot: Fire Rescue](https://hotspot-boardgame.com/)
+
+[Mr. Rescue](http://tangramgames.dk/games/mrrescue/)
