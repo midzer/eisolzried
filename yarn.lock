@@ -986,9 +986,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap.native@thednp/bootstrap.native:
-  version "2.0.22"
-  resolved "https://codeload.github.com/thednp/bootstrap.native/tar.gz/9af76aa8fa685d238488d84f03331d0d1dd8406c"
+bootstrap.native@^2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-2.0.21.tgz#8368fd66bbd2c36c461ac6497fe4ca8ca4deba86"
 
 boxen@^0.5.1:
   version "0.5.1"
