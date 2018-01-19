@@ -14,13 +14,7 @@ function setTheme(theme) {
     localStorage.setItem('theme', theme);
 }
 
-if (localStorage.getItem('theme') == 'dark') {
-    setTheme('dark');
-}
-else {
-    setTheme('light');
-}
-document.getElementById('theme-switch').onclick = function() {
+document.getElementById('theme-switch').onclick = () => {
     if (localStorage.getItem('theme') == 'dark') {
         setTheme('light');
     }
@@ -29,9 +23,20 @@ document.getElementById('theme-switch').onclick = function() {
     }
 };
 
+if (localStorage.getItem('theme') == 'dark') {
+    setTheme('dark');
+}
+else {
+    setTheme('light');
+}
+
 // Set up lazy loading
 function replaceSrc(element) {
     element.src = element.dataset.src;
+    removeDataSrc(element);
+}
+
+function removeDataSrc(element) {
     element.removeAttribute('data-src');
 }
 
@@ -45,12 +50,12 @@ function addLoaded(element) {
 }
 
 function loadScript(element) {
-    return new Promise(function(resolve, reject) {
+    return new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.async = true;
         script.src = element.dataset.src;
-        element.removeAttribute('data-src');
-        script.onload = function() {
+        removeDataSrc(element);
+        script.onload = () => {
             resolve(script.src);
             addLoaded(element);
         };
@@ -64,16 +69,20 @@ function loadScript(element) {
 function load(element) {
     if (element.nodeName == 'VIDEO') {
         // <video> element
-        element.onloadstart = function() { addLoaded(element) };
-        var sources = element.getElementsByTagName('source');
-        for (let i = 0; i < sources.length; i++) {
-            replaceSrc(sources[i]);
-        }
+        element.onloadstart = () => {
+            addLoaded(element)
+        };
+        const sources = element.getElementsByTagName('source');
+        Array.from(sources).forEach(source => {
+            replaceSrc(source);
+        });
         element.load();
     }
     else if (element.nodeName == 'IMG') {
         // <img> element
-        element.onload = function() { addLoaded(element) };
+        element.onload = () => {
+            addLoaded(element)
+        };
         replaceSrc(element);
     }
     else {
@@ -83,18 +92,18 @@ function load(element) {
 }
 
 // Pre-load items that are within 2 multiples of the visible viewport height.
-var observer = new IntersectionObserver(function(changes) {
-    changes.forEach(function(change) {
+var observer = new IntersectionObserver(changes => {
+    changes.forEach(change => {
         // Edge 15 doesn't support isIntersecting, but we can infer it
         // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
         // https://github.com/WICG/IntersectionObserver/issues/211
         const isIntersecting = (typeof change.isIntersecting === 'boolean') ?
         change.isIntersecting : change.intersectionRect.height > 0;
         if (isIntersecting) {
-            load(change.target);
-
-            // 5. Stop observing the current target
+            // Stop observing the current target
             observer.unobserve(change.target);
+
+            load(change.target);
         }
     });
   },
@@ -109,12 +118,12 @@ query(".lazy").forEach(function(item) {
 var path = window.location.pathname;
 var langBtn = document.getElementById('language-btn');
 if (path.indexOf("/by/") === -1) {
-    langBtn.onclick = function() {
+    langBtn.onclick = () => {
         window.location = '/by'.concat(path);
     };
 }
 else {
-    langBtn.onclick = function() {
+    langBtn.onclick = () => {
         window.location = path.replace('/by','');
     };
 }
@@ -133,15 +142,15 @@ function toggleAudio(player) {
 }
 
 // Siren player
-document.getElementById('siren-btn').onclick = function() {
-    var player = document.getElementById('siren-player');
+document.getElementById('siren-btn').onclick = () => {
+    const player = document.getElementById('siren-player');
     document.getElementById('siren-icon').href.baseVal = '/assets/icons/sprite.svg#' + (player.paused ? 'volume-2' : 'play');
     toggleAudio(player);
 };
 
 // Fire run
-document.getElementById('fire-station').onclick = function() {
-    var truck = document.getElementById("fire-truck");
+document.getElementById('fire-station').onclick = () => {
+    const truck = document.getElementById("fire-truck");
     if (truck.style.animationPlayState == "paused" || truck.style.animationPlayState == "") {
         truck.style.animationPlayState = "running";
     }
@@ -180,7 +189,7 @@ function displayResults() {
 const field = document.querySelector('#search-input');
 const resultsList = document.querySelector('#results-container');
 field.addEventListener('keyup', displayResults);
-field.addEventListener('keypress', function(event) {
+field.addEventListener('keypress', event => {
     if (event.keyCode == 13) {
         event.preventDefault();
     }
