@@ -236,3 +236,6 @@ window.addEventListener('scroll', requestTick, false);
 // Modal
 import { Modal } from 'bootstrap.native/dist/bootstrap-native-v4';
 window.modal = new Modal(document.getElementById('event-modal'));
+
+const Snowflakes = require('magic-snowflakes');
+Snowflakes();

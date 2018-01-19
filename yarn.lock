@@ -4833,6 +4833,10 @@ lru-queue@0.1:
   dependencies:
     es5-ext "~0.10.2"
 
+magic-snowflakes@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/magic-snowflakes/-/magic-snowflakes-4.0.0.tgz#49be99489e19cabddd316e2f490d72fde682a8cb"
+
 make-dir@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.1.0.tgz#19b4369fe48c116f53c2af95ad102c0e39e85d51"
