@@ -1,9 +1,5 @@
-{% if include.id %}
-<svg class="icon icon--{{ include.icon }}" role="img" aria-hidden="true">
-    <use id="{{ include.id }}" href="{{ "/assets/icons/sprite.svg#" | prepend: site.baseurl | append: include.icon }}"></use>
-</svg>
-{% else %}
-<svg class="icon icon--{{ include.icon }}" role="img" aria-hidden="true">
-    <use xlink:href="{{ "/assets/icons/sprite.svg#" | prepend: site.baseurl | append: include.icon }}"></use>
-</svg>
-{% endif %}
+<span class="icon icon--{{ include.icon }}" aria-hidden="true">
+    <svg role="img">
+        <use {% if include.id %}id="{{ include.id }}"{% endif %} xlink:href="{{ "/assets/icons/sprite.svg#" | prepend: site.baseurl | append: include.icon }}"></use>
+    </svg>
+</span>
