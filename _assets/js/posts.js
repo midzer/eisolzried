@@ -1,5 +1,10 @@
 // Load more posts
 document.getElementById('moreposts').onclick = function() {
+    if (!/Mobi/.test(navigator.userAgent)) {
+        // Only apply styling for desktop browsers
+        this.previousElementSibling.style.overflowY = 'auto';
+        this.previousElementSibling.style.height = '585px';
+    }
     var els = document.querySelectorAll('li[hidden]');
     for (var i = 0; i < 7; i++) {
         if (els.length == i) {
