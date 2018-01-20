@@ -1,5 +1,10 @@
-#posts li {
-  padding-bottom: 1rem;
+#posts {
+  height: 585px;
+  overflow-y: auto;
+  
+  li {
+    padding-bottom: 1rem;
+  }
 }
 
 .post-link {
