@@ -41,6 +41,8 @@ lang: by
 
 [Firefighter Pinball](http://b10b.com/firefighterpinball/)
 
+[Flappy Bird](https://chaping.github.io/game/flappy-bird/)
+
 [Hot Spot: Fire Rescue](https://hotspot-boardgame.com/)
 
 [Mr. Rescue](http://tangramgames.dk/games/mrrescue/)
