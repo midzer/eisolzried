@@ -12,7 +12,7 @@ gulp.task('build', function(cb) {
 });
 
 gulp.task('build:prod', ['clean'], function(cb) {
-  runSequence('jekyll:prod', 'copy', 'scripts', 'sass:prod', 'imagemin:prod', 'iconmin', 'icons', 'critical', 'htmlmin', 'precache:prod', 'brotli', 'zopfli', cb);
+  runSequence('jekyll:prod', 'copy', 'scripts:prod', 'sass:prod', 'imagemin:prod', 'iconmin', 'icons', 'critical', 'htmlmin', 'precache:prod', 'brotli', 'zopfli', cb);
 });
 
 gulp.task('clean', del.bind(null, ['_site'], {dot: true}));
