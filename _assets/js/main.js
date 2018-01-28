@@ -49,8 +49,16 @@ function addLoaded(element) {
     element.classList.add('loaded');
 }
 
+function addLoader(element) {
+    var loader = document.createElement('img');
+    loader.src = '/assets/loader/puff.svg'
+    loader.className = 'd-block mx-auto';
+    return element.insertAdjacentElement("afterend", loader);
+}
+
 function loadScript(element) {
     return new Promise((resolve, reject) => {
+        const loader = addLoader(element);
         const script = document.createElement('script');
         script.async = true;
         script.src = element.dataset.src;
@@ -58,6 +66,7 @@ function loadScript(element) {
         script.onload = () => {
             resolve(script.src);
             addLoaded(element);
+            loader.parentNode.removeChild(loader);
         };
         script.onerror = reject;
         if (document.head.lastChild != script) {
