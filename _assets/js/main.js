@@ -51,8 +51,8 @@ function addLoaded(element) {
 
 function addLoader(element) {
     var loader = document.createElement('img');
-    loader.src = '/assets/loader/puff.svg'
-    loader.className = 'd-block mx-auto';
+    loader.className = "icon icon--loader d-block mx-auto";
+    loader.src = "/assets/icons/sprite.svg#puff";
     return element.insertAdjacentElement("afterend", loader);
 }
 
