@@ -13,7 +13,9 @@ const config = {
     }
   },
   shape				: {
-		transform		: {}
+		transform		: [
+      {}
+    ]
   },
   svg: {
     xmlDeclaration: false, // strip out the XML attribute
