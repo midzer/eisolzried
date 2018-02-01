@@ -59,7 +59,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  i18n
   jekyll
   jekyll-seo-tag
 

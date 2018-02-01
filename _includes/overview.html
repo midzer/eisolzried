@@ -11,7 +11,7 @@
       </a>
     </h3>
     <p class="post-meta">
-      {{ post.date | localize: "%e. %B %Y" }}
+      {% include date.html %}
       {% if post.author %} • {{ post.author }}{% endif %}
       {% if post.meta %} • {{ post.meta }}{% endif %}
     </p>

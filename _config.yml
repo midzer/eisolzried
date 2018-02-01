@@ -31,5 +31,4 @@ keep_files:
 
 # Plugin settings
 plugins:
-  - i18n
   - jekyll-seo-tag
