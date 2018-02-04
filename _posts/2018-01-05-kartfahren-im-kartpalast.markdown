@@ -3,6 +3,7 @@ layout: post
 title:  "Kartfahren im Kartpalast"
 date:   2018-01-05
 imgfolder: /assets/images/2018/feiern/
+vidfolder: /assets/videos/2018/
 images:
   - name: gokart1.jpg
     text: Gokart 1
