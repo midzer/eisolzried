@@ -1,7 +1,7 @@
-{% if include.media == true %}
-{% assign videos = site.data.videos %}
+{% if page.videos %}
+{% assign videos = page.videos %}
 {% else %}
-{% assign videos = videos.images %}
+{% assign videos = site.data.videos %}
 {% endif %}
 
 <div class="row top-buffer">

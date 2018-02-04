@@ -1,7 +1,7 @@
-{% if include.media == true %}
-{% assign images = site.data.images %}
-{% else %}
+{% if page.images %}
 {% assign images = page.images %}
+{% else %}
+{% assign images = site.data.images %}
 {% endif %}
 
 <div class="card-columns top-buffer">
