@@ -8,8 +8,6 @@ lang: de
     {% include fire-run.html %}
     <p class="post-meta">
         {% include date.html %}
-        {% if page.author %} • {{ page.author }}{% endif %}
-        {% if page.meta %} • {{ page.meta }}{% endif %}
         {% assign lang = nil %}
         {% if page.lang == 'by' %}
           {% assign lang = page.lang | prepend: '/'%}
