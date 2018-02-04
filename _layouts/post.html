@@ -5,14 +5,14 @@ lang: de
 <article>
   <div class="page-header">
     <h1>{{ page.title }}</h1>
-    {% include fire-run.html %}
+      {% include fire-run.html %}
     <p class="post-meta">
-        {% include date.html %}
-        {% assign lang = nil %}
-        {% if page.lang == 'by' %}
-          {% assign lang = page.lang | prepend: '/'%}
-        {% endif %}
-        {% if page.tags %} • {% include icon.html icon="tag" %}<a href="{{ lang }}/{{ page.tags }}/">{{ page.tags }}</a>{% endif %}
+      {% include date.html %}
+      {% assign lang = nil %}
+      {% if page.lang == 'by' %}
+        {% assign lang = page.lang | prepend: '/'%}
+      {% endif %}
+      {% if page.tags %} • {% include icon.html icon="tag" %}<a href="{{ lang }}/{{ page.tags }}/">{{ page.tags }}</a>{% endif %}
     </p>
   </div>
   {{ content }}

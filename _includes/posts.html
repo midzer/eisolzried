@@ -6,8 +6,12 @@
   {% else %}
   <li>
   {% endif %}
-    <div class="post-meta">{% include date.html %}</div>
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.index }}">{{ post.title }}</a>
+    <div class="post-meta">
+      {% include date.html %}
+    </div>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.index }}">
+      {{ post.title }}
+    </a>
   </li>
 {% endfor %}
 </ul>
