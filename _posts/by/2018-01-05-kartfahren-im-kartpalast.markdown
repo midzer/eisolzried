@@ -20,6 +20,8 @@ images:
     text: Gokart 7
   - name: gokart8.jpg
     text: Gokart 8
+videos:
+  - name: kartfahren
 lang: by
 tags: allgemeines
 categories:
@@ -33,3 +35,5 @@ Noochdem d'Reifen guadn Grip bekomma hom, is glei mit da Qualifizierung los gang
  Nooch 16 Runden wo da Turbo zennt worn is, san am End drei Leid aufm Podest gstanna, de wos gwunna hom. Daweil hom die andern no besprocha wia ma beim nächstn Moi besser fahrn koon.
 
 {% include gal.html %}
+
+{% include vid.html %}

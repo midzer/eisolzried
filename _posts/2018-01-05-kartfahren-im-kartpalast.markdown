@@ -20,6 +20,8 @@ images:
     text: Gokart 7
   - name: gokart8.jpg
     text: Gokart 8
+videos:
+  - name: kartfahren
 lang: de
 tags: allgemeines
 ---
@@ -31,3 +33,5 @@ Nach kurzem Warmfahren der Reifen ging es sofort in das Qualifying. Die vorderen
  Nach turbolenten 16 Runden standen am Ende drei glückliche Gewinner auf dem Podest während die anderen noch die ein odere Fahrtaktik besprachen.
 
 {% include gal.html %}
+
+{% include vid.html %}
