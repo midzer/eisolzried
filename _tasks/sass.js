@@ -5,6 +5,7 @@ import gutil from 'gulp-util';
 import plumber from 'gulp-plumber';
 import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
+import purify from 'gulp-purifycss';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -54,10 +55,8 @@ gulp.task('sass:prod', () => {
       onError: browserSync.notify,
     }))
     .pipe($.autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }))
-    .pipe($.cleanCss({
-      keepBreaks: false,
-      keepSpecialComments: true,
-    }))
+    .pipe(purify(['_site/assets/js/*.js', '_site/**/*.html']))
+    .pipe($.cleanCss())
     .pipe($.rename({ extname: '.min.css' }))
     .pipe(gulp.dest('_site/assets/css'));
 });
