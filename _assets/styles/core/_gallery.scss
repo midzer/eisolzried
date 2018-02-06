@@ -1,17 +1,20 @@
-.card-columns {
+.gallery {
+  display: grid;
+  grid-gap: 0.5rem;
+
   @include media-breakpoint-only(xs) {
-    column-count: 1;
+    grid-template-columns: repeat(1, 1fr);
   }
   @include media-breakpoint-only(sm) {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
   @include media-breakpoint-only(md) {
-    column-count: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
   @include media-breakpoint-only(lg) {
-    column-count: 4;
+    grid-template-columns: repeat(4, 1fr);
   }
   @include media-breakpoint-only(xl) {
-    column-count: 5;
+    grid-template-columns: repeat(5, 1fr);
   }
 }

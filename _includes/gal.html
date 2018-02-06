@@ -4,7 +4,7 @@
 {% assign images = site.data.images %}
 {% endif %}
 
-<div class="card-columns top-buffer">
+<div class="gallery top-buffer">
     {% for image in images %}
         <div class="card border-primary">
             <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
