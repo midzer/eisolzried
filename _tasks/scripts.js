@@ -15,6 +15,8 @@ const webpackConfigDev = {
   entry: {
     main: [
       './_assets/js/polyfills.js',
+      'promise-polyfill',
+      'whatwg-fetch',
       'rqrauhvmra__tobi',
       'intersection-observer',
       './_assets/js/snackbar.js',
@@ -69,6 +71,8 @@ const webpackConfig = {
   entry: {
     main: [
       './_assets/js/polyfills.js',
+      'promise-polyfill',
+      'whatwg-fetch',
       'rqrauhvmra__tobi',
       'intersection-observer',
       './_assets/js/snackbar.js',
