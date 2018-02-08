@@ -14,6 +14,7 @@ const reload = browserSync.reload;
 const webpackConfigDev = {
   entry: {
     main: [
+      './_assets/js/polyfills.js',
       'rqrauhvmra__tobi',
       'intersection-observer',
       './_assets/js/snackbar.js',
@@ -67,6 +68,7 @@ const webpackConfigDev = {
 const webpackConfig = {
   entry: {
     main: [
+      './_assets/js/polyfills.js',
       'rqrauhvmra__tobi',
       'intersection-observer',
       './_assets/js/snackbar.js',
