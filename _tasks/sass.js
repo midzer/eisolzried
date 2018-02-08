@@ -34,7 +34,7 @@ gulp.task('sass', () => {
       precision: 10,
       onError: browserSync.notify,
     }))
-    .pipe($.autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }))
+    .pipe($.autoprefixer({ grid: true, browsers: AUTOPREFIXER_BROWSERS }))
     .pipe($.sourcemaps.write())
     .pipe($.rename({ extname: '.css' }))
     .pipe(gulp.dest('_site/assets/css'))
@@ -54,7 +54,7 @@ gulp.task('sass:prod', () => {
       precision: 10,
       onError: browserSync.notify,
     }))
-    .pipe($.autoprefixer({ browsers: AUTOPREFIXER_BROWSERS }))
+    .pipe($.autoprefixer({ grid: true, browsers: AUTOPREFIXER_BROWSERS }))
     .pipe(purify(['_site/assets/js/*.js', '_site/**/*.html']))
     .pipe($.cleanCss())
     .pipe($.rename({ extname: '.min.css' }))
