@@ -13,4 +13,4 @@ Voidbergstrass 13\\
 
 {% include icon.html icon="mail" %}info<span hidden>.nospam</span>@feuerwehr-eisolzried.de
 
-In da [OpenStreetMap](http://www.openstreetmap.org/node/670854444) samma a.
+In da [OpenStreetMap](https://www.openstreetmap.org/node/670854444) samma a.

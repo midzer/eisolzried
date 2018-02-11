@@ -13,4 +13,4 @@ Feldbergstraße 13\\
 
 {% include icon.html icon="mail" %}info<span hidden>.nospam</span>@feuerwehr-eisolzried.de
 
-Standort in der [OpenStreetMap](http://www.openstreetmap.org/node/670854444).
+Standort in der [OpenStreetMap](https://www.openstreetmap.org/node/670854444).
