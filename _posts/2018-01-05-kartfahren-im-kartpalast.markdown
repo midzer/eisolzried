@@ -31,7 +31,7 @@ Schlechtem Wetter zum Trotz ging es in das weltgrößte Indoor Elektro Kartcente
 
 Nach kurzem Warmfahren der Reifen ging es sofort in das Qualifying. Die vorderen Plätze waren heiß umkämpft und so wurde es für das eigentliche Rennen richtig spannend.
 
- Nach turbolenten 16 Runden standen am Ende drei glückliche Gewinner auf dem Podest während die anderen noch die ein odere Fahrtaktik besprachen.
+Nach turbolenten 16 Runden standen am Ende drei glückliche Gewinner auf dem Podest während der Rest noch die ein oder andere Fahrtaktik besprach.
 
 {% include gal.html %}
 
