@@ -15,7 +15,7 @@ categories:
   - by
 ---
 
-Merci nomoi für de Nominierung!
+Merci nomoi an de Feiawea Schwabmühlhausen für de Nominierung!
 
 Schauts am bestn einfach des Video o :)
 

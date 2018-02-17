@@ -13,7 +13,7 @@ lang: de
 tags: allgemeines
 ---
 
-Merci nochmal für die Nominierung!
+Merci nochmal an die Feuerwehr Schwabmühlhausen für die Nominierung!
 
 Schaut euch am besten des Video an :)
 
