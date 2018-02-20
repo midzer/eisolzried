@@ -10,14 +10,3 @@ window.findUpElement = function findUpElement(el, className) {
     }
     return null;
 }
-
-window.below4G = function below4G() {
-    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-    if (connection) {
-        const types = ['slow-2g', '2g', '3g'];
-        if (types.indexOf(connection.effectiveType) > -1) {
-            return true;
-        }
-    }
-    return false;
-}
