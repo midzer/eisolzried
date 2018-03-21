@@ -1,7 +1,7 @@
 'use strict';
 
 import gulp from 'gulp';
-import gutil from 'gulp-util';
+import log from 'fancy-log';
 import childProcess from 'child_process';
 import browserSync from 'browser-sync';
 
@@ -9,7 +9,7 @@ const reload = browserSync.reload;
 
 gulp.task('jekyll', done => {
   return childProcess.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts'], {stdio: 'inherit'})
-  .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
+  .on('error', (error) => log.error(error.message))
   .on('close', done);
 });
 

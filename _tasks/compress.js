@@ -1,7 +1,6 @@
 'use strict';
 
 import gulp from 'gulp';
-import gutil from 'gulp-util';
 import plumber from 'gulp-plumber';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';

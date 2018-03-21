@@ -1,7 +1,7 @@
 'use strict';
 
 import gulp from 'gulp';
-import gutil from 'gulp-util';
+import log from 'fancy-log';
 import swPrecache from 'sw-precache';
 import path from 'path';
 
@@ -9,7 +9,7 @@ function writeServiceWorkerFile(rootDir, handleFetch, callback) {
   const config = {
     cacheId: 'ff-eisolzried',
     handleFetch: handleFetch,
-    logger: gutil.log,
+    logger: log,
     staticFileGlobs: [
       `${rootDir}/**/*.html`,
       `${rootDir}/assets/{css,js,icons}/*`,

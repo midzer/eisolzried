@@ -1,7 +1,7 @@
 'use strict';
 
 import gulp from 'gulp';
-import gutil from 'gulp-util';
+import log from 'fancy-log';
 import plumber from 'gulp-plumber';
 import critical from 'critical';
 
@@ -16,7 +16,7 @@ gulp.task('critical', () => {
   return gulp.src('_site/index.html')
     .pipe(plumber({
       errorHandler: (err) => {
-        gutil.log(gutil.colors.red(err));
+        log.error(err);
         this.emit('end');
       },
     }))

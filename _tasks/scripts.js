@@ -1,7 +1,7 @@
 'use strict';
 
 import gulp from 'gulp';
-import gutil from 'gulp-util';
+import log from 'fancy-log';
 import plumber from 'gulp-plumber';
 import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
@@ -129,7 +129,7 @@ gulp.task('scripts', () => {
   return gulp.src('')
     .pipe(plumber({
       errorHandler: (err) => {
-        gutil.log(gutil.colors.red(err));
+        log.error(err);
         this.emit('end');
       },
     }))
@@ -141,7 +141,7 @@ gulp.task('scripts:prod', () => {
   return gulp.src('')
     .pipe(plumber({
       errorHandler: (err) => {
-        gutil.log(gutil.colors.red(err));
+        log.error(err);
         this.emit('end');
       },
     }))

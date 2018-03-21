@@ -1,7 +1,7 @@
 'use strict';
 
 import gulp from 'gulp';
-import gutil from 'gulp-util';
+import log from 'fancy-log';
 import plumber from 'gulp-plumber';
 import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
@@ -25,7 +25,7 @@ gulp.task('sass', () => {
     .pipe($.flatten())
     .pipe(plumber({
       errorHandler: (err) => {
-        gutil.log(gutil.colors.red(err));
+        log.error(err);
         this.emit('end');
       },
     }))
@@ -46,7 +46,7 @@ gulp.task('sass:prod', () => {
     .pipe($.flatten())
     .pipe(plumber({
       handleError: (err) => {
-        gutil.log(gutil.colors.red(err));
+        log.error(err);
         this.emit('end');
       },
     }))

@@ -1,7 +1,7 @@
 'use strict';
 
 import gulp from 'gulp';
-import gutil from 'gulp-util';
+import log from 'fancy-log';
 import svgSprite from 'gulp-svg-sprite';
 import plumber from 'gulp-plumber';
 
@@ -27,7 +27,7 @@ gulp.task('icons', () => {
   return gulp.src('_assets/icons/**/*.svg')
     .pipe(plumber({
       errorHandler: function (err) {
-        gutil.log(gutil.colors.red(err));
+        log.error(err);
         this.emit('end');
       }
     }))
