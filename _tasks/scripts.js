@@ -12,6 +12,7 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 const webpackConfigDev = {
+  mode: 'development',
   entry: {
     main: [
       'rqrauhvmra__tobi',
@@ -65,6 +66,7 @@ const webpackConfigDev = {
 };
 
 const webpackConfig = {
+  mode: 'production',
   entry: {
     main: [
       'rqrauhvmra__tobi',
@@ -114,15 +116,7 @@ const webpackConfig = {
         },
       }
     ],
-  },
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      name: "main",
-      minChunks: Infinity
-    }),
-    new webpack.optimize.ModuleConcatenationPlugin(),
-    new webpack.optimize.UglifyJsPlugin()
-  ]
+  }
 };
 
 gulp.task('scripts', () => {

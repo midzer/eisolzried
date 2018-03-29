@@ -27,10 +27,10 @@
     "fancy-log": "^1.3.2",
     "file-loader": "^1.1.6",
     "gulp": "^3.8.8",
-    "gulp-autoprefixer": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.0",
-    "gulp-flatten": "^0.3.1",
-    "gulp-htmlmin": "^3.0.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.0.0",
     "gulp-load-plugins": "^1.2.4",
     "gulp-plumber": "^1.1.0",
@@ -45,7 +45,7 @@
     "rqrauhvmra__tobi": "^1.1.0",
     "run-sequence": "^2.2.0",
     "sw-precache": "^5.2.0",
-    "webpack": "^3.8.1",
+    "webpack": "^4.4.1",
     "webpack-stream": "^4.0.0",
     "zopfli-webpack-plugin": "^0.1.0"
   }
