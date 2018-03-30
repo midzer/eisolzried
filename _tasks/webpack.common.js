@@ -46,6 +46,15 @@ module.exports = {
               ],
             },
           },
+        },
+        {
+          test: /bootstrap\.native/,
+          use: {
+            loader: 'bootstrap.native-loader',
+            options: {
+              ignore: ['scrollspy', 'popover', 'alert', 'affix']
+            }
+          }
         }
       ],
     }
