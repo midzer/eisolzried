@@ -2,6 +2,11 @@
   "name": "ff-eisolzried",
   "version": "0.0.1",
   "description": "homepage of eisolzried fire department",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "start": "bundle exec gulp",
+    "build": "bundle exec gulp build:prod"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/midzer/eisolzried"

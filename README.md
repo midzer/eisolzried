@@ -6,10 +6,10 @@ This website is built with [jekyll](http://jekyllrb.com) and uses [gulp](https:/
 ```
 git clone https://github.com/midzer/eisolzried.git // clone me
 cd eisolzried
-(sudo) gem install jekyll bundler // install global gems
+(sudo) gem install bundler // install global gem
 bundle // install ruby dependencies
 npm install // install node dependencies, you can use yarn as well
-gulp // starts development build
+npm start // starts development build
 ```
 
-Now your default browser should open website at http://localhost:4000. Use `gulp build:prod` for production build.
+Now your default browser should open website at http://localhost:4000. For production build use `npm run build`.
