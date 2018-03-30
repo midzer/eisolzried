@@ -11,113 +11,8 @@ import webpackStream from 'webpack-stream';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-const webpackConfigDev = {
-  mode: 'development',
-  entry: {
-    main: [
-      'rqrauhvmra__tobi',
-      'intersection-observer',
-      './_assets/js/snackbar.js',
-      './_assets/js/helper.js',
-      './_assets/js/main.js',
-      './_assets/js/service-worker-registration.js'
-    ],
-    calendar: [
-      'ical.js',
-      './_assets/js/drcal.js',
-      './_assets/js/calendar.js'
-    ],
-    posts: [
-      './_assets/js/posts.js'
-    ],
-    chatbox: [
-      './_assets/js/chatbox.js'
-    ],
-    socialbox: [
-      './_assets/js/socialbox.js'
-    ],
-    statistics: [
-      'chartist',
-      './_assets/js/statistics.js'
-    ]
-  },
-  output: {
-    filename: '[name].js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              ['env', {
-                modules: false,
-                useBuiltIns: true
-              }],
-            ],
-          },
-        },
-      }
-    ],
-  }
-};
-
-const webpackConfig = {
-  mode: 'production',
-  entry: {
-    main: [
-      'rqrauhvmra__tobi',
-      'intersection-observer',
-      './_assets/js/snackbar.js',
-      './_assets/js/helper.js',
-      './_assets/js/main.js',
-      './_assets/js/service-worker-registration.js'
-    ],
-    calendar: [
-      'ical.js',
-      './_assets/js/drcal.js',
-      './_assets/js/calendar.js'
-    ],
-    posts: [
-      './_assets/js/posts.js'
-    ],
-    chatbox: [
-      './_assets/js/chatbox.js'
-    ],
-    socialbox: [
-      './_assets/js/socialbox.js'
-    ],
-    statistics: [
-      'chartist',
-      './_assets/js/statistics.js'
-    ]
-  },
-  output: {
-    filename: '[name].js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              ['env', {
-                modules: false,
-                useBuiltIns: true
-              }],
-            ],
-          },
-        },
-      }
-    ],
-  }
-};
+const devConfig = require('./webpack.dev.js');
+const prodConfig = require('./webpack.prod.js');
 
 gulp.task('scripts', () => {
   return gulp.src('')
@@ -127,7 +22,7 @@ gulp.task('scripts', () => {
         this.emit('end');
       },
     }))
-    .pipe(webpackStream(webpackConfigDev, webpack))
+    .pipe(webpackStream(devConfig, webpack))
     .pipe(gulp.dest('_site/assets/js'));
 });
 
@@ -139,6 +34,6 @@ gulp.task('scripts:prod', () => {
         this.emit('end');
       },
     }))
-    .pipe(webpackStream(webpackConfig, webpack))
+    .pipe(webpackStream(prodConfig, webpack))
     .pipe(gulp.dest('_site/assets/js'));
 });
