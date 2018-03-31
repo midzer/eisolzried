@@ -1,0 +1,11 @@
+<div class="card-columns">
+    {% for image in site.data.commandants %}
+    <div class="card">
+        <img class="lazy card-img-top" src="{% include trans.html %}" data-src="{{ page.imgfolder }}commandants/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ image.text }}</h5>
+            <p class="card-text">{{ image.year }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

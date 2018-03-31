@@ -14,6 +14,9 @@ de:
       - title: Chronik
         url: /chronik/
         icon: book
+      - title: Archiv
+        url: /archiv/
+        icon: archive
       - title: Satzung
         url: /satzung/
         icon: file-text
@@ -48,6 +51,9 @@ by:
       - title: Oids
         url: /by/chronik/
         icon: book
+      - title: Archiv
+        url: /by/archiv/
+        icon: archive
       - title: Satzung
         url: /by/satzung/
         icon: file-text
