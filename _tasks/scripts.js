@@ -4,11 +4,9 @@ import gulp from 'gulp';
 import log from 'fancy-log';
 import plumber from 'gulp-plumber';
 import browserSync from 'browser-sync';
-import gulpLoadPlugins from 'gulp-load-plugins';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
 
-const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 const devConfig = require('./webpack.dev.js');

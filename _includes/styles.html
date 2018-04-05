@@ -1,11 +1,5 @@
-{% if jekyll.environment == "production" %}
-  {% assign ext = '.min.css' %}
-{% else %}
-  {% assign ext = '.css' %}
-{% endif %}
-
-<link rel="stylesheet" href="{{ '/assets/css/main' | append: ext | prepend: site.baseurl }}">
-<link rel="prefetch" id="theme-link" href="{{ '/assets/css/dark-theme' | append: ext | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+<link rel="prefetch" id="theme-link" href="{{ '/assets/css/dark-theme.css' | prepend: site.baseurl }}">
 <script>
 if (localStorage.getItem('theme') == 'dark') {
   document.getElementById('theme-link').rel = 'stylesheet';
