@@ -8,7 +8,6 @@ import critical from 'critical';
 const config = {
   inline: true,
   base: '_site/',
-  css: ['_site/assets/css/main.min.css'],
   minify: true
 };
 
