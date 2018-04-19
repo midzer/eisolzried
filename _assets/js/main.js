@@ -216,7 +216,7 @@ function requestTick() {
     if ('requestIdleCallback' in window) {
         if (!ticking) {
             ticking = true;
-            requestIdleCallback(update, { timeout: 50 });
+            requestIdleCallback(update, { timeout: 100 });
         }
     }
     else {
