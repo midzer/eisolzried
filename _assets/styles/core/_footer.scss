@@ -22,5 +22,6 @@
   background-color: $primary;
   transform: scale(0);
   transform-origin: left;
+  transition: transform .1s linear;
   will-change: transform;
 }
