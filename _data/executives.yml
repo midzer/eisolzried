@@ -1,18 +1,24 @@
-- name: BachAnton.jpg
-  text: Anton Bach
-  year: 19xx-19xx
-- name: BrummerPeter.jpg
-  text: Peter Brummer
-  year: 19xx-19xx
-- name: FeirerRupert.jpg
-  text: Rupert Feirer
-  year: 19xx-20xx
-- name: HaasThomas.jpg
-  text: Thomas Haas
-  year: 19xx-19xx
 - name: HeiglMatthias.jpg
   text: Matthias Heigl
-  year: 19xx-20xx
+  year: 1900-1915
+- name: HaasThomas.jpg
+  text: Thomas Haas
+  year: 1915-1920
+- name: BachAnton.jpg
+  text: Anton Bach
+  year: 1920-1930
 - name: SchmidKarl.jpg
   text: Karl Schmid
-  year: 19xx-19xx
+  year: 1930-1934
+- name: BrummerPeter.jpg
+  text: Peter Brummer
+  year: unbekannt
+- name: FeirerRupert.jpg
+  text: Rupert Feirer
+  year: 1980-2000
+- name: StraucherHans.jpg
+  text: Hans Straucher
+  year: 2000-2006
+- name: HoermannThomas.jpg
+  text: Thomas Hörmann
+  year: 2006-2015
