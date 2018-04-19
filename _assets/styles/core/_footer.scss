@@ -18,9 +18,9 @@
 }
 
 .progressbar {
-  width: 0%;
   height: 100%;
   background-color: $primary;
-  transition: width .3s linear;
-  will-change: width;
+  transform: scale(0);
+  transform-origin: left;
+  will-change: transform;
 }

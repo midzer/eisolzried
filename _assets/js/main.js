@@ -225,9 +225,9 @@ function requestTick() {
 }
 
 function update() {
-    let percent = 100 * window.pageYOffset / (document.body.clientHeight - window.innerHeight);
-    progressBar.style.width = percent + '%';
-    progressBar.setAttribute("aria-valuenow", percent);
+    let value = window.pageYOffset / (document.body.clientHeight - window.innerHeight);
+    progressBar.style.transform = 'scaleX(' + value + ')';
+    progressBar.setAttribute("aria-valuenow", value * 100);
     ticking = false;
 }
 
