@@ -231,7 +231,7 @@ function update() {
     ticking = false;
 }
 
-window.addEventListener('scroll', requestTick, false);
+window.addEventListener('scroll', requestTick, { passive: true });
 
 // Modal
 import bsn from 'bootstrap.native';
