@@ -6,9 +6,7 @@ gulp.task('copy', () => {
   return gulp.src([
     '_assets/audio/**',
     '_assets/data/**',
-    '_assets/videos/**',
-    '_assets/favicons/**',
-    '_assets/loader/**'
+    '_assets/videos/**'
   ], {
     base: '_assets',
   })
