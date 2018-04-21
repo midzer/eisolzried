@@ -3,27 +3,6 @@
   grid-gap: 0.5rem;
 
   @include media-breakpoint-only(xs) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  @include media-breakpoint-only(sm) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include media-breakpoint-only(md) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @include media-breakpoint-only(lg) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @include media-breakpoint-only(xl) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-.gallery-small {
-  display: grid;
-  grid-gap: 0.5rem;
-
-  @include media-breakpoint-only(xs) {
     grid-template-columns: repeat(2, 1fr);
   }
   @include media-breakpoint-only(sm) {

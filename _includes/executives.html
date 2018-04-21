@@ -1,4 +1,4 @@
-<div class="gallery-small">
+<div class="gallery">
     {% for image in site.data.executives %}
     <div class="card">
         <img class="lazy card-img-top" src="{% include trans.html %}" data-src="{{ page.imgfolder }}executives/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
