@@ -1,7 +1,7 @@
 {% if page.images %}
 {% assign images = page.images %}
-{% else %}
-{% assign images = site.data.images %}
+{% elsif include.src %}
+{% assign images = include.src %}
 {% endif %}
 
 <div class="gallery top-buffer">
