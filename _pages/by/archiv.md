@@ -7,10 +7,10 @@ lang: by
 ---
 
 ## Kommandantn
-{% include leader.html src=site.data.archive.commandants %}
+{% include leader.html type="commandants" src=site.data.archive.commandants %}
 
 ## Vorständ
-{% include leader.html src=site.data.archive.executives %}
+{% include leader.html type="executives" src=site.data.archive.executives %}
 
 ## An Haufa
 {% include gal.html src=site.data.archive.misc %}

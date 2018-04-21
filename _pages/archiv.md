@@ -7,10 +7,10 @@ lang: de
 ---
 
 ## Kommandanten
-{% include leader.html src=site.data.archive.commandants %}
+{% include leader.html type="commandants" src=site.data.archive.commandants %}
 
 ## Vorstände
-{% include leader.html src=site.data.archive.executives %}
+{% include leader.html type="executives" src=site.data.archive.executives %}
 
 ## Verschiedenes
 {% include gal.html src=site.data.archive.misc %}
