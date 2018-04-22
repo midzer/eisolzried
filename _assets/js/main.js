@@ -107,8 +107,7 @@ var observer = new IntersectionObserver(changes => {
             load(change.target);
         }
     });
-  },
-  { rootMargin: "150px 0px" }
+  }
 );
 
 query(".lazy").forEach(function(item) {
