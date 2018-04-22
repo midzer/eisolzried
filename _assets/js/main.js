@@ -67,6 +67,7 @@ function loadScript(element) {
 }
 
 function load(element) {
+    element.style.willChange = 'opacity';
     if (element.nodeName == 'VIDEO') {
         // <video> element
         element.onloadstart = () => {
