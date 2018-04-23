@@ -22,9 +22,9 @@ module.exports = {
       socialbox: [
         './_assets/js/socialbox.js'
       ],
-      statistics: [
+      charts: [
         'chartist',
-        './_assets/js/statistics.js'
+        './_assets/js/charts.js'
       ]
     },
     output: {
