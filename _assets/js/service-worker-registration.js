@@ -49,7 +49,7 @@ if ('serviceWorker' in navigator) {
               break;
 
             case 'redundant':
-              console.error('The installing service worker became redundant.');
+              console.log('The installing service worker became redundant.');
               break;
           }
         };
