@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "In der Praxis lernt man das Handwerk"
+date:   2018-04-14
+imgfolder: /assets/images/2018/uebungen/
+images:
+  - name: truppmann01.jpg
+    text: Truppmann 1
+  - name: truppmann02.jpg
+    text: Truppmann 2
+  - name: truppmann03.jpg
+    text: Truppmann 3
+  - name: truppmann04.jpg
+    text: Truppmann 4
+  - name: truppmann05.jpg
+    text: Truppmann 5
+  - name: truppmann06.jpg
+    text: Truppmann 6
+  - name: truppmann07.jpg
+    text: Truppmann 7
+  - name: truppmann08.jpg
+    text: Truppmann 8
+  - name: truppmann09.jpg
+    text: Truppmann 9
+  - name: truppmann10.jpg
+    text: Truppmann 10
+lang: de
+tags: uebungen
+---
+
+Für den Praxisteil der Truppmannausbildung trafen sich dieses Jahr 26 Anwärter aller Feuerwehren der Gemeinde, um in Bergkirchen gemeinsam zu üben. Von der Feuerwehr Eisolzried nahmen sechs Leute teil und drei Ausbilder unterstützen den Ablauf.
+
+Bei angenehmen Temperaturen begann vormittags der erste Teil der modularen Ausbildung, welche sich insgesamt über ein halbes Jahr in regelmäßigen Abständen erstreckt. Beim Kuppeln der Saugschläuche lernten die Neulinge einige Kniffe beim Umgang mit dem Gerät.
+
+Gestärkt vom gemeinsamen Mittagessen ging das Programm in den zweiten Teil über: der Wasserentnahme aus einem Unterflurhydranten. Eine kurze Ansprache und Fazit am Ende der Übung rundete den Tag ab.
+
+{% include gal.html %}
