@@ -28,7 +28,7 @@ lang: de
 tags: uebungen
 ---
 
-Für den Praxisteil der Truppmannausbildung trafen sich dieses Jahr 26 Anwärter aller Feuerwehren der Gemeinde, um in Bergkirchen gemeinsam zu üben. Von der Feuerwehr Eisolzried nahmen sechs Leute teil und drei Ausbilder unterstützen den Ablauf.
+Für den Praxisteil der Truppmannausbildung trafen sich dieses Jahr 26 Anwärter aller Feuerwehren der Gemeinde am Feuerwehrhaus in Feldgeding, um gemeinsam zu üben. Von der Feuerwehr Eisolzried nahmen sechs Leute teil und drei Ausbilder unterstützen den Ablauf.
 
 Bei angenehmen Temperaturen begann vormittags der erste Teil der modularen Ausbildung, welche sich insgesamt über ein halbes Jahr in regelmäßigen Abständen erstreckt. Beim Kuppeln der Saugschläuche lernten die Neulinge einige Kniffe beim Umgang mit dem Gerät.
 

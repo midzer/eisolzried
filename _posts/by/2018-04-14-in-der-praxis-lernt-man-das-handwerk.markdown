@@ -30,7 +30,7 @@ categories:
   - by
 ---
 
-Fürn Praxisteil der Truppmannausbildung hom si heia 26 Anwärter droffa, um in Bergkircha gemeinsam zum übn. Vo da Feiawea Eilzria warns sechse und drei Oide de wos ghoifa hom.
+Fürn Praxisteil der Truppmannausbildung hom si heia 26 Anwärter am Feiaweahaisl in Foigading droffa, um gemeinsam zum übn. Vo da Feiawea Eilzria warns sechse und drei Oide de wos ghoifa hom.
 
 Bei schneena Weda is vormittogs losganga mid am erstn Teil vo dera "modularen" Ausbildung, de wos über a hoibads Joor regelmäßig stattfindt. De Neia hom beim Saugschlachkupp'en vo de Oidn no wos lerna kenna, wias gäd.
 
