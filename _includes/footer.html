@@ -13,9 +13,17 @@
       {% include icon.html icon="cc" %}
       BY-NC
     </a>
-    <a class="footer-item" href="/impressum/">
+    {% assign lang = nil %}
+    {% if page.lang == 'by' %}
+      {% assign lang = page.lang | prepend: '/'%}
+    {% endif %}
+    <a class="footer-item" href="{{ lang }}/impressum/">
       {% include icon.html icon="impressum" %}
       Impressum
+    </a>
+    <a class="footer-item" href="{{ lang }}/datenschutz/">
+      {% include icon.html icon="shield" %}
+      Datenschutz
     </a>
     <div class="footer-item">
       {% if page.lang == 'by' %}
