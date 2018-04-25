@@ -73,7 +73,7 @@ Feldbergstraße 13
 
 Deutschland
 
-Tel.: 08131 356 52 18
+Tel.: 08131 332 76 54
 
 E-Mail: info@feuerwehr-eisolzried.de
 
