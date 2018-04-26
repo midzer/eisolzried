@@ -1,7 +1,6 @@
-<footer class="site-footer">
-
-  <div class="text-center">
-    <a class="footer-item" href="{{ site.repo }}" target="_blank" rel="noopener">
+<footer class="site-footer text-center">
+  <span class="footer-item">
+    <a href="{{ site.repo }}" target="_blank" rel="noopener">
       {% include icon.html icon="github" %}
       {% if page.lang == 'by' %}
       Soß
@@ -9,31 +8,37 @@
       Quelltext
       {% endif %}
     </a>
-    <a class="footer-item" href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" target="_blank" rel="nofollow noopener">
+  </span>
+  <span class="footer-item">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" target="_blank" rel="nofollow noopener">
       {% include icon.html icon="cc" %}
       BY-NC
     </a>
+  </span>
     {% assign lang = nil %}
     {% if page.lang == 'by' %}
       {% assign lang = page.lang | prepend: '/'%}
     {% endif %}
-    <a class="footer-item" href="{{ lang }}/impressum/">
+  <span class="footer-item">
+    <a href="{{ lang }}/impressum/">
       {% include icon.html icon="impressum" %}
       Impressum
     </a>
-    <a class="footer-item" href="{{ lang }}/datenschutz/">
+  </span>
+  <span class="footer-item">
+    <a href="{{ lang }}/datenschutz/">
       {% include icon.html icon="shield" %}
       Datenschutz
     </a>
-    <div class="footer-item">
-      {% if page.lang == 'by' %}
-      Mid {% include icon.html icon="heart" %} baud vo 
-      {% else %}
-      Mit {% include icon.html icon="heart" %} gebaut von 
-      {% endif %}
-      <a href="https://rohner.io/" target="_blank" rel="noopener">Rohner Solutions</a>
-    </div>
-  </div>
+  </span>
+  <span class="footer-item d-block">
+    {% if page.lang == 'by' %}
+    Mid {% include icon.html icon="heart" %} baud vo 
+    {% else %}
+    Mit {% include icon.html icon="heart" %} gebaut von 
+    {% endif %}
+    <a href="https://rohner.io/" target="_blank" rel="noopener">Rohner Solutions</a>
+  </span>
   <div class="bottombar">
     <div class="progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
