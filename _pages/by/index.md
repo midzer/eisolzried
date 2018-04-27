@@ -14,7 +14,7 @@ js:
     <div class="card">
 {% include carousel.html %}
 <div class="card-body" markdown="1">
-<h2 class="card-title">{% include icon.html icon="info" %}Intro</h2>
+<h2 class="card-title">{% include icon.html icon="info" %} Intro</h2>
 Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
 {:.card-text}
 
@@ -29,7 +29,8 @@ Gnua vazoid, vui Spaß beim Umschaun :)
   <div class="col-md-6 col-lg-4 d-flex">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="activity" %}Wos neis gibt</h2>
+        <h2 class="card-title">{% include icon.html icon="activity" %} Wos neis gibt
+        </h2>
 {% include posts.html %}
       </div>
     </div>
@@ -46,7 +47,8 @@ Gnua vazoid, vui Spaß beim Umschaun :)
   <div class="col-lg-5">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="calendar" %}Wos zum doa is</h2>
+        <h2 class="card-title">{% include icon.html icon="calendar" %} Wos zum doa is
+        </h2>
 {% include calendar.html %}
       </div>
     </div>
@@ -54,7 +56,8 @@ Gnua vazoid, vui Spaß beim Umschaun :)
   <div class="col-lg-7 d-flex">
     <div class="card">          
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="message-circle" %}Chat</h2>
+        <h2 class="card-title">{% include icon.html icon="message-circle" %} Chat
+        </h2>
 {% include chat.html %}
       </div>
     </div>

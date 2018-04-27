@@ -49,12 +49,12 @@
           {% endfor %}
           <li class="nav-item dropdown {{ active }}">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {% include icon.html icon=link.icon %}{{ link.title }}
+              {% include icon.html icon=link.icon %} {{ link.title }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               {% for sublink in link.submenu %}
               <a class="dropdown-item" href="{{ sublink.url }}">
-                {% include icon.html icon=sublink.icon %}{{ sublink.title }}
+                {% include icon.html icon=sublink.icon %} {{ sublink.title }}
               </a>
               {% endfor %}
           </li>
@@ -65,7 +65,7 @@
           <li class="nav-item">
           {% endif %}
             <a class="nav-link" href="{{ link.url }}">
-              {% include icon.html icon=link.icon %}{{ link.title }}
+              {% include icon.html icon=link.icon %} {{ link.title }}
             </a>
           </li>
         {% endif %}

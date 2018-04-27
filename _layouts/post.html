@@ -12,7 +12,7 @@ lang: de
       {% if page.lang == 'by' %}
         {% assign lang = page.lang | prepend: '/'%}
       {% endif %}
-      {% if page.tags %} • {% include icon.html icon="tag" %}<a href="{{ lang }}/{{ page.tags }}/">{{ page.tags }}</a>{% endif %}
+      {% if page.tags %} • {% include icon.html icon="tag" %} <a href="{{ lang }}/{{ page.tags }}/">{{ page.tags }}</a>{% endif %}
     </p>
   </div>
   {{ content }}
