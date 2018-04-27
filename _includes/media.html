@@ -1,11 +1,11 @@
 {% if page.lang == 'by' %}
 {% assign pictures = 'Buidl' %}
 {% assign videos = 'Fuim' %}
-{% assign animations = 'Animierds' %}
+{% assign animations = 'Animationa' %}
 {% else %}
 {% assign pictures = 'Bilder' %}
 {% assign videos = 'Videos' %}
-{% assign animations = 'Animiertes' %}
+{% assign animations = 'Animationen' %}
 {% endif %}
 
 <ul class="nav nav-tabs" role="tablist">
@@ -16,7 +16,7 @@
     <a class="nav-link" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-expanded="true">{% include icon.html icon="video" %}{{ videos }}</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#animiertes" role="tab" aria-controls="animiertes" aria-expanded="true">{% include icon.html icon="repeat" %}{{ animations }}</a>
+    <a class="nav-link" data-toggle="tab" href="#animationen" role="tab" aria-controls="animationen" aria-expanded="true">{% include icon.html icon="repeat" %}{{ animations }}</a>
   </li>
 </ul>
   
@@ -27,7 +27,7 @@
   <div role="tabpanel" id="videos" class="tab-pane" aria-labelledby="videos-tab">
 {% include vid.html src=site.data.media.videos %}
   </div>
-  <div role="tabpanel" id="animiertes" class="tab-pane" aria-labelledby="animiertes-tab" markdown="1">
+  <div role="tabpanel" id="animationen" class="tab-pane" aria-labelledby="animationen-tab" markdown="1">
 {% include ani.html src=site.data.media.animations %}
   </div>
 </div>
