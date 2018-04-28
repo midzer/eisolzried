@@ -1019,9 +1019,9 @@ bootstrap.native-loader@^1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/bootstrap.native-loader/-/bootstrap.native-loader-1.0.7.tgz#9259950c6641a928536aca5d844637580d952a38"
 
-bootstrap.native@^2.0.21:
-  version "2.0.22"
-  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-2.0.22.tgz#50751a09ccc81c8c0853f3f4b81f49c8e942fdf4"
+bootstrap.native@thednp/bootstrap.native:
+  version "2.0.23"
+  resolved "https://codeload.github.com/thednp/bootstrap.native/tar.gz/4f1f61be60445bf587834a5505baeeeb10926fd0"
 
 boxen@^0.5.1:
   version "0.5.1"
