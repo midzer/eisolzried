@@ -8,6 +8,9 @@ module.exports = {
         './_assets/js/main.js',
         './_assets/js/service-worker-registration.js'
       ],
+      lazy: [
+        './_assets/js/lazy.js'
+      ],
       calendar: [
         'ical.js',
         './_assets/js/drcal.js',
