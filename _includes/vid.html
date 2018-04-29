@@ -7,7 +7,11 @@
 <div class="video-gallery top-buffer">
   {% for video in videos %}
   <div class="embed-responsive embed-responsive-16by9">
-    {% include video.html name=video.name %}
+    {% if include.type == 'animation' %}
+      {% include animation.html name=video.name %}
+    {% else %}
+      {% include video.html name=video.name %}
+    {% endif %}
   </div>
   {% endfor %}
 </div>
