@@ -28,13 +28,6 @@ document.getElementById('theme-switch').onclick = () => {
     }
 };
 
-if (localStorage.getItem('theme') == 'dark') {
-    setTheme('dark');
-}
-else {
-    setTheme('light');
-}
-
 // Language switch
 var path = window.location.pathname;
 var langBtn = document.getElementById('language-btn');
