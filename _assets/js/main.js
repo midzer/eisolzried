@@ -1,6 +1,11 @@
 // Lazy components
-if (document.getElementsByClassName('lazy')) {
+if (document.getElementsByClassName('lazy').length) {
     loadScript('/assets/js/lazy.js');
+}
+
+// Lightbox
+if (document.getElementsByClassName('lightbox').length) {
+    loadScript('/assets/js/lightbox.js');
 }
 
 // Theme switch
@@ -105,16 +110,6 @@ field.addEventListener('keypress', event => {
         event.preventDefault();
     }
 });
-
-// Lightbox
-if (query('lightbox').length) {
-    require('rqrauhvmra__tobi')({
-        close: false,
-        counter: false,
-        zoom: false,
-        docClose: true
-    });
-}
 
 // Snackbar
 window.snackbar = new Snackbar(query('snackbar')[0]);

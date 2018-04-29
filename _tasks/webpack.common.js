@@ -1,7 +1,6 @@
 module.exports = {
     entry: {
       main: [
-        'rqrauhvmra__tobi',
         'intersection-observer',
         './_assets/js/snackbar.js',
         './_assets/js/helper.js',
@@ -10,6 +9,10 @@ module.exports = {
       ],
       lazy: [
         './_assets/js/lazy.js'
+      ],
+      lightbox: [
+        'rqrauhvmra__tobi',
+        './_assets/js/lightbox.js'
       ],
       calendar: [
         'ical.js',
