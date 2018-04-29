@@ -30,16 +30,13 @@ document.getElementById('theme-switch').onclick = () => {
 
 // Language switch
 var path = window.location.pathname;
-var langBtn = document.getElementById('language-btn');
-if (path.indexOf("/by/") === -1) {
-    langBtn.onclick = () => {
+document.getElementById('language-btn').onclick = () => {
+    if (path.indexOf("/by/") === -1) {
         window.location = '/by'.concat(path);
-    };
-}
-else {
-    langBtn.onclick = () => {
+    }
+    else {
         window.location = path.replace('/by','');
-    };
+    }
 }
 
 // Audio Player
