@@ -1,5 +1,5 @@
 // Chat
-const chatbox = query('.chatbox')[0];
+const chatbox = query('chatbox')[0];
 function addMessage(msg) {
     let content = document.createElement('li');
     content.textContent = msg;

@@ -97,8 +97,8 @@ function displayResults() {
     }
 }
 
-const field = document.querySelector('#search-input');
-const resultsList = document.querySelector('#results-container');
+const field = document.getElementById('search-input');
+const resultsList = document.getElementById('results-container');
 field.addEventListener('keyup', displayResults);
 field.addEventListener('keypress', event => {
     if (event.keyCode == 13) {
@@ -107,7 +107,7 @@ field.addEventListener('keypress', event => {
 });
 
 // Lightbox
-if (query('.lightbox').length) {
+if (query('lightbox').length) {
     require('rqrauhvmra__tobi')({
         close: false,
         counter: false,
@@ -117,10 +117,10 @@ if (query('.lightbox').length) {
 }
 
 // Snackbar
-window.snackbar = new Snackbar(query('.snackbar')[0]);
+window.snackbar = new Snackbar(query('snackbar')[0]);
 
 // Progressbar
-var progressBar = query('.progressbar')[0];
+var progressBar = query('progressbar')[0];
 var ticking = false;
 
 function requestTick() {

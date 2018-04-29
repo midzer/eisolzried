@@ -151,7 +151,7 @@ function buildCal(data) {
             }
         }
     });
-    const buttons = cal.querySelectorAll('button');
+    const buttons = cal.getElementsByTagName('button');
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].classList.add('btn');
     }

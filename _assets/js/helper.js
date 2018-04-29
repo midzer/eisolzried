@@ -14,7 +14,7 @@ window.loadScript = function loadScript(src) {
 }
 
 window.query = function query(selector) {
-    return Array.from(document.querySelectorAll(selector));
+    return Array.from(document.getElementsByClassName(selector));
 }
 
 window.findUpElement = function findUpElement(el, className) {

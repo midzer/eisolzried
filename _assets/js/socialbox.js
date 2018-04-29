@@ -1,6 +1,6 @@
 // Rate
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de:63244');
-const socialboxes = query(".socialbox");
+const socialboxes = query("socialbox");
 
 function composeMsg(node, score) {
     const msg = {
@@ -33,13 +33,13 @@ ws.onmessage = function(msg) {
     item.querySelector("span").textContent = incoming.score;
 };
 
-query(".plus-btn").forEach(function(item) {
+query("plus-btn").forEach(function(item) {
     item.onclick = function() {
         updateScore(item, Number(item.parentNode.lastElementChild.textContent) + 1);
     }
 });
 
-query(".minus-btn").forEach(function(item) {
+query("minus-btn").forEach(function(item) {
     item.onclick = function() {
         updateScore(item, Number(item.parentNode.lastElementChild.textContent) - 1);
     }
@@ -52,7 +52,7 @@ if (navigator.share) {
     if (canonicalElement !== null) {
         url = canonicalElement.href;
     }
-    query(".share-btn").forEach(function(item) {
+    query("share-btn").forEach(function(item) {
         item.onclick = function() {
             navigator.share({
                 title: document.title,
