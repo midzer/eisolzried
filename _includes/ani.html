@@ -4,12 +4,10 @@
 {% assign animations = include.src %}
 {% endif %}
 
-<div class="row top-buffer">
+<div class="video-gallery top-buffer">
   {% for animation in animations %}
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        {% include animation.html name=animation.name %}
-      </div>
-    </div>
+  <div class="embed-responsive embed-responsive-16by9">
+    {% include animation.html name=animation.name %}
+  </div>
   {% endfor %}
 </div>
