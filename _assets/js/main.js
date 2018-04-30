@@ -146,3 +146,7 @@ window.modal = new bsn.Modal(document.getElementById('event-modal'));
 // Snow
 //const Snowflakes = require('magic-snowflakes');
 //Snowflakes();
+
+// Calculate render time
+var end = new Date();
+document.getElementById('rendertime').innerHTML = end.getTime() - start.getTime() + 'ms';
