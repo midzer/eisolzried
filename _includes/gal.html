@@ -4,7 +4,11 @@
 {% assign images = include.src %}
 {% endif %}
 
+{% if include.type == "normal" %}
+<div class="grid grid--normal top-buffer">
+{% else %}
 <div class="grid grid--small top-buffer">
+{% endif %}
     {% for image in images %}
         <div class="card border-primary">
             <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">

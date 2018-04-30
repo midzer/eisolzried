@@ -4,6 +4,21 @@ title: Mia
 permalink: /by/team/
 imgfolder: /assets/images/team/
 vidfolder: /assets/videos/team/
+images:
+  - name: mlf1.jpg
+    text: MLF 1
+  - name: mlf2.jpg
+    text: MLF 2
+  - name: mlf3.jpg
+    text: MLF 3
+  - name: mlf4.jpg
+    text: MLF 4
+  - name: mlf5.jpg
+    text: MLF 5
+  - name: tsf.jpg
+    text: TSF
+videos:
+  - name: abfahrt-lentner
 lang: by
 ---
 
@@ -74,20 +89,6 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
 </table>
 </div>
 
-### MLF
+{% include gal.html type="normal" %}
 
-{% include video.html name="abfahrt-lentner" %}
-
-{% include image.html name="mlf1.jpg" %}
-
-{% include image.html name="mlf2.jpg" %}
-
-{% include image.html name="mlf3.jpg" %}
-
-{% include image.html name="mlf4.jpg" %}
-
-{% include image.html name="mlf5.jpg" %}
-
-### TSF
-
-{% include image.html name="tsf.jpg" %}
+{% include vid.html %}
