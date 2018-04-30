@@ -25,7 +25,7 @@ function load(element) {
             addLoaded(element)
         };
         const sources = element.getElementsByTagName('source');
-        Array.from(sources).forEach(source => {
+        [].slice.call(sources).forEach(source => {
             replaceSrc(source);
         });
         element.load();
