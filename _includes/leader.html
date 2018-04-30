@@ -1,4 +1,4 @@
-<div class="gallery bottom-buffer">
+<div class="grid grid--small bottom-buffer">
     {% for image in include.src %}
     <div class="card">
         <img class="lazy card-img-top" src="{% include trans.html %}" data-src="{{ page.imgfolder }}{{ include.type }}/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
