@@ -15,7 +15,7 @@ js:
 {% include carousel.html %}
 <div class="card-body" markdown="1">
 <h2 class="card-title">{% include icon.html icon="info" %} Intro</h2>
-Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma sauba übn und uns zamhocka, wobei ma a an Duascht ham und wo hifahrn.
+Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma oiwei wieder übn und uns zamhocka wenns wos Neis gibt, wobei ma a oan aufgrilln bei na Hoibn und wo hifahrn.
 {:.card-text}
 
 An dera Webseitn werd oiwei gwerglt; oiso schaug efta nei wennst mogst. Wennst wos wissn wuist, [riahst](/by/kontakt/) di hoid.
