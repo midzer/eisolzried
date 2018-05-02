@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "In da Praxis lernt man as Handwerk"
+title:  "In da Praxis lernt ma as Handwerk"
 date:   2018-04-14
 imgfolder: /assets/images/2018/uebungen/
 images:
