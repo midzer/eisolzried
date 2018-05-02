@@ -26,22 +26,15 @@ Gnua vazoid, vui Spaß beim Umschaun :)
 </div>
     </div>
   </div><!-- col-md-6 col-lg-5 -->
-  <div class="col-md-6 col-lg-4 d-flex">
-    <div class="card">
+  <div class="col-md-6 col-lg-7">
+    <div class="card h-100">
       <div class="card-body">
         <h2 class="card-title">{% include icon.html icon="activity" %} Wos neis gibt
         </h2>
 {% include posts.html %}
       </div>
     </div>
-  </div><!-- col-md-6 col-lg-4 -->
-  <div class="col-md-6 col-lg-3 d-flex">
-    <div class="card">
-      <div class="card-body text-center">
-{% include wappen.html %}
-      </div>
-    </div>
-  </div><!-- col-md-6 col-lg-3 -->
+  </div><!-- col-md-6 col-lg-7 -->
 </div><!-- row -->
 <div class="row top-buffer">
   <div class="col-lg-5">
@@ -63,4 +56,4 @@ Gnua vazoid, vui Spaß beim Umschaun :)
     </div>
   </div><!-- col-lg-7 -->
 </div><!-- row -->
-<img class="lazy img-fluid rounded mt-3" src="{% include trans.html %}" data-src="/assets/images/index/kirche1997.jpg" alt="Luftaufnahme der Kirche St. Nikolaus in Deutenhausen"/>
+{% include wappen.html %}

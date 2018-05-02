@@ -6,7 +6,7 @@ document.getElementById('moreposts').onclick = function() {
         this.previousElementSibling.style.height = '585px';
     }
     var els = document.querySelectorAll('li[hidden]');
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 8; i++) {
         if (els.length == i) {
             this.setAttribute('hidden', '');
             break;
