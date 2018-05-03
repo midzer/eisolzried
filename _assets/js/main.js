@@ -33,6 +33,20 @@ document.getElementById('theme-switch').onclick = () => {
     }
 };
 
+// Ambient light
+if ('AmbientLightSensor' in window) {
+    const sensor = new AmbientLightSensor();
+    sensor.onreading = () => {
+        if (sensor.illuminance < 5) {
+            setTheme('dark');
+        }
+        else {
+            setTheme('light');
+        }
+    };
+    sensor.start();
+}
+
 // Language switch
 var path = window.location.pathname;
 document.getElementById('language-btn').onclick = () => {
