@@ -8,6 +8,21 @@ if (document.getElementsByClassName('lightbox').length) {
     loadScript('/assets/js/lightbox.js');
 }
 
+// Ambient light
+var sensor = null;
+if ('AmbientLightSensor' in window) {
+    sensor = new AmbientLightSensor();
+    sensor.onreading = () => {
+        if (sensor.illuminance < 5) {
+            setTheme('dark');
+        }
+        else {
+            setTheme('light');
+        }
+    };
+    sensor.start();
+}
+
 // Theme switch
 function setTheme(theme) {
     var rel, icon;
@@ -25,6 +40,9 @@ function setTheme(theme) {
 }
 
 document.getElementById('theme-switch').onclick = () => {
+    if (sensor) {
+        sensor.stop();
+    }
     if (localStorage.getItem('theme') == 'dark') {
         setTheme('light');
     }
@@ -32,20 +50,6 @@ document.getElementById('theme-switch').onclick = () => {
         setTheme('dark');
     }
 };
-
-// Ambient light
-if ('AmbientLightSensor' in window) {
-    const sensor = new AmbientLightSensor();
-    sensor.onreading = () => {
-        if (sensor.illuminance < 3) {
-            setTheme('dark');
-        }
-        else {
-            setTheme('light');
-        }
-    };
-    sensor.start();
-}
 
 // Language switch
 var path = window.location.pathname;
