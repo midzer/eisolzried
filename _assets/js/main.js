@@ -37,7 +37,7 @@ document.getElementById('theme-switch').onclick = () => {
 if ('AmbientLightSensor' in window) {
     const sensor = new AmbientLightSensor();
     sensor.onreading = () => {
-        if (sensor.illuminance < 5) {
+        if (sensor.illuminance < 3) {
             setTheme('dark');
         }
         else {
