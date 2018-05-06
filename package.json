@@ -14,8 +14,7 @@
   "author": "@midzer",
   "license": "MIT",
   "browserslist": [
-    "> 5%",
-    "last 3 versions"
+    "> 5% in DE"
   ],
   "devDependencies": {
     "babel-core": "^6.26.0",
