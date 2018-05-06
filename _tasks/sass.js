@@ -6,15 +6,10 @@ import plumber from 'gulp-plumber';
 import browserSync from 'browser-sync';
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
-import purify from 'gulp-purifycss';
+import purgecss from 'gulp-purgecss';
 import cleancss from 'gulp-clean-css';
 
 const reload = browserSync.reload;
-const AUTOPREFIXER_BROWSERS = [
-  '> 1%',
-  'last 2 versions',
-  'Firefox ESR'
-];
 
 const sourcefiles = [
   '_assets/styles/main.scss',
@@ -43,8 +38,10 @@ gulp.task('sass:prod', () => {
       },
     }))
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({ grid: true, browsers: AUTOPREFIXER_BROWSERS }))
-    .pipe(purify(['_site/assets/js/*.js', '_site/**/*.html']))
+    .pipe(autoprefixer())
+    .pipe(purgecss({
+      content: ['_site/assets/js/*.js', '_site/**/*.html']
+    }))
     .pipe(cleancss())
     .pipe(gulp.dest('_site/assets/css'));
 });
