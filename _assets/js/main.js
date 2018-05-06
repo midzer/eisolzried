@@ -13,7 +13,7 @@ var sensor = null;
 if ('AmbientLightSensor' in window) {
     sensor = new AmbientLightSensor();
     sensor.onreading = () => {
-        if (sensor.illuminance < 5) {
+        if (sensor.illuminance == 0) {
             setTheme('dark');
         }
         else {
