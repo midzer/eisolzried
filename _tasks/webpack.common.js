@@ -31,6 +31,9 @@ module.exports = {
       charts: [
         'chartist',
         './_assets/js/charts.js'
+      ],
+      kuebelspritze: [
+        './_assets/js/kuebelspritze.js'
       ]
     },
     output: {

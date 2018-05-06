@@ -2,9 +2,6 @@ de:
   - title: Team
     url: /team/
     icon: users
-  - title: Karten
-    url: /karten/
-    icon: map
   - title: Verein
     icon: briefcase
     submenu:
@@ -20,6 +17,9 @@ de:
       - title: Satzung
         url: /satzung/
         icon: file-text
+      - title: Karten
+        url: /karten/
+        icon: map
       - title: Statistiken
         url: /statistiken/
         icon: bar-chart-2
@@ -29,6 +29,9 @@ de:
   - title: Media
     url: /media/
     icon: tv
+  - title: Spiele
+    url: /spiele/
+    icon: award
   - title: Links
     url: /links/
     icon: link
@@ -39,9 +42,6 @@ by:
   - title: Mia
     url: /by/team/
     icon: users
-  - title: Kartn
-    url: /by/karten/
-    icon: map
   - title: Varein
     icon: briefcase
     submenu:
@@ -57,6 +57,9 @@ by:
       - title: Satzung
         url: /by/satzung/
         icon: file-text
+      - title: Kartn
+        url: /by/karten/
+        icon: map
       - title: Statistikn
         url: /by/statistiken/
         icon: bar-chart-2
@@ -66,6 +69,9 @@ by:
   - title: Matrial
     url: /by/media/
     icon: tv
+  - title: Spui
+    url: /by/spiele/
+    icon: award
   - title: Links
     url: /by/links/
     icon: link
