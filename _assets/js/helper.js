@@ -25,3 +25,16 @@ window.findUpElement = function findUpElement(el, className) {
     }
     return null;
 }
+
+// Audio Player
+window.toggleAudio = function toggleAudio(player) {
+    if (player.paused) {
+        if (player.readyState == 0) {
+            player.load();
+        }
+        player.play();
+    }
+    else {
+        player.pause();
+    }
+}

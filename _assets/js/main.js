@@ -62,19 +62,6 @@ document.getElementById('language-btn').onclick = () => {
     }
 }
 
-// Audio Player
-function toggleAudio(player) {
-    if (player.paused) {
-        if (player.readyState == 0) {
-            player.load();
-        }
-        player.play();
-    }
-    else {
-        player.pause();
-    }
-}
-
 // Siren player
 document.getElementById('siren-btn').onclick = () => {
     const player = document.getElementById('siren-player');
