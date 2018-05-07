@@ -17,13 +17,12 @@ document.getElementById('moreposts').onclick = function() {
 
 // New posts badges
 let lastIndex = Number(localStorage.getItem('lastindex'));
-let badge = `<span class="badge badge-primary ml-1">Neu</span>`;
 let els = document.querySelectorAll('[data-index]');
-els.forEach(el => {
-    let index = Number(el.getAttribute('data-index'));
+for (var i = els.length - 1; i >= 0; i--) {
+    let index = Number(els[i].getAttribute('data-index'));
     if (index > lastIndex) {
-        el.innerHTML += badge;
+        els[i].innerHTML += `<span class="badge badge-primary ml-1">Neu</span>`;
         lastIndex = index;
     }
-});
+};
 localStorage.setItem('lastindex', lastIndex);
