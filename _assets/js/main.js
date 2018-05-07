@@ -167,4 +167,8 @@ window.modal = new bsn.Modal(document.getElementById('event-modal'));
 
 // Calculate render time
 var end = new Date();
-document.getElementById('rendertime').innerHTML = end.getTime() - start.getTime() + 'ms';
+var total = end.getTime() - start.getTime();
+if (navigator.connection in window) {
+    total += navigator.connection.rtt;
+}
+document.getElementById('rendertime').innerHTML = total + 'ms';
