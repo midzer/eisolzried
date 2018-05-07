@@ -36,7 +36,7 @@
           {% include icon.html icon="play" id="siren-icon" %}
         </button>
       </div>
-      {% include audio-player.html audio='siren' %}
+      {% include audio-player.html audio='siren' loop=true %}
       <ul class="navbar-nav">
         {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}
