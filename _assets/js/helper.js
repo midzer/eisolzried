@@ -17,15 +17,6 @@ window.query = function query(selector) {
     return [].slice.call(document.getElementsByClassName(selector));
 }
 
-window.findUpElement = function findUpElement(el, className) {
-    while (el.parentNode) {
-        el = el.parentNode;
-        if (el.classList.contains(className))
-            return el;
-    }
-    return null;
-}
-
 // Audio Player
 window.toggleAudio = function toggleAudio(player) {
     if (player.paused) {

@@ -1,45 +1,48 @@
-<div class="lazy socialbox" data-src="/assets/js/socialbox.js" data-index="{{ include.index }}">
-    <div class="row">
-        <div class="col-md mb-2 my-md-0">
-            {% if post.lang == 'by' %}
-            Den Beidrog
-            {% else %}
-            Diesen Beitrag
-            {% endif %}
-        </div>
-        <div class="col-md my-2 my-md-0">
-            {% include icon.html icon="star" %}
-            {% if post.lang == 'by' %}
-            bewertn
-            {% else %}
-            bewerten
-            {% endif %}
-            <button class="plus-btn btn btn-outline-primary btn-sm" type="button">
+<div class="lazy socialbox grid grid--normal font-weight-bold" data-src="/assets/js/socialbox.js" data-index="{{ include.index }}">
+    <div>
+        {% if post.lang == 'by' %}
+        Den Beidrog
+        {% else %}
+        Diesen Beitrag
+        {% endif %}
+    </div>
+    <div>
+        {% include icon.html icon="star" %}
+        {% if post.lang == 'by' %}
+        bewertn
+        {% else %}
+        bewerten
+        {% endif %}
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="plus-btn btn btn-outline-primary" type="button">
                 {% include icon.html icon="plus" %}
             </button>
-            <button class="minus-btn btn btn-outline-primary btn-sm" type="button">
+            <button class="minus-btn btn btn-outline-primary" type="button">
                 {% include icon.html icon="minus" %}
             </button>
-            <span>0</span>
-        </div>
-        <div class="col-md mt-2 my-md-0">
-            <button class="share-btn btn btn-outline-primary btn-sm" type="button">
-                {% include icon.html icon="share-2" %}
+            <button type="button" class="btn btn-primary">
+                {% include icon.html icon="chevrons-right" %} <span id="rating" class="badge badge-light">0</span>
+                <span class="sr-only">Bewertung</span>
             </button>
-            {% if post.lang == 'by' %}
-            weidagehm
-            {% else %}
-            teilen
-            {% endif %}
-            <a class="share-link" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ post.url}}" rel="nofollow noopener">
-                {% include icon.html icon="facebook" %}
-            </a>
-            <a class="share-link" href="http://twitter.com/share?text={{ post.title }}&url={{ site.url}}{{ post.url}}" rel="nofollow noopener">
-                {% include icon.html icon="twitter" %}
-            </a>
-            <a class="share-link" href="https://plus.google.com/share?url={{ site.url}}{{ page.url}}" rel="nofollow noopener">
-                {% include icon.html icon="google" %}
-            </a>
         </div>
+    </div>
+    <div>
+        <button class="share-btn btn btn-outline-primary btn-sm" type="button">
+            {% include icon.html icon="share-2" %}
+        </button>
+        {% if post.lang == 'by' %}
+        weidagehm
+        {% else %}
+        teilen
+        {% endif %}
+        <a class="mx-2" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ post.url}}" rel="nofollow noopener">
+            {% include icon.html icon="facebook" %}
+        </a>
+        <a class="mx-2" href="http://twitter.com/share?text={{ post.title }}&url={{ site.url}}{{ post.url}}" rel="nofollow noopener">
+            {% include icon.html icon="twitter" %}
+        </a>
+        <a class="mx-2" href="https://plus.google.com/share?url={{ site.url}}{{ page.url}}" rel="nofollow noopener">
+            {% include icon.html icon="google" %}
+        </a>
     </div>
 </div>
