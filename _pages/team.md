@@ -19,6 +19,7 @@ images:
     text: TSF
 videos:
   - name: abfahrt-lentner
+  - name: ankunft-lentner
 lang: de
 ---
 
