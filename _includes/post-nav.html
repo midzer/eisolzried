@@ -2,12 +2,18 @@
   <ul class="pagination justify-content-center">
     {% if page.prev_url %}
     <li class="page-item">
-      <a class="page-link" href="{{ page.prev_url }}">{% include icon.html icon="arrow-left" %} {{ page.prev_title }}</a>
+      <a class="page-link" href="{{ page.prev_url }}" aria-label="Neuerer Beitrag">
+        {% include icon.html icon="arrow-left" %} {{ page.prev_title }}
+        <span class="sr-only">Neuerer Beitrag</span>
+      </a>
     </li>
     {% endif %}
     {% if page.next_url %}
     <li class="page-item">
-      <a class="page-link" href="{{ page.next_url }}">{{ page.next_title }} {% include icon.html icon="arrow-right" %}</a>
+      <a class="page-link" href="{{ page.next_url }}" aria-label="Älterer Beitrag">
+        {{ page.next_title }} {% include icon.html icon="arrow-right" %}
+        <span class="sr-only">Älterer Beitrag</span>
+      </a>
     </li>
     {% endif %}
   </ul>
