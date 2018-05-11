@@ -152,10 +152,9 @@ window.modal = new bsn.Modal(document.getElementById('event-modal'));
 //const Snowflakes = require('magic-snowflakes');
 //Snowflakes();
 
-// Calculate render time
-var end = new Date();
-var total = end.getTime() - start.getTime();
-if (navigator.connection in window) {
-    total += navigator.connection.rtt;
+// Show render time
+if (window.PerformanceNavigationTiming) {
+    const [entry] = performance.getEntriesByType("navigation");
+    document.getElementById('rendertime').innerHTML = parseInt(entry.domInteractive) + 'ms';
+    document.getElementById('rendertext').hidden = false;
 }
-document.getElementById('rendertime').innerHTML = total + 'ms';

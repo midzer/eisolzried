@@ -38,13 +38,15 @@
     Mit {% include icon.html icon="heart" %} gebaut von 
     {% endif %}
     <a href="https://rohner.io/" target="_blank" rel="noopener">Rohner Solutions</a>
-    und in ca.
-    <samp id="rendertime">100ms</samp>
-    {% if page.lang == 'by' %}
-    grendert
-    {% else %}
-    gerendert
-    {% endif %}
+    <span id="rendertext" hidden>
+      und in
+      <samp id="rendertime"></samp>
+      {% if page.lang == 'by' %}
+      grendert
+      {% else %}
+      gerendert
+      {% endif %}
+    </span>
   </span>
   <div class="bottombar">
     <div class="progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
