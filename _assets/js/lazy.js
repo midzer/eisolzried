@@ -23,7 +23,7 @@ function load(element) {
     if (element.nodeName == 'VIDEO') {
         // <video> element
         element.onloadstart = () => {
-            addLoaded(element)
+            addLoaded(element);
         };
         const sources = Array.from(element.getElementsByTagName('source'));
         sources.forEach(source => {
