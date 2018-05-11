@@ -1,4 +1,4 @@
-window.loadScript = function loadScript(src) {
+function loadScript(src) {
     return new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.async = true;
@@ -13,12 +13,12 @@ window.loadScript = function loadScript(src) {
     });
 }
 
-window.query = function query(selector) {
-    return [].slice.call(document.getElementsByClassName(selector));
+function query(selector) {
+    return Array.from(document.getElementsByClassName(selector));
 }
 
 // Audio Player
-window.toggleAudio = function toggleAudio(player) {
+function toggleAudio(player) {
     if (player.paused) {
         if (player.readyState == 0) {
             player.load();
@@ -29,3 +29,7 @@ window.toggleAudio = function toggleAudio(player) {
         player.pause();
     }
 }
+
+const snackbar = new Snackbar(document.getElementById('snackbar'));
+
+export { loadScript, query, toggleAudio, snackbar };

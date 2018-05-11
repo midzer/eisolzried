@@ -1,6 +1,4 @@
-// Rate
-const ws = new WebSocket('wss://feuerwehr-eisolzried.de:63244');
-const socialboxes = query("socialbox");
+import { query } from './helper';
 
 function sendMessage(item, score) {
     const msg = {
@@ -21,6 +19,9 @@ function updateScore(item, modifier) {
     rating.textContent = newScore;
     sendMessage(socialbox, newScore);
 }
+
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de:63244');
+const socialboxes = query("socialbox");
 
 ws.onopen = function() {
     socialboxes.forEach(function(item) {

@@ -1,3 +1,5 @@
+import { loadScript, toggleAudio } from './helper';
+
 // Lazy components
 if (document.getElementsByClassName('lazy').length) {
     loadScript('/assets/js/lazy.js');
@@ -8,24 +10,9 @@ if (document.getElementsByClassName('lightbox').length) {
     loadScript('/assets/js/lightbox.js');
 }
 
-// Ambient light
-var sensor = null;
-if ('AmbientLightSensor' in window) {
-    sensor = new AmbientLightSensor();
-    sensor.onreading = () => {
-        if (sensor.illuminance == 0) {
-            setTheme('dark');
-        }
-        else {
-            setTheme('light');
-        }
-    };
-    sensor.start();
-}
-
 // Theme switch
 function setTheme(theme) {
-    var rel, icon;
+    let rel, icon;
     if (theme == 'dark') {
         rel = 'stylesheet';
         icon = 'sun';
@@ -37,6 +24,20 @@ function setTheme(theme) {
     document.getElementById('theme-link').rel = rel;
     document.getElementById('theme-icon').href.baseVal = '/assets/icons/sprite.svg#' + icon;
     localStorage.setItem('theme', theme);
+}
+
+let sensor = null;
+if ('AmbientLightSensor' in window) {
+    sensor = new AmbientLightSensor();
+    sensor.onreading = () => {
+        if (sensor.illuminance == 0) {
+            setTheme('dark');
+        }
+        else {
+            setTheme('light');
+        }
+    };
+    sensor.start();
 }
 
 document.getElementById('theme-switch').onclick = () => {
@@ -52,7 +53,7 @@ document.getElementById('theme-switch').onclick = () => {
 };
 
 // Language switch
-var path = window.location.pathname;
+const path = window.location.pathname;
 document.getElementById('language-btn').onclick = () => {
     if (path.indexOf("/by/") === -1) {
         window.location = '/by'.concat(path);
@@ -116,13 +117,7 @@ field.addEventListener('keypress', event => {
     }
 });
 
-// Snackbar
-window.snackbar = new Snackbar(query('snackbar')[0]);
-
 // Progressbar
-var progressBar = query('progressbar')[0];
-var ticking = false;
-
 function requestTick() {
     if ('requestIdleCallback' in window) {
         if (!ticking) {
@@ -142,11 +137,9 @@ function update() {
     ticking = false;
 }
 
+const progressBar = document.getElementById('progressbar');
+let ticking = false;
 window.addEventListener('scroll', requestTick, { passive: true });
-
-// Modal
-import bsn from 'bootstrap.native';
-window.modal = new bsn.Modal(document.getElementById('event-modal'));
 
 // Snow
 //const Snowflakes = require('magic-snowflakes');

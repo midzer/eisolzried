@@ -1,3 +1,5 @@
+import { snackbar } from './helper';
+
 /**
  * Copyright 2015 Google Inc. All rights reserved.
  *
@@ -40,7 +42,7 @@ if ('serviceWorker' in navigator) {
                 // At this point, everything has been precached.
                 // It's the perfect time to display a "Content is cached for offline use." message.
                 console.log('Content is now available offline!');
-                var data = {
+                const data = {
                   message: 'Die Seite ist jetzt auch offline verfügbar!',
                   timeout: 5000
                 };

@@ -1,4 +1,5 @@
-// Set up lazy loading
+import { loadScript, query } from './helper';
+
 function replaceSrc(element) {
     element.src = element.dataset.src;
     removeDataSrc(element);
@@ -24,8 +25,8 @@ function load(element) {
         element.onloadstart = () => {
             addLoaded(element)
         };
-        const sources = element.getElementsByTagName('source');
-        [].slice.call(sources).forEach(source => {
+        const sources = Array.from(element.getElementsByTagName('source'));
+        sources.forEach(source => {
             replaceSrc(source);
         });
         element.load();
@@ -45,7 +46,7 @@ function load(element) {
 }
 
 // Pre-load items that are within 2 multiples of the visible viewport height.
-var observer = new IntersectionObserver(changes => {
+const observer = new IntersectionObserver(changes => {
     changes.forEach(change => {
         // Edge 15 doesn't support isIntersecting, but we can infer it
         // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/

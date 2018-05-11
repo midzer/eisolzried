@@ -5,7 +5,7 @@ body {
 body,
 .modal-header,
 .modal-body,
-.chatbox,
+#chatbox,
 .card {
     background-color: #212121;
 }

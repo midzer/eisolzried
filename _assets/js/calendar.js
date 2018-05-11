@@ -1,4 +1,7 @@
-// Calendar
+import { snackbar } from './helper';
+import { Modal } from 'bootstrap.native';
+const modal = new Modal(document.getElementById('event-modal'));
+
 function isBetween(first, last, time, timezone) {
     return (first.compareDateOnlyTz(time, timezone) == -1 &&
     last.compareDateOnlyTz(time, timezone) == 1) ||
@@ -120,7 +123,7 @@ function buildCal(data) {
                 clone.appendChild(document.createTextNode(ev[i].summary));
                 event.detail.element.appendChild(clone);
                 if (event.detail.date.toDateString() == new Date().toDateString()) {
-                    let data = {
+                    const data = {
                         message: 'Heute ist was los!',
                         timeout: 5000,
                         actionHandler: function () {

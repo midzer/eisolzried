@@ -1,5 +1,3 @@
-// Chat
-const chatbox = query('chatbox')[0];
 function addMessage(msg) {
     let content = document.createElement('li');
     content.textContent = msg;
@@ -15,6 +13,7 @@ function sendMessage() {
     ws.send(msg);
 }
 
+const chatbox = document.getElementById('chatbox');
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187');
 ws.onmessage = function(msg) {
     addMessage(msg.data);
