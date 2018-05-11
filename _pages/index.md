@@ -3,10 +3,6 @@ layout: page
 title: Willkommen
 permalink: /
 lang: de
-js:
-  - posts
-  - chatbox
-  - calendar
 ---
 
 <div class="row">

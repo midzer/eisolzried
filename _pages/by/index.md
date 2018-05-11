@@ -3,10 +3,6 @@ layout: page
 title: Servus
 permalink: /by/
 lang: by
-js:
-  - posts
-  - chatbox
-  - calendar
 ---
 
 <div class="row">
