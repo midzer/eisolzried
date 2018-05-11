@@ -1,6 +1,4 @@
 import { snackbar } from './helper';
-import { Modal } from 'bootstrap.native';
-const modal = new Modal(document.getElementById('event-modal'));
 
 function isBetween(first, last, time, timezone) {
     return (first.compareDateOnlyTz(time, timezone) == -1 &&
