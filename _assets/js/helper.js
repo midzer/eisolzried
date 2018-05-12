@@ -33,6 +33,6 @@ function toggleAudio(player) {
 const snackbar = new Snackbar(document.getElementById('snackbar'));
 
 import { Modal } from 'bootstrap.native';
-window.modal = new Modal(document.getElementById('event-modal'));
+const modal = new Modal(document.getElementById('event-modal'));
 
-export { loadScript, query, toggleAudio, snackbar };
+export { loadScript, query, toggleAudio, snackbar, modal };
