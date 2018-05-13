@@ -1,4 +1,4 @@
-import { query } from './helper';
+import { query } from './helper/query';
 
 function sendMessage(item, score) {
     const msg = {

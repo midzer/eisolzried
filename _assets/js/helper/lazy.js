@@ -1,41 +1,5 @@
-export function loadScript(src) {
-    return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = src;
-        script.onload = () => {
-            resolve(script.src);
-        };
-        script.onerror = reject;
-        if (document.head.lastChild != script) {
-            document.head.appendChild(script);
-        }
-    });
-}
+import { loadScript } from './loadscript';
 
-export function query(selector) {
-    return Array.from(document.getElementsByClassName(selector));
-}
-
-// Audio Player
-export function toggleAudio(player) {
-    if (player.paused) {
-        if (player.readyState == 0) {
-            player.load();
-        }
-        player.play();
-    }
-    else {
-        player.pause();
-    }
-}
-
-export const snackbar = new Snackbar(document.getElementById('snackbar'));
-
-import { Modal } from 'bootstrap.native';
-export const modal = new Modal(document.getElementById('event-modal'));
-
-// Lazy loading
 function replaceSrc(element) {
     element.src = element.dataset.src;
     removeDataSrc(element);

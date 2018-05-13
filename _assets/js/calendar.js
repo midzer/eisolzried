@@ -1,5 +1,3 @@
-import { snackbar, modal } from './helper';
-
 function isBetween(first, last, time, timezone) {
     return (first.compareDateOnlyTz(time, timezone) == -1 &&
     last.compareDateOnlyTz(time, timezone) == 1) ||

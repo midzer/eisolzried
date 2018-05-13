@@ -1,4 +1,5 @@
-import { load, query } from './helper';
+import { load } from './helper/lazy';
+import { query } from './helper/query';
 
 // Pre-load items that are within 2 multiples of the visible viewport height.
 const observer = new IntersectionObserver(changes => {

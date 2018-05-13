@@ -1,4 +1,5 @@
-import { loadScript, toggleAudio } from './helper';
+import { loadScript } from './helper/loadscript';
+import { toggleAudio } from './helper/toggleaudio';
 
 // Lazy components
 if (document.getElementsByClassName('lazy').length) {
@@ -151,3 +152,9 @@ if (window.PerformanceNavigationTiming) {
 if (document.getElementsByClassName('lightbox').length) {
     loadScript('/assets/js/lightbox.js');
 }
+
+// Globals
+window.snackbar = new Snackbar(document.getElementById('snackbar'));
+
+import { Modal } from 'bootstrap.native';
+window.modal = new Modal(document.getElementById('event-modal'));

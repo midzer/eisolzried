@@ -3,7 +3,6 @@ module.exports = {
       main: [
         'intersection-observer',
         './_assets/js/snackbar.js',
-        './_assets/js/helper.js',
         './_assets/js/main.js',
         './_assets/js/service-worker-registration.js'
       ],
@@ -11,7 +10,6 @@ module.exports = {
         './_assets/js/lazy.js'
       ],
       lightbox: [
-        'rqrauhvmra__tobi',
         './_assets/js/lightbox.js'
       ],
       calendar: [

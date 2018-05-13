@@ -1,5 +1,5 @@
 import { videos, path } from './media/videos';
-import { load } from './helper';
+import { load } from './helper/lazy';
 
 function createVideo() {
     let embed = null;

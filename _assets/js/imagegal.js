@@ -1,5 +1,5 @@
 import { images, path, trans } from './media/images';
-import { load } from './helper';
+import { load } from './helper/lazy';
 import Tobi from "rqrauhvmra__tobi";
 
 function createImage() {

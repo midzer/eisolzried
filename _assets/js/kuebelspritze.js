@@ -1,3 +1,5 @@
+import { toggleAudio } from './helper/toggleaudio';
+
 function hubDone(nextHub) {
     document.getElementById('kuebel').src = '/assets/images/games/kuebel-' + nextHub + '.png';
     document.getElementById('huebe').innerHTML = parseInt(document.getElementById('huebe').innerHTML) + 1;
