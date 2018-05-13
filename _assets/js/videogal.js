@@ -25,11 +25,19 @@ function createVideo() {
     return embed;
 }
 
-function appendVideo() {
+function appendVideo(parent) {
     const video = createVideo();
     if (video) {
-        grid.appendChild(video);
+        parent.appendChild(video);
     }
+}
+
+function appendFragment() {
+    let frag = document.createDocumentFragment();
+    for (let i = 0; i < 6; i++) {
+        appendVideo(frag);
+    }
+    grid.appendChild(frag);
 }
 
 const grid = document.getElementById('video-grid');
@@ -43,11 +51,11 @@ const observer = new IntersectionObserver(changes => {
 
             load(change.target);
 
-            appendVideo();
+            appendVideo(grid);
         }
     });
   }
 );
 
-// Kickstart by adding first item
-appendVideo();
+// Kickstart by adding a large set
+appendFragment();

@@ -26,11 +26,19 @@ function createImage() {
     return card;
 }
 
-function appendImage() {
+function appendImage(parent) {
     const image = createImage();
     if (image) {
-        grid.appendChild(image);
+        parent.appendChild(image);
     }
+}
+
+function appendFragment() {
+    let frag = document.createDocumentFragment();
+    for (let i = 0; i < 24; i++) {
+        appendImage(frag);
+    }
+    grid.appendChild(frag);
 }
 
 const grid = document.getElementById('image-grid');
@@ -44,17 +52,17 @@ const observer = new IntersectionObserver(changes => {
 
             load(change.target);
 
-            appendImage();
+            appendImage(grid);
         }
     });
   }
 );
 
-// Kickstart by adding first item
 const tobi = new Tobi({
     close: false,
     counter: false,
     zoom: false,
     docClose: true
 });
-appendImage();
+// Kickstart by adding a large set
+appendFragment();
