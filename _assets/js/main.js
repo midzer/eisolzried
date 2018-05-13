@@ -5,11 +5,6 @@ if (document.getElementsByClassName('lazy').length) {
     loadScript('/assets/js/lazy.js');
 }
 
-// Lightbox
-if (document.getElementsByClassName('lightbox').length) {
-    loadScript('/assets/js/lightbox.js');
-}
-
 // Theme switch
 function setTheme(theme) {
     let rel, icon;
@@ -150,4 +145,9 @@ if (window.PerformanceNavigationTiming) {
     const [entry] = performance.getEntriesByType("navigation");
     document.getElementById('rendertime').innerHTML = parseInt(entry.domInteractive) + 'ms';
     document.getElementById('rendertext').hidden = false;
+}
+
+// Lightbox
+if (document.getElementsByClassName('lightbox').length) {
+    loadScript('/assets/js/lightbox.js');
 }

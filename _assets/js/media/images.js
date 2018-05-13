@@ -1,0 +1,369 @@
+export const path = '/assets/images/media/';
+export const trans = `data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' width%3D'500' height%3D'500' viewBox%3D'0 0 500 500'%2F%3E`;
+
+export let images = [
+    {
+        name: '49e710dfe3a7d8e9.jpg',
+        text: 'Brennender großer Haufen bei Nacht'
+    },
+    {
+        name: '64e7cce1c60ba2da.jpg',
+        text: 'Kaputter Ferrari unter Leitplanke'
+    },
+    {
+        name: '8340653b110b3f04.jpg',
+        text: 'Umgefallener Mähdrescher'
+    },
+    {
+        name: 'a6ac9b0cfd963831.jpg',
+        text: 'Alter Schutzanzug mit Wasserstrahlhaube'
+    },
+    {
+        name: '1d8fd2d3f722862f.jpg',
+        text: 'Babyrettung aus verrauchtem Haus'
+    },
+    {
+        name: '53ffb309e1c47b1b.jpg',
+        text: 'Unfall Lamborghini'
+    },
+    {
+        name: '62d8fc7245d1b3ed.jpg',
+        text: 'Mit CSA im Supermarkt'
+    },
+    {
+        name: '248514515f8ecd7a.jpg',
+        text: 'Wie man eine Türe eintritt'
+    },
+    {
+        name: 'a60e3e26bfd27747.jpg',
+        text: 'Rettungsgasse ja und nein'
+    },
+    {
+        name: 'bbac7507cde8334c.jpg',
+        text: 'Brandlöschung in der Nacht'
+    },
+    {
+        name: 'd2d5a2696e512dd4.jpg',
+        text: 'Umgestürzter Kran'
+    },
+    {
+        name: '1c2fa9f87ba93cb4.jpg',
+        text: 'Schutzausrüstung tiefgefroren'
+    },
+    {
+        name: '62fc788e5ecba526.jpg',
+        text: 'Oberflurhydrant in Baum'
+    },
+    {
+        name: 'add541bc8848d0fa.jpg',
+        text: 'Einsatzleiter'
+    },
+    {
+        name: '6efc5bdad44c5901.jpg',
+        text: 'Schlauchabrollgerät am Fahrzeug'
+    },
+    {
+        name: '575911289d330d75.jpg',
+        text: 'Feuerwehrpanzer'
+    },
+    {
+        name: 'd24129d32b70662e.jpg',
+        text: 'Steckleiterübung'
+    },
+    {
+        name: '52a6433ec11d9e64.jpg',
+        text: 'Abgestürzter Triebwagen'
+    },
+    {
+        name: '6862ac5337ea70ea.jpg',
+        text: 'Abhängen im CSA'
+    },
+    {
+        name: '24017de4684e77d4.jpg',
+        text: 'Baby retten Comic'
+    },
+    {
+        name: '76814e6a396c73fb.jpg',
+        text: 'Löschflugzeug Waldbrand'
+    },
+    {
+        name: 'bf11e91841953277.jpg',
+        text: 'Drei Feuerwehrleute im CSA'
+    },
+    {
+        name: 'da58dcf2ff571598.jpg',
+        text: 'Roter Unimog'
+    },
+    {
+        name: '1acc4c0398f13a52.jpg',
+        text: 'Unimog-Feuerwehrauto im Einsatz'
+    },
+    {
+        name: '1b31963fbec859aa.jpg',
+        text: 'Schaummittel im Einsatz'
+    },
+    {
+        name: '3bb5c4c99695efd3.jpg',
+        text: 'Bäume in Allee umgefallen'
+    },
+    {
+        name: '6aa7135bb62b8b00.jpg',
+        text: 'CSA im Supermarkt'
+    },
+    {
+        name: '74d3dfcdb6e31240.jpg',
+        text: 'Bundeswehr-Feuerwehrauto'
+    },
+    {
+        name: '407d10fb32abbb44.jpg',
+        text: 'Schaummittel ausgelaufen'
+    },
+    {
+        name: 'e0556509f8023b01.jpg',
+        text: 'VW-Feuerwehrauto'
+    },
+    {
+        name: '8e351b1fddeb6301.jpg',
+        text: 'Rauch an Decke'
+    },
+    {
+        name: 'b730cf7034ba62fb.jpg',
+        text: 'Piepmatz'
+    },
+    {
+        name: 'd5aafad904f841ac.jpg',
+        text: 'Helfer bei Waldbrand'
+    },
+    {
+        name: 'e2cc44c14aedea86.jpg',
+        text: 'Seilbahn Höhenrettung über Fluss'
+    },
+    {
+        name: 'ee9b3695266e1dfa.jpg',
+        text: 'Postauto müde'
+    },
+    {
+        name: 'efcd6f6f1abe64f1.jpg',
+        text: 'Zeitungsartikel mit feuerspeiender Kuh'
+    },
+    {
+        name: 'f84174ae3c74c00b.jpg',
+        text: 'Feuerwehrmannschaft auf dem Weg zum Brandherd'
+    },
+    {
+        name: '00a72b1dda99e856.jpg',
+        text: 'LF müde'
+    },
+    {
+        name: '0ffaf34d6da88116.jpg',
+        text: 'Mannschaft ruht sich aus'
+    },
+    {
+        name: '2e35484d483b8b30.jpg',
+        text: 'Feuerwehrengel'
+    },
+    {
+        name: '88bb558e58f20ab1.jpg',
+        text: 'Ein Herz für Tiere'
+    },
+    {
+        name: '8675cab077f60b83.jpg',
+        text: 'Auto auf den Gleisen'
+    },
+    {
+        name: '77652ceb04399780.jpg',
+        text: 'Nachwuchs gesucht'
+    },
+    {
+        name: '500486447836562f.jpg',
+        text: 'Amphibienfahrzeug'
+    },
+    {
+        name: 'ad102faa9bdc1d27.jpg',
+        text: 'Waldbrand in Portugal'
+    },
+    {
+        name: 'bb169d0ccf00814e.jpg',
+        text: 'Dodge'
+    },
+    {
+        name: 'f61b08ea5d86f0d3.jpg',
+        text: 'Klassikfahrzeuge'
+    },
+    {
+        name: '2eee8c4f84aa1d79.jpg',
+        text: 'Lego'
+    },
+    {
+        name: '5eee7a886712f8e3.jpg',
+        text: 'Dortmund Airport Fahrzeug'
+    },
+    {
+        name: '9fe1f60cc2f299f6.jpg',
+        text: 'Schlauch-Hovercraft'
+    },
+    {
+        name: '18b78696a6e77724.jpg',
+        text: 'Historisches Gruppenbild'
+    },
+    {
+        name: '24c56c345603b82c.jpg',
+        text: 'Kriechend im Einsatz'
+    },
+    {
+        name: '68dc6013b1f6625d.jpg',
+        text: 'Durchs Fenster aus brennendem Haus'
+    },
+    {
+        name: '79e30fa08e95f37a.jpg',
+        text: 'Einsatz im U-bahntunnel'
+    },
+    {
+        name: '80c79564ec802d20.jpg',
+        text: 'Älteste, brennende Glühbirne der Feuerwehr Livermore'
+    },
+    {
+        name: '0565896c663c49f4.jpg',
+        text: 'Brennender Bus'
+    },
+    {
+        name: '562134826f93cda5.jpg',
+        text: 'Brennender Dachstuhl bei Nacht'
+    },
+    {
+        name: 'c243216c471abc0a.jpg',
+        text: 'Drehleiter an Hochhaus'
+    },
+    {
+        name: 'f8ef62f51cbf3969.jpg',
+        text: 'Verruste Feuerwehrfahrzeuge'
+    },
+    {
+        name: 'f87fd6a263f13113.jpg',
+        text: 'Katzenretter'
+    },
+    {
+        name: 'fd561a862faf3469.jpg',
+        text: 'Feuerwehrfahrzeug in Graben'
+    },
+    {
+        name: '5a9590bf10c59c43.jpg',
+        text: 'Ausräumen und Zuordnen'
+    },
+    {
+        name: '8b1ae4f22e828fb4.jpg',
+        text: 'Feuerwehrfahrrad'
+    },
+    {
+        name: '9f08d9860453ec40.jpg',
+        text: 'Nachts auf dem Feldweg'
+    },
+    {
+        name: '62ac4ddd084d9dff.jpg',
+        text: 'In der U-Bahn'
+    },
+    {
+        name: '949c8c81b07da1a9.jpg',
+        text: 'Klippe'
+    },
+    {
+        name: '526263aa47ab5d45.jpg',
+        text: 'DDR-Feuerwehrfahrzeug'
+    },
+    {
+        name: '7279775298ae1765.jpg',
+        text: 'Feuerwehrfahrzeugestern'
+    },
+    {
+        name: 'a988281f430643eb.jpg',
+        text: 'Drehleiter eingepackt'
+    },
+    {
+        name: 'aeb5301414fae6b9.jpg',
+        text: 'Feuerwehrfahrzeug auf Schienen'
+    },
+    {
+        name: 'c73272e16b2e7d3f.jpg',
+        text: 'Fahrzeuge spritzen Wasser'
+    },
+    {
+        name: 'f7ac4aa68435b694.jpg',
+        text: 'Chemieschutzanzug'
+    },
+    {
+        name: '30fd4a12e6be1b03.jpg',
+        text: 'Traktor'
+    },
+    {
+        name: 'e91de833a69c3c87.jpg',
+        text: 'Saugschläuche'
+    },
+    {
+        name: '60a88c30ea782274.jpg',
+        text: 'Wasserflaschen'
+    },
+    {
+        name: '4630e3d60ae395a5.jpg',
+        text: 'Rettungsgasse'
+    },
+    {
+        name: '734590b65eeac285.jpg',
+        text: 'Bekanntmachung'
+    },
+    {
+        name: '7250dc750f448c8a.jpg',
+        text: 'Flashover'
+    },
+    {
+        name: '1f48c5e0c580ee18.jpg',
+        text: 'Sitzen'
+    },
+    {
+        name: 'cce02ea9ae653156.jpg',
+        text: 'Feuerwehrmann'
+    },
+    {
+        name: '7cb6559d986c9dd9.jpg',
+        text: 'Glitch'
+    },
+    {
+        name: 'b5c356673d7a7776.jpg',
+        text: 'Aquaknarre'
+    },
+    {
+        name: '35ee9b553d08e8ee.jpg',
+        text: 'Granny'
+    },
+    {
+        name: 'b1b2ce90cdb1f0f7.jpg',
+        text: 'Flughafen'
+    },
+    {
+        name: '83aab3b2cb07ab6d.jpg',
+        text: 'Explosion'
+    },
+    {
+        name: '08f78a28e94e18b9.jpg',
+        text: 'Feuerwehrfrauen'
+    },
+    {
+        name: 'laeuftpis3h.jpg',
+        text: 'Gleise'
+    },
+    {
+        name: '1f4393270f5cb27b.jpg',
+        text: 'Massenkarambolage'
+    },
+    {
+        name: 'bd70c620a5efd035.jpg',
+        text: 'Wasserwerfer'
+    },
+    {
+        name: '4011bfae05a8ecb8.jpg',
+        text: 'Brand'
+    },
+    {
+        name: 'c0cb9e157bfe364a.jpg',
+        text: 'Öltank'
+    }
+];
