@@ -4,22 +4,23 @@ import { load } from './helper';
 function createVideo() {
     let embed = null;
     if (videos.length) {
+        const video = videos.shift();
         embed = document.createElement('div');
         embed.className = 'embed-responsive embed-responsive-16by9';
-        const video = document.createElement('video');
-        video.className = 'endless embed-responsive-item';
-        video.controls = true;
-        video.preload = 'metadata';
+        const vid = document.createElement('video');
+        vid.className = 'endless embed-responsive-item';
+        vid.controls = true;
+        vid.preload = 'metadata';
         const sourceWebm = document.createElement('source');
-        sourceWebm.dataset.src = path + videos[0] + '.webm';
+        sourceWebm.dataset.src = path + video + '.webm';
         sourceWebm.type = "video/webm";
-        video.appendChild(sourceWebm);
+        vid.appendChild(sourceWebm);
         const sourceMp4 = document.createElement('source');
-        sourceMp4.dataset.src = path + videos.shift() + '.webm';
+        sourceMp4.dataset.src = path + video + '.webm';
         sourceMp4.type = "video/mp4";
-        video.appendChild(sourceMp4);
-        embed.appendChild(video);
-        observer.observe(video);
+        vid.appendChild(sourceMp4);
+        embed.appendChild(vid);
+        observer.observe(vid);
     }
     return embed;
 }
