@@ -40,7 +40,8 @@ gulp.task('sass:prod', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(purgecss({
-      content: ['_site/assets/js/*.js', '_site/**/*.html']
+      content: ['_site/assets/js/*.js', '_site/**/*.html'],
+      whitelist: ['carousel-item-next', 'carousel-item-left']
     }))
     .pipe(cleancss())
     .pipe(gulp.dest('_site/assets/css'));
