@@ -15,6 +15,7 @@
 // Internet Explorer <= 8
 
 (function () {
+  'use strict';
 
   // Fire a custom event named "name" from element "element" with
   // extra data "data" attached to the details of the event.

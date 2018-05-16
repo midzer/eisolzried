@@ -1,3 +1,5 @@
+'use strict';
+
 function addMessage(msg) {
     let content = document.createElement('li');
     content.textContent = msg;

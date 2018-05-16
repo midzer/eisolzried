@@ -1,3 +1,5 @@
+'use strict';
+
 export const path = '/assets/videos/media/';
 
 export let videos = [

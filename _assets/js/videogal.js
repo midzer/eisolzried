@@ -1,3 +1,5 @@
+'use strict';
+
 import { videos, path } from './media/videos';
 import { load } from './helper/lazy';
 

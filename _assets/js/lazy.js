@@ -1,3 +1,5 @@
+'use strict';
+
 import { load } from './helper/lazy';
 import { query } from './helper/query';
 

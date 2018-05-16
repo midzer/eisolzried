@@ -1,3 +1,5 @@
+'use strict';
+
 require('chartist-plugin-legend');
 let Chartist = require('chartist');
 Chartist.Bar('#member', {

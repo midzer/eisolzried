@@ -1,3 +1,5 @@
+'use strict';
+
 // Load more posts
 document.getElementById('moreposts').onclick = function() {
     if (!/Mobi/.test(navigator.userAgent)) {

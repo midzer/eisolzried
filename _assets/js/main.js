@@ -1,3 +1,5 @@
+'use strict';
+
 import { loadScript } from './helper/loadscript';
 import { toggleAudio } from './helper/toggleaudio';
 

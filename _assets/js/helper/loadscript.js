@@ -1,3 +1,5 @@
+'use strict';
+
 export function loadScript(src) {
     return new Promise((resolve, reject) => {
         const script = document.createElement('script');

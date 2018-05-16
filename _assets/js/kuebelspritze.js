@@ -1,3 +1,5 @@
+'use strict';
+
 import { toggleAudio } from './helper/toggleaudio';
 
 function hubDone(nextHub) {

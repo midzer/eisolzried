@@ -1,3 +1,5 @@
+'use strict';
+
 import Tobi from "rqrauhvmra__tobi";
 Tobi({
     close: false,
