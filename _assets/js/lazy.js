@@ -21,6 +21,6 @@ const observer = new IntersectionObserver(changes => {
   }
 );
 
-query("lazy").forEach(function(item) {
+query(".lazy").forEach(function(item) {
     observer.observe(item);
 });

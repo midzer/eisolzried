@@ -4,7 +4,7 @@ import { loadScript } from './helper/loadscript';
 import { toggleAudio } from './helper/toggleaudio';
 
 // Lazy components
-if (document.getElementsByClassName('lazy').length) {
+if (document.querySelectorAll('.lazy').length) {
     loadScript('/assets/js/lazy.js');
 }
 
@@ -151,7 +151,7 @@ if (window.PerformanceNavigationTiming) {
 }
 
 // Lightbox
-if (document.getElementsByClassName('lightbox').length) {
+if (document.querySelectorAll('.lightbox').length) {
     loadScript('/assets/js/lightbox.js');
 }
 
