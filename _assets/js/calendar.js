@@ -145,7 +145,7 @@ function buildCal(data) {
         if (event.target.className == 'dayevent') {
             const time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
             for (let i = 0; i < ev.length; i++) {
-                if (hasEventInDate(ev[i], time, timezone) && event.target.innerHTML == ev[i].summary) {
+                if (hasEventInDate(ev[i], time, timezone) && event.target.textContent == ev[i].summary) {
                     showModal(ev[i]);
                     break;
                 }

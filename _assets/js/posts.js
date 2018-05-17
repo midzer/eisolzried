@@ -23,7 +23,10 @@ let els = document.querySelectorAll('[data-index]');
 for (var i = els.length - 1; i >= 0; i--) {
     let index = Number(els[i].getAttribute('data-index'));
     if (index > lastIndex) {
-        els[i].innerHTML += `<span class="badge badge-primary ml-1">Neu</span>`;
+        const span = document.createElement('span');
+        span.className = 'badge badge-primary ml-1';
+        span.innerText = 'Neu';
+        els[i].appendChild(span);
         lastIndex = index;
     }
 };

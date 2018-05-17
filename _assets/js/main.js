@@ -146,7 +146,7 @@ window.addEventListener('scroll', requestTick, { passive: true });
 // Show render time
 if (window.PerformanceNavigationTiming) {
     const [entry] = performance.getEntriesByType("navigation");
-    document.getElementById('rendertime').innerHTML = parseInt(entry.domInteractive) + 'ms';
+    document.getElementById('rendertime').innerText = parseInt(entry.domInteractive) + 'ms';
     document.getElementById('rendertext').hidden = false;
 }
 
