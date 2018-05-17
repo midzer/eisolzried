@@ -18,13 +18,13 @@ if ('LinearAccelerationSensor' in window) {
     sensor.onreading = () => {
         if (sensor.z < -5 && nextHub == 'up') {
             hubDone(nextHub);
-            nextHub = 'down';
             toggleAudio(upPlayer);
+            nextHub = 'down';
         }
-        if (sensor.z > 5 && nextHub == 'down') {
+        else if (sensor.z > 5 && nextHub == 'down') {
             hubDone(nextHub);
-            nextHub = 'up';
             toggleAudio(downPlayer);
+            nextHub = 'up';
         }
     };
     sensor.start();
