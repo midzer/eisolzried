@@ -2,14 +2,11 @@
   padding-bottom: 1rem;
 }
 
-.post-link {
-  font-size: 1.6rem;
-  letter-spacing: -0.25px;
-  line-height: 1;
+.post-meta {
+  color: $gray-700;
 }
 
-.post-meta {
-  font-size: 1.2rem;
-  color: $gray-700;
-  flex: 0 1 100%;
+.post-preview {
+  width: 125px;
+  height: 125px;
 }

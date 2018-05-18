@@ -1,17 +1,37 @@
 <ul id="posts" class="lazy list-unstyled" data-src="/assets/js/posts.js">
 {% assign sorted-posts = site.posts | where: "lang",page.lang %}
 {% for post in sorted-posts %}
-  {% if forloop.index > 8 %}
-  <li hidden>
+{% if forloop.index > 4 %}
+  <li hidden class="media">
   {% else %}
-  <li>
+  <li class="media">
   {% endif %}
-    <div class="post-meta">
-      {% include date.html %}
-    </div>
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.rindex }}">
-      {{ post.title }}
+    <a href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.rindex }}">
+      {% if post.images %}
+      <img class="lazy post-preview rounded mr-3" src="{{ include trans.html }}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
+      {% else %}
+      <img class="lazy post-preview rounded mr-3" src="{{ include trans.html }}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
+      {% endif %}
     </a>
+    <div class="media-body">
+      <div class="post-meta">
+        {% include date.html %}
+      </div>
+      <h5>
+        <a href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.rindex }}">
+          {{ post.title }}
+        </a>
+      </h5>
+      {{ post.content | strip_html | truncatewords: 20 }}
+      <a href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.rindex }}">
+        {% if page.lang == 'by' %}
+        Meara lesn
+        {% else %}
+        Mehr lesen
+        {% endif %}
+        {% include icon.html icon="chevrons-right" %}
+      </a>
+    </div>
   </li>
 {% endfor %}
 </ul>
