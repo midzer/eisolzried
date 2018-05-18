@@ -9,11 +9,10 @@ document.getElementById('moreposts').onclick = function() {
     }
     var els = document.querySelectorAll('li[hidden]');
     for (var i = 0; i < 4; i++) {
-        if (els.length == i) {
-            this.setAttribute('hidden', '');
-            break;
-        }
         els[i].removeAttribute('hidden');
+        if (els.length == i + 1) {
+            this.parentNode.removeChild(this);
+        }
     }
 };
 
