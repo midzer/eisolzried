@@ -17,7 +17,7 @@ categories:
 
 Merci nomoi an de Feiawea Schwabmühlhausen für de Nominierung!
 
-Schauts am bestn einfach des Video o :)
+Damits wissts um wos gäd, schauts am bestn einfach des Video o :)
 
 {% include gal.html %}
 
