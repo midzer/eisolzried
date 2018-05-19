@@ -10,3 +10,9 @@
   width: 125px;
   height: 125px;
 }
+
+@include media-breakpoint-down(md) {
+  .media {
+    display: block;
+  }
+}
