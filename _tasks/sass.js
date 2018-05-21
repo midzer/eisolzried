@@ -41,7 +41,7 @@ gulp.task('sass:prod', () => {
     .pipe(autoprefixer())
     .pipe(purgecss({
       content: ['_site/assets/js/*.js', '_site/**/*.html'],
-      whitelist: ['carousel-item-next', 'carousel-item-left']
+      whitelistPatterns: [/^carousel/, /^modal/]
     }))
     .pipe(cleancss())
     .pipe(gulp.dest('_site/assets/css'));
