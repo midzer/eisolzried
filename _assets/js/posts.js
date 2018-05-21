@@ -5,7 +5,7 @@ document.getElementById('moreposts').onclick = function() {
     if (!/Mobi/.test(navigator.userAgent)) {
         // Only apply styling for desktop browsers
         this.previousElementSibling.style.overflowY = 'auto';
-        this.previousElementSibling.style.height = '585px';
+        this.previousElementSibling.style.height = '576px';
     }
     const els = document.querySelectorAll('li[hidden]');
     for (let i = 0; i < 4; i++) {
