@@ -6,7 +6,7 @@
   {% else %}
   <li class="media">
   {% endif %}
-    <a href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.rindex }}">
+    <a href="{{ post.url | prepend: site.baseurl }}">
       {% if post.images %}
       <img class="lazy post-preview rounded mr-3" src="{{ include trans.html }}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
       {% else %}
@@ -23,7 +23,7 @@
         </a>
       </h5>
       {{ post.content | strip_html | truncatewords: 20 }}
-      <a href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.rindex }}">
+      <a href="{{ post.url | prepend: site.baseurl }}">
         {% if page.lang == 'by' %}
         Meara lesn
         {% else %}
