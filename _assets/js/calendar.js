@@ -103,10 +103,11 @@ function buildCal(data) {
     var clone;
     var dayNum = document.createElement('div');
     dayNum.className = 'daynum';
-    var dayEvent = document.createElement('a');
-    dayEvent.className = 'dayevent';
-    dayEvent.setAttribute('data-toggle', 'modal');
-    dayEvent.href = '#event-modal';
+    var dayEvent = document.createElement('button');
+    dayEvent.type = 'button';
+    dayEvent.className = 'btn btn-link dayevent';
+    dayEvent.dataset.toggle = 'modal';
+    dayEvent.dataset.target = '#event-modal';
 
     var ev = [];
     cal.addEventListener('drcal.renderDay', function(event) {
@@ -142,7 +143,7 @@ function buildCal(data) {
     cal.changeMonth(new Date());
 
     cal.addEventListener('click', function(event) {
-        if (event.target.className == 'dayevent') {
+        if (event.target.classList.contains('dayevent')) {
             const time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
             for (let i = 0; i < ev.length; i++) {
                 if (hasEventInDate(ev[i], time, timezone) && event.target.textContent == ev[i].summary) {
