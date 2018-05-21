@@ -7,8 +7,8 @@ document.getElementById('moreposts').onclick = function() {
         this.previousElementSibling.style.overflowY = 'auto';
         this.previousElementSibling.style.height = '585px';
     }
-    var els = document.querySelectorAll('li[hidden]');
-    for (var i = 0; i < 4; i++) {
+    const els = document.querySelectorAll('li[hidden]');
+    for (let i = 0; i < 4; i++) {
         els[i].removeAttribute('hidden');
         if (els.length == i + 1) {
             this.parentNode.removeChild(this);
@@ -18,9 +18,9 @@ document.getElementById('moreposts').onclick = function() {
 
 // New posts badges
 let lastIndex = Number(localStorage.getItem('lastindex'));
-let els = document.querySelectorAll('[data-index]');
-for (var i = els.length - 1; i >= 0; i--) {
-    let index = Number(els[i].getAttribute('data-index'));
+const els = document.querySelectorAll('[data-index]');
+for (let i = els.length - 1; i >= 0; i--) {
+    const index = Number(els[i].getAttribute('data-index'));
     if (index > lastIndex) {
         const span = document.createElement('span');
         span.className = 'badge badge-primary ml-1';
