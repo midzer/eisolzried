@@ -117,14 +117,14 @@ field.addEventListener('keypress', event => {
 
 // Progressbar
 function requestTick() {
-    if ('requestIdleCallback' in window) {
-        if (!ticking) {
-            ticking = true;
+    if (!ticking) {
+        ticking = true;
+        if ('requestIdleCallback' in window) {
             requestIdleCallback(update, { timeout: 100 });
         }
-    }
-    else {
-        requestAnimationFrame(update);
+        else {
+            requestAnimationFrame(update);
+        }
     }
 }
 
