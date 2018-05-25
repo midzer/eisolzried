@@ -100,27 +100,23 @@ function buildCal(data) {
         modal.show();
     }
 
-    var clone;
-    var dayNum = document.createElement('div');
-    dayNum.className = 'daynum';
-    var dayEvent = document.createElement('button');
-    dayEvent.type = 'button';
-    dayEvent.className = 'btn btn-link dayevent';
-    dayEvent.dataset.toggle = 'modal';
-    dayEvent.dataset.target = '#event-modal';
-
     var ev = [];
     cal.addEventListener('drcal.renderDay', function(event) {
-        clone = dayNum.cloneNode();
-        clone.appendChild(document.createTextNode(event.detail.date.getDate()));
-        event.detail.element.appendChild(clone);
+        var dayNum = document.createElement('div');
+        dayNum.className = 'daynum';
+        dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
+        event.detail.element.appendChild(dayNum);
         const time = ICAL.Time.fromJSDate(event.detail.date);
         for (let i = 0; i < ev.length; i++) {
             if (hasEventInDate(ev[i], time, timezone)) {
-                clone = dayEvent.cloneNode();
-                clone.setAttribute('title', ev[i].summary);
-                clone.appendChild(document.createTextNode(ev[i].summary));
-                event.detail.element.appendChild(clone);
+                var dayEvent = document.createElement('button');
+                dayEvent.type = 'button';
+                dayEvent.className = 'btn btn-link dayevent';
+                dayEvent.dataset.toggle = 'modal';
+                dayEvent.dataset.target = '#event-modal';
+                dayEvent.setAttribute('title', ev[i].summary);
+                dayEvent.appendChild(document.createTextNode(ev[i].summary));
+                event.detail.element.appendChild(dayEvent);
                 if (event.detail.date.toDateString() == new Date().toDateString()) {
                     const data = {
                         message: 'Heute ist was los!',
