@@ -120,7 +120,7 @@ function requestTick() {
     if (!ticking) {
         ticking = true;
         if ('requestIdleCallback' in window) {
-            requestIdleCallback(update, { timeout: 100 });
+            requestIdleCallback(update, { timeout: 500 });
         }
         else {
             requestAnimationFrame(update);
