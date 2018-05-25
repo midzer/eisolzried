@@ -21,7 +21,8 @@ gulp.task('scripts', () => {
       },
     }))
     .pipe(webpackStream(devConfig, webpack))
-    .pipe(gulp.dest('_site/assets/js'));
+    .pipe(gulp.dest('_site/assets/js'))
+    .pipe(reload({ stream: true }));
 });
 
 gulp.task('scripts:prod', () => {

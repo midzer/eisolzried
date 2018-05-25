@@ -11,11 +11,11 @@ gulp.task('serve', ['browser-sync'], () => {
 
   //jekyll
   gulp.watch([
-    '*.html', 
-    '_layouts/**/*', 
-    '_includes/**/*', 
+    '_layouts/**/*',
+    '_includes/**/*',
+    '_pages/**/*',
     '_posts/**/*'
-  ], ['jekyll:reload']);
+  ], ['reload']);
 });
 
 gulp.task('default', ['serve']);

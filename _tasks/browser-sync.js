@@ -11,3 +11,5 @@ gulp.task('browser-sync', ['build'], () => {
     https: true
   });
 });
+
+gulp.task('reload', ['build'], () => { browserSync.reload(); });
