@@ -22,7 +22,7 @@ function createImage() {
         img.alt = image.text;
         observer.observe(img);
         link.appendChild(img);
-        tobi.initElement(link);
+        tobi.add(link);
         card.appendChild(link);
     }
     return card;
