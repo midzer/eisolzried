@@ -22,17 +22,17 @@
         </div>
       </form>
       <div class="btn-group my-2 my-xl-0" role="group" aria-label="Navbar buttons">
-        <button id="language-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sprache wechseln">
+        <button id="language-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sprache wechseln" aria-label="Sprache wechseln">
           {% if page.lang == 'by' %}
           {% include icon.html icon='de' %}
           {% else %}
           {% include icon.html icon='by' %}
           {% endif %}
         </button>
-        <button id="theme-switch" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Hintergrundfarbe ändern">
+        <button id="theme-switch" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Hintergrundfarbe ändern" aria-label="Hintergrundfarbe ändern">
           {% include icon.html icon="moon" id="theme-icon" %}
         </button>
-        <button id="siren-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sirene einschalten">
+        <button id="siren-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Sirene einschalten" aria-label="Sirene einschalten">
           {% include icon.html icon="play" id="siren-icon" %}
         </button>
       </div>
