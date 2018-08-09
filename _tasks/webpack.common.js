@@ -33,11 +33,8 @@ module.exports = {
       kuebelspritze: [
         './_assets/js/kuebelspritze.js'
       ],
-      imagegal: [
-        './_assets/js/imagegal.js'
-      ],
-      videogal: [
-        './_assets/js/videogal.js'
+      media: [
+        './_assets/js/media.js'
       ]
     },
     output: {

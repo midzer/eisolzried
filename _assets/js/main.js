@@ -151,7 +151,7 @@ if (window.PerformanceNavigationTiming) {
 }
 
 // Lightbox
-if (document.querySelectorAll('.lightbox').length) {
+if (document.querySelectorAll('.lightbox').length || document.getElementById('image-grid')) {
     loadScript('/assets/js/lightbox.js');
 }
 
