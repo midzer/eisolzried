@@ -12,7 +12,7 @@ export function createVideo() {
         const link = document.createElement('a');
         link.href = "#";
         link.dataset.type = "html";
-        link.dataset.target = '#v' + video;
+        link.dataset.target = 'v' + video;
         link.className = 'lightbox';
         link.title = video;
         const img = document.createElement('img');
@@ -23,12 +23,12 @@ export function createVideo() {
         img.alt = video;
         const div = document.createElement('div');
         div.className = "embed-responsive";
-        div.style = "display:none;";
         div.id = 'v' + video;
         const vid = document.createElement('video');
         vid.className = "embed-responsive-item";
         vid.controls = true;
         vid.preload = "none";
+        vid.loop = true;
         const sourceWebm = document.createElement('source');
         sourceWebm.src = path + video + '.webm';
         sourceWebm.type = "video/webm";
@@ -39,8 +39,8 @@ export function createVideo() {
         vid.appendChild(sourceMp4);
         div.appendChild(vid);
         link.appendChild(img);
-        link.appendChild(div);
         card.appendChild(link);
+        card.appendChild(div);
     }
     return card;
 }

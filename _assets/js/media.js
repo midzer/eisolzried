@@ -6,17 +6,9 @@ function appendElement(parent, createElement) {
     const element = createElement();
     if (element) {
         mediaObserver.observe(element.querySelector('img'));
-        tobi.add(element.querySelector('a'));
         parent.appendChild(element);
+        tobi.add(element.querySelector('a'));
     }
-}
-
-function appendFragment(grid, createElement) {
-    let frag = document.createDocumentFragment();
-    for (let i = 0; i < 24; i++) {
-        appendElement(frag, createElement);
-    }
-    grid.appendChild(frag);
 }
 
 const imageGrid = document.getElementById('image-grid');
@@ -47,5 +39,9 @@ const mediaObserver = new IntersectionObserver(changes => {
   }
 );
 // Kickstart by adding a large set
-appendFragment(imageGrid, createImage);
-appendFragment(videoGrid, createVideo);
+for (let i = 0; i < 24; i++) {
+    appendElement(imageGrid, createImage);
+}
+for (let i = 0; i < 24; i++) {
+    appendElement(videoGrid, createVideo);
+}
