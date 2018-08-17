@@ -12,7 +12,7 @@ export function createVideo() {
         const link = document.createElement('a');
         link.href = "#";
         link.dataset.type = "html";
-        link.dataset.target = 'v' + video;
+        link.dataset.target = '#v' + video;
         link.className = 'lightbox';
         link.title = video;
         const img = document.createElement('img');
