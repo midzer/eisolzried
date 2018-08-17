@@ -6840,9 +6840,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rqrauhvmra__tobi@viliusle/Tobi:
-  version "1.5.4"
-  resolved "https://codeload.github.com/viliusle/Tobi/tar.gz/e148ca765d29315995c010d01147bdc1b40457ab"
+rqrauhvmra__tobi@rqrauhvmra/Tobi#dev:
+  version "1.6.0"
+  resolved "https://codeload.github.com/rqrauhvmra/Tobi/tar.gz/d7a038c24e58c9584800115cd810ac91ee83ef2d"
 
 run-queue@^1.0.0, run-queue@^1.0.3:
   version "1.0.3"
