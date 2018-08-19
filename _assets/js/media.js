@@ -5,10 +5,26 @@ import { load } from './helper/lazy';
 function appendElement(parent, createElement) {
     const element = createElement();
     if (element) {
-        mediaObserver.observe(element.querySelector('img'));
-        parent.appendChild(element);
-        tobi.add(element.querySelector('a'));
+        return parent.appendChild(element);
     }
+    return null;
+}
+
+function appendFragment(grid, createElement) {
+    let frag = document.createDocumentFragment();
+    for (let i = 0; i < 24; i++) {
+        appendElement(frag, createElement);
+    }
+    const children = Array.from(frag.children); // shallow copy due empty frag after appendChild()
+    grid.appendChild(frag);
+    children.forEach(child => {
+        observeElement(child);
+    });
+}
+
+function observeElement(element) {
+    mediaObserver.observe(element.querySelector('img'));
+    tobi.add(element.querySelector('a'));
 }
 
 const imageGrid = document.getElementById('image-grid');
@@ -28,20 +44,20 @@ const mediaObserver = new IntersectionObserver(changes => {
             
             load(change.target);
 
+            let element = null;
             if (change.target.closest('#image-grid')) {
-                appendElement(imageGrid, createImage);
+                element = appendElement(imageGrid, createImage);
             }
             else if (change.target.closest('#video-grid')) {
-                appendElement(videoGrid, createVideo);
+                element = appendElement(videoGrid, createVideo);
+            }
+            if (element) {
+                observeElement(element);
             }
         }
     });
   }
 );
 // Kickstart by adding a large set
-for (let i = 0; i < 24; i++) {
-    appendElement(imageGrid, createImage);
-}
-for (let i = 0; i < 24; i++) {
-    appendElement(videoGrid, createVideo);
-}
+appendFragment(imageGrid, createImage);
+appendFragment(videoGrid, createVideo);
