@@ -8,9 +8,9 @@ document.getElementById('moreposts').onclick = function() {
         this.previousElementSibling.style.height = '576px';
     }
     const els = document.querySelectorAll('li[hidden]');
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0, j = els.length; i < 4; i++) {
         els[i].removeAttribute('hidden');
-        if (els.length == i + 1) {
+        if (j == i + 1) {
             this.parentNode.removeChild(this);
         }
     }

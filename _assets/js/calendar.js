@@ -70,7 +70,7 @@ function buildCal(data) {
         });
 
         var ev = [];
-        for (var i = 0; i < vevents.length; i++) {
+        for (let i = 0, j = vevents.length; i < j; i++) {
             var event = new ICAL.Event(vevents[i]);
             if (event.isRecurring() ||
             (isBetween(start, end, event.startDate, timezone) && isBetween(start, end, event.endDate, timezone))) {
@@ -107,7 +107,7 @@ function buildCal(data) {
         dayNum.appendChild(document.createTextNode(event.detail.date.getDate()));
         event.detail.element.appendChild(dayNum);
         const time = ICAL.Time.fromJSDate(event.detail.date);
-        for (let i = 0; i < ev.length; i++) {
+        for (let i = 0, j = ev.length; i < j; i++) {
             if (hasEventInDate(ev[i], time, timezone)) {
                 var dayEvent = document.createElement('button');
                 dayEvent.type = 'button';
@@ -141,7 +141,7 @@ function buildCal(data) {
     cal.addEventListener('click', function(event) {
         if (event.target.classList.contains('dayevent')) {
             const time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'));
-            for (let i = 0; i < ev.length; i++) {
+            for (let i = 0, j = ev.length; i < j; i++) {
                 if (hasEventInDate(ev[i], time, timezone) && event.target.textContent == ev[i].summary) {
                     showModal(ev[i]);
                     break;
@@ -150,7 +150,7 @@ function buildCal(data) {
         }
     });
     const buttons = cal.getElementsByTagName('button');
-    for (let i = 0; i < buttons.length; i++) {
+    for (let i = 0, j = buttons.length; i < j; i++) {
         buttons[i].classList.add('btn');
     }
     document.getElementById('calendar').appendChild(cal);
