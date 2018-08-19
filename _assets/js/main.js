@@ -1,38 +1,17 @@
 'use strict';
 
-import Tobi from "rqrauhvmra__tobi";
-import { load } from './helper/lazy';
-import { query } from './helper/query';
+import { loadScript } from './helper/loadscript';
 import { toggleAudio } from './helper/toggleaudio';
 
-// Lazy components
-const observer = new IntersectionObserver(changes => {
-    changes.forEach(change => {
-        // Edge 15 doesn't support isIntersecting, but we can infer it
-        // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
-        // https://github.com/WICG/IntersectionObserver/issues/211
-        const isIntersecting = (typeof change.isIntersecting === 'boolean') ?
-        change.isIntersecting : change.intersectionRect.height > 0;
-        if (isIntersecting) {
-            // Stop observing the current target
-            observer.unobserve(change.target);
-
-            load(change.target);
-        }
-    });
-  }
-);
-
-query(".lazy").forEach(function(item) {
-    observer.observe(item);
-});
-
 // Lightbox
-window.tobi = new Tobi({
-    close: false,
-    counter: false,
-    zoom: false
-});
+if (document.querySelector('.lightbox') || document.getElementById('image-grid')) {
+    loadScript('/assets/js/lightbox.js');
+}
+
+// Lazy components
+if (document.querySelector('.lazy')) {
+    loadScript('/assets/js/lazy.js');
+}
 
 // Theme switch
 function setTheme(theme) {
