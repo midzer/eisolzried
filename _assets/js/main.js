@@ -1,12 +1,38 @@
 'use strict';
 
-import { loadScript } from './helper/loadscript';
+import Tobi from "rqrauhvmra__tobi";
+import { load } from './helper/lazy';
+import { query } from './helper/query';
 import { toggleAudio } from './helper/toggleaudio';
 
 // Lazy components
-if (document.querySelectorAll('.lazy').length) {
-    loadScript('/assets/js/lazy.js');
-}
+const observer = new IntersectionObserver(changes => {
+    changes.forEach(change => {
+        // Edge 15 doesn't support isIntersecting, but we can infer it
+        // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
+        // https://github.com/WICG/IntersectionObserver/issues/211
+        const isIntersecting = (typeof change.isIntersecting === 'boolean') ?
+        change.isIntersecting : change.intersectionRect.height > 0;
+        if (isIntersecting) {
+            // Stop observing the current target
+            observer.unobserve(change.target);
+
+            load(change.target);
+        }
+    });
+  }
+);
+
+query(".lazy").forEach(function(item) {
+    observer.observe(item);
+});
+
+// Lightbox
+window.tobi = new Tobi({
+    close: false,
+    counter: false,
+    zoom: false
+});
 
 // Theme switch
 function setTheme(theme) {
@@ -148,11 +174,6 @@ if (window.PerformanceNavigationTiming) {
     const [entry] = performance.getEntriesByType("navigation");
     document.getElementById('rendertime').innerText = parseInt(entry.domInteractive) + 'ms';
     document.getElementById('rendertext').hidden = false;
-}
-
-// Lightbox
-if (document.querySelectorAll('.lightbox').length || document.getElementById('image-grid')) {
-    loadScript('/assets/js/lightbox.js');
 }
 
 // Globals
