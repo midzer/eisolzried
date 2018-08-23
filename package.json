@@ -5,7 +5,9 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "bundle exec gulp",
-    "build": "bundle exec gulp build:prod"
+    "build": "bundle exec gulp build:prod",
+    "test": "standard",
+    "fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -45,6 +47,7 @@
     "magic-snowflakes": "^4.0.0",
     "rqrauhvmra__tobi": "rqrauhvmra/Tobi",
     "run-sequence": "^2.2.0",
+    "standard": "^11.0.1",
     "sw-precache": "^5.2.0",
     "webpack": "^4.16.2",
     "webpack-merge": "^4.1.3",

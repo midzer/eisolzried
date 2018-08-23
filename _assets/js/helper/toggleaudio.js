@@ -1,13 +1,12 @@
-'use strict';
+'use strict'
 
-export function toggleAudio(player) {
-    if (player.paused) {
-        if (player.readyState == 0) {
-            player.load();
-        }
-        player.play();
+export function toggleAudio (player) {
+  if (player.paused) {
+    if (player.readyState === 0) {
+      player.load()
     }
-    else {
-        player.pause();
-    }
+    player.play()
+  } else {
+    player.pause()
+  }
 }

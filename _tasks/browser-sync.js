@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-import gulp from 'gulp';
-import browserSync from 'browser-sync';
+import gulp from 'gulp'
+import browserSync from 'browser-sync'
 
 gulp.task('browser-sync', ['build'], () => {
   browserSync({
@@ -9,7 +9,7 @@ gulp.task('browser-sync', ['build'], () => {
       baseDir: '_site'
     },
     https: true
-  });
-});
+  })
+})
 
-gulp.task('reload', ['build'], () => { browserSync.reload(); });
+gulp.task('reload', ['build'], () => { browserSync.reload() })

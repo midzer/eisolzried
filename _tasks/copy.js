@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-import gulp from 'gulp';
+import gulp from 'gulp'
 
 gulp.task('copy', () => {
   return gulp.src([
@@ -9,7 +9,7 @@ gulp.task('copy', () => {
     '_assets/data/**',
     '_assets/videos/**'
   ], {
-    base: '_assets',
+    base: '_assets'
   })
-    .pipe(gulp.dest('_site/assets/'));
-});
+    .pipe(gulp.dest('_site/assets/'))
+})
