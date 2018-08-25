@@ -79,3 +79,5 @@ if (navigator.serviceWorker && navigator.serviceWorker.controller) {
     }
   }
 }
+
+window.snackbar = new Snackbar(document.querySelector('.snackbar'))
