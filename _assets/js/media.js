@@ -13,30 +13,36 @@ function fillFrag (createElement) {
 }
 
 function appendFragment (gridDest, createElement) {
-  grid = gridDest
-
-  done = fillFrag(createElement)
-
   if (!isVisualUpdateScheduled) {
     isVisualUpdateScheduled = true
+    grid = gridDest
     requestAnimationFrame(appendDocumentFragment)
   }
+  
+  done = fillFrag(createElement)
+
   if (!done || (frag.childElementCount && !isVisualUpdateScheduled)) {
-    appendFragment(grid, createElement)
+    appendFragment(gridDest, createElement)
   }
 }
 
 function appendDocumentFragment () {
-  children.push.apply(children, Array.from(frag.children))
-  grid.appendChild(frag)
-  isVisualUpdateScheduled = false
+  if (frag.childElementCount) {
+    children.push.apply(children, Array.from(frag.children))
+    grid.appendChild(frag)  
+  }
+  // Finally...
   if (done) {
+    // Observe and dynamic adding to lightbox
     for (let i = 0, len = children.length; i < len; i++) {
       observer.observe(children[i].querySelector('img'))
       tobi.add(children[i].querySelector('a'))
     }
+    // Cleanup
     children.length = 0
   }
+  // Reset
+  isVisualUpdateScheduled = false
 }
 
 const imageTab = document.getElementById('bilder-tab'),
