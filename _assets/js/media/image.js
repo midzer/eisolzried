@@ -15,11 +15,12 @@ export function createImage (index) {
     link.href = path + image.name
     link.title = image.text
     const img = document.createElement('img')
-    img.className = 'lazy card-img'
+    img.className = 'card-img'
     img.src = trans
     img.dataset.src = path + 'thumbs/' + image.name
     img.title = image.text
     img.alt = image.text
+    img.style.opacity = 0
     link.appendChild(img)
     card.appendChild(link)
   }

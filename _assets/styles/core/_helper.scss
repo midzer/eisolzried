@@ -6,13 +6,9 @@
   margin-bottom: 1rem;
 }
 
-.lazy {
-  opacity: 0;
-
-  &.loaded {
-    animation: fadeIn 0.5s ease-in;
-    animation-fill-mode: forwards;
-  }
+.loaded {
+  animation: fadeIn 0.5s ease-in;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {

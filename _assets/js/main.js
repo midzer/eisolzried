@@ -1,17 +1,43 @@
 'use strict'
 
+import { load } from './helper/load'
+import { query } from './helper/query'
 import { loadScript } from './helper/loadscript'
 import { toggleAudio } from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
 
-// Lazy components
-if (document.querySelector('.lazy')) {
-  loadScript('/assets/js/lazy.js')
-}
-
 // Lightbox
 if (document.querySelector('.lightbox')) {
   loadScript('/assets/js/lightbox.js')
+}
+
+// Lazy components
+window.observer = new IntersectionObserver(changes => {
+  changes.forEach(change => {
+    // Edge 15 doesn't support isIntersecting, but we can infer it
+    // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
+    // https://github.com/WICG/IntersectionObserver/issues/211
+    const isIntersecting = (typeof change.isIntersecting === 'boolean')
+      ? change.isIntersecting : change.intersectionRect.height > 0
+    if (isIntersecting) {
+      // Stop observing the current target
+      observer.unobserve(change.target)
+      
+      load(change.target)
+    }
+  })
+})
+
+const items = query('.lazy')
+for (let i = 0, j = items.length; i < j; i++) {
+  if (['IMG', 'VIDEO', 'IFRAME'].indexOf(items[i].nodeName) !== -1) {
+    items[i].style.opacity = 0
+    items[i].style.willChange = 'opacity'
+    observer.observe(items[i])
+  }
+  else if (items[i].dataset.src.slice(-3) === '.js') {
+    loadScript(items[i].dataset.src)
+  }
 }
 
 // Theme switch
