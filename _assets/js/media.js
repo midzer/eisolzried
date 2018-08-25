@@ -2,11 +2,12 @@ import { createImage } from './media/image'
 import { createVideo } from './media/video'
 
 function fillFrag (createElement) {
-  const start = Date.now();
+  const start = Date.now()
   while (Date.now() - start < 3) {
     let element = createElement(index++)
-    if (!element)
+    if (!element) {
       return true
+    }
     frag.appendChild(element)
   }
   return false
@@ -28,7 +29,7 @@ function appendFragment (gridDest, createElement) {
 
 function appendDocumentFragment () {
   children.push.apply(children, Array.from(frag.children))
-  grid.appendChild(frag);
+  grid.appendChild(frag)
   isVisualUpdateScheduled = false
   if (done) {
     for (let i = 0, len = children.length; i < len; i++) {
@@ -50,22 +51,22 @@ var index = 0,
   isVisualUpdateScheduled,
   done
 
-imageTab.addEventListener('shown.bs.tab', function() {
+imageTab.addEventListener('shown.bs.tab', function () {
   index = 0
   tobi.reset()
   appendFragment(imageGrid, createImage)
   while (videoGrid.firstChild) {
-    videoGrid.removeChild(videoGrid.firstChild);
+    videoGrid.removeChild(videoGrid.firstChild)
   }
-}, false);
+}, false)
 
-videoTab.addEventListener('shown.bs.tab', function() {
+videoTab.addEventListener('shown.bs.tab', function () {
   index = 0
   tobi.reset()
   appendFragment(videoGrid, createVideo)
   while (imageGrid.firstChild) {
-    imageGrid.removeChild(imageGrid.firstChild);
+    imageGrid.removeChild(imageGrid.firstChild)
   }
-}, false);
+}, false)
 // Kickstart
 appendFragment(imageGrid, createImage)
