@@ -2,7 +2,9 @@ module.exports = {
   entry: {
     main: [
       'intersection-observer',
-      './_assets/js/main.js'
+      './_assets/js/main.js',
+      './_assets/js/snackbar.js',
+      './_assets/js/service-worker-registration.js'
     ],
     bootstrap: [
       './_assets/js/bootstrap.js'
@@ -36,12 +38,6 @@ module.exports = {
     ],
     media: [
       './_assets/js/media.js'
-    ],
-    snackbar: [
-      './_assets/js/snackbar.js'
-    ],
-    registration: [
-      './_assets/js/service-worker-registration.js'
     ]
   },
   output: {
