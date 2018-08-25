@@ -12,30 +12,30 @@ export function createVideo (index) {
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
-    link.href = '#v' + video
+    link.href = `#v${video}`
     link.dataset.type = 'html'
     link.title = video
     const img = document.createElement('img')
     img.className = 'card-img'
     img.src = trans
-    img.dataset.src = path + 'thumbs/' + video + '.jpg'
+    img.dataset.src = `${path}thumbs/${video}.jpg`
     img.title = video
     img.alt = video
     img.style.opacity = 0
     const div = document.createElement('div')
     div.className = 'embed-responsive'
-    div.id = 'v' + video
+    div.id = `v${video}`
     const vid = document.createElement('video')
     vid.className = 'embed-responsive-item'
     vid.controls = true
     vid.preload = 'none'
     vid.loop = true
     const sourceWebm = document.createElement('source')
-    sourceWebm.src = path + video + '.webm'
+    sourceWebm.src = `${path}${video}.webm`
     sourceWebm.type = 'video/webm'
     vid.appendChild(sourceWebm)
     const sourceMp4 = document.createElement('source')
-    sourceMp4.src = path + video + '.webm'
+    sourceMp4.src = `${path}${video}.mp4`
     sourceMp4.type = 'video/mp4'
     vid.appendChild(sourceMp4)
     div.appendChild(vid)

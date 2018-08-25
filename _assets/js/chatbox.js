@@ -17,6 +17,7 @@ function sendMessage () {
 
 const chatbox = document.getElementById('chatbox')
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187')
+
 ws.onmessage = function (msg) {
   addMessage(msg.data)
 }
@@ -27,7 +28,7 @@ document.getElementById('chat-btn').onclick = function () {
 
 document.getElementById('chat-form').onkeypress = function (event) {
   if (event.keyCode === 13) {
-    sendMessage()
     event.preventDefault()
+    sendMessage()
   }
 }

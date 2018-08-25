@@ -28,5 +28,5 @@ for (let i = els.length - 1; i >= 0; i--) {
     els[i].appendChild(span)
     lastIndex = index
   }
-};
+}
 localStorage.setItem('lastindex', lastIndex)

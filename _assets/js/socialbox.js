@@ -15,9 +15,10 @@ function matchesIndex (element) {
 }
 
 function updateScore (item, modifier) {
-  var socialbox = item.closest('.socialbox')
-  var rating = socialbox.querySelector('#rating')
-  var newScore = Number(rating.textContent) + modifier
+  const socialbox = item.closest('.socialbox'),
+    rating = socialbox.querySelector('#rating'),
+    newScore = Number(rating.textContent) + modifier
+
   rating.textContent = newScore
   sendMessage(socialbox, newScore)
 }
@@ -32,8 +33,9 @@ ws.onopen = function () {
 }
 
 ws.onmessage = function (msg) {
-  let incoming = JSON.parse(msg.data)
-  let item = socialboxes.find(matchesIndex, incoming.index)
+  const incoming = JSON.parse(msg.data),
+    item = socialboxes.find(matchesIndex, incoming.index)
+
   item.querySelector('span').textContent = incoming.score
 }
 
@@ -53,7 +55,7 @@ query('.minus-btn').forEach(function (item) {
 if (navigator.share) {
   let url = document.location.href
   const canonicalElement = document.querySelector('link[rel=canonical]')
-  if (canonicalElement !== null) {
+  if (canonicalElement) {
     url = canonicalElement.href
   }
   query('.share-btn').forEach(function (item) {

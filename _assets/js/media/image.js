@@ -17,7 +17,7 @@ export function createImage (index) {
     const img = document.createElement('img')
     img.className = 'card-img'
     img.src = trans
-    img.dataset.src = path + 'thumbs/' + image.name
+    img.dataset.src = `${path}thumbs/${image.name}`
     img.title = image.text
     img.alt = image.text
     img.style.opacity = 0

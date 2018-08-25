@@ -10,7 +10,6 @@ function fillFrag (createElement) {
     }
     frag.appendChild(element)
   }
-  return false
 }
 
 function appendFragment (gridDest, createElement) {
@@ -44,7 +43,7 @@ const imageTab = document.getElementById('bilder-tab'),
   videoTab = document.getElementById('videos-tab'),
   imageGrid = document.getElementById('image-grid'),
   videoGrid = document.getElementById('video-grid')
-var index = 0,
+let index = 0,
   frag = document.createDocumentFragment(),
   grid,
   children = [],

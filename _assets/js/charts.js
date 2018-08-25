@@ -1,7 +1,8 @@
 'use strict'
 
-require('chartist-plugin-legend')
-let Chartist = require('chartist')
+import 'chartist-plugin-legend'
+import Chartist from 'chartist'
+
 Chartist.Bar('#member', {
   labels: ['1990', '1995', '2000', '2005', '2010', '2015'],
   series: [
@@ -11,7 +12,8 @@ Chartist.Bar('#member', {
     { 'name': 'Passive', 'data': [2, 3, 8, 8, 12, 16] },
     { 'name': 'Ausgetreten', 'data': [0, 0, 0, 6, 7, 3] }
   ]
-}, {
+},
+{
   plugins: [
     Chartist.plugins.legend()
   ]
