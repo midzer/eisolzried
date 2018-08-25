@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "homepage of eisolzried fire department",
   "main": "gulpfile.babel.js",
+  "sideEffects": false,
   "scripts": {
     "start": "bundle exec gulp",
     "build": "bundle exec gulp build:prod",
