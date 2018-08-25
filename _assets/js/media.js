@@ -1,33 +1,54 @@
 import { createImage } from './media/image'
 import { createVideo } from './media/video'
 
-function appendFragment (grid, createElement) {
-  const frag = document.createDocumentFragment()
+function fillFrag (createElement) {
   const start = Date.now();
-  var element
   while (Date.now() - start < 3) {
-    element = createElement(index++)
-    if (!element) {
-      break
-    }
+    let element = createElement(index++)
+    if (!element)
+      return true
     frag.appendChild(element)
   }
-  // Shallow copy due empty frag after append
-  const children = Array.from(frag.children)
-  grid.appendChild(frag)
-  for (let i = 0, len = children.length; i < len; i++) {
-    observer.observe(children[i].querySelector('img'))
-    tobi.add(children[i].querySelector('a'))
-  }
-  if (element)
-    appendFragment(grid, createElement)
+  return false
 }
 
-const imageTab = document.getElementById('bilder-tab')
-const videoTab = document.getElementById('videos-tab')
-const imageGrid = document.getElementById('image-grid')
-const videoGrid = document.getElementById('video-grid')
-var index = 0
+function appendFragment (gridDest, createElement) {
+  grid = gridDest
+
+  done = fillFrag(createElement)
+
+  if (!isVisualUpdateScheduled) {
+    isVisualUpdateScheduled = true
+    requestAnimationFrame(appendDocumentFragment)
+  }
+  if (!done || (frag.childElementCount && !isVisualUpdateScheduled)) {
+    appendFragment(grid, createElement)
+  }
+}
+
+function appendDocumentFragment () {
+  children.push.apply(children, Array.from(frag.children))
+  grid.appendChild(frag);
+  isVisualUpdateScheduled = false
+  if (done) {
+    for (let i = 0, len = children.length; i < len; i++) {
+      observer.observe(children[i].querySelector('img'))
+      tobi.add(children[i].querySelector('a'))
+    }
+    children.length = 0
+  }
+}
+
+const imageTab = document.getElementById('bilder-tab'),
+  videoTab = document.getElementById('videos-tab'),
+  imageGrid = document.getElementById('image-grid'),
+  videoGrid = document.getElementById('video-grid')
+var index = 0,
+  frag = document.createDocumentFragment(),
+  grid,
+  children = [],
+  isVisualUpdateScheduled,
+  done
 
 imageTab.addEventListener('shown.bs.tab', function() {
   index = 0
