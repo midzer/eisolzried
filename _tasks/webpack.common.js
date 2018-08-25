@@ -24,7 +24,6 @@ module.exports = {
       './_assets/js/socialbox.js'
     ],
     charts: [
-      'chartist',
       './_assets/js/charts.js'
     ],
     kuebelspritze: [
