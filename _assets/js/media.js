@@ -1,10 +1,11 @@
-import { createImage, resetImages } from './media/image'
-import { createVideo, resetVideos } from './media/video'
+import { createImage } from './media/image'
+import { createVideo } from './media/video'
 import { load } from './helper/lazy'
 
 function appendElement (parent, createElement) {
-  const element = createElement()
+  const element = createElement(index)
   if (element) {
+    index++
     return parent.appendChild(element)
   }
 }
@@ -30,23 +31,24 @@ const imageTab = document.getElementById('bilder-tab')
 const videoTab = document.getElementById('videos-tab')
 const imageGrid = document.getElementById('image-grid')
 const videoGrid = document.getElementById('video-grid')
+var index = 0
 
 imageTab.addEventListener('shown.bs.tab', function() {
+  index = 0
   tobi.reset()
   appendFragment(imageGrid, createImage)
   while (videoGrid.firstChild) {
     videoGrid.removeChild(videoGrid.firstChild);
   }
-  resetVideos()
 }, false);
 
 videoTab.addEventListener('shown.bs.tab', function() {
+  index = 0
   tobi.reset()
   appendFragment(videoGrid, createVideo)
   while (imageGrid.firstChild) {
     imageGrid.removeChild(imageGrid.firstChild);
   }
-  resetImages()
 }, false);
 
 // Pre-load items that are within 2 multiples of the visible viewport height.

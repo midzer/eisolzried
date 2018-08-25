@@ -3,12 +3,12 @@
 import { videos, path } from './videos'
 import { trans } from '../helper/trans'
 
-var tempVideos = [...videos]
+const length = videos.length
 
-export function createVideo () {
+export function createVideo (index) {
   let card
-  if (tempVideos.length) {
-    const video = tempVideos.shift()
+  if (index < length) {
+    const video = videos[index]
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
@@ -43,8 +43,4 @@ export function createVideo () {
     card.appendChild(div)
   }
   return card
-}
-
-export function resetVideos () {
-  tempVideos = [...videos]
 }

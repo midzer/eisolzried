@@ -3,12 +3,12 @@
 import { images, path } from './images'
 import { trans } from '../helper/trans'
 
-var tempImages = [...images]
+const length = images.length
 
-export function createImage () {
+export function createImage (index) {
   let card
-  if (tempImages.length) {
-    const image = tempImages.shift()
+  if (index < length) {
+    const image = images[index]
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
@@ -24,8 +24,4 @@ export function createImage () {
     card.appendChild(link)
   }
   return card
-}
-
-export function resetImages () {
-  tempImages = [...images]
 }
