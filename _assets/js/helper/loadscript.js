@@ -3,7 +3,7 @@
 export function loadScript (src) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script')
-    script.async = false
+    script.defer = true
     script.src = src
     script.onload = () => {
       resolve(script.src)
