@@ -11,7 +11,7 @@ function sendMessage (item, score) {
 }
 
 function matchesIndex (element) {
-  return element.getAttribute('data-index') === this
+  return element.getAttribute('data-index') == this
 }
 
 function updateScore (item, modifier) {
