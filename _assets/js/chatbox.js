@@ -2,7 +2,7 @@
 
 function addMessage (msg) {
   let content = document.createElement('li')
-  content.innerText = msg
+  content.textContent = msg
   document.getElementById('chat-messages').append(content)
   chatbox.scrollTop = chatbox.scrollHeight
 }

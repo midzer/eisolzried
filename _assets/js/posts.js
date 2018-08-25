@@ -24,7 +24,7 @@ for (let i = els.length - 1; i >= 0; i--) {
   if (index > lastIndex) {
     const span = document.createElement('span')
     span.className = 'badge badge-primary ml-1'
-    span.innerText = 'Neu'
+    span.textContent = 'Neu'
     els[i].appendChild(span)
     lastIndex = index
   }

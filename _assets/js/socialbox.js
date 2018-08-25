@@ -18,7 +18,7 @@ function updateScore (item, modifier) {
   var socialbox = item.closest('.socialbox')
   var rating = socialbox.querySelector('#rating')
   var newScore = Number(rating.textContent) + modifier
-  rating.innerText = newScore
+  rating.textContent = newScore
   sendMessage(socialbox, newScore)
 }
 
@@ -34,7 +34,7 @@ ws.onopen = function () {
 ws.onmessage = function (msg) {
   let incoming = JSON.parse(msg.data)
   let item = socialboxes.find(matchesIndex, incoming.index)
-  item.querySelector('span').innerText = incoming.score
+  item.querySelector('span').textContent = incoming.score
 }
 
 query('.plus-btn').forEach(function (item) {

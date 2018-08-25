@@ -4,7 +4,7 @@ import { toggleAudio } from './helper/toggleaudio'
 
 function hubDone (nextHub) {
   kuebel.src = '/assets/images/games/kuebel-' + nextHub + '.png'
-  huebe.innerText = parseInt(huebe.textContent) + 1
+  huebe.textContent = parseInt(huebe.textContent) + 1
 }
 
 const kuebel = document.getElementById('kuebel')
