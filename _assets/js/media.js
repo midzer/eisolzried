@@ -45,6 +45,11 @@ function appendDocumentFragment () {
   isVisualUpdateScheduled = false
 }
 
+function reset () {
+  index = 0
+  tobi.reset()
+}
+
 const imageTab = document.getElementById('bilder-tab'),
   videoTab = document.getElementById('videos-tab'),
   imageGrid = document.getElementById('image-grid'),
@@ -56,18 +61,16 @@ let index = 0,
   isVisualUpdateScheduled,
   done
 
-imageTab.addEventListener('shown.bs.tab', function () {
-  index = 0
-  tobi.reset()
+imageTab.addEventListener('show.bs.tab', function () {
+  reset()
   appendFragment(imageGrid, createImage)
   while (videoGrid.firstChild) {
     videoGrid.removeChild(videoGrid.firstChild)
   }
 }, false)
 
-videoTab.addEventListener('shown.bs.tab', function () {
-  index = 0
-  tobi.reset()
+videoTab.addEventListener('show.bs.tab', function () {
+  reset()
   appendFragment(videoGrid, createVideo)
   while (imageGrid.firstChild) {
     imageGrid.removeChild(imageGrid.firstChild)
