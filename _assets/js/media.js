@@ -1,30 +1,26 @@
 import { createImage } from './media/image'
 import { createVideo } from './media/video'
-import { load } from './helper/lazy'
-
-function appendElement (parent, createElement) {
-  const element = createElement(index)
-  if (element) {
-    index++
-    return parent.appendChild(element)
-  }
-}
 
 function appendFragment (grid, createElement) {
-  let frag = document.createDocumentFragment()
-  for (let i = 0; i < 24; i++) {
-    appendElement(frag, createElement)
+  const frag = document.createDocumentFragment()
+  const start = Date.now();
+  var element
+  while (Date.now() - start < 3) {
+    element = createElement(index++)
+    if (!element) {
+      break
+    }
+    frag.appendChild(element)
   }
-  const children = Array.from(frag.children) // shallow copy due empty frag after appendChild()
+  // Shallow copy due empty frag after append
+  const children = Array.from(frag.children)
   grid.appendChild(frag)
-  children.forEach(child => {
-    observeElement(child)
-  })
-}
-
-function observeElement (element) {
-  mediaObserver.observe(element.querySelector('img'))
-  tobi.add(element.querySelector('a'))
+  for (let i = 0, len = children.length; i < len; i++) {
+    observer.observe(children[i].querySelector('img'))
+    tobi.add(children[i].querySelector('a'))
+  }
+  if (element)
+    appendFragment(grid, createElement)
 }
 
 const imageTab = document.getElementById('bilder-tab')
@@ -50,33 +46,5 @@ videoTab.addEventListener('shown.bs.tab', function() {
     imageGrid.removeChild(imageGrid.firstChild);
   }
 }, false);
-
-// Pre-load items that are within 2 multiples of the visible viewport height.
-const mediaObserver = new IntersectionObserver(changes => {
-  changes.forEach(change => {
-    // Edge 15 doesn't support isIntersecting, but we can infer it
-    // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
-    // https://github.com/WICG/IntersectionObserver/issues/211
-    const isIntersecting = (typeof change.isIntersecting === 'boolean')
-      ? change.isIntersecting : change.intersectionRect.height > 0
-    if (isIntersecting) {
-      // Stop observing the current target
-      mediaObserver.unobserve(change.target)
-
-      load(change.target)
-
-      let element
-      if (change.target.closest('#image-grid')) {
-        element = appendElement(imageGrid, createImage)
-      } else if (change.target.closest('#video-grid')) {
-        element = appendElement(videoGrid, createVideo)
-      }
-      if (element) {
-        observeElement(element)
-      }
-    }
-  })
-}
-)
-// Kickstart by adding a large set
+// Kickstart
 appendFragment(imageGrid, createImage)

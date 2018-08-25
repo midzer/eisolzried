@@ -3,7 +3,7 @@
 import { load } from './helper/lazy'
 import { query } from './helper/query'
 
-const observer = new IntersectionObserver(changes => {
+window.observer = new IntersectionObserver(changes => {
   changes.forEach(change => {
     // Edge 15 doesn't support isIntersecting, but we can infer it
     // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
