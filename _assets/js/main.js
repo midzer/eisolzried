@@ -4,14 +4,14 @@ import { loadScript } from './helper/loadscript'
 import { toggleAudio } from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
 
-// Lightbox
-if (document.querySelector('.lightbox') || document.getElementById('image-grid')) {
-  loadScript('/assets/js/lightbox.js')
-}
-
 // Lazy components
 if (document.querySelector('.lazy')) {
   loadScript('/assets/js/lazy.js')
+}
+
+// Lightbox
+if (document.querySelector('.lightbox')) {
+  loadScript('/assets/js/lightbox.js')
 }
 
 // Theme switch

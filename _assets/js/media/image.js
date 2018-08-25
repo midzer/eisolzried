@@ -3,15 +3,16 @@
 import { images, path } from './images'
 import { trans } from '../helper/trans'
 
+var tempImages = [...images]
+
 export function createImage () {
-  let card = null
-  if (images.length) {
-    const image = images.shift()
+  let card
+  if (tempImages.length) {
+    const image = tempImages.shift()
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
     link.href = path + image.name
-    link.className = 'lightbox'
     link.title = image.text
     const img = document.createElement('img')
     img.className = 'endless card-img'
@@ -23,4 +24,8 @@ export function createImage () {
     card.appendChild(link)
   }
   return card
+}
+
+export function resetImages () {
+  tempImages = [...images]
 }

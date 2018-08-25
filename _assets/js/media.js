@@ -1,5 +1,5 @@
-import { createImage } from './media/image'
-import { createVideo } from './media/video'
+import { createImage, resetImages } from './media/image'
+import { createVideo, resetVideos } from './media/video'
 import { load } from './helper/lazy'
 
 function appendElement (parent, createElement) {
@@ -7,7 +7,6 @@ function appendElement (parent, createElement) {
   if (element) {
     return parent.appendChild(element)
   }
-  return null
 }
 
 function appendFragment (grid, createElement) {
@@ -27,8 +26,28 @@ function observeElement (element) {
   tobi.add(element.querySelector('a'))
 }
 
+const imageTab = document.getElementById('bilder-tab')
+const videoTab = document.getElementById('videos-tab')
 const imageGrid = document.getElementById('image-grid')
 const videoGrid = document.getElementById('video-grid')
+
+imageTab.addEventListener('shown.bs.tab', function() {
+  tobi.reset()
+  appendFragment(imageGrid, createImage)
+  while (videoGrid.firstChild) {
+    videoGrid.removeChild(videoGrid.firstChild);
+  }
+  resetVideos()
+}, false);
+
+videoTab.addEventListener('shown.bs.tab', function() {
+  tobi.reset()
+  appendFragment(videoGrid, createVideo)
+  while (imageGrid.firstChild) {
+    imageGrid.removeChild(imageGrid.firstChild);
+  }
+  resetImages()
+}, false);
 
 // Pre-load items that are within 2 multiples of the visible viewport height.
 const mediaObserver = new IntersectionObserver(changes => {
@@ -44,7 +63,7 @@ const mediaObserver = new IntersectionObserver(changes => {
 
       load(change.target)
 
-      let element = null
+      let element
       if (change.target.closest('#image-grid')) {
         element = appendElement(imageGrid, createImage)
       } else if (change.target.closest('#video-grid')) {
@@ -59,4 +78,3 @@ const mediaObserver = new IntersectionObserver(changes => {
 )
 // Kickstart by adding a large set
 appendFragment(imageGrid, createImage)
-appendFragment(videoGrid, createVideo)

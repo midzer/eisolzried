@@ -3,16 +3,17 @@
 import { videos, path } from './videos'
 import { trans } from '../helper/trans'
 
+var tempVideos = [...videos]
+
 export function createVideo () {
-  let card = null
-  if (videos.length) {
-    const video = videos.shift()
+  let card
+  if (tempVideos.length) {
+    const video = tempVideos.shift()
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
     link.href = '#v' + video
     link.dataset.type = 'html'
-    link.className = 'lightbox'
     link.title = video
     const img = document.createElement('img')
     img.className = 'endless card-img'
@@ -42,4 +43,8 @@ export function createVideo () {
     card.appendChild(div)
   }
   return card
+}
+
+export function resetVideos () {
+  tempVideos = [...videos]
 }
