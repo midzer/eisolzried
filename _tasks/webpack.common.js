@@ -2,9 +2,12 @@ module.exports = {
   entry: {
     main: [
       'intersection-observer',
-      './_assets/js/snackbar.js',
       './_assets/js/main.js',
+      './_assets/js/snackbar.js',
       './_assets/js/service-worker-registration.js'
+    ],
+    bootstrap: [
+      './_assets/js/bootstrap.js'
     ],
     lazy: [
       './_assets/js/lazy.js'

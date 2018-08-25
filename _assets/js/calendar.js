@@ -1,5 +1,7 @@
 'use strict'
 
+import { Modal } from 'bootstrap.native'
+
 function isBetween (first, last, time, timezone) {
   return (first.compareDateOnlyTz(time, timezone) === -1 &&
     last.compareDateOnlyTz(time, timezone) === 1) ||
@@ -86,16 +88,17 @@ function buildCal (data) {
   }
 
   function showModal (event) {
-    var content =
-        '<div class="modal-header">' +
-        '<h5 class="modal-title">' + event.summary + '</h5>' +
-        '<button type="button" class="close" data-dismiss="modal" aria-label="Schließen">' +
-        '<span aria-hidden="true">&times;</span>' +
-        '</button>' +
-        '</div>' +
-        '<div class="modal-body">' +
-        '<p>' + createEventDetails(event) + '</p>' +
-        '</div>'
+    const content =
+      '<div class="modal-header">' +
+      '<h5 class="modal-title">' + event.summary + '</h5>' +
+      '<button type="button" class="close" data-dismiss="modal" aria-label="Schließen">' +
+      '<span aria-hidden="true">&times;</span>' +
+      '</button>' +
+      '</div>' +
+      '<div class="modal-body">' +
+      '<p>' + createEventDetails(event) + '</p>' +
+      '</div>'
+    const modal = new Modal(document.getElementById('event-modal'))
     modal.setContent(content)
     modal.show()
   }

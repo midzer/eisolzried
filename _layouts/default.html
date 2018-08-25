@@ -2,25 +2,27 @@
 layout: default
 ---
 <!DOCTYPE html>
-<html lang="de-DE">
+<html lang="de-DE" class="lazy" data-src="/assets/js/bootstrap.js">
 
   {% include head.html %}
 
   <body>
-
-    {% include alert.html %}
     
     {% include header.html %}
-      
+
     <main>
       <div class="container shadow pb-1">
+
+        {% include alert.html %}
+        
         {{ content }}
+        
       </div>
     </main>
 
     {% include footer.html %}
 
-    {% include toast.html %}
+    {% include snackbar.html %}
 
     {% include modal.html %}
   </body>

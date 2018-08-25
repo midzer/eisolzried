@@ -2,7 +2,6 @@
 
 import { loadScript } from './helper/loadscript'
 import { toggleAudio } from './helper/toggleaudio'
-import { Modal } from 'bootstrap.native'
 
 // Lazy components
 if (document.querySelector('.lazy')) {
@@ -149,7 +148,3 @@ if (window.PerformanceNavigationTiming) {
   document.getElementById('rendertime').innerText = parseInt(entry.domInteractive) + 'ms'
   document.getElementById('rendertext').hidden = false
 }
-
-// Globals
-window.snackbar = new Snackbar(document.getElementById('snackbar'))
-window.modal = new Modal(document.getElementById('event-modal'))
