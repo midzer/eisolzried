@@ -33,11 +33,8 @@ for (let i = 0, j = items.length; i < j; i++) {
   if (['IMG', 'VIDEO', 'IFRAME'].indexOf(items[i].nodeName) !== -1) {
     items[i].style.opacity = 0
     items[i].style.willChange = 'opacity'
-    observer.observe(items[i])
   }
-  else if (items[i].dataset.src.slice(-3) === '.js') {
-    loadScript(items[i].dataset.src)
-  }
+  observer.observe(items[i])
 }
 
 // Theme switch
