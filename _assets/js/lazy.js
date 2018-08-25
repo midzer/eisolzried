@@ -13,7 +13,7 @@ window.observer = new IntersectionObserver(changes => {
     if (isIntersecting) {
       // Stop observing the current target
       observer.unobserve(change.target)
-
+      
       load(change.target)
     }
   })
