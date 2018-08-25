@@ -16,7 +16,7 @@ export function createVideo (index) {
     link.dataset.type = 'html'
     link.title = video
     const img = document.createElement('img')
-    img.className = 'endless card-img'
+    img.className = 'lazy card-img'
     img.src = trans
     img.dataset.src = path + 'thumbs/' + video + '.jpg'
     img.title = video
