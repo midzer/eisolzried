@@ -128,9 +128,10 @@
           weeks[iso8601(week)] = tr
         }
         // Either way, we need to run through each day and set some classes.
+        var thisMonth = (month + 1).toString()
+        var isoDay = iso8601(today)
         for (var i = 0, j = tr.children.length; i < j; i++) {
-          tr.children[i].className = tr.children[i].getAttribute('month') === month + 1 ? 'current' : 'extra'
-          tr.children[i].className += tr.children[i].getAttribute('date') === iso8601(today) ? ' today' : ''
+          tr.children[i].className = tr.children[i].getAttribute('month') !== thisMonth ? 'extra' : tr.children[i].getAttribute('date') === isoDay ? 'today' : ''
         }
         table.tBodies[0].appendChild(tr)
 
