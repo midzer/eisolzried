@@ -6,6 +6,7 @@
   }
 
   td {
+    position: relative;
     border: 1px solid #AEAEAE;
     width: 5em;
     height: 5em;
@@ -49,14 +50,13 @@
   }
 
   .daynum {
-    text-align: right;
-    padding-right: 0.5ex;
+    position: absolute;
+    top: 0.5ex;
+    right: 0.5ex;
   }
 
   .dayevent {
     font-size: 11px;
-    color: $primary;
-    cursor: pointer;
     padding-left: 0.5ex;
     white-space: nowrap;
     overflow: hidden;
