@@ -117,21 +117,17 @@ field.addEventListener('keypress', event => {
 // Progressbar
 const progressBar = document.getElementById('progressbar')
 let ticking
-window.addEventListener('scroll', requestTick, { passive: true })
+window.addEventListener('scroll', requestTick)
 
 function requestTick () {
   if (!ticking) {
     ticking = true
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(update, { timeout: 500 })
-    } else {
-      requestAnimationFrame(update)
-    }
+    'requestIdleCallback' in window ? requestIdleCallback(update) : requestAnimationFrame(update)
   }
 }
 
 function update () {
-  let value = window.pageYOffset / (document.body.clientHeight - window.innerHeight)
+  const value = window.pageYOffset / (document.body.clientHeight - window.innerHeight)
   progressBar.style.transform = `scaleX(${value})`
   progressBar.setAttribute('aria-valuenow', value * 100)
   ticking = false
