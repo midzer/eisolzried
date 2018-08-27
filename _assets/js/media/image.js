@@ -20,7 +20,7 @@ export function createImage (index) {
     img.dataset.src = `${path}thumbs/${image.name}`
     img.title = image.text
     img.alt = image.text
-    img.style.opacity = 0
+    img.style.opacity = '0'
     link.appendChild(img)
     card.appendChild(link)
   }

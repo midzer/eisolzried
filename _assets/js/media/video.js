@@ -21,7 +21,7 @@ export function createVideo (index) {
     img.dataset.src = `${path}thumbs/${video}.jpg`
     img.title = video
     img.alt = video
-    img.style.opacity = 0
+    img.style.opacity = '0'
     const div = document.createElement('div')
     div.className = 'embed-responsive'
     div.id = `v${video}`
