@@ -1,33 +1,18 @@
 import { createImage } from './media/image'
 import { createVideo } from './media/video'
 
-function appendElement (frag, createElement) {
-  const start = Date.now()
-  while (Date.now() - start < 5) {
-    const element = createElement(index++)
-    if (!element) {
-      return true
-    }
+function createGallery (grid, createElement) {
+  const frag = document.createDocumentFragment()
+  let element
+  while (element = createElement(index++)) {
     observer.observe(element.querySelector('img'))
     frag.appendChild(element)
   }
-}
-
-function createGallery (grid, createElement) {
-  const frag = document.createDocumentFragment(),
-    done = appendElement(frag, createElement)
-  
   requestAnimationFrame(function () {
-    const count = frag.childElementCount
-    if (count) {
-      const children = Array.from(frag.children)
-      grid.appendChild(frag)
-      for (let i = 0; i < count; i++) {
-        tobi.add(children[i].querySelector('a'))
-      }
-    }
-    if (!done) {
-      createGallery(grid, createElement)
+    const children = Array.from(frag.children)
+    grid.appendChild(frag)
+    for (let i = 0, len = children.length; i < len; i++) {
+      tobi.add(children[i].querySelector('a'))
     }
   })
 }
