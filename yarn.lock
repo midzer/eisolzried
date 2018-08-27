@@ -1625,14 +1625,6 @@ chardet@^0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
 
-chartist-plugin-legend@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/chartist-plugin-legend/-/chartist-plugin-legend-0.6.2.tgz#53bf2771ddc1dc288c8abc16c151788f0b750244"
-
-chartist@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/chartist/-/chartist-0.11.0.tgz#84ba5e05490d096d93dcfa9343ebc31ef6a3bd28"
-
 cheerio@0.22.0:
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
@@ -3423,6 +3415,10 @@ fragment-cache@^0.2.1:
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
   dependencies:
     map-cache "^0.2.2"
+
+frappe-charts@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/frappe-charts/-/frappe-charts-1.1.0.tgz#c13929a1b79f4c4e72c943a0deca300b2eb78f77"
 
 fresh@0.5.2, fresh@^0.5.2:
   version "0.5.2"
