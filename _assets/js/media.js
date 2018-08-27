@@ -8,38 +8,34 @@ function fillFrag (createElement) {
     if (!element) {
       return true
     }
+    observer.observe(element.querySelector('img'))
     frag.appendChild(element)
   }
 }
 
-function appendFragment (gridDest, createElement) {
+function appendFragment (grid, createElement) {
   if (!isVisualUpdateScheduled) {
     isVisualUpdateScheduled = true
-    grid = gridDest
-    createFunc = createElement
-    requestAnimationFrame(appendDocumentFragment)
+
+    requestAnimationFrame(function () {
+      isVisualUpdateScheduled = false
+      if (frag.childElementCount) {
+        children.push.apply(children, Array.from(frag.children))
+        grid.appendChild(frag)
+      }
+      if (!done) {
+        appendFragment(grid, createElement)
+      } else {
+        // Finally add everything to lightbox
+        for (let i = 0, len = children.length; i < len; i++) {
+          tobi.add(children[i].querySelector('a'))
+        }
+        // Cleanup
+        children.length = 0
+      }
+    })
   }
   done = fillFrag(createElement)
-}
-
-function appendDocumentFragment () {
-  isVisualUpdateScheduled = false
-  if (frag.childElementCount) {
-    children.push.apply(children, Array.from(frag.children))
-    grid.appendChild(frag)
-  }
-  if (!done) {
-    appendFragment(grid, createFunc)
-  } else {
-    // Finally...
-    // Observe and dynamic adding to lightbox
-    for (let i = 0, len = children.length; i < len; i++) {
-      observer.observe(children[i].querySelector('img'))
-      tobi.add(children[i].querySelector('a'))
-    }
-    // Cleanup
-    children.length = 0
-  }
 }
 
 function reset () {
@@ -53,8 +49,6 @@ const imageTab = document.getElementById('bilder-tab'),
   videoGrid = document.getElementById('video-grid')
 let index = 0,
   frag = document.createDocumentFragment(),
-  grid,
-  createFunc,
   children = [],
   isVisualUpdateScheduled,
   done
