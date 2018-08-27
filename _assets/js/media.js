@@ -1,10 +1,10 @@
 import { createImage } from './media/image'
 import { createVideo } from './media/video'
 
-function fillFrag (createElement) {
+function appendElement (frag, createElement) {
   const start = Date.now()
   while (Date.now() - start < 5) {
-    let element = createElement(index++)
+    const element = createElement(index++)
     if (!element) {
       return true
     }
@@ -13,29 +13,23 @@ function fillFrag (createElement) {
   }
 }
 
-function appendFragment (grid, createElement) {
-  if (!isVisualUpdateScheduled) {
-    isVisualUpdateScheduled = true
-
-    requestAnimationFrame(function () {
-      isVisualUpdateScheduled = false
-      if (frag.childElementCount) {
-        children.push.apply(children, Array.from(frag.children))
-        grid.appendChild(frag)
+function createGallery (grid, createElement) {
+  const frag = document.createDocumentFragment(),
+    done = appendElement(frag, createElement)
+  
+  requestAnimationFrame(function () {
+    const count = frag.childElementCount
+    if (count) {
+      const children = Array.from(frag.children)
+      grid.appendChild(frag)
+      for (let i = 0; i < count; i++) {
+        tobi.add(children[i].querySelector('a'))
       }
-      if (!done) {
-        appendFragment(grid, createElement)
-      } else {
-        // Finally add everything to lightbox
-        for (let i = 0, len = children.length; i < len; i++) {
-          tobi.add(children[i].querySelector('a'))
-        }
-        // Cleanup
-        children.length = 0
-      }
-    })
-  }
-  done = fillFrag(createElement)
+    }
+    if (!done) {
+      createGallery(grid, createElement)
+    }
+  })
 }
 
 function reset () {
@@ -47,15 +41,11 @@ const imageTab = document.getElementById('bilder-tab'),
   videoTab = document.getElementById('videos-tab'),
   imageGrid = document.getElementById('image-grid'),
   videoGrid = document.getElementById('video-grid')
-let index = 0,
-  frag = document.createDocumentFragment(),
-  children = [],
-  isVisualUpdateScheduled,
-  done
+let index = 0
 
 imageTab.addEventListener('show.bs.tab', function () {
   reset()
-  appendFragment(imageGrid, createImage)
+  createGallery(imageGrid, createImage)
   while (videoGrid.firstChild) {
     videoGrid.removeChild(videoGrid.firstChild)
   }
@@ -63,10 +53,10 @@ imageTab.addEventListener('show.bs.tab', function () {
 
 videoTab.addEventListener('show.bs.tab', function () {
   reset()
-  appendFragment(videoGrid, createVideo)
+  createGallery(videoGrid, createVideo)
   while (imageGrid.firstChild) {
     imageGrid.removeChild(imageGrid.firstChild)
   }
 }, false)
 // Kickstart
-appendFragment(imageGrid, createImage)
+createGallery(imageGrid, createImage)
