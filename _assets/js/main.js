@@ -2,14 +2,9 @@
 
 import { load } from './helper/load'
 import { query } from './helper/query'
-import { loadScript } from './helper/loadscript'
 import { toggleAudio } from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
-
-// Lightbox
-if (document.querySelector('.lightbox')) {
-  loadScript('/assets/js/lightbox.js')
-}
+import Tobi from 'rqrauhvmra__tobi'
 
 // Lazy components
 window.observer = new IntersectionObserver(changes => {
@@ -147,6 +142,11 @@ if (window.PerformanceNavigationTiming) {
 // Globals
 window.snackbar = new Snackbar(document.querySelector('.snackbar'))
 window.modal = new Modal(document.querySelector('.modal'))
+window.tobi = new Tobi({
+  close: false,
+  counter: false,
+  zoom: false
+})
 
 // Snow
 // const Snowflakes = require('magic-snowflakes');

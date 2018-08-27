@@ -6,9 +6,6 @@ module.exports = {
       './_assets/js/main.js',
       './_assets/js/service-worker-registration.js'
     ],
-    lightbox: [
-      './_assets/js/lightbox.js'
-    ],
     calendar: [
       'ical.js',
       './_assets/js/drcal.js',
