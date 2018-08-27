@@ -3,7 +3,7 @@ import { createVideo } from './media/video'
 
 function fillFrag (createElement) {
   const start = Date.now()
-  while (Date.now() - start < 3) {
+  while (Date.now() - start < 5) {
     let element = createElement(index++)
     if (!element) {
       return true
@@ -16,23 +16,22 @@ function appendFragment (gridDest, createElement) {
   if (!isVisualUpdateScheduled) {
     isVisualUpdateScheduled = true
     grid = gridDest
+    createFunc = createElement
     requestAnimationFrame(appendDocumentFragment)
   }
-  
   done = fillFrag(createElement)
-
-  if (!done || (frag.childElementCount && !isVisualUpdateScheduled)) {
-    appendFragment(gridDest, createElement)
-  }
 }
 
 function appendDocumentFragment () {
+  isVisualUpdateScheduled = false
   if (frag.childElementCount) {
     children.push.apply(children, Array.from(frag.children))
-    grid.appendChild(frag)  
+    grid.appendChild(frag)
   }
-  // Finally...
-  if (done) {
+  if (!done) {
+    appendFragment(grid, createFunc)
+  } else {
+    // Finally...
     // Observe and dynamic adding to lightbox
     for (let i = 0, len = children.length; i < len; i++) {
       observer.observe(children[i].querySelector('img'))
@@ -41,8 +40,6 @@ function appendDocumentFragment () {
     // Cleanup
     children.length = 0
   }
-  // Reset
-  isVisualUpdateScheduled = false
 }
 
 function reset () {
@@ -57,6 +54,7 @@ const imageTab = document.getElementById('bilder-tab'),
 let index = 0,
   frag = document.createDocumentFragment(),
   grid,
+  createFunc,
   children = [],
   isVisualUpdateScheduled,
   done
