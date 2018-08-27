@@ -37,6 +37,12 @@ function reset () {
   tobi.reset()
 }
 
+function cleanup (grid) {
+  while (grid.firstChild) {
+    grid.removeChild(grid.firstChild)
+  }
+}
+
 const imageTab = document.getElementById('bilder-tab'),
   videoTab = document.getElementById('videos-tab'),
   imageGrid = document.getElementById('image-grid'),
@@ -44,22 +50,22 @@ const imageTab = document.getElementById('bilder-tab'),
 let index = 0
 
 imageTab.addEventListener('show.bs.tab', () => {
-  reset()
   createGallery(imageGrid, createImage)
 })
 videoTab.addEventListener('show.bs.tab', () => {
-  reset()
   createGallery(videoGrid, createVideo)
 })
+imageTab.addEventListener('hide.bs.tab', () => {
+  reset()
+})
+videoTab.addEventListener('hide.bs.tab', () => {
+  reset()
+})
 imageTab.addEventListener('hidden.bs.tab', () => {
-  while (imageGrid.firstChild) {
-    imageGrid.removeChild(imageGrid.firstChild)
-  }
+  cleanup(imageGrid)
 })
 videoTab.addEventListener('hidden.bs.tab', () => {
-  while (videoGrid.firstChild) {
-    videoGrid.removeChild(videoGrid.firstChild)
-  }
+  cleanup(videoGrid)
 })
 // Kickstart
 createGallery(imageGrid, createImage)
