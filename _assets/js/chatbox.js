@@ -1,32 +1,46 @@
 'use strict'
 
-function addMessage (msg) {
-  let content = document.createElement('li')
-  content.textContent = msg
-  document.getElementById('chat-messages').append(content)
+function addMessage (message) {
+  const item = document.createElement('li')
+  item.textContent = message
+  messagesList.appendChild(item)
   chatbox.scrollTop = chatbox.scrollHeight
 }
 
 function sendMessage () {
-  let input = document.getElementById('chat-input')
-  let msg = input.value
-  addMessage(msg)
+  const input = document.getElementById('chat-input')
+  const message = input.value
+  addMessage(message)
   input.value = ''
-  ws.send(msg)
+  ws.send(message)
 }
 
 const chatbox = document.getElementById('chatbox')
+const messagesList = document.getElementById('chat-messages')
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187')
+let incomingMessages = [],
+  scheduled
 
-ws.onmessage = function (msg) {
-  addMessage(msg.data)
+ws.onmessage = message => {
+  incomingMessages.push(message.data)
+
+  if (!scheduled) {
+    scheduled = true
+    requestAnimationFrame(function () {
+      for (let i = 0, len = incomingMessages.length; i < len; i++) {
+        addMessage(incomingMessages[i])
+      }
+      incomingMessages.length = 0
+      scheduled = false
+    })
+  }
 }
 
-document.getElementById('chat-btn').onclick = function () {
+document.getElementById('chat-btn').onclick = () => {
   sendMessage()
 }
 
-document.getElementById('chat-form').onkeypress = function (event) {
+document.getElementById('chat-form').onkeypress = event => {
   if (event.keyCode === 13) {
     event.preventDefault()
     sendMessage()
