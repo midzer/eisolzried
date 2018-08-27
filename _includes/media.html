@@ -8,7 +8,7 @@
 {% assign animations = 'Animationen' %}
 {% endif %}
 
-<ul class="lazy nav nav-tabs" role="tablist" data-src="/assets/js/media.js">
+<ul class="lazy nav nav-tabs" role="tablist" data-src="/assets/js/lightbox.js">
   <li class="nav-item">
     <a id="bilder-tab" class="nav-link active" data-toggle="tab" href="#bilder" role="tab" aria-controls="bilder" aria-selected="true">{% include icon.html icon="image" %} {{ pictures }}</a>
   </li>
@@ -20,7 +20,7 @@
   </li>
 </ul>
 
-<div class="tab-content">
+<div class="lazy tab-content" data-src="/assets/js/media.js">
   <div role="tabpanel" id="bilder" class="tab-pane active" aria-labelledby="bilder-tab">
     <div id="image-grid" class="grid grid--small top-buffer"></div>
   </div>
