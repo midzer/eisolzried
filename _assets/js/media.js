@@ -43,20 +43,23 @@ const imageTab = document.getElementById('bilder-tab'),
   videoGrid = document.getElementById('video-grid')
 let index = 0
 
-imageTab.addEventListener('show.bs.tab', function () {
+imageTab.addEventListener('show.bs.tab', () => {
   reset()
   createGallery(imageGrid, createImage)
-  while (videoGrid.firstChild) {
-    videoGrid.removeChild(videoGrid.firstChild)
-  }
-}, false)
-
-videoTab.addEventListener('show.bs.tab', function () {
+})
+videoTab.addEventListener('show.bs.tab', () => {
   reset()
   createGallery(videoGrid, createVideo)
+})
+imageTab.addEventListener('hidden.bs.tab', () => {
   while (imageGrid.firstChild) {
     imageGrid.removeChild(imageGrid.firstChild)
   }
-}, false)
+})
+videoTab.addEventListener('hidden.bs.tab', () => {
+  while (videoGrid.firstChild) {
+    videoGrid.removeChild(videoGrid.firstChild)
+  }
+})
 // Kickstart
 createGallery(imageGrid, createImage)
