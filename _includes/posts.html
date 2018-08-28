@@ -45,7 +45,7 @@
 </button>
 <br>
 <p class="card-text">
-  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+  <a rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | prepend: site.baseurl }}">
     {% include icon.html icon="rss" %}
     {% if page.lang == 'by' %}
     As neiaste bschtoin
