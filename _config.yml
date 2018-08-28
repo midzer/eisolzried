@@ -1,7 +1,6 @@
 # Site settings
 title: Feuerwehr Eisolzried
-description: >
-  Aktuelle Neuigkeiten, Termine und Wissenswertes der Feuerwehr Eisolzried im Bürgerhaus Deutenhausen-Eisolzried in der Gemeinde Bergkirchen
+description: Aktuelle Neuigkeiten, Termine und Wissenswertes der Feuerwehr Eisolzried im Bürgerhaus Deutenhausen-Eisolzried in der Gemeinde Bergkirchen
 baseurl: ""
 url: https://feuerwehr-eisolzried.de
 repo: https://github.com/midzer/eisolzried
@@ -23,11 +22,8 @@ exclude:
   - README.md
   - node_modules
   - package.json
-  - package-lock.json
   - gulpfile.babel.js
   - yarn.lock
-keep_files:
-  - charts
 
 # Plugin settings
 plugins:
