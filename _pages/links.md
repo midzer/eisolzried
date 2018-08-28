@@ -29,11 +29,17 @@ lang: de
 
 ## Hosting
 
-[![Uberspace badge](){:class="lazy img-fluid" data-src="/assets/images/links/uberspace.png"}](https://uberspace.de/)
+<a href="https://uberspace.de/" title="Uberspace">
+    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/uberspace.png" title="Uberspace" alt="Uberspace">
+    <noscript><img class="img-fluid" src="/assets/images/links/uberspace.png" title="Uberspace" alt="Uberspace"></noscript>
+</a>
 
 ## Jugend
 
-[![Ich will zur Jugendfeuerwehr](){:class="lazy img-fluid" data-src="/assets/images/links/jugendfeuerwehr.png"}](https://www.ich-will-zur-jugendfeuerwehr.de/)
+<a href="https://www.ich-will-zur-jugendfeuerwehr.de/" title="Ich will zur Jugendfeuerwehr">
+    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/jugendfeuerwehr.png" title="Ich will zur Jugendfeuerwehr" alt="Ich will zur Jugendfeuerwehr">
+    <noscript><img class="img-fluid" src="/assets/images/links/jugendfeuerwehr.png" title="Ich will zur Jugendfeuerwehr" alt="Ich will zur Jugendfeuerwehr"></noscript>
+</a>
 
 ## Spiele
 

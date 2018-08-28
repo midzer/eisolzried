@@ -13,6 +13,7 @@
         <div class="card border-primary">
             <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox" title="{{ image.text }}">
                 <img class="lazy card-img" src="{% include trans.html %}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}">
+                <noscript><img class="card-img" src="{{ page.imgfolder }}thumbs/{{ image.name }}" title="{{ image.text }}" alt="{{ image.text }}"></noscript>
             </a>
         </div>
     {% endfor %}

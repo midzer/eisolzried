@@ -1,10 +1,13 @@
 <div id="calendar" class="lazy table-responsive" data-src="/assets/js/calendar.js"></div>
 <br>
 {% if page.lang == 'by' %}
-{% assign download = 'An Kalenda obeloon' %}
+{% assign download = 'Kalenda obeloon' %}
 {% else %}
-{% assign download = 'iCalendar herunterladen' %}
+{% assign download = 'Kalender herunterladen' %}
 {% endif %}
+<noscript>
+  Du benötigst JavaScipt für dieses Element
+</noscript>
 <p class="card-text">
   <a href="{{ '/assets/data/termine.ics' | prepend: site.baseurl }}">
     {% include icon.html icon="download" %} {{ download }}

@@ -13,7 +13,7 @@
         {% else %}
         bewerten
         {% endif %}
-        <div class="btn-group mx-2" role="group" aria-label="Basic example">
+        <div class="btn-group mx-2" role="group" aria-label="Beitrag bewerten">
             <button class="plus-btn btn btn-outline-primary" type="button">
                 {% include icon.html icon="plus" %}
             </button>
@@ -25,11 +25,17 @@
                 <span class="sr-only">Bewertung</span>
             </button>
         </div>
+        <noscript>
+            Du benötigst JavaScipt für dieses Element
+        </noscript>
     </div>
     <div>
         <button class="share-btn btn btn-outline-primary btn-sm" type="button">
             {% include icon.html icon="share-2" %}
         </button>
+        <noscript>
+            Du benötigst JavaScipt für dieses Element
+        </noscript>
         {% if post.lang == 'by' %}
         weidagehm
         {% else %}
