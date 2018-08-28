@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
 <link rel="prefetch" id="theme-link" href="{{ '/assets/css/dark-theme.css' | prepend: site.baseurl }}">
 <script>
-if (localStorage.getItem('theme') == 'dark') {
+if (localStorage.getItem('theme') === 'dark') {
   document.getElementById('theme-link').rel = 'stylesheet';
 }
 </script>
