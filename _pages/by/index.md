@@ -52,4 +52,4 @@ Gnua vazoid, vui Spaß beim Umschaun :)
     </div>
   </div><!-- col-lg-7 -->
 </div><!-- row -->
-{% include wappen.html %}
+{% include church.html %}

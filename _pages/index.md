@@ -52,4 +52,4 @@ Und nun viel Spaß beim Stöbern :)
     </div>
   </div><!-- col-lg-7 -->
 </div><!-- row -->
-{% include wappen.html %}
+{% include church.html %}

@@ -14,3 +14,6 @@ lang: de
 
 ## Verschiedenes
 {% include gal.html src=site.data.archive.misc %}
+
+## Wappen
+{% include wappen.html %}
