@@ -1,25 +1,29 @@
 {% assign sorted-posts = site.posts | where: "tags", include.tag | where: "lang", page.lang %}
 {% assign postsByYear = sorted-posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
-<h2>{{ year.name }}</h2>
-{% for post in year.items %}
-<article>
-  <div class="page-header">
-    <h3>
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        {{ post.title }}
-      </a>
-    </h3>
-    <p class="post-meta">
-      {% include date.html %}
-    </p>
-  </div>
-  {{ post.content }}
-</article>
-
-<hr>
+<section>
+  <h2>{{ year.name }}</h2>
+  {% for post in year.items %}
+  <article>
+    <div class="page-header">
+      <h3>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </h3>
+      <p class="post-meta">
+        {% include date.html %}
+      </p>
+    </div>
     
-{% include social.html index=post.index %}
-  
-{% endfor %}
+    {{ post.content }}
+    
+    <hr>
+    
+    {% include social.html index=post.index %}
+
+  </article>
+  {% endfor %}
+</section>
+<hr>
 {% endfor %}
