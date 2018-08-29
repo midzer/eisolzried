@@ -2,7 +2,11 @@
 layout: default
 ---
 <!DOCTYPE html>
+{% if page.lang == 'by' %}
+<html lang="de-BAR">
+{% else %}
 <html lang="de-DE">
+{% endif %}
 
   {% include head.html %}
 
