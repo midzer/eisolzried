@@ -29,16 +29,16 @@ lang: de
 
 ## Hosting
 
-<a href="https://uberspace.de/" title="Uberspace">
-    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/uberspace.png" title="Uberspace" alt="Uberspace">
-    <noscript><img class="img-fluid" src="/assets/images/links/uberspace.png" title="Uberspace" alt="Uberspace"></noscript>
+<a href="https://uberspace.de/">
+    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/uberspace.png" alt="Uberspace">
+    <noscript><img class="img-fluid" src="/assets/images/links/uberspace.png" alt="Uberspace"></noscript>
 </a>
 
 ## Jugend
 
-<a href="https://www.ich-will-zur-jugendfeuerwehr.de/" title="Ich will zur Jugendfeuerwehr">
-    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/jugendfeuerwehr.png" title="Ich will zur Jugendfeuerwehr" alt="Ich will zur Jugendfeuerwehr">
-    <noscript><img class="img-fluid" src="/assets/images/links/jugendfeuerwehr.png" title="Ich will zur Jugendfeuerwehr" alt="Ich will zur Jugendfeuerwehr"></noscript>
+<a href="https://www.ich-will-zur-jugendfeuerwehr.de/">
+    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/jugendfeuerwehr.png" alt="Ich will zur Jugendfeuerwehr">
+    <noscript><img class="img-fluid" src="/assets/images/links/jugendfeuerwehr.png" alt="Ich will zur Jugendfeuerwehr"></noscript>
 </a>
 
 ## Spiele
