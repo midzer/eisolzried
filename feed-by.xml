@@ -1,31 +1,20 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
->
-	<channel>
-		<title>{{ site.title | xml_escape }}</title>
-		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
-		<sy:updatePeriod>{{ site.feed_update_period | default: "daily" | xml_escape }}</sy:updatePeriod>
-		<sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
-		<link>{{ site.url }}</link>
-		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
-		{% assign sorted-posts = site.posts | where: "lang", "by" %}
-		<lastBuildDate>{% for post in sorted-posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
-		{% for post in sorted-posts %}
-			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				{% if post.author.name %}
-					<dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
-				{% endif %}
-				<description>{{ post.content | markdownify | strip_newlines }}</description>
-				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<link>{{ site.url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-			</item>
-		{% endfor %}
-	</channel>
+<rss version="2.0">
+<channel>
+  <title>{{ site.title | xml_escape }}</title>
+  <link>{{ site.url | append: '/by/' }}</link>
+  <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+  {% assign sorted-posts = site.posts | where: "lang", "by" %}
+  {% for post in sorted-posts %}
+  <item>
+    <title>{{ post.title | xml_escape }}</title>
+	  <link>{{ site.url }}{{ post.url }}</link>
+	  <description>{{ post.content | markdownify | escape }}</description>
+	  <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+  </item>
+  {% endfor %}
+</channel>
+
 </rss>
