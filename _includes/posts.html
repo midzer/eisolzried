@@ -50,12 +50,16 @@
   Du benötigst JavaScipt für dieses Element
 </noscript>
 <p class="card-text">
+  {% if page.lang == 'by' %}
+  <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">
+  {% else %}
   <a rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | prepend: site.baseurl }}">
-    {% include icon.html icon="rss" %}
-    {% if page.lang == 'by' %}
-    As neiaste bschtoin
-    {% else %}
-    RSS abonnieren
-    {% endif %}
+  {% endif %}
+  {% include icon.html icon="rss" %}
+  {% if page.lang == 'by' %}
+  As neiaste bschtoin
+  {% else %}
+  RSS abonnieren
+  {% endif %}
   </a>
 </p>
