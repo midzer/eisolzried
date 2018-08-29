@@ -13,7 +13,7 @@ function writeServiceWorkerFile (rootDir, handleFetch, callback) {
     staticFileGlobs: [
       `${rootDir}/**/*.html`,
       `${rootDir}/assets/{css,js,icons}/*`,
-      `${rootDir}/search.json`,
+      `${rootDir}/*.json`,
       `${rootDir}/assets/data/termine.ics`
     ],
     stripPrefix: `${rootDir}/`,

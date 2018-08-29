@@ -6,6 +6,9 @@ import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
 
+// Locales
+const path = window.location.pathname
+
 // Lightbox
 if (document.querySelector('.lightbox')) {
   loadScript('/assets/js/lightbox.js')
@@ -64,7 +67,6 @@ document.getElementById('theme-switch').onclick = () => {
 }
 
 // Language switch
-const path = window.location.pathname
 document.getElementById('language-btn').onclick = () => {
   window.location = path.indexOf('/by/') === -1 ? '/by'.concat(path) : path.replace('/by', '')
 }
@@ -84,7 +86,8 @@ document.getElementById('fire-station').onclick = () => {
 }
 
 // Custom search
-const endpoint = '/search.json'
+const suffix = path.indexOf('/by/') !== -1 ? '-by' : ''
+const endpoint = `/search${suffix}.json`
 const pages = []
 fetch(endpoint)
   .then(blob => blob.json())
@@ -102,7 +105,7 @@ function displayResults () {
   const html = resultsArray.map(item => {
     return `<a class="dropdown-item" href="${item.url}">${item.title}</a>`
   }).join('')
-  resultsList.innerHTML = resultsArray.length === 0 || this.value === '' ? '<p>Nix gfunna! :p</p>' : html
+  resultsList.innerHTML = resultsArray.length === 0 || this.value === '' ? `<p class='dropdown-item'>${path.indexOf('/by/') !== -1 ? 'Nix gfunna' : 'Nichts gefunden'} :(</p>` : html
 }
 
 const field = document.getElementById('search-input')

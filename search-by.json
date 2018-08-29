@@ -1,7 +1,7 @@
 ---
 ---
 [
-  {% assign sorted-posts = site.posts | where: "lang", "de" %}
+  {% assign sorted-posts = site.posts | where: "lang", "by" %}
   {% for post in sorted-posts %}
     {
       "title"   : "{{ post.title | escape }}",
