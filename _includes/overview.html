@@ -1,5 +1,5 @@
-{% assign sorted-posts = site.posts | where: "tags",include.tag | where: "lang",page.lang %}
-{% assign postsByYear = sorted-posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% assign sorted-posts = site.posts | where: "tags", include.tag | where: "lang", page.lang %}
+{% assign postsByYear = sorted-posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
 <h2>{{ year.name }}</h2>
 {% for post in year.items %}
