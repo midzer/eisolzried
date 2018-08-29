@@ -7,9 +7,6 @@ lang: de
 
 ## Mitgliederentwicklung
 <figure class="lazy" id="member" data-src="/assets/js/charts.js"></figure>
-<noscript>
-  Du benötigst JavaScipt für dieses Element
-</noscript>
 
 Darstellung der Entwicklung der Mitgliederzahlen von 1990 bis 2015. Jede Jahresspalte deckt einen Zeitraum von fünf Jahren ab und ist aufgeteilt in einzelne Kategorien. Verstorbene Feuerwehrkameraden sind von der Datengrundlage ausgenommen.
 

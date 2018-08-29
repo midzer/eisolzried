@@ -9,10 +9,8 @@
     <a href="{{ post.url | prepend: site.baseurl }}">
       {% if post.images %}
       <img class="lazy post-preview rounded mr-3" src="{% include trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
-      <noscript><img class="post-preview rounded mr-3" src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}"></noscript>
       {% else %}
       <img class="lazy post-preview rounded mr-3" src="{% include trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
-      <noscript><img class="post-preview rounded mr-3" src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen"></noscript>
       {% endif %}
     </a>
     <div class="media-body">
@@ -46,9 +44,6 @@
   {% endif %}
 </button>
 <br>
-<noscript>
-  Du benötigst JavaScipt für dieses Element
-</noscript>
 <p class="card-text">
   {% if page.lang == 'by' %}
   <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">

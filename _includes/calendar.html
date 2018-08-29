@@ -5,9 +5,6 @@
 {% else %}
 {% assign download = 'Kalender herunterladen' %}
 {% endif %}
-<noscript>
-  Du benötigst JavaScipt für dieses Element
-</noscript>
 <p class="card-text">
   <a href="{{ '/assets/data/termine.ics' | prepend: site.baseurl }}">
     {% include icon.html icon="download" %} {{ download }}
