@@ -1,5 +1,7 @@
 'use strict'
 
+import { Modal } from 'bootstrap.native'
+
 function isBetween (first, last, time, timezone) {
   return (first.compareDateOnlyTz(time, timezone) === -1 &&
     last.compareDateOnlyTz(time, timezone) === 1) ||
@@ -83,7 +85,8 @@ function buildCal (data) {
                        <p>${createEventDetails(event)}</p>
                      </div>`
     modal.setContent(content)
-    modal.show()
+    modal.update()
+    modal.toggle()
   }
 
   let ev = []
@@ -142,7 +145,21 @@ function buildCal (data) {
     document.getElementById('calendar').appendChild(cal)
   })
 }
+// Preparation
+const modalElement = document.createElement('div')
+modalElement.className = 'modal fade'
+modalElement.tabIndex = '-1'
+modalElement.role = 'dialog'
+modalElement.setAttribute('aria-labelledby', 'Termindetails')
+modalElement.setAttribute('aria-hidden', 'true')
+modalElement.innerHTML = `<div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-content">
+                            </div>
+                          </div>`
+document.body.appendChild(modalElement)
+const modal = new Modal(document.querySelector('.modal'))
 
+// Get data first
 fetch('/assets/data/termine.ics')
   .then(function (response) {
     return response.text()

@@ -4,6 +4,7 @@ module.exports = {
       'intersection-observer',
       './_assets/js/snackbar.js',
       './_assets/js/main.js',
+      'bootstrap.native',
       './_assets/js/service-worker-registration.js'
     ],
     lightbox: [

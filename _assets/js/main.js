@@ -4,7 +4,6 @@ import { loadScript } from './helper/loadscript'
 import { load } from './helper/load'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
-import { Modal } from 'bootstrap.native'
 
 // Locales
 const path = window.location.pathname
@@ -145,7 +144,6 @@ if (window.PerformanceNavigationTiming) {
 
 // Globals
 window.snackbar = new Snackbar(document.querySelector('.snackbar'))
-window.modal = new Modal(document.querySelector('.modal'))
 
 // Snow
 // const Snowflakes = require('magic-snowflakes');
