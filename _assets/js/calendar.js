@@ -75,6 +75,21 @@ function buildCal (data) {
   }
 
   function showModal (event) {
+    // Preparation
+    var modalDiv = document.querySelector('.modal')
+    if (!modalDiv) {
+      const modalElement = document.createElement('div')
+      modalElement.className = 'modal fade'
+      modalElement.tabIndex = '-1'
+      modalElement.role = 'dialog'
+      modalElement.setAttribute('aria-labelledby', 'Termindetails')
+      modalElement.setAttribute('aria-hidden', 'true')
+      modalElement.innerHTML = `<div class="modal-dialog modal-sm" role="document">
+                                  <div class="modal-content">
+                                  </div>
+                                </div>`
+      modalDiv = document.body.appendChild(modalElement)
+    }
     const content = `<div class="modal-header">
                        <h5 class="modal-title">${event.summary}</h5>
                        <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
@@ -84,9 +99,10 @@ function buildCal (data) {
                      <div class="modal-body">
                        <p>${createEventDetails(event)}</p>
                      </div>`
+    const modal = new Modal(modalDiv)
     modal.setContent(content)
     modal.update()
-    modal.toggle()
+    modal.show()
   }
 
   let ev = []
@@ -145,20 +161,6 @@ function buildCal (data) {
     document.getElementById('calendar').appendChild(cal)
   })
 }
-// Preparation
-const modalElement = document.createElement('div')
-modalElement.className = 'modal fade'
-modalElement.tabIndex = '-1'
-modalElement.role = 'dialog'
-modalElement.setAttribute('aria-labelledby', 'Termindetails')
-modalElement.setAttribute('aria-hidden', 'true')
-modalElement.innerHTML = `<div class="modal-dialog modal-sm" role="document">
-                            <div class="modal-content">
-                            </div>
-                          </div>`
-document.body.appendChild(modalElement)
-const modal = new Modal(document.querySelector('.modal'))
-
 // Get data first
 fetch('/assets/data/termine.ics')
   .then(function (response) {
