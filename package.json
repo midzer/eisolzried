@@ -47,7 +47,7 @@
     "magic-snowflakes": "^4.0.0",
     "rqrauhvmra__tobi": "https://github.com/rqrauhvmra/Tobi.git#dev",
     "run-sequence": "^2.2.0",
-    "standard": "^11.0.1",
+    "standard": "^12.0.1",
     "sw-precache": "^5.2.0",
     "webpack": "^4.16.2",
     "webpack-merge": "^4.1.3",
