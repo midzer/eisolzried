@@ -2,6 +2,13 @@
 
 import { toggleAudio } from './helper/toggleaudio'
 
+function hubDone (nextHub) {
+  document.getElementById('kuebel').src = `/assets/images/games/kuebel-${nextHub}.png`
+  document.getElementById('huebe').textContent = ++huebe
+}
+
+var huebe = 0
+
 if ('LinearAccelerationSensor' in window) {
   const sensor = new LinearAccelerationSensor()
   let nextHub = 'up'
@@ -15,11 +22,6 @@ if ('LinearAccelerationSensor' in window) {
       toggleAudio(document.getElementById('kuebel-down-player'))
       nextHub = 'up'
     }
-  }
-  var huebe = 0
-  function hubDone (nextHub) {
-    document.getElementById('kuebel').src = `/assets/images/games/kuebel-${nextHub}.png`
-    document.getElementById('huebe').textContent = ++huebe
   }
   sensor.start()
 }

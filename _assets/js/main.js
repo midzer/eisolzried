@@ -24,7 +24,7 @@ window.observer = new IntersectionObserver(changes => {
     if (isIntersecting) {
       // Stop observing the current target
       observer.unobserve(change.target)
-      
+
       load(change.target)
     }
   })
@@ -46,7 +46,7 @@ function setTheme (theme) {
   theme === 'dark' ? (rel = 'stylesheet', icon = 'sun') : (rel = 'prefetch', icon = 'moon')
   document.getElementById('theme-link').rel = rel
   document.getElementById('theme-icon').href.baseVal = `/assets/icons/sprite.svg#${icon}`
-  localStorage.setItem('theme', theme)
+  window.localStorage.setItem('theme', theme)
 }
 
 let sensor = null
@@ -62,7 +62,7 @@ document.getElementById('theme-switch').onclick = () => {
   if (sensor) {
     sensor.stop()
   }
-  localStorage.getItem('theme') === 'dark' ? setTheme('light') : setTheme('dark')
+  window.localStorage.getItem('theme') === 'dark' ? setTheme('light') : setTheme('dark')
 }
 
 // Language switch
@@ -124,7 +124,7 @@ window.addEventListener('scroll', requestTick)
 function requestTick () {
   if (!ticking) {
     ticking = true
-    'requestIdleCallback' in window ? requestIdleCallback(update) : requestAnimationFrame(update)
+    'requestIdleCallback' in window ? window.requestIdleCallback(update) : window.requestAnimationFrame(update)
   }
 }
 
@@ -137,7 +137,7 @@ function update () {
 
 // Show render time
 if (window.PerformanceNavigationTiming) {
-  const [entry] = performance.getEntriesByType('navigation')
+  const [entry] = window.performance.getEntriesByType('navigation')
   document.getElementById('rendertime').textContent = `${parseInt(entry.domInteractive)}ms`
   document.getElementById('rendertext').hidden = false
 }

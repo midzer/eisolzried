@@ -8,7 +8,7 @@ function createGallery (grid, createElement) {
     observer.observe(element.querySelector('img'))
     frag.appendChild(element)
   }
-  requestAnimationFrame(function () {
+  window.requestAnimationFrame(function () {
     const children = Array.from(frag.children)
     grid.appendChild(frag)
     for (let i = 0, len = children.length; i < len; i++) {

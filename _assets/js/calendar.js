@@ -157,7 +157,7 @@ function buildCal (data) {
   for (let i = 0, j = buttons.length; i < j; i++) {
     buttons[i].classList.add('btn')
   }
-  requestAnimationFrame(function () {
+  window.requestAnimationFrame(function () {
     document.getElementById('calendar').appendChild(cal)
   })
 }

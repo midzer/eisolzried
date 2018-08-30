@@ -22,7 +22,7 @@
   function customEvent (name, element, data) {
     var evt
     try {
-      evt = new CustomEvent(name, {detail: data})
+      evt = new CustomEvent(name, { detail: data })
     } catch (e) {
       evt = document.createEvent('CustomEvent')
       evt.initCustomEvent(name, true, true, data)
@@ -49,8 +49,7 @@
       td.setAttribute('month', day.getMonth() + 1)
       td.setAttribute('day', day.getDate())
       row.appendChild(td)
-      customEvent('drcal.renderDay', table, {'element': td,
-        'date': day})
+      customEvent('drcal.renderDay', table, { 'element': td, 'date': day })
       day = new Date(day)
       day.setDate(day.getDate() + 1)
     }
@@ -90,6 +89,7 @@
 
     var table = document.createElement('table')
     table.className = 'calendar'
+    table.setAttribute('role', 'presentation')
     table.createTHead().insertRow().appendChild(monthHeader)
     table.createTHead().appendChild(weekdayHeader)
     var tbody = document.createElement('tbody')

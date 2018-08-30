@@ -17,7 +17,7 @@ document.getElementById('moreposts').onclick = function () {
 }
 
 // New posts badges
-let lastIndex = Number(localStorage.getItem('lastindex'))
+let lastIndex = Number(window.localStorage.getItem('lastindex'))
 const els = document.querySelectorAll('[data-index]')
 for (let i = els.length - 1; i >= 0; i--) {
   const index = Number(els[i].getAttribute('data-index'))
@@ -29,4 +29,4 @@ for (let i = els.length - 1; i >= 0; i--) {
     lastIndex = index
   }
 }
-localStorage.setItem('lastindex', lastIndex)
+window.localStorage.setItem('lastindex', lastIndex)

@@ -26,7 +26,7 @@ ws.onmessage = message => {
 
   if (!scheduled) {
     scheduled = true
-    requestAnimationFrame(function () {
+    window.requestAnimationFrame(function () {
       for (let i = 0, len = incomingMessages.length; i < len; i++) {
         addMessage(incomingMessages[i])
       }
