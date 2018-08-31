@@ -13,7 +13,7 @@ const reload = browserSync.reload
 
 const sourcefiles = [
   '_assets/styles/main.scss',
-  '_assets/styles/dark-theme.css'
+  '_assets/styles/dark-theme.scss'
 ]
 
 gulp.task('sass', () => {

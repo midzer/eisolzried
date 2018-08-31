@@ -1,0 +1,25 @@
+body {
+  color: #fdfdfd;
+}
+
+body,
+.modal-header,
+.modal-body,
+#chatbox,
+.card {
+  background-color: #212121;
+}
+
+.card {
+  border-color: #424242;
+}
+
+.calendar .today,
+#chat-messages li:nth-child(odd) {
+  background-color: #424242;
+}
+
+.site-footer {
+  border-top: 1px solid #424242;
+  background-color: #212121;
+}
