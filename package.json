@@ -30,7 +30,7 @@
     "critical": "^1.3.4",
     "fancy-log": "^1.3.2",
     "file-loader": "^2.0.0",
-    "frappe-charts": "^1.1.0",
+    "frappe-charts": "https://github.com/frappe/charts.git",
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.9.4",
