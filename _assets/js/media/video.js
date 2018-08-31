@@ -20,8 +20,9 @@ export function createVideo (index) {
     img.dataset.src = `${path}thumbs/${video}.jpg`
     img.alt = video
     img.style.opacity = '0'
+    const div = document.createElement('div')
+    div.id = `v${video}`
     const vid = document.createElement('video')
-    vid.id = `v${video}`
     vid.controls = true
     vid.preload = 'none'
     vid.loop = true
@@ -33,9 +34,10 @@ export function createVideo (index) {
     sourceMp4.src = `${path}${video}.mp4`
     sourceMp4.type = 'video/mp4'
     vid.appendChild(sourceMp4)
+    div.appendChild(vid)
     link.appendChild(img)
     card.appendChild(link)
-    card.appendChild(vid)
+    card.appendChild(div)
   }
   return card
 }
