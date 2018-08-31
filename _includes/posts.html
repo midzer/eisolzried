@@ -48,14 +48,14 @@
   {% include icon.html icon="rss" %}
   {% if page.lang == 'by' %}
   bstoin als
-  <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">XML</a>
+  <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">RSS</a>
   oda
   <a rel="alternate" type="application/json" href="{{ '/feed-by.json' | prepend: site.baseurl }}">JSON</a>
   {% else %}
   abonnieren als
-  <a rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | prepend: site.baseurl }}">XML</a>
+  <a rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a>
   oder
   <a rel="alternate" type="application/json" href="{{ '/feed.json' | prepend: site.baseurl }}">JSON</a>
   {% endif %}
-  RSS-Feed
+  -Feed
 </p>
