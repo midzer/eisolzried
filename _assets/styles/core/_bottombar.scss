@@ -11,6 +11,7 @@
     background-color: $primary;
     transform: scaleX(0);
     transform-origin: left;
+    transition: transform .1s linear;
     will-change: transform;
   }
 }

@@ -124,7 +124,7 @@ window.addEventListener('scroll', requestTick)
 function requestTick () {
   if (!ticking) {
     ticking = true
-    'requestIdleCallback' in window ? window.requestIdleCallback(update, { timeout: 250 }) : window.requestAnimationFrame(update)
+    'requestIdleCallback' in window ? window.requestIdleCallback(update, { timeout: 100 }) : window.requestAnimationFrame(update)
   }
 }
 
