@@ -45,16 +45,17 @@
 </button>
 <br>
 <p class="card-text">
-  {% if page.lang == 'by' %}
-  <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">
-  {% else %}
-  <a rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | prepend: site.baseurl }}">
-  {% endif %}
   {% include icon.html icon="rss" %}
   {% if page.lang == 'by' %}
-  As neiaste bschtoin
+  bstoin als
+  <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">XML</a>
+  oda
+  <a rel="alternate" type="application/json" href="{{ '/feed-by.json' | prepend: site.baseurl }}">JSON</a>
   {% else %}
-  RSS abonnieren
+  abonnieren als
+  <a rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | prepend: site.baseurl }}">XML</a>
+  oder
+  <a rel="alternate" type="application/json" href="{{ '/feed.json' | prepend: site.baseurl }}">JSON</a>
   {% endif %}
-  </a>
+  RSS-Feed
 </p>

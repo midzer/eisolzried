@@ -6,8 +6,10 @@
 <link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}">
 {% if page.lang == 'by' %}
 <link href="{{ '/feed-by.xml' | prepend: site.baseurl }}" type="application/rss+xml" rel="alternate" title="Olle Beiträg">
+<link href="{{ '/feed-by.json' | prepend: site.baseurl }}" type="application/json" rel="alternate" title="Olle Beiträg">
 {% else %}
 <link href="{{ '/feed.xml' | prepend: site.baseurl }}" type="application/rss+xml" rel="alternate" title="Alle Beiträge">
+<link href="{{ '/feed.json' | prepend: site.baseurl }}" type="application/json" rel="alternate" title="Alle Beiträge">
 {% endif %}
 <meta name="msapplication-TileColor" content="#da131a">
 <meta name="msapplication-config" content="{{ '/browserconfig.xml' | prepend: site.baseurl }}">
