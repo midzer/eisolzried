@@ -1,20 +1,19 @@
 ---
 ---
+{%- assign sorted-posts = site.posts | where: "lang", "de" -%}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
   <title>{{ site.title | xml_escape }}</title>
   <link>{{ site.url | append: '/' }}</link>
   <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-  {% assign sorted-posts = site.posts | where: "lang", "de" %}
-  {% for post in sorted-posts %}
+  {%- for post in sorted-posts -%}
   <item>
     <title>{{ post.title | xml_escape }}</title>
 	  <link>{{ site.url }}{{ post.url }}</link>
-	  <description>{{ post.content | markdownify | escape }}</description>
+	  <description>{{ post.content | xml_escape | rstrip }}</description>
 	  <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
   </item>
   {% endfor %}
 </channel>
-
 </rss>
