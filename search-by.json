@@ -1,12 +1,12 @@
 ---
 ---
+{%- assign sorted-posts = site.posts | where: "lang", "by" -%}
 [
-  {% assign sorted-posts = site.posts | where: "lang", "by" %}
-  {% for post in sorted-posts %}
-    {
-      "title"   : "{{ post.title | escape }}",
-      "url"     : "{{ site.baseurl }}{{ post.url }}",
-      "content" : "{{ post.content | strip_html | strip_newlines | escape | remove_chars | strip }}"
-    } {% unless forloop.last %},{% endunless %}
+  {% for post in sorted-posts -%}
+  {
+    "title":"{{ post.title }}",
+    "url":"{{ site.baseurl }}{{ post.url }}",
+    "content":"{{ post.content | strip_html | normalize_whitespace }}"
+  }{%- unless forloop.last -%},{% endunless %}
   {% endfor %}
 ]
