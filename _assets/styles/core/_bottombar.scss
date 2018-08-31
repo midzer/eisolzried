@@ -1,0 +1,16 @@
+#bottombar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: rgba(0,0,0,.3);
+
+  > div {
+    height: 100%;
+    background-color: $primary;
+    transform: scaleX(0);
+    transform-origin: left;
+    will-change: transform;
+  }
+}

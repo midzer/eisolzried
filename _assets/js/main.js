@@ -116,8 +116,8 @@ field.addEventListener('keypress', event => {
   }
 })
 
-// Progressbar
-const progressBar = document.getElementById('progressbar')
+// Bottombar
+const bottomBar = document.getElementById('bottombar').firstElementChild
 let ticking
 window.addEventListener('scroll', requestTick)
 
@@ -129,9 +129,8 @@ function requestTick () {
 }
 
 function update () {
-  const value = window.pageYOffset / (document.body.clientHeight - window.innerHeight)
-  progressBar.style.transform = `scaleX(${value})`
-  progressBar.setAttribute('aria-valuenow', value * 100)
+  const scaleX = window.pageYOffset / (document.body.clientHeight - window.innerHeight)
+  bottomBar.style.transform = `scaleX(${scaleX})`
   ticking = false
 }
 
