@@ -22,11 +22,8 @@ export function createVideo (index) {
     img.title = video
     img.alt = video
     img.style.opacity = '0'
-    const div = document.createElement('div')
-    div.className = 'embed-responsive'
-    div.id = `v${video}`
     const vid = document.createElement('video')
-    vid.className = 'embed-responsive-item'
+    vid.id = `v${video}`
     vid.controls = true
     vid.preload = 'none'
     vid.loop = true
@@ -38,10 +35,9 @@ export function createVideo (index) {
     sourceMp4.src = `${path}${video}.mp4`
     sourceMp4.type = 'video/mp4'
     vid.appendChild(sourceMp4)
-    div.appendChild(vid)
     link.appendChild(img)
     card.appendChild(link)
-    card.appendChild(div)
+    card.appendChild(vid)
   }
   return card
 }
