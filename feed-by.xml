@@ -5,12 +5,13 @@
 <rss version="2.0">
 <channel>
   <title>{{ site.title | xml_escape }}</title>
-  <link>{{ site.url | append: '/' }}</link>
+  <link>{{ site.url | append: '/by/' }}</link>
   <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
   {%- for post in sorted-posts -%}
   <item>
     <title>{{ post.title | xml_escape }}</title>
 	  <link>{{ site.url }}{{ post.url }}</link>
+    <guid>{{ site.url }}{{ post.url }}</guid>
 	  <description>{{ post.content | xml_escape | rstrip }}</description>
 	  <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
   </item>

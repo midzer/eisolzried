@@ -11,6 +11,7 @@
   <item>
     <title>{{ post.title | xml_escape }}</title>
 	  <link>{{ site.url }}{{ post.url }}</link>
+    <guid>{{ site.url }}{{ post.url }}</guid>
 	  <description>{{ post.content | xml_escape | rstrip }}</description>
 	  <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
   </item>
