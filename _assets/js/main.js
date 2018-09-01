@@ -5,14 +5,6 @@ import { load } from './helper/load'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
 
-// Locales
-const path = window.location.pathname
-
-// Lightbox
-if (document.querySelector('.lightbox')) {
-  loadScript('/assets/js/lightbox.js')
-}
-
 // Lazy components
 window.observer = new IntersectionObserver(changes => {
   changes.forEach(change => {
@@ -85,7 +77,34 @@ document.getElementById('fire-station').onclick = () => {
   toggleAudio(document.getElementById('fire-run-player'))
 }
 
+// Bottombar
+const bottomBar = document.getElementById('bottombar').firstElementChild
+let ticking
+window.addEventListener('scroll', requestTick)
+
+function requestTick () {
+  if (!ticking) {
+    ticking = true
+    'requestIdleCallback' in window ? window.requestIdleCallback(update, { timeout: 100 }) : window.requestAnimationFrame(update)
+  }
+}
+
+function update () {
+  const scaleX = window.pageYOffset / (document.body.clientHeight - window.innerHeight)
+  bottomBar.style.transform = `scaleX(${scaleX})`
+  ticking = false
+}
+
+// Globals
+window.snackbar = new Snackbar(document.querySelector('.snackbar'))
+
+// Lightbox
+if (document.querySelector('.lightbox')) {
+  loadScript('/assets/js/lightbox.js')
+}
+
 // Custom search
+const path = window.location.pathname // needed elsewhere, too
 const suffix = path.indexOf('/by/') !== -1 ? '-by' : ''
 const endpoint = `/search${suffix}.json`
 const pages = []
@@ -117,23 +136,9 @@ field.addEventListener('keypress', event => {
   }
 })
 
-// Bottombar
-const bottomBar = document.getElementById('bottombar').firstElementChild
-let ticking
-window.addEventListener('scroll', requestTick)
-
-function requestTick () {
-  if (!ticking) {
-    ticking = true
-    'requestIdleCallback' in window ? window.requestIdleCallback(update, { timeout: 100 }) : window.requestAnimationFrame(update)
-  }
-}
-
-function update () {
-  const scaleX = window.pageYOffset / (document.body.clientHeight - window.innerHeight)
-  bottomBar.style.transform = `scaleX(${scaleX})`
-  ticking = false
-}
+// Snow
+// const Snowflakes = require('magic-snowflakes');
+// Snowflakes();
 
 // Show render time
 if (window.PerformanceNavigationTiming) {
@@ -141,10 +146,3 @@ if (window.PerformanceNavigationTiming) {
   document.getElementById('rendertime').textContent = `${parseInt(entry.domInteractive)}ms`
   document.getElementById('rendertext').hidden = false
 }
-
-// Globals
-window.snackbar = new Snackbar(document.querySelector('.snackbar'))
-
-// Snow
-// const Snowflakes = require('magic-snowflakes');
-// Snowflakes();
