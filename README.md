@@ -2,14 +2,23 @@
 
 This website is built with [jekyll](http://jekyllrb.com) and uses [gulp](https://gulpjs.com/) as task runner for development and production builds.
 
-## Setup
+### Prerequisites
+
+on your system following environments have to be installed
+
+* Ruby
+* Node.js
+* yarn
+* git
+
+### Development
 ```
-git clone https://github.com/midzer/eisolzried.git // clone me
+git clone https://github.com/midzer/eisolzried.git
 cd eisolzried
-(sudo) gem install bundler // install global gem
-bundle // install ruby dependencies
-npm install // install node dependencies, you can use yarn as well
+gem install bundler // when ruby is installed via RVM, you can install gems locally
+bundle install // ruby dependencies
+yarn install // node dependencies
 npm start // starts development build
 ```
 
-Now your default browser should open website at http://localhost:4000. For production build use `npm run build`.
+Now your default browser should open website at https://localhost:3000 automatically. For production build `npm run build`.
