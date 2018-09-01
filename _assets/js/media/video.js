@@ -12,6 +12,7 @@ export function createVideo (index) {
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
+    link.className = 'lightbox'
     link.href = `#v${video}`
     link.dataset.type = 'html'
     const img = document.createElement('img')
@@ -20,12 +21,14 @@ export function createVideo (index) {
     img.dataset.src = `${path}thumbs/${video}.jpg`
     img.alt = video
     img.style.opacity = '0'
+    img.style.willChange = 'opacity'
     const div = document.createElement('div')
     div.id = `v${video}`
     const vid = document.createElement('video')
     vid.controls = true
     vid.preload = 'none'
     vid.loop = true
+    vid.style.display = 'none'
     const sourceWebm = document.createElement('source')
     sourceWebm.src = `${path}${video}.webm`
     sourceWebm.type = 'video/webm'

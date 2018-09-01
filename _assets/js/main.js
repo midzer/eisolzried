@@ -24,8 +24,13 @@ window.observer = new IntersectionObserver(changes => {
     if (isIntersecting) {
       // Stop observing the current target
       observer.unobserve(change.target)
-
-      load(change.target)
+      
+      if (change.target.className === 'lightbox') {
+        load(change.target.querySelector('img'))
+        tobi.add(change.target)
+      } else {
+        load(change.target)
+      }
     }
   })
 })

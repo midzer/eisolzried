@@ -5,15 +5,11 @@ function createGallery (grid, createElement) {
   const frag = document.createDocumentFragment()
   let element
   while (element = createElement(index++)) {
-    observer.observe(element.querySelector('img'))
+    observer.observe(element.querySelector('a'))
     frag.appendChild(element)
   }
   window.requestAnimationFrame(function () {
-    const children = Array.from(frag.children)
     grid.appendChild(frag)
-    for (let i = 0, len = children.length; i < len; i++) {
-      tobi.add(children[i].querySelector('a'))
-    }
   })
 }
 

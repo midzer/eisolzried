@@ -12,6 +12,7 @@ export function createImage (index) {
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
+    link.className = 'lightbox'
     link.href = path + image.name
     const img = document.createElement('img')
     img.className = 'card-img'
@@ -19,6 +20,7 @@ export function createImage (index) {
     img.dataset.src = `${path}thumbs/${image.name}`
     img.alt = image.text
     img.style.opacity = '0'
+    img.style.willChange = 'opacity'
     link.appendChild(img)
     card.appendChild(link)
   }
