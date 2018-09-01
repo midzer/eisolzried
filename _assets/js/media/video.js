@@ -12,7 +12,6 @@ export function createVideo (index) {
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
-    link.className = 'lightbox'
     link.href = `#v${video}`
     link.dataset.type = 'html'
     const img = document.createElement('img')

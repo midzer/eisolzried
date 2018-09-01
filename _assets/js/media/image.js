@@ -12,7 +12,6 @@ export function createImage (index) {
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
-    link.className = 'lightbox'
     link.href = path + image.name
     const img = document.createElement('img')
     img.className = 'lazy card-img'

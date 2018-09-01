@@ -38,6 +38,9 @@ export function load (element) {
     loadImage(element)
   } else if (element.nodeName === 'VIDEO') {
     loadVideo(element)
+  } else if (element.nodeName === 'A') {
+    loadImage(element.querySelector('img'))
+    tobi.add(element)
   } else if (element.dataset.src.slice(-3) === '.js') {
     loadScript(element.dataset.src)
   }
