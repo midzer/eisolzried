@@ -16,12 +16,10 @@ export function createVideo (index) {
     link.href = `#v${video}`
     link.dataset.type = 'html'
     const img = document.createElement('img')
-    img.className = 'card-img'
+    img.className = 'lazy card-img'
     img.src = trans
     img.dataset.src = `${path}thumbs/${video}.jpg`
     img.alt = video
-    img.style.opacity = '0'
-    img.style.willChange = 'opacity'
     const div = document.createElement('div')
     div.id = `v${video}`
     const vid = document.createElement('video')

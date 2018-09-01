@@ -6,6 +6,11 @@
   margin-bottom: 1rem;
 }
 
+.lazy:not(div,ul) {
+  opacity: 0;
+  will-change: opacity;
+}
+
 .loaded {
   animation: fadeIn 0.5s ease-in;
   animation-fill-mode: forwards;

@@ -15,12 +15,10 @@ export function createImage (index) {
     link.className = 'lightbox'
     link.href = path + image.name
     const img = document.createElement('img')
-    img.className = 'card-img'
+    img.className = 'lazy card-img'
     img.src = trans
     img.dataset.src = `${path}thumbs/${image.name}`
     img.alt = image.text
-    img.style.opacity = '0'
-    img.style.willChange = 'opacity'
     link.appendChild(img)
     card.appendChild(link)
   }
