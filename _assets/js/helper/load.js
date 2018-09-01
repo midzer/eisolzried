@@ -20,6 +20,7 @@ function loadVideo (element) {
   element.onloadstart = () => {
     addLoaded(element)
   }
+  element.style.willChange = 'opacity'
   for (let i = 0; i < 2; i++) {
     replaceSrc(element.children[i])
   }
@@ -30,6 +31,7 @@ function loadImage (element) {
   element.onload = () => {
     addLoaded(element)
   }
+  element.style.willChange = 'opacity'
   replaceSrc(element)
 }
 
