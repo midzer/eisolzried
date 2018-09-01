@@ -1,8 +1,6 @@
 .marquee {
-    white-space: nowrap;
     overflow: hidden;
-    box-sizing: border-box;
-    flex: 1 0 0;
+    flex-grow: 1;
 }
 
 #fire-truck {
