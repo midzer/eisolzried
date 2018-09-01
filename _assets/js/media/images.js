@@ -2,7 +2,7 @@
 
 export const path = '/assets/images/media/'
 
-export let images = [
+export const images = [
   {
     name: '2dfff0ca7ae2db55.jpg',
     text: 'Feuerwehrräum- und löschpanzer'

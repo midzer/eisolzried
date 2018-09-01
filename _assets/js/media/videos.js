@@ -2,7 +2,7 @@
 
 export const path = '/assets/videos/media/'
 
-export let videos = [
+export const videos = [
   '2a8eeb72fdadf738',
   '4dcaeb0554b54f37',
   '5db45c38da2aa43d',
