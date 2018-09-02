@@ -53,7 +53,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               {% for sublink in link.submenu %}
-              <a class="dropdown-item" href="{{ sublink.url }}">
+              <a class="dropdown-item" href="{{ sublink.url | prepend: site.baseurl }}">
                 {% include icon.html icon=sublink.icon %} {{ sublink.title }}
               </a>
               {% endfor %}
@@ -64,7 +64,7 @@
           {% else %}
           <li class="nav-item">
           {% endif %}
-            <a class="nav-link" href="{{ link.url }}">
+            <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">
               {% include icon.html icon=link.icon %} {{ link.title }}
             </a>
           </li>
