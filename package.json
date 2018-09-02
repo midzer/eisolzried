@@ -5,8 +5,8 @@
   "main": "gulpfile.babel.js",
   "sideEffects": false,
   "scripts": {
-    "start": "bundle exec gulp",
-    "build": "bundle exec gulp build:prod",
+    "start": "gulp",
+    "build": "gulp build:prod",
     "test": "standard",
     "fix": "standard --fix"
   },
