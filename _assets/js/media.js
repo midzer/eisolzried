@@ -1,3 +1,5 @@
+'use strict'
+
 import { createImage } from './media/image'
 import { createVideo } from './media/video'
 
