@@ -1,7 +1,5 @@
 _site
 .sass-cache
-.bundle
-/vendor
 _assets/data
 _assets/videos
 _assets/images
