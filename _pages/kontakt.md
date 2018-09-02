@@ -7,10 +7,6 @@ lang: de
 
 ## Postanschrift
 
-Bürgerhaus Deutenhausen-Eisolzried\\
-Feldbergstraße 13\\
-85232 Bergkirchen/Deutenhausen
-
-{% include icon.html icon="mail" %}info<span hidden>.nospam</span>@feuerwehr-eisolzried.de
+{% include address.html %}
 
 Standort in der [OpenStreetMap](https://www.openstreetmap.org/node/670854444).
