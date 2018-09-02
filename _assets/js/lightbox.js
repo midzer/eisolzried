@@ -3,7 +3,9 @@
 import Tobi from 'rqrauhvmra__tobi'
 
 window.tobi = new Tobi({
-  close: false,
+  navLabel: ['Vorheriges', 'Nächstes'],
+  closeLabel: 'Schließen',
   counter: false,
-  zoom: false
+  zoom: false,
+  threshold: 50
 })
