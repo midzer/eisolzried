@@ -6,7 +6,7 @@
   margin-bottom: 1rem;
 }
 
-.lazy:not(div,ul) {
+.lazy:not(div,ul,figure) {
   opacity: 0;
 }
 
