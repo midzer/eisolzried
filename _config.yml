@@ -17,7 +17,6 @@ markdown: kramdown
 permalink: pretty
 include: ['_pages']
 exclude:
-  - vendor
   - Gemfile
   - README.md
   - node_modules
