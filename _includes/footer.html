@@ -1,6 +1,6 @@
 <footer class="site-footer text-center">
   <span class="footer-item">
-    <a href="{{ site.repo }}" target="_blank" rel="noopener">
+    <a href="{{ site.repo }}" rel="nofollow noopener">
       {% include icon.html icon="github" %}
       {% if page.lang == 'by' %}
       Soß
@@ -10,7 +10,7 @@
     </a>
   </span>
   <span class="footer-item">
-    <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" target="_blank" rel="nofollow noopener">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" rel="nofollow noopener">
       {% include icon.html icon="cc" %}
       BY-NC
     </a>
@@ -37,7 +37,7 @@
     {% else %}
     Mit {% include icon.html icon="heart" %} gebaut von 
     {% endif %}
-    <a href="https://rohner.io/" target="_blank" rel="noopener">Rohner Solutions</a>
+    <a href="https://rohner.io/" rel="noopener">Rohner Solutions</a>
     <span id="rendertext" hidden>
       und in
       <samp id="rendertime"></samp>
