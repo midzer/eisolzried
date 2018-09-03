@@ -14,7 +14,15 @@ const config = {
   },
   shape: {
     transform: [
-      {}
+      {
+        svgo: {
+          plugins: [
+              {
+                convertShapeToPath: false
+              }
+          ]
+        }
+      }
     ]
   },
   svg: {
