@@ -55,7 +55,7 @@ if ('serviceWorker' in navigator) {
         }
       }
     }).catch(function (e) {
-      console.error('Error during service worker registration:', e)
+      console.error('Error during service worker registration, possibly cookies are blocked:', e)
     })
   })
 }
