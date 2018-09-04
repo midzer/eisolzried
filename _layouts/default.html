@@ -14,16 +14,14 @@ layout: default
     
     {% include header.html %}
 
-    <main>
-      <div class="container shadow pb-1">
+    <main class="container shadow pb-1">
+      
+      {% include alert.html %}
 
-        {% include alert.html %}
-        
-        {{ content }}
-        
-      </div>
+      {{ content }}
+
     </main>
-
+    
     {% include footer.html %}
 
     {% include snackbar.html %}
