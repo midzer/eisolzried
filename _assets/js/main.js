@@ -33,7 +33,11 @@ function setTheme (theme) {
   theme === 'dark' ? (rel = 'stylesheet', icon = 'sun') : (rel = 'prefetch', icon = 'moon')
   document.getElementById('theme-link').rel = rel
   document.getElementById('theme-icon').href.baseVal = `/assets/icons/sprite.svg#${icon}`
-  window.localStorage.setItem('theme', theme)
+  try {
+    window.localStorage.setItem('theme', theme)
+  } catch (e) {
+    console.error('Error during localStorage access, possibly cookies are blocked:', e)
+  }
 }
 
 let sensor = null
@@ -49,7 +53,11 @@ document.getElementById('theme-switch').onclick = () => {
   if (sensor) {
     sensor.stop()
   }
-  window.localStorage.getItem('theme') === 'dark' ? setTheme('light') : setTheme('dark')
+  try {
+    window.localStorage.getItem('theme') === 'dark' ? setTheme('light') : setTheme('dark')
+  } catch (e) {
+    console.error('Error during localStorage access, possibly cookies are blocked:', e)
+  }
 }
 
 // Language switch

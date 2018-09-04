@@ -16,7 +16,13 @@ document.getElementById('moreposts').onclick = function () {
 }
 
 // New posts badges
-var lastIndex = Number(window.localStorage.getItem('lastindex'))
+var lastIndex
+try {
+  lastIndex = Number(window.localStorage.getItem('lastindex'))
+} catch (e) {
+  console.error('Error during localStorage access, possibly cookies are blocked:', e)
+}
+
 const list = document.getElementById('posts')
 const els = list.querySelectorAll('li:not(.d-none)')
 for (let i = els.length - 1; i >= 0; i--) {
@@ -27,4 +33,8 @@ for (let i = els.length - 1; i >= 0; i--) {
     lastIndex = index
   }
 }
-window.localStorage.setItem('lastindex', lastIndex)
+try {
+  window.localStorage.setItem('lastindex', lastIndex)
+} catch (e) {
+  console.error('Error during localStorage access, possibly cookies are blocked:', e)
+}
