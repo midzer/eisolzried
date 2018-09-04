@@ -2,7 +2,7 @@
 {% assign sorted-posts = site.posts | where: "lang", page.lang %}
 {% for post in sorted-posts %}
 {% if forloop.index > 4 %}
-  <li hidden class="media">
+  <li class="media d-none">
   {% else %}
   <li class="media">
   {% endif %}
@@ -18,8 +18,8 @@
         {% include date.html %}
       </div>
       <h5>
-        <a href="{{ post.url | prepend: site.baseurl }}" data-index="{{ forloop.rindex }}">
-          {{ post.title }}
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }} <span class="invisible badge badge-primary" data-index="{{ forloop.rindex }}">Neu</span>
         </a>
       </h5>
       {{ post.content | strip_html | truncatewords: 20 }}
