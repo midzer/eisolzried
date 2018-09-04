@@ -73,9 +73,9 @@ document.getElementById('siren-btn').onclick = () => {
 }
 
 // Fire run
-document.getElementById('fire-station').onclick = () => {
-  const truck = document.getElementById('fire-truck')
-  truck.style.animationPlayState = truck.style.animationPlayState === 'paused' || truck.style.animationPlayState === '' ? 'running' : 'paused'
+document.getElementById('fire-run-station').onclick = () => {
+  const spacer = document.getElementById('fire-run-spacer')
+  spacer.style.animationPlayState = spacer.style.animationPlayState === 'paused' || spacer.style.animationPlayState === '' ? 'running' : 'paused'
   toggleAudio(document.getElementById('fire-run-player'))
 }
 

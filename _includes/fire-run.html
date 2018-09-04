@@ -1,5 +1,6 @@
-<div class="marquee">
-    <span id="fire-truck">{% include icon.html icon="fire-truck" %}</span>
+<div id="fire-run">
+    <span id="fire-run-spacer"></span>
+    <span>{% include icon.html icon="fire-truck" %}</span>
+    <span id="fire-run-station">{% include icon.html icon="home" %}</span>
+    {% include audio-player.html audio='fire-run' loop=true %}
 </div>
-<span id="fire-station">{% include icon.html icon="home" %}</span>
-{% include audio-player.html audio='fire-run' loop=true %}

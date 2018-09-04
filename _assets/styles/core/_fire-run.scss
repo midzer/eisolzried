@@ -1,0 +1,21 @@
+#fire-run {
+    display: flex;
+}
+
+#fire-run-spacer {
+    flex-grow: 1;
+    animation: move 9s ease-in infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+
+#fire-run-station {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Make it move */
+@keyframes move {
+    0%   { flex-grow: 1; }
+    100% { flex-grow: 0; }
+}
