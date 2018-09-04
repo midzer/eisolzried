@@ -137,6 +137,7 @@ field.addEventListener('keypress', event => {
 // Show render time
 if (window.PerformanceNavigationTiming) {
   const [entry] = window.performance.getEntriesByType('navigation')
-  document.getElementById('rendertime').textContent = `${parseInt(entry.domInteractive)}ms`
-  document.getElementById('rendertext').hidden = false
+  const rendertime = document.getElementById('rendertime')
+  rendertime.firstElementChild.textContent = `${parseInt(entry.domInteractive)}ms`
+  rendertime.classList.remove('invisible')
 }
