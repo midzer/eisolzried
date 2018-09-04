@@ -8,18 +8,17 @@
 
 .media {
   img {
+    margin-right: 1rem;
     width: 125px;
     height: 125px;
-    margin-right: 1rem;
-  }
 
-  @include media-breakpoint-down(md) {
-    display: block;  
-    img {
-      max-width: 100%;
-      width: auto;
-      height: auto;
-      margin-right: auto;
+    @include media-breakpoint-only(xs) {
+      width: 80px;
+      height: 80px;
+    }
+    @include media-breakpoint-only(md) {
+      width: 80px;
+      height: 80px;
     }
   }
 }
