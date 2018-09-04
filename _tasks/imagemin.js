@@ -13,6 +13,7 @@ gulp.task('imagemin:prod', () => {
   return gulp.src('_assets/images/**/*')
     .pipe(imagemin([
       imageminMozjpeg({
+        quality: 90,
         progressive: false
       })
     ]))
