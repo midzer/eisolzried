@@ -7,13 +7,20 @@
   flex-basis: 100%;
 }
 
-.post-preview {
-  width: 125px;
-  height: 125px;
-}
+.media {
+  img {
+    width: 125px;
+    height: 125px;
+    margin-right: 1rem;
+  }
 
-@include media-breakpoint-down(md) {
-  .media {
-    display: block;
+  @include media-breakpoint-down(md) {
+    display: block;  
+    img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      margin-right: auto;
+    }
   }
 }
