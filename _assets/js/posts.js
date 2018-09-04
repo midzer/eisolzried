@@ -3,7 +3,7 @@
 // Load more posts
 document.getElementById('moreposts').onclick = function () {
   const button = this
-  const els = list.querySelectorAll('li.d-none')
+  const els = list.querySelectorAll('.d-none')
   window.requestAnimationFrame(function () {
     for (let i = 0, j = els.length; i < 4; i++) {
       els[i].classList.remove('d-none')
@@ -22,9 +22,8 @@ try {
 } catch (e) {
   console.error('Error during localStorage access, possibly cookies are blocked:', e)
 }
-
 const list = document.getElementById('posts')
-const els = list.querySelectorAll('li:not(.d-none)')
+const els = list.children
 for (let i = els.length - 1; i >= 0; i--) {
   const element = els[i].querySelector('span[data-index]')
   const index = Number(element.getAttribute('data-index'))
