@@ -9,8 +9,10 @@ export function loadScript (src) {
       resolve(script.src)
     }
     script.onerror = reject
-    if (document.body.lastChild !== script) {
-      document.body.appendChild(script)
+    if (document.body.lastChild.src !== script.src) {
+      window.requestAnimationFrame(function () {
+        document.body.appendChild(script)
+      })
     }
   })
 }
