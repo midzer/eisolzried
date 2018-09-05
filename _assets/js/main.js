@@ -4,6 +4,7 @@ import { loadScript } from './helper/loadscript'
 import { load } from './helper/load'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
+import { Modal } from 'bootstrap.native'
 
 // Lazy components
 window.observer = new IntersectionObserver(changes => {
@@ -99,6 +100,10 @@ function update () {
 
 // Globals
 window.snackbar = new Snackbar(document.querySelector('.snackbar'))
+const modalTemplate = document.getElementById('modal')
+if (modalTemplate) {
+  window.modal = new Modal(modalTemplate)
+}
 
 // Lightbox
 if (document.querySelector('.lightbox')) {
