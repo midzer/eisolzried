@@ -26,14 +26,8 @@ export function createVideo (index) {
     vid.preload = 'none'
     vid.loop = true
     vid.style.display = 'none'
-    const sourceWebm = document.createElement('source')
-    sourceWebm.src = `${path}${video}.webm`
-    sourceWebm.type = 'video/webm'
-    vid.appendChild(sourceWebm)
-    const sourceMp4 = document.createElement('source')
-    sourceMp4.src = `${path}${video}.mp4`
-    sourceMp4.type = 'video/mp4'
-    vid.appendChild(sourceMp4)
+    const vidPath = `${path}${video}.`
+    vid.src = vid.canPlayType('video/webm') ? vidPath + 'webm' : vidPath + 'mp4'
     div.appendChild(vid)
     link.appendChild(img)
     card.appendChild(link)
