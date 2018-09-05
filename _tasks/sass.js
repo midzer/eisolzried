@@ -38,11 +38,11 @@ gulp.task('sass:prod', () => {
       }
     }))
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer())
     .pipe(purgecss({
       content: ['_site/assets/js/*.js', '_site/**/*.html'],
       whitelistPatterns: [/^carousel/, /^modal/]
     }))
+    .pipe(autoprefixer())
     .pipe(cleancss())
     .pipe(gulp.dest('_site/assets/css'))
 })
