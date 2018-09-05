@@ -3,10 +3,10 @@
 // Load more posts
 document.getElementById('moreposts').onclick = function () {
   const button = this
-  const els = list.querySelectorAll('.d-none')
+  const els = list.querySelectorAll('[hidden]')
   window.requestAnimationFrame(function () {
     for (let i = 0, j = els.length; i < 4; i++) {
-      els[i].classList.remove('d-none')
+      els[i].removeAttribute('hidden')
       if (i + 1 === j) {
         // Remove button when after last element done
         button.parentNode.removeChild(button)

@@ -2,7 +2,7 @@
 {% assign sorted-posts = site.posts | where: "lang", page.lang %}
 {% for post in sorted-posts %}
 {% if forloop.index > 4 %}
-  <li class="media d-none">
+  <li class="media" hidden>
   {% else %}
   <li class="media">
   {% endif %}
