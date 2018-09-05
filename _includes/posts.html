@@ -1,19 +1,19 @@
 <ul id="posts" class="lazy list-unstyled" data-src="/assets/js/posts.js">
 {% assign sorted-posts = site.posts | where: "lang", page.lang %}
 {% for post in sorted-posts %}
-{% if forloop.index > 4 %}
-  <li class="media" hidden>
+  {% if forloop.index > 4 %}
+  <li hidden>
   {% else %}
-  <li class="media">
+  <li>
   {% endif %}
     <a href="{{ post.url | prepend: site.baseurl }}">
       {% if post.images %}
-      <img class="lazy rounded" src="{% include trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
+      <img class="lazy img-fluid rounded" src="{% include trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
       {% else %}
-      <img class="lazy rounded" src="{% include trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
+      <img class="lazy img-fluid rounded" src="{% include trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
       {% endif %}
     </a>
-    <div class="media-body">
+    <div>
       <div class="post-meta">
         {% include date.html %}
       </div>

@@ -1,24 +1,13 @@
-#posts > li {
-  padding-bottom: 1rem;
+#posts > li:not(:first-child) {
+  padding-top: 1rem;
+}
+
+#posts > li:not([hidden]) {
+  display: grid;
+  grid-template-columns: 21% auto;
+  grid-column-gap: 1rem;
 }
 
 .post-meta {
   color: $gray-700;
-}
-
-.media {
-  img {
-    margin-right: 1rem;
-    width: 125px;
-    height: 125px;
-
-    @include media-breakpoint-only(xs) {
-      width: 80px;
-      height: 80px;
-    }
-    @include media-breakpoint-only(md) {
-      width: 80px;
-      height: 80px;
-    }
-  }
 }
