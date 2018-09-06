@@ -7307,9 +7307,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-"rqrauhvmra__tobi@https://github.com/rqrauhvmra/Tobi.git#dev":
-  version "1.7.2"
-  resolved "https://github.com/rqrauhvmra/Tobi.git#177fd18c98583068b7e489a53ea933b92f676e7b"
+"rqrauhvmra__tobi@git+https://git@github.com/midzer/Tobi.git#autoVideoPlayback":
+  version "1.7.1"
+  resolved "git+https://git@github.com/midzer/Tobi.git#632ee74c319fc800cd895ec3d27f69d341cedb37"
 
 run-async@^2.2.0:
   version "2.3.0"

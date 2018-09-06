@@ -7,5 +7,6 @@ window.tobi = new Tobi({
   closeLabel: 'Schließen',
   counter: false,
   zoom: false,
-  threshold: 50
+  threshold: 100,
+  autoplayVideo: true
 })

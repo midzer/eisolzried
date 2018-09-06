@@ -46,7 +46,7 @@
     "imagemin-mozjpeg": "^7.0.0",
     "intersection-observer": "^0.5.0",
     "magic-snowflakes": "^4.0.0",
-    "rqrauhvmra__tobi": "https://github.com/rqrauhvmra/Tobi.git#dev",
+    "rqrauhvmra__tobi": "git+https://git@github.com/midzer/Tobi.git#autoVideoPlayback",
     "run-sequence": "^2.2.0",
     "standard": "^12.0.1",
     "sw-precache": "^5.2.0",
