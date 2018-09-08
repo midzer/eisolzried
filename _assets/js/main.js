@@ -63,7 +63,7 @@ document.getElementById('theme-switch').onclick = () => {
 
 // Language switch
 document.getElementById('language-btn').onclick = () => {
-  window.location = path.indexOf('/by/') === -1 ? '/by'.concat(path) : path.replace('/by', '')
+  window.location = isBoarischeUrl() ? path.replace('/by', '') : '/by'.concat(path)
 }
 
 // Siren player
@@ -105,43 +105,55 @@ if (modalTemplate) {
   window.modal = new Modal(modalTemplate)
 }
 
+// Locales
+function isBoarischeUrl () {
+  return path.indexOf('/by/') !== -1
+}
+const path = window.location.pathname
+
 // Lightbox
 if (document.querySelector('.lightbox')) {
   loadScript('/assets/js/lightbox.js')
 }
 
 // Custom search
-const path = window.location.pathname // needed elsewhere, too
-const suffix = path.indexOf('/by/') !== -1 ? '-by' : ''
-const endpoint = `/search${suffix}.json`
-const pages = []
-fetch(endpoint)
-  .then(blob => blob.json())
-  .then(data => pages.push(...data))
-
-function findResults (termToMatch, pages) {
+function findResults (termToMatch) {
   return pages.filter(item => {
     const regex = new RegExp(termToMatch, 'gi')
     return item.title.match(regex) || item.content.match(regex)
   })
 }
 
-function displayResults () {
-  const resultsArray = findResults(this.value, pages)
+function startSearch () {
+  if (!pages.length) {
+    const suffix = isBoarischeUrl() ? '-by' : ''
+    fetch(`/search${suffix}.json`)
+      .then(blob => blob.json())
+      .then(data => pages.push(...data))
+      .then( () => displayResults(this.value))
+  }
+  else {
+    displayResults(this.value)
+  }
+}
+
+function displayResults (value) {
+  const resultsArray = findResults(value)
   const html = resultsArray.map(item => {
     return `<a class="dropdown-item" href="${item.url}">${item.title}</a>`
   }).join('')
-  resultsList.innerHTML = resultsArray.length === 0 || this.value === '' ? `<p class='dropdown-item'>${path.indexOf('/by/') !== -1 ? 'Nix gfunna' : 'Nichts gefunden'} :(</p>` : html
+  resultsList.innerHTML = resultsArray.length === 0 ? `<p class='dropdown-item'>${isBoarischeUrl() ? 'Nix gfunna' : 'Nichts gefunden'} :(</p>` : html
 }
 
 const field = document.getElementById('search-input')
 const resultsList = document.getElementById('results-container')
-field.addEventListener('keyup', displayResults)
+field.addEventListener('keyup', startSearch)
 field.addEventListener('keypress', event => {
   if (event.keyCode === 13) {
     event.preventDefault()
   }
 })
+const pages = []
 
 // Snow
 // const Snowflakes = require('magic-snowflakes');
