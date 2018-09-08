@@ -62,5 +62,10 @@ module.exports = {
         }
       }
     ]
+  },
+  optimization: {
+    runtimeChunk: {
+      name: 'main'
+    }
   }
 }
