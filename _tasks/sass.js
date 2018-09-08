@@ -7,7 +7,7 @@ import browserSync from 'browser-sync'
 import sass from 'gulp-sass'
 import autoprefixer from 'gulp-autoprefixer'
 import purgecss from 'gulp-purgecss'
-import cleancss from 'gulp-clean-css'
+import csso from 'gulp-csso'
 
 const reload = browserSync.reload
 
@@ -43,6 +43,6 @@ gulp.task('sass:prod', () => {
       whitelistPatterns: [/^carousel/, /^modal/]
     }))
     .pipe(autoprefixer())
-    .pipe(cleancss())
+    .pipe(csso())
     .pipe(gulp.dest('_site/assets/css'))
 })
