@@ -29,11 +29,8 @@ for (let i = 0, j = items.length; i < j; i++) {
 
 // Theme switch
 function setTheme (theme) {
-  let rel,
-    icon
-  theme === 'dark' ? (rel = 'stylesheet', icon = 'sun') : (rel = 'prefetch', icon = 'moon')
-  document.getElementById('theme-link').rel = rel
-  document.getElementById('theme-icon').href.baseVal = `/assets/icons/sprite.svg#${icon}`
+  document.getElementById('theme-link').rel = theme === 'dark' ? 'stylesheet' : ''
+  document.getElementById('theme-icon').href.baseVal = `/assets/icons/sprite.svg#${theme === 'dark' ? 'sun' : 'moon'}`
   try {
     window.localStorage.setItem('theme', theme)
   } catch (e) {
@@ -45,7 +42,7 @@ let sensor = null
 if ('AmbientLightSensor' in window) {
   sensor = new AmbientLightSensor()
   sensor.onreading = () => {
-    sensor.illuminance === 0 ? setTheme('dark') : setTheme('light')
+    setTheme(sensor.illuminance === 0 ? 'dark' : 'light')
   }
   sensor.start()
 }
@@ -55,7 +52,7 @@ document.getElementById('theme-switch').onclick = () => {
     sensor.stop()
   }
   try {
-    window.localStorage.getItem('theme') === 'dark' ? setTheme('light') : setTheme('dark')
+    setTheme(window.localStorage.getItem('theme') === 'dark' ? 'light' : 'dark')
   } catch (e) {
     console.error('Error during localStorage access, possibly cookies are blocked:', e)
   }
