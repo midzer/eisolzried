@@ -1,4 +1,4 @@
-<ul id="posts" class="lazy list-unstyled" data-src="/assets/js/posts.js">
+<ul id="posts" class="lazy list-unstyled" data-src="posts.js" data-type="module">
 {% assign sorted-posts = site.posts | where: "lang", page.lang %}
 {% for post in sorted-posts %}
   {% if forloop.index > 4 %}

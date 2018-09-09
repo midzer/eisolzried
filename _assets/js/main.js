@@ -1,9 +1,6 @@
-'use strict'
-
-import { loadScript } from './helper/loadscript'
-import { load } from './helper/load'
-import { query } from './helper/query'
-import { toggleAudio } from './helper/toggleaudio'
+import { load, loadScript } from './helper/load'
+import query from './helper/query'
+import toggleAudio from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
 
 // Lazy components
@@ -110,7 +107,7 @@ const path = window.location.pathname
 
 // Lightbox
 if (document.querySelector('.lightbox')) {
-  loadScript('/assets/js/lightbox.js')
+  loadScript('lightbox.js')
 }
 
 // Custom search

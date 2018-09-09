@@ -1,5 +1,3 @@
-'use strict'
-
 import { loadScript } from './loadscript'
 
 function removeHint () {
@@ -43,7 +41,11 @@ export function load (element) {
   } else if (element.nodeName === 'A') {
     loadImage(element.querySelector('img'))
     tobi.add(element)
-  } else if (element.dataset.src.slice(-3) === '.js') {
+  /*} else if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1) {
+    loadModule(element.dataset.src)*/
+  } else {
     loadScript(element.dataset.src)
   }
 }
+
+export { loadScript } from './loadscript'
