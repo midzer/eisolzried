@@ -1,15 +1,11 @@
 {% if (page.url == "/" or page.url == "/by/") and jekyll.environment == "production" %}
-<style>{% include minimalcss.txt %}</style>
+{% include minimalcss.html %}
 {% else %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
 {% endif %}
 <link id="theme-link" href="{{ '/assets/css/dark-theme.css' | prepend: site.baseurl }}">
 <script>
-try {
-  if (window.localStorage.getItem('theme') === 'dark') {
-    document.getElementById('theme-link').rel = 'stylesheet';
-  }
-} catch (e) {
-  console.error('Error during localStorage access, possibly cookies are blocked:', e);
+if (window.localStorage.getItem('theme') === 'dark') {
+  document.getElementById('theme-link').rel = 'stylesheet';
 }
 </script>

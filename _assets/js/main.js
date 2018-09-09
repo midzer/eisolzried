@@ -28,11 +28,7 @@ for (let i = 0, j = items.length; i < j; i++) {
 function setTheme (theme) {
   document.getElementById('theme-link').rel = theme === 'dark' ? 'stylesheet' : ''
   document.getElementById('theme-icon').href.baseVal = `/assets/icons/sprite.svg#${theme === 'dark' ? 'sun' : 'moon'}`
-  try {
-    window.localStorage.setItem('theme', theme)
-  } catch (e) {
-    console.error('Error during localStorage access, possibly cookies are blocked:', e)
-  }
+  window.localStorage.setItem('theme', theme)
 }
 
 let sensor = null
@@ -48,11 +44,7 @@ document.getElementById('theme-switch').onclick = () => {
   if (sensor) {
     sensor.stop()
   }
-  try {
-    setTheme(window.localStorage.getItem('theme') === 'dark' ? 'light' : 'dark')
-  } catch (e) {
-    console.error('Error during localStorage access, possibly cookies are blocked:', e)
-  }
+  setTheme(window.localStorage.getItem('theme') === 'dark' ? 'light' : 'dark')
 }
 
 // Language switch
