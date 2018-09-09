@@ -1,24 +1,26 @@
+const path = require('path')
+
 module.exports = {
   entry: {
     main: [
       'intersection-observer',
-      './_assets/js/snackbar.js',
+      './_assets/js/vendor/snackbar.js',
       './_assets/js/main.js',
-      './_assets/js/service-worker-registration.js'
+      './_assets/js/vendor/service-worker-registration.js'
     ],
     lightbox: [
       './_assets/js/lightbox.js'
     ],
     calendar: [
       'ical.js',
-      './_assets/js/drcal.js',
+      './_assets/js/vendor/drcal.js',
       './_assets/js/calendar.js'
     ],
     posts: [
-      './_assets/js/posts.js'
+      './_assets/js/modules/posts.js'
     ],
     chatbox: [
-      './_assets/js/chatbox.js'
+      './_assets/js/modules/chatbox.js'
     ],
     socialbox: [
       './_assets/js/socialbox.js'
@@ -31,16 +33,20 @@ module.exports = {
     ],
     media: [
       './_assets/js/media.js'
+    ],
+    polyfills: [
+      './_assets/js/polyfills.js'
     ]
   },
   output: {
-    filename: '[name].js'
+    filename: '[name].js',
+    path: path.resolve(__dirname, '_site/assets/js')
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /node_modules/, // + files with import()
         use: {
           loader: 'babel-loader',
           options: {
