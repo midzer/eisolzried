@@ -1,18 +1,17 @@
-'use strict'
-
-import { images, path } from './images'
-import { trans } from '../helper/trans'
+import { images } from './images'
+import { trans } from './trans'
 
 const length = images.length
+const path = '/assets/images/media/'
 
-export function createImage (index) {
+export default function (index) {
   let card
   if (index < length) {
     const image = images[index]
     card = document.createElement('div')
     card.className = 'card border-primary'
     const link = document.createElement('a')
-    link.href = path + image.name
+    link.href = `${path}${image.name}`
     const img = document.createElement('img')
     img.className = 'lazy card-img'
     img.src = trans

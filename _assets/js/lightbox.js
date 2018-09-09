@@ -1,5 +1,3 @@
-'use strict'
-
 import Tobi from 'rqrauhvmra__tobi'
 
 window.tobi = new Tobi({

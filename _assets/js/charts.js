@@ -1,5 +1,3 @@
-'use strict'
-
 import { Chart } from 'frappe-charts/dist/frappe-charts.esm.js'
 
 const chart = new Chart('#member', {

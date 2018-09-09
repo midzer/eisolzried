@@ -1,7 +1,5 @@
-'use strict'
-
-import { createImage } from './media/image'
-import { createVideo } from './media/video'
+import createImage from './media/image'
+import createVideo from './media/video'
 
 function createGallery (grid, createElement) {
   const frag = document.createDocumentFragment()

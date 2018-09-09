@@ -1,7 +1,3 @@
-'use strict'
-
-export const path = '/assets/videos/media/'
-
 export const videos = [
   '2a8eeb72fdadf738',
   '4dcaeb0554b54f37',

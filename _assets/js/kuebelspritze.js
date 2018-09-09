@@ -1,6 +1,4 @@
-'use strict'
-
-import { toggleAudio } from './helper/toggleaudio'
+import toggleAudio from './helper/toggleaudio'
 
 function hubDone (nextHub) {
   document.getElementById('kuebel').src = `/assets/images/games/kuebel-${nextHub}.png`

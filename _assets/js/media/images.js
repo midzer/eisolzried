@@ -1,7 +1,3 @@
-'use strict'
-
-export const path = '/assets/images/media/'
-
 export const images = [
   {
     name: '2dfff0ca7ae2db55.jpg',

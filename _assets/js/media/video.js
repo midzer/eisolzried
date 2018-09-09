@@ -1,11 +1,10 @@
-'use strict'
-
-import { videos, path } from './videos'
-import { trans } from '../helper/trans'
+import { videos } from './videos'
+import { trans } from './trans'
 
 const length = videos.length
+const path = '/assets/videos/media/'
 
-export function createVideo (index) {
+export default function (index) {
   let card
   if (index < length) {
     const video = videos[index]
@@ -26,8 +25,7 @@ export function createVideo (index) {
     vid.preload = 'none'
     vid.loop = true
     vid.style.display = 'none'
-    const vidPath = `${path}${video}.`
-    vid.src = vid.canPlayType('video/webm') ? vidPath + 'webm' : vidPath + 'mp4'
+    vid.src = `${path}${video}.${vid.canPlayType('video/webm') ? 'webm' : 'mp4'}`
     div.appendChild(vid)
     link.appendChild(img)
     card.appendChild(link)
