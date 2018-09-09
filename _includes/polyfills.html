@@ -1,0 +1,8 @@
+<script>
+if (!('fetch' in window && 'assign' in Object)) {
+    var script = document.createElement('script');    
+    script.async = false;
+    script.src = '/assets/js/polyfills.js';
+    document.head.appendChild(scriptElement);
+}
+</script>
