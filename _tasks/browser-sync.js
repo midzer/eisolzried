@@ -8,7 +8,7 @@ gulp.task('browser-sync', ['build'], () => {
     server: {
       baseDir: '_site'
     },
-    https: true
+    //https: true
   })
 })
 
