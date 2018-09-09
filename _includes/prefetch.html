@@ -1,8 +1,0 @@
-{% if (page.url == "/" or page.url == "/by/") and jekyll.environment == "production" %}
-<link id="main-link" rel="prefetch" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
-<script>
-if (navigator.userAgent.indexOf('Safari') > -1) {
-  document.getElementById('main-link').rel = 'stylesheet'
-}
-</script>
-{% endif %}
