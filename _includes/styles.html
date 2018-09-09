@@ -1,17 +1,7 @@
-{% assign rel = 'stylesheet' %}
-{% if jekyll.environment == "production" and (page.url == "/" or page.url == "/by/" %}
+{% if (page.url == "/" or page.url == "/by/") and jekyll.environment == "production" %}
 <style>{% include minimalcss.txt %}</style>
-{% assign rel = 'prefetch' %}
-{% endif %}
-<link id="main-link" rel="{{ rel }}" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
-{% assign rel = 'stylesheet' %}
-{% if jekyll.environment == "production" and (page.url == "/" or page.url == "/by/" %}
-<script>
-var ua = typeof navigator !== 'undefined' ? navigator.userAgent || '' : ''
-if(/safari|iphone|ipad|ipod|msie|trident/i.test(ua) && !/chrome|crios|crmo|firefox|iceweasel|fxios|edge/i.test(ua)) {
-  document.getElementById('main-link').rel = 'stylesheet';
-}
-</script>
+{% else %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
 {% endif %}
 <link id="theme-link" href="{{ '/assets/css/dark-theme.css' | prepend: site.baseurl }}">
 <script>
