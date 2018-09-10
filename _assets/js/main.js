@@ -65,6 +65,9 @@ document.getElementById('fire-run-station').onclick = () => {
   spacer.style.animationPlayState = spacer.style.animationPlayState === 'paused' || spacer.style.animationPlayState === '' ? 'running' : 'paused'
   toggleAudio(document.getElementById('fire-run-player'))
 }
+document.getElementById('fire-run-grisu').onclick = () => {
+  toggleAudio(document.getElementById('fire-run-grisu'))
+}
 
 // Bottombar
 const bottomBar = document.getElementById('bottombar').firstElementChild

@@ -1,5 +1,11 @@
 #fire-run {
     display: flex;
+    align-items: flex-end;
+}
+
+#fire-run-grisu,
+#fire-run-station {
+    cursor: pointer;
 }
 
 #fire-run-spacer {
@@ -10,7 +16,6 @@
 }
 
 #fire-run-station {
-    cursor: pointer;
     margin-left: auto;
 }
 
