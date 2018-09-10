@@ -10,7 +10,7 @@ function addLoaded (element) {
 }
 
 function replaceSrc (element) {
-  element.src = element.getAttribute('data-src')
+  element.setAttribute('src', element.getAttribute('data-src'))
   element.removeAttribute('data-src')
 }
 

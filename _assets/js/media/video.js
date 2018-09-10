@@ -16,7 +16,7 @@ export default function (index) {
     const img = document.createElement('img')
     img.className = 'lazy card-img'
     img.src = trans
-    link.setAttribute('data-src', `${path}thumbs/${video}.jpg`)
+    img.setAttribute('data-src', `${path}thumbs/${video}.jpg`)
     img.alt = video
     const div = document.createElement('div')
     div.id = `v${video}`
