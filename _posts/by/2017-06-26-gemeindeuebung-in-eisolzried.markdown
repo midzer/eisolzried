@@ -80,4 +80,4 @@ Desmoi is drum ganga, dass a Stool brennt und a boor Leid vamisst san. D'Feiawea
 
 Nachdem ois bassd hod, war a kurze Besprechung mim Woife vo da Inschpektion z'Dacha wo ma gsogd hod wos guad war und wo ma nächsts moi mehra drauf schaun soit.
 
-{% include gal.html %}
+{% include component/gal.html %}

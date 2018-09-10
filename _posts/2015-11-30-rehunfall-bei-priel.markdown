@@ -18,5 +18,5 @@ Das Fahrzeug kollidierte mit einem Reh und kam kurz vor der Kuppe von der Straß
 
 Die Feuerwehr Eisolzried war mit 12 Feuerwehrleuten von 23:45 Uhr bis 1:30 Uhr im Einsatz.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

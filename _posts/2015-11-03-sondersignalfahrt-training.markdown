@@ -18,5 +18,5 @@ Nach der theoretischen Einweisung zur Einsatzfahrt wurde anschließend ein Fahrt
 
 Zwei Feuerwehrleute der Feuerwehr Eisolzried nahmen daran teil.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

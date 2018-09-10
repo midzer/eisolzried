@@ -19,6 +19,6 @@ Merci nomoi an de Feiawea Schwabmühlhausen für de Nominierung!
 
 Damits wissts um wos gäd, schauts am bestn einfach des Video o :)
 
-{% include gal.html %}
+{% include component/gal.html %}
 
-{% include vid.html %}
+{% include component/vid.html %}

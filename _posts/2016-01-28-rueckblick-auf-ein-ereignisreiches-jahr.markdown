@@ -22,5 +22,5 @@ Der Münchner Merkur stellte einen ausführlichen [Artikel][artikel] über die V
 
 Neben einem offiziellen Pressefoto entstanden weitere sensationelle Aufnahmen. Es lebe die Situationskomik!
 
-{% include gal.html %}
+{% include component/gal.html %}
 

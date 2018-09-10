@@ -36,4 +36,4 @@ Bei schneena Weda is vormittogs losganga mid am erstn Teil vo dera "modularen" A
 
 Nochdem olle zam Mittog gmacht hom, is weider ganga mim zwoatn Teil: Wasser ausm Unterflurhydrantn raus hoin. Am End is no kurz wos vazoid worn, wos guad und wos vielleicht ned so guad war.
 
-{% include gal.html %}
+{% include component/gal.html %}

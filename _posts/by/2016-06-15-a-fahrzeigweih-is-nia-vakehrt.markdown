@@ -60,5 +60,5 @@ Mir song vagoids Gohd bei olle de wo bei dem Festl g'hoifa hom.
 
 D'Presse hod a an glaona [Bericht](http://www.merkur.de/lokales/dachau/feuerwehr-eisolzried-feuerwehrfahrzeug-weihe-eingeweiht-6464716.html) gschriem.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

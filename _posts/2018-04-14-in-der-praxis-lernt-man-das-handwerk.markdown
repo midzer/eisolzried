@@ -34,4 +34,4 @@ Bei angenehmen Temperaturen begann vormittags der erste Teil der modularen Ausbi
 
 Gestärkt vom gemeinsamen Mittagessen ging das Programm in den zweiten Teil über: der Wasserentnahme aus einem Unterflurhydranten. Eine kurze Ansprache und Fazit am Ende der Übung rundete den Tag ab.
 
-{% include gal.html %}
+{% include component/gal.html %}

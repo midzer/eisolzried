@@ -66,6 +66,6 @@ Den Abschluss der Übung bildete die Wasserentnahme aus einem Unterflurhydranten
 
 Als es langsam dunkler wurde, erwies das Teliskoplicht vom Fahrzeug sich als gute Möglichkeit schnell den umliegenden Arbeitsbereich zu beleuchten.
 
-{% include gal.html %}
+{% include component/gal.html %}
 
-{% include vid.html %}
+{% include component/vid.html %}

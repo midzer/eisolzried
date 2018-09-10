@@ -22,4 +22,4 @@ D'Feierwea Eilzria is gega 14 Uhr alamierd worn: auf da Vabindungsstraß vo Eilz
 
 Da ganze Einsatz hod ungefea a Stund dauad und vo Eilzria warn acht Leid dabei.
 
-{% include gal.html %}
+{% include component/gal.html %}

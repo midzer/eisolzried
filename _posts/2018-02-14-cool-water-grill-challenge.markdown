@@ -17,6 +17,6 @@ Merci nochmal an die Feuerwehr Schwabmühlhausen für die Nominierung!
 
 Zur Erklärung schaut euch am besten des Video einfach an :)
 
-{% include gal.html %}
+{% include component/gal.html %}
 
-{% include vid.html %}
+{% include component/vid.html %}

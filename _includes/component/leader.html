@@ -1,7 +1,7 @@
 <div class="grid grid--small bottom-buffer">
     {% for image in include.src %}
     <div class="card">
-        <img class="lazy card-img-top" src="{% include trans.html %}" data-src="{{ page.imgfolder }}{{ include.type }}/{{ image.name }}" alt="{{ image.text }}">
+        <img class="lazy card-img-top" src="{% include helper/trans.html %}" data-src="{{ page.imgfolder }}{{ include.type }}/{{ image.name }}" alt="{{ image.text }}">
         <div class="card-body">
             <h5 class="card-title">{{ image.text }}</h5>
             <p class="card-text">{{ image.year }}</p>

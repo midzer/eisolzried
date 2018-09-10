@@ -8,9 +8,9 @@ lang: de
 <div class="row">
   <div class="col-md-6 col-lg-5">
     <div class="card">
-{% include carousel.html %}
+{% include component/carousel.html %}
 <div class="card-body" markdown="1">
-<h2 class="card-title">{% include icon.html icon="info" %} Intro</h2>
+<h2 class="card-title">{% include element/icon.html icon="info" %} Intro</h2>
 Wir sind eine aktive Feuerwehr aus der Gemeinde Bergkirchen in Oberbayern, die überwiegend aus einem jungen Team besteht. Neben der regelmäßigen Übungen und Dienstbesprechungen, treffen wir uns zu Grillfesten und Ausflügen.
 {:.card-text}
 
@@ -25,9 +25,9 @@ Und nun viel Spaß beim Stöbern :)
   <div class="col-md-6 col-lg-7">
     <div class="card h-100">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="activity" %} Neuigkeiten
+        <h2 class="card-title">{% include element/icon.html icon="activity" %} Neuigkeiten
         </h2>
-{% include posts.html %}
+{% include component/posts.html %}
       </div>
     </div>
   </div><!-- col-md-6 col-lg-7 -->
@@ -36,20 +36,20 @@ Und nun viel Spaß beim Stöbern :)
   <div class="col-lg-5">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="calendar" %} Termine
+        <h2 class="card-title">{% include element/icon.html icon="calendar" %} Termine
         </h2>
-{% include calendar.html %}
+{% include component/calendar.html %}
       </div>
     </div>
   </div><!-- col-lg-5 -->
   <div class="col-lg-7 d-flex">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="message-circle" %} Chat
+        <h2 class="card-title">{% include element/icon.html icon="message-circle" %} Chat
         </h2>
-{% include chat.html %}
+{% include component/chat.html %}
       </div>
     </div>
   </div><!-- col-lg-7 -->
 </div><!-- row -->
-{% include church.html %}
+{% include element/church.html %}

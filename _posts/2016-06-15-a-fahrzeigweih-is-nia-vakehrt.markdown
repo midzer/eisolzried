@@ -58,5 +58,5 @@ Wir bedanken uns bei allen Helferinnen und Helfern für dieses gelungene Fest.
 
 Der Merkur berichtete in einem [Artikel](http://www.merkur.de/lokales/dachau/feuerwehr-eisolzried-feuerwehrfahrzeug-weihe-eingeweiht-6464716.html).
 
-{% include gal.html %}
+{% include component/gal.html %}
 

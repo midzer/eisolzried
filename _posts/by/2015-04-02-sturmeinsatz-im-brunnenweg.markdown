@@ -24,5 +24,5 @@ categories:
 
 Z'erscht samma alarmierd worn, weils a Dooch vo a Halle obdeckt hod. As Bleech is aufs Gartnhaisl und am Pool vom Nachbarn gfoin. Mir homs g'sichad und zalegt. Einsatz hod 1,5 Stund dauad mit 7 Leid.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

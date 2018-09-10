@@ -8,9 +8,9 @@
   {% for video in videos %}
   <div class="embed-responsive embed-responsive-16by9">
     {% if include.type == 'animation' %}
-      {% include animation.html name=video.name %}
+      {% include element/animation.html name=video.name %}
     {% else %}
-      {% include video.html name=video.name %}
+      {% include element/video.html name=video.name %}
     {% endif %}
   </div>
   {% endfor %}

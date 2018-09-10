@@ -7,13 +7,13 @@ lang: de
 ---
 
 ## Kommandanten
-{% include leader.html type="commandants" src=site.data.archive.commandants %}
+{% include component/leader.html type="commandants" src=site.data.archive.commandants %}
 
 ## Vorstände
-{% include leader.html type="executives" src=site.data.archive.executives %}
+{% include component/leader.html type="executives" src=site.data.archive.executives %}
 
 ## Verschiedenes
-{% include gal.html src=site.data.archive.misc %}
+{% include component/gal.html src=site.data.archive.misc %}
 
 ## Wappen
-{% include wappen.html %}
+{% include component/wappen.html %}

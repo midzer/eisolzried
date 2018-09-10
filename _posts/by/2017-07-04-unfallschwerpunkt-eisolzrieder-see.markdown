@@ -18,4 +18,4 @@ Heid da fria umara 6.45 Uhr isd Feiawea Eilzria alamiad worn. A komplette Mannsc
 
 Des ganze hod ungefea 75 Minutn dauad und dann san olle de wos ghoifa hom wieder zruck in eanare Feiaweahaisl gfahrn.
 
-{% include gal.html %}
+{% include component/gal.html %}

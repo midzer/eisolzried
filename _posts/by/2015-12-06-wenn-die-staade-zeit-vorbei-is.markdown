@@ -22,5 +22,5 @@ Da neie Vorstand Bernhard Schmidbauer hod si bei olle bedankt de wo den Omd (und
 
 De Vasteigara Schorsch und Hexa hom an Haufa gespendete Preise mit vui Gaudi und Witz on de Leid brocht. Danooch samma no griabig zam g'hockt und hom de ersteigerten Schmankerl glei moi probierd.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

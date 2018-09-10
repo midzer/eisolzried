@@ -7,4 +7,4 @@ lang: by
 
 ## Kibespritzn
 
-{% include kuebelspritze.html %}
+{% include component/kuebelspritze.html %}

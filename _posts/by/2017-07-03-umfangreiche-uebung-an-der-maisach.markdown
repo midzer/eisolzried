@@ -67,6 +67,6 @@ Hint naus homma no a Wassa ausm Unterflurhydranten gnomma, der wos glei ums Eck 
 
 Wos langsam aba sicha dunkel worn is, hod si zoagt, dass des Teliskopliacht aufm Dooch vom Fahrzeig recht guad is, damit mia bei da Arbad wos seng.
 
-{% include gal.html %}
+{% include component/gal.html %}
 
-{% include vid.html %}
+{% include component/vid.html %}

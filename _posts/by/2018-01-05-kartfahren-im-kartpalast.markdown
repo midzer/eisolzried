@@ -35,6 +35,6 @@ Noochdem d'Reifen guadn Grip bekomma hom, is glei mit da Qualifizierung los gang
 
 Nooch 16 Rundn wo da Turbo zennt worn is, san am End drei Leid aufm Podest gstanna, de wos gwunna hom. Daweil hom die andan no besprocha wia ma beim nächstn Moi besser fahrn koon.
 
-{% include gal.html %}
+{% include component/gal.html %}
 
-{% include vid.html %}
+{% include component/vid.html %}

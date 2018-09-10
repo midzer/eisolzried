@@ -22,4 +22,4 @@ Im Juli homma mim neia Fahrzeig am Wendehamma vo da Birknstraß g'übt. D'Straß
 
 Wo ma zruck kemma san, homma d'Schleich aufghängd und nachad is vazoid worn wia ma mim Rettungskoffa umgähd.
 
-{% include gal.html %}
+{% include component/gal.html %}

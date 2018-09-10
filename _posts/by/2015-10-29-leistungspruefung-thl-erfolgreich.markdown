@@ -48,5 +48,5 @@ Vo Eilzria hom Markus Asam, Johann Funk, Florian Lunglmeyr, Andreas Hörmann, Mi
 
 (Des is a Zusammenfassung vo am Artikel im Regionalteil der Printausgabe der Dachauer Nachrichten)
 
-{% include gal.html %}
+{% include component/gal.html %}
 

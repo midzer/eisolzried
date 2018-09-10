@@ -58,4 +58,4 @@ Bei scheena Weda samma an drei verschiedane Ort zur Übung im Mai ganga:
 
 Wir ham uns vorgstoid, dass bei am jädn a Auto in da Garaasch brennt. Neba da Wassaentnahme ausm Unterflurhydrantn homma d'Straß obgsichert, Schlachbrückn aufbaud und mid oan bis zwoa C-Schleich nochm Verteila den Brand freile glöscht.
 
-{% include gal.html %}
+{% include component/gal.html %}

@@ -18,5 +18,5 @@ Am 22.12.2015 hods g'schäbad auf da Landstraß zwischn Eilzria und am GADA wos 
 
 13 Feiaweala warn für 1,5 Stund dabei.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

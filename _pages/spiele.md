@@ -7,4 +7,4 @@ lang: de
 
 ## Kübelspritze
 
-{% include kuebelspritze.html %}
+{% include component/kuebelspritze.html %}

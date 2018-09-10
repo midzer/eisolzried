@@ -20,5 +20,5 @@ As Fahrzeig is in a Rää neibrennt und is vo da Straß obkemma. Dabei hod si da
 
 Feiawea Eilzria war mid 12 Leid vo 23:45 Uhr bis 1:30 im Einsatz.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

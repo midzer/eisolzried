@@ -8,14 +8,14 @@
   {% endif %}
     <a href="{{ post.url | prepend: site.baseurl }}">
       {% if post.images %}
-      <img class="lazy img-fluid rounded" src="{% include trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
+      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
       {% else %}
-      <img class="lazy img-fluid rounded" src="{% include trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
+      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
       {% endif %}
     </a>
     <div>
       <div class="post-meta">
-        {% include date.html %}
+        {% include helper/date.html %}
       </div>
       <h5>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -28,14 +28,14 @@
         {% else %}
         Mehr lesen
         {% endif %}
-        {% include icon.html icon="chevrons-right" %}
+        {% include element/icon.html icon="chevrons-right" %}
       </a>
     </div>
   </li>
 {% endfor %}
 </ul>
 <button id="moreposts" type="button" class="btn btn-outline-primary d-block mx-auto">
-  {% include icon.html icon="plus" %}
+  {% include element/icon.html icon="plus" %}
   {% if page.lang == 'by' %}
   Meara
   {% else %}
@@ -44,7 +44,7 @@
 </button>
 <br>
 <p class="card-text">
-  {% include icon.html icon="rss" %}
+  {% include element/icon.html icon="rss" %}
   {% if page.lang == 'by' %}
   bstoin als
   <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">RSS</a>

@@ -30,13 +30,13 @@ lang: de
 ## Hosting
 
 <a href="https://uberspace.de/">
-    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/uberspace.png" alt="Uberspace">
+    <img class="lazy img-fluid" src="{% include helper/trans.html %}" data-src="/assets/images/links/uberspace.png" alt="Uberspace">
 </a>
 
 ## Jugend
 
 <a href="https://www.ich-will-zur-jugendfeuerwehr.de/">
-    <img class="lazy img-fluid" src="{% include trans.html %}" data-src="/assets/images/links/jugendfeuerwehr.png" alt="Ich will zur Jugendfeuerwehr">
+    <img class="lazy img-fluid" src="{% include helper/trans.html %}" data-src="/assets/images/links/jugendfeuerwehr.png" alt="Ich will zur Jugendfeuerwehr">
 </a>
 
 ## Spiele

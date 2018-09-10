@@ -20,5 +20,5 @@ Nach einem Zwischenstop an einem Biergarten ging die Fahrt auf die letzte Etappe
 
 Fazit: es war ein sehr gelungener Tag mit vielen schönen Momenten, guter Laune und viel Action. Überragende Highlights waren die 3 langen Wasserrutschen und die kleine Aloisius Kabine zum Wasser lassen hinten am Floß :)
 
-{% include gal.html %}
+{% include component/gal.html %}
 

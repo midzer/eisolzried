@@ -78,4 +78,4 @@ Diesmal war das Übungsszenario der Brand eines landwirtschaftlichen Gebäudes m
 
 Nach der erfolgreichen Übung gab es zusammen mit Kreisbrandmeister Wolfgang Faltermeier eine kurze Besprechung bei der für die einzelnen Bereiche Lob und Verbesserungsvorschläge ausgesprochen wurden.
 
-{% include gal.html %}
+{% include component/gal.html %}

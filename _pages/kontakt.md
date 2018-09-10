@@ -7,6 +7,6 @@ lang: de
 
 ## Postanschrift
 
-{% include address.html %}
+{% include component/address.html %}
 
 Standort in der [OpenStreetMap](https://www.openstreetmap.org/node/670854444).

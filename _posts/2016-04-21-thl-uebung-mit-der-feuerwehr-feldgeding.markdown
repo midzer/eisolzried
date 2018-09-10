@@ -34,5 +34,5 @@ Nach der gemeinsamen Leistungsprüfung THL mit den Feldgedinger Kollegen im letz
 
 Zukünftig ist mit einer häufigeren Zusammenarbeit mit anderen Gemeindefeuerwehren im Einsatzfall zu rechnen, weil das kommende, neue Fahrzeug von Eisolzried deren Einsatzradius erhöht. Gemeinschaftsübungen sind deshalb vorallem im Bereich THL sinnvoll und notwendig.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

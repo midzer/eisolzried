@@ -22,5 +22,5 @@ Es ereigneten sich 2 Einsätze an dem Tag, beide im Brunnenweg in Deutenhausen:
 
 Zuerst wurden wir alarmiert, weil es das Dach einer Halle abgedeckt hat. Das Blechdach landete auf dem Gartenhaus und dem Pool vom Nachbargrundstück. Dieses wurde von uns gesichert und zerlegt. Einsatzdauer: 1,5 Stunden. Einsatzkräfte: 7 Personen.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

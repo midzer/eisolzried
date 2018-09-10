@@ -16,5 +16,5 @@ Am 22.12.2015 ereignete sich ein schwerer Verkehrsunfall auf der Landstraße zwi
 
 Im Einsatz waren 13 Feuerwehrleute für insgesamt 1,5 Stunden.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

@@ -52,4 +52,4 @@ Vo Eilzria warn dabei:
 * Schuasta
 * Zolli
 
-{% include gal.html %}
+{% include component/gal.html %}

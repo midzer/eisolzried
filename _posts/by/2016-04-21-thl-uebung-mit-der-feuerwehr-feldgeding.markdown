@@ -36,5 +36,5 @@ Noch da gemeinsama Leistungsprüfung THL mit de Foigadinger letzts Johr, homma i
 
 A in Zukunft deng ma bei Einsätze mit andere Gmoafeiawean zam arban, weil mim neia Fahrzeig vo Eilzria mia an gräßan Einsatzradius hom. Oiso san Übunga mitananand b'sonders bei THL sau wichtig.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

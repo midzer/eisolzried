@@ -40,5 +40,5 @@ Neben einem ausführlichen Theorieunterricht wurde anhand praktischer Beispiele 
 
 Von der Feuerwehr Eisolzried nahmen Michael Hörmann und Felix Schmid teil. 
 
-{% include gal.html %}
+{% include component/gal.html %}
 

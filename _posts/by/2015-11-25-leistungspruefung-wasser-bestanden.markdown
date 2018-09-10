@@ -89,4 +89,4 @@ Im Frühjahr homma d'Leistungsprüfung Wassa mit Erfoig obg'legt.
 </table>
 </div>
 
-{% include gal.html %}
+{% include component/gal.html %}

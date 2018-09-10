@@ -20,5 +20,5 @@ O'zends Reisig war fast auf de Baam danebn übergriffa. Mim Schnoiogriff homma d
 
 Mia warn mit 9 Feiaweala a hoibe Stund im Einsatz.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

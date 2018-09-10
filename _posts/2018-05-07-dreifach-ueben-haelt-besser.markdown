@@ -56,4 +56,4 @@ Bei wunderbarem Wetter ging es an drei verschiedene Plätze zur Übung im Mai:
 
 Einsatzszenario war jeweils an brennendes Auto in einer Garage. Neben Wasserentnahme aus dem Unterflurhydranten wurde der Verkehr abgesichert, Schlauchbrücken erstellt und mit ein bis zwei C-Längen nach dem Verteiler der imaginäre Brand gelöscht.
 
-{% include gal.html %}
+{% include component/gal.html %}

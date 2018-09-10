@@ -24,5 +24,5 @@ Da Merkur hod an langa [Artikl][artikel] vo da Vasammlung online.
 
 Neba dem Foto vo da Presse san no andere g'macht worn. A Gaudi wars!
 
-{% include gal.html %}
+{% include component/gal.html %}
 

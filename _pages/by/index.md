@@ -8,9 +8,9 @@ lang: by
 <div class="row">
   <div class="col-md-6 col-lg-5">
     <div class="card">
-{% include carousel.html %}
+{% include component/carousel.html %}
 <div class="card-body" markdown="1">
-<h2 class="card-title">{% include icon.html icon="info" %} Intro</h2>
+<h2 class="card-title">{% include element/icon.html icon="info" %} Intro</h2>
 Oiso, mia san a aktive Feiawea vo da Gmoa Bergkicha in Obabayan, wo de mehra Leid junge Buaschn san. Freile deng ma oiwei wieder übn und uns zamhocka wenns wos Neis gibt, wobei ma a oan aufgrilln bei na Hoibn und wo hifahrn.
 {:.card-text}
 
@@ -25,9 +25,9 @@ Gnua vazoid, vui Spaß beim Umschaun :)
   <div class="col-md-6 col-lg-7">
     <div class="card h-100">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="activity" %} Wos neis gibt
+        <h2 class="card-title">{% include element/icon.html icon="activity" %} Wos neis gibt
         </h2>
-{% include posts.html %}
+{% include component/posts.html %}
       </div>
     </div>
   </div><!-- col-md-6 col-lg-7 -->
@@ -36,20 +36,20 @@ Gnua vazoid, vui Spaß beim Umschaun :)
   <div class="col-lg-5">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="calendar" %} Wos zum doa is
+        <h2 class="card-title">{% include element/icon.html icon="calendar" %} Wos zum doa is
         </h2>
-{% include calendar.html %}
+{% include component/calendar.html %}
       </div>
     </div>
   </div><!-- col-lg-5 -->
   <div class="col-lg-7 d-flex">
     <div class="card">          
       <div class="card-body">
-        <h2 class="card-title">{% include icon.html icon="message-circle" %} Chat
+        <h2 class="card-title">{% include element/icon.html icon="message-circle" %} Chat
         </h2>
-{% include chat.html %}
+{% include component/chat.html %}
       </div>
     </div>
   </div><!-- col-lg-7 -->
 </div><!-- row -->
-{% include church.html %}
+{% include element/church.html %}

@@ -5,4 +5,4 @@ permalink: /by/allgemeines/
 lang: by
 ---
 
-{% include overview.html tag='allgemeines' %}
+{% include pages/overview.html tag='allgemeines' %}

@@ -16,4 +16,4 @@ Heute morgen gegen 6.45 Uhr ging der Alarm bei der Feuerwehr Eisolzried los. Ein
 
 Nach ungefähr 75 Minuten war der Einsatz beendet und die Helfer konnten wieder in ihre Feuerwehrhäuser zurückkehren.
 
-{% include gal.html %}
+{% include component/gal.html %}

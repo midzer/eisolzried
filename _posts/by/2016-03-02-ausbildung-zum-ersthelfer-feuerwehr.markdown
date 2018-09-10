@@ -42,5 +42,5 @@ Nohch vui Theorie homma mit praktische Beischspui de Erstversorgung vo valetzte 
 
 Vo Eilzria war da Hörmann Miche und da Felix Schmid dabei.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

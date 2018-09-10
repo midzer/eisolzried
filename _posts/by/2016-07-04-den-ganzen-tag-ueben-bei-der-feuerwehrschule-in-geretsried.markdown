@@ -28,5 +28,5 @@ Hint naus homma olle mitandand a Großübung gmacht: a Werkstod mid Laga hod bre
 
 Am End hom de Ausbilda vazoid wos guad und wos ned so guad war. G'lobt san a olle Feiawean worn. De Leid wos dabei warn hod der ganze Dog gfoin.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

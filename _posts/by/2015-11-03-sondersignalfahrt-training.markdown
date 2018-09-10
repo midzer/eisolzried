@@ -20,5 +20,5 @@ Nooch da Theorie überd Einsatzfahrt is danooch am Fahrsimulator a Fahrtraining 
 
 Zwoa Feiawealeid vo da Feiawea Eilzria warn dabei.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

@@ -26,5 +26,5 @@ Die Abschlussübung war eine komplette Zugübung aller drei beteiligten Feuerweh
 
 Bei der Abschlussbesprechung mit den Ausbildern wurden die Stärken und Schwächen der Mannschaften aufgezeigt. Dabei wurde Lob an die beteiligten Feuerwehren ausgesprochen. Die Teilnehmer waren sehr beeindruckt vom gesamten Ausbildungstag.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

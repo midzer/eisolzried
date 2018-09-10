@@ -6,12 +6,12 @@ lang: de
   <div class="page-header">
     <h1>{{ page.title }}</h1>
     <p class="post-meta">
-      {% include date.html %}
+      {% include helper/date.html %}
       {% assign lang = nil %}
       {% if page.lang == 'by' %}
         {% assign lang = page.lang | prepend: '/'%}
       {% endif %}
-      {% if page.tags %} • {% include icon.html icon="tag" %} <a href="{{ lang }}/{{ page.tags }}/">{{ page.tags }}</a>{% endif %}
+      {% if page.tags %} • {% include element/icon.html icon="tag" %} <a href="{{ lang }}/{{ page.tags }}/">{{ page.tags }}</a>{% endif %}
     </p>
   </div>
 
@@ -19,10 +19,10 @@ lang: de
 
   <hr>
   
-  {% include social.html index=page.index %}
+  {% include component/social.html index=page.index %}
 
 </article>
 
 <hr>
 
-{% include post-nav.html %}
+{% include component/post-nav.html %}

@@ -27,7 +27,7 @@ lang: by
 
 Olle Midglieda vo da Feiawea Eilzria und da Hubert ois Ehrenmidglied vorm Feiawea- und Bürgahaus. Miaßad Somma 2013 gwehn sei:
 
-{% include image.html name="gruppe2013.jpg" %}
+{% include element/image.html name="gruppe2013.jpg" %}
 
 Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 2015)
 
@@ -60,8 +60,8 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
 
 ## Fahrzeig
 
-{% include pages/fahrzeuge.html %}
+{% include component/fahrzeuge.html %}
 
-{% include gal.html type="normal" %}
+{% include component/gal.html type="normal" %}
 
-{% include vid.html %}
+{% include component/vid.html %}

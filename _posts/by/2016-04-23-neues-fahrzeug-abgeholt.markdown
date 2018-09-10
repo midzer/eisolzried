@@ -30,5 +30,5 @@ Am Feiaweaheisl hom si vui Feiawea as Fahrzeig og'schaud und danohch no a Hoibe 
 
 G'feiad werd bei da Fahrzeigweih am 05. Juni.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

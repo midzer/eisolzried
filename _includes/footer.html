@@ -1,7 +1,7 @@
 <footer class="text-center">
   <span class="footer-item">
     <a href="{{ site.repo }}" rel="nofollow noopener">
-      {% include icon.html icon="github" %}
+      {% include element/icon.html icon="github" %}
       {% if page.lang == 'by' %}
       Soß
       {% else %}
@@ -11,7 +11,7 @@
   </span>
   <span class="footer-item">
     <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" rel="nofollow noopener">
-      {% include icon.html icon="cc" %}
+      {% include element/icon.html icon="cc" %}
       BY-NC
     </a>
   </span>
@@ -21,21 +21,21 @@
     {% endif %}
   <span class="footer-item">
     <a href="{{ lang }}/impressum/">
-      {% include icon.html icon="impressum" %}
+      {% include element/icon.html icon="impressum" %}
       Impressum
     </a>
   </span>
   <span class="footer-item">
     <a href="{{ lang }}/datenschutz/">
-      {% include icon.html icon="shield" %}
+      {% include element/icon.html icon="shield" %}
       Datenschutz
     </a>
   </span>
   <span class="footer-item d-block">
     {% if page.lang == 'by' %}
-    Mid {% include icon.html icon="heart" %} baud vo 
+    Mid {% include element/icon.html icon="heart" %} baud vo 
     {% else %}
-    Mit {% include icon.html icon="heart" %} gebaut von 
+    Mit {% include element/icon.html icon="heart" %} gebaut von 
     {% endif %}
     <a href="https://rohner.io/" rel="noopener">Rohner Solutions</a>
     <span id="rendertime" class="invisible">
@@ -50,4 +50,4 @@
   </span>
 </footer>
 
-{% include fire-run.html %}
+{% include component/fire-run.html %}

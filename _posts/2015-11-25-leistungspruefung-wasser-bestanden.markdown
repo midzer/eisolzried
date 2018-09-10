@@ -87,4 +87,4 @@ Im Frühjahr wurde eine Leistungsprüfung Wasser erfolgreich abgelegt.
 </table>
 </div>
 
-{% include gal.html %}
+{% include component/gal.html %}

@@ -30,15 +30,15 @@ lang: by
       <td>1</td>
       <td>Thomas</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
     </tr>
@@ -49,13 +49,13 @@ lang: by
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
     </tr>
     <tr>
@@ -80,26 +80,26 @@ lang: by
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
     </tr>
     <tr>
       <td>5</td>
       <td>Miche</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -109,10 +109,10 @@ lang: by
     <tr>
       <td>6</td>
       <td>Lungl</td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -130,42 +130,42 @@ lang: by
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
     </tr>
     <tr>
       <td>8</td>
       <td>Schäds</td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>{% include element/icon.html icon="check" %}</td>
     </tr>
     <tr>
       <td>9</td>
       <td>Tii</td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -174,30 +174,30 @@ lang: by
       <td>10</td>
       <td>Lungl</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>11</td>
       <td>Lu</td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
-      <td></td>
-      <td></td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td></td>
+      <td></td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
       <td></td>
@@ -210,12 +210,12 @@ lang: by
       <td></td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
       <td></td>
-      <td>{% include icon.html icon="check" %}</td>
+      <td>{% include element/icon.html icon="check" %}</td>
       <td></td>
     </tr>
   </tbody>

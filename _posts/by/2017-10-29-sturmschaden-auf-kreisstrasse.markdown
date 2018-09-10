@@ -44,4 +44,4 @@ In da Fria gega 8.30 Uhr is im Einsatzbereich vo da Feiawea Eilzria a umgfoina B
 
 Mia warn ungefähr 30 Minuten und mit 15 Leid im Einsatz.
 
-{% include gal.html %}
+{% include component/gal.html %}

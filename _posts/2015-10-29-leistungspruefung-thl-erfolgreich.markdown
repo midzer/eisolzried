@@ -46,5 +46,5 @@ Von der Feuerwehr Eisolzried haben Markus Asam, Johann Funk, Florian Lunglmeyr, 
 
 (Zusammenfassung eines Artikels im Regionalteil der Printausgabe der Dachauer Nachrichten)
 
-{% include gal.html %}
+{% include component/gal.html %}
 

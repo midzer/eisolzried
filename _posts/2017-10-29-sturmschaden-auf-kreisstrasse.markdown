@@ -42,4 +42,4 @@ In der Früh gegen 8.30 Uhr wurde im Einsatzbereich der Feuerwehr Eisolzried ein
 
 Der Einsatz dauerte insgesamt circa 30 Minuten wobei 15 Feuerwehrkameraden beteiligt waren.
 
-{% include gal.html %}
+{% include component/gal.html %}

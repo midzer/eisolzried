@@ -22,5 +22,5 @@ Nooch am kurzen Stop in am Biagartn samma weidag'fahrn. Es hod oiwei gnua zum Es
 
 Fazit: es war a griabiga Dog mit scheene Momente, fetzn Gaudi und vui Action. De Highlights warn de 3 langa Wassarutschn und de gloane Aloisius Kabine zum Wassa lassn hintn am Floß :)
 
-{% include gal.html %}
+{% include component/gal.html %}
 

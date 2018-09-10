@@ -28,5 +28,5 @@ Am Feuerwehrhaus angekommen nahmen viele Feuerwehrleute der Feuerwehr Eisolzried
 
 Offiziell gefeiert wird bei der Fahrzeugweihe am 5. Juni.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

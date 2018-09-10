@@ -8,4 +8,4 @@ anifolder: /assets/animations/
 lang: de
 ---
 
-{% include media.html %}
+{% include pages/media.html %}

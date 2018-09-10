@@ -18,5 +18,5 @@ Angezündetes Reisig drohte auf die anliegenden Bäume überzugreifen. Der Brand
 
 Der Einsatz mit 9 Feuerwehrleuten dauerte eine halbe Stunde.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

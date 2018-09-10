@@ -5,4 +5,4 @@ permalink: /uebungen/
 lang: de
 ---
 
-{% include overview.html tag='uebungen' %}
+{% include pages/overview.html tag='uebungen' %}

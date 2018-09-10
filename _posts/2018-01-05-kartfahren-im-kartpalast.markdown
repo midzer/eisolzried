@@ -33,6 +33,6 @@ Nach kurzem Warmfahren der Reifen ging es sofort in das Qualifying. Die vorderen
 
 Nach turbolenten 16 Runden standen am Ende drei glückliche Gewinner auf dem Podest während der Rest noch die ein oder andere Fahrtaktik besprach.
 
-{% include gal.html %}
+{% include component/gal.html %}
 
-{% include vid.html %}
+{% include component/vid.html %}

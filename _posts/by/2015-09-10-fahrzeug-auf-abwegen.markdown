@@ -20,5 +20,5 @@ Da Fahra hod ned aufbassd und is vom Foidweg obkemma und in am Grom neikemma, so
 
 Noochdem mir do warn, homma as Fahrzeig ausm Grom g'schoom. Es is koa Umweltschaden festg'stoid worn.
 
-{% include gal.html %}
+{% include component/gal.html %}
 

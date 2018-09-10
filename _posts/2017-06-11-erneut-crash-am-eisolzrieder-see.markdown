@@ -20,4 +20,4 @@ Gegen 14 Uhr wurde die Feuerwehr Eisolzried alarmiert: auf der Verbindungstraße
 
 Insgesamt dauerte der Einsatz circa eine Stunde mit acht beteiligten Feuerwehrleuten der Feuerwehr Eisolzried.
 
-{% include gal.html %}
+{% include component/gal.html %}

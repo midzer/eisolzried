@@ -12,7 +12,7 @@
         </a>
       </h3>
       <p class="post-meta">
-        {% include date.html %}
+        {% include helper/date.html %}
       </p>
     </div>
     
@@ -20,7 +20,7 @@
     
     <hr>
     
-    {% include social.html index=post.index %}
+    {% include component/social.html index=post.index %}
 
   </article>
   {% endfor %}

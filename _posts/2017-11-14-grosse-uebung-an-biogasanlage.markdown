@@ -50,4 +50,4 @@ Von der Feuerwehr Eisolzried waren beteiligt:
 * Schuster Christian
 * Zollbrecht Rainer
 
-{% include gal.html %}
+{% include component/gal.html %}
