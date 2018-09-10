@@ -1,4 +1,5 @@
 import { loadStyle } from './helper/loadstyle'
+import { createSnackbar } from './helper/createsnackbar'
 
 loadStyle('calendar.css')
 
@@ -107,15 +108,18 @@ function buildCal (data) {
         dayEvent.appendChild(document.createTextNode(ev[i].summary))
         event.detail.element.appendChild(dayEvent)
         if (event.detail.date.toDateString() === new Date().toDateString()) {
-          const data = {
-            message: 'Heute ist was los!',
-            timeout: 5000,
-            actionHandler: function () {
-              showModal(ev[i])
-            },
-            actionText: 'Zeigen'
-          }
-          snackbar.showSnackbar(data)
+          loadStyle('snackbar.css').then(function () {
+            const snackbar = createSnackbar()
+            const data = {
+              message: 'Heute ist was los!',
+              timeout: 5000,
+              actionHandler: function () {
+                showModal(ev[i])
+              },
+              actionText: 'Zeigen'
+            }
+            snackbar.showSnackbar(data)
+          })
         }
       }
     }
@@ -147,9 +151,9 @@ function buildCal (data) {
 }
 // Get data first
 fetch('/assets/data/termine.ics')
-  .then(function (response) {
-    return response.text()
-  })
-  .then(function (data) {
-    buildCal(data)
-  })
+.then(function (response) {
+  return response.text()
+})
+.then(function (data) {
+  buildCal(data)
+})

@@ -18,6 +18,7 @@ const sourcefiles = [
   '_assets/styles/charts.scss',
   '_assets/styles/chatbox.scss',
   '_assets/styles/lightbox.scss',
+  '_assets/styles/snackbar.scss'
 ]
 
 gulp.task('sass', () => {

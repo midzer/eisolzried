@@ -15,38 +15,43 @@
  */
 
 .snackbar {
+  display: flex;
   position: fixed;
   bottom: 0;
   left: 50%;
-  cursor: default;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-right: 24px;
+  padding-left: 24px;
+  transform: translate(-50%, 100%);
+  transition: transform 0.25s cubic-bezier(.4, 0, 1, 1);
   background-color: $primary;
-  z-index: 3;
-  display: block;
-  display: flex;
-  justify-content: space-between;
-  will-change: transform;
-  transform: translate(0, 80px);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 1, 1);
   pointer-events: none;
-  @media(max-width: 480px - 1) {
-    width: 100%;
+  will-change: transform;
+
+  @media (max-width: 480px - 1) {
     left: 0;
-    min-height: 48px;
-    max-height: 80px;
+    width: 100%;
+    transform: translate(0, 100%);
   }
-  @media(min-width: 480px) {
+
+  @media (max-width: 480px - 1) {
     min-width: 288px;
     max-width: 568px;
     border-radius: 2px;
-    transform: translate(-50%, 80px);
   }
-  &--active {
-    transform: translate(0, 0);
-    pointer-events: auto;
-    transition: transform 0.25s cubic-bezier(0, 0, 0.2, 1);
 
-    @media(min-width: 480px) {
-      transform: translate(-50%, 0);
+  &--active {
+    transform: translate(-50%, 0);
+    transition: transform .25s cubic-bezier(0, 0, .2, 1);
+    pointer-events: auto;
+
+    @media (max-width: (480px - 1)) {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transform: translate(0);
     }
   }
 

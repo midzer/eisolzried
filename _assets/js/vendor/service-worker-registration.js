@@ -1,3 +1,6 @@
+import { loadStyle } from '../helper/loadstyle'
+import { createSnackbar } from '../helper/createsnackbar'
+
 /**
  * Copyright 2015 Google Inc. All rights reserved.
  *
@@ -39,17 +42,20 @@ if ('serviceWorker' in navigator) {
               if (!navigator.serviceWorker.controller) {
                 // At this point, everything has been precached.
                 // It's the perfect time to display a "Content is cached for offline use." message.
-                console.log('Content is now available offline!')
-                const data = {
-                  message: 'Die Seite ist jetzt auch offline verfügbar!',
-                  timeout: 5000
-                }
-                snackbar.showSnackbar(data)
+                //console.log('Content is now available offline!')
+                loadStyle('snackbar.css').then(function () {
+                  const snackbar = createSnackbar()
+                  const data = {
+                    message: 'Die Seite ist jetzt auch offline verfügbar!',
+                    timeout: 5000
+                  }
+                  snackbar.showSnackbar(data)
+                })
               }
               break
 
             case 'redundant':
-              console.log('The installing service worker became redundant.')
+              //console.log('The installing service worker became redundant.')
               break
           }
         }
@@ -66,16 +72,19 @@ if ('serviceWorker' in navigator) {
 if (navigator.serviceWorker && navigator.serviceWorker.controller) {
   navigator.serviceWorker.controller.onstatechange = function (e) {
     if (e.target.state === 'redundant') {
-      console.log('New or updated content is available.')
-      var data = {
-        message: 'Auf der Seite gibts was neues!',
-        timeout: 60000,
-        actionHandler: function () {
-          window.location.reload()
-        },
-        actionText: 'Update'
-      }
-      snackbar.showSnackbar(data)
+      //console.log('New or updated content is available.')
+      loadStyle('snackbar.css').then(function () {
+        const snackbar = createSnackbar()
+        const data = {
+          message: 'Auf der Seite gibts was neues!',
+          timeout: 60000,
+          actionHandler: function () {
+            window.location.reload()
+          },
+          actionText: 'Update'
+        }
+        snackbar.showSnackbar(data)
+      })
     }
   }
 }

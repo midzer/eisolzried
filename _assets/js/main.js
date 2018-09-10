@@ -85,7 +85,6 @@ function update () {
 }
 
 // Globals
-window.snackbar = new Snackbar(document.querySelector('.snackbar'))
 const modalTemplate = document.getElementById('modal')
 if (modalTemplate) {
   window.modal = new Modal(modalTemplate)
