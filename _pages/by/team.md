@@ -60,35 +60,7 @@ Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 20
 
 ## Fahrzeig
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Typ</th>
-      <th>Bezeichnung</th>
-      <th>Fahrgstoi</th>
-      <th>Ausbau</th>
-      <th>Funkrufname</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MLF</td>
-      <td>Mittleres Löschfahrzeug</td>
-      <td>MAN 7,5t</td>
-      <td>Lentner</td>
-      <td>Florian Eisolzried 47/1</td>
-    </tr>
-    <tr>
-      <td>TSF</td>
-      <td>Tragkraftspritzenfahrzeug</td>
-      <td>VW LT</td>
-      <td>Bachert</td>
-      <td>Florian Eisolzried 44/1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+{% include pages/fahrzeuge.html %}
 
 {% include gal.html type="normal" %}
 

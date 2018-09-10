@@ -60,35 +60,7 @@ Insgesamt zählt die Feuerwehr Eisolzried 66 Mitglieder, darunter ein Jugendlich
 
 ## Fahrzeuge
 
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Typ</th>
-      <th>Bezeichnung</th>
-      <th>Fahrgestell</th>
-      <th>Ausbau</th>
-      <th>Funkrufname</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MLF</td>
-      <td>Mittleres Löschfahrzeug</td>
-      <td>MAN 7,5t</td>
-      <td>Lentner</td>
-      <td>Florian Eisolzried 47/1</td>
-    </tr>
-    <tr>
-      <td>TSF</td>
-      <td>Tragkraftspritzenfahrzeug</td>
-      <td>VW LT</td>
-      <td>Bachert</td>
-      <td>Florian Eisolzried 44/1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+{% include pages/fahrzeuge.html %}
 
 {% include gal.html type="normal" %}
 
