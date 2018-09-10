@@ -1,3 +1,7 @@
+import { loadStyle } from '../helper/loadstyle'
+
+loadStyle('chatbox.css')
+
 /* Can be import()ed dynamically in the future
  * if browser support is better
  */

@@ -1,4 +1,7 @@
 import { Chart } from 'frappe-charts/dist/frappe-charts.esm.js'
+import { loadStyle } from './helper/loadstyle'
+
+loadStyle('charts.css')
 
 const chart = new Chart('#member', {
 	data: {

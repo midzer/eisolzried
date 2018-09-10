@@ -13,7 +13,11 @@ const reload = browserSync.reload
 
 const sourcefiles = [
   '_assets/styles/main.scss',
-  '_assets/styles/dark-theme.scss'
+  '_assets/styles/dark-theme.scss',
+  '_assets/styles/calendar.scss',
+  '_assets/styles/charts.scss',
+  '_assets/styles/chatbox.scss',
+  '_assets/styles/lightbox.scss',
 ]
 
 gulp.task('sass', () => {
