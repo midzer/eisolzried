@@ -15,7 +15,7 @@ export default function (index) {
     const img = document.createElement('img')
     img.className = 'lazy card-img'
     img.src = trans
-    img.dataset.src = `${path}thumbs/${image.name}`
+    img.setAttribute('data-src', `${path}thumbs/${image.name}`)
     img.alt = image.text
     link.appendChild(img)
     card.appendChild(link)

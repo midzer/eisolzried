@@ -102,8 +102,8 @@ function buildCal (data) {
         const dayEvent = document.createElement('button')
         dayEvent.type = 'button'
         dayEvent.className = 'btn btn-link dayevent'
-        dayEvent.dataset.toggle = 'modal'
-        dayEvent.dataset.target = '.modal'
+        dayEvent.setAttribute('data-toggle', 'modal')
+        dayEvent.setAttribute('data-target', '.modal')
         dayEvent.setAttribute('title', ev[i].summary)
         dayEvent.appendChild(document.createTextNode(ev[i].summary))
         event.detail.element.appendChild(dayEvent)

@@ -10,7 +10,7 @@ function addLoaded (element) {
 }
 
 function replaceSrc (element) {
-  element.src = element.dataset.src
+  element.src = element.getAttribute('data-src')
   element.removeAttribute('data-src')
 }
 
@@ -42,9 +42,9 @@ export function load (element) {
     loadImage(element.querySelector('img'))
     tobi.add(element)
   /*} else if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1) {
-    loadModule(element.dataset.src)*/
+    loadModule(element.getAttribute('data-src'))*/
   } else {
-    loadScript(element.dataset.src)
+    loadScript(element.getAttribute('data-src'))
   }
 }
 

@@ -12,11 +12,11 @@ export default function (index) {
     card.className = 'card border-primary'
     const link = document.createElement('a')
     link.href = `#v${video}`
-    link.dataset.type = 'html'
+    link.setAttribute('data-type', 'html')
     const img = document.createElement('img')
     img.className = 'lazy card-img'
     img.src = trans
-    img.dataset.src = `${path}thumbs/${video}.jpg`
+    link.setAttribute('data-src', `${path}thumbs/${video}.jpg`)
     img.alt = video
     const div = document.createElement('div')
     div.id = `v${video}`
