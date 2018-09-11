@@ -14,11 +14,16 @@ function replaceSrc (element) {
   element.removeAttribute('data-src')
 }
 
+function replaceHref (element) {
+  element.firstChild.nextElementSibling.setAttributeNS('http://www.w3.org/1999/xlink', 'href', element.getAttribute('data-href'))
+  element.removeAttribute('data-href')
+}
+
 function loadVideo (element) {
+  element.style.willChange = 'opacity'
   element.onloadstart = () => {
     addLoaded(element)
   }
-  element.style.willChange = 'opacity'
   for (let i = 0; i < 2; i++) {
     replaceSrc(element.children[i])
   }
@@ -26,21 +31,31 @@ function loadVideo (element) {
 }
 
 function loadImage (element) {
+  element.style.willChange = 'opacity'
   element.onload = () => {
     addLoaded(element)
   }
-  element.style.willChange = 'opacity'
   replaceSrc(element)
 }
 
+function loadSVG (element) {
+  element.style.willChange = 'opacity'
+  element.onload = () => {
+    addLoaded(element)
+  }
+  replaceHref(element)
+}
+
 export function load (element) {
-  if (element.nodeName === 'IMG' || element.nodeName === 'IFRAME') {
+  if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
     loadImage(element)
-  } else if (element.nodeName === 'VIDEO') {
+  } else if (element.tagName === 'VIDEO') {
     loadVideo(element)
-  } else if (element.nodeName === 'A') {
+  } else if (element.tagName === 'A') {
     loadImage(element.querySelector('img'))
     tobi.add(element)
+  } else if (element.tagName === 'svg') {
+    loadSVG(element)
   /*} else if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1) {
     loadModule(element.getAttribute('data-src'))*/
   } else {
