@@ -15,8 +15,8 @@ function replaceSrc (element) {
 }
 
 function replaceHref (element) {
-  element.firstChild.nextElementSibling.setAttributeNS('http://www.w3.org/1999/xlink', 'href', element.getAttribute('data-href'))
-  element.removeAttribute('data-href')
+  element.querySelector('use').href.baseVal = `/assets/icons/sprite.svg#${element.getAttribute('data-icon')}`
+  element.removeAttribute('data-icon')
 }
 
 function loadVideo (element) {
@@ -42,6 +42,10 @@ function loadSVG (element) {
   element.style.willChange = 'opacity'
   element.onload = () => {
     addLoaded(element)
+  }
+  if (navigator.userAgent.indexOf('Firefox') > -1) {
+    // too bad Firefox doesnt trigger onload for SVGs right now :/
+    element.style.opacity = '1'
   }
   replaceHref(element)
 }
