@@ -1,7 +1,9 @@
 import { loadScript } from './loadscript'
 
 function removeHint () {
+  this.classList.remove(['lazy', 'loaded'])
   this.style.willChange = 'auto'
+  this.removeEventListener('animationend', removeHint)
 }
 
 function addLoaded (element) {
@@ -40,13 +42,11 @@ function loadImage (element) {
 
 function loadSVG (element) {
   element.style.willChange = 'opacity'
-  element.onload = () => {
-    addLoaded(element)
-  }
-  if (navigator.userAgent.indexOf('Firefox') > -1) {
-    // too bad Firefox doesnt trigger onload for SVGs right now :/
-    element.style.opacity = '1'
-  }
+  // Too bad browsers dont trigger onload consistently:
+  // * Chromium only on pageload, sub viewport elements wont show up
+  // * Firefox doesnt trigger at all
+  // -> do animation instantely
+  addLoaded(element)
   replaceHref(element)
 }
 
@@ -63,6 +63,7 @@ export function load (element) {
   /*} else if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1) {
     loadModule(element.getAttribute('data-src'))*/
   } else {
+    element.classList.remove('lazy')
     loadScript(element.getAttribute('data-src'))
   }
 }
