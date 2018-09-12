@@ -8,5 +8,5 @@ gulp.task('build', function (cb) {
 })
 
 gulp.task('build:prod', function (cb) {
-  runSequence('jekyll:prod', /*'copy',*/ 'scripts:prod', 'sass:prod', /*'imagemin:prod',*/ 'icons', 'precache:prod', 'htmlmin', cb)
+  runSequence('jekyll:prod', /*'copy',*/ 'scripts:prod', 'sass:prod', /*'imagemin:prod',*/ /*'icons',*/ 'precache:prod', 'htmlmin', cb)
 })
