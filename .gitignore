@@ -1,9 +1,11 @@
 _site
 .sass-cache
+_assets/animations
+_assets/audio
+_assets/images
+_assets/gimmicks
 _assets/data
 _assets/videos
-_assets/images
-_assets/animations
 datenschutz.md
 impressum.md
 intern.md

@@ -15,7 +15,8 @@ function writeServiceWorkerFile (rootDir, handleFetch, callback) {
       `${rootDir}/assets/{css,js,icons}/*`,
       `${rootDir}/search.json`,
       `${rootDir}/search-by.json`,
-      `${rootDir}/assets/data/termine.ics`
+      `${rootDir}/assets/data/termine.ics`,
+      `${rootDir}/assets/gimmicks/grisu.webm`
     ],
     stripPrefix: `${rootDir}/`,
     verbose: false
