@@ -16,13 +16,7 @@ function replaceSrc (element) {
   element.removeAttribute('data-src')
 }
 
-function replaceHref (element) {
-  element.querySelector('use').href.baseVal = `/assets/icons/sprite.svg#${element.getAttribute('data-icon')}`
-  element.removeAttribute('data-icon')
-}
-
 function loadVideo (element) {
-  element.style.willChange = 'opacity'
   element.onloadstart = () => {
     addLoaded(element)
   }
@@ -33,7 +27,6 @@ function loadVideo (element) {
 }
 
 function loadImage (element) {
-  element.style.willChange = 'opacity'
   element.onload = () => {
     addLoaded(element)
   }
@@ -41,30 +34,33 @@ function loadImage (element) {
 }
 
 function loadSVG (element) {
-  element.style.willChange = 'opacity'
   // Too bad browsers dont trigger onload consistently:
   // * Chromium only on pageload, sub viewport elements wont show up
   // * Firefox doesnt trigger at all
   // -> do animation instantely
+  element.querySelector('use').href.baseVal = `/assets/icons/sprite.svg#${element.getAttribute('data-icon')}`
+  element.removeAttribute('data-icon')
   addLoaded(element)
-  replaceHref(element)
 }
 
 export function load (element) {
-  if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
-    loadImage(element)
-  } else if (element.tagName === 'VIDEO') {
-    loadVideo(element)
-  } else if (element.tagName === 'A') {
-    loadImage(element.querySelector('img'))
-    tobi.add(element)
-  } else if (element.tagName === 'svg') {
-    loadSVG(element)
-  /*} else if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1) {
-    loadModule(element.getAttribute('data-src'))*/
-  } else {
+  if (element.hasAttribute('data-src') && element.dataset.src.slice(-3) === '.js') {
     element.classList.remove('lazy')
     loadScript(element.getAttribute('data-src'))
+    /*if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1)
+    loadModule(element.getAttribute('data-src'))*/
+  } else {
+    element.style.willChange = 'opacity'
+    if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
+      loadImage(element)
+    } else if (element.tagName === 'VIDEO') {
+      loadVideo(element)
+    } else if (element.tagName === 'A') {
+      loadImage(element.querySelector('img'))
+      tobi.add(element)
+    } else if (element.tagName === 'svg') {
+      loadSVG(element)
+    }
   }
 }
 
