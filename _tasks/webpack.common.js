@@ -33,9 +33,6 @@ module.exports = {
     ],
     media: [
       './_assets/js/media.js'
-    ],
-    polyfills: [
-      './_assets/js/polyfills.js'
     ]
   },
   output: {
