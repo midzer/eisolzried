@@ -4,10 +4,11 @@ import gulp from 'gulp'
 
 gulp.task('copy', () => {
   return gulp.src([
-    '_assets/animations/**',
-    '_assets/audio/**',
+    //'_assets/animations/**',
+    //'_assets/audio/**',
     '_assets/data/**',
-    '_assets/videos/**'
+    '_assets/gimmicks/**',
+    //'_assets/videos/**'
   ], {
     base: '_assets'
   })

@@ -4,7 +4,7 @@ import gulp from 'gulp'
 import runSequence from 'run-sequence'
 
 gulp.task('build', function (cb) {
-  runSequence('jekyll', /*'copy',*/ 'scripts', 'sass', 'imagemin', 'icons', 'precache', cb)
+  runSequence('jekyll', 'copy', 'scripts', 'sass', 'imagemin', 'icons', 'precache', cb)
 })
 
 gulp.task('build:prod', function (cb) {
