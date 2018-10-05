@@ -1,5 +1,105 @@
 export const images = [
   {
+    name: '0eeb2ba82ee8aa8d.jpg',
+    text: 'Danke Feuerwehr Schild'
+  },
+  {
+    name: '00f73330cba87d06.jpg',
+    text: 'Moorbrand Luftaufnahme'
+  },
+  {
+    name: '2e2bfbaad1ae33db.jpg',
+    text: 'Feuerwehrfrau'
+  },
+  {
+    name: '24f08233eeb61374.jpg',
+    text: 'Brand Wohnblock'
+  },
+  {
+    name: '54a4c1ba50be166a.jpg',
+    text: 'Brand Raffinierie 1'
+  },
+  {
+    name: '74b549100ad29273.jpg',
+    text: 'Brand Raffinierie 2'
+  },
+  {
+    name: '091af2c99a13b62b.jpg',
+    text: 'Kein Personal'
+  },
+  {
+    name: '462b798fba451fb5.jpg',
+    text: 'Löschaufbau von Fahrzeug bei Nacht'
+  },
+  {
+    name: '561a0a9e67f47221.jpg',
+    text: 'Brand Hauptbahnhof Zürich in der Nacht'
+  },
+  {
+    name: '4673d30c700d8013.jpg',
+    text: 'Eingeklemmte Person in Parkbank'
+  },
+  {
+    name: '4785ce808baad6a8.jpg',
+    text: 'Starke Rauchentwicklung bei Hallenbrand'
+  },
+  {
+    name: '931425aaccaefb95.jpg',
+    text: 'Demoliertes Fahrerhaus eines Feuerwehrfahrzeugs'
+  },
+  {
+    name: '495959871f3c634c.jpg',
+    text: 'Kettenfeuerwehrfahrzeug bei Moorbrand'
+  },
+  {
+    name: '11016116514e7fdf.jpg',
+    text: 'Feuerlöschpanzer'
+  },
+  {
+    name: 'a9d258d7360c528e.jpg',
+    text: 'LKW-Unfall an Betonpfeiler'
+  },
+  {
+    name: 'a7144374d3c9af4c.jpg',
+    text: 'Rustikaler Feuerwehrkutschenwagen an Traktor'
+  },
+  {
+    name: 'ac2f4ce97fe1b587.jpg',
+    text: 'Feuerwehrmänner posieren vor Waldbrand'
+  },
+  {
+    name: 'ac77c02a7be313b1.jpg',
+    text: 'Feuerwehrauto'
+  },
+  {
+    name: 'b725e0d760f8e946.jpg',
+    text: 'Atemschutzträger auf Endlostreppe'
+  },
+  {
+    name: 'c4c7c5040acc15c9.jpg',
+    text: 'Altes Barka Feuerwehrfahrzeug'
+  },
+  {
+    name: 'cad3bd2a750dee9c.jpg',
+    text: 'An Baum zerschelltes Sportauto'
+  },
+  {
+    name: 'dd7ceeaf4f648817.jpg',
+    text: 'Grillrost an Feuerwehrleiter'
+  },
+  {
+    name: 'f9578a59b35dac96.jpg',
+    text: 'CSA-Träger stöbert in Supermarktregal'
+  },
+  {
+    name: 'fa97d3b700739f81.jpg',
+    text: '104-Jähriger über 90 Jahre bei der Feuerwehr'
+  },
+  {
+    name: 'febb4596c3dd4437.jpg',
+    text: 'Brandlöschung aus der Luft'
+  },
+  {
     name: '2dfff0ca7ae2db55.jpg',
     text: 'Feuerwehrräum- und löschpanzer'
   },
