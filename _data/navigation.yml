@@ -23,9 +23,6 @@ de:
       - title: Statistiken
         url: /statistiken/
         icon: bar-chart-2
-      - title: Intern
-        url: /intern/
-        icon: lock
   - title: Media
     url: /media/
     icon: tv
@@ -63,9 +60,6 @@ by:
       - title: Statistikn
         url: /by/statistiken/
         icon: bar-chart-2
-      - title: Intern
-        url: /by/intern/
-        icon: lock
   - title: Matrial
     url: /by/media/
     icon: tv
