@@ -9,7 +9,7 @@ export default function (index) {
   if (index < length) {
     const image = images[index]
     card = document.createElement('div')
-    card.className = 'card border-primary'
+    card.className = 'card border-custom'
     const link = document.createElement('a')
     link.href = `${path}${image.name}`
     const img = document.createElement('img')

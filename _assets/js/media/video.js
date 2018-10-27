@@ -9,7 +9,7 @@ export default function (index) {
   if (index < length) {
     const video = videos[index]
     card = document.createElement('div')
-    card.className = 'card border-primary'
+    card.className = 'card border-custom'
     const link = document.createElement('a')
     link.href = `#v${video}`
     link.setAttribute('data-type', 'html')
