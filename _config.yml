@@ -23,6 +23,7 @@ exclude:
   - package.json
   - gulpfile.babel.js
   - yarn.lock
+  - babel.config.js
 
 # Plugin settings
 plugins:
