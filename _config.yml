@@ -24,6 +24,9 @@ exclude:
   - gulpfile.babel.js
   - yarn.lock
   - babel.config.js
+  - webpack.common.js
+  - webpack.dev.js
+  - webpack.prod.js
 
 # Plugin settings
 plugins:
