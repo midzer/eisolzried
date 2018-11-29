@@ -1,5 +1,53 @@
 export const images = [
   {
+    name: '4c4f4f31b779350d.jpg',
+    text: 'Feuerwehrleiterfahrzeug mit Stützbeinen'
+  },
+  {
+    name: '6b1468a3f47a3e1c.jpg',
+    text: 'Tief fliegendes Löschflugzeug'
+  },
+  {
+    name: '21df688b29d25f1f.jpg',
+    text: 'Löscharbeiten an ausgebranntem ICE'
+  },
+  {
+    name: '637e61eeed466a51.jpg',
+    text: 'Feuerwehrmänner - jung und alt'
+  },
+  {
+    name: '00865b7997157eb5.jpg',
+    text: 'Feuerwehrmann geht durch Funkenflug'
+  },
+  {
+    name: '2606ca6d859655c4.jpg',
+    text: 'CSA-Träger liegt in provisorischem Pool'
+  },
+  {
+    name: '9445b3914505c9ca.jpg',
+    text: 'Unfall von senkrecht aufgestelltem PKW'
+  },
+  {
+    name: '353853af3fbc3882.jpg',
+    text: 'Zwei CSA-Träger ziehen eine Trage'
+  },
+  {
+    name: 'a557c7362718d7f9.jpg',
+    text: 'Riesiger Motorblock liegt auf Einsatzwagen'
+  },
+  {
+    name: 'ae7696af32abff2c.jpg',
+    text: 'Feuerwehrmänner ruhen sich auf Wiese aus'
+  },
+  {
+    name: 'b630b7abf562160d.jpg',
+    text: 'Ford Brandweer Feuerwehrfahrzeug Oldtimer'
+  },
+  {
+    name: 'd207d52c3b9098e5.jpg',
+    text: 'Hündchen auf Stoßstange von Feuerwehrfahrzeug'
+  },
+  {
     name: '0eeb2ba82ee8aa8d.jpg',
     text: 'Danke Feuerwehr Schild'
   },
