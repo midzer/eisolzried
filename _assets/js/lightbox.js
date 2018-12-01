@@ -9,5 +9,6 @@ window.tobi = new Tobi({
   counter: false,
   zoom: false,
   threshold: 100,
-  autoplayVideo: true
+  autoplayVideo: true,
+  captions: false
 })
