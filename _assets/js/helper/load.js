@@ -1,7 +1,6 @@
 import { loadScript } from './loadscript'
 
 function removeHint () {
-  this.classList.remove(['lazy', 'loaded'])
   this.style.willChange = 'auto'
   this.removeEventListener('animationend', removeHint)
 }
@@ -39,8 +38,8 @@ function loadSVG (element) {
   // * Firefox doesnt trigger at all
   // -> do animation instantely
   element.querySelector('use').href.baseVal = `/assets/icons/sprite.svg#${element.getAttribute('data-icon')}`
-  element.removeAttribute('data-icon')
   addLoaded(element)
+  element.removeAttribute('data-icon')
 }
 
 export function load (element) {
@@ -51,15 +50,20 @@ export function load (element) {
     loadModule(element.getAttribute('data-src'))*/
   } else {
     element.style.willChange = 'opacity'
-    if (element.tagName === 'IMG' || element.tagName === 'IFRAME') {
-      loadImage(element)
-    } else if (element.tagName === 'VIDEO') {
-      loadVideo(element)
-    } else if (element.tagName === 'A') {
-      loadImage(element.querySelector('img'))
-      tobi.add(element)
-    } else if (element.tagName === 'svg') {
-      loadSVG(element)
+    switch (element.tagName) {
+      case 'IMG':
+      case 'IFRAME':
+        loadImage(element)
+        if (element.classList.contains('card-img')) {
+          tobi.add(element.parentElement)
+        }
+        break;
+      case 'VIDEO':
+        loadVideo(element)
+        break;
+      case 'svg':
+        loadSVG(element)
+        break;
     }
   }
 }

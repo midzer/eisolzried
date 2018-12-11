@@ -5,7 +5,7 @@ function createGallery (grid, createElement) {
   const frag = document.createDocumentFragment()
   let element
   while (element = createElement(index++)) {
-    observer.observe(element.querySelector('a'))
+    observer.observe(element.querySelector('img'))
     frag.appendChild(element)
   }
   window.requestAnimationFrame(function () {
