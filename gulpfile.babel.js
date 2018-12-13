@@ -1,7 +1,7 @@
 'use strict'
 
 import gulp from 'gulp'
-import browserSync from 'browser-sync'
+var browserSync = require('browser-sync').create();
 import htmlmin from 'gulp-htmlmin'
 import log from 'fancy-log'
 import svgSprite from 'gulp-svg-sprite'
@@ -17,8 +17,6 @@ import purgecss from 'gulp-purgecss'
 import csso from 'gulp-csso'
 import webpack from 'webpack'
 import webpackStream from 'webpack-stream'
-
-const reload = browserSync.reload
 
 // Copy
 gulp.task('copy', () => {
@@ -247,7 +245,7 @@ gulp.task('sass', () => {
     }))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('_site/assets/css'))
-    .pipe(reload({ stream: true }))
+    .pipe(browserSync.stream())
 })
 
 gulp.task('sass:prod', () => {
@@ -282,7 +280,7 @@ gulp.task('scripts', () => {
     }))
     .pipe(webpackStream(devConfig, webpack))
     .pipe(gulp.dest('_site/assets/js'))
-    .pipe(reload({ stream: true }))
+    .pipe(browserSync.stream())
 })
 
 gulp.task('scripts:prod', () => {
@@ -301,33 +299,26 @@ gulp.task('scripts:prod', () => {
 gulp.task('build', gulp.series('jekyll', 'copy', 'scripts', 'sass', 'imagemin', 'icons', 'precache'))
 gulp.task('build:prod', gulp.series('jekyll:prod', 'copy', 'scripts:prod', 'sass:prod', /*'imagemin:prod',*/ 'icons', 'precache:prod', 'htmlmin'))
 
-// BrowserSync
-gulp.task('browser-sync', gulp.series('build', () => { 
-  browserSync({
+// Serve
+gulp.task('serve', gulp.series('build', () => { 
+  browserSync.init({
     server: {
       baseDir: '_site'
     },
     notify: false
     //https: true
   })
-}))
-
-gulp.task('reload', gulp.series('build', () => { 
-  browserSync.reload()
-}))
-
-// Serve
-gulp.task('serve', gulp.series('browser-sync', () => { 
-  gulp.watch(['_assets/styles/**/*.scss'], ['sass'])
-  gulp.watch(['_assets/js/**/*.js'], ['scripts'])
-  gulp.watch(['_assets/images/**/*'], ['imagemin'])
-  gulp.watch(['_assets/icons/**/*.svg'], ['icons'])
+  
+  gulp.watch(['_assets/styles/**/*.scss'], gulp.series('sass'))
+  gulp.watch(['_assets/js/**/*.js'], gulp.series('scripts'))
+  gulp.watch(['_assets/images/**/*'], gulp.series('imagemin'))
+  gulp.watch(['_assets/icons/**/*.svg'], gulp.series('icons'))
   gulp.watch([
     '_layouts/**/*',
     '_includes/**/*',
     '_pages/**/*',
     '_posts/**/*'
-  ], ['reload'])
+  ]).on('change', browserSync.reload)
 }))
 
 gulp.task('default', gulp.series('serve', function() { 
