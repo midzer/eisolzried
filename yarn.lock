@@ -7718,9 +7718,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-"rqrauhvmra__tobi@git+https://git@github.com/rqrauhvmra/Tobi.git#dev":
+rqrauhvmra__tobi@^1.8.0:
   version "1.8.0"
-  resolved "git+https://git@github.com/rqrauhvmra/Tobi.git#334d8a29f4e59ce3ea0c208241f61938d985d7e9"
+  resolved "https://registry.yarnpkg.com/rqrauhvmra__tobi/-/rqrauhvmra__tobi-1.8.0.tgz#160d9e2f5af5a797623d91b85cf991ab3bce3f6d"
+  integrity sha512-7T9BBbObXEf/XSxTF0n0qXd16wy2IOba5qjsvpNSaJKb1UUIQg9jEpvqJoOIxlw+eOGNlWVI/6hOg5FQReBBZQ==
 
 run-async@^2.2.0:
   version "2.3.0"
