@@ -9,7 +9,7 @@ document.getElementById('moreposts').onclick = function () {
     for (let i = 0, j = els.length; i < 4; i++) {
       els[i].removeAttribute('hidden')
       if (i + 1 === j) {
-        // Remove button when after last element done
+        // Remove button after last element done
         button.parentNode.removeChild(button)
       }
     }
