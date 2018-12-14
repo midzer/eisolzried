@@ -12,9 +12,10 @@ window.observer = new IntersectionObserver(changes => {
     const isIntersecting = (typeof change.isIntersecting === 'boolean')
       ? change.isIntersecting : change.intersectionRect.height > 0
     if (isIntersecting) {
+      load(change.target)
+
       // Stop observing the current target
       observer.unobserve(change.target)
-      load(change.target)
     }
   })
 })
