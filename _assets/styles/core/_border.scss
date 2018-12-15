@@ -6,11 +6,10 @@
       linear-gradient(to top, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 0 100% repeat-y,
       linear-gradient(to bottom, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 100% 0 repeat-y;
     background-size: 300% 2px, 300% 2px, 2px 300%, 2px 300%, 100% 100%;
-    transition: 1s linear;
 }
 
 .border-custom:hover {
-    background-position: 100% 0, 0% 100%, 0 0, 100% 100%, 0 0;
+    animation: animate 1s linear infinite;
 }
 
 .card {
@@ -19,4 +18,10 @@
 
 .card-img {
     border-radius: initial;
+}
+
+@keyframes animate {
+    to {
+        background-position: 100% 0, 0% 100%, 0 0, 100% 100%, 0 0;
+    }
 }
