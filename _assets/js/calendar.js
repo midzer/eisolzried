@@ -6,8 +6,8 @@ loadStyle('calendar.css')
 function isBetween (first, last, time, timezone) {
   return (first.compareDateOnlyTz(time, timezone) === -1 &&
     last.compareDateOnlyTz(time, timezone) === 1) ||
-    first.compareDateOnlyTz(time, timezone) === 0 ||
-    last.compareDateOnlyTz(time, timezone) === 0
+    first.compareDateOnlyTz(time, timezone) === 0/* fix Feiertage ||
+    last.compareDateOnlyTz(time, timezone) === 0*/
 }
 
 function hasEventInDate (event, time, timezone) {
