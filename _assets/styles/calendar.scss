@@ -58,9 +58,7 @@
   .dayevent {
     font-size: 11px;
     padding-left: 0.5ex;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: initial;
   }
 
   th > .btn {
