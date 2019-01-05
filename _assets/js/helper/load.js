@@ -54,9 +54,6 @@ export function load (element) {
       case 'IMG':
       case 'IFRAME':
         loadImage(element)
-        if (element.classList.contains('card-img')) {
-          tobi.add(element.parentElement)
-        }
         break;
       case 'VIDEO':
         loadVideo(element)
