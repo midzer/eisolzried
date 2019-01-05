@@ -145,8 +145,8 @@ field.addEventListener('keypress', event => {
 const pages = []
 
 // Snow
-//const Snowflakes = require('magic-snowflakes');
-//Snowflakes();
+const Snowflakes = require('magic-snowflakes');
+Snowflakes();
 
 // Show render time
 if (window.PerformanceNavigationTiming) {
