@@ -33,6 +33,9 @@ module.exports = {
     ],
     media: [
       './_assets/js/media.js'
+    ],
+    einsatz: [
+      './_assets/js/einsatz.js'
     ]
   },
   output: {

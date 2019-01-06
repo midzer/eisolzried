@@ -1,0 +1,19 @@
+<div class="lazy" data-src="einsatz.js">
+    <ul id="adventure-box" class="list-unstyled">
+    </ul>
+    <form id="adventure-form">
+        <div class="input-group">
+            {% if page.lang == 'by' %}
+            {% assign write = 'schreim...' %}
+            {% assign send = 'Aufi!' %}
+            {% else %}
+            {% assign write = 'schreiben...' %}
+            {% assign send = 'Los!' %}
+            {% endif %}
+            <input id="adventure-input" type="text" autocomplete="off" class="form-control" placeholder="{{ write }}" aria-label="Abenteuereingabefeld">
+            <div class="input-group-append">
+              <button id="adventure-btn" class="btn btn-outline-primary" type="button">{% include element/icon.html icon="send" %} {{ send }}</button>
+            </div>
+        </div>
+    </form>
+</div>
