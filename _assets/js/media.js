@@ -6,7 +6,6 @@ function createGallery (grid, createElement) {
   let element
   while (element = createElement(index++)) {
     observer.observe(element.querySelector('img'))
-    tobi.add(element.querySelector('a'))
     frag.appendChild(element)
   }
   window.requestAnimationFrame(function () {

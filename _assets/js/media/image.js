@@ -13,7 +13,7 @@ export default function (index) {
     const link = document.createElement('a')
     link.href = `${path}${image.name}`
     const img = document.createElement('img')
-    img.className = 'lazy card-img'
+    img.className = 'lazy dynamic card-img'
     img.src = trans
     img.setAttribute('data-src', `${path}thumbs/${image.name}`)
     img.alt = image.text

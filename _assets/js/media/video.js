@@ -14,7 +14,7 @@ export default function (index) {
     link.href = `#v${video}`
     link.setAttribute('data-type', 'html')
     const img = document.createElement('img')
-    img.className = 'lazy card-img'
+    img.className = 'lazy dynamic card-img'
     img.src = trans
     img.setAttribute('data-src', `${path}thumbs/${video}.jpg`)
     img.alt = video

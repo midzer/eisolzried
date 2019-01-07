@@ -54,6 +54,9 @@ export function load (element) {
       case 'IMG':
       case 'IFRAME':
         loadImage(element)
+        if (element.classList.contains('dynamic')) {	
+          tobi.add(element.parentElement)	
+        }
         break;
       case 'VIDEO':
         loadVideo(element)
