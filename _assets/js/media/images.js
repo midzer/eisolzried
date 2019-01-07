@@ -1,5 +1,29 @@
 export const images = [
   {
+    name: '0c157dbe9efb68b6.jpg',
+    text: 'Feuerwehrfahrzeug mit Lichterkette bei Nacht'
+  },
+  {
+    name: '1bc8dbd79752a470.jpg',
+    text: 'Angriffstrupp im Einsatz'
+  },
+  {
+    name: '8e0cdcea0202abc0.jpg',
+    text: 'Große Halle mit alten Feuerwehrfahrzeugen'
+  },
+  {
+    name: 'b94bf667373aab95.jpg',
+    text: 'Weihnachtsbaum auf Haspel'
+  },
+  {
+    name: 'e27f950e5459501e.jpg',
+    text: 'Feuerwehrfahrzeug im Graben'
+  },
+  {
+    name: 'f71d0c337bd41937.jpg',
+    text: 'Ausgebrannte Doppelgarage'
+  },
+  {
     name: '4c4f4f31b779350d.jpg',
     text: 'Feuerwehrleiterfahrzeug mit Stützbeinen'
   },
