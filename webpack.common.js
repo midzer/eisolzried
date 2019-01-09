@@ -52,7 +52,10 @@ module.exports = {
           options: {
             presets: [
               ['@babel/preset-env', {
-                modules: false
+                "targets": {
+                  "esmodules": false
+                },
+                "useBuiltIns": false
               }]
             ]
           }
