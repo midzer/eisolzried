@@ -8,6 +8,7 @@
 
 .lazy {
   opacity: 0;
+  will-change: opacity;
 }
 
 .loaded {

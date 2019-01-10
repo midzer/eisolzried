@@ -43,28 +43,25 @@ function loadSVG (element) {
 }
 
 export function load (element) {
-  if (element.hasAttribute('data-src') && element.dataset.src.slice(-3) === '.js') {
-    element.classList.remove('lazy')
-    loadScript(element.getAttribute('data-src'))
-    /*if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1)
-    loadModule(element.getAttribute('data-src'))*/
-  } else {
-    element.style.willChange = 'opacity'
-    switch (element.tagName) {
-      case 'IMG':
-      case 'IFRAME':
-        loadImage(element)
-        if (element.classList.contains('dynamic')) {	
-          tobi.add(element.parentElement)	
-        }
-        break;
-      case 'VIDEO':
-        loadVideo(element)
-        break;
-      case 'svg':
-        loadSVG(element)
-        break;
-    }
+  switch (element.tagName) {
+    case 'IMG':
+    case 'IFRAME':
+      loadImage(element)
+      if (element.classList.contains('dynamic')) {	
+        tobi.add(element.parentElement)	
+      }
+      break;
+    case 'VIDEO':
+      loadVideo(element)
+      break;
+    case 'svg':
+      loadSVG(element)
+      break;
+    default:
+      element.classList.remove('lazy')
+      loadScript(element)
+      /*if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1)
+      loadModule(element.getAttribute('data-src'))*/
   }
 }
 

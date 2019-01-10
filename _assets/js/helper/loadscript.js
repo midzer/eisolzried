@@ -1,9 +1,9 @@
-export function loadScript (file) {
+export function loadScript (element) {
   const script = document.createElement('script')
   script.async = false
-  script.src = `/assets/js/${file}`
-  if (document.documentElement.lastChild.src !== script.src) {
-    document.documentElement.appendChild(script)
+  script.src = `/assets/js/${element.getAttribute('data-src')}`
+  if (document.head.lastChild.src !== script.src) {
+    document.head.appendChild(script)
   }
 }
 
