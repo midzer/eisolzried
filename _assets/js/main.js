@@ -2,6 +2,7 @@ import { load, loadScript } from './helper/load'
 import query from './helper/query'
 import toggleAudio from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
+import { Christmas } from './helper/christmas'
 
 // Lazy components
 window.observer = new IntersectionObserver(changes => {
@@ -145,8 +146,7 @@ field.addEventListener('keypress', event => {
 const pages = []
 
 // Snow
-const Snowflakes = require('magic-snowflakes');
-Snowflakes();
+new Christmas()
 
 // Show render time
 if (window.PerformanceNavigationTiming) {
