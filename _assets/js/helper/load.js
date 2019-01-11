@@ -59,7 +59,7 @@ export function load (element) {
       break;
     default:
       element.classList.remove('lazy')
-      loadScript(element)
+      loadScript(element.getAttribute('data-src'))
       /*if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1)
       loadModule(element.getAttribute('data-src'))*/
   }
