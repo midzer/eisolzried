@@ -21,6 +21,7 @@
 
 /* Make it move */
 @keyframes move {
-    0%   { flex-grow: 1; }
-    100% { flex-grow: 0; }
+    to {
+        flex-grow: 0;
+    }
 }
