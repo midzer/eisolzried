@@ -3,7 +3,7 @@ import { loadStyle } from './helper/loadstyle'
 
 loadStyle('charts.css')
 
-const chart = new Chart('#member', {
+const member = new Chart('#member', {
 	data: {
 		labels: ['1990', '1995', '2000', '2005', '2010', '2015'],
 		datasets: [
@@ -32,3 +32,17 @@ const chart = new Chart('#member', {
 	title: 'Mitglieder Statistik',
 	type: 'bar'
 })
+
+// const mission = new Chart('#mission', {
+// 	data: {
+// 		labels: ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'],
+// 		datasets: [
+// 			{
+// 				name: 'Gesamt', chartType: 'bar',
+// 				values: [13, 10, 4, 2, 12, 1, 12, 8, 23, 28]
+// 			}
+// 		],
+// 	},
+// 	title: 'Einsätze Statistik',
+// 	type: 'bar'
+// })
