@@ -138,7 +138,13 @@ const config = {
         svgo: {
           plugins: [
               {
-                convertShapeToPath: false
+                convertShapeToPath: true
+              },
+              {
+                removeXMLNS: true
+              },
+              {
+                removeAttrs: {attrs: '(class)'}
               }
           ]
         }
@@ -146,8 +152,11 @@ const config = {
     ]
   },
   svg: {
-    xmlDeclaration: false, // strip out the XML attribute
-    doctypeDeclaration: false // don't include the !DOCTYPE declaration
+    xmlDeclaration: false, // Add XML declaration to SVG sprite
+    doctypeDeclaration: false, // Add DOCTYPE declaration to SVG sprite
+    namespaceIDs: false, // Add namespace token to all IDs in SVG shapes
+    namespaceClassnames: false, // Add namespace token to all CSS class names in SVG shapes
+    dimensionAttributes: false // Width and height attributes on the sprite
   }
 }
 
