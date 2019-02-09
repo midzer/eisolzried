@@ -1,7 +1,7 @@
-import createImage from './media/image'
-import createVideo from './media/video'
+import { createElement, setup } from './media/element'
 
-function createGallery (grid, createElement) {
+function createGallery (grid) {
+  setup(grid.id)
   const frag = document.createDocumentFragment()
   let element
   while (element = createElement(index++)) {
@@ -31,10 +31,10 @@ const imageTab = document.getElementById('bilder-tab'),
 let index = 0
 
 imageTab.addEventListener('show.bs.tab', () => {
-  createGallery(imageGrid, createImage)
+  createGallery(imageGrid)
 })
 videoTab.addEventListener('show.bs.tab', () => {
-  createGallery(videoGrid, createVideo)
+  createGallery(videoGrid)
 })
 imageTab.addEventListener('hide.bs.tab', () => {
   reset()
@@ -49,4 +49,4 @@ videoTab.addEventListener('hidden.bs.tab', () => {
   cleanup(videoGrid)
 })
 // Kickstart
-createGallery(imageGrid, createImage)
+createGallery(imageGrid)
