@@ -9,6 +9,10 @@
 .lazy {
   opacity: 0;
   will-change: opacity;
+  
+  // Zero height divs are not loaded by Intersection Observer
+  // in Chromium 72+ any more
+  min-height: 1px;
 }
 
 .loaded {
