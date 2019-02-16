@@ -22,7 +22,7 @@
     "not dead"
   ],
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.5",
@@ -47,7 +47,7 @@
     "rqrauhvmra__tobi": "^1.8.1",
     "standard": "^12.0.1",
     "sw-precache": "^5.2.0",
-    "webpack": "^4.29.3",
+    "webpack": "^4.29.4",
     "webpack-merge": "^4.2.1",
     "webpack-stream": "^5.2.1"
   }
