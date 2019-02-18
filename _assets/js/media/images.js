@@ -1,5 +1,41 @@
 export const images = [
   {
+    name: '3f434a6bb35180a1.jpg',
+    text: 'Polizeiauto hinter Schild von Feuerwehr'
+  },
+  {
+    name: '8cfa1ceb1f1a9797.jpg',
+    text: 'Supermarkt brennt'
+  },
+  {
+    name: '038b18be91ed4222.jpg',
+    text: 'Feuerwehrleute gesucht auf englisch'
+  },
+  {
+    name: '260ba864389c7a89.jpg',
+    text: 'Vereistes Feuerwehrauto und Feuerwehrmann'
+  },
+  {
+    name: '5133cbe6075706e8.jpg',
+    text: 'Feuerwehrmann hält Katze in den Händen'
+  },
+  {
+    name: '753778c07e5de9bf.jpg',
+    text: 'Feuerwehrmänner bei Filmball'
+  },
+  {
+    name: '48898888c209014d.jpg',
+    text: 'Pistenfeuerwehrfahrzeug'
+  },
+  {
+    name: 'ce647016d405c17e.jpg',
+    text: 'Großer Brand bei Nacht'
+  },
+  {
+    name: 'eb815eb86b214a2f.jpg',
+    text: 'Feuerwehrfahrzeug mit großen Wasserwerfer'
+  },
+  {
     name: '0c157dbe9efb68b6.jpg',
     text: 'Feuerwehrfahrzeug mit Lichterkette bei Nacht'
   },
