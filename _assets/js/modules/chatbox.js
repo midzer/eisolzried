@@ -6,7 +6,11 @@ loadStyle('chatbox.css')
  * if browser support is better
  */
 // Markdown
-function md2html(md){
+function removeTags(string) {
+  return string.replace(/<(?:.|\n)*?>/gm, '')
+}
+
+function md2html(md) {
   const bold_pattern1 = /\*{2}(.+)\*{2}/gim // <b>
   const bold_pattern2 = /\_{2}(.+)\_{2}/gim  // <b>
   const italic_pattern1 = /\_(.+)\_/gim // <i>
@@ -53,7 +57,7 @@ function md2html(md){
 
 function addMessage (message) {
   const item = document.createElement('li')
-  item.innerHTML = md2html(message)
+  item.innerHTML = md2html(removeTags(message))
   messagesList.appendChild(item)
   chatbox.scrollTop = chatbox.scrollHeight
 }
