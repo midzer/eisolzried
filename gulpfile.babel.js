@@ -137,15 +137,21 @@ const config = {
       {
         svgo: {
           plugins: [
+            {
+              convertShapeToPath: true
+            },
+            {
+              removeXMLNS: true
+            },
+            {
+              removeAttrs: {attrs: '(class)'}
+            },
+            {
+              cleanupNumericValues:
               {
-                convertShapeToPath: true
-              },
-              {
-                removeXMLNS: true
-              },
-              {
-                removeAttrs: {attrs: '(class)'}
+                floatPrecision: 2
               }
+            }
           ]
         }
       }
