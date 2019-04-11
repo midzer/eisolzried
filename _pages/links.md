@@ -50,3 +50,7 @@ lang: de
 [Hot Spot: Fire Rescue](https://hotspot-boardgame.com/)
 
 [Mr. Rescue](http://tangramgames.dk/games/mrrescue/)
+
+## Zeitschriften
+
+[FEUERWEHR](https://www.feuerwehr-ub.de/)
