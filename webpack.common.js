@@ -66,7 +66,8 @@ module.exports = {
         use: {
           loader: 'bootstrap.native-loader',
           options: {
-            ignore: ['scrollspy', 'popover', 'alert', 'affix']
+            ignore: ['scrollspy', 'popover', 'alert', 'affix', 'toast'],
+            bs_version: '4'
           }
         }
       }
