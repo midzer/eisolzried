@@ -72,7 +72,7 @@ function sendMessage () {
 
 const chatbox = document.getElementById('chatbox')
 const messagesList = document.getElementById('chat-messages')
-const ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187')
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
 let incomingMessages = [],
   scheduled
 

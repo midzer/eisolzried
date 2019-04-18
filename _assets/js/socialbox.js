@@ -21,7 +21,7 @@ function updateScore (item, modifier) {
   sendMessage(socialbox, newScore)
 }
 
-const ws = new WebSocket('wss://feuerwehr-eisolzried.de:63244')
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de/rate:63244')
 const socialboxes = query('.socialbox')
 
 ws.onopen = function () {
