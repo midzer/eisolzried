@@ -5,7 +5,7 @@
 {% endif %}
 <link id="theme-link" href="{{ '/assets/css/dark-theme.css' | prepend: site.baseurl }}">
 <script>
-if (window.localStorage.getItem('theme') === 'dark') {
+if (window.localStorage.getItem('dark-theme') === 'true') {
   document.getElementById('theme-link').rel = 'stylesheet';
 }
 </script>

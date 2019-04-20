@@ -27,10 +27,10 @@ for (let i = 0, j = items.length; i < j; i++) {
 }
 
 // Theme switch
-function setTheme (theme) {
-  document.getElementById('theme-link').rel = theme === 'dark' ? 'stylesheet' : ''
-  document.getElementById('theme-icon').href.baseVal = `/assets/icons/sprite.svg#${theme === 'dark' ? 'sun' : 'moon'}`
-  window.localStorage.setItem('theme', theme)
+function setDarkTheme (dark) {
+  document.getElementById('theme-link').rel = dark ? 'stylesheet' : ''
+  document.getElementById('theme-icon').href.baseVal = `${spritePath}${dark ? 'sun' : 'moon'}`
+  window.localStorage.setItem('dark-theme', dark)
 }
 
 let sensor = null
@@ -46,7 +46,7 @@ document.getElementById('theme-switch').onclick = () => {
   if (sensor) {
     sensor.stop()
   }
-  setTheme(window.localStorage.getItem('theme') === 'dark' ? 'light' : 'dark')
+  setDarkTheme(window.localStorage.getItem('dark-theme') !== 'true' ? true : false )
 }
 
 // Language switch
@@ -57,7 +57,7 @@ document.getElementById('language-btn').onclick = () => {
 // Siren player
 document.getElementById('siren-btn').onclick = () => {
   const player = document.getElementById('siren-player')
-  document.getElementById('siren-icon').href.baseVal = `/assets/icons/sprite.svg#${player.paused ? 'volume-2' : 'play'}`
+  document.getElementById('siren-icon').href.baseVal = `${spritePath}${player.paused ? 'volume-2' : 'play'}`
   toggleAudio(player)
 }
 
@@ -90,6 +90,7 @@ function update () {
 }
 
 // Globals
+const spritePath = '/assets/icons/sprite.svg#'
 const modalTemplate = document.getElementById('modal')
 if (modalTemplate) {
   window.modal = new Modal(modalTemplate)
