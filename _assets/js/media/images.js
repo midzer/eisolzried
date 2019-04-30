@@ -1,5 +1,25 @@
 export const images = [
   {
+    name: '5fec5f212b7583dc.jpg',
+    text: 'Feuerwehrmann auf Dach bei Abendrot'
+  },
+  {
+    name: '22fafa86d599e62e.jpg',
+    text: 'B-Schlauch durch Autofenster verlegt'
+  },
+  {
+    name: '75e517f437afaa35.jpg',
+    text: 'LKW bockt Zug auf'
+  },
+  {
+    name: 'aaf857be2e19e1e6.jpg',
+    text: 'Antikes Feuerwehrfahrzeug mit Wasserwerfer'
+  },
+  {
+    name: 'df8f7ca042ce31e0.jpg',
+    text: 'Brand Notre Dame bei Nacht'
+  },
+  {
     name: '3f434a6bb35180a1.jpg',
     text: 'Polizeiauto hinter Schild von Feuerwehr'
   },
