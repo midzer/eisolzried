@@ -39,6 +39,10 @@ lang: de
     <img class="lazy img-fluid" src="{% include helper/trans.html %}" data-src="/assets/images/links/jugendfeuerwehr.png" alt="Ich will zur Jugendfeuerwehr">
 </a>
 
+## Radio
+
+[Radio 112](https://www.radio-112.de/)
+
 ## Spiele
 
 [Firefighter "Krause"](http://firefighter.pixelactivity.de/)
@@ -54,3 +58,5 @@ lang: de
 ## Zeitschriften
 
 [FEUERWEHR](https://www.feuerwehr-ub.de/)
+
+[Feuerwehrmagazin](https://www.feuerwehrmagazin.de/)
