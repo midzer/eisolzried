@@ -12,11 +12,11 @@
     animation: animate 1s linear infinite;
 }
 
-.card {
+.card.border-custom {
     border: none;
 }
 
-.card-img {
+.card-img.border-custom {
     border-radius: initial;
 }
 
