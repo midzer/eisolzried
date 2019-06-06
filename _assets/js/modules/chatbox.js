@@ -55,17 +55,21 @@ function md2html(md) {
   return md
 }
 
-function addMessage (message) {
+function createMessage (message) {
   const item = document.createElement('li')
   item.innerHTML = md2html(removeTags(message))
-  messagesList.appendChild(item)
+  return item
+}
+
+function appendToList(list, child) {
+  messagesList.appendChild(child)
   chatbox.scrollTop = chatbox.scrollHeight
 }
 
 function sendMessage () {
   const input = document.getElementById('chat-input')
   const message = input.value
-  addMessage(message)
+  appendToList(messagesList, createMessage(message))
   input.value = ''
   ws.send(message)
 }
@@ -77,14 +81,16 @@ let incomingMessages = [],
   scheduled
 
 ws.onmessage = message => {
-  incomingMessages.push(message.data)
+  incomingMessages.push(createMessage(message.data))
 
   if (!scheduled) {
     scheduled = true
     window.requestAnimationFrame(function () {
+      const frag = document.createDocumentFragment()
       for (let i = 0, len = incomingMessages.length; i < len; i++) {
-        addMessage(incomingMessages[i])
+        frag.appendChild(incomingMessages[i])
       }
+      appendToList(messagesList, frag)
       incomingMessages.length = 0
       scheduled = false
     })
