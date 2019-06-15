@@ -43,14 +43,12 @@ if ('serviceWorker' in navigator) {
                 // At this point, everything has been precached.
                 // It's the perfect time to display a "Content is cached for offline use." message.
                 //console.log('Content is now available offline!')
-                loadStyle('snackbar.css').then(function () {
-                  const snackbar = createSnackbar()
-                  const data = {
-                    message: 'Die Seite ist jetzt auch offline verfügbar!',
-                    timeout: 5000
-                  }
-                  snackbar.showSnackbar(data)
-                })
+                const snackbar = createSnackbar()
+                const data = {
+                  message: 'Die Seite ist jetzt auch offline verfügbar!',
+                  timeout: 5000
+                }
+                snackbar.showSnackbar(data)
               }
               break
 
@@ -73,18 +71,16 @@ if (navigator.serviceWorker && navigator.serviceWorker.controller) {
   navigator.serviceWorker.controller.onstatechange = function (e) {
     if (e.target.state === 'redundant') {
       //console.log('New or updated content is available.')
-      loadStyle('snackbar.css').then(function () {
-        const snackbar = createSnackbar()
-        const data = {
-          message: 'Auf der Seite gibts was neues!',
-          timeout: 60000,
-          actionHandler: function () {
-            window.location.reload()
-          },
-          actionText: 'Update'
-        }
-        snackbar.showSnackbar(data)
-      })
+      const snackbar = createSnackbar()
+      const data = {
+        message: 'Auf der Seite gibts was neues!',
+        timeout: 60000,
+        actionHandler: function () {
+          window.location.reload()
+        },
+        actionText: 'Update'
+      }
+      snackbar.showSnackbar(data)
     }
   }
 }

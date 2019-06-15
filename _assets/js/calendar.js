@@ -108,18 +108,16 @@ function buildCal (data) {
         dayEvent.appendChild(document.createTextNode(ev[i].summary))
         event.detail.element.appendChild(dayEvent)
         if (event.detail.date.toDateString() === new Date().toDateString()) {
-          loadStyle('snackbar.css').then(function () {
-            const snackbar = createSnackbar()
-            const data = {
-              message: 'Heute ist was los!',
-              timeout: 5000,
-              actionHandler: function () {
-                showModal(ev[i])
-              },
-              actionText: 'Zeigen'
-            }
-            snackbar.showSnackbar(data)
-          })
+          const snackbar = createSnackbar()
+          const data = {
+            message: 'Heute ist was los!',
+            timeout: 5000,
+            actionHandler: function () {
+              showModal(ev[i])
+            },
+            actionText: 'Zeigen'
+          }
+          snackbar.showSnackbar(data)
         }
       }
     }
