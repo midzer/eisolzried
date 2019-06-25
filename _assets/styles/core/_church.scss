@@ -1,0 +1,14 @@
+.church {
+    position: relative;
+
+    > img:last-child {
+        position: absolute;
+        top: 0.25rem;
+        left: 0.25rem;
+
+        @include media-breakpoint-only(xs) {
+            position: static;
+            padding: 1rem 0;
+        }
+    }
+}
