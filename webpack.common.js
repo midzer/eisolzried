@@ -36,6 +36,9 @@ module.exports = {
     ],
     einsatz: [
       './_assets/js/einsatz.js'
+    ],
+    weather: [
+      './_assets/js/modules/weather.js'
     ]
   },
   output: {
