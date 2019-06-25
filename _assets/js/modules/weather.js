@@ -1,6 +1,6 @@
 function changeWeather () {
   const input = document.getElementById('weather-input')
-  document.getElementById('weather-img').src=`https://wttr.in/${input.value}_0pqt_lang=de.png`
+  document.getElementById('weather-img').src=`https://wttr.in/${input.value}_0pq_transparency=200_lang=de.png`
   input.value = ''
 }
 
