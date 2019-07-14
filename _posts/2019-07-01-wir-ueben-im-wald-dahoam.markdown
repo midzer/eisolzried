@@ -72,6 +72,4 @@ Das Einsatzszenario zur Übung im Juli war ein fiktiver Waldbrand im Hochsommer.
 
 Wir befüllten vorab zwei Gülletanks, um mit weiteren Wasserreserven ausgestattet zu sein. Der interne 600l Tank würde bei einem größeren Brand nicht lange ausreichen. Im Gespann mit zwei Bulldogs ging es also zur Pumpstation im Forst nahe Deutenhausen.
 
-Im Laufe der Übung fiel die Fahrzeugpumpe nach dem Ansaugen jedoch aus und die Übung musste beendet werden.
-
 {% include component/gal.html %}

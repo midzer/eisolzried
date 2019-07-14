@@ -74,6 +74,4 @@ Zua Übung im hoaßn Juli homma uns vorgstoid, dass a Woid brennd.
 
 Um mehra Wassa dabei zum hom, homma zwoa Güllefassl voi gmacht. Unser gloana 600l Tank, den mia dabei ham, dad ned lang glanga. Mid zwoa Bulldog samma oiso nauf zua Pumpstation im Deinhauser Woid.
 
-Leida hod si nausgstoid, dass unsa Pumpm vom Fahrzeig nochm Osaung nimma gäd. Drum homma dann aufhern miaßn.
-
 {% include component/gal.html %}
