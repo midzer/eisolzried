@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 0.25rem;
   
   &--big {
     @include media-breakpoint-down(md) {
