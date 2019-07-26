@@ -2,9 +2,9 @@
   padding-top: 1rem;
 }
 
-#posts > li:not([hidden]) {
+#posts > li {
   display: grid;
-  grid-template-columns: 21% auto;
+  grid-template-columns: 125px auto;
   grid-column-gap: 1rem;
 }
 
