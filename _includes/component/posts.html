@@ -8,9 +8,9 @@
   {% endif %}
     <a href="{{ post.url | prepend: site.baseurl }}">
       {% if post.images %}
-      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
+      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}" width="125px" height="125px">
       {% else %}
-      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
+      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen" width="125px" height="125px">
       {% endif %}
     </a>
     <div>
