@@ -47,7 +47,7 @@
     "rqrauhvmra__tobi": "^1.8.1",
     "standard": "^13.1.0",
     "sw-precache": "^5.2.0",
-    "webpack": "^4.36.1",
+    "webpack": "^4.39.1",
     "webpack-merge": "^4.2.1",
     "webpack-stream": "^5.2.1"
   }
