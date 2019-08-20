@@ -1,5 +1,6 @@
 _site
 .sass-cache
+.jekyll-cache
 _assets/animations
 _assets/audio
 _assets/images
