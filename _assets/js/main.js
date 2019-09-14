@@ -5,7 +5,7 @@ import { Modal } from 'bootstrap.native'
 //import { Christmas } from './helper/christmas'
 
 // Lazy components
-window.observer = new IntersectionObserver(changes => {
+const observer = new IntersectionObserver(changes => {
   changes.forEach(change => {
     // Edge 15 doesn't support isIntersecting, but we can infer it
     // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/

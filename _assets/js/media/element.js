@@ -1,6 +1,7 @@
 import { images } from './images'
 import { videos } from './videos'
 import { trans } from './trans'
+import { load } from '../helper/load'
 
 const imgLength = images.length,
   vidLength = videos.length,  
@@ -8,12 +9,15 @@ const imgLength = images.length,
   vidPath = '/assets/videos/media/',
   cardTemplate = document.createElement('div'),
   imgTemplate = document.createElement('img'),
-  vidTemplate = document.createElement('video')
+  vidTemplate = document.createElement('video'),
+  frag = document.createDocumentFragment()
 
 let elements,
   length,
   path,
-  imgMode
+  imgMode,
+  index = 0,
+  currentGrid
 
 cardTemplate.className = 'card border-custom'
 
@@ -25,7 +29,31 @@ vidTemplate.preload = 'none'
 vidTemplate.loop = true
 vidTemplate.style.display = 'none'
 
-export function setup (grid) {
+function appendElement(frag) {
+  let element = createElement(index++)
+  if (element) {
+    (frag || currentGrid).appendChild(element)
+  }
+}
+
+export function create (grid) {
+  setup(grid.id)
+  while (index < 24) {
+    // Lets fill a block of 24 elements initially
+    appendElement(frag)
+  }
+  window.requestAnimationFrame(function () {
+    grid.appendChild(frag)
+  })
+  currentGrid = grid
+}
+
+export function reset () {
+  index = 0
+  tobi.destroy()
+}
+
+function setup (grid) {
     if (grid === 'image-grid') {
         elements = images
         length = imgLength
@@ -40,7 +68,7 @@ export function setup (grid) {
     }
 }
 
-export function createElement (index) {
+function createElement (index) {
   let card
   if (index < length) {
     const element = elements[index]
@@ -63,6 +91,7 @@ export function createElement (index) {
         vid.src = `${path}${element}.${vid.canPlayType('video/webm') ? 'webm' : 'mp4'}`
         div.appendChild(vid)
     }
+    observer.observe(img)
     link.appendChild(img)
     card = cardTemplate.cloneNode(false)
     card.appendChild(link)
@@ -72,3 +101,23 @@ export function createElement (index) {
   }
   return card
 }
+
+// Dynamic observer
+const observer = new IntersectionObserver(changes => {
+  changes.forEach(change => {
+    // Edge 15 doesn't support isIntersecting, but we can infer it
+    // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
+    // https://github.com/WICG/IntersectionObserver/issues/211
+    const isIntersecting = (typeof change.isIntersecting === 'boolean')
+      ? change.isIntersecting : change.intersectionRect.height > 0
+    if (isIntersecting) {
+      load(change.target)
+
+      appendElement();
+      tobi.add(change.target.parentElement)
+
+      // Stop observing the current target
+      observer.unobserve(change.target)
+    }
+  })
+})
