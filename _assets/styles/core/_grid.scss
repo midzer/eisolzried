@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-gap: 0.25rem;
+  grid-gap: 2px;
   
   &--big {
     @include media-breakpoint-down(md) {
@@ -39,5 +39,38 @@
     @include media-breakpoint-only(xl) {
       grid-template-columns: repeat(6, 1fr);
     }
+  }
+
+  a {
+    position: relative;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+  }
+
+  a:hover::after {
+    background:
+      linear-gradient(to left, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 0 0 repeat-x,
+      linear-gradient(to right, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 100% 100%  repeat-x,
+      linear-gradient(to top, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 0 100% repeat-y,
+      linear-gradient(to bottom, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 100% 0 repeat-y;
+    background-size: 300% 2px, 300% 2px, 2px 300%, 2px 300%, 100% 100%;
+    animation: animate 1s linear infinite;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@keyframes animate {
+  to {
+      background-position: 100% 0, 0% 100%, 0 0, 100% 100%, 0 0;
   }
 }

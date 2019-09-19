@@ -10,10 +10,8 @@
 <div class="grid grid--small top-buffer">
 {% endif %}
 {% for image in images %}
-    <div class="card border-custom">
-        <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox">
-            <img class="lazy card-img" src="{% include helper/trans.html %}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" alt="{{ image.text }}">
-        </a>
-    </div>
+    <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox">
+        <img class="lazy card-img" src="{% include helper/trans.html %}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" alt="{{ image.text }}">
+    </a>
     {% endfor %}
 </div>

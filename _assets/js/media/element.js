@@ -7,7 +7,6 @@ const imgLength = images.length,
   vidLength = videos.length,  
   imgPath = '/assets/images/media/',
   vidPath = '/assets/videos/media/',
-  cardTemplate = document.createElement('div'),
   imgTemplate = document.createElement('img'),
   vidTemplate = document.createElement('video'),
   frag = document.createDocumentFragment()
@@ -19,9 +18,7 @@ let elements,
   index = 0,
   currentGrid
 
-cardTemplate.className = 'card border-custom'
-
-imgTemplate.className = 'lazy dynamic card-img'
+imgTemplate.className = 'lazy dynamic'
 imgTemplate.src = trans
 
 vidTemplate.controls = true
@@ -69,10 +66,10 @@ function setup (grid) {
 }
 
 function createElement (index) {
-  let card
+  const link = document.createElement('a')
   if (index < length) {
     const element = elements[index]
-    const link = document.createElement('a')
+    
     const img = imgTemplate.cloneNode(false)
     let div
     if (imgMode) {
@@ -93,13 +90,11 @@ function createElement (index) {
     }
     observer.observe(img)
     link.appendChild(img)
-    card = cardTemplate.cloneNode(false)
-    card.appendChild(link)
     if (!imgMode) {
-        card.appendChild(div)
+        link.appendChild(div)
     }
   }
-  return card
+  return link
 }
 
 // Dynamic observer
