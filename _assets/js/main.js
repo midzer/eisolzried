@@ -72,7 +72,7 @@ document.getElementById('fire-run-grisu').onclick = () => {
 }
 
 // Bottombar
-const bottomBar = document.getElementById('bottombar').firstElementChild
+const bottomBar = document.getElementById('bottombar')
 let ticking
 window.addEventListener('scroll', requestTick)
 
