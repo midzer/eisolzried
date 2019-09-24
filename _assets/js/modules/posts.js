@@ -6,11 +6,12 @@ document.getElementById('moreposts').onclick = function () {
   const button = this
   const els = list.querySelectorAll('[hidden]')
   window.requestAnimationFrame(function () {
-    for (let i = 0, j = els.length; i < 4; i++) {
+    for (let i = 0, j = els.length; i < 8; i++) {
       els[i].removeAttribute('hidden')
       if (i + 1 === j) {
         // Remove button after last element done
         button.parentNode.removeChild(button)
+        break
       }
     }
   })
@@ -21,6 +22,9 @@ const list = document.getElementById('posts')
 const els = list.children
 for (let i = els.length - 1; i >= 0; i--) {
   const element = els[i].querySelector('span[data-index]')
+  if (!element) {
+    continue
+  }
   const index = Number(element.getAttribute('data-index'))
   if (index > lastIndex) {
     element.classList.remove('invisible')

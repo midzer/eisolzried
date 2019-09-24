@@ -1,40 +1,42 @@
-<ul id="posts" class="lazy list-unstyled" data-src="posts.js">
+<div id="posts" class="lazy" data-src="posts.js">
 {% assign sorted-posts = site.posts | where: "lang", page.lang %}
 {% for post in sorted-posts %}
   {% if forloop.index > 4 %}
-  <li hidden>
+  <a hidden href="{{ post.url | prepend: site.baseurl }}">
   {% else %}
-  <li>
+  <a href="{{ post.url | prepend: site.baseurl }}">
   {% endif %}
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      {% if post.images %}
-      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}" width="125px" height="125px">
-      {% else %}
-      <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen" width="125px" height="125px">
-      {% endif %}
-    </a>
-    <div>
-      <div class="post-meta">
-        {% include helper/date.html %}
-      </div>
-      <h5>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <span class="invisible badge badge-primary" data-index="{{ forloop.rindex }}">Neu</span>
-      </h5>
-      {{ post.content | strip_html | truncatewords: 20 }}
-      <a class="text-nowrap" href="{{ post.url | prepend: site.baseurl }}">
-        {% if page.lang == 'by' %}
-        Meara lesn
-        {% else %}
-        Mehr lesen
-        {% endif %}
-        {% include element/icon.html icon="chevrons-right" %}
-      </a>
+    {% if post.images %}
+    <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}" width="125px" height="125px">
+    {% else %}
+    <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen" width="125px" height="125px">
+    {% endif %}
+  </a>
+  {% if forloop.index > 4 %}
+  <div hidden>
+  {% else %}
+  <div>
+  {% endif %}
+    <div class="post-meta">
+      {% include helper/date.html %}
     </div>
-  </li>
+    <h5>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="invisible badge badge-primary" data-index="{{ forloop.rindex }}">Neu</span>
+    </h5>
+    {{ post.content | strip_html | truncatewords: 20 }}
+    <a class="text-nowrap" href="{{ post.url | prepend: site.baseurl }}">
+      {% if page.lang == 'by' %}
+      Meara lesn
+      {% else %}
+      Mehr lesen
+      {% endif %}
+      {% include element/icon.html icon="chevrons-right" %}
+    </a>
+  </div>
 {% endfor %}
-</ul>
-<button id="moreposts" type="button" class="btn btn-outline-primary d-block mx-auto">
+</div>
+<button id="moreposts" type="button" class="btn btn-outline-primary d-block mx-auto top-buffer">
   {% include element/icon.html icon="plus" %}
   {% if page.lang == 'by' %}
   Meara

@@ -3,3 +3,7 @@
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(90deg, $primary, transparent) 100% 1;
 }
+
+.post-meta {
+  color: $gray-700;
+}
