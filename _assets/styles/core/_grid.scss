@@ -73,6 +73,10 @@
   display: grid;
   grid-template-columns: 125px auto;
   grid-gap: 1rem;
+
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 @keyframes animate {
