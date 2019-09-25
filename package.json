@@ -22,9 +22,9 @@
     "not dead"
   ],
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "@babel/register": "^7.6.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
     "babel-loader": "^8.0.5",
     "bootstrap.native": "git+https://git@github.com/thednp/bootstrap.native.git",
     "bootstrap.native-loader": "^2.0.0",
@@ -45,9 +45,9 @@
     "imagemin-mozjpeg": "^8.0.0",
     "intersection-observer": "^0.7.0",
     "rqrauhvmra__tobi": "git+https://git@github.com/rqrauhvmra/Tobi.git",
-    "standard": "^14.2.0",
+    "standard": "^14.3.1",
     "sw-precache": "^5.2.0",
-    "webpack": "^4.40.2",
+    "webpack": "^4.41.0",
     "webpack-merge": "^4.2.2",
     "webpack-stream": "^5.2.1"
   }
