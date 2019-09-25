@@ -4,7 +4,7 @@ import { trans } from './trans'
 import { load } from '../helper/load'
 
 const imgLength = images.length,
-  vidLength = videos.length,  
+  vidLength = videos.length,
   imgPath = '/assets/images/media/',
   vidPath = '/assets/videos/media/',
   imgTemplate = document.createElement('img'),
