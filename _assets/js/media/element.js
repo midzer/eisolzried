@@ -9,6 +9,7 @@ const imgLength = images.length,
   vidPath = '/assets/videos/media/',
   imgTemplate = document.createElement('img'),
   vidTemplate = document.createElement('video'),
+  extension = vidTemplate.canPlayType('video/webm') ? 'webm' : 'mp4',
   frag = document.createDocumentFragment()
 
 let elements,
@@ -18,7 +19,7 @@ let elements,
   index = 0,
   currentGrid
 
-imgTemplate.className = 'lazy dynamic'
+imgTemplate.className = 'lazy'
 imgTemplate.src = trans
 
 vidTemplate.controls = true
@@ -34,7 +35,7 @@ function appendElement(frag) {
 }
 
 export function create (grid) {
-  setup(grid.id)
+  setup(grid)
   while (index < 24) {
     // Lets fill a block of 24 elements initially
     appendElement(frag)
@@ -51,27 +52,25 @@ export function reset () {
 }
 
 function setup (grid) {
-    if (grid === 'image-grid') {
-        elements = images
-        length = imgLength
-        path = imgPath
-        imgMode = true
-    }
-    else {
-        elements = videos
-        length = vidLength
-        path = vidPath
-        imgMode = false
-    }
+  if (grid.id === 'image-grid') {
+    elements = images
+    length = imgLength
+    path = imgPath
+    imgMode = true
+  }
+  else {
+    elements = videos
+    length = vidLength
+    path = vidPath
+    imgMode = false
+  }
 }
 
 function createElement (index) {
   const link = document.createElement('a')
   if (index < length) {
     const element = elements[index]
-    
     const img = imgTemplate.cloneNode(false)
-    let div
     if (imgMode) {
         link.href = `${path}${element.name}`
         img.setAttribute('data-src', `${path}thumbs/${element.name}`)
@@ -82,16 +81,17 @@ function createElement (index) {
         link.setAttribute('data-type', 'html')
         img.setAttribute('data-src', `${path}thumbs/${element}.jpg`)
         img.alt = element
-        div = document.createElement('div')
-        div.id = `v${element}`
-        const vid = vidTemplate.cloneNode(false)
-        vid.src = `${path}${element}.${vid.canPlayType('video/webm') ? 'webm' : 'mp4'}`
-        div.appendChild(vid)
+        
     }
     observer.observe(img)
     link.appendChild(img)
     if (!imgMode) {
-        link.appendChild(div)
+      const div = document.createElement('div')
+      div.id = `v${element}`
+      const vid = vidTemplate.cloneNode(false)
+      vid.src = `${path}${element}.${extension}`
+      div.appendChild(vid)
+      link.appendChild(div)
     }
   }
   return link
