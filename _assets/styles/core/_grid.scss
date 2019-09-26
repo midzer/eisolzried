@@ -77,6 +77,24 @@
   h3 {
     font-size: 1.25rem;
   }
+
+  @include media-breakpoint-only(xs) {
+    display: block;
+
+    img,
+    > div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include media-breakpoint-only(md) {
+    display: block;
+
+    img,
+    > div {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @keyframes animate {
