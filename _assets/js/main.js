@@ -62,13 +62,13 @@ document.getElementById('siren-btn').onclick = () => {
 }
 
 // Fire run
-document.getElementById('fire-run-station').onclick = () => {
-  const spacer = document.getElementById('fire-run-spacer')
+document.querySelector('.icon--home').onclick = () => {
+  const spacer = document.querySelector('#fire-run div')
   spacer.style.animationPlayState = spacer.style.animationPlayState === 'paused' || spacer.style.animationPlayState === '' ? 'running' : 'paused'
   toggleAudio(document.getElementById('fire-run-player'))
 }
-document.getElementById('fire-run-grisu').onclick = () => {	
-  toggleAudio(document.getElementById('fire-run-grisu'))	
+document.getElementById('grisu').onclick = event => {
+  toggleAudio(event.target)
 }
 
 // Bottombar

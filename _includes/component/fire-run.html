@@ -1,11 +1,11 @@
 <div id="fire-run" role="presentation">
-    <video id="fire-run-grisu" class="lazy" loop width="64px" height="54px">
+    <video id="grisu" class="lazy" loop>
         <source data-src="/assets/gimmicks/grisu.webm" type="video/webm">
         <source data-src="/assets/gimmicks/grisu.mp4" type="video/mp4">
         Dein Browser unterstützt das Video tag nicht.
     </video>
-    <span id="fire-run-spacer"></span>
-    <span>{% include element/icon.html icon="fire-truck" %}</span>
-    <span id="fire-run-station">{% include element/icon.html icon="home" %}</span>
+    <div></div>
+    {% include element/icon.html icon="fire-truck" %}
+    {% include element/icon.html icon="home" %}
     {% include element/audio-player.html audio='fire-run' loop=true %}
 </div>
