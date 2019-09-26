@@ -51,7 +51,7 @@ document.getElementById('theme-switch').onclick = () => {
 
 // Language switch
 document.getElementById('language-btn').onclick = () => {
-  window.location = isBoarischeUrl() ? path.replace('/by', '') : '/by'.concat(path)
+  window.location = isBoarischeUrl ? path.replace('/by', '') : '/by'.concat(path)
 }
 
 // Siren player
@@ -97,10 +97,8 @@ if (modalTemplate) {
 }
 
 // Locales
-function isBoarischeUrl () {
-  return path.indexOf('/by/') !== -1
-}
 const path = window.location.pathname
+const isBoarischeUrl = path.indexOf('/by/') !== -1
 
 // Lightbox
 if (document.querySelector('.lightbox')) {
@@ -117,7 +115,7 @@ function findResults (termToMatch) {
 
 function startSearch () {
   if (!pages.length) {
-    const suffix = isBoarischeUrl() ? '-by' : ''
+    const suffix = isBoarischeUrl ? '-by' : ''
     fetch(`/search${suffix}.json`)
       .then(blob => blob.json())
       .then(data => pages.push(...data))
@@ -133,7 +131,7 @@ function displayResults (value) {
   const html = resultsArray.map(item => {
     return `<a class="dropdown-item" href="${item.url}">${item.title}</a>`
   }).join('')
-  resultsList.innerHTML = resultsArray.length === 0 ? `<p class='dropdown-item'>${isBoarischeUrl() ? 'Nix gfunna' : 'Nichts gefunden'} :(</p>` : html
+  resultsList.innerHTML = resultsArray.length === 0 ? `<p class='dropdown-item'>${isBoarischeUrl ? 'Nix gfunna' : 'Nichts gefunden'} :(</p>` : html
 }
 
 const field = document.getElementById('search-input')
