@@ -115,8 +115,7 @@ function findResults (termToMatch) {
 
 function startSearch () {
   if (!pages.length) {
-    const suffix = isBoarischeUrl ? '-by' : ''
-    fetch(`/search${suffix}.json`)
+    fetch(`/search${isBoarischeUrl ? '-by' : ''}.json`)
       .then(blob => blob.json())
       .then(data => pages.push(...data))
       .then( () => displayResults(this.value))
@@ -132,6 +131,7 @@ function displayResults (value) {
     return `<a class="dropdown-item" href="${item.url}">${item.title}</a>`
   }).join('')
   resultsList.innerHTML = resultsArray.length === 0 ? `<p class='dropdown-item'>${isBoarischeUrl ? 'Nix gfunna' : 'Nichts gefunden'} :(</p>` : html
+  resultsList.style.display = value ? 'block' : 'none'
 }
 
 const field = document.getElementById('search-input')

@@ -35,9 +35,12 @@
   width: 150px;
 }
 
-#results-container:hover,
-#search-input:focus:not(:placeholder-shown) + #results-container {
-  display: block;
+.form-inline {
+  position: relative;
+}
+
+#results-container {
+  display: none;
 }
 
 .dropdown-menu {
