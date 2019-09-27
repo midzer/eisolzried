@@ -64,7 +64,8 @@
     animation: animate 1s linear infinite;
   }
 
-  img {
+  img,
+  > video {
     width: 100%;
   }
 }
