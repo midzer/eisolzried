@@ -41,11 +41,11 @@
     }
   }
 
-  a {
+  > a {
     position: relative;
   }
 
-  a::after {
+  > a::after {
     content: '';
     position: absolute;
     top: -2px;
@@ -54,7 +54,7 @@
     right: -2px;
   }
 
-  a:hover::after {
+  > a:hover::after {
     background:
       linear-gradient(to left, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 0 0 repeat-x,
       linear-gradient(to right, $primary 33.33%, transparent 40% , transparent 50%, $primary 66.66%) 100% 100%  repeat-x,
