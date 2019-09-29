@@ -1,5 +1,5 @@
 /* Navbar */
-.nav-link:before {
+.nav-link::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -11,7 +11,7 @@
   transition: all 0.3s ease-in-out 0.1s;
 }
 
-.nav-link:hover:before {
+.nav-link:hover::before {
   transform: scaleX(1);
 }
 

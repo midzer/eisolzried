@@ -29,7 +29,7 @@
     float: left;
   }
 
-  .prev:before {
+  .prev::before {
     content: "\00AB";
   }
 
@@ -37,7 +37,7 @@
     float: right;
   }
 
-  .next:after {
+  .next::after {
     content: "\00BB";
   }
 
