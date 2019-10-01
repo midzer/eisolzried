@@ -67,8 +67,9 @@ function setup (grid) {
 }
 
 function createElement (index) {
-  const link = document.createElement('a')
+  let link
   if (index < length) {
+    link = document.createElement('a')
     const element = elements[index]
     const img = imgTemplate.cloneNode(false)
     if (imgMode) {
