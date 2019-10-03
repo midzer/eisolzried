@@ -27,7 +27,7 @@ for (let i = 0, j = items.length; i < j; i++) {
 }
 
 // Theme switch
-function setDarkTheme (dark) {
+function setTheme (dark) {
   document.getElementById('theme-link').rel = dark ? 'stylesheet' : ''
   document.getElementById('theme-icon').href.baseVal = `${spritePath}${dark ? 'sun' : 'moon'}`
   window.localStorage.setItem('dark-theme', dark)
@@ -37,7 +37,7 @@ let sensor = null
 if ('AmbientLightSensor' in window) {
   sensor = new AmbientLightSensor()
   sensor.onreading = () => {
-    setTheme(sensor.illuminance === 0 ? 'dark' : 'light')
+    setTheme(sensor.illuminance === 0 ? true : false)
   }
   sensor.start()
 }
@@ -46,7 +46,7 @@ document.getElementById('theme-switch').onclick = () => {
   if (sensor) {
     sensor.stop()
   }
-  setDarkTheme(window.localStorage.getItem('dark-theme') !== 'true' ? true : false )
+  setTheme(window.localStorage.getItem('dark-theme') !== 'true' ? true : false )
 }
 
 // Language switch
