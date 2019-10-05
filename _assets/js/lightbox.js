@@ -1,5 +1,5 @@
 import Tobi from 'rqrauhvmra__tobi'
-import { loadStyle } from './helper/loadstyle'
+import { loadStyle } from './load/loadstyle'
 
 loadStyle('lightbox.css')
 

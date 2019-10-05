@@ -1,4 +1,5 @@
-import { load, loadScript } from './helper/load'
+import { load } from './load/load'
+import { loadScript } from './load/loadscript'
 import query from './helper/query'
 import toggleAudio from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
