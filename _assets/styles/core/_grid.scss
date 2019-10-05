@@ -75,10 +75,6 @@
   grid-template-columns: 130px auto;
   grid-gap: 1rem;
 
-  h3 {
-    font-size: 1.25rem;
-  }
-
   @include media-breakpoint-only(xs) {
     display: block;
 
