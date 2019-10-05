@@ -76,21 +76,11 @@
   grid-gap: 1rem;
 
   @include media-breakpoint-only(xs) {
-    display: block;
-
-    img,
-    > div {
-      margin-bottom: 1rem;
-    }
+    grid-template-columns: auto;
   }
 
   @include media-breakpoint-only(md) {
-    display: block;
-
-    img,
-    > div {
-      margin-bottom: 1rem;
-    }
+    grid-template-columns: auto;
   }
 }
 
