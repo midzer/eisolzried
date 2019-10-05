@@ -1,7 +1,7 @@
 import { images } from './images'
 import { videos } from './videos'
 import { trans } from './trans'
-import { load } from '../load/load'
+import { loadImage } from '../load/loadimage'
 
 const imgLength = images.length,
   vidLength = videos.length,
@@ -107,7 +107,7 @@ const observer = new IntersectionObserver(changes => {
     const isIntersecting = (typeof change.isIntersecting === 'boolean')
       ? change.isIntersecting : change.intersectionRect.height > 0
     if (isIntersecting) {
-      load(change.target)
+      loadImage(change.target)
 
       appendElement();
       tobi.add(change.target.parentElement)
