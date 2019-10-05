@@ -1,7 +1,7 @@
 import { images } from './images'
 import { videos } from './videos'
 import { trans } from './trans'
-import { load } from '../helper/load'
+import { load } from '../load/load'
 
 const imgLength = images.length,
   vidLength = videos.length,

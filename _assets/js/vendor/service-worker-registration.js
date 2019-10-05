@@ -1,4 +1,3 @@
-import { loadStyle } from '../helper/loadstyle'
 import { createSnackbar } from '../helper/createsnackbar'
 
 /**

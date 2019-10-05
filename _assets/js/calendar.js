@@ -1,4 +1,4 @@
-import { loadStyle } from './helper/loadstyle'
+import { loadStyle } from './load/loadstyle'
 import { createSnackbar } from './helper/createsnackbar'
 
 loadStyle('calendar.css')

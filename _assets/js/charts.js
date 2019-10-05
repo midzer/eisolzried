@@ -1,5 +1,5 @@
 import { Chart } from 'frappe-charts/dist/frappe-charts.esm.js'
-import { loadStyle } from './helper/loadstyle'
+import { loadStyle } from './load/loadstyle'
 
 loadStyle('charts.css')
 
