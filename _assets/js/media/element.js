@@ -82,7 +82,6 @@ function createElement (index) {
         link.setAttribute('data-type', 'html')
         img.setAttribute('data-src', `${path}thumbs/${element}.jpg`)
         img.alt = element
-        
     }
     observer.observe(img)
     link.appendChild(img)
