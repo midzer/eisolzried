@@ -70,6 +70,12 @@
   }
 }
 
+#image-grid,
+#video-grid {
+  // Fix initial glitch due empty space
+  min-height: 1000px;
+}
+
 #posts {
   display: grid;
   grid-template-columns: 130px auto;
