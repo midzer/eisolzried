@@ -108,7 +108,7 @@ const observer = new IntersectionObserver(changes => {
     if (isIntersecting) {
       loadImage(change.target)
 
-      appendElement();
+      appendElement()
       tobi.add(change.target.parentElement)
 
       // Stop observing the current target
