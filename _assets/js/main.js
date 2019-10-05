@@ -34,7 +34,7 @@ function setTheme (dark) {
   window.localStorage.setItem('dark-theme', dark)
 }
 
-let sensor = null
+let sensor
 if ('AmbientLightSensor' in window) {
   sensor = new AmbientLightSensor()
   sensor.onreading = () => {
