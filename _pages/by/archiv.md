@@ -13,7 +13,7 @@ lang: by
 {% include component/leader.html type="executives" src=site.data.archive.executives %}
 
 ## An Haufa
-{% include component/gal.html src=site.data.archive.misc %}
+{% include component/misc.html %}
 
 ## Wappn
 {% include component/wappen.html %}

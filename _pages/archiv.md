@@ -13,7 +13,7 @@ lang: de
 {% include component/leader.html type="executives" src=site.data.archive.executives %}
 
 ## Verschiedenes
-{% include component/gal.html src=site.data.archive.misc %}
+{% include component/misc.html %}
 
 ## Wappen
 {% include component/wappen.html %}

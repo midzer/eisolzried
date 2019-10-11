@@ -1,9 +1,5 @@
-{% if include.type == "normal" %}
-<div class="grid grid--normal top-buffer">
-{% else %}
-<div class="grid grid--small top-buffer">
-{% endif %}
-{% for image in page.images %}
+<div class="grid grid--small bottom-buffer">
+{% for image in site.data.archive.misc %}
     <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox">
         <img class="lazy card-img" src="{% include helper/trans.html %}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" alt="{{ image.text }}">
     </a>
