@@ -1,3 +1,4 @@
+import EmojiButton from 'emoji-button'
 import { loadStyle } from '../load/loadstyle'
 
 loadStyle('chatbox.css')
@@ -67,7 +68,6 @@ function appendToList(list, child) {
 }
 
 function sendMessage () {
-  const input = document.getElementById('chat-input')
   const message = input.value
   appendToList(messagesList, createMessage(message))
   input.value = ''
@@ -75,6 +75,7 @@ function sendMessage () {
 }
 
 const chatbox = document.getElementById('chatbox')
+const input = document.getElementById('chat-input')
 const messagesList = document.getElementById('chat-messages')
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
 let incomingMessages = [],
@@ -107,3 +108,15 @@ document.getElementById('chat-form').onkeypress = event => {
     sendMessage()
   }
 }
+
+// Emoji button
+const emojiButton = document.querySelector('#emoji-btn')
+const picker = new EmojiButton()
+
+picker.on('emoji', emoji => {
+  input.value += emoji
+})
+
+emojiButton.addEventListener('click', () => {
+  picker.pickerVisible ? picker.hidePicker() : picker.showPicker(emojiButton)
+})
