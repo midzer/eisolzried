@@ -28,6 +28,10 @@
               0 16px 16px rgba(0,0,0,0.12);
 }
 
+.emoji-picker {
+  z-index: 9;
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
