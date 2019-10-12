@@ -111,7 +111,7 @@ document.getElementById('chat-form').onkeypress = event => {
 
 // Emoji button
 const emojiButton = document.querySelector('#emoji-btn')
-const picker = new EmojiButton()
+const picker = new EmojiButton({position: 'top-end'})
 
 picker.on('emoji', emoji => {
   input.value += emoji
