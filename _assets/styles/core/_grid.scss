@@ -2,15 +2,6 @@
   display: grid;
   grid-gap: 2px;
   
-  &--big {
-    @include media-breakpoint-down(md) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
   &--normal {
     @include media-breakpoint-only(xs) {
       grid-template-columns: repeat(1, 1fr);

@@ -4,16 +4,12 @@
 {% assign videos = include.src %}
 {% endif %}
 
-{% if include.type == 'animation' %}
 <div class="grid grid--normal top-buffer bottom-buffer">
   {% for video in videos %}
-    {% include element/animation.html name=video.name %}
+    {% if include.type == 'animation' %}
+      {% include element/animation.html name=video.name %}
+    {% else %}
+      {% include element/video.html name=video.name %}
+    {% endif %}
   {% endfor %}
 </div>
-{% else %}
-<div class="grid grid--big top-buffer bottom-buffer">
-  {% for video in videos %}
-    {% include element/video.html name=video.name %}
-  {% endfor %}
-</div>
-{% endif %}
