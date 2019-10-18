@@ -1,7 +1,7 @@
 <div class="grid grid--small bottom-buffer">
 {% for image in site.data.archive.misc %}
     <a href="{{ page.imgfolder }}{{ image.name }}" class="lightbox">
-        <img class="lazy card-img" src="{% include helper/trans.html %}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" alt="{{ image.text }}">
+        <img class="lazy" src="{% include helper/trans.html %}" data-src="{{ page.imgfolder }}thumbs/{{ image.name }}" alt="{{ image.text }}">
     </a>
     {% endfor %}
 </div>
