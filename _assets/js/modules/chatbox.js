@@ -110,13 +110,13 @@ document.getElementById('chat-form').onkeypress = event => {
 }
 
 // Emoji button
-const emojiButton = document.querySelector('#emoji-btn')
+const emojiButton = document.getElementById('emoji-btn')
 const picker = new EmojiButton({position: 'top-end'})
 
 picker.on('emoji', emoji => {
   input.value += emoji
 })
 
-emojiButton.addEventListener('click', () => {
+emojiButton.onclick = () => {
   picker.pickerVisible ? picker.hidePicker() : picker.showPicker(emojiButton)
-})
+}
