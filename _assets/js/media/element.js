@@ -9,7 +9,9 @@ const imgLength = images.length,
   vidPath = '/assets/videos/media/',
   imgTemplate = document.createElement('img'),
   vidTemplate = document.createElement('video'),
-  extension = vidTemplate.canPlayType('video/webm') ? 'webm' : 'mp4',
+  canPlayWebm = vidTemplate.canPlayType('video/webm'),
+  extension = canPlayWebm ? 'webm' : 'mp4',
+  type = canPlayWebm ? 'video/webm;codecs="vp9,opus"' : 'video/mp4;codecs="avc1.42c01e,mp4a.40.2"',
   frag = document.createDocumentFragment()
 
 let elements,
@@ -90,6 +92,7 @@ function createElement (index) {
       div.id = `v${element}`
       const vid = vidTemplate.cloneNode(false)
       vid.src = `${path}${element}.${extension}`
+      vid.setAttribute('type', type)
       div.appendChild(vid)
       link.appendChild(div)
     }
