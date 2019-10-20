@@ -1,4 +1,5 @@
 import { create, reset } from './media/element'
+import { loadScript } from './load/loadscript'
 
 function cleanup (grid) {
   while (grid.firstChild) {
@@ -30,4 +31,5 @@ videoTab.addEventListener('hidden.bs.tab', () => {
   cleanup(videoGrid)
 })
 // Kickstart
-create(imageGrid)
+const lightbox = loadScript('lightbox.js')
+lightbox.then(() => create(imageGrid))

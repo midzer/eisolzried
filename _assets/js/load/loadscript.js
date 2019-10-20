@@ -1,28 +1,15 @@
 export function loadScript (file) {
-  const script = document.createElement('script')
-  script.async = false
-  script.src = `/assets/js/${file}`
-  if (document.head.lastChild.src !== script.src) {
-    document.head.appendChild(script)
-  }
-}
-
-/*
-export function loadScript (file) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script')
-    script.async = false
+    script.async = true
     script.src = `/assets/js/${file}`
-    script.onload = () => {
-      resolve(script.src)
-    }
+    script.onload = resolve
     script.onerror = reject
-    if (document.body.lastChild.src !== script.src) {
-      //document.body.appendChild(script)
-      document.documentElement.appendChild(script)
+    if (document.head.lastChild.src !== script.src) {
+      document.head.appendChild(script)
     }
   })
-}*/
+}
 
 //export function loadModule (src) {
 //  import(/* webpackIgnore: true */`./modules/${src}`)
