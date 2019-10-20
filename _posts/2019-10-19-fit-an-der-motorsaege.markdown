@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fit werden an der Motorsäge"
+title:  "Fit an der Motorsäge"
 date:   2019-10-19
 imgfolder: /assets/images/2019/uebungen/
 vidfolder: /assets/videos/2019/

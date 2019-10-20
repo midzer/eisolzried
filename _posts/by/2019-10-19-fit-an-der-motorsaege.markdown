@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fit werdn an da Motorsaag"
+title:  "Fit an da Motorsaag"
 date:   2019-10-19
 imgfolder: /assets/images/2019/uebungen/
 vidfolder: /assets/videos/2019/
