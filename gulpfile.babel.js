@@ -6,8 +6,6 @@ import htmlmin from 'gulp-htmlmin'
 import log from 'fancy-log'
 import svgSprite from 'gulp-svg-sprite'
 import plumber from 'gulp-plumber'
-import imagemin from 'gulp-imagemin'
-import imageminMozjpeg from 'imagemin-mozjpeg'
 import childProcess from 'child_process'
 import swPrecache from 'sw-precache'
 import path from 'path'
@@ -25,6 +23,7 @@ gulp.task('copy', () => {
     //'_assets/audio/**',
     '_assets/data/**',
     '_assets/gimmicks/**',
+    '_assets/images/**/*',
     //'_assets/videos/**'
   ], {
     base: '_assets'
@@ -178,23 +177,6 @@ gulp.task('icons', () => {
     .pipe(gulp.dest('_site/assets'))
 })
 
-// ImageMin
-gulp.task('imagemin', () => {
-  return gulp.src('_assets/images/**/*')
-    .pipe(gulp.dest('_site/assets/images'))
-})
-
-gulp.task('imagemin:prod', () => {
-  return gulp.src('_assets/images/**/*')
-    .pipe(imagemin([
-      imageminMozjpeg({
-        quality: 90,
-        progressive: false
-      })
-    ]))
-    .pipe(gulp.dest('_site/assets/images'))
-})
-
 // Jekyll
 gulp.task('jekyll', done => {
   return childProcess.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts'], { stdio: 'inherit' })
@@ -310,8 +292,8 @@ gulp.task('scripts:prod', () => {
 })
 
 // Build
-gulp.task('build', gulp.series('jekyll', 'copy', 'scripts', 'sass', 'imagemin', 'icons', 'precache'))
-gulp.task('build:prod', gulp.series('jekyll:prod', 'copy', 'scripts:prod', 'sass:prod', /*'imagemin:prod',*/ 'icons', 'precache:prod', 'htmlmin'))
+gulp.task('build', gulp.series('jekyll', 'copy', 'scripts', 'sass', 'icons', 'precache'))
+gulp.task('build:prod', gulp.series('jekyll:prod', 'copy', 'scripts:prod', 'sass:prod', 'icons', 'precache:prod', 'htmlmin'))
 
 // Serve
 gulp.task('serve', gulp.series('build', () => { 
