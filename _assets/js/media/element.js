@@ -76,21 +76,21 @@ function createElement (index) {
     const img = imgTemplate.cloneNode(false)
     if (imgMode) {
         link.href = `${path}${element.name}.jpg`
-        img.setAttribute('data-src', `${path}thumbs/${element.name}@1x.jpg`)
+        img.setAttribute('data-src', `${path}thumbs/${element.name}-1x.jpg`)
         img.setAttribute('data-srcset',
-                         `${path}thumbs/${element.name}@1x.jpg 1x,
-                          ${path}thumbs/${element.name}@2x.jpg 2x,
-                          ${path}thumbs/${element.name}@3x.jpg 3x`)
+                         `${path}thumbs/${element.name}-1x.jpg 1x,
+                          ${path}thumbs/${element.name}-2x.jpg 2x,
+                          ${path}thumbs/${element.name}-3x.jpg 3x`)
         img.alt = element.text
     }
     else {
         link.href = `#v${element}`
         link.setAttribute('data-type', 'html')
-        img.setAttribute('data-src', `${path}thumbs/${element}@1x.jpg`)
+        img.setAttribute('data-src', `${path}thumbs/${element}-1x.jpg`)
         img.setAttribute('data-srcset',
-                         `${path}thumbs/${element}@1x.jpg 1x,
-                          ${path}thumbs/${element}@2x.jpg 2x,
-                          ${path}thumbs/${element}@3x.jpg 3x`)
+                         `${path}thumbs/${element}-1x.jpg 1x,
+                          ${path}thumbs/${element}-2x.jpg 2x,
+                          ${path}thumbs/${element}-3x.jpg 3x`)
         img.alt = element
     }
     observer.observe(img)
