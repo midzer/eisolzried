@@ -307,7 +307,6 @@ gulp.task('serve', gulp.series('build', () => {
   
   gulp.watch(['_assets/styles/**/*.scss'], gulp.series('sass'))
   gulp.watch(['_assets/js/**/*.js'], gulp.series('scripts'))
-  gulp.watch(['_assets/images/**/*'], gulp.series('imagemin'))
   gulp.watch(['_assets/icons/**/*.svg'], gulp.series('icons'))
   gulp.watch([
     '_layouts/**/*',
