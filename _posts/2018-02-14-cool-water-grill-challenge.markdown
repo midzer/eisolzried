@@ -5,7 +5,7 @@ date:   2018-02-14
 imgfolder: /assets/images/2018/feiern/
 vidfolder: /assets/videos/2018/
 images:
-  - name: challenge.jpg
+  - name: challenge
     text: Cool Water Challenge
 videos:
   - name: challenge

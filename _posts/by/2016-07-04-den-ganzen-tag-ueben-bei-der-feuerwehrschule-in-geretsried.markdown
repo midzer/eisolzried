@@ -4,11 +4,11 @@ title:  "An ganzn Dog übn bei da Feiaweaschui Geretsria"
 date:   2016-07-04
 imgfolder: /assets/images/2016/uebungen/
 images:
-  - name: geretsried1.jpg
+  - name: geretsried1
     text: Geretsried 1
-  - name: geretsried2.jpg
+  - name: geretsried2
     text: Geretsried 2
-  - name: geretsried3.jpg
+  - name: geretsried3
     text: Geretsried 3
 lang: by
 tags: uebungen

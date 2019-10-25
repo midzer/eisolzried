@@ -4,9 +4,9 @@ title:  "Sandsäck fülln im Bauhof Dacha"
 date:   2015-07-10
 imgfolder: /assets/images/2015/uebungen/
 images:
-  - name: sandsack1.jpg
+  - name: sandsack1
     text: Sandsack 1
-  - name: sandsack2.jpg
+  - name: sandsack2
     text: Sandsack 2
 lang: by
 tags: uebungen

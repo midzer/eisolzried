@@ -4,45 +4,45 @@ title:  "A Fahrzeigweih is nia vakehrt"
 date:   2016-06-15
 imgfolder: /assets/images/2016/feiern/
 images:
-  - name: fahrzeugweihe01.jpg
+  - name: fahrzeugweihe01
     text: Fahrzeugweihe 1
-  - name: fahrzeugweihe02.jpg
+  - name: fahrzeugweihe02
     text: Fahrzeugweihe 2
-  - name: fahrzeugweihe03.jpg
+  - name: fahrzeugweihe03
     text: Fahrzeugweihe 3
-  - name: fahrzeugweihe04.jpg
+  - name: fahrzeugweihe04
     text: Fahrzeugweihe 4
-  - name: fahrzeugweihe05.jpg
+  - name: fahrzeugweihe05
     text: Fahrzeugweihe 5
-  - name: fahrzeugweihe06.jpg
+  - name: fahrzeugweihe06
     text: Fahrzeugweihe 6
-  - name: fahrzeugweihe07.jpg
+  - name: fahrzeugweihe07
     text: Fahrzeugweihe 7
-  - name: fahrzeugweihe08.jpg
+  - name: fahrzeugweihe08
     text: Fahrzeugweihe 8
-  - name: fahrzeugweihe09.jpg
+  - name: fahrzeugweihe09
     text: Fahrzeugweihe 9
-  - name: fahrzeugweihe10.jpg
+  - name: fahrzeugweihe10
     text: Fahrzeugweihe 10
-  - name: fahrzeugweihe11.jpg
+  - name: fahrzeugweihe11
     text: Fahrzeugweihe 11
-  - name: fahrzeugweihe12.jpg
+  - name: fahrzeugweihe12
     text: Fahrzeugweihe 12
-  - name: fahrzeugweihe13.jpg
+  - name: fahrzeugweihe13
     text: Fahrzeugweihe 13
-  - name: fahrzeugweihe14.jpg
+  - name: fahrzeugweihe14
     text: Fahrzeugweihe 14
-  - name: fahrzeugweihe15.jpg
+  - name: fahrzeugweihe15
     text: Fahrzeugweihe 15
-  - name: fahrzeugweihe16.jpg
+  - name: fahrzeugweihe16
     text: Fahrzeugweihe 16
-  - name: fahrzeugweihe17.jpg
+  - name: fahrzeugweihe17
     text: Fahrzeugweihe 17
-  - name: fahrzeugweihe18.jpg
+  - name: fahrzeugweihe18
     text: Fahrzeugweihe 18
-  - name: fahrzeugweihe19.jpg
+  - name: fahrzeugweihe19
     text: Fahrzeugweihe 19
-  - name: fahrzeugweihe20.jpg
+  - name: fahrzeugweihe20
     text: Fahrzeugweihe 20
 lang: de
 tags: allgemeines

@@ -4,25 +4,25 @@ title:  "In da Praxis lernt ma as Handwerk"
 date:   2018-04-14
 imgfolder: /assets/images/2018/uebungen/
 images:
-  - name: truppmann01.jpg
+  - name: truppmann01
     text: Truppmann 1
-  - name: truppmann02.jpg
+  - name: truppmann02
     text: Truppmann 2
-  - name: truppmann03.jpg
+  - name: truppmann03
     text: Truppmann 3
-  - name: truppmann04.jpg
+  - name: truppmann04
     text: Truppmann 4
-  - name: truppmann05.jpg
+  - name: truppmann05
     text: Truppmann 5
-  - name: truppmann06.jpg
+  - name: truppmann06
     text: Truppmann 6
-  - name: truppmann07.jpg
+  - name: truppmann07
     text: Truppmann 7
-  - name: truppmann08.jpg
+  - name: truppmann08
     text: Truppmann 8
-  - name: truppmann09.jpg
+  - name: truppmann09
     text: Truppmann 9
-  - name: truppmann10.jpg
+  - name: truppmann10
     text: Truppmann 10
 lang: by
 tags: uebungen

@@ -5,43 +5,43 @@ date:   2019-01-15
 imgfolder: /assets/images/2019/einsaetze/
 vidfolder: /assets/videos/2019/
 images:
-  - name: oberland01.jpg
+  - name: oberland01
     text: Oberland 1
-  - name: oberland02.jpg
+  - name: oberland02
     text: Oberland 2
-  - name: oberland03.jpg
+  - name: oberland03
     text: Oberland 3
-  - name: oberland04.jpg
+  - name: oberland04
     text: Oberland 4
-  - name: oberland05.jpg
+  - name: oberland05
     text: Oberland 5
-  - name: oberland06.jpg
+  - name: oberland06
     text: Oberland 6
-  - name: oberland07.jpg
+  - name: oberland07
     text: Oberland 7
-  - name: oberland08.jpg
+  - name: oberland08
     text: Oberland 8
-  - name: oberland09.jpg
+  - name: oberland09
     text: Oberland 9
-  - name: oberland10.jpg
+  - name: oberland10
     text: Oberland 10
-  - name: oberland11.jpg
+  - name: oberland11
     text: Oberland 11
-  - name: oberland12.jpg
+  - name: oberland12
     text: Oberland 12
-  - name: oberland13.jpg
+  - name: oberland13
     text: Oberland 13
-  - name: oberland14.jpg
+  - name: oberland14
     text: Oberland 14
-  - name: oberland15.jpg
+  - name: oberland15
     text: Oberland 15
-  - name: oberland16.jpg
+  - name: oberland16
     text: Oberland 16
-  - name: oberland17.jpg
+  - name: oberland17
     text: Oberland 17
-  - name: oberland18.jpg
+  - name: oberland18
     text: Oberland 18
-  - name: oberland19.jpg
+  - name: oberland19
     text: Oberland 19
 videos:
   - name: oberland

@@ -5,21 +5,21 @@ date:   2018-01-05
 imgfolder: /assets/images/2018/feiern/
 vidfolder: /assets/videos/2018/
 images:
-  - name: gokart1.jpg
+  - name: gokart1
     text: Gokart 1
-  - name: gokart2.jpg
+  - name: gokart2
     text: Gokart 2
-  - name: gokart3.jpg
+  - name: gokart3
     text: Gokart 3
-  - name: gokart4.jpg
+  - name: gokart4
     text: Gokart 4
-  - name: gokart5.jpg
+  - name: gokart5
     text: Gokart 5
-  - name: gokart6.jpg
+  - name: gokart6
     text: Gokart 6
-  - name: gokart7.jpg
+  - name: gokart7
     text: Gokart 7
-  - name: gokart8.jpg
+  - name: gokart8
     text: Gokart 8
 videos:
   - name: kartfahren

@@ -7,9 +7,16 @@
   <a href="{{ post.url | prepend: site.baseurl }}">
   {% endif %}
     {% if post.images %}
-    <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}" alt="{{ post.images.first.text }}">
+    <img class="lazy img-fluid rounded"
+         src="{% include helper/trans.html %}"
+         data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}.jpg"
+         data-srcset="{{ post.imgfolder }}thumbs/{{ post.images.first.name }}-1x.jpg 1x, {{ post.imgfolder }}thumbs/{{ post.images.first.name }}-2x.jpg 2x, {{ post.imgfolder }}thumbs/{{ post.images.first.name }}-3x.jpg 3x"
+         alt="{{ post.images.first.text }}">
     {% else %}
-    <img class="lazy img-fluid rounded" src="{% include helper/trans.html %}" data-src="/assets/images/index/wappen.png" alt="Wappen Bergkirchen">
+    <img class="lazy img-fluid rounded"
+         src="{% include helper/trans.html %}"
+         data-src="/assets/images/index/wappen.png"
+         alt="Wappen Bergkirchen">
     {% endif %}
   </a>
   {% if forloop.index > 4 %}

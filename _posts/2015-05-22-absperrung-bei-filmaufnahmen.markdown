@@ -4,13 +4,13 @@ title:  "Absperrung bei Filmaufnahmen"
 date:   2015-05-22
 imgfolder: /assets/images/2015/einsaetze/
 images:
-  - name: film1.jpg
+  - name: film1
     text: Film 1
-  - name: film2.jpg
+  - name: film2
     text: Film 2
-  - name: film3.jpg
+  - name: film3
     text: Film 3
-  - name: film4.jpg
+  - name: film4
     text: Film 4
 lang: de
 tags: einsaetze

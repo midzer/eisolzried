@@ -4,9 +4,9 @@ title:  "Rehunfall bei Priel"
 date:   2015-11-30
 imgfolder: /assets/images/2015/einsaetze/
 images:
-  - name: rehunfall1.jpg
+  - name: rehunfall1
     text: Rehunfall 1
-  - name: rehunfall2.jpg
+  - name: rehunfall2
     text: Rehunfall 2
 lang: de
 tags: einsaetze

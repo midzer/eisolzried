@@ -4,13 +4,13 @@ title:  "Sturmeinsatz im Brunnenweg"
 date:   2015-04-02
 imgfolder: /assets/images/2015/einsaetze/
 images:
-  - name: sturm1.jpg
+  - name: sturm1
     text: Sturm 1
-  - name: sturm2.jpg
+  - name: sturm2
     text: Sturm 2
-  - name: sturm3.jpg
+  - name: sturm3
     text: Sturm 3
-  - name: sturm4.jpg
+  - name: sturm4
     text: Sturm 4
 lang: by
 tags: einsaetze

@@ -4,9 +4,9 @@ title:  "Wenn die staade Zeit vorbei is"
 date:   2015-12-06
 imgfolder: /assets/images/2015/feiern/
 images:
-  - name: weihnachtsfeier1.jpg
+  - name: weihnachtsfeier1
     text: Weihnachtsfeier 1
-  - name: weihnachtsfeier2.jpg
+  - name: weihnachtsfeier2
     text: Weihnachtsfeier 2
 lang: by
 tags: allgemeines

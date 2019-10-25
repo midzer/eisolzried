@@ -5,51 +5,51 @@ date:   2017-07-03
 imgfolder: /assets/images/2017/uebungen/
 vidfolder: /assets/videos/2017/
 images:
-  - name: juliuebung01.jpg
+  - name: juliuebung01
     text: Juliübung 1
-  - name: juliuebung02.jpg
+  - name: juliuebung02
     text: Juliübung 2
-  - name: juliuebung03.jpg
+  - name: juliuebung03
     text: Juliübung 3
-  - name: juliuebung04.jpg
+  - name: juliuebung04
     text: Juliübung 4
-  - name: juliuebung05.jpg
+  - name: juliuebung05
     text: Juliübung 5
-  - name: juliuebung06.jpg
+  - name: juliuebung06
     text: Juliübung 6
-  - name: juliuebung07.jpg
+  - name: juliuebung07
     text: Juliübung 7
-  - name: juliuebung08.jpg
+  - name: juliuebung08
     text: Juliübung 8
-  - name: juliuebung09.jpg
+  - name: juliuebung09
     text: Juliübung 9
-  - name: juliuebung10.jpg
+  - name: juliuebung10
     text: Juliübung 10
-  - name: juliuebung11.jpg
+  - name: juliuebung11
     text: Juliübung 11
-  - name: juliuebung12.jpg
+  - name: juliuebung12
     text: Juliübung 12
-  - name: juliuebung13.jpg
+  - name: juliuebung13
     text: Juliübung 13
-  - name: juliuebung14.jpg
+  - name: juliuebung14
     text: Juliübung 14
-  - name: juliuebung15.jpg
+  - name: juliuebung15
     text: Juliübung 15
-  - name: juliuebung16.jpg
+  - name: juliuebung16
     text: Juliübung 16
-  - name: juliuebung17.jpg
+  - name: juliuebung17
     text: Juliübung 17
-  - name: juliuebung18.jpg
+  - name: juliuebung18
     text: Juliübung 18
-  - name: juliuebung19.jpg
+  - name: juliuebung19
     text: Juliübung 19
-  - name: juliuebung20.jpg
+  - name: juliuebung20
     text: Juliübung 20
-  - name: juliuebung21.jpg
+  - name: juliuebung21
     text: Juliübung 21
-  - name: juliuebung22.jpg
+  - name: juliuebung22
     text: Juliübung 22
-  - name: juliuebung23.jpg
+  - name: juliuebung23
     text: Juliübung 23
 videos:
   - name: juliuebung1

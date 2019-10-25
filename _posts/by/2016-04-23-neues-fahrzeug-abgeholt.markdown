@@ -4,17 +4,17 @@ title:  "Neis Fahrzeig obg'hoid"
 date:   2016-04-23
 imgfolder: /assets/images/2016/uebungen/
 images:
-  - name: neues-fahrzeug1.jpg
+  - name: neues-fahrzeug1
     text: Neues Fahrzeug 1
-  - name: neues-fahrzeug2.jpg
+  - name: neues-fahrzeug2
     text: Neues Fahrzeug 2
-  - name: neues-fahrzeug3.jpg
+  - name: neues-fahrzeug3
     text: Neues Fahrzeug 3
-  - name: neues-fahrzeug4.jpg
+  - name: neues-fahrzeug4
     text: Neues Fahrzeug 4
-  - name: neues-fahrzeug5.jpg
+  - name: neues-fahrzeug5
     text: Neues Fahrzeug 5
-  - name: neues-fahrzeug6.jpg
+  - name: neues-fahrzeug6
     text: Neues Fahrzeug 6
 lang: by
 tags: allgemeines

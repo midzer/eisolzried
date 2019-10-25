@@ -4,9 +4,9 @@ title:  "Lange Ölspua zum Eilzriada Sä"
 date:   2015-08-12
 imgfolder: /assets/images/2015/einsaetze/
 images:
-  - name: oelspur1.jpg
+  - name: oelspur1
     text: Ölspur 1
-  - name: oelspur2.jpg
+  - name: oelspur2
     text: Ölspur 2
 lang: by
 tags: einsaetze

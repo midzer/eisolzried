@@ -4,9 +4,9 @@ title:  "Leck in LKW-Tank"
 date:   2015-07-10
 imgfolder: /assets/images/2015/einsaetze/
 images:
-  - name: leck1.jpg
+  - name: leck1
     text: Leck 1
-  - name: leck2.jpg
+  - name: leck2
     text: Leck 2
 lang: by
 tags: einsaetze

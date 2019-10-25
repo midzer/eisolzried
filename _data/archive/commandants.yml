@@ -1,31 +1,31 @@
 - name: placeholder.svg
   text: Karl Liebl
   year: 1900-1908
-- name: HeiglSimon.jpg
+- name: HeiglSimon
   text: Simon Heigl
   year: 1908-1920
-- name: FritzSimon.jpg
+- name: FritzSimon
   text: Simon Fritz
   year: 1920-1933
-- name: MuellerMichaelSen.jpg
+- name: MuellerMichaelSen
   text: Michael Müller sen.
   year: 1933-1945
-- name: BrummerPeter.jpg
+- name: BrummerPeter
   text: Peter Brummer
   year: 1945-1950
-- name: FeichtAnton.jpg
+- name: FeichtAnton
   text: Anton Feicht
   year: 1950-1964
-- name: MuellerMichael.jpg
+- name: MuellerMichael
   text: Michael Müller jun.
   year: 1964-1980
-- name: WexlbergerSimon.jpg
+- name: WexlbergerSimon
   text: Simon Wexlberger
   year: 1980-1994
-- name: HoermannMichael.jpg
+- name: HoermannMichael
   text: Michael Hörmann
   year: 1994-2009
-- name: SchusterChristian.jpg
+- name: SchusterChristian
   text: Christian Schuster
   year: 2009-2015
   

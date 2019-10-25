@@ -4,49 +4,49 @@ title:  "Leistungsprüfung Wasser bestanden"
 date:   2015-11-25
 imgfolder: /assets/images/2015/uebungen/
 images:
-  - name: wasser01.jpg
+  - name: wasser01
     text: Wasser 1
-  - name: wasser02.jpg
+  - name: wasser02
     text: Wasser 2
-  - name: wasser03.jpg
+  - name: wasser03
     text: Wasser 3
-  - name: wasser04.jpg
+  - name: wasser04
     text: Wasser 4
-  - name: wasser05.jpg
+  - name: wasser05
     text: Wasser 5
-  - name: wasser06.jpg
+  - name: wasser06
     text: Wasser 6
-  - name: wasser07.jpg
+  - name: wasser07
     text: Wasser 7
-  - name: wasser08.jpg
+  - name: wasser08
     text: Wasser 8
-  - name: wasser09.jpg
+  - name: wasser09
     text: Wasser 9
-  - name: wasser10.jpg
+  - name: wasser10
     text: Wasser 10
-  - name: wasser11.jpg
+  - name: wasser11
     text: Wasser 11
-  - name: wasser12.jpg
+  - name: wasser12
     text: Wasser 12
-  - name: wasser13.jpg
+  - name: wasser13
     text: Wasser 13
-  - name: wasser14.jpg
+  - name: wasser14
     text: Wasser 14
-  - name: wasser15.jpg
+  - name: wasser15
     text: Wasser 15
-  - name: wasser16.jpg
+  - name: wasser16
     text: Wasser 16
-  - name: wasser17.jpg
+  - name: wasser17
     text: Wasser 17
-  - name: wasser18.jpg
+  - name: wasser18
     text: Wasser 18
-  - name: wasser19.jpg
+  - name: wasser19
     text: Wasser 19
-  - name: wasser20.jpg
+  - name: wasser20
     text: Wasser 20
-  - name: wasser21.jpg
+  - name: wasser21
     text: Wasser 21
-  - name: wasser22.jpg
+  - name: wasser22
     text: Wasser 22
 lang: de
 tags: uebungen

@@ -4,33 +4,33 @@ title:  "Wachsmaschin brennt"
 date:   2018-09-04
 imgfolder: /assets/images/2018/einsaetze/
 images:
-  - name: wachsmaschine01.jpg
+  - name: wachsmaschine01
     text: Wachsmaschine 1
-  - name: wachsmaschine02.jpg
+  - name: wachsmaschine02
     text: Wachsmaschine 2
-  - name: wachsmaschine03.jpg
+  - name: wachsmaschine03
     text: Wachsmaschine 3
-  - name: wachsmaschine04.jpg
+  - name: wachsmaschine04
     text: Wachsmaschine 4
-  - name: wachsmaschine05.jpg
+  - name: wachsmaschine05
     text: Wachsmaschine 5
-  - name: wachsmaschine06.jpg
+  - name: wachsmaschine06
     text: Wachsmaschine 6
-  - name: wachsmaschine07.jpg
+  - name: wachsmaschine07
     text: Wachsmaschine 7
-  - name: wachsmaschine08.jpg
+  - name: wachsmaschine08
     text: Wachsmaschine 8
-  - name: wachsmaschine09.jpg
+  - name: wachsmaschine09
     text: Wachsmaschine 9
-  - name: wachsmaschine10.jpg
+  - name: wachsmaschine10
     text: Wachsmaschine 10
-  - name: wachsmaschine11.jpg
+  - name: wachsmaschine11
     text: Wachsmaschine 11
-  - name: wachsmaschine12.jpg
+  - name: wachsmaschine12
     text: Wachsmaschine 12
-  - name: wachsmaschine13.jpg
+  - name: wachsmaschine13
     text: Wachsmaschine 13
-  - name: wachsmaschine14.jpg
+  - name: wachsmaschine14
     text: Wachsmaschine 14
 lang: by
 tags: einsaetze

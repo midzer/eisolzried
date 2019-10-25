@@ -4,9 +4,9 @@ title:  "Sondasignalfahrt Training"
 date:   2015-11-03
 imgfolder: /assets/images/2015/uebungen/
 images:
-  - name: sondersignalfahrt1.jpg
+  - name: sondersignalfahrt1
     text: Sondersignalfahrt 1
-  - name: sondersignalfahrt2.jpg
+  - name: sondersignalfahrt2
     text: Sondersignalfahrt 2
 lang: by
 tags: uebungen

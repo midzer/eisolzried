@@ -4,9 +4,9 @@ title:  "Gloabrand g'löscht"
 date:   2015-12-07
 imgfolder: /assets/images/2015/einsaetze/
 images:
-  - name: kleinbrand1.jpg
+  - name: kleinbrand1
     text: Kleinbrand 1
-  - name: kleinbrand2.jpg
+  - name: kleinbrand2
     text: Kleinbrand 2
 lang: by
 tags: einsaetze

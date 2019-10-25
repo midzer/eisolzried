@@ -4,9 +4,9 @@ title:  "Fahrzeig auf Abwegen"
 date:   2015-09-10
 imgfolder: /assets/images/2015/einsaetze/
 images:
-  - name: fahrzeug1.jpg
+  - name: fahrzeug1
     text: Fahrzeug 1
-  - name: fahrzeug2.jpg
+  - name: fahrzeug2
     text: Fahrzeug 2
 lang: by
 tags: einsaetze

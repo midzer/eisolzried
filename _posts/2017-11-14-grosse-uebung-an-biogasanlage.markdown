@@ -4,33 +4,33 @@ title:  "Große Übung an Biogasanlage"
 date:   2017-11-14
 imgfolder: /assets/images/2017/uebungen/
 images:
-  - name: biogas01.jpg
+  - name: biogas01
     text: Biogas 1
-  - name: biogas02.jpg
+  - name: biogas02
     text: Biogas 2
-  - name: biogas03.jpg
+  - name: biogas03
     text: Biogas 3
-  - name: biogas04.jpg
+  - name: biogas04
     text: Biogas 4
-  - name: biogas05.jpg
+  - name: biogas05
     text: Biogas 5
-  - name: biogas06.jpg
+  - name: biogas06
     text: Biogas 6
-  - name: biogas07.jpg
+  - name: biogas07
     text: Biogas 7
-  - name: biogas08.jpg
+  - name: biogas08
     text: Biogas 8
-  - name: biogas09.jpg
+  - name: biogas09
     text: Biogas 9
-  - name: biogas10.jpg
+  - name: biogas10
     text: Biogas 10
-  - name: biogas11.jpg
+  - name: biogas11
     text: Biogas 11
-  - name: biogas12.jpg
+  - name: biogas12
     text: Biogas 12
-  - name: biogas13.jpg
+  - name: biogas13
     text: Biogas 13
-  - name: biogas14.jpg
+  - name: biogas14
     text: Biogas 14
 lang: de
 tags: uebungen

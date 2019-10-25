@@ -5,13 +5,13 @@ date:   2019-10-19
 imgfolder: /assets/images/2019/uebungen/
 vidfolder: /assets/videos/2019/
 images:
-  - name: motorsaege1.jpg
+  - name: motorsaege1
     text: Motorsäge 1
-  - name: motorsaege2.jpg
+  - name: motorsaege2
     text: Motorsäge 2
-  - name: motorsaege3.jpg
+  - name: motorsaege3
     text: Motorsäge 3
-  - name: motorsaege4.jpg
+  - name: motorsaege4
     text: Motorsäge 4
 videos:
   - name: motorsaege

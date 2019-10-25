@@ -4,13 +4,13 @@ title:  "Erneut Crash am Eisolzrieder See"
 date:   2017-06-11
 imgfolder: /assets/images/2017/einsaetze/
 images:
-  - name: motorrad1.jpg
+  - name: motorrad1
     text: Motorrad 1
-  - name: motorrad2.jpg
+  - name: motorrad2
     text: Motorrad 2
-  - name: motorrad3.jpg
+  - name: motorrad3
     text: Motorrad 3
-  - name: motorrad4.jpg
+  - name: motorrad4
     text: Motorrad 4
 lang: de
 tags: einsaetze

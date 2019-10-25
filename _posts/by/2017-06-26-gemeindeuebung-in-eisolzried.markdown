@@ -4,69 +4,69 @@ title:  "Gemeindeübung in Eilzria"
 date:   2017-06-26
 imgfolder: /assets/images/2017/uebungen/
 images:
-  - name: gemeindeuebung1.jpg
+  - name: gemeindeuebung1
     text: Gemeindeübung 1
-  - name: gemeindeuebung2.jpg
+  - name: gemeindeuebung2
     text: Gemeindeübung 2
-  - name: gemeindeuebung3.jpg
+  - name: gemeindeuebung3
     text: Gemeindeübung 3
-  - name: gemeindeuebung4.jpg
+  - name: gemeindeuebung4
     text: Gemeindeübung 4
-  - name: gemeindeuebung5.jpg
+  - name: gemeindeuebung5
     text: Gemeindeübung 5
-  - name: gemeindeuebung6.jpg
+  - name: gemeindeuebung6
     text: Gemeindeübung 6
-  - name: gemeindeuebung7.jpg
+  - name: gemeindeuebung7
     text: Gemeindeübung 7
-  - name: gemeindeuebung8.jpg
+  - name: gemeindeuebung8
     text: Gemeindeübung 8
-  - name: gemeindeuebung9.jpg
+  - name: gemeindeuebung9
     text: Gemeindeübung 9
-  - name: gemeindeuebung10.jpg
+  - name: gemeindeuebung10
     text: Gemeindeübung 10
-  - name: gemeindeuebung11.jpg
+  - name: gemeindeuebung11
     text: Gemeindeübung 11
-  - name: gemeindeuebung12.jpg
+  - name: gemeindeuebung12
     text: Gemeindeübung 12
-  - name: gemeindeuebung13.jpg
+  - name: gemeindeuebung13
     text: Gemeindeübung 13
-  - name: gemeindeuebung14.jpg
+  - name: gemeindeuebung14
     text: Gemeindeübung 14
-  - name: gemeindeuebung15.jpg
+  - name: gemeindeuebung15
     text: Gemeindeübung 15
-  - name: gemeindeuebung16.jpg
+  - name: gemeindeuebung16
     text: Gemeindeübung 16
-  - name: gemeindeuebung17.jpg
+  - name: gemeindeuebung17
     text: Gemeindeübung 17
-  - name: gemeindeuebung18.jpg
+  - name: gemeindeuebung18
     text: Gemeindeübung 18
-  - name: gemeindeuebung19.jpg
+  - name: gemeindeuebung19
     text: Gemeindeübung 19
-  - name: gemeindeuebung20.jpg
+  - name: gemeindeuebung20
     text: Gemeindeübung 20
-  - name: gemeindeuebung21.jpg
+  - name: gemeindeuebung21
     text: Gemeindeübung 21
-  - name: gemeindeuebung22.jpg
+  - name: gemeindeuebung22
     text: Gemeindeübung 22
-  - name: gemeindeuebung23.jpg
+  - name: gemeindeuebung23
     text: Gemeindeübung 23
-  - name: gemeindeuebung24.jpg
+  - name: gemeindeuebung24
     text: Gemeindeübung 24
-  - name: gemeindeuebung25.jpg
+  - name: gemeindeuebung25
     text: Gemeindeübung 25
-  - name: gemeindeuebung26.jpg
+  - name: gemeindeuebung26
     text: Gemeindeübung 26
-  - name: gemeindeuebung27.jpg
+  - name: gemeindeuebung27
     text: Gemeindeübung 27
-  - name: gemeindeuebung28.jpg
+  - name: gemeindeuebung28
     text: Gemeindeübung 28
-  - name: gemeindeuebung29.jpg
+  - name: gemeindeuebung29
     text: Gemeindeübung 29
-  - name: gemeindeuebung30.jpg
+  - name: gemeindeuebung30
     text: Gemeindeübung 30
-  - name: gemeindeuebung31.jpg
+  - name: gemeindeuebung31
     text: Gemeindeübung 31
-  - name: gemeindeuebung32.jpg
+  - name: gemeindeuebung32
     text: Gemeindeübung 32
 lang: by
 tags: uebungen

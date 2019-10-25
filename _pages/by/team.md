@@ -5,17 +5,17 @@ permalink: /by/team/
 imgfolder: /assets/images/team/
 vidfolder: /assets/videos/team/
 images:
-  - name: mlf1.jpg
+  - name: mlf1
     text: MLF 1
-  - name: mlf2.jpg
+  - name: mlf2
     text: MLF 2
-  - name: mlf3.jpg
+  - name: mlf3
     text: MLF 3
-  - name: mlf4.jpg
+  - name: mlf4
     text: MLF 4
-  - name: mlf5.jpg
+  - name: mlf5
     text: MLF 5
-  - name: tsf.jpg
+  - name: tsf
     text: TSF
 videos:
   - name: abfahrt-lentner
@@ -27,7 +27,7 @@ lang: by
 
 Olle Midglieda vo da Feiawea Eilzria und da Hubert ois Ehrenmidglied vorm Feiawea- und Bürgahaus. Miaßad Somma 2013 gwehn sei:
 
-{% include element/image.html name="gruppe2013.jpg" %}
+{% include element/image.html name="gruppe2013" %}
 
 Mir san 66 Leid, davo oa Hax, 17 Passive und 3 Ehrenmidglieda. (Stand: Oktoba 2015)
 

@@ -4,9 +4,9 @@ title:  "Schwara Vakeasunfoi auf da Landstraß"
 date:   2016-01-03
 imgfolder: /assets/images/2016/einsaetze/
 images:
-  - name: unfall1.jpg
+  - name: unfall1
     text: Unfall 1
-  - name: unfall2.jpg
+  - name: unfall2
     text: Unfall 2
 lang: by
 tags: einsaetze

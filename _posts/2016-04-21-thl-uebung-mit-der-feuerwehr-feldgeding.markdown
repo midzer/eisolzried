@@ -4,25 +4,25 @@ title:  "THL-Übung mit der Feuerwehr Feldgeding"
 date:   2016-04-21
 imgfolder: /assets/images/2016/uebungen/
 images:
-  - name: thl-feldgeding01.jpg
+  - name: thl-feldgeding01
     text: THL Feldgeding 1
-  - name: thl-feldgeding02.jpg
+  - name: thl-feldgeding02
     text: THL Feldgeding 2
-  - name: thl-feldgeding03.jpg
+  - name: thl-feldgeding03
     text: THL Feldgeding 3
-  - name: thl-feldgeding04.jpg
+  - name: thl-feldgeding04
     text: THL Feldgeding 4
-  - name: thl-feldgeding05.jpg
+  - name: thl-feldgeding05
     text: THL Feldgeding 5
-  - name: thl-feldgeding06.jpg
+  - name: thl-feldgeding06
     text: THL Feldgeding 6
-  - name: thl-feldgeding07.jpg
+  - name: thl-feldgeding07
     text: THL Feldgeding 7
-  - name: thl-feldgeding08.jpg
+  - name: thl-feldgeding08
     text: THL Feldgeding 8
-  - name: thl-feldgeding09.jpg
+  - name: thl-feldgeding09
     text: THL Feldgeding 9
-  - name: thl-feldgeding10.jpg
+  - name: thl-feldgeding10
     text: THL Feldgeding 10
 lang: de
 tags: uebungen

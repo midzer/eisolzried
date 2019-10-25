@@ -4,33 +4,33 @@ title:  "Sturmschoon auf Kreisstraß"
 date:   2017-10-29
 imgfolder: /assets/images/2017/einsaetze/
 images:
-  - name: sturm01.jpg
+  - name: sturm01
     text: Sturm 1
-  - name: sturm02.jpg
+  - name: sturm02
     text: Sturm 2
-  - name: sturm03.jpg
+  - name: sturm03
     text: Sturm 3
-  - name: sturm04.jpg
+  - name: sturm04
     text: Sturm 4
-  - name: sturm05.jpg
+  - name: sturm05
     text: Sturm 5
-  - name: sturm06.jpg
+  - name: sturm06
     text: Sturm 6
-  - name: sturm07.jpg
+  - name: sturm07
     text: Sturm 7
-  - name: sturm08.jpg
+  - name: sturm08
     text: Sturm 8
-  - name: sturm09.jpg
+  - name: sturm09
     text: Sturm 9
-  - name: sturm10.jpg
+  - name: sturm10
     text: Sturm 10
-  - name: sturm11.jpg
+  - name: sturm11
     text: Sturm 11
-  - name: sturm12.jpg
+  - name: sturm12
     text: Sturm 12
-  - name: sturm13.jpg
+  - name: sturm13
     text: Sturm 13
-  - name: sturm14.jpg
+  - name: sturm14
     text: Sturm 14
 lang: by
 tags: einsaetze

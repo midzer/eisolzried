@@ -4,9 +4,9 @@ title:  "Zruck schaun auf a Johr wo vui bassierd is"
 date:   2016-01-28
 imgfolder: /assets/images/2016/feiern/
 images:
-  - name: jahreshauptversammlung1.jpg
+  - name: jahreshauptversammlung1
     text: Jahreshauptversammlung 1
-  - name: jahreshauptversammlung2.jpg
+  - name: jahreshauptversammlung2
     text: Jahreshauptversammlung 2
 lang: by
 tags: allgemeines

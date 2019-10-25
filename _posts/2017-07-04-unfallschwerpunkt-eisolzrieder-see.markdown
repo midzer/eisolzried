@@ -4,9 +4,9 @@ title:  "Unfallschwerpunkt Eisolzrieder See"
 date:   2017-07-04
 imgfolder: /assets/images/2017/einsaetze/
 images:
-  - name: unfallschwerpunkt1.jpg
+  - name: unfallschwerpunkt1
     text: Unfallschwerpunkt 1
-  - name: unfallschwerpunkt2.jpg
+  - name: unfallschwerpunkt2
     text: Unfallschwerpunkt 2
 lang: de
 tags: einsaetze

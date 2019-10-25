@@ -4,9 +4,9 @@ title:  "Floßfahrt auf da Isar"
 date:   2015-06-15
 imgfolder: /assets/images/2015/feiern/
 images:
-  - name: flossfahrt1.jpg
+  - name: flossfahrt1
     text: Floßfahrt 1
-  - name: flossfahrt2.jpg
+  - name: flossfahrt2
     text: Floßfahrt 2
 lang: by
 tags: allgemeines

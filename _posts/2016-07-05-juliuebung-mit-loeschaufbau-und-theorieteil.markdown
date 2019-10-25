@@ -4,13 +4,13 @@ title:  "Juliübung mit Löschaufbau und Theorieteil"
 date:   2016-07-05
 imgfolder: /assets/images/2016/uebungen/
 images:
-  - name: juliuebung1.jpg
+  - name: juliuebung1
     text: Juliübung 1
-  - name: juliuebung2.jpg
+  - name: juliuebung2
     text: Juliübung 2
-  - name: juliuebung3.jpg
+  - name: juliuebung3
     text: Juliübung 3
-  - name: juliuebung4.jpg
+  - name: juliuebung4
     text: Juliübung 4
 lang: de
 tags: uebungen
