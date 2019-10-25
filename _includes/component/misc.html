@@ -3,7 +3,7 @@
     <a href="{{ page.imgfolder }}{{ image.name }}.jpg" class="lightbox">
         <img class="lazy"
              src="{% include helper/trans.html %}"
-             data-src="{{ page.imgfolder }}thumbs/{{ image.name }}.jpg"
+             data-src="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg"
              data-srcset="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg 1x, {{ page.imgfolder }}thumbs/{{ image.name }}-2x.jpg 2x, {{ page.imgfolder }}thumbs/{{ image.name }}-3x.jpg 3x"
              alt="{{ image.text }}">
     </a>
