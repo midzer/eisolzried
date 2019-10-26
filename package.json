@@ -25,6 +25,7 @@
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/register": "^7.6.2",
+    "anchor-js": "^4.2.0",
     "babel-loader": "^8.0.5",
     "bootstrap.native": "git+https://git@github.com/thednp/bootstrap.native.git",
     "bootstrap.native-loader": "^2.0.0",

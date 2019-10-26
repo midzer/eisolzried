@@ -3,6 +3,7 @@ import { loadScript } from './load/loadscript'
 import query from './helper/query'
 import toggleAudio from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
+const anchorJS = require('anchor-js')
 //import { Christmas } from './helper/christmas'
 
 // Lazy components
@@ -26,6 +27,13 @@ const items = query('.lazy')
 for (let i = 0, j = items.length; i < j; i++) {
   observer.observe(items[i])
 }
+
+// Anchors
+const anchors = new anchorJS({
+  icon: '#',
+  class: 'anchorjs-link'
+})
+anchors.add()
 
 // Theme switch
 function setTheme (dark) {
