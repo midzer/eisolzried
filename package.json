@@ -22,16 +22,16 @@
     "not dead"
   ],
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
     "@babel/register": "^7.6.2",
     "anchor-js": "^4.2.0",
     "babel-loader": "^8.0.5",
     "bootstrap.native": "git+https://git@github.com/thednp/bootstrap.native.git",
     "bootstrap.native-loader": "^2.0.0",
     "browser-sync": "^2.26.7",
-    "csso": "^3.5.1",
-    "emoji-button": "^2.0.0",
+    "csso": "^4.0.1",
+    "emoji-button": "^2.1.1",
     "fancy-log": "^1.3.3",
     "frappe-charts": "git+https://git@github.com/frappe/charts.git",
     "gulp": "^4.0.0",
@@ -47,7 +47,7 @@
     "rqrauhvmra__tobi": "git+https://git@github.com/rqrauhvmra/Tobi.git",
     "standard": "^14.3.1",
     "sw-precache": "^5.2.0",
-    "webpack": "^4.41.0",
+    "webpack": "^4.41.2",
     "webpack-merge": "^4.2.2",
     "webpack-stream": "^5.2.1"
   }
