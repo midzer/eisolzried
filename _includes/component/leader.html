@@ -1,7 +1,15 @@
 <div class="grid grid--small bottom-buffer">
     {% for image in include.src %}
+    {% if image.name == "" or image.name == nil %}
+      {% assign name = 'placeholder.svg' %}
+    {% else %}
+      {% assign name = image.name | append: '.jpg' %}
+    {% endif %}
     <div class="card">
-        <img class="lazy card-img-top" src="{% include helper/trans.html %}" data-src="{{ page.imgfolder }}{{ include.type }}/{{ image.name }}.jpg" alt="{{ image.text }}">
+        <img class="lazy card-img-top"
+             src="{% include helper/trans.html %}"
+             data-src="{{ page.imgfolder }}{{ include.type }}/{{ name }}"
+             alt="{{ image.text }}">
         <div class="card-body d-flex flex-column">
             <h5 class="card-title mt-auto">{{ image.text }}</h5>
             <p class="card-subtitle text-muted">{{ image.year }}</p>
