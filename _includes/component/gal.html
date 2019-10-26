@@ -6,9 +6,10 @@
 {% for image in page.images %}
     <a href="{{ page.imgfolder }}{{ image.name }}.jpg" class="lightbox">
         <img class="lazy"
-             src="{% include helper/trans.html %}"
+             src="{% include helper/trans.html width='200' height='200' %}"
              data-src="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg"
              data-srcset="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg 1x, {{ page.imgfolder }}thumbs/{{ image.name }}-2x.jpg 2x, {{ page.imgfolder }}thumbs/{{ image.name }}-3x.jpg 3x"
+             width="200" height="200"
              alt="{{ image.text }}">
     </a>
     {% endfor %}

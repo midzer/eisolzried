@@ -13,7 +13,7 @@ lang: de
 {% include component/leader.html type="executives" src=site.data.archive.executives %}
 
 ## Fahrzeuge
-{% include element/image.html name="tsf" %}
+{% include element/image.html name="tsf" width="350" height="249" %}
 
 ## Verschiedenes
 {% include component/misc.html %}

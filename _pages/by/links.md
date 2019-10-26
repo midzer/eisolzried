@@ -30,13 +30,21 @@ lang: by
 ## Hosting
 
 <a href="https://uberspace.de/">
-    <img class="lazy img-fluid" src="{% include helper/trans.html %}" data-src="/assets/images/links/uberspace.png" alt="Uberspace">
+    <img class="lazy img-fluid"
+         src="{% include helper/trans.html width='150' height='80' %}"
+         data-src="/assets/images/links/uberspace.png"
+         width="150" height="80"
+         alt="Uberspace">
 </a>
 
 ## Junga
 
 <a href="https://www.ich-will-zur-jugendfeuerwehr.de/">
-    <img class="lazy img-fluid" src="{% include helper/trans.html %}" data-src="/assets/images/links/jugendfeuerwehr.png" alt="Ich will zur Jugendfeuerwehr">
+    <img class="lazy img-fluid"
+         src="{% include helper/trans.html width='1110' height='394' %}"
+         data-src="/assets/images/links/jugendfeuerwehr.png"
+         width="1110" height="394"
+         alt="Ich will zur Jugendfeuerwehr">
 </a>
 
 ## Radio

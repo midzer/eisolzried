@@ -13,7 +13,7 @@ lang: by
 {% include component/leader.html type="executives" src=site.data.archive.executives %}
 
 ## Fahrzeig
-{% include element/image.html name="tsf" %}
+{% include element/image.html name="tsf" width="350" height="249" %}
 
 ## An Haufa
 {% include component/misc.html %}

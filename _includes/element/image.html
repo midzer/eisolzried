@@ -1,8 +1,9 @@
 <div class="text-center">
     <a href="{{ page.imgfolder }}{{ include.name }}.jpg" class="lightbox">
-        <img class="lazy img-fluid" src="{% include helper/trans.html %}"
+        <img class="lazy img-fluid" src="{% include helper/trans.html width=include.width height=include.height %}"
              data-src="{{ page.imgfolder }}thumbs/{{ include.name }}-1x.jpg"
              data-srcset="{{ page.imgfolder }}thumbs/{{ include.name }}-1x.jpg 1x, {{ page.imgfolder }}thumbs/{{ include.name }}-2x.jpg 2x, {{ page.imgfolder }}thumbs/{{ include.name }}-3x.jpg 3x"
+             width="{{ include.width }}" height="{{ include.height }}"
              alt="{{ include.name }}">
     </a>
 </div>
