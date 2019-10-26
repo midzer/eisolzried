@@ -1,10 +1,10 @@
 <div class="grid grid--small bottom-buffer">
 {% for image in site.data.archive.misc %}
-    <a href="{{ page.imgfolder }}{{ image.name }}.jpg" class="lightbox">
+    <a href="{{ page.imgfolder }}misc/{{ image.name }}.jpg" class="lightbox">
         <img class="lazy"
              src="{% include helper/trans.html %}"
-             data-src="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg"
-             data-srcset="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg 1x, {{ page.imgfolder }}thumbs/{{ image.name }}-2x.jpg 2x, {{ page.imgfolder }}thumbs/{{ image.name }}-3x.jpg 3x"
+             data-src="{{ page.imgfolder }}misc/thumbs/{{ image.name }}-1x.jpg"
+             data-srcset="{{ page.imgfolder }}misc/thumbs/{{ image.name }}-1x.jpg 1x, {{ page.imgfolder }}misc/thumbs/{{ image.name }}-2x.jpg 2x, {{ page.imgfolder }}misc/thumbs/{{ image.name }}-3x.jpg 3x"
              alt="{{ image.text }}">
     </a>
     {% endfor %}
