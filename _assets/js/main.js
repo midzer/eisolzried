@@ -33,7 +33,7 @@ const anchors = new anchorJS({
   icon: '#',
   class: 'anchorjs-link'
 })
-anchors.add()
+anchors.add('h2[id]')
 
 // Theme switch
 function setTheme (dark) {
