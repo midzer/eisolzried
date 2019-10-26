@@ -12,6 +12,9 @@ lang: by
 ## Vorständ
 {% include component/leader.html type="executives" src=site.data.archive.executives %}
 
+## Fahrzeig
+{% include element/image.html name="tsf" %}
+
 ## An Haufa
 {% include component/misc.html %}
 

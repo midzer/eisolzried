@@ -15,8 +15,6 @@ images:
     text: MLF 4
   - name: mlf5
     text: MLF 5
-  - name: tsf
-    text: TSF
 videos:
   - name: abfahrt-lentner
   - name: ankunft-lentner

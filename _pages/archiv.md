@@ -12,6 +12,9 @@ lang: de
 ## Vorstände
 {% include component/leader.html type="executives" src=site.data.archive.executives %}
 
+## Fahrzeuge
+{% include element/image.html name="tsf" %}
+
 ## Verschiedenes
 {% include component/misc.html %}
 
