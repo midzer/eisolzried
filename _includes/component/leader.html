@@ -6,9 +6,10 @@
       {% assign name = image.name | append: '.jpg' %}
     {% endif %}
     <div class="card">
-        <img class="lazy card-img-top"
-             src="{% include helper/trans.html %}"
+        <img class="lazy card-img-top img-fluid"
+             src="{% include helper/trans.html width=image.width height=image.height %}"
              data-src="{{ page.imgfolder }}{{ include.type }}/{{ name }}"
+             width="{{ image.width }}" height="{{ image.height }}"
              alt="{{ image.text }}">
         <div class="card-body d-flex flex-column">
             <h5 class="card-title mt-auto">{{ image.text }}</h5>

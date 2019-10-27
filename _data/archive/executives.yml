@@ -1,24 +1,40 @@
 - name: HeiglMatthias
   text: Matthias Heigl
   year: 1900-1915
+  width: 391
+  height: 576
 - name: HaasThomas
   text: Thomas Haas
   year: 1915-1920
+  width: 100
+  height: 134
 - name: BachAnton
   text: Anton Bach
   year: 1920-1930
+  width: 106
+  height: 140
 - name: SchmidKarl
   text: Karl Schmid
   year: 1930-1934
+  width: 98
+  height: 136
 - name: BrummerPeter
   text: Peter Brummer
   year: unbekannt
+  width: 228
+  height: 280
 - name: FeirerRupert
   text: Rupert Feirer
   year: 1980-2000
+  width: 207
+  height: 264
 - name: StraucherHans
   text: Hans Straucher
   year: 2000-2006
+  width: 300
+  height: 326
 - name: HoermannThomas
   text: Thomas Hörmann
   year: 2006-2015
+  width: 300
+  height: 399

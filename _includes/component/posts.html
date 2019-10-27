@@ -8,14 +8,16 @@
   {% endif %}
     {% if post.images %}
     <img class="lazy img-fluid rounded"
-         src="{% include helper/trans.html %}"
+         src="{% include helper/trans.html width='200' height='200' %}"
          data-src="{{ post.imgfolder}}thumbs/{{ post.images.first.name }}-1x.jpg"
          data-srcset="{{ post.imgfolder }}thumbs/{{ post.images.first.name }}-1x.jpg 1x, {{ post.imgfolder }}thumbs/{{ post.images.first.name }}-2x.jpg 2x, {{ post.imgfolder }}thumbs/{{ post.images.first.name }}-3x.jpg 3x"
+         width="200" height="200"
          alt="{{ post.images.first.text }}">
     {% else %}
     <img class="lazy img-fluid rounded"
-         src="{% include helper/trans.html %}"
-         data-src="/assets/images/index/wappen.png"
+         src="{% include helper/trans.html width='275' height='300' %}"
+         data-src="/assets/images/archive/wappen.png"
+         width="275" height="300"
          alt="Wappen Bergkirchen">
     {% endif %}
   </a>
