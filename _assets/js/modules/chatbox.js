@@ -61,7 +61,7 @@ function md2html(md) {
 
 function createMessage (content) {
   const item = document.createElement('li')
-  item.innerHTML = content
+  item.innerHTML = md2html(content)
   return item
 }
 
@@ -77,7 +77,7 @@ function sendMessage (message) {
 
 function sendTextMessage() {
   if (chatInput.value) {
-    sendMessage(md2html(removeTags(chatInput.value)))
+    sendMessage(removeTags(chatInput.value))
     chatInput.value = ''
   }
 }
@@ -93,7 +93,7 @@ let incomingMessages = [],
   scheduled
 
 ws.onmessage = message => {
-  incomingMessages.push(createMessage(md2html(message.data)))
+  incomingMessages.push(createMessage(message.data))
 
   if (!scheduled) {
     scheduled = true
