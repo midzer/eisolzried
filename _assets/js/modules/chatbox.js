@@ -76,8 +76,10 @@ function sendMessage (message) {
 }
 
 function sendTextMessage() {
-  sendMessage(md2html(removeTags(chatInput.value)))
-  chatInput.value = ''
+  if (chatInput.value) {
+    sendMessage(md2html(removeTags(chatInput.value)))
+    chatInput.value = ''
+  }
 }
 
 const chatbox = document.getElementById('chatbox')
@@ -85,13 +87,13 @@ const chatInput = document.getElementById('chat-input')
 const imageInput = document.getElementById('image-input')
 const imageForm = document.getElementById('image-form')
 const messagesList = document.getElementById('chat-messages')
-const ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187')
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
 bsCustomFileInput.init()
 let incomingMessages = [],
   scheduled
 
 ws.onmessage = message => {
-  incomingMessages.push(createMessage(message.data))
+  incomingMessages.push(createMessage(md2html(message.data)))
 
   if (!scheduled) {
     scheduled = true
