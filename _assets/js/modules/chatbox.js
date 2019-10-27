@@ -85,7 +85,7 @@ const chatInput = document.getElementById('chat-input')
 const imageInput = document.getElementById('image-input')
 const imageForm = document.getElementById('image-form')
 const messagesList = document.getElementById('chat-messages')
-const ws = new WebSocket('ws://localhost:62187')
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de:62187')
 bsCustomFileInput.init()
 let incomingMessages = [],
   scheduled
