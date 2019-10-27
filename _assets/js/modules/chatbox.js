@@ -1,4 +1,7 @@
 import EmojiButton from 'emoji-button'
+import bsCustomFileInput from 'bs-custom-file-input'
+
+import { createSnackbar } from '../helper/createsnackbar'
 import { loadStyle } from '../load/loadstyle'
 
 loadStyle('chatbox.css')
@@ -56,28 +59,34 @@ function md2html(md) {
   return md
 }
 
-function createMessage (message) {
+function createMessage (content) {
   const item = document.createElement('li')
-  item.innerHTML = md2html(removeTags(message))
+  item.innerHTML = content
   return item
 }
 
-function appendToList(list, child) {
+function appendToList(child) {
   messagesList.appendChild(child)
   chatbox.scrollTop = chatbox.scrollHeight
 }
 
-function sendMessage () {
-  const message = input.value
-  appendToList(messagesList, createMessage(message))
-  input.value = ''
+function sendMessage (message) {
+  appendToList(createMessage(message))
   ws.send(message)
 }
 
+function sendTextMessage() {
+  sendMessage(md2html(removeTags(chatInput.value)))
+  chatInput.value = ''
+}
+
 const chatbox = document.getElementById('chatbox')
-const input = document.getElementById('chat-input')
+const chatInput = document.getElementById('chat-input')
+const imageInput = document.getElementById('image-input')
+const imageForm = document.getElementById('image-form')
 const messagesList = document.getElementById('chat-messages')
-const ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
+const ws = new WebSocket('ws://localhost:62187')
+bsCustomFileInput.init()
 let incomingMessages = [],
   scheduled
 
@@ -91,7 +100,7 @@ ws.onmessage = message => {
       for (let i = 0, len = incomingMessages.length; i < len; i++) {
         frag.appendChild(incomingMessages[i])
       }
-      appendToList(messagesList, frag)
+      appendToList(frag)
       incomingMessages.length = 0
       scheduled = false
     })
@@ -99,13 +108,40 @@ ws.onmessage = message => {
 }
 
 document.getElementById('chat-btn').onclick = () => {
-  sendMessage()
+  sendTextMessage()
+}
+
+document.getElementById('upload-btn').onclick = () => {
+  const selectedFile = imageInput.files
+  if (selectedFile.length > 0) {
+    const imageFile = selectedFile[0]
+    if (imageFile.size <= 42000) {
+      const fileReader = new FileReader()
+      fileReader.onload = function(fileLoadedEvent) {
+        const srcData = fileLoadedEvent.target.result
+        const newImage = document.createElement('img')
+        newImage.className = 'img-fluid'
+        newImage.src = srcData
+        sendMessage(newImage.outerHTML)
+      }
+      fileReader.readAsDataURL(imageFile)
+    }
+    else {
+      const snackbar = createSnackbar()
+      const data = {
+        message: 'Upload nicht möglich! Maximale Bildgröße 42kb',
+        timeout: 5000
+      }
+      snackbar.showSnackbar(data)
+    }
+  }
+  imageForm.reset()
 }
 
 document.getElementById('chat-form').onkeypress = event => {
   if (event.keyCode === 13) {
     event.preventDefault()
-    sendMessage()
+    sendTextMessage()
   }
 }
 

@@ -48,6 +48,7 @@
     "anchor-js": "^4.2.0",
     "bootstrap": "^4.3.1",
     "bootstrap.native": "git+https://git@github.com/thednp/bootstrap.native.git",
+    "bs-custom-file-input": "^1.3.2",
     "emoji-button": "^2.1.1",
     "frappe-charts": "git+https://git@github.com/frappe/charts.git",
     "ical.js": "^1.2.2",

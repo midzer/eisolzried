@@ -12,8 +12,43 @@
     {% endif %}
     <input id="chat-input" type="text" autocomplete="off" class="form-control" placeholder="{{ write }}" aria-label="Chateingabefeld">
     <div class="input-group-append">
-      <button id="emoji-btn" class="btn btn-outline-info" type="button" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.strings.[page.lang].choose_emoji }}" aria-label="{{ site.data.strings.[page.lang].choose_emoji }}">{% include element/icon.html icon="smile" %}</button>
-      <button id="chat-btn" class="btn btn-outline-primary" type="button" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.strings.[page.lang].send_message }}" aria-label="{{ site.data.strings.[page.lang].send_message }}">{% include element/icon.html icon="send" %} {{ send }}</button>
+      <button id="emoji-btn"
+              class="btn btn-outline-info"
+              type="button"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="{{ site.data.strings.[page.lang].choose_emoji }}"
+              aria-label="{{ site.data.strings.[page.lang].choose_emoji }}">
+              {% include element/icon.html icon="smile" %}
+      </button>
+      <button id="chat-btn"
+              class="btn btn-outline-primary"
+              type="button"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="{{ site.data.strings.[page.lang].send_message }}"
+              aria-label="{{ site.data.strings.[page.lang].send_message }}">
+              {% include element/icon.html icon="send" %} {{ send }}
+      </button>
+    </div>
+  </div>
+</form>
+<form id="image-form" class="top-buffer">
+  <div class="input-group">
+    <div class="custom-file">
+      <input type="file" accept="image/*" class="custom-file-input" id="image-input" aria-describedby="{{ site.data.strings.[page.lang].choose_image }}">
+      <label class="custom-file-label" for="image-input" data-browse="{{ site.data.strings.[page.lang].browse }}">{{ site.data.strings.[page.lang].choose_image }}</label>
+    </div>
+    <div class="input-group-append">
+      <button id="upload-btn"
+              class="btn btn-outline-primary"
+              type="button"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="{{ site.data.strings.[page.lang].upload_image }}"
+              aria-label="{{ site.data.strings.[page.lang].upload_image }}">
+              {% include element/icon.html icon="upload" %}
+      </button>
     </div>
   </div>
 </form>
