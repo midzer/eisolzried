@@ -152,7 +152,7 @@ const emojiButton = document.getElementById('emoji-btn')
 const picker = new EmojiButton({position: 'top-end'})
 
 picker.on('emoji', emoji => {
-  input.value += emoji
+  chatInput.value += emoji
 })
 
 emojiButton.onclick = () => {
