@@ -10,7 +10,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <form class="form-inline mt-2 my-xl-0 mr-xl-2">
+      <form class="form-inline mt-2 my-xl-0 mr-xl-3">
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">
@@ -37,7 +37,7 @@
         </button>
       </div>
       {% include element/audio-player.html audio='siren' loop=true %}
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto">
         {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}
           {% assign active = nil %}
