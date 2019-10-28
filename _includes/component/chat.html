@@ -6,9 +6,11 @@
     {% if page.lang == 'by' %}
     {% assign write = 'schreim...' %}
     {% assign send = 'Aufi!' %}
+    {% assign send = 'Nauf!' %}
     {% else %}
     {% assign write = 'schreiben...' %}
     {% assign send = 'Los!' %}
+    {% assign upload = 'Hoch!' %}
     {% endif %}
     <input id="chat-input" type="text" autocomplete="off" class="form-control" placeholder="{{ write }}" aria-label="Chateingabefeld">
     <div class="input-group-append">
@@ -47,7 +49,7 @@
               data-placement="bottom"
               title="{{ site.data.strings.[page.lang].upload_image }}"
               aria-label="{{ site.data.strings.[page.lang].upload_image }}">
-              {% include element/icon.html icon="upload" %}
+              {% include element/icon.html icon="upload" %} {{ upload }}
       </button>
     </div>
   </div>
