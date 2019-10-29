@@ -200,7 +200,11 @@ function writeServiceWorkerFile (rootDir, handleFetch, callback) {
     logger: log,
     staticFileGlobs: [
       `${rootDir}/**/*.html`,
-      `${rootDir}/assets/{css,js,icons}/*`
+      `${rootDir}/assets/icons/*`,
+      `${rootDir}/assets/css/main.css`,
+      `${rootDir}/assets/css/dark-theme.css`,
+      `${rootDir}/assets/js/main.js`,
+      `${rootDir}/assets/js/posts.js`
     ],
     stripPrefix: `${rootDir}/`,
     verbose: false
