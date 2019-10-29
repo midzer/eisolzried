@@ -1,17 +1,20 @@
+# eisolzried 
+
 [![Build Status](https://travis-ci.org/midzer/eisolzried.svg?branch=master)](https://travis-ci.org/midzer/eisolzried)
 
 This website is built with [jekyll](http://jekyllrb.com) and uses [gulp](https://gulpjs.com/) as task runner for development and production builds.
 
-### Prerequisites
+## Prerequisites
 
-on your system following environments have to be installed
+Following environments have to be installed on your system
 
 * Ruby
 * Node.js
 * yarn
 * git
 
-### Development
+## Development
+
 ```
 git clone https://github.com/midzer/eisolzried.git
 cd eisolzried
@@ -21,4 +24,4 @@ yarn install // node dependencies
 npm start // starts development build
 ```
 
-Now your default browser should open website at https://localhost:3000 automatically. For production build `npm run build`.
+Now your default browser should open website at http://localhost:3000 automatically. For production build use `npm run build`.
