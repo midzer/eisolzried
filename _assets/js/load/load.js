@@ -17,7 +17,14 @@ export function load (element) {
       break;
     default:
       element.classList.remove('lazy')
-      loadScript(element.getAttribute('data-src'))
+      const loader = document.createElement('div')
+      loader.className = 'loader'
+      element.appendChild(loader)
+      const script = loadScript(element.getAttribute('data-src'))
+      script.then(() => {
+        element.removeChild(loader)
+        element.removeAttribute('data-src')
+      })
       /*if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1)
       loadModule(element.getAttribute('data-src'))*/
   }

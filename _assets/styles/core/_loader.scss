@@ -1,0 +1,33 @@
+.loader {
+    display: inline-block;
+    height: 50px;
+    left: calc(50% - 25px);
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 50px;
+  
+    &::before {
+      animation: spin 1s infinite;
+      border-radius: 100%;
+      border: 5px solid #949ba3;
+      border-top-color: $white;
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+}
+
+div[data-src] {
+    min-height: 100px;
+    position: relative;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
