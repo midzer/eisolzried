@@ -16,15 +16,24 @@ export function load (element) {
       loadSVG(element)
       break;
     default:
-      element.classList.remove('lazy')
-      const loader = document.createElement('div')
-      loader.className = 'loader'
-      element.appendChild(loader)
+      element.classList.remove('lazy')      
+      let scriptLoaded,
+        loader
       const script = loadScript(element.getAttribute('data-src'))
       script.then(() => {
-        element.removeChild(loader)
+        scriptLoaded = true
+        if (loader) {
+          element.removeChild(loader)
+        }
         element.removeAttribute('data-src')
       })
+      setTimeout(() => {
+        if (!scriptLoaded) {
+          loader = document.createElement('div')
+          loader.className = 'loader'
+          element.appendChild(loader)
+        }
+      }, 500)
       /*if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1)
       loadModule(element.getAttribute('data-src'))*/
   }
