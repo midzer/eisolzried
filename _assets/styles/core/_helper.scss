@@ -32,6 +32,19 @@
   z-index: 9;
 }
 
+.right {
+  float: right;
+}
+
+.improve {
+  padding-top: 20px;
+  opacity: 0;
+}
+
+.page-header:hover > div {
+  opacity: 1;
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
