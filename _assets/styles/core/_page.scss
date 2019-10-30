@@ -17,3 +17,37 @@
 .post-meta {
   color: $gray-700;
 }
+
+.btn.btn-posts {
+  background: $primary;
+}
+
+.btn-posts {
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.btn-posts:before,
+.btn-posts:after { /* make two squares (before and after), looking similar to the button */
+  content: "";
+  position: absolute;
+  top: 4px; /* move it down because of rounded corners */
+  width: 21px; /* same as height */
+  height: 21px; /* button_outer_height / sqrt(2) */
+  background: inherit; /* use parent background */
+  border: inherit; /* use parent border */
+  border-radius: inherit; /* round arrow corner */
+  transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+}
+.btn-posts:before { /* align the "before" square to the left */
+  left: -11px;
+  border-top-color: transparent; /* hide top border (on hover) */
+  border-right-color: transparent; /* hide right border (on hover) */
+}
+.btn-posts:after { /* align the "after" square to the right */
+  right: -11px;
+  border-bottom-color: transparent; /* hide bottom border (on hover) */
+  border-left-color: transparent; /* hide left border (on hover) */
+}

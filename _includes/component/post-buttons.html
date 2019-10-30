@@ -1,0 +1,12 @@
+<div class="btn btn-sm btn-primary btn-posts">{% include helper/date.html %}</div>
+{% assign lang = nil %}
+{% if page.lang == 'by' %}
+{% assign lang = page.lang | prepend: '/'%}
+{% endif %}
+{% if page.tags %}
+<a class="btn btn-sm btn-primary btn-posts"
+    href="{{ lang }}/{{ page.tags }}/"
+    role="button">
+{% include element/icon.html icon="tag" %} {{ page.tags }}
+</a>
+{% endif %}
