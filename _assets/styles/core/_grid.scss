@@ -58,6 +58,7 @@
   img,
   > video {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -77,6 +78,6 @@
 
 @keyframes animate {
   to {
-      background-position: 100% 0, 0% 100%, 0 0, 100% 100%, 0 0;
+    background-position: 100% 0, 0% 100%, 0 0, 100% 100%, 0 0;
   }
 }
