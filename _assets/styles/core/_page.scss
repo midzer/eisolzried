@@ -8,10 +8,10 @@
     opacity: 0;
     @include transition(opacity .25s ease-in-out);
   }
-  
+
   &:hover > div {
     opacity: 1;
-  }  
+  }
 }
 
 .post-meta {
@@ -38,16 +38,17 @@
   height: 21px; /* button_outer_height / sqrt(2) */
   background: inherit; /* use parent background */
   border: inherit; /* use parent border */
-  border-radius: inherit; /* round arrow corner */
-  transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
-}
-.btn-posts:before { /* align the "before" square to the left */
-  left: -11px;
   border-top-color: transparent; /* hide top border (on hover) */
   border-right-color: transparent; /* hide right border (on hover) */
+  border-radius: inherit; /* round arrow corner */
 }
+
+.btn-posts:before { /* align the "before" square to the left */
+  left: -11px;
+  transform: rotate(45deg); /* rotate arrow squares 45 deg to point left */
+}
+
 .btn-posts:after { /* align the "after" square to the right */
   right: -11px;
-  border-bottom-color: transparent; /* hide bottom border (on hover) */
-  border-left-color: transparent; /* hide left border (on hover) */
+  transform: rotate(225deg); /* rotate arrow squares 225 deg to point right */
 }
