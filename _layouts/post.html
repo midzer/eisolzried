@@ -3,9 +3,7 @@ layout: default
 ---
 <article>
   <div class="page-header">
-    <div class="improve right">
-      <a href="https://github.com/midzer/eisolzried/blob/master/{{ page.path }}">{% include element/icon.html icon="edit" %} Verbessere diese Seite</a>
-    </div>
+    {% include component/improve.html %}
     <h1>{{ page.title }}</h1>
     <p class="post-meta">
       {% include helper/date.html %}
