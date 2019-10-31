@@ -5,7 +5,7 @@
 document.getElementById('moreposts').onclick = function () {
   const button = this
   const els = list.querySelectorAll('[hidden]')
-  window.requestAnimationFrame(function () {
+  window.requestAnimationFrame(() => {
     for (let i = 0, j = els.length; i < 8; i++) {
       els[i].removeAttribute('hidden')
       if (i + 1 === j) {
