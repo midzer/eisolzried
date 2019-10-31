@@ -38,13 +38,13 @@ ws.onmessage = function (msg) {
 }
 
 query('.plus-btn').forEach(function (item) {
-  item.onclick = function () {
+  item.onclick = () => {
     updateScore(item, 1)
   }
 })
 
 query('.minus-btn').forEach(function (item) {
-  item.onclick = function () {
+  item.onclick = () => {
     updateScore(item, -1)
   }
 })
@@ -57,7 +57,7 @@ if (navigator.share) {
     url = canonicalElement.href
   }
   query('.share-btn').forEach(function (item) {
-    item.onclick = function () {
+    item.onclick = () => {
       navigator.share({
         title: document.title,
         url: url
