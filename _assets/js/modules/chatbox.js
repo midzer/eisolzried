@@ -92,6 +92,9 @@ bsCustomFileInput.init()
 let incomingMessages = [],
   scheduled
 
+const MAX_WIDTH = 600,
+  MAX_HEIGHT = 400
+
 ws.onmessage = message => {
   incomingMessages.push(createMessage(message.data))
 
@@ -117,21 +120,46 @@ document.getElementById('upload-btn').onclick = () => {
   const selectedFile = imageInput.files
   if (selectedFile.length > 0) {
     const imageFile = selectedFile[0]
-    if (imageFile.size <= 42000) {
+    if (imageFile.size <= 4200000) {
       const fileReader = new FileReader()
-      fileReader.onload = function(fileLoadedEvent) {
-        const srcData = fileLoadedEvent.target.result
-        const newImage = document.createElement('img')
-        newImage.className = 'img-fluid'
-        newImage.src = srcData
-        sendMessage(newImage.outerHTML)
+      fileReader.onload = event => {
+        let srcData = event.target.result
+        const image = document.createElement('img')
+        image.src = srcData
+        image.onload = () => {
+          let width = image.width
+          let height = image.height
+
+          let resize
+          if (width > height) {
+            if (width > MAX_WIDTH) {
+              height *= MAX_WIDTH / width
+              width = MAX_WIDTH
+              resize = true
+            }
+          }
+          if (height > MAX_HEIGHT) {
+            width *= MAX_HEIGHT / height
+            height = MAX_HEIGHT
+            resize = true
+          }
+          if (resize) {
+            const canvas = document.createElement('canvas')
+            canvas.width = width
+            canvas.height = height
+            const context = canvas.getContext('2d')
+            context.drawImage(image, 0, 0, width, height)
+            srcData = canvas.toDataURL('image/jpeg')
+          }
+          sendMessage(`<img src='${srcData}'>`)
+        }
       }
       fileReader.readAsDataURL(imageFile)
     }
     else {
       const snackbar = createSnackbar()
       const data = {
-        message: 'Upload nicht möglich! Maximale Bildgröße 42kb',
+        message: 'Upload nicht möglich! Maximale Bildgröße 4.2MB',
         timeout: 5000
       }
       snackbar.showSnackbar(data)
