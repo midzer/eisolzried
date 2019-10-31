@@ -39,6 +39,9 @@ module.exports = {
     ],
     weather: [
       './_assets/js/modules/weather.js'
+    ],
+    emoji: [
+      './_assets/js/modules/emoji.js'
     ]
   },
   output: {

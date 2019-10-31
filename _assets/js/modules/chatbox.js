@@ -1,8 +1,8 @@
-import EmojiButton from 'emoji-button'
 import bsCustomFileInput from 'bs-custom-file-input'
 
 import { createSnackbar } from '../helper/createsnackbar'
 import { loadStyle } from '../load/loadstyle'
+import { loadScript } from '../load/loadscript'
 
 loadStyle('chatbox.css')
 
@@ -148,13 +148,10 @@ document.getElementById('chat-form').onkeypress = event => {
 }
 
 // Emoji button
-const emojiButton = document.getElementById('emoji-btn')
-const picker = new EmojiButton({position: 'top-end'})
-
-picker.on('emoji', emoji => {
-  chatInput.value += emoji
-})
-
+let emojiButton = document.getElementById('emoji-btn')
 emojiButton.onclick = () => {
-  picker.pickerVisible ? picker.hidePicker() : picker.showPicker(emojiButton)
+  loadScript('emoji.js')
+
+  // Remove reference (and handler)
+  emojiButton = null
 }
