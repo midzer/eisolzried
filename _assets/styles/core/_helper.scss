@@ -7,12 +7,16 @@
 }
 
 .lazy {
-  opacity: 0;
-  will-change: opacity;
-  
   // Zero height divs are not loaded by Intersection Observer
   // in Chromium 72+ any more
   min-height: 1px;
+
+  &:not(div[data-src]) {
+    // Do opacity animation on load
+    // for everything except scripts
+    opacity: 0;
+    will-change: opacity;
+  }
 }
 
 .loaded {

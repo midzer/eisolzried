@@ -16,7 +16,6 @@ export function load (element) {
       loadSVG(element)
       break;
     default:
-      element.classList.remove('lazy')      
       let scriptLoaded,
         loader
       const script = loadScript(element.getAttribute('data-src'))
