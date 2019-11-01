@@ -1,3 +1,3 @@
-export default function (player) {
+export function toggleAudio (player) {
   player.paused ? player.play() : player.pause()
 }

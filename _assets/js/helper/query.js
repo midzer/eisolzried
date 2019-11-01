@@ -1,3 +1,3 @@
-export default function (selector) {
+export function query (selector) {
   return Array.from(document.querySelectorAll(selector))
 }

@@ -1,7 +1,7 @@
 import { load } from './load/load'
 import { loadScript } from './load/loadscript'
-import query from './helper/query'
-import toggleAudio from './helper/toggleaudio'
+import { query } from './helper/query'
+import { toggleAudio } from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
 const anchorJS = require('anchor-js')
 //import { Christmas } from './helper/christmas'
