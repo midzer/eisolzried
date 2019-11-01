@@ -17,9 +17,9 @@
   "author": "@midzer",
   "license": "MIT",
   "browserslist": [
-    "last 1 version",
     "> 1% in DE",
-    "not dead"
+    "Firefox ESR",
+    "not IE 11"
   ],
   "devDependencies": {
     "@babel/core": "^7.6.4",
