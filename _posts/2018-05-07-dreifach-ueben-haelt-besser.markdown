@@ -47,7 +47,6 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Bei wunderbarem Wetter ging es an drei verschiedene Plätze zur Übung im Mai:
 
 * zuerst zum Vorplatz beim Gasthof Peiß
@@ -55,5 +54,3 @@ Bei wunderbarem Wetter ging es an drei verschiedene Plätze zur Übung im Mai:
 * zu guter Letzt in den Brunnenweg in der Nähe vom Spielplatz
 
 Einsatzszenario war jeweils an brennendes Auto in einer Garage. Neben Wasserentnahme aus dem Unterflurhydranten wurde der Verkehr abgesichert, Schlauchbrücken erstellt und mit ein bis zwei C-Längen nach dem Verteiler der imaginäre Brand gelöscht.
-
-{% include component/gal.html %}

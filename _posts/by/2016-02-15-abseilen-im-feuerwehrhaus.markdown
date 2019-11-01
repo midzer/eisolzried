@@ -21,10 +21,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Im Februa war Absturzsicherung aufm Plan.
 
 Unsre fünf erprobten "Spezialisten" vo da Absturzsicherung hom dessmoi in drei Stund olle de wichtige Ausrüstung zoagt.
-
-{% include component/gal.html %}
-

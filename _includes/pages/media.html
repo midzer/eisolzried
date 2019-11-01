@@ -28,6 +28,10 @@
     <div id="video-grid" class="grid grid--small top-buffer bottom-buffer"></div>
   </div>
   <div role="tabpanel" id="animationen" class="tab-pane" aria-labelledby="animationen-tab">
-{% include component/vid.html src=site.data.media.animations type='animation' %}
+    <div class="grid grid--normal top-buffer bottom-buffer">
+      {% for animation in site.data.media.animations %}
+        {% include element/animation.html name=animation.name %}
+      {% endfor %}
+    </div>
   </div>
 </div>

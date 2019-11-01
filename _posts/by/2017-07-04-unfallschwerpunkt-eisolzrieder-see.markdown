@@ -13,9 +13,6 @@ tags: einsaetze
 categories:
   - by
 ---
-
 Heid da fria umara 6.45 Uhr isd Feiawea Eilzria alamiad worn. A komplette Mannschaft is nahad zum Eilzriada Sä ausgruckt, weils do an Unfoi vo zwoa Autos gehm hod. Mitanand hod ma dann Matrial zamgrammt wos aus de Karrn ausglaffa is und d'Straß obgsichad.
 
 Des ganze hod ungefea 75 Minutn dauad und dann san olle de wos ghoifa hom wieder zruck in eanare Feiaweahaisl gfahrn.
-
-{% include component/gal.html %}

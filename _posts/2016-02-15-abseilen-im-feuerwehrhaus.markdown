@@ -19,10 +19,6 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Zur Februarübung stand Absturzsicherung auf dem Programm.
 
 Unsere fünf erprobten "Spezialisten" an der Absturzsicherung bildeten diesmal in einer dreistündigen Übung die gesamte Mannschaft in dieser wichtigen Ausrüstung aus.
-
-{% include component/gal.html %}
-

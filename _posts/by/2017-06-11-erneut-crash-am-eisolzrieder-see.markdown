@@ -17,9 +17,6 @@ tags: einsaetze
 categories:
   - by
 ---
-
 D'Feierwea Eilzria is gega 14 Uhr alamierd worn: auf da Vabindungsstraß vo Eilzria zum Eilzriada Sä hods gschäbad, dabei war a Motorradlfahrer beteiligt. Ois d'Feiawea hikemma san, homs festgstoid, dass zum Glück eam ned vui bassierd is. De Feierweala hom ghoifa, Öl des wos ausglaffa is weg do und freile an Vakea gregelt.
 
 Da ganze Einsatz hod ungefea a Stund dauad und vo Eilzria warn acht Leid dabei.
-
-{% include component/gal.html %}

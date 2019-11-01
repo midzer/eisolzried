@@ -15,9 +15,6 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Zur Übung im Juli wurde mit dem neuen Fahrzeug am Wendehammer in der Birkenstraße geübt. Neben der Verkehrsabsicherung wurde ein Löschaufbau mit Wasserversorgung vom Unterflurhydranten errichtet.
 
 Nach der Rückkehr ins Feuerwehrhaus und Aufhängen der nassen Schläuche in den Schlauchturm erklärten die Ausbilder die richtige Handhabung der Utensilien aus dem Rettungskoffer.
-
-{% include component/gal.html %}

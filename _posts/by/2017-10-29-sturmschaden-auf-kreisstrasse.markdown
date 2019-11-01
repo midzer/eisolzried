@@ -37,11 +37,8 @@ tags: einsaetze
 categories:
   - by
 ---
-
 An dem Wochaend wars Sturmtief Herwart in ganz Mitteleuropa aktiv. A im Landkreis Dacha is wos bassierd. An Haufa Feiawean hom ausrucka miaßn, um aufzumramma. Da Kreisfeuerwehrverband hod a wos davo [gschriem](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1018).
 
 In da Fria gega 8.30 Uhr is im Einsatzbereich vo da Feiawea Eilzria a umgfoina Baam auf da Kreisstraß Eilzria nooch Priel gmoid worn. Z'erscht is d'Straß obgesperrt worn, damit ma sauba arban koon. Dann homma an Baam zamgschnien und mim Bulldog weggfahrn.
 
 Mia warn ungefähr 30 Minuten und mit 15 Leid im Einsatz.
-
-{% include component/gal.html %}

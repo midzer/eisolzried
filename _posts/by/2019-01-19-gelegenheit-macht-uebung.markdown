@@ -54,13 +54,8 @@ tags: uebungen
 categories:
   - by
 ---
-
 Der zwoate Teil der Übung im Januar war wieder beim Haus beim Schwarz Bäda wia beim [erstn Teil](/2019/01/05/spass-am-ueben-trotz-kaelte/).
 
 Nomoi samma mit Schnoiangriff vorganga und im verrachten Haus is unter Atemschutz a vermisste Person aufgfunna worn.
 
 As weda war desmoi wesentlich bessa.
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

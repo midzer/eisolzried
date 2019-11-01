@@ -51,7 +51,6 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Im Frühjahr wurde eine Leistungsprüfung Wasser erfolgreich abgelegt.
 
 <div class="table-responsive">
@@ -86,5 +85,3 @@ Im Frühjahr wurde eine Leistungsprüfung Wasser erfolgreich abgelegt.
   </tbody>
 </table>
 </div>
-
-{% include component/gal.html %}

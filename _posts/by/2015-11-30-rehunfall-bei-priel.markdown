@@ -13,12 +13,8 @@ tags: einsaetze
 categories:
   - by
 ---
-
 In da Nocht vo 19. auf 20. Novemba 2015 hods an Vakeasunfoi auf da Kreisstraß DAH5 zwischn Eilzria und Pria gehm.
 
 As Fahrzeig is in a Rää neibrennt und is vo da Straß obkemma. Dabei hod si da Fahra leicht valetzt. D'Feiawea Eilzria, Bolizei, Sanka und THW hom si umd Person kümmad, d'Fahrbahn obgsperrd und danooch sauba g'macht.
 
 Feiawea Eilzria war mid 12 Leid vo 23:45 Uhr bis 1:30 im Einsatz.
-
-{% include component/gal.html %}
-

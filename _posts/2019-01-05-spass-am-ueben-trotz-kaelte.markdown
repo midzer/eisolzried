@@ -67,11 +67,8 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Zur Januarübung ging es zum alten Haus bei Trinkl Hydraulik, welches zum Abriss bereit steht. Bei tiefwinterlichen Verhältnissen wurde mehrere Szenarien durchgespielt:
 
 Mit Schnellangriff galt es zuerst einen Küchenbrand im ersten Stock mittels C-Rohr zu löschen. Danach wurde ein Kleinlöschgerät und ein Schaumfeuerlöscher ausprobiert.
 
 Der letzte Teil bestand darin, dass mehrere Trupps unter Atemschutz eine vermisste Person im verrauchten Gebäude suchen und retten sollen.
-
-{% include component/gal.html %}

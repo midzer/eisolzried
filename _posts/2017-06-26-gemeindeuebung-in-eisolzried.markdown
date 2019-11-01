@@ -71,11 +71,8 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Am heutigen Abend ab 19 Uhr fand die jährliche gemeinsame Übung aller Gemeindefeuerwehren der Gemeinde in Eisolzried statt.
 
 Diesmal war das Übungsszenario der Brand eines landwirtschaftlichen Gebäudes mit vermissten Personen. Die Feuerwehr Eisolzried übernahm als ortsansäßige Feuerwehr die Leitung. Nach kurzer Aufgabenverteilung begann ein Teil mit Saugschläuchen die Wasserversorgung aus der Maisach herzustellen. Zusätzlich wurde aus naheliegenden Unterflurhydranten Wasser mit eingespeist. Um den Kraftverkehr nicht zu behindern, wurde zeitgleich ein Sicherheitsbereich mit Pylonen und Warnblicker abgesteckt. Eine Schlauchbrücke über die Kreisstraße gewährleistete die Wasserverbindung zum Verteiler, um die Angrifftrupps zu versorgen ohne den regulären Straßenverkehr zu beeinträchtigen. Währenddessen machten sich mehrere Trupps mit Atemschutz auf die Suche nach den vermissten Personen.
 
 Nach der erfolgreichen Übung gab es zusammen mit Kreisbrandmeister Wolfgang Faltermeier eine kurze Besprechung bei der für die einzelnen Bereiche Lob und Verbesserungsvorschläge ausgesprochen wurden.
-
-{% include component/gal.html %}

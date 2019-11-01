@@ -17,9 +17,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Im Juli homma mim neia Fahrzeig am Wendehamma vo da Birknstraß g'übt. D'Straß homma obgspead und dann Wassa vom Untaflurhydrantn zua Bumpm aufbaud. Mid de C-Schleich homma d'Wiesn aweng noooß gmacht.
 
 Wo ma zruck kemma san, homma d'Schleich aufghängd und nachad is vazoid worn wia ma mim Rettungskoffa umgähd.
-
-{% include component/gal.html %}

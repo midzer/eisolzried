@@ -29,11 +29,8 @@ tags: uebungen
 categories:
   - by
 ---
-
 Fürn Praxisteil der Truppmannausbildung hom si heia 26 Anwärter am Feiaweahaisl in Foigading droffa, um gemeinsam zum übn. Vo da Feiawea Eilzria warns sechse und drei Oide de wos ghoifa hom.
 
 Bei schneena Weda is vormittogs losganga mid am erstn Teil vo dera "modularen" Ausbildung, de wos über a hoibads Joor regelmäßig stattfindt. De Neia hom beim Saugschlachkupp'en vo de Oidn no wos lerna kenna, wias gäd.
 
 Nochdem olle zam Mittog gmacht hom, is weider ganga mim zwoatn Teil: Wasser ausm Unterflurhydrantn raus hoin. Am End is no kurz wos vazoid worn, wos guad und wos vielleicht ned so guad war.
-
-{% include component/gal.html %}

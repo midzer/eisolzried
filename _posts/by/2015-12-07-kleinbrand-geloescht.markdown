@@ -13,12 +13,8 @@ tags: einsaetze
 categories:
   - by
 ---
-
 Heid noochmittog gega 15:30 Uhr san de Feiawean vo Eilzria und Laudabo alamiad worn, weil an am gloana Woid bei da Verbindungstraß Eilzria und Eilzriada Sä Raach gmoid worn is.
 
 O'zends Reisig war fast auf de Baam danebn übergriffa. Mim Schnoiogriff homma den Brandherd glei unter Kontrolle brocht.
 
 Mia warn mit 9 Feiaweala a hoibe Stund im Einsatz.
-
-{% include component/gal.html %}
-

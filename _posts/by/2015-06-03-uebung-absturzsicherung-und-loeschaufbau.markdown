@@ -7,6 +7,4 @@ tags: uebungen
 categories:
   - by
 ---
-
 01.06.15: Auf am Hof homma Absturzsicharung mit Selbstrettung g'macht. Danooch no a Löschaufbau.
-

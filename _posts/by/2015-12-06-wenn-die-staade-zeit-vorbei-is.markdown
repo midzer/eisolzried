@@ -13,7 +13,6 @@ tags: allgemeines
 categories:
   - by
 ---
-
 ... werd's wieda ruhiga. Mit dem Zitat vo Karl Valentin hod da dritte Brügamoasta Robert Axtner gestan sei Rede beim Hubert in Eilzria beendet.
 
 Wia jäds Joor hom de Vetrana vo Deinhausn und de Feiawea Eilzria olle Mitglieda, Freind und Bekannte zua Weihnochtsfeia eiglon. Nochm Omdessn war da besinnliche Teil mit Weihnochtsmettn vo da Bachana Stubnmusi und kurze, boarische G'schichtn zum Advent vorg'lesn vo da Zenta Steiner.
@@ -21,6 +20,3 @@ Wia jäds Joor hom de Vetrana vo Deinhausn und de Feiawea Eilzria olle Mitglieda
 Da neie Vorstand Bernhard Schmidbauer hod si bei olle bedankt de wo den Omd (und davor) mitg'hoifa hom und eröffnet de Christbaumversteigerung.
 
 De Vasteigara Schorsch und Hexa hom an Haufa gespendete Preise mit vui Gaudi und Witz on de Leid brocht. Danooch samma no griabig zam g'hockt und hom de ersteigerten Schmankerl glei moi probierd.
-
-{% include component/gal.html %}
-

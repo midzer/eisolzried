@@ -12,11 +12,6 @@ videos:
 lang: de
 tags: allgemeines
 ---
-
 Merci nochmal an die Feuerwehr Schwabmühlhausen für die Nominierung!
 
 Zur Erklärung schaut euch am besten des Video einfach an :)
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

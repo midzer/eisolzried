@@ -17,12 +17,8 @@ tags: einsaetze
 categories:
   - by
 ---
-
 31.03.15 - Sturmtief "Niklas"
 
 2 Einsätz hods an dem Dog gehm, oi zwoa im Brunnenweg in Deinhausn:
 
 Z'erscht samma alarmierd worn, weils a Dooch vo a Halle obdeckt hod. As Bleech is aufs Gartnhaisl und am Pool vom Nachbarn gfoin. Mir homs g'sichad und zalegt. Einsatz hod 1,5 Stund dauad mit 7 Leid.
-
-{% include component/gal.html %}
-

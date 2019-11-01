@@ -7,10 +7,6 @@ tags: allgemeines
 categories:
   - by
 ---
-
 Da Merkur hod im Lokalteil vo unsara Jahreshauptversammlung vom 27.03.15 wos g'schriem. Nebam Jahresbericht, Ehrunga und allgemeina Ausspracha hods a Neuwahlen gehm.
 
-An komplettn Zeitungsartikel findst Du [do][merkur].
-
-[merkur]: http://www.merkur.de/lokales/dachau/landkreis/feuerwehr-eisolzried-einen-neuen-kommandanten-4880991.html
-
+An komplettn Zeitungsartikel findst Du [do](http://www.merkur.de/lokales/dachau/landkreis/feuerwehr-eisolzried-einen-neuen-kommandanten-4880991.html).

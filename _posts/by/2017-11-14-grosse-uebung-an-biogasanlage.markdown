@@ -37,7 +37,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Bei da jährlichn Gmoaübung ging es heuer zur Biogasanlag in Bergkircha. Wia oiwei warn vui Feiawean aus da ganzen Gmoa mit dabei bei dera Einsatzübung.
 
 Es is ognomma worn, dass a Feia mit vui Raach in am Gebäude gibt, des durch a Leck zum brenna ogfangt hod. Außerdem san zwoa Leid in dem Gebiet vermisst. Da Kreisfeiawehrverband [schreibt](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1022) no mehra darüber.
@@ -51,5 +50,3 @@ Vo Eilzria warn dabei:
 * Riale
 * Schuasta
 * Zolli
-
-{% include component/gal.html %}

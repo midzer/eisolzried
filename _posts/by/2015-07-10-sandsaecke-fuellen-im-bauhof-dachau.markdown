@@ -13,10 +13,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Am 07.07.15, 19 Uhr war a Übung im Stadtbahnhof Dacha. Des ganze is vom Landratsamt und da Kreisbrandinspektion organisierd worn.
 
 Ma hod mit da Dispogruppn "Sandsackfüllen" mit vui andere Feiawean ausm Landkreis und am THW Dacha a neis Förderbandl mit Sandtrichter g'übt. Dabei homma mea ois 500 Sandsäck g'scheid aufg'fuid.
-
-{% include component/gal.html %}
-

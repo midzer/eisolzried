@@ -21,10 +21,6 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Zur Übung im September am 07.09.2015 stand dieses Mal Wasserentnahme aus der Maisach auf dem Plan.
 
 Nach kurzer Einweisung des Gruppenführers der Löschgruppe Eisolzried wurden Saugschläuche gekuppelt, Verkehrsabsicherung und Beleuchtung aufgebaut und der Löschaufbau zur "Brandstelle" errichtet.
-
-{% include component/gal.html %}
-

@@ -35,12 +35,8 @@ tags: uebungen
 categories:
   - by
 ---
-
 Am 23. Januar 2016 is bei da Feiawea Karlsfoid de erschte Ausbildung in dem Johr zum Ersthoifa Feiawea g'wehn.
 
 Nohch vui Theorie homma mit praktische Beischspui de Erstversorgung vo valetzte und eigene Leid wenn wos bassierd g'übt.
 
 Vo Eilzria war da Hörmann Miche und da Felix Schmid dabei.
-
-{% include component/gal.html %}
-

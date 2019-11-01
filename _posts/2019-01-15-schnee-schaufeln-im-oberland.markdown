@@ -48,7 +48,6 @@ videos:
 lang: de
 tags: einsaetze
 ---
-
 Nach dem starken Schneefall der letzten Wochen waren auch Feuerwehrleute der Feuerwehr Eisolzried südlich von München im Einsatz, um Häuser von der schweren Dachlast zu befreien.
 
 Treffpunkt war um 6 Uhr in Kreuzholzhausen um in Dachau nach einer kurzen Lagebesprechung in Kolonne weiter nach Miesbach zu fahren. Erster Einsatzort war ein altes Zollhaus in Bayrisch Zell bei dem das Dach vom Schnee abgeräumt wurde. Unsere Kameraden vor Ort waren Florian Lunglmeyr, Sebastian Rastinger, Tobias Riedl und Andreas Straucher, welche die notwendige Ausbildung zur Absturzsicherung absolviert hatten.
@@ -61,7 +60,3 @@ Weiterführende Information können der Presse entnommen werden:
 * [Merkur](https://www.merkur.de/lokales/dachau/dachau-ort28553/hilfsleistungskontingent-aus-dachau-feuerwehrler-schaufeln-acht-stunden-lang-in-huefthohem-schnee-11136127.html)
 * [Süddeutsche 1](https://www.sueddeutsche.de/muenchen/dachau/winter-in-bayern-feuerwehren-aus-dem-landkreis-dachau-schaufeln-schnee-im-oberland-1.4284937)
 * [Süddeutsche 2](https://www.sueddeutsche.de/muenchen/dachau/anhaltender-schneefall-dauereinsatz-feuerwehren-helfen-weiter-im-katastrophengebiet-1.4287947)
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

@@ -14,11 +14,6 @@ tags: allgemeines
 categories:
   - by
 ---
-
 Merci nomoi an de Feiawea Schwabmühlhausen für de Nominierung!
 
 Damits wissts um wos gäd, schauts am bestn einfach des Video o :)
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

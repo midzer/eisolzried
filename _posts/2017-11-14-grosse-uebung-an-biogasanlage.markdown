@@ -35,7 +35,6 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Bei der jährlichen Gemeindeübung ging es diesmal zur Biogasanlage in Bergkirchen. Wie immer beteiligten sich viele Feuerwehren aus der Gemeinde bei dieser Einsatzübung.
 
 Angenommenes Szenario war ein Feuer mit starker Rauchentwicklung in einem Betriebsgebäude welches nach einer aufgetretenen Leckage in Brand geraten war. Zudem wurden zwei Personen auf dem Gelände vermisst. Der Kreisfeuerwehrverband [berichtet](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1022) ausführlich darüber.
@@ -49,5 +48,3 @@ Von der Feuerwehr Eisolzried waren beteiligt:
 * Riedl Tobias
 * Schuster Christian
 * Zollbrecht Rainer
-
-{% include component/gal.html %}

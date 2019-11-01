@@ -52,13 +52,8 @@ videos:
 lang: de
 tags: uebungen
 ---
-
 Der zweite Teil der Januarübung fand wie im [ersten Teil](/2019/01/05/spass-am-ueben-trotz-kaelte/) wieder beim Trinkl Anwesen statt. 
 
 Erneut ging es darum mit Schnellangriff vorzugehen und im verrauchten Haus unter Atemschutz eine vermisste Person aufzufinden.
 
 Diesmal jedoch bei wesentlich angenehmerer Witterung.
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

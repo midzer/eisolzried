@@ -27,12 +27,8 @@ images:
 lang: de
 tags: uebungen
 ---
-
 Zur Übung im April ging es diesmal zum Feuerwehrhaus nach Feldgeding.
 
 Nach der gemeinsamen Leistungsprüfung THL mit den Feldgedinger Kollegen im letzten Jahr, wurde bei der Monatsübung eine Personenrettung aus einem Fahrzeug mit Hilfe von hydraulischem Rettungswerkzeug trainiert.
 
 Zukünftig ist mit einer häufigeren Zusammenarbeit mit anderen Gemeindefeuerwehren im Einsatzfall zu rechnen, weil das kommende, neue Fahrzeug von Eisolzried deren Einsatzradius erhöht. Gemeinschaftsübungen sind deshalb vorallem im Bereich THL sinnvoll und notwendig.
-
-{% include component/gal.html %}
-

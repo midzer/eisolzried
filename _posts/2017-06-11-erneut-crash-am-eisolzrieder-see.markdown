@@ -15,9 +15,6 @@ images:
 lang: de
 tags: einsaetze
 ---
-
 Gegen 14 Uhr wurde die Feuerwehr Eisolzried alarmiert: auf der Verbindungstraße zwischen Eisolzried und Eisolzrieder See ereignete sich ein Unfall bei dem ein Motorradfahrer involviert war. Am Unfallort angekommen stellte sich heraus, dass der Kraftfahrer zum Glück nur leicht verletzt wurde. Zusammen mit weiteren Feuerwehren wurde die Person betreut, ausgelaufenes Öl der Maschine beseitigt und der Straßenverkehr geregelt.
 
 Insgesamt dauerte der Einsatz circa eine Stunde mit acht beteiligten Feuerwehrleuten der Feuerwehr Eisolzried.
-
-{% include component/gal.html %}

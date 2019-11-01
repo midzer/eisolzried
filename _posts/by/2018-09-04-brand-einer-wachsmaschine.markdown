@@ -37,11 +37,8 @@ tags: einsaetze
 categories:
   - by
 ---
-
 Großeinsatz in Deinhausn! De Maschin vom Imkerloon "Dachauer Bienenwelt" wo as Wachs herstoid hod am Dienstog gega 8e in da Fria as brenna ogfrangt weil de Technik gspunna hod.
 
 Nachdem olle Feiawean okemma san, homs den Brandherd mit Atemschutz schnoi unter Kontrolle griagt. Wega de Buidl vo de Wärmebildkameras ko ma davo ausgeh, dass koa Gefahr mehr do is. Drum war nooch zwoa Stund der Einsatz beendet.
 
 Da [KFV](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1070), [Merkur](https://www.merkur.de/lokales/dachau/bergkirchen-ort28367/deutenhausen-brand-einer-wachsmaschine-in-dachauer-bienenwelt-10209881.html), [Süddeitsche](https://www.sueddeutsche.de/muenchen/dachau/euro-schaden-brand-in-geschaeft-fuer-imkereibedarf-1.4116859) und de [Lauterbacha](http://fw-lauterbach.de/index.php/einsaetze) schreim aweng mehra. 
-
-{% include component/gal.html %}

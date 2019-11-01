@@ -1,15 +1,7 @@
 {% if page.videos %}
-{% assign videos = page.videos %}
-{% elsif include.src %}
-{% assign videos = include.src %}
-{% endif %}
-
 <div class="grid grid--normal top-buffer bottom-buffer">
-  {% for video in videos %}
-    {% if include.type == 'animation' %}
-      {% include element/animation.html name=video.name %}
-    {% else %}
-      {% include element/video.html name=video.name %}
-    {% endif %}
+  {% for video in page.videos %}
+    {% include element/video.html name=video.name %}
   {% endfor %}
 </div>
+{% endif %}

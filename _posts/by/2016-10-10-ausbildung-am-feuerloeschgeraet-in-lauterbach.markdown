@@ -7,6 +7,4 @@ tags: uebungen
 categories:
   - by
 ---
-
 Im Oktoba war ma bei da Feiawea Laudabo zum übn. Zwoa Stund lang homma mitanand den neia Feialöscha "Hydrofix" ausprobiert.
-

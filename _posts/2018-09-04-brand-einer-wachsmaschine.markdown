@@ -35,11 +35,8 @@ images:
 lang: de
 tags: einsaetze
 ---
-
 Großeinsatz in Deutenhausen! Aufgrund eines technischen Defekts geriet eine Wachsaufbereitungsmaschine des Imkereifachgeschäfts "Dachauer Bienenwelt" am Dienstagmorgen gegen 8 Uhr in Brand.
 
 Nach Eintreffen der umliegenden Feuerwehren konnte der Brandherd unter Einsatz von Atemschutz rasch eingedämmt werden. Bilder der Wärmebildkameras gaben Sicherheit, dass keine weitere Gefahr von dem Ort ausging. Somit konnte nach zwei Stunden der Einsatz beendet werden.
 
 Der [KFV](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1070), [Merkur](https://www.merkur.de/lokales/dachau/bergkirchen-ort28367/deutenhausen-brand-einer-wachsmaschine-in-dachauer-bienenwelt-10209881.html), [Süddeutsche](https://www.sueddeutsche.de/muenchen/dachau/euro-schaden-brand-in-geschaeft-fuer-imkereibedarf-1.4116859) und die [Feuerwehr Lauterbach](http://fw-lauterbach.de/index.php/einsaetze) berichten ausführlicher. 
-
-{% include component/gal.html %}

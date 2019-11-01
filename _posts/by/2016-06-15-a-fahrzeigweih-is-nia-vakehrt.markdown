@@ -49,7 +49,6 @@ tags: allgemeines
 categories:
   - by
 ---
-
 Am Sonntog, 05. Juni 2016, hom si d'Leid am Feiawea Haus vo de Eilzriada droffa. Mid Blechmusi und de Fahna samma nachad zua Kircha z'Deinhausn. Nohch da Kircha samma wiada naus und da Pfarrer Hack hod as Fahrzeig g'segnet und g'weiht.
 
 Gloa Fonse hod de Gäste begrüßt und gmoant, des ganze war a riesen Sach fürd Zukunft. Außerdem hodda merce g'sogt bei da Gmoa fürs Fahrzeig (MLF). Da Simon moant, dass heidzudog d'Feiawea oiwei mehra zum leistn hom. Desweng muaß ma do investiern. D'Leid vo da Kreisbrandinschpektion, da Paul und da Woife, seng as Fahrzeig ois guade Sach damid junge Feiawehrla dazua kemma.
@@ -59,6 +58,3 @@ Danoch samma olle zruck zum Bürgahaus, wos nahad a boor Hoibe und an Schweinsbr
 Mir song vagoids Gohd bei olle de wo bei dem Festl g'hoifa hom.
 
 D'Presse hod a an glaona [Bericht](http://www.merkur.de/lokales/dachau/feuerwehr-eisolzried-feuerwehrfahrzeug-weihe-eingeweiht-6464716.html) gschriem.
-
-{% include component/gal.html %}
-

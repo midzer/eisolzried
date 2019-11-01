@@ -35,11 +35,8 @@ images:
 lang: de
 tags: einsaetze
 ---
-
 Sturmtief Herwart fegte an diesem Wochenende über ganz Mitteleuropa. Auch der Landkreis Dachau blieb davon leider nicht verschont. Zahlreiche Feuerwehren mussten ausrücken, um diverse Schäden zu beseitigen. Der Kreisfeuerwehrverband [berichtet](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1018) ausführlich darüber.
 
 In der Früh gegen 8.30 Uhr wurde im Einsatzbereich der Feuerwehr Eisolzried ein umgeknickter Baum auf der Kreisstraße Eisolzied Richtung Priel gemeldet. Am Einsatzort eingetroffen wurde zuerst die Straße abgesperrt, um ohne Gefährdung arbeiten zu können. Nachdem der Baum zerkleinert wurde, konnte er mit einem Traktor abtransportiert werden.
 
 Der Einsatz dauerte insgesamt circa 30 Minuten wobei 15 Feuerwehrkameraden beteiligt waren.
-
-{% include component/gal.html %}

@@ -18,7 +18,6 @@ videos:
 lang: de
 tags: uebungen
 ---
-
 Vom 15.10.2019 bis 19.10.2019 fand in Indersdorf eine Ausbildung an der Motorsäge statt. Zusammen mit anderen Feuerwehren aus dem Landkreis nahmen von der Feuerwehr Eisolzried Michael Mayr, Markus Reischl und Andreas Straucher daran teil.
 
 Im Theorieteil ging es um:
@@ -31,7 +30,3 @@ Im Theorieteil ging es um:
 Danach wurde das ganze in die Praxis umgesetzt und geübt.
 
 Der Veranstalter, die Kreisbrandinspektion, berichtet ausführlicher [hier](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1126).
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

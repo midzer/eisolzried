@@ -39,7 +39,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Mit de Foigadinger Feiawea hom de Eilzriada heia wieda a THL-Leistungsprüfung mit Erfoig obg'legt.
 
 Es is suppa g'arbad worn und de Schiris Ernst Zethner, Rainer Zollbrecht und Franz Brüdler hom nur gloana Sachan kritisiert. Robert Axter hod si bei da Gmoa fürd Einsatzbereitschaft bedankt und de Mannschaft zum Essn beim Hubert danooch eig'loon.
@@ -47,6 +46,3 @@ Es is suppa g'arbad worn und de Schiris Ernst Zethner, Rainer Zollbrecht und Fra
 Vo Eilzria hom Markus Asam, Johann Funk, Florian Lunglmeyr, Andreas Hörmann, Michael Hörmann, Thomas Hörmann und Markus Reischl teilg'nomma.
 
 (Des is a Zusammenfassung vo am Artikel im Regionalteil der Printausgabe der Dachauer Nachrichten)
-
-{% include component/gal.html %}
-

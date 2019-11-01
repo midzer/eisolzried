@@ -49,7 +49,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Bei scheena Weda samma an drei verschiedane Ort zur Übung im Mai ganga:
 
 * z'erscht zum Blootz bei da Rose
@@ -57,5 +56,3 @@ Bei scheena Weda samma an drei verschiedane Ort zur Übung im Mai ganga:
 * hint Naus no zum Brunnaweg in da Nahad vom Spuiblootz
 
 Wir ham uns vorgstoid, dass bei am jädn a Auto in da Garaasch brennt. Neba da Wassaentnahme ausm Unterflurhydrantn homma d'Straß obgsichert, Schlachbrückn aufbaud und mid oan bis zwoa C-Schleich nochm Verteila den Brand freile glöscht.
-
-{% include component/gal.html %}

@@ -20,7 +20,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Vom 15.10.2019 bis 19.10.2019 war in Indersdorf a Ausbildung an da Motorsaag. Zusammen mit andere Feuerwehrla ausm Landkreis warn vo uns Michael Mayr, Markus Reischl und Andreas Straucher dabei.
 
 In da Theorie ging es um:
@@ -33,7 +32,3 @@ In da Theorie ging es um:
 Danoch samma ind Praxis überganga und hom g'übt.
 
 Veranstaltet is worn von da Kreisbrandinspektion, de schreibt ausführlicher [hier](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1126).
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

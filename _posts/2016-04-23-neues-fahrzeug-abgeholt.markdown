@@ -19,7 +19,6 @@ images:
 lang: de
 tags: allgemeines
 ---
-
 Am Freitag, 22. April war es endlich so weit: wir holten unser neues Fahrzeug von der Firma Lentner in Hohenlinden ab.
 
 Das mittlere Löschfahrzeug (MLF) auf einem MAN-Fahrgestell ersetzt nun unser bisheriges, altes Tragkraftspritzenfahrzeug (TSF). Neben der größeren, allgemeinen Ausstattung bietet das moderne Fahrzeug sinnvolle Neuerungen. Im Mannschaftsraum können 2 Feuerwehrleute sich bereits auf der Fahrt zum Einsatzort mit Atemschutz ausrüsten. Der eingebaute 600 Liter Wassertank ermöglicht einen schnellen, Erstlöscheinsatz ohne eine externe Wasserversorgung erst aufbauen zu müssen. Bei Nachteinsätzen erhöhen die LED-Fahrzeugbeleuchtung und der in Sekunden ausgefahrene Lichtmast zusätzlich die Arbeitsicherheit.
@@ -27,6 +26,3 @@ Das mittlere Löschfahrzeug (MLF) auf einem MAN-Fahrgestell ersetzt nun unser bi
 Am Feuerwehrhaus angekommen nahmen viele Feuerwehrleute der Feuerwehr Eisolzried die neue Technik interessiert in Augenschein und ließen anschließend den Abend beim gemeinsamen Abendessen ausklingen.
 
 Offiziell gefeiert wird bei der Fahrzeugweihe am 5. Juni.
-
-{% include component/gal.html %}
-

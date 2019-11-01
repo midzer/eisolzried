@@ -69,11 +69,8 @@ tags: uebungen
 categories:
   - by
 ---
-
 Zua Übung im Januar is zum oiden Haus beim Schwarz Bäda ganga, wos weggrissn wern soi. Sau koid wars und mir ham mehrare Sachan gmacht:
 
 Mitm Schnoiangriff soit ma an Brand in da Küch im ersten Stoock mitm C-Rohr löschn. Danoch hamma no a Kleinlöschgerät und an Schaumfeialöscha ausprobiert.
 
 Beim letzten Teil soitn mehrare Trupps unter Atemschutz a verlorn gangane Person im verrachten Haus suacha und rettn.
-
-{% include component/gal.html %}

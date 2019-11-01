@@ -23,10 +23,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Bei da Übung im Septemba am 07.09.2015 war Wassaentnahma as da Moasa aufm Plan.
 
 Noochdem da Gruppnführa wos vazoid hod, homma Saugschleich kuppelt, Vakeasabsicherung g'macht und a Liacht aufbaud und an Löschaufbau zur "Brandstelle" g'macht.
-
-{% include component/gal.html %}
-

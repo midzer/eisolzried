@@ -66,7 +66,3 @@ Z'erscht homma midm Schnoiangriff as Wassa ausm Tank vom Feiaweafahrzeig gnomma.
 Hint naus homma no a Wassa ausm Unterflurhydranten gnomma, der wos glei ums Eck war. Dabei is freile z'erscht d'Straß zum Eilzriada Sää gscheid obgsichad worn. Dann homman Hydrantn sauba gspült und an Tank vom MLF wieder voi gmacht.
 
 Wos langsam aba sicha dunkel worn is, hod si zoagt, dass des Teliskopliacht aufm Dooch vom Fahrzeig recht guad is, damit mia bei da Arbad wos seng.
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

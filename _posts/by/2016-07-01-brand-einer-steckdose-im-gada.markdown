@@ -7,8 +7,6 @@ tags: einsaetze
 categories:
   - by
 ---
-
 Mia san alamierd worn weils ghoaßn hod: Brand an da OMV Tankstoi im GADA.
 
 Es hod si schnoi zoagt, dass a Steckdosn in am Lagaraum brennd hod. Mia hom nimma vui doa miaßn.
-

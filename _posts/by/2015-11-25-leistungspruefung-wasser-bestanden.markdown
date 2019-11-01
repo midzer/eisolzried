@@ -53,7 +53,6 @@ tags: uebungen
 categories:
   - by
 ---
-
 Im Frühjahr homma d'Leistungsprüfung Wassa mit Erfoig obg'legt.
 
 <div class="table-responsive">
@@ -88,5 +87,3 @@ Im Frühjahr homma d'Leistungsprüfung Wassa mit Erfoig obg'legt.
   </tbody>
 </table>
 </div>
-
-{% include component/gal.html %}

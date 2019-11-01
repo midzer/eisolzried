@@ -7,6 +7,4 @@ tags: einsaetze
 categories:
   - by
 ---
-
 A Brandmelder hod im GADA Logicpark ausglöst und hod a boor Feiawean alamierd. Nachdem mia festgstoid hom, dass a Fehlalam war, war da Einsatz beendet.
-

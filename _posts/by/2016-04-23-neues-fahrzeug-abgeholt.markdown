@@ -21,7 +21,6 @@ tags: allgemeines
 categories:
   - by
 ---
-
 Mir hom am Freitog, 22 April unser neis Fahrzeig vo Lentna aus Hohenlindn g'hoid.
 
 Es is a mittlas Löschfahrzeig (MLF) auf am MAN-Gstoi und ersetzt unser oids Tragkraftspritznfahrzeig (TSF). Greßa und moderna is hoid, aber hod no a boor guade Sachan. In da Kabina kenna sie zwoa Feiaweala an Atemschutz naufschnoin. Da Tank hod Blohz für 600 Litta. Do konnst schnoi amoi aweng a Wassa naushaun ohne dassd erst a Wassa vo extern aufbaun muaßt. In da Nohcht gibts a LED-Liacht vo am Mastn, den wo ma nauffahrn kohn.
@@ -29,6 +28,3 @@ Es is a mittlas Löschfahrzeig (MLF) auf am MAN-Gstoi und ersetzt unser oids Tra
 Am Feiaweaheisl hom si vui Feiawea as Fahrzeig og'schaud und danohch no a Hoibe drunga.
 
 G'feiad werd bei da Fahrzeigweih am 05. Juni.
-
-{% include component/gal.html %}
-

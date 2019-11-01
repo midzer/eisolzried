@@ -7,6 +7,4 @@ tags: uebungen
 categories:
   - by
 ---
-
 06.07.15: Z'erscht homma mit da Steckloata a potentielle Katznrettung vo am Dooch g'übt. Danooch Wassa komplett aufbaud vo am Untaflurhyrantn.
-

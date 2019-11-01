@@ -26,13 +26,8 @@ videos:
 lang: de
 tags: allgemeines
 ---
-
 Schlechtem Wetter zum Trotz ging es in das weltgrößte Indoor Elektro Kartcenter: den Kartpalast im GADA Bergkirchen.
 
 Nach kurzem Warmfahren der Reifen ging es sofort in das Qualifying. Die vorderen Plätze waren heiß umkämpft und so wurde es für das eigentliche Rennen richtig spannend.
 
 Nach turbolenten 16 Runden standen am Ende drei glückliche Gewinner auf dem Podest während der Rest noch die ein oder andere Fahrtaktik besprach.
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

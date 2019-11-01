@@ -57,7 +57,6 @@ videos:
 lang: de
 tags: uebungen
 ---
-
 Bei hervorragendem Wetter ging es zur Juliübung diesmal an die Maisach in Eisolzried, um einen fiktiven Brand eines Mähdreschers auf der angrenzenden Wiese zu löschen.
 
 Anfangs wurde für einen Schnellangriff das Wasser vom Tank des Feuerwehrfahrzeugs verwendet. Dann sorgte die mobile Tragkraftspritze, welche aus dem alten Feuerwehrhaus angekarrt wurde, mit ihrem angesaugten Wasser über die Saugleitungen durch die Pumpe des Fahrzeugs für weitere Unterstützung zum Eindämmen des imaginären Brandherdes. Der portable Ventilator wurde zusätzlich aufgestellt und probiert, ob er einwandfrei funktioniert.
@@ -65,7 +64,3 @@ Anfangs wurde für einen Schnellangriff das Wasser vom Tank des Feuerwehrfahrzeu
 Den Abschluss der Übung bildete die Wasserentnahme aus einem Unterflurhydranten nahe am Übungsort. Dabei wurde zuerst die Verbindungstraße zum Eisolzrieder See mit Warnschildern verkehrgerecht abgesichert. Nachdem der Hydrant ordentlich gespült wurde, konnte der interne Wassertank vom MLF wieder voll aufgefüllt werden.
 
 Als es langsam dunkler wurde, erwies das Teliskoplicht vom Fahrzeug sich als gute Möglichkeit schnell den umliegenden Arbeitsbereich zu beleuchten.
-
-{% include component/gal.html %}
-
-{% include component/vid.html %}

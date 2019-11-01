@@ -1,3 +1,4 @@
+{% if page.images %}
 {% if include.type == "normal" %}
 <div class="grid grid--normal top-buffer">
 {% else %}
@@ -14,3 +15,4 @@
     </a>
     {% endfor %}
 </div>
+{% endif %}
