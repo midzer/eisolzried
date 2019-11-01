@@ -2,7 +2,7 @@
 layout: post
 title:  "Kartfahrn im Kartpalast"
 date:   2018-01-05
-imgfolder: /assets/images/2018/feiern/
+imgfolder: /assets/images/2018/allgemeines/
 vidfolder: /assets/videos/2018/
 images:
   - name: gokart1

@@ -2,7 +2,7 @@
 layout: post
 title:  "Rückblick auf ein ereignisreiches Jahr"
 date:   2016-01-28
-imgfolder: /assets/images/2016/feiern/
+imgfolder: /assets/images/2016/allgemeines/
 images:
   - name: jahreshauptversammlung1
     text: Jahreshauptversammlung 1
