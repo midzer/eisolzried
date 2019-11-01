@@ -1,4 +1,4 @@
-import query from './helper/query'
+import { query } from './helper/query'
 
 function sendMessage (item, score) {
   const msg = {
@@ -24,27 +24,27 @@ function updateScore (item, modifier) {
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de/rate:63244')
 const socialboxes = query('.socialbox')
 
-ws.onopen = function () {
-  socialboxes.forEach(function (item) {
+ws.onopen = () => {
+  socialboxes.forEach(item => {
     sendMessage(item, undefined)
   })
 }
 
-ws.onmessage = function (msg) {
+ws.onmessage = msg => {
   const incoming = JSON.parse(msg.data),
     item = socialboxes.find(matchesIndex, incoming.index)
 
   item.querySelector('span').textContent = incoming.score
 }
 
-query('.plus-btn').forEach(function (item) {
-  item.onclick = function() {
+query('.plus-btn').forEach(item => {
+  item.onclick = () => {
     updateScore(item, 1)
   }
 })
 
-query('.minus-btn').forEach(function (item) {
-  item.onclick = function() {
+query('.minus-btn').forEach(item => {
+  item.onclick = () => {
     updateScore(item, -1)
   }
 })
@@ -56,14 +56,14 @@ if (navigator.share) {
   if (canonicalElement) {
     url = canonicalElement.href
   }
-  query('.share-btn').forEach(function (item) {
-    item.onclick = function() {
+  query('.share-btn').forEach(item => {
+    item.onclick = () => {
       navigator.share({
         title: document.title,
         url: url
       })
-        .then(() => console.log('Successful share'))
-        .catch((error) => console.log('Error sharing', error))
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error))
     }
   })
 }
