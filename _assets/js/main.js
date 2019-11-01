@@ -10,12 +10,7 @@ const anchorJS = require('anchor-js')
 // Lazy components
 const observer = new IntersectionObserver(changes => {
   changes.forEach(change => {
-    // Edge 15 doesn't support isIntersecting, but we can infer it
-    // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12156111/
-    // https://github.com/WICG/IntersectionObserver/issues/211
-    const isIntersecting = (typeof change.isIntersecting === 'boolean')
-      ? change.isIntersecting : change.intersectionRect.height > 0
-    if (isIntersecting) {
+    if (change.isIntersecting) {
       load(change.target)
 
       // Stop observing the current target
