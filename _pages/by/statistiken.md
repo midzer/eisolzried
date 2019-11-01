@@ -6,7 +6,7 @@ lang: by
 ---
 
 ## Wia vui mir san
-<figure class="lazy" id="member" data-src="charts.js"></figure>
+<div class="lazy" id="member" data-src="charts.js"></div>
 
 Zum seng is wiavui Midglieda mir vo 1990 bis 2015 ghapt hom. Jäda Boikn hoaßt fünf Johr und bedeit de oanzelna Sachan. Verstorbene Leid san ned dabei.
 
