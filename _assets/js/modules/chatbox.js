@@ -10,11 +10,11 @@ loadStyle('chatbox.css')
  * if browser support is better
  */
 // Markdown
-function removeTags(string) {
+function removeTags (string) {
   return string.replace(/<(?:.|\n)*?>/gm, '')
 }
 
-function md2html(md) {
+function md2html (md) {
   const bold_pattern1 = /\*{2}(.+)\*{2}/gim // <b>
   const bold_pattern2 = /\_{2}(.+)\_{2}/gim  // <b>
   const italic_pattern1 = /\_(.+)\_/gim // <i>
@@ -65,7 +65,7 @@ function createMessage (content) {
   return item
 }
 
-function appendToList(child) {
+function appendToList (child) {
   messagesList.appendChild(child)
   chatbox.scrollTop = chatbox.scrollHeight
 }
@@ -75,32 +75,33 @@ function sendMessage (message) {
   ws.send(message)
 }
 
-function sendTextMessage() {
+function sendTextMessage () {
   if (chatInput.value) {
     sendMessage(removeTags(chatInput.value))
     chatInput.value = ''
   }
 }
 
-const chatbox = document.getElementById('chatbox')
-const chatInput = document.getElementById('chat-input')
-const imageInput = document.getElementById('image-input')
-const imageForm = document.getElementById('image-form')
-const messagesList = document.getElementById('chat-messages')
-const ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
-bsCustomFileInput.init()
+const chatbox = document.getElementById('chatbox'),
+  chatInput = document.getElementById('chat-input'),
+  imageInput = document.getElementById('image-input'),
+  imageForm = document.getElementById('image-form'),
+  messagesList = document.getElementById('chat-messages'),
+  ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187'),
+  MAX_WIDTH = 600,
+  MAX_HEIGHT = 400
+
 let incomingMessages = [],
   scheduled
 
-const MAX_WIDTH = 600,
-  MAX_HEIGHT = 400
+bsCustomFileInput.init()
 
 ws.onmessage = message => {
   incomingMessages.push(createMessage(message.data))
 
   if (!scheduled) {
     scheduled = true
-    window.requestAnimationFrame(function () {
+    window.requestAnimationFrame(() => {
       const frag = document.createDocumentFragment()
       for (let i = 0, len = incomingMessages.length; i < len; i++) {
         frag.appendChild(incomingMessages[i])
@@ -112,9 +113,7 @@ ws.onmessage = message => {
   }
 }
 
-document.getElementById('chat-btn').onclick = () => {
-  sendTextMessage()
-}
+document.getElementById('chat-btn').onclick = () => sendTextMessage()
 
 document.getElementById('upload-btn').onclick = () => {
   const selectedFile = imageInput.files
@@ -127,10 +126,10 @@ document.getElementById('upload-btn').onclick = () => {
         const image = document.createElement('img')
         image.src = srcData
         image.onload = () => {
-          let width = image.width
-          let height = image.height
-
-          let resize
+          let width = image.width,
+            height = image.height,
+            resize
+          
           if (width > height) {
             if (width > MAX_WIDTH) {
               height *= MAX_WIDTH / width

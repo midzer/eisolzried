@@ -3,8 +3,9 @@ import { loadScript } from './load/loadscript'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
-const anchorJS = require('anchor-js')
 //import { Christmas } from './helper/christmas'
+
+const anchorJS = require('anchor-js')
 
 // Lazy components
 const observer = new IntersectionObserver(changes => {
@@ -45,9 +46,7 @@ function setTheme (dark) {
 let sensor
 if ('AmbientLightSensor' in window) {
   sensor = new AmbientLightSensor()
-  sensor.onreading = () => {
-    setTheme(sensor.illuminance === 0 ? true : false)
-  }
+  sensor.onreading = () => setTheme(sensor.illuminance === 0 ? true : false)
   sensor.start()
 }
 

@@ -29,7 +29,7 @@ vidTemplate.preload = 'none'
 vidTemplate.loop = true
 vidTemplate.style.display = 'none'
 
-function appendElement(frag) {
+function appendElement (frag) {
   let element = createElement(index++)
   if (element) {
     (frag || currentGrid).appendChild(element)
@@ -42,9 +42,7 @@ export function create (grid) {
     // Lets fill a block of 24 elements initially
     appendElement(frag)
   }
-  window.requestAnimationFrame(function () {
-    grid.appendChild(frag)
-  })
+  window.requestAnimationFrame(() => grid.appendChild(frag))
   currentGrid = grid
 }
 

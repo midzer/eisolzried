@@ -1,11 +1,11 @@
-function appendMessage(message) {
+function appendMessage (message) {
     const box = document.getElementById('adventure-box')
     const item = document.createElement('li')
     item.textContent = message
     box.appendChild(item)
 }
 
-function goToStage(number) {
+function goToStage (number) {
     stage = number
     let text
     switch (number) {
@@ -120,9 +120,7 @@ function sendMessage () {
     evaluateMessage(message.toLowerCase())
 }
 
-document.getElementById('adventure-btn').onclick = () => {
-    sendMessage()
-}
+document.getElementById('adventure-btn').onclick = () => sendMessage()
 
 document.getElementById('adventure-form').onkeypress = event => {
     if (event.keyCode === 13) {
