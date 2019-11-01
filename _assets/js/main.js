@@ -75,10 +75,6 @@ document.getElementById('grisu').onclick = event => {
 }
 
 // Bottombar
-const bottomBar = document.getElementById('bottombar')
-let ticking
-window.addEventListener('scroll', requestTick)
-
 function requestTick () {
   if (!ticking) {
     ticking = true
@@ -91,6 +87,10 @@ function update () {
   bottomBar.style.transform = `scaleX(${scaleX})`
   ticking = false
 }
+
+const bottomBar = document.getElementById('bottombar')
+let ticking
+window.addEventListener('scroll', requestTick)
 
 // Globals
 const spritePath = '/assets/icons/sprite.svg#'

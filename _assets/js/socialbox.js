@@ -21,13 +21,11 @@ function updateScore (item, modifier) {
   sendMessage(socialbox, newScore)
 }
 
-const ws = new WebSocket('wss://feuerwehr-eisolzried.de/rate:63244')
-const socialboxes = query('.socialbox')
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de/rate:63244'),
+  socialboxes = query('.socialbox')
 
 ws.onopen = () => {
-  socialboxes.forEach(item => {
-    sendMessage(item, undefined)
-  })
+  socialboxes.forEach(item => sendMessage(item, undefined))
 }
 
 ws.onmessage = msg => {
@@ -37,22 +35,13 @@ ws.onmessage = msg => {
   item.querySelector('span').textContent = incoming.score
 }
 
-query('.plus-btn').forEach(item => {
-  item.onclick = () => {
-    updateScore(item, 1)
-  }
-})
-
-query('.minus-btn').forEach(item => {
-  item.onclick = () => {
-    updateScore(item, -1)
-  }
-})
+query('.plus-btn').forEach(item => item.onclick = () => updateScore(item, 1))
+query('.minus-btn').forEach(item => item.onclick = () => updateScore(item, -1))
 
 // Share
 if (navigator.share) {
-  let url = document.location.href
   const canonicalElement = document.querySelector('link[rel=canonical]')
+  let url = document.location.href
   if (canonicalElement) {
     url = canonicalElement.href
   }

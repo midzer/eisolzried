@@ -62,6 +62,7 @@ function md2html (md) {
 function createMessage (content) {
   const item = document.createElement('li')
   item.innerHTML = md2html(content)
+
   return item
 }
 
@@ -143,10 +144,12 @@ document.getElementById('upload-btn').onclick = () => {
             resize = true
           }
           if (resize) {
-            const canvas = document.createElement('canvas')
+            const canvas = document.createElement('canvas'),
+              context = canvas.getContext('2d')
+            
             canvas.width = width
             canvas.height = height
-            const context = canvas.getContext('2d')
+
             context.drawImage(image, 0, 0, width, height)
             srcData = canvas.toDataURL('image/jpeg')
           }
@@ -156,11 +159,11 @@ document.getElementById('upload-btn').onclick = () => {
       fileReader.readAsDataURL(imageFile)
     }
     else {
-      const snackbar = createSnackbar()
-      const data = {
-        message: 'Upload nicht möglich! Maximale Bildgröße 4.2MB',
-        timeout: 5000
-      }
+      const snackbar = createSnackbar(),
+        data = {
+          message: 'Upload nicht möglich! Maximale Bildgröße 4.2MB',
+          timeout: 5000
+        }
       snackbar.showSnackbar(data)
     }
   }

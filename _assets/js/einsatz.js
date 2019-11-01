@@ -1,7 +1,9 @@
 function appendMessage (message) {
-    const box = document.getElementById('adventure-box')
-    const item = document.createElement('li')
+    const box = document.getElementById('adventure-box'),
+      item = document.createElement('li')
+    
     item.textContent = message
+    
     box.appendChild(item)
 }
 
@@ -113,8 +115,9 @@ function evaluateMessage (message) {
 }
 
 function sendMessage () {
-    const input = document.getElementById('adventure-input')
-    const message = input.value
+    const input = document.getElementById('adventure-input'),
+      message = input.value
+    
     appendMessage('> ' + message)
     input.value = ''
     evaluateMessage(message.toLowerCase())

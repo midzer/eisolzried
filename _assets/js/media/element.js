@@ -52,13 +52,14 @@ export function reset () {
 }
 
 function setup (grid) {
-  if (grid.id === 'image-grid') {
-    elements = images
-    length = imgLength
-    path = imgPath
-    imgMode = true
-  }
-  else {
+  // Default for images
+  elements = images
+  length = imgLength
+  path = imgPath
+  imgMode = true
+
+  if (grid.id === 'video-grid') {
+    // Adapt for videos
     elements = videos
     length = vidLength
     path = vidPath
@@ -70,35 +71,40 @@ function createElement (index) {
   let link
   if (index < length) {
     link = document.createElement('a')
-    const element = elements[index]
-    const img = imgTemplate.cloneNode(false)
-    if (imgMode) {
-        link.href = `${path}${element.name}.jpg`
-        img.setAttribute('data-src', `${path}thumbs/${element.name}-1x.jpg`)
-        img.setAttribute('data-srcset',
-                         `${path}thumbs/${element.name}-1x.jpg 1x,
-                          ${path}thumbs/${element.name}-2x.jpg 2x,
-                          ${path}thumbs/${element.name}-3x.jpg 3x`)
-        img.alt = element.text
+    
+    const element = elements[index],
+      img = imgTemplate.cloneNode(false)
+    
+    // Defaults for images
+    link.href = `${path}${element.name}.jpg`
+    let name = element.name,
+      alt = element.text
+    
+    if (!imgMode) {
+      // Adjust for videos
+      link.href = `#v${element}`
+      link.setAttribute('data-type', 'html')
+      name = element
+      alt = element
     }
-    else {
-        link.href = `#v${element}`
-        link.setAttribute('data-type', 'html')
-        img.setAttribute('data-src', `${path}thumbs/${element}-1x.jpg`)
-        img.setAttribute('data-srcset',
-                         `${path}thumbs/${element}-1x.jpg 1x,
-                          ${path}thumbs/${element}-2x.jpg 2x,
-                          ${path}thumbs/${element}-3x.jpg 3x`)
-        img.alt = element
-    }
+    img.setAttribute('data-src', `${path}thumbs/${name}-1x.jpg`)
+    img.setAttribute('data-srcset',
+                     `${path}thumbs/${name}-1x.jpg 1x,
+                      ${path}thumbs/${name}-2x.jpg 2x,
+                      ${path}thumbs/${name}-3x.jpg 3x`)
+    img.alt = alt
+    
     observer.observe(img)
     link.appendChild(img)
+
     if (!imgMode) {
-      const div = document.createElement('div')
+      const div = document.createElement('div'),
+        vid = vidTemplate.cloneNode(false)
+      
       div.id = `v${element}`
-      const vid = vidTemplate.cloneNode(false)
       vid.src = `${path}${element}.${extension}`
       vid.setAttribute('type', type)
+      
       div.appendChild(vid)
       link.appendChild(div)
     }

@@ -12,24 +12,15 @@ const imageTab = document.getElementById('bilder-tab'),
   imageGrid = document.getElementById('image-grid'),
   videoGrid = document.getElementById('video-grid')
 
-imageTab.addEventListener('show.bs.tab', () => {
-  create(imageGrid)
-})
-videoTab.addEventListener('show.bs.tab', () => {
-  create(videoGrid)
-})
-imageTab.addEventListener('hide.bs.tab', () => {
-  reset()
-})
-videoTab.addEventListener('hide.bs.tab', () => {
-  reset()
-})
-imageTab.addEventListener('hidden.bs.tab', () => {
-  cleanup(imageGrid)
-})
-videoTab.addEventListener('hidden.bs.tab', () => {
-  cleanup(videoGrid)
-})
+imageTab.addEventListener('show.bs.tab', () => create(imageGrid))
+videoTab.addEventListener('show.bs.tab', () => create(videoGrid))
+
+imageTab.addEventListener('hide.bs.tab', () => reset())
+videoTab.addEventListener('hide.bs.tab', () => reset())
+
+imageTab.addEventListener('hidden.bs.tab', () => cleanup(imageGrid))
+videoTab.addEventListener('hidden.bs.tab', () => cleanup(videoGrid))
+
 // Kickstart
 const lightbox = loadScript('lightbox.js')
 lightbox.then(() => create(imageGrid))

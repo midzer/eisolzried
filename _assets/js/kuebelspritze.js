@@ -5,11 +5,12 @@ function hubDone (nextHub) {
   document.getElementById('huebe').textContent = ++huebe
 }
 
-var huebe = 0
+let huebe = 0
 
 if ('LinearAccelerationSensor' in window) {
   const sensor = new LinearAccelerationSensor()
   let nextHub = 'up'
+  
   sensor.onreading = () => {
     if (sensor.z < -5 && nextHub === 'up') {
       hubDone(nextHub)
