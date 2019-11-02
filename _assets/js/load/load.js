@@ -18,8 +18,7 @@ export function load (element) {
     default:
       let scriptLoaded,
         loader
-      const script = loadScript(element.getAttribute('data-src'))
-      script.then(() => {
+      loadScript(element.getAttribute('data-src')).then(() => {
         scriptLoaded = true
         if (loader) {
           element.removeChild(loader)

@@ -22,5 +22,4 @@ imageTab.addEventListener('hidden.bs.tab', () => cleanup(imageGrid))
 videoTab.addEventListener('hidden.bs.tab', () => cleanup(videoGrid))
 
 // Kickstart
-const lightbox = loadScript('lightbox.js')
-lightbox.then(() => create(imageGrid))
+loadScript('lightbox.js').then(() => create(imageGrid))

@@ -116,13 +116,12 @@ function createElement (index) {
 const observer = new IntersectionObserver(changes => {
   changes.forEach(change => {
     if (change.isIntersecting) {
-      loadImage(change.target)
-
-      appendElement()
-      tobi.add(change.target.parentElement)
-
       // Stop observing the current target
       observer.unobserve(change.target)
+      
+      loadImage(change.target)
+      appendElement()
+      tobi.add(change.target.parentElement)
     }
   })
 })

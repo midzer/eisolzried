@@ -11,18 +11,15 @@ const anchorJS = require('anchor-js')
 const observer = new IntersectionObserver(changes => {
   changes.forEach(change => {
     if (change.isIntersecting) {
-      load(change.target)
-
       // Stop observing the current target
       observer.unobserve(change.target)
+      
+      load(change.target)
     }
   })
 })
 
-const items = query('.lazy')
-for (let i = 0, j = items.length; i < j; i++) {
-  observer.observe(items[i])
-}
+query('.lazy').forEach(item => observer.observe(item))
 
 // Anchors
 const anchors = new anchorJS({
@@ -70,9 +67,7 @@ document.querySelector('.icon--home').onclick = () => {
   spacer.style.animationPlayState = spacer.style.animationPlayState === 'paused' || spacer.style.animationPlayState === '' ? 'running' : 'paused'
   toggleAudio(document.getElementById('fire-run-player'))
 }
-document.getElementById('grisu').onclick = event => {
-  toggleAudio(event.target)
-}
+document.getElementById('grisu').onclick = event => toggleAudio(event.target)
 
 // Bottombar
 function requestTick () {
@@ -90,18 +85,20 @@ function update () {
 
 const bottomBar = document.getElementById('bottombar')
 let ticking
+
 window.addEventListener('scroll', requestTick)
 
 // Globals
-const spritePath = '/assets/icons/sprite.svg#'
-const modalTemplate = document.getElementById('modal')
+const spritePath = '/assets/icons/sprite.svg#',
+  modalTemplate = document.getElementById('modal')
+
 if (modalTemplate) {
   window.modal = new Modal(modalTemplate)
 }
 
 // Locales
-const path = window.location.pathname
-const isBoarischeUrl = path.indexOf('/by/') !== -1
+const path = window.location.pathname,
+  isBoarischeUrl = path.indexOf('/by/') !== -1
 
 // Lightbox
 if (document.querySelector('.lightbox')) {
@@ -121,7 +118,7 @@ function startSearch () {
     fetch(`/search${isBoarischeUrl ? '-by' : ''}.json`)
       .then(blob => blob.json())
       .then(data => pages.push(...data))
-      .then( () => displayResults(this.value))
+      .then(() => displayResults(this.value))
   }
   else {
     displayResults(this.value)
@@ -137,23 +134,25 @@ function displayResults (value) {
   resultsList.style.display = value ? 'block' : 'none'
 }
 
-const field = document.getElementById('search-input')
-const resultsList = document.getElementById('results-container')
+const field = document.getElementById('search-input'),
+  resultsList = document.getElementById('results-container'),
+  pages = []
+
 field.addEventListener('keyup', startSearch)
 field.addEventListener('keypress', event => {
   if (event.keyCode === 13) {
     event.preventDefault()
   }
 })
-const pages = []
 
 // Snow
 //new Christmas()
 
 // Show render time
 if (window.PerformanceNavigationTiming) {
-  const [entry] = window.performance.getEntriesByType('navigation')
-  const rendertime = document.getElementById('rendertime')
+  const [entry] = window.performance.getEntriesByType('navigation'),
+    rendertime = document.getElementById('rendertime')
+  
   rendertime.firstElementChild.textContent = `${parseInt(entry.domInteractive)}ms`
   rendertime.classList.remove('invisible')
 }
