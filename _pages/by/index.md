@@ -42,9 +42,9 @@ Gnua vazoid, vui Spaß beim Umschaun :)
       </div>
     </div>
   </div><!-- col-lg-5 -->
-  <div class="col-lg-7 d-flex">
-    <div class="card">          
-      <div class="card-body">
+  <div class="col-lg-7">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
         <h2 class="card-title">{% include element/icon.html icon="message-circle" %} Chat
         </h2>
 {% include component/chat.html %}
