@@ -45,7 +45,7 @@
   </div>
 {% endfor %}
 </div>
-<button id="moreposts" type="button" class="btn btn-outline-primary d-block mx-auto top-buffer">
+<button id="moreposts" type="button" class="btn btn-outline-primary d-block mx-auto top-buffer bottom-buffer">
   {% include element/icon.html icon="plus" %}
   {% if page.lang == 'by' %}
   Meara
@@ -53,7 +53,6 @@
   Mehr
   {% endif %}
 </button>
-<br>
 <p class="card-text">
   {% include element/icon.html icon="rss" %}
   {% if page.lang == 'by' %}
