@@ -1,8 +1,6 @@
 import { loadStyle } from './load/loadstyle'
 import { createSnackbar } from './helper/createsnackbar'
 
-loadStyle('calendar.css')
-
 function isBetween (first, last, time, timezone) {
   return (first.compareDateOnlyTz(time, timezone) === -1 &&
     last.compareDateOnlyTz(time, timezone) === 1) ||
@@ -148,10 +146,11 @@ function buildCal (data) {
   })
 }
 // Get data first
-fetch('/assets/data/termine.ics')
-.then(function (response) {
-  return response.text()
-})
-.then(function (data) {
-  buildCal(data)
+loadStyle('calendar.css')
+.then(() => {
+  fetch('/assets/data/termine.ics')
+  .then(response => {
+    return response.text()
+  })
+  .then(data => buildCal(data))
 })
