@@ -11,7 +11,7 @@
   // in Chromium 72+ any more
   min-height: 1px;
 
-  &:not(div) {
+  &:not(div):not(ul) {
     // Do opacity animation on load
     // for everything except scripts
     opacity: 0;

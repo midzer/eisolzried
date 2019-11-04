@@ -4,8 +4,6 @@ import { createSnackbar } from '../helper/createsnackbar'
 import { loadStyle } from '../load/loadstyle'
 import { loadScript } from '../load/loadscript'
 
-loadStyle('chatbox.css')
-
 /* Can be import()ed dynamically in the future
  * if browser support is better
  */
@@ -67,7 +65,7 @@ function createMessage (content) {
 }
 
 function appendToList (child) {
-  messagesList.appendChild(child)
+  chatbox.appendChild(child)
   chatbox.scrollTop = chatbox.scrollHeight
 }
 
@@ -83,36 +81,42 @@ function sendTextMessage () {
   }
 }
 
+function createWebSocket () {
+  ws = new WebSocket('ws://localhost:62187')
+
+  ws.onmessage = message => {
+    incomingMessages.push(createMessage(message.data))
+  
+    if (!scheduled) {
+      scheduled = true
+      window.requestAnimationFrame(() => {
+        const frag = document.createDocumentFragment()
+        for (let i = 0, len = incomingMessages.length; i < len; i++) {
+          frag.appendChild(incomingMessages[i])
+        }
+        appendToList(frag)
+        incomingMessages.length = 0
+        scheduled = false
+      })
+    }
+  }
+}
+
 const chatbox = document.getElementById('chatbox'),
   chatInput = document.getElementById('chat-input'),
   imageInput = document.getElementById('image-input'),
   imageForm = document.getElementById('image-form'),
-  messagesList = document.getElementById('chat-messages'),
-  ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187'),
   MAX_WIDTH = 600,
   MAX_HEIGHT = 400
 
 let incomingMessages = [],
-  scheduled
+  scheduled,
+  ws
 
 bsCustomFileInput.init()
 
-ws.onmessage = message => {
-  incomingMessages.push(createMessage(message.data))
-
-  if (!scheduled) {
-    scheduled = true
-    window.requestAnimationFrame(() => {
-      const frag = document.createDocumentFragment()
-      for (let i = 0, len = incomingMessages.length; i < len; i++) {
-        frag.appendChild(incomingMessages[i])
-      }
-      appendToList(frag)
-      incomingMessages.length = 0
-      scheduled = false
-    })
-  }
-}
+loadStyle('chatbox.css')
+.then(() => createWebSocket())
 
 document.getElementById('chat-btn').onclick = () => sendTextMessage()
 

@@ -1,8 +1,8 @@
 #chatbox {
-  max-height: 433px;
+  max-height: 393px;
   overflow-y: auto;
 
-  li:nth-child(odd) {
+  > li:nth-child(odd) {
     background: #f5f5f5;
   }
 
