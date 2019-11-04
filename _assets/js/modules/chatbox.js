@@ -82,7 +82,7 @@ function sendTextMessage () {
 }
 
 function createWebSocket () {
-  ws = new WebSocket('ws://feuerwehr-eisolzried.de/chat:62187')
+  ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
 
   ws.onmessage = message => {
     incomingMessages.push(createMessage(message.data))
