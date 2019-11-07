@@ -1,7 +1,7 @@
 <div id="fire-run" role="presentation">
     <video id="grisu" class="lazy" loop width="64" height="54">
-        <source data-src="/assets/gimmicks/grisu.webm" type='video/webm;codecs="vp9,opus"'>
-        <source data-src="/assets/gimmicks/grisu.mp4" type='video/mp4;codecs="avc1.640028,mp4a.40.2"'>
+        <source src="{% include helper/transwebm.html %}" data-src="/assets/gimmicks/grisu.webm" type='video/webm;codecs="vp9,opus"'>
+        <source src="{% include helper/transmp4.html %}" data-src="/assets/gimmicks/grisu.mp4" type='video/mp4;codecs="avc1.640028,mp4a.40.2"'>
         Dein Browser unterstützt das Video tag nicht.
     </video>
     <div></div>
