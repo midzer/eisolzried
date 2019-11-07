@@ -18,19 +18,19 @@
   color: $gray-700;
 }
 
-.btn.btn-posts {
+.btn.btn-date {
   background: $primary;
 }
 
-.btn-posts {
+.btn-date {
   position: relative;
   padding-left: 14px;
   padding-right: 14px;
-  margin: 0 1rem 1rem 1rem;
+  margin-left: 1rem;
 }
 
-.btn-posts:before,
-.btn-posts:after { /* make two squares (before and after), looking similar to the button */
+.btn-date:before,
+.btn-date:after { /* make two squares (before and after), looking similar to the button */
   content: "";
   position: absolute;
   top: 4px; /* move it down because of rounded corners */
@@ -43,12 +43,37 @@
   border-radius: 0; /* dont round arrow corner */
 }
 
-.btn-posts:before { /* align the "before" square to the left */
+.btn-date:before { /* align the "before" square to the left */
   left: -10px;
   transform: rotate(45deg); /* rotate arrow squares 45 deg to point left */
 }
 
-.btn-posts:after { /* align the "after" square to the right */
+.btn-date:after { /* align the "after" square to the right */
   right: -10px;
   transform: rotate(225deg); /* rotate arrow squares 225 deg to point right */
+}
+
+.btn-tag {
+  margin-left: -26px;
+  padding-left: 26px;
+  position: relative;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-tag:before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 0;
+  border-color: transparent darken($primary, 25%) darken($primary, 25%) transparent;
+  border-style: solid;
+  border-width: 5px;
+  width: 0;
+  height: 0;
+}
+
+.btn-date,
+.btn-tag {
+  margin-bottom: 1rem;
 }
