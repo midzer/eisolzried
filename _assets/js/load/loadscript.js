@@ -8,6 +8,9 @@ export function loadScript (file) {
     if (document.head.lastChild.src !== script.src) {
       document.head.appendChild(script)
     }
+    else {
+      resolve()
+    }
   })
 }
 
