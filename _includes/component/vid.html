@@ -1,7 +1,18 @@
 {% if page.videos %}
+  {% assign videos = page.videos %}
+  {% assign vidfolder = page.vidfolder %}
+{% elsif post.videos %}
+  {% assign videos = post.videos %}
+  {% assign vidfolder = post.vidfolder %}
+{% endif %}
+{% if videos %}
 <div class="grid grid--normal top-buffer bottom-buffer">
-  {% for video in page.videos %}
-    {% include element/video.html name=video.name %}
+  {% for video in videos %}
+    <video class="lazy" controls preload="metadata" playsinline>
+      <source src="{% include helper/transwebm.html %}" data-src="{{ vidfolder }}{{ video.name }}.webm" type='video/webm;codecs="vp9,opus"'>
+      <source src="{% include helper/transmp4.html %}" data-src="{{ vidfolder }}{{ video.name }}.mp4" type='video/mp4;codecs="avc1.42001e,mp4a.40.2"'>
+      Dein Browser unterstützt das Video tag nicht.
+    </video>  
   {% endfor %}
 </div>
 {% endif %}

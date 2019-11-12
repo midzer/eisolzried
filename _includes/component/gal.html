@@ -1,15 +1,22 @@
 {% if page.images %}
+  {% assign images = page.images %}
+  {% assign imgfolder = page.imgfolder %}
+{% elsif post.images %}
+  {% assign images = post.images %}
+  {% assign imgfolder = post.imgfolder %}
+{% endif %}
+{% if images %}
 {% if include.type == "normal" %}
 <div class="grid grid--normal top-buffer">
 {% else %}
 <div class="grid grid--small top-buffer">
 {% endif %}
-{% for image in page.images %}
-    <a href="{{ page.imgfolder }}{{ image.name }}.jpg" class="lightbox">
+{% for image in images %}
+    <a href="{{ imgfolder }}{{ image.name }}.jpg" class="lightbox">
         <img class="lazy"
              src="{% include helper/trans.html width='200' height='200' %}"
-             data-src="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg"
-             data-srcset="{{ page.imgfolder }}thumbs/{{ image.name }}-1x.jpg 1x, {{ page.imgfolder }}thumbs/{{ image.name }}-2x.jpg 2x, {{ page.imgfolder }}thumbs/{{ image.name }}-3x.jpg 3x"
+             data-src="{{ imgfolder }}thumbs/{{ image.name }}-1x.jpg"
+             data-srcset="{{ imgfolder }}thumbs/{{ image.name }}-1x.jpg 1x, {{ imgfolder }}thumbs/{{ image.name }}-2x.jpg 2x, {{ imgfolder }}thumbs/{{ image.name }}-3x.jpg 3x"
              width="200" height="200"
              alt="{{ image.text }}">
     </a>
