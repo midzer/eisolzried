@@ -1,7 +1,7 @@
 import EmojiButton from 'emoji-button'
 
 const emojiButton = document.getElementById('emoji-btn'),
-  picker = new EmojiButton({position: 'top-end'})
+  picker = new EmojiButton({position: 'top-end', autoFocusSearch: false})
 
 picker.on('emoji', emoji => document.getElementById('chat-input').value += emoji)
 
