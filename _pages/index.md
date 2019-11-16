@@ -52,4 +52,11 @@ Und nun viel Spaß beim Stöbern :)
     </div>
   </div><!-- col-lg-7 -->
 </div><!-- row -->
+<div class="card top-buffer">
+  <div class="card-body">
+    <h2 class="card-title">{% include element/icon.html icon="rss" %} Feed
+    </h2>
+{% include component/feed.html %}
+  </div>
+</div>
 {% include element/church.html %}

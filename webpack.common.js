@@ -42,6 +42,9 @@ module.exports = {
     ],
     emoji: [
       './_assets/js/modules/emoji.js'
+    ],
+    feedbox: [
+      './_assets/js/modules/feedbox.js'
     ]
   },
   output: {

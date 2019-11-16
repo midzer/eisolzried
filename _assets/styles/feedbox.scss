@@ -1,0 +1,16 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+#feedbox {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 85px 200px auto;
+  
+    height: 400px;
+    overflow-y: auto;
+  
+    @include media-breakpoint-only(xs) {
+      grid-template-columns: auto;
+    }
+}
