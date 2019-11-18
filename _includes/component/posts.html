@@ -54,6 +54,7 @@
   {% endif %}
 </button>
 <p class="card-text">
+  {% include element/icon.html icon="rss" %}
   {% if page.lang == 'by' %}
   bstoin als
   <a rel="alternate" type="application/rss+xml" href="{{ '/feed-by.xml' | prepend: site.baseurl }}">RSS</a>

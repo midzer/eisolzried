@@ -1,0 +1,7 @@
+---
+---
+[
+    {%- for feed in site.data.feeds -%}
+    "{{ feed.url }}"{%- unless forloop.last -%},{% endunless %}
+    {%- endfor -%}
+]

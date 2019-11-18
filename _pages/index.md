@@ -54,7 +54,7 @@ Und nun viel Spaß beim Stöbern :)
 </div><!-- row -->
 <div class="card top-buffer">
   <div class="card-body">
-    <h2 class="card-title">{% include element/icon.html icon="rss" %} Feed
+    <h2 class="card-title">{% include element/icon.html icon="globe" %} Feed
     </h2>
 {% include component/feed.html %}
   </div>
