@@ -3,14 +3,13 @@
 @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 
 #feedbox {
-    display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: 85px 200px auto;
-  
-    height: 400px;
-    overflow-y: auto;
-  
-    @include media-breakpoint-only(xs) {
-      grid-template-columns: auto;
-    }
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 85px 65px 155px auto;
+
+  height: 400px;
+  overflow-y: auto;
+  @include media-breakpoint-only(xs) {
+    grid-template-columns: 155px auto;
+  }
 }
