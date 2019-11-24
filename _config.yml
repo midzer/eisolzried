@@ -32,3 +32,4 @@ exclude:
 # Plugin settings
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
