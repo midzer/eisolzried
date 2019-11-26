@@ -22,9 +22,9 @@
     "not IE 11"
   ],
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/register": "^7.7.0",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
     "babel-loader": "^8.0.5",
     "bootstrap.native-loader": "^2.0.0",
     "browser-sync": "^2.26.7",
@@ -46,10 +46,10 @@
   },
   "dependencies": {
     "anchor-js": "^4.2.2",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.0",
     "bootstrap.native": "git+https://git@github.com/thednp/bootstrap.native.git",
     "bs-custom-file-input": "^1.3.2",
-    "emoji-button": "^2.2.0",
+    "emoji-button": "^2.2.2",
     "frappe-charts": "git+https://git@github.com/frappe/charts.git",
     "ical.js": "^1.2.2",
     "intersection-observer": "^0.7.0",
