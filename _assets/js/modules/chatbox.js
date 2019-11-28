@@ -1,7 +1,6 @@
 import bsCustomFileInput from 'bs-custom-file-input'
 
 import { createSnackbar } from '../helper/createsnackbar'
-import { loadStyle } from '../load/loadstyle'
 import { loadScript } from '../load/loadscript'
 
 /* Can be import()ed dynamically in the future
@@ -81,27 +80,6 @@ function sendTextMessage () {
   }
 }
 
-function createWebSocket () {
-  ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
-
-  ws.onmessage = message => {
-    incomingMessages.push(createMessage(message.data))
-  
-    if (!scheduled) {
-      scheduled = true
-      window.requestAnimationFrame(() => {
-        const frag = document.createDocumentFragment()
-        for (let i = 0, len = incomingMessages.length; i < len; i++) {
-          frag.appendChild(incomingMessages[i])
-        }
-        appendToList(frag)
-        incomingMessages.length = 0
-        scheduled = false
-      })
-    }
-  }
-}
-
 const chatbox = document.getElementById('chatbox'),
   chatInput = document.getElementById('chat-input'),
   imageInput = document.getElementById('image-input'),
@@ -110,13 +88,28 @@ const chatbox = document.getElementById('chatbox'),
   MAX_HEIGHT = 400
 
 let incomingMessages = [],
-  scheduled,
-  ws
+  scheduled
 
 bsCustomFileInput.init()
 
-loadStyle('chatbox.css')
-.then(() => createWebSocket())
+const ws = new WebSocket('wss://feuerwehr-eisolzried.de/chat:62187')
+
+ws.onmessage = message => {
+  incomingMessages.push(createMessage(message.data))
+
+  if (!scheduled) {
+    scheduled = true
+    window.requestAnimationFrame(() => {
+      const frag = document.createDocumentFragment()
+      for (let i = 0, len = incomingMessages.length; i < len; i++) {
+        frag.appendChild(incomingMessages[i])
+      }
+      appendToList(frag)
+      incomingMessages.length = 0
+      scheduled = false
+    })
+  }
+}
 
 document.getElementById('chat-btn').onclick = () => sendTextMessage()
 

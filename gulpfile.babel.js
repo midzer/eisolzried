@@ -227,8 +227,6 @@ const sourcefiles = [
   '_assets/styles/dark-theme.scss',
   '_assets/styles/calendar.scss',
   '_assets/styles/charts.scss',
-  '_assets/styles/chatbox.scss',
-  '_assets/styles/feedbox.scss',
   '_assets/styles/lightbox.scss'
 ]
 
