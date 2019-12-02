@@ -1,3 +1,4 @@
+// Grabbed from https://github.com/HungryTurtleCode/christmasSnow
 class Vector {
     constructor(x, y) {
         this.x = x
