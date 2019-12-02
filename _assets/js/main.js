@@ -3,7 +3,7 @@ import { loadScript } from './load/loadscript'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
 import { Modal } from 'bootstrap.native'
-//import { Christmas } from './helper/christmas'
+import { Christmas } from './helper/christmas'
 
 const anchorJS = require('anchor-js')
 
@@ -146,7 +146,7 @@ field.addEventListener('keypress', event => {
 })
 
 // Snow
-//new Christmas()
+new Christmas()
 
 // Show render time
 if (window.PerformanceNavigationTiming) {
