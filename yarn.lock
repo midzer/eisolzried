@@ -1416,9 +1416,10 @@ bootstrap.native-loader@^2.0.0:
   dependencies:
     loader-utils "^1.2.3"
 
-"bootstrap.native@git+https://git@github.com/thednp/bootstrap.native.git":
-  version "2.0.28"
-  resolved "git+https://git@github.com/thednp/bootstrap.native.git#7ddff4ad631c386e892ea9b3195482af7cf10778"
+bootstrap.native@^2.0.27:
+  version "2.0.27"
+  resolved "https://registry.yarnpkg.com/bootstrap.native/-/bootstrap.native-2.0.27.tgz#c0978d372cde1bd9f06d015985e99ae7af44f816"
+  integrity sha512-gv2eN4zXHOLN/oPotTxb8CJr9Dk0xlM9YURyHCWjq1Lyt2I669bri/Bp8b0HPOKX7JqRVh+Sk/VwEe0OcQN2fw==
 
 bootstrap@^4.4.1:
   version "4.4.1"
