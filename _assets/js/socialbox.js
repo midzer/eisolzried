@@ -19,6 +19,10 @@ function updateScore (item, modifier) {
 
   rating.textContent = newScore
   sendMessage(socialbox, newScore)
+
+  // Disable rating after click
+  const rateButtons = Array.from(socialbox.querySelectorAll('.btn-outline-primary'))
+  rateButtons.forEach(button => button.disabled = true)
 }
 
 const ws = new WebSocket('wss://feuerwehr-eisolzried.de/rate:63244'),
