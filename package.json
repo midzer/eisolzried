@@ -53,6 +53,6 @@
     "frappe-charts": "git+https://git@github.com/frappe/charts.git",
     "ical.js": "^1.2.2",
     "intersection-observer": "^0.7.0",
-    "rqrauhvmra__tobi": "git+https://git@github.com/rqrauhvmra/Tobi.git"
+    "rqrauhvmra__tobi": "git+https://git@github.com/rqrauhvmra/Tobi.git#1.9.1"
   }
 }

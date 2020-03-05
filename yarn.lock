@@ -6802,9 +6802,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-"rqrauhvmra__tobi@git+https://git@github.com/rqrauhvmra/Tobi.git":
-  version "1.9.0"
-  resolved "git+https://git@github.com/rqrauhvmra/Tobi.git#ff72cecf60f104b66f617fcf0eaacfb9ac3e1371"
+"rqrauhvmra__tobi@git+https://git@github.com/rqrauhvmra/Tobi.git#1.9.1":
+  version "1.9.1"
+  resolved "git+https://git@github.com/rqrauhvmra/Tobi.git#ac9b2101a76fe7a31fbecb24356e4cc361df7d0b"
 
 run-async@^2.2.0:
   version "2.3.0"
