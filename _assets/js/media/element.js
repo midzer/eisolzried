@@ -48,7 +48,7 @@ export function create (grid) {
 
 export function reset () {
   index = 0
-  tobi.destroy()
+  tobi.reset()
 }
 
 function setup (grid) {
