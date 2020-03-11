@@ -34,6 +34,7 @@ function appendElement (frag) {
   if (element) {
     (frag || currentGrid).appendChild(element)
   }
+  return element
 }
 
 export function create (grid) {
@@ -44,6 +45,15 @@ export function create (grid) {
   }
   window.requestAnimationFrame(() => grid.appendChild(frag))
   currentGrid = grid
+
+  document.querySelector('.tobi').addEventListener('tobi-next', function (e) {
+    if (tobi.currentSlide() == tobi.count() - 2) {
+      const element = appendElement()
+      if (element) {
+        tobi.add(element)
+      }
+    }
+  }, false)
 }
 
 export function reset () {
