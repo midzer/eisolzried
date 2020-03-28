@@ -29,6 +29,8 @@ exclude:
   - webpack.dev.js
   - webpack.prod.js
 
+keep_files: ['assets']
+
 # Plugin settings
 plugins:
   - jekyll-seo-tag

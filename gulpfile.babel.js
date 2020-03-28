@@ -1,7 +1,6 @@
 'use strict'
 
 import gulp from 'gulp'
-var browserSync = require('browser-sync').create();
 import htmlmin from 'gulp-htmlmin'
 import log from 'fancy-log'
 import svgSprite from 'gulp-svg-sprite'
@@ -179,7 +178,7 @@ gulp.task('icons', () => {
 
 // Jekyll
 gulp.task('jekyll', done => {
-  return childProcess.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts'], { stdio: 'inherit' })
+  return childProcess.spawn('bundle', ['exec', 'jekyll', 'serve'], { stdio: 'inherit' })
     .on('error', (error) => log.error(error.message))
     .on('close', done)
 })
@@ -240,7 +239,6 @@ gulp.task('sass', () => {
     }))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('_site/assets/css'))
-    .pipe(browserSync.stream())
 })
 
 gulp.task('sass:prod', () => {
@@ -275,7 +273,6 @@ gulp.task('scripts', () => {
     }))
     .pipe(webpackStream(devConfig, webpack))
     .pipe(gulp.dest('_site/assets/js'))
-    .pipe(browserSync.stream())
 })
 
 gulp.task('scripts:prod', () => {
@@ -291,29 +288,8 @@ gulp.task('scripts:prod', () => {
 })
 
 // Build
-gulp.task('build', gulp.series('jekyll', /*'copy',*/ 'scripts', 'sass', 'icons', 'precache'))
-gulp.task('build:prod', gulp.series('jekyll:prod', /*'copy',*/ 'scripts:prod', 'sass:prod', 'icons', 'precache:prod', 'htmlmin'))
-
-// Serve
-gulp.task('serve', gulp.series('build', () => { 
-  browserSync.init({
-    server: {
-      baseDir: '_site'
-    },
-    notify: false
-    //https: true
-  })
-  
-  gulp.watch(['_assets/styles/**/*.scss'], gulp.series('sass'))
-  gulp.watch(['_assets/js/**/*.js'], gulp.series('scripts'))
-  gulp.watch(['_assets/icons/**/*.svg'], gulp.series('icons'))
-  gulp.watch([
-    '_layouts/**/*',
-    '_includes/**/*',
-    '_pages/**/*',
-    '_posts/**/*'
-  ]).on('change', browserSync.reload)
-}))
+gulp.task('serve', gulp.series(/*'copy',*/ 'scripts', 'sass', 'icons', 'jekyll'))
+gulp.task('build', gulp.series('jekyll:prod', /*'copy',*/ 'scripts:prod', 'sass:prod', 'icons', 'precache:prod', 'htmlmin'))
 
 gulp.task('default', gulp.series('serve', function() { 
   // default task code here
