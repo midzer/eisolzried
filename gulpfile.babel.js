@@ -205,7 +205,3 @@ gulp.task('scripts:prod', () => {
 // Build
 gulp.task('serve', gulp.series(/*'copy',*/ 'scripts', 'sass', 'icons', 'jekyll'))
 gulp.task('build', gulp.series('jekyll:prod', /*'copy',*/ 'scripts:prod', 'sass:prod', 'icons', 'precache:prod', 'htmlmin'))
-
-gulp.task('default', gulp.series('serve', function() { 
-  // default task code here
-}))

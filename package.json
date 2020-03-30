@@ -5,7 +5,7 @@
   "main": "gulpfile.babel.js",
   "sideEffects": false,
   "scripts": {
-    "start": "gulp",
+    "start": "gulp serve",
     "build": "gulp build",
     "test": "standard",
     "fix": "standard --fix"
