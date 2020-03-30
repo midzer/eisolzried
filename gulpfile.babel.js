@@ -162,12 +162,12 @@ gulp.task('sass:prod', () => {
       }
     }))
     .pipe(sass().on('error', sass.logError))
-    .pipe(purgecss({
-      content: ['_site/assets/js/*.js', '_site/**/*.html'],
-      whitelistPatterns: [/^carousel/, /^modal/]
-    }))
-    .pipe(autoprefixer())
-    .pipe(csso())
+    //.pipe(purgecss({
+    //  content: ['_site/assets/js/*.js', '_site/**/*.html'],
+    //  whitelistPatterns: [/^carousel/, /^modal/]
+    //}))
+    //.pipe(autoprefixer())
+    //.pipe(csso())
     .pipe(gulp.dest('_site/assets/css'))
 })
 
@@ -201,4 +201,4 @@ gulp.task('scripts:prod', () => {
 
 // Build
 gulp.task('serve', gulp.series(/*'copy',*/ 'scripts', 'sass', 'icons', 'jekyll'))
-gulp.task('build', gulp.series('jekyll:prod', /*'copy',*/ 'scripts:prod', 'sass:prod', 'icons', 'precache:prod', 'htmlmin'))
+gulp.task('build', gulp.series('jekyll:prod', 'scripts:prod', 'sass:prod', 'icons', 'precache:prod', /*'htmlmin'*/))
