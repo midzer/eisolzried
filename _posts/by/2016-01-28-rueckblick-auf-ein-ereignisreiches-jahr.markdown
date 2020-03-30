@@ -2,7 +2,7 @@
 layout: post
 title:  "Zruck schaun auf a Johr wo vui bassierd is"
 date:   2016-01-28
-imgfolder: /assets/images/2016/allgemeines/
+imgfolder: https://img.feuerwehr-eisolzried.de/2016/allgemeines/
 images:
   - name: jahreshauptversammlung1
     text: Jahreshauptversammlung 1

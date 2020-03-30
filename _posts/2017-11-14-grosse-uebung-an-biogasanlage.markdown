@@ -2,7 +2,7 @@
 layout: post
 title:  "Große Übung an Biogasanlage"
 date:   2017-11-14
-imgfolder: /assets/images/2017/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2017/uebungen/
 images:
   - name: biogas01
     text: Biogas 1

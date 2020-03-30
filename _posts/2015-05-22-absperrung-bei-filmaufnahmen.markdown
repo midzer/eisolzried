@@ -2,7 +2,7 @@
 layout: post
 title:  "Absperrung bei Filmaufnahmen"
 date:   2015-05-22
-imgfolder: /assets/images/2015/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/einsaetze/
 images:
   - name: film1
     text: Film 1

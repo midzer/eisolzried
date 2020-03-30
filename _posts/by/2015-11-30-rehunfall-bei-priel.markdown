@@ -2,7 +2,7 @@
 layout: post
 title:  "Rääunfoi bei Pria"
 date:   2015-11-30
-imgfolder: /assets/images/2015/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/einsaetze/
 images:
   - name: rehunfall1
     text: Rehunfall 1

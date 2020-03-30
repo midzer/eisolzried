@@ -2,7 +2,7 @@
 layout: post
 title:  "Sturmschaden auf Kreisstraße"
 date:   2017-10-29
-imgfolder: /assets/images/2017/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2017/einsaetze/
 images:
   - name: sturm01
     text: Sturm 1

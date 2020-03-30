@@ -2,7 +2,7 @@
 layout: post
 title:  "Wieda a Unfoi am Eilzriada Sä"
 date:   2017-06-11
-imgfolder: /assets/images/2017/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2017/einsaetze/
 images:
   - name: motorrad1
     text: Motorrad 1

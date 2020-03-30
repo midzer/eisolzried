@@ -2,7 +2,7 @@
 layout: post
 title:  "Neis Fahrzeig obg'hoid"
 date:   2016-04-23
-imgfolder: /assets/images/2016/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2016/uebungen/
 images:
   - name: neues-fahrzeug1
     text: Neues Fahrzeug 1

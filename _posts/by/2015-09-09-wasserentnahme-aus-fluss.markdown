@@ -2,7 +2,7 @@
 layout: post
 title:  "Wassaentnahme ausm Fluß"
 date:   2015-09-09
-imgfolder: /assets/images/2015/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/uebungen/
 images:
   - name: september1
     text: September Übung 1

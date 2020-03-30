@@ -148,7 +148,7 @@ function buildCal (data) {
 // Get data first
 loadStyle('calendar.css')
 .then(() => {
-  fetch('/assets/data/termine.ics')
+  fetch('https://data.feuerwehr-eisolzried.de/termine.ics')
   .then(response => {
     return response.text()
   })

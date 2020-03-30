@@ -2,7 +2,7 @@
 layout: post
 title:  "Gemeindeübung in Eilzria"
 date:   2017-06-26
-imgfolder: /assets/images/2017/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2017/uebungen/
 images:
   - name: gemeindeuebung1
     text: Gemeindeübung 1

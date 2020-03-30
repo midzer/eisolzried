@@ -2,7 +2,7 @@
 layout: post
 title:  "Leck in LKW-Tank"
 date:   2015-07-10
-imgfolder: /assets/images/2015/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/einsaetze/
 images:
   - name: leck1
     text: Leck 1

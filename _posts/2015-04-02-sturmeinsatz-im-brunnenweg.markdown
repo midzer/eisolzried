@@ -2,7 +2,7 @@
 layout: post
 title:  "Sturmeinsatz im Brunnenweg"
 date:   2015-04-02
-imgfolder: /assets/images/2015/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/einsaetze/
 images:
   - name: sturm1
     text: Sturm 1

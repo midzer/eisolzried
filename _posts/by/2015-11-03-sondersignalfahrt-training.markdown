@@ -2,7 +2,7 @@
 layout: post
 title:  "Sondasignalfahrt Training"
 date:   2015-11-03
-imgfolder: /assets/images/2015/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/uebungen/
 images:
   - name: sondersignalfahrt1
     text: Sondersignalfahrt 1

@@ -2,7 +2,7 @@
 layout: post
 title:  "Leistungsprüfung Wasser bestanden"
 date:   2015-11-25
-imgfolder: /assets/images/2015/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/uebungen/
 images:
   - name: wasser01
     text: Wasser 1

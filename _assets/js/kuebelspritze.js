@@ -1,7 +1,7 @@
 import { toggleAudio } from './helper/toggleaudio'
 
 function hubDone (nextHub) {
-  document.getElementById('kuebel').src = `/assets/images/games/kuebel-${nextHub}.png`
+  document.getElementById('kuebel').src = `https://img.feuerwehr-eisolzried.de/games/kuebel-${nextHub}.png`
   document.getElementById('huebe').textContent = ++huebe
 }
 

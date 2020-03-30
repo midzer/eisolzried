@@ -2,7 +2,7 @@
 layout: post
 title:  "Schwerer Verkehrsunfall auf Landstraße"
 date:   2016-01-03
-imgfolder: /assets/images/2016/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2016/einsaetze/
 images:
   - name: unfall1
     text: Unfall 1

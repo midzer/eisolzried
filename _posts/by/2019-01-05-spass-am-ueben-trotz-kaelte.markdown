@@ -2,7 +2,7 @@
 layout: post
 title:  "Spaß am Übn obwoi s'koid is"
 date:   2019-01-05
-imgfolder: /assets/images/2019/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2019/uebungen/
 images:
   - name: januaruebung01
     text: Januarübung 1

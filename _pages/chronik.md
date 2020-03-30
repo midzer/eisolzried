@@ -2,7 +2,7 @@
 layout: page
 title: Chronik
 permalink: /chronik/
-imgfolder: /assets/images/chronik/
+imgfolder: https://img.feuerwehr-eisolzried.de/chronik/
 lang: de
 ---
 

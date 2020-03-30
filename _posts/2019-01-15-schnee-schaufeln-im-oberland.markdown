@@ -2,8 +2,8 @@
 layout: post
 title:  "Schnee schaufeln im Oberland"
 date:   2019-01-15
-imgfolder: /assets/images/2019/einsaetze/
-vidfolder: /assets/videos/2019/
+imgfolder: https://img.feuerwehr-eisolzried.de/2019/einsaetze/
+vidfolder: https://video.feuerwehr-eisolzried.de/2019/
 images:
   - name: oberland01
     text: Oberland 1

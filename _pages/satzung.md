@@ -5,7 +5,7 @@ permalink: /satzung/
 lang: de
 ---
 
-{% include element/icon.html icon="download" %} herunterladen als [PDF](/assets/data/satzung.pdf) oder [ODT](/assets/data/satzung.odt)-Datei
+{% include element/icon.html icon="download" %} herunterladen als [PDF](https://data.feuerwehr-eisolzried.de/satzung.pdf) oder [ODT](https://data.feuerwehr-eisolzried.de/satzung.odt)-Datei
 
 - - -
 

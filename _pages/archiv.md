@@ -2,7 +2,7 @@
 layout: page
 title: Archiv
 permalink: /archiv/
-imgfolder: /assets/images/archive/
+imgfolder: https://img.feuerwehr-eisolzried.de/archive/
 lang: de
 ---
 

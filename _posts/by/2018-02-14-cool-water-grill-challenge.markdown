@@ -2,8 +2,8 @@
 layout: post
 title:  "Cool Water Grill Challenge"
 date:   2018-02-14
-imgfolder: /assets/images/2018/allgemeines/
-vidfolder: /assets/videos/2018/
+imgfolder: https://img.feuerwehr-eisolzried.de/2018/allgemeines/
+vidfolder: https://video.feuerwehr-eisolzried.de/2018/
 images:
   - name: challenge
     text: Cool Water Challenge

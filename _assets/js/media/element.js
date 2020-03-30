@@ -5,8 +5,8 @@ import { loadImage } from '../load/loadimage'
 
 const imgLength = images.length,
   vidLength = videos.length,
-  imgPath = '/assets/images/media/',
-  vidPath = '/assets/videos/media/',
+  imgPath = 'https://img.feuerwehr-eisolzried.de/media/',
+  vidPath = 'https://video.feuerwehr-eisolzried.de/media/',
   imgTemplate = document.createElement('img'),
   vidTemplate = document.createElement('video'),
   canPlayWebm = vidTemplate.canPlayType('video/webm'),

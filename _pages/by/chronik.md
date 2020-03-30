@@ -2,7 +2,7 @@
 layout: page
 title: Oids
 permalink: /by/chronik/
-imgfolder: /assets/images/chronik/
+imgfolder: https://img.feuerwehr-eisolzried.de/chronik/
 lang: by
 ---
 

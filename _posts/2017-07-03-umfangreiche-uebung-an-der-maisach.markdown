@@ -2,8 +2,8 @@
 layout: post
 title:  "Umfangreiche Übung an der Maisach"
 date:   2017-07-03
-imgfolder: /assets/images/2017/uebungen/
-vidfolder: /assets/videos/2017/
+imgfolder: https://img.feuerwehr-eisolzried.de/2017/uebungen/
+vidfolder: https://video.feuerwehr-eisolzried.de/2017/
 images:
   - name: juliuebung01
     text: Juliübung 1

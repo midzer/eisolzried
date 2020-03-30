@@ -2,7 +2,7 @@
 layout: post
 title:  "Mia übn im Woid dahoam"
 date:   2019-07-01
-imgfolder: /assets/images/2019/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2019/uebungen/
 images:
   - name: walduebung01
     text: Waldübung 1

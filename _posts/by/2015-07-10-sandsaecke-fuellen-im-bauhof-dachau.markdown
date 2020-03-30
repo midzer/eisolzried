@@ -2,7 +2,7 @@
 layout: post
 title:  "Sandsäck fülln im Bauhof Dacha"
 date:   2015-07-10
-imgfolder: /assets/images/2015/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/uebungen/
 images:
   - name: sandsack1
     text: Sandsack 1

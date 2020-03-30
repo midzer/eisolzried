@@ -2,7 +2,7 @@
 layout: post
 title:  "Dreifach übn hebt bessa"
 date:   2018-05-07
-imgfolder: /assets/images/2018/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2018/uebungen/
 images:
   - name: maiuebung01
     text: Maiübung 1

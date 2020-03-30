@@ -2,7 +2,7 @@
 layout: post
 title:  "Leistungsprüfung THL erfolgreich"
 date:   2015-10-29
-imgfolder: /assets/images/2015/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2015/uebungen/
 images:
   - name: thl01
     text: THL 1

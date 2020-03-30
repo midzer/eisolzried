@@ -2,8 +2,8 @@
 layout: post
 title:  "Kartfahren im Kartpalast"
 date:   2018-01-05
-imgfolder: /assets/images/2018/allgemeines/
-vidfolder: /assets/videos/2018/
+imgfolder: https://img.feuerwehr-eisolzried.de/2018/allgemeines/
+vidfolder: https://video.feuerwehr-eisolzried.de/2018/
 images:
   - name: gokart1
     text: Gokart 1

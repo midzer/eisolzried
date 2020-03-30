@@ -2,7 +2,7 @@
 layout: post
 title:  "Ausbildung zum Ersthelfer Feuerwehr"
 date:   2016-03-02
-imgfolder: /assets/images/2016/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2016/uebungen/
 images:
   - name: ersthelfer01
     text: Ersthelfer 1

@@ -2,7 +2,7 @@
 layout: post
 title:  "THL-Übung mit der Feuerwehr Feldgeding"
 date:   2016-04-21
-imgfolder: /assets/images/2016/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2016/uebungen/
 images:
   - name: thl-feldgeding01
     text: THL Feldgeding 1

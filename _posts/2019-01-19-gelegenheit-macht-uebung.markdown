@@ -2,8 +2,8 @@
 layout: post
 title:  "Gelegenheit macht Übung"
 date:   2019-01-19
-imgfolder: /assets/images/2019/uebungen/
-vidfolder: /assets/videos/2019/
+imgfolder: https://img.feuerwehr-eisolzried.de/2019/uebungen/
+vidfolder: https://video.feuerwehr-eisolzried.de/2019/
 images:
   - name: januaruebung201
     text: Januarübung 2 1

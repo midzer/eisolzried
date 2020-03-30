@@ -2,7 +2,7 @@
 layout: post
 title:  "Wachsmaschin brennt"
 date:   2018-09-04
-imgfolder: /assets/images/2018/einsaetze/
+imgfolder: https://img.feuerwehr-eisolzried.de/2018/einsaetze/
 images:
   - name: wachsmaschine01
     text: Wachsmaschine 1

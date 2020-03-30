@@ -2,7 +2,7 @@
 layout: post
 title:  "In der Praxis lernt man das Handwerk"
 date:   2018-04-14
-imgfolder: /assets/images/2018/uebungen/
+imgfolder: https://img.feuerwehr-eisolzried.de/2018/uebungen/
 images:
   - name: truppmann01
     text: Truppmann 1

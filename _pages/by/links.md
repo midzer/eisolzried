@@ -32,7 +32,7 @@ lang: by
 <a href="https://uberspace.de/">
     <img class="lazy img-fluid"
          src="{% include helper/trans.html width='150' height='80' %}"
-         data-src="/assets/images/links/uberspace.png"
+         data-src="https://img.feuerwehr-eisolzried.de/links/uberspace.png"
          width="150" height="80"
          alt="Uberspace">
 </a>
@@ -42,7 +42,7 @@ lang: by
 <a href="https://www.ich-will-zur-jugendfeuerwehr.de/">
     <img class="lazy img-fluid"
          src="{% include helper/trans.html width='1110' height='394' %}"
-         data-src="/assets/images/links/jugendfeuerwehr.png"
+         data-src="https://img.feuerwehr-eisolzried.de/links/jugendfeuerwehr.png"
          width="1110" height="394"
          alt="Ich will zur Jugendfeuerwehr">
 </a>

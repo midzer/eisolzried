@@ -2,8 +2,8 @@
 layout: post
 title:  "Fit an da Motorsaag"
 date:   2019-10-19
-imgfolder: /assets/images/2019/uebungen/
-vidfolder: /assets/videos/2019/
+imgfolder: https://img.feuerwehr-eisolzried.de/2019/uebungen/
+vidfolder: https://video.feuerwehr-eisolzried.de/2019/
 images:
   - name: motorsaege1
     text: Motorsäge 1

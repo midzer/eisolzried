@@ -2,8 +2,8 @@
 layout: page
 title: Mia
 permalink: /by/team/
-imgfolder: /assets/images/team/
-vidfolder: /assets/videos/team/
+imgfolder: https://img.feuerwehr-eisolzried.de/team/
+vidfolder: https://video.feuerwehr-eisolzried.de/team/
 images:
   - name: mlf1
     text: MLF 1
