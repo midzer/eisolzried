@@ -1,11 +1,7 @@
 _site
 .sass-cache
 .jekyll-cache
-_assets/images
-_assets/data
-_assets/videos
-datenschutz.md
-impressum.md
-intern.md
-robots.txt
 node_modules
+_assets/data
+_assets/images
+_assets/videos
