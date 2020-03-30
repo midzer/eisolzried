@@ -4,7 +4,7 @@ title: Media
 permalink: /media/
 imgfolder: /assets/images/media/
 vidfolder: /assets/videos/media/
-anifolder: /assets/animations/
+anifolder: /assets/videos/animations/
 lang: de
 ---
 
