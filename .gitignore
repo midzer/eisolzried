@@ -1,9 +1,7 @@
 _site
 .sass-cache
 .jekyll-cache
-_assets/audio
 _assets/images
-_assets/gimmicks
 _assets/data
 _assets/videos
 datenschutz.md

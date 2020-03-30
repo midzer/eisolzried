@@ -18,9 +18,7 @@ import webpackStream from 'webpack-stream'
 // Copy
 gulp.task('copy', () => {
   return gulp.src([
-    //'_assets/audio/**',
     '_assets/data/**',
-    '_assets/gimmicks/**',
     '_assets/images/**/*',
     //'_assets/videos/**'
   ], {
