@@ -1,6 +1,4 @@
-# eisolzried 
-
-[![Build Status](https://travis-ci.org/midzer/eisolzried.svg?branch=master)](https://travis-ci.org/midzer/eisolzried)
+# eisolzried
 
 This website is built with [jekyll](http://jekyllrb.com) and uses [gulp](https://gulpjs.com/) as task runner for development and production builds.
 
