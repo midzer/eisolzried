@@ -3,3 +3,8 @@ $primary: #da131a;
 $white: #fdfdfd; // override bootstrap #fff and needed for snackbar
 $enable-shadows : true;
 $enable-gradients: true;
+
+// Fix for emoji-button
+.emoji-picker__preview {
+  box-sizing: content-box;
+}

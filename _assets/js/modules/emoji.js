@@ -1,4 +1,4 @@
-import EmojiButton from 'emoji-button'
+import EmojiButton from '@joeattardi/emoji-button'
 
 const emojiButton = document.getElementById('emoji-btn'),
   picker = new EmojiButton({position: 'top-end', autoFocusSearch: false})
