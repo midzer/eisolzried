@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Einsatz in Grill Wänden"
+title:  "Grill schuid für Flächenbrand"
 date:   2020-04-24
 imgfolder: https://img.feuerwehr-eisolzried.de/2020/einsaetze/
 images:
@@ -70,7 +70,13 @@ images:
     text: Grill 32
   - name: grill33
     text: Grill 33
-lang: de
+lang: by
 tags: einsaetze
+categories:
+  - by
 ---
-Text folgt...
+Am Freitag, 24. April 2020 gega 11.30 Uhr hods a Alarmierung für an Brand in de ehemaligen Schrebergärten bei Bergkirchen Lus gehm. Beteiligt warn de Feiawean vo Bergkircha, Eilzria, Lauterbo, Suizemoos und Wiednzhausen.
+
+Zeitgleich zum Schnoiangriff mit Wasser ausm Fahrzeugtank is a Wasservorgung ausm nahegelegenen Graben hergstoid worn. Der Flächenbrand vo circa 300m² is damit erfolgreich glöscht worn. De Einsatzkärfte hom an benutzten Grill gfunna, der wos woi schuid am Brand is.
+
+Noch 1,5 Stunden war da Einsatz beendet.

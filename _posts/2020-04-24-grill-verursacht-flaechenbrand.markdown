@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Einsatz in Grill Wänd"
+title:  "Grill verursacht Flächenbrand"
 date:   2020-04-24
 imgfolder: https://img.feuerwehr-eisolzried.de/2020/einsaetze/
 images:
@@ -70,9 +70,11 @@ images:
     text: Grill 32
   - name: grill33
     text: Grill 33
-lang: by
+lang: de
 tags: einsaetze
-categories:
-  - by
 ---
-Text foigt...
+Am Freitag, 24. April 2020 gegen 11.30 Uhr fand eine Alarmierung zu einem gemeldeten Brand in den ehemaligen Schrebergärten bei Bergkirchen Lus statt. Beteiligt waren die Feuerwehren aus Bergkirchen, Eisolzried, Lauterbach, Sulzemoos und Wiedenzhausen.
+
+Zeitgleich zum Schnellangriff mit Wasser aus dem Fahrzeugtank wurde eine Wasservorgung aus dem nahegelegenen Graben hergestellt. Der Flächenbrand von circa 300m² konnte damit erfolgreich gelöscht werden. Die Einsatzkräfte fanden einen benutzten Stehgrill, der als Brandursache angenommen wird.
+
+Nach 1,5 Stunden war der Einsatz beendet.
