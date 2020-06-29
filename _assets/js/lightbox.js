@@ -1,4 +1,4 @@
-import Tobi from 'rqrauhvmra__tobi'
+import Tobi from 'tobii'
 import { loadStyle } from './load/loadstyle'
 
 loadStyle('lightbox.css')

@@ -2,7 +2,7 @@
 {% if page.lang != 'de' %}
   {% assign lang = page.lang | prepend: '/'%}
 {% endif %}
-<nav class="navbar navbar-expand-xl navbar-dark bg-gradient-primary">
+<nav class="navbar navbar-expand-xl navbar-dark bg-primary bg-gradient">
   <div class="container">
     <a class="navbar-brand" href="{{ lang }}{{ site.baseurl }}/">{{ site.data.strings.[page.lang].firefighters_eisolzried }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="{{ site.data.strings.[page.lang].toggle_navigation }}">
@@ -12,11 +12,9 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <form class="form-inline mt-2 my-xl-0 mr-xl-3">
         <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              {% include element/icon.html icon="search" %}
-            </div>
-          </div>
+          <span class="input-group-text">
+            {% include element/icon.html icon="search" %}
+          </span>
           <input id="search-input" class="form-control" type="text" placeholder="{{ site.data.strings.[page.lang].search }}" aria-label="{{ site.data.strings.[page.lang].search }}">
         </div>
         <div id="results-container" class="dropdown-menu"></div>

@@ -2,12 +2,12 @@
   display: grid;
   grid-gap: 0.5rem;
 
-  grid-template-columns: 81px 63px 125px auto;
+  grid-template-columns: 82px 72px 175px auto;
   height: 400px;
   overflow-y: auto;
   
-  @include media-breakpoint-down(sm) {
-    grid-template-columns: 81px 63px auto;
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 82px 72px auto;
     
     > div {
         grid-column: span 3;
