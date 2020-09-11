@@ -92,7 +92,7 @@ let incomingMessages = [],
 
 bsCustomFileInput.init()
 
-const ws = new WebSocket('wss://api.feuerwehr-eisolzried.de/chat')
+const ws = new WebSocket('wss://api.feuerwehr-eisolzried.de/chat/')
 
 ws.onmessage = message => {
   incomingMessages.push(createMessage(message.data))

@@ -25,7 +25,7 @@ function updateScore (item, modifier) {
   rateButtons.forEach(button => button.disabled = true)
 }
 
-const ws = new WebSocket('wss://api.feuerwehr-eisolzried.de/rate'),
+const ws = new WebSocket('wss://api.feuerwehr-eisolzried.de/rate/'),
   socialboxes = query('.socialbox')
 
 ws.onopen = () => {

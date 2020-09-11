@@ -24,7 +24,7 @@ function createSVG (icon) {
   return svg
 }
 
-const ws = new WebSocket('wss://api.feuerwehr-eisolzried.de/news'),
+const ws = new WebSocket('wss://api.feuerwehr-eisolzried.de/news/'),
   feedbox = document.getElementById('feedbox')
 
 let timeout
