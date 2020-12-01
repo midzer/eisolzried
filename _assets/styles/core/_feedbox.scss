@@ -1,16 +1,19 @@
 #feedbox {
   display: grid;
   grid-gap: 0.5rem;
+  grid-template-columns: 92px 72px 125px auto;
 
-  grid-template-columns: 82px 72px 175px auto;
-  height: 400px;
-  overflow-y: auto;
-  
   @include media-breakpoint-down(md) {
-    grid-template-columns: 82px 72px auto;
-    
-    > div {
-        grid-column: span 3;
-    }
+      grid-template-columns: 92px 72px auto;
+      
+      > .entry {
+          grid-column: span 3;
+      }
+  }
+}
+
+.entry {
+  h2 {
+      margin-left: 3px;
   }
 }
