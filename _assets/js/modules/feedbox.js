@@ -1,5 +1,3 @@
-import { Collapse } from 'bootstrap.native'
-
 function ping () {
   ws.send('ping')
   timeout = setTimeout(() => {
@@ -14,6 +12,7 @@ function pong () {
 function createSVG (icon) {
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
   svg.classList.add('icon')
+  svg.classList.add(`icon--${icon}`)
   const use = document.createElementNS('http://www.w3.org/2000/svg', 'use')
   use.setAttributeNS(
     'http://www.w3.org/1999/xlink',
@@ -66,46 +65,45 @@ ws.onmessage = message => {
     }
     source.textContent = hostname
 
+    // Entry
+    let entry
+    let details
+    if (feed.summary) {
+      entry = document.createElement('summary')
+      details = document.createElement('details')
+      details.className = 'entry'
+      details.textContent = feed.summary
+      details.appendChild(entry)
+    }
+    else {
+      entry = document.createElement('div')
+      entry.className = 'entry'
+    }
+    // Badge
+    if (feedArray.length === 1) {
+      const badge = document.createElement('span')
+      badge.className = 'badge bg-secondary mr-2'
+      badge.textContent = 'NEU'
+      entry.appendChild(badge)
+    }
     // Link
-    const linkContainer = document.createElement('div')
     const link = document.createElement('a')
     link.href = feed.link
-    link.textContent = feed.title
-    link.dataset.toggle = 'tooltip'
-    link.dataset.placement = 'bottom'
+    link.rel = 'noopener nofollow'
     link.title = feed.summary
-    if (feedArray.length === 1) {
-      // Show "NEU" badge
-      const badge = document.createElement('span')
-      badge.className = 'badge badge-secondary mr-2'
-      badge.textContent = 'NEU'
-      linkContainer.appendChild(badge)
-    }
-    linkContainer.appendChild(link)
+    link.appendChild(createSVG('external-link'))
+    const linkHeading = document.createElement('h2')
+    linkHeading.className = 'h6 d-inline'
+    linkHeading.textContent = feed.title
+    link.appendChild(linkHeading)
+    entry.appendChild(link)
 
-    // Collapse
-    if (feed.summary) {
-      const plusLink = document.createElement('a')
-      plusLink.className = 'badge badge-secondary ml-2'
-      plusLink.dataset.toggle = 'collapse'
-      let id = `${formattedDate}-${formattedTime}`
-      id = id.replace(/[\.:]+/g, '');
-      plusLink.href = `#collapse-${id}`
-      plusLink.role = 'button'
-      plusLink.setAttribute('aria-expanded', false)
-      plusLink.setAttribute('aria-controls', `#collapse-${id}`)
-      plusLink.appendChild(createSVG('plus'))
-      const collapse = document.createElement('div')
-      collapse.className = 'collapse'
-      collapse.id = `collapse-${id}`
-      collapse.innerHTML = feed.summary
-      linkContainer.appendChild(plusLink)
-      linkContainer.appendChild(collapse)
-    }
-    // Social share
+    // Social
     if (navigator.share) {
       const shareLink = document.createElement('a')
-      shareLink.className = 'badge badge-secondary ml-2'
+      shareLink.className = 'badge bg-secondary ml-2'
+      shareLink.setAttribute('role', 'button')
+      shareLink.setAttribute('aria-label', 'Beitrag teilen')
       shareLink.onclick = () => {
         navigator.share({
           title: feed.title,
@@ -114,34 +112,31 @@ ws.onmessage = message => {
         .then(() => console.log('Successful share'))
         .catch((error) => console.log('Error sharing', error))
       }
-      
       shareLink.appendChild(createSVG('share-2'))
-      linkContainer.appendChild(shareLink)
+      entry.appendChild(shareLink)
     }
     const facebookLink = document.createElement('a')
-    facebookLink.className = 'badge badge-secondary ml-2'
+    facebookLink.className = 'badge bg-secondary ml-2'
     facebookLink.href = `https://www.facebook.com/sharer/sharer.php?u=${feed.link}`
     facebookLink.rel = 'nofollow noopener'
+    facebookLink.setAttribute('aria-label', 'Auf Facebook teilen')
     facebookLink.appendChild(createSVG('facebook'))
-    linkContainer.appendChild(facebookLink)
+    entry.appendChild(facebookLink)
     const twitterLink = document.createElement('a')
-    twitterLink.className = 'badge badge-secondary ml-2'
+    twitterLink.className = 'badge bg-secondary ml-2'
     twitterLink.href = `https://twitter.com/share?text=${feed.title}&url=${feed.link}`
     twitterLink.rel = 'nofollow noopener'
+    twitterLink.setAttribute('aria-label', 'Auf Twitter teilen')
     twitterLink.appendChild(createSVG('twitter'))
-    linkContainer.appendChild(twitterLink)
+    entry.appendChild(twitterLink)
 
     // Append all to frag
-    frag.insertBefore(linkContainer, frag.childNodes[0])
+    frag.insertBefore(details || entry, frag.childNodes[0])
     frag.insertBefore(source, frag.childNodes[0])
     frag.insertBefore(time, frag.childNodes[0])
     frag.insertBefore(date, frag.childNodes[0])
   })
   window.requestAnimationFrame(() => {
     feedbox.insertBefore(frag, feedbox.childNodes[0])
-
-    // Initialize plusButtons
-    const plusButtons = Array.from(document.querySelectorAll('[data-toggle="collapse"]'))
-    plusButtons.forEach(button => new Collapse(button))
   })
 }
