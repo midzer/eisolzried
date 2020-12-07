@@ -4,7 +4,7 @@
     <li class="page-item">
       <a class="page-link" href="{{ page.prev_url }}" aria-label="Neuerer Beitrag">
         {% include element/icon.html icon="arrow-left" %} {{ page.prev_title }}
-        <span class="sr-only">Neuerer Beitrag</span>
+        <span class="visually-hidden">Neuerer Beitrag</span>
       </a>
     </li>
     {% endif %}
@@ -12,7 +12,7 @@
     <li class="page-item">
       <a class="page-link" href="{{ page.next_url }}" aria-label="Älterer Beitrag">
         {{ page.next_title }} {% include element/icon.html icon="arrow-right" %}
-        <span class="sr-only">Älterer Beitrag</span>
+        <span class="visually-hidden">Älterer Beitrag</span>
       </a>
     </li>
     {% endif %}
