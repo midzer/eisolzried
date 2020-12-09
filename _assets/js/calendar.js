@@ -1,3 +1,5 @@
+import Modal from 'bootstrap/js/dist/modal';
+
 import { loadStyle } from './load/loadstyle'
 import { createSnackbar } from './helper/createsnackbar'
 
@@ -74,17 +76,11 @@ function buildCal (data) {
   }
 
   function showModal (event) {
-    const content = `<div class="modal-header">
-                       <h5 class="modal-title">${event.summary}</h5>
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
-                         <span aria-hidden="true">&times;</span>
-                       </button>
-                     </div>
-                     <div class="modal-body">
-                       <p>${createEventDetails(event)}</p>
-                     </div>`
-    modal.setContent(content)
-    modal.update()
+    const modal = new Modal(document.getElementById('modal'))
+    const modalTitle = modal.querySelector('.modal-title')
+    modalTitle.textContent = event.summary
+    const modalBody = exampleModal.querySelector('.modal-body > p')
+    modalBody.textContent = createEventDetails(event)
     modal.show()
   }
 

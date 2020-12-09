@@ -2,7 +2,6 @@ import Button from 'bootstrap/js/dist/button';
 import Carousel from 'bootstrap/js/dist/carousel';
 import Collapse from 'bootstrap/js/dist/collapse';
 import Dropdown from 'bootstrap/js/dist/dropdown';
-import Modal from 'bootstrap/js/dist/modal';
 import Tab from 'bootstrap/js/dist/tab';
 
 import { load } from './load/load'
@@ -95,12 +94,7 @@ let ticking
 window.addEventListener('scroll', requestTick)
 
 // Globals
-const spritePath = '/assets/icons/sprite.svg#',
-  modalTemplate = document.getElementById('modal')
-
-if (modalTemplate) {
-  window.modal = new Modal(modalTemplate)
-}
+const spritePath = '/assets/icons/sprite.svg#'
 
 // Locales
 const path = window.location.pathname,
