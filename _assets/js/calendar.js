@@ -76,12 +76,13 @@ function buildCal (data) {
   }
 
   function showModal (event) {
-    const modal = new Modal(document.getElementById('modal'))
+    const modal = document.getElementById('modal')
     const modalTitle = modal.querySelector('.modal-title')
     modalTitle.textContent = event.summary
-    const modalBody = exampleModal.querySelector('.modal-body > p')
+    const modalBody = modal.querySelector('.modal-body > p')
     modalBody.textContent = createEventDetails(event)
-    modal.show()
+    const modalInstance = new Modal(modal)
+    modalInstance.show()
   }
 
   let ev = []
