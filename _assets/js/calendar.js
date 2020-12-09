@@ -75,16 +75,6 @@ function buildCal (data) {
     return ev
   }
 
-  function showModal (event) {
-    const modal = document.getElementById('modal')
-    const modalTitle = modal.querySelector('.modal-title')
-    modalTitle.textContent = event.summary
-    const modalBody = modal.querySelector('.modal-body')
-    modalBody.innerHTML = createEventDetails(event)
-    const modalInstance = new Modal(modal)
-    modalInstance.show()
-  }
-
   let ev = []
   cal.addEventListener('drcal.renderDay', function (event) {
     const dayNum = document.createElement('div')
@@ -100,6 +90,8 @@ function buildCal (data) {
         dayEvent.setAttribute('data-bs-toggle', 'modal')
         dayEvent.setAttribute('data-bs-target', '.modal')
         dayEvent.setAttribute('title', ev[i].summary)
+        dayEvent.setAttribute('data-bs-summary', ev[i].summary)
+        dayEvent.setAttribute('data-bs-event', createEventDetails(ev[i]))
         dayEvent.appendChild(document.createTextNode(ev[i].summary))
         event.detail.element.appendChild(dayEvent)
         if (event.detail.date.toDateString() === new Date().toDateString()) {
@@ -108,7 +100,7 @@ function buildCal (data) {
             message: 'Heute ist was los!',
             timeout: 5000,
             actionHandler: function () {
-              showModal(ev[i])
+              dayEvent.click()
             },
             actionText: 'Zeigen'
           }
@@ -124,20 +116,10 @@ function buildCal (data) {
 
   cal.changeMonth(new Date())
 
-  cal.addEventListener('click', function (event) {
-    if (event.target.classList.contains('dayevent')) {
-      const time = ICAL.Time.fromDateString(event.target.parentNode.getAttribute('date'))
-      for (let i = 0, j = ev.length; i < j; i++) {
-        if (hasEventInDate(ev[i], time, timezone) && event.target.textContent === ev[i].summary) {
-          return showModal(ev[i])
-        }
-      }
-    }
+  const buttons = Array.from(cal.getElementsByTagName('button'))
+  buttons.forEach(function (button) {
+    button.classList.add('btn')
   })
-  const buttons = cal.getElementsByTagName('button')
-  for (let i = 0, j = buttons.length; i < j; i++) {
-    buttons[i].classList.add('btn')
-  }
   window.requestAnimationFrame(function () {
     document.getElementById('calendar').appendChild(cal)
   })
@@ -150,4 +132,13 @@ loadStyle('calendar.css')
     return response.text()
   })
   .then(data => buildCal(data))
+})
+
+const modal = document.getElementById('modal')
+modal.addEventListener('show.bs.modal', function (event) {
+  const button = event.relatedTarget
+  const modalTitle = modal.querySelector('.modal-title')
+  modalTitle.textContent = button.getAttribute('data-bs-summary')
+  const modalBody = modal.querySelector('.modal-body')
+  modalBody.innerHTML = button.getAttribute('data-bs-event')
 })
