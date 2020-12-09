@@ -14,8 +14,8 @@
     <button id="emoji-btn"
             class="btn btn-outline-info"
             type="button"
-            data-toggle="tooltip"
-            data-placement="bottom"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
             title="{{ site.data.strings.[page.lang].choose_emoji }}"
             aria-label="{{ site.data.strings.[page.lang].choose_emoji }}">
             {% include element/icon.html icon="smile" %}
@@ -23,8 +23,8 @@
     <button id="chat-btn"
             class="btn btn-outline-primary"
             type="button"
-            data-toggle="tooltip"
-            data-placement="bottom"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
             title="{{ site.data.strings.[page.lang].send_message }}"
             aria-label="{{ site.data.strings.[page.lang].send_message }}">
             {% include element/icon.html icon="send" %} {{ send }}
@@ -33,18 +33,12 @@
 </form>
 <form id="image-form" class="top-buffer">
   <div class="input-group">
-    <div class="form-file">
-      <input type="file" accept="image/*" class="form-file-input" id="image-input" aria-describedby="upload-btn">
-      <label class="form-file-label" for="image-input">
-        <span class="form-file-text">{{ site.data.strings.[page.lang].choose_image }}...</span>
-        <span class="form-file-button">{{ site.data.strings.[page.lang].browse }}</span>
-      </label>
-    </div>
+    <input type="file" class="form-control" id="image-input" accept="image/*" aria-describedby="upload-btn" aria-label="{{ site.data.strings.[page.lang].choose_image }}...">
     <button id="upload-btn"
             class="btn btn-outline-primary"
             type="button"
-            data-toggle="tooltip"
-            data-placement="bottom"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
             title="{{ site.data.strings.[page.lang].upload_image }}"
             aria-label="{{ site.data.strings.[page.lang].upload_image }}">
             {% include element/icon.html icon="upload" %} {{ upload }}

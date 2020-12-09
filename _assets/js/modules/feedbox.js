@@ -82,7 +82,7 @@ ws.onmessage = message => {
     // Badge
     if (feedArray.length === 1) {
       const badge = document.createElement('span')
-      badge.className = 'badge bg-secondary mr-2'
+      badge.className = 'badge bg-secondary me-2'
       badge.textContent = 'NEU'
       entry.appendChild(badge)
     }
@@ -101,7 +101,7 @@ ws.onmessage = message => {
     // Social
     if (navigator.share) {
       const shareLink = document.createElement('a')
-      shareLink.className = 'badge bg-secondary ml-2'
+      shareLink.className = 'badge bg-secondary ms-2'
       shareLink.setAttribute('role', 'button')
       shareLink.setAttribute('aria-label', 'Beitrag teilen')
       shareLink.onclick = () => {
@@ -116,14 +116,14 @@ ws.onmessage = message => {
       entry.appendChild(shareLink)
     }
     const facebookLink = document.createElement('a')
-    facebookLink.className = 'badge bg-secondary ml-2'
+    facebookLink.className = 'badge bg-secondary ms-2'
     facebookLink.href = `https://www.facebook.com/sharer/sharer.php?u=${feed.link}`
     facebookLink.rel = 'nofollow noopener'
     facebookLink.setAttribute('aria-label', 'Auf Facebook teilen')
     facebookLink.appendChild(createSVG('facebook'))
     entry.appendChild(facebookLink)
     const twitterLink = document.createElement('a')
-    twitterLink.className = 'badge bg-secondary ml-2'
+    twitterLink.className = 'badge bg-secondary ms-2'
     twitterLink.href = `https://twitter.com/share?text=${feed.title}&url=${feed.link}`
     twitterLink.rel = 'nofollow noopener'
     twitterLink.setAttribute('aria-label', 'Auf Twitter teilen')

@@ -5,12 +5,12 @@
 <nav class="navbar navbar-expand-xl navbar-dark bg-primary bg-gradient">
   <div class="container">
     <a class="navbar-brand" href="{{ lang }}{{ site.baseurl }}/">{{ site.data.strings.[page.lang].firefighters_eisolzried }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="{{ site.data.strings.[page.lang].toggle_navigation }}">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="{{ site.data.strings.[page.lang].toggle_navigation }}">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <form class="form-inline mt-2 my-xl-0 mr-xl-3">
+      <form class="form-inline mt-2 my-xl-0 me-xl-3">
         <div class="input-group">
           <span class="input-group-text">
             {% include element/icon.html icon="search" %}
@@ -20,22 +20,22 @@
         <div id="results-container" class="dropdown-menu"></div>
       </form>
       <div class="btn-group my-2 my-xl-0" role="group" aria-label="Navbar buttons">
-        <button id="language-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.strings.[page.lang].change_language }}" aria-label="{{ site.data.strings.[page.lang].change_language }}">
+        <button id="language-btn" type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ site.data.strings.[page.lang].change_language }}" aria-label="{{ site.data.strings.[page.lang].change_language }}">
           {% if page.lang == 'by' %}
           {% include element/icon.html icon='de' %}
           {% else %}
           {% include element/icon.html icon='by' %}
           {% endif %}
         </button>
-        <button id="theme-switch" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.strings.[page.lang].change_background }}" aria-label="{{ site.data.strings.[page.lang].change_background }}">
+        <button id="theme-switch" type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ site.data.strings.[page.lang].change_background }}" aria-label="{{ site.data.strings.[page.lang].change_background }}">
           {% include element/icon.html icon="moon" id="theme-icon" %}
         </button>
-        <button id="siren-btn" type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.strings.[page.lang].toggle_siren }}" aria-label="{{ site.data.strings.[page.lang].toggle_siren }}">
+        <button id="siren-btn" type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ site.data.strings.[page.lang].toggle_siren }}" aria-label="{{ site.data.strings.[page.lang].toggle_siren }}">
           {% include element/icon.html icon="play" id="siren-icon" %}
         </button>
       </div>
       {% include element/audio-player.html audio='siren' loop=true %}
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         {% for link in site.data.navigation.[page.lang] %}
         {% if link.submenu %}
           {% assign active = nil %}
@@ -46,7 +46,7 @@
             {% endif %}
           {% endfor %}
           <li class="nav-item dropdown {{ active }}">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {% include element/icon.html icon=link.icon %} {{ link.title }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">

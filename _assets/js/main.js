@@ -1,8 +1,14 @@
+import Button from 'bootstrap/js/dist/button';
+import Carousel from 'bootstrap/js/dist/carousel';
+import Collapse from 'bootstrap/js/dist/collapse';
+import Dropdown from 'bootstrap/js/dist/dropdown';
+import Modal from 'bootstrap/js/dist/modal';
+import Tab from 'bootstrap/js/dist/tab';
+
 import { load } from './load/load'
 import { loadScript } from './load/loadscript'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
-import { Modal } from 'bootstrap.native'
 import { Christmas } from './helper/christmas'
 
 const anchorJS = require('anchor-js')

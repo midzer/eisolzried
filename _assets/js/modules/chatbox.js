@@ -1,5 +1,3 @@
-import bsCustomFileInput from 'bs-custom-file-input'
-
 import { createSnackbar } from '../helper/createsnackbar'
 import { loadScript } from '../load/loadscript'
 
@@ -89,8 +87,6 @@ const chatbox = document.getElementById('chatbox'),
 
 let incomingMessages = [],
   scheduled
-
-bsCustomFileInput.init()
 
 const ws = new WebSocket('wss://api.feuerwehr-eisolzried.de/chat/')
 

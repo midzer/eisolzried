@@ -3,7 +3,6 @@ const path = require('path')
 module.exports = {
   entry: {
     main: [
-      'intersection-observer',
       './_assets/js/vendor/snackbar.js',
       './_assets/js/main.js',
       './_assets/js/vendor/service-worker-registration.js'
@@ -69,15 +68,6 @@ module.exports = {
                 }
               ]
             ]
-          }
-        }
-      },
-      {
-        test: /bootstrap\.native/,
-        use: {
-          loader: 'bootstrap.native-loader',
-          options: {
-            ignore: ['scrollspy', 'popover', 'alert', 'affix', 'toast']
           }
         }
       }
