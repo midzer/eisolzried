@@ -79,8 +79,8 @@ function buildCal (data) {
     const modal = document.getElementById('modal')
     const modalTitle = modal.querySelector('.modal-title')
     modalTitle.textContent = event.summary
-    const modalBody = modal.querySelector('.modal-body > p')
-    modalBody.textContent = createEventDetails(event)
+    const modalBody = modal.querySelector('.modal-body')
+    modalBody.innerHTML = createEventDetails(event)
     const modalInstance = new Modal(modal)
     modalInstance.show()
   }
