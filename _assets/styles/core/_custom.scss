@@ -11,8 +11,3 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1140px
 ) !default;
-
-// Fix for emoji-button
-.emoji-picker__preview {
-  box-sizing: content-box;
-}
