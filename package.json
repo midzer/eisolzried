@@ -38,8 +38,8 @@
     "gulp-svg-sprite": "^1.5.0",
     "standard": "^16.0.3",
     "sw-precache": "^5.2.0",
-    "webpack": "^5.11.0",
-    "webpack-merge": "^5.7.2",
+    "webpack": "^5.11.1",
+    "webpack-merge": "^5.7.3",
     "webpack-stream": "^6.1.1"
   },
   "dependencies": {
@@ -47,7 +47,7 @@
     "@midzer/tobii": "midzer/tobii#develop",
     "anchor-js": "^4.3.0",
     "bootstrap": "^5.0.0-beta1",
-    "frappe-charts": "^1.5.5",
+    "frappe-charts": "^1.5.6",
     "ical.js": "^1.4.0"
   },
   "peerDependencies": {
