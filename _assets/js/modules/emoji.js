@@ -3,7 +3,7 @@ import { EmojiButton } from '@joeattardi/emoji-button'
 const emojiButton = document.getElementById('emoji-btn'),
   picker = new EmojiButton({position: 'top-end', autoFocusSearch: false})
 
-picker.on('emoji', emoji => document.getElementById('chat-input').value += emoji)
+picker.on('emoji', selection => document.getElementById('chat-input').value += selection.emoji)
 
 emojiButton.onclick = () => picker.pickerVisible ? picker.hidePicker() : picker.showPicker(emojiButton)
 
