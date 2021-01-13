@@ -35,7 +35,7 @@ anchors.add('h2[id]')
 
 // Theme switch
 function setTheme (dark) {
-  document.getElementById('theme-link').rel = dark ? 'stylesheet' : ''
+  document.getElementById('theme-link').disabled = dark ? false : true
   document.getElementById('theme-icon').href.baseVal = `${spritePath}${dark ? 'sun' : 'moon'}`
   window.localStorage.setItem('dark-theme', dark)
 }
