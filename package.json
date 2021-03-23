@@ -22,8 +22,8 @@
     "not IE 11"
   ],
   "devDependencies": {
-    "@babel/core": "^7.13.8",
-    "@babel/preset-env": "^7.13.8",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
     "@babel/register": "^7.13.8",
     "babel-loader": "^8.2.2",
     "csso": "^4.2.0",
@@ -33,12 +33,12 @@
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-plumber": "^1.1.0",
-    "gulp-purgecss": "^4.0.2",
+    "gulp-purgecss": "^4.0.3",
     "gulp-sass": "^4.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "standard": "^16.0.3",
     "sw-precache": "^5.2.0",
-    "webpack": "^5.24.2",
+    "webpack": "^5.27.2",
     "webpack-merge": "^5.7.3",
     "webpack-stream": "^6.1.2"
   },
@@ -46,8 +46,8 @@
     "@joeattardi/emoji-button": "^4.6.0",
     "@midzer/tobii": "midzer/tobii#develop",
     "anchor-js": "^4.3.0",
-    "bootstrap": "^5.0.0-beta2",
-    "frappe-charts": "^1.5.7",
+    "bootstrap": "^5.0.0-beta3",
+    "frappe-charts": "^1.5.8",
     "ical.js": "^1.4.0"
   },
   "peerDependencies": {
