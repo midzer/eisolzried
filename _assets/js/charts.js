@@ -5,27 +5,23 @@ loadStyle('charts.css')
 .then(() => {
 	const member = new Chart('#member', {
 		data: {
-			labels: ['1990', '1995', '2000', '2005', '2010', '2015'],
+			labels: ['1990', '1995', '2000', '2005', '2010', '2015', '2020'],
 			datasets: [
 				{
 					name: 'Aktive', chartType: 'bar',
-					values: [26, 27, 39, 41, 34, 38]
+					values: [26, 27, 39, 41, 34, 38, 37]
 				},
 				{
 					name: 'Jugend', chartType: 'bar',
-					values: [0, 2, 5, 2, 4, 4]
+					values: [0, 2, 5, 2, 4, 4, 1]
 				},
 				{
 					name: 'Ehrenmitglieder', chartType: 'bar',
-					values: [0, 0, 0, 1, 1, 3]
+					values: [0, 0, 0, 1, 1, 3, 2]
 				},
 				{
 					name: 'Passive', chartType: 'bar',
-					values: [2, 3, 8, 8, 12, 16]
-				},
-				{
-					name: 'Ausgetreten', chartType: 'bar',
-					values: [0, 0, 0, 6, 7, 3]
+					values: [2, 3, 8, 8, 12, 16, 18]
 				}
 			],
 		},
