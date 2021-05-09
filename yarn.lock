@@ -976,10 +976,10 @@
   "resolved" "https://registry.npmjs.org/@midzer/tobii/-/tobii-2.1.0.tgz"
   "version" "2.1.0"
 
-"@popperjs/core@^2.4.0", "@popperjs/core@^2.5.4":
-  "integrity" "sha512-ZpKr+WTb8zsajqgDkvCEWgp6d5eJT6Q63Ng2neTbzBO76Lbe91vX/iVIW9dikq+Fs3yEo+ls4cxeXABD2LtcbQ=="
-  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.5.4.tgz"
-  "version" "2.5.4"
+"@popperjs/core@^2.4.0", "@popperjs/core@^2.9.2":
+  "integrity" "sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.9.2.tgz"
+  "version" "2.9.2"
 
 "@types/eslint-scope@^3.7.0":
   "integrity" "sha512-O/ql2+rrCUe2W2rs7wMR+GqPRcgB6UiqN5RhrR5xruFlY7l9YLMn0ZkDzjoHLeiFkR8MCQZVudUuuvQ2BLC9Qw=="

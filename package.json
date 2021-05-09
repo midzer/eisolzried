@@ -51,6 +51,6 @@
     "ical.js": "^1.4.0"
   },
   "peerDependencies": {
-    "@popperjs/core": "^2.5.4"
+    "@popperjs/core": "^2.9.2"
   }
 }
