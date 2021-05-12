@@ -37,10 +37,10 @@
     "gulp-sass": "^4.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "standard": "^16.0.3",
-    "sw-precache": "^5.2.0",
     "webpack": "^5.36.2",
     "webpack-merge": "^5.7.3",
-    "webpack-stream": "^6.1.2"
+    "webpack-stream": "^6.1.2",
+    "workbox-build": "^6.1.5"
   },
   "dependencies": {
     "@joeattardi/emoji-button": "^4.6.0",

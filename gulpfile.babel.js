@@ -6,7 +6,7 @@ import log from 'fancy-log'
 import svgSprite from 'gulp-svg-sprite'
 import plumber from 'gulp-plumber'
 import childProcess from 'child_process'
-import swPrecache from 'sw-precache'
+import workboxBuild from 'workbox-build'
 import path from 'path'
 import sass from 'gulp-sass'
 import autoprefixer from 'gulp-autoprefixer'
@@ -104,32 +104,20 @@ gulp.task('jekyll:prod', done => {
 })
 
 // Precache
-function writeServiceWorkerFile (rootDir, handleFetch, callback) {
-  const config = {
+gulp.task('precache:prod', () => {
+  return workboxBuild.generateSW({
     cacheId: 'ff-eisolzried',
-    handleFetch: handleFetch,
-    logger: log,
-    staticFileGlobs: [
-      `${rootDir}/**/*.html`,
-      `${rootDir}/assets/icons/*`,
-      `${rootDir}/assets/css/main.css`,
-      `${rootDir}/assets/css/dark-theme.css`,
-      `${rootDir}/assets/js/main.js`,
-      `${rootDir}/assets/js/posts.js`
+    globDirectory: '_site',
+    globPatterns: [
+      '**/*.html',
+      'assets/icons/*',
+      'assets/css/main.css',
+      'assets/css/dark-theme.css',
+      'assets/js/main.js',
+      'assets/js/posts.js'
     ],
-    stripPrefix: `${rootDir}/`,
-    verbose: false
-  }
-
-  swPrecache.write(path.join(rootDir, 'service-worker.js'), config, callback)
-}
-
-gulp.task('precache', (cb) => {
-  writeServiceWorkerFile('_site', false, cb)
-})
-
-gulp.task('precache:prod', (cb) => {
-  writeServiceWorkerFile('_site', true, cb)
+    swDest: '_site/service-worker.js'
+  })
 })
 
 // Sass
