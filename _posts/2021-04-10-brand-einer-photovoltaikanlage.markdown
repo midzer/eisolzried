@@ -22,3 +22,5 @@ tags: einsaetze
 Der nächste Einsatz des Jahres ereignete sich am 10. April nach einer Alarmierung um 10.15 Uhr.
 
 Eine Photovoltaikanlage eines Baustoff- und Agrarhandel in Lauterbach hatte sich entzündet. Zusammen mit der Ortsfeuerwehr war die Situation nach ungefähr einer Stunde im Griff.
+
+[Der KFV Dachau berichtet](http://kfv-dachau.de/index.php?section=news&cmd=details&newsid=1215) ausführlicher.
