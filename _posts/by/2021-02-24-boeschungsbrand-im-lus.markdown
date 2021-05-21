@@ -31,4 +31,4 @@ Am 24. Februar 2021 samma vo da Leitstelle für an Brand bei Bergkircha-Lus gega
 
 Es hod si nausgstoid, dass a Fläche vo circa 100qm² trockens Groos brennt hod. Mia hom Wassa aus dem Lusgrom in da Nähe ghoid und as Feia in na hoibn Stund glöscht.
 
-De Kollegn vo Lauterbo warn a dabei.
+Unterstützt samma von der FF Lauterbo worn.

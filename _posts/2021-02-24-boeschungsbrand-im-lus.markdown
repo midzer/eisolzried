@@ -29,4 +29,4 @@ Am 24. Februar 2021 wurden wir von der Leitstelle für einen Brand bei Bergkirch
 
 Es stellte sich heraus, dass eine Fläche von circa 100qm² trockenem Gras brannte. Mit der Wasserentnahme aus dem nahegelegenen Lusgraben war das Feuer in einer halben Stunde gelöscht.
 
-Die Kollegen der FF Lauterbach waren auch noch im Einsatz.
+Unterstützt wurden wir von der FF Lauterbach.

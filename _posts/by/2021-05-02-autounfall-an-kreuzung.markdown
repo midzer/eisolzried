@@ -21,4 +21,4 @@ Beim Zusammenstoß san zum Glück beide nur leicht verletzt worn.
 
 De auslaufenden Betriebstoffe homma gebunden und de Autos geborgen.
 
-Zusätzlich bei dem einstündigen Einsatz warn no Rettungskräfte, Bolizei und as THW do.
+Zusätzlich bei dem einstündigen Einsatz warn no Rettungsdienst, Bolizei und as THW do.

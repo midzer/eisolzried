@@ -19,4 +19,4 @@ Bei dem Zusammenstoß blieben beide Unfallbeteiligten zum Glück nur leicht verl
 
 Die auslaufenden Betriebstoffe wurden gebunden und die Autos geborgen.
 
-Zusätzlich waren beim einstündigen Einsatz noch Rettungskräfte, Polizei und das THW.
+Zusätzlich waren beim einstündigen Einsatz noch Rettungsdienst, Polizei und das THW.

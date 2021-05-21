@@ -23,4 +23,4 @@ categories:
 ---
 Da nächste Einsatz vo heia war am 10. Aprui wo ma um 10. Uhr alarmierd worn san.
 
-A Photovoltaikanlag vo am Baustoff- und Agrarhandel in Lauterbo hod Feia gfanga. Zusamma mit de Ortsfeierwehrla und am Wasser ausm Unterflurhydranten war de Situation noch ungefähr 1,5 Stund im Griff.
+A Photovoltaikanlag vo am Baustoff- und Agrarhandel in Lauterbo hod Feia gfanga. Zusamma mit de Ortsfeierwehrla war de Situation noch ungefähr oana Stund im Griff.
