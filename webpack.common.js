@@ -5,7 +5,7 @@ module.exports = {
     main: [
       './_assets/js/vendor/snackbar.js',
       './_assets/js/main.js',
-      './_assets/js/vendor/service-worker-registration.js'
+      //'./_assets/js/vendor/service-worker-registration.js'
     ],
     lightbox: [
       './_assets/js/lightbox.js'

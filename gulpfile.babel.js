@@ -1,17 +1,16 @@
 'use strict'
 
 import gulp from 'gulp'
-import htmlmin from 'gulp-htmlmin'
+//import htmlmin from 'gulp-htmlmin'
 import log from 'fancy-log'
 import svgSprite from 'gulp-svg-sprite'
 import plumber from 'gulp-plumber'
 import childProcess from 'child_process'
-import workboxBuild from 'workbox-build'
-import path from 'path'
+//import workboxBuild from 'workbox-build'
 import sass from 'gulp-sass'
-import autoprefixer from 'gulp-autoprefixer'
-import purgecss from 'gulp-purgecss'
-import csso from 'gulp-csso'
+//import autoprefixer from 'gulp-autoprefixer'
+//import purgecss from 'gulp-purgecss'
+//import csso from 'gulp-csso'
 import webpack from 'webpack'
 import webpackStream from 'webpack-stream'
 
@@ -189,4 +188,4 @@ gulp.task('scripts:prod', () => {
 
 // Build
 gulp.task('serve', gulp.series(/*'copy',*/ 'scripts', 'sass', 'icons', 'jekyll'))
-gulp.task('build', gulp.series('jekyll:prod', 'scripts:prod', 'sass:prod', 'icons', 'precache:prod', /*'htmlmin'*/))
+gulp.task('build', gulp.series('jekyll:prod', 'scripts:prod', 'sass:prod', 'icons'/*, 'precache:prod', 'htmlmin'*/))
