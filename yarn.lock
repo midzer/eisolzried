@@ -984,9 +984,8 @@
     "tslib" "^2.0.0"
     "twemoji" "^13.0.0"
 
-"@midzer/tobii@^2.2.0":
-  "integrity" "sha512-SPg4MXv8PW+QWKHSHB/sgKlViTSSo4KTkrBYwK0rpSpwZbCUA0o726aNRy5JcjegO8KojWNO46eLTPm1zShKpw=="
-  "resolved" "https://registry.npmjs.org/@midzer/tobii/-/tobii-2.2.0.tgz"
+"@midzer/tobii@midzer/tobii#develop":
+  "resolved" "git+ssh://git@github.com/midzer/tobii.git#2455b8e944b29a07176e9e976aaaae83bac4e71a"
   "version" "2.2.0"
 
 "@popperjs/core@^2.4.0", "@popperjs/core@^2.9.2":

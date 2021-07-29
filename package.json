@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@joeattardi/emoji-button": "^4.6.0",
-    "@midzer/tobii": "^2.2.0",
+    "@midzer/tobii": "midzer/tobii#develop",
     "anchor-js": "^4.3.1",
     "bootstrap": "^5.0.2",
     "frappe-charts": "^1.6.2",
