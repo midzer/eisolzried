@@ -22,8 +22,8 @@
     "not IE 11"
   ],
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
     "@babel/register": "^7.15.3",
     "babel-loader": "^8.2.2",
     "csso": "^4.2.0",
@@ -36,9 +36,9 @@
     "gulp-purgecss": "^4.0.3",
     "gulp-sass": "^5.0.0",
     "gulp-svg-sprite": "^1.5.0",
-    "sass": "^1.37.5",
+    "sass": "^1.39.0",
     "standard": "^16.0.3",
-    "webpack": "^5.50.0",
+    "webpack": "^5.52.0",
     "webpack-merge": "^5.8.0",
     "webpack-stream": "^6.1.2",
     "workbox-build": "^6.2.4"
@@ -52,6 +52,6 @@
     "ical.js": "^1.4.0"
   },
   "peerDependencies": {
-    "@popperjs/core": "^2.9.3"
+    "@popperjs/core": "^2.10.1"
   }
 }
