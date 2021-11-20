@@ -1,8 +1,10 @@
-import Button from 'bootstrap/js/dist/button';
-import Carousel from 'bootstrap/js/dist/carousel';
-import Collapse from 'bootstrap/js/dist/collapse';
-import Dropdown from 'bootstrap/js/dist/dropdown';
-import Tab from 'bootstrap/js/dist/tab';
+import Button from 'bootstrap/js/dist/button'
+import Carousel from 'bootstrap/js/dist/carousel'
+import Collapse from 'bootstrap/js/dist/collapse'
+import Dropdown from 'bootstrap/js/dist/dropdown'
+import Tab from 'bootstrap/js/dist/tab'
+
+import { listen } from 'quicklink'
 
 import { load } from './load/load'
 import { loadScript } from './load/loadscript'
@@ -156,3 +158,11 @@ if (window.PerformanceNavigationTiming) {
   rendertime.firstElementChild.textContent = `${parseInt(entry.domInteractive)}ms`
   rendertime.classList.remove('invisible')
 }
+
+// quicklink
+listen({
+  ignores: [
+      /.jpg/,
+      /.pdf/
+  ]
+});
