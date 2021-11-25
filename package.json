@@ -36,15 +36,15 @@
     "gulp-purgecss": "^4.0.3",
     "gulp-sass": "^5.0.0",
     "gulp-svg-sprite": "^1.5.0",
-    "sass": "^1.43.4",
+    "sass": "^1.43.5",
     "standard": "^16.0.4",
-    "webpack": "^5.64.2",
+    "webpack": "^5.64.4",
     "webpack-merge": "^5.8.0",
     "webpack-stream": "^7.0.0",
     "workbox-build": "^6.4.1"
   },
   "dependencies": {
-    "@joeattardi/emoji-button": "^4.6.0",
+    "@joeattardi/emoji-button": "^4.6.2",
     "@midzer/tobii": "midzer/tobii#develop",
     "anchor-js": "^4.3.1",
     "bootstrap": "^5.1.3",
