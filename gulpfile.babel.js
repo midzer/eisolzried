@@ -11,8 +11,8 @@ import dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass)
 //import autoprefixer from 'gulp-autoprefixer'
-//import purgecss from 'gulp-purgecss'
-//import csso from 'gulp-csso'
+import purgecss from 'gulp-purgecss'
+import csso from 'gulp-csso'
 import webpack from 'webpack'
 import webpackStream from 'webpack-stream'
 
@@ -151,12 +151,12 @@ gulp.task('sass:prod', () => {
       }
     }))
     .pipe(sass().on('error', sass.logError))
-    //.pipe(purgecss({
-    //  content: ['_site/assets/js/*.js', '_site/**/*.html'],
-    //  whitelistPatterns: [/^carousel/, /^modal/]
-    //}))
+    .pipe(purgecss({
+      content: ['_site/assets/js/*.js', '_site/**/*.html'],
+      whitelistPatterns: [/^carousel/, /^modal/]
+    }))
     //.pipe(autoprefixer())
-    //.pipe(csso())
+    .pipe(csso())
     .pipe(gulp.dest('_site/assets/css'))
 })
 
