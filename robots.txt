@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /impressum/
+Disallow: /datenschutz/
+Disallow: /by/impressum/
+Disallow: /by/datenschutz/
+
+Sitemap: https://feuerwehr-eisolzried.de/sitemap.xml
