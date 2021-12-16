@@ -20,13 +20,13 @@
       {% assign lang = page.lang | prepend: '/'%}
     {% endif %}
   <span class="footer-item">
-    <a href="{{ lang }}/impressum/">
+    <a href="{{ lang }}/impressum/" rel="nofollow">
       {% include element/icon.html icon="impressum" %}
       Impressum
     </a>
   </span>
   <span class="footer-item">
-    <a href="{{ lang }}/datenschutz/">
+    <a href="{{ lang }}/datenschutz/" rel="nofollow">
       {% include element/icon.html icon="shield" %}
       Datenschutz
     </a>
@@ -37,7 +37,7 @@
     {% else %}
     Mit {% include element/icon.html icon="beer" %} gebaut von 
     {% endif %}
-    <a href="https://rohner.io/" rel="noopener">Rohner Solutions</a>
+    <a href="https://rohner.io/" rel="nofollow noopener">Rohner Solutions</a>
     <span id="rendertime" class="invisible">
       und in
       <samp></samp>
