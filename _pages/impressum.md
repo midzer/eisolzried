@@ -18,7 +18,7 @@ Bernhard Schmidbauer
 ## Kontakt:
 
 Telefon: 08131 332 76 54\\
-E-Mail: info<span hidden>.nospam</span>@feuerwehr-eisolzried.de
+E-Mail: team<span hidden>.nospam</span>@feuerwehr-eisolzried.de
 
 ## Registereintrag:
 

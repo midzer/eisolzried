@@ -13,7 +13,7 @@ Freiwillige Feuerwehr Eisolzried e. V.\\
 Feldbergstraße 13\\
 85232 Bergkirchen/Deutenhausen\\
 Deutschland\\
-E-Mailadresse: info@feuerwehr-eisolzried.de\\
+E-Mailadresse: team<span hidden>.nospam</span>@feuerwehr-eisolzried.de\\
 Link zum Impressum: https://feuerwehr-eisolzried.de/impressum/
 
 ## Arten der verarbeiteten Daten:
