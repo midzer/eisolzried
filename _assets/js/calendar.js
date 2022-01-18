@@ -1,4 +1,5 @@
-import Modal from 'bootstrap/js/dist/modal';
+import Modal from 'bootstrap/js/dist/modal'
+import ICAL from 'ical.js'
 
 import { loadStyle } from './load/loadstyle'
 import { createSnackbar } from './helper/createsnackbar'

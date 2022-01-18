@@ -11,7 +11,6 @@ module.exports = {
       './_assets/js/lightbox.js'
     ],
     calendar: [
-      'ical.js',
       './_assets/js/vendor/drcal.js',
       './_assets/js/calendar.js'
     ],
