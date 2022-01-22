@@ -5,7 +5,7 @@
   "sideEffects": false,
   "scripts": {
     "start": "npm run js:dev && npm run sass:dev && npm run icons && npm run jekyll:dev",
-    "build": "npm run js:prod && npm run sass:prod && npm run purge && npm run icons && npm run jekyll:prod",
+    "build": "npm run js:prod && npm run sass:prod && npm run icons && npm run jekyll:prod && npm run purge",
     "icons": "svg-sprite --config sprite.json --dest _site/assets _assets/icons/**/*.svg",
     "jekyll:dev": "bundle exec jekyll serve",
     "jekyll:prod": "bundle exec jekyll build",
