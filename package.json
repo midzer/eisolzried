@@ -2,7 +2,6 @@
   "name": "ff-eisolzried",
   "version": "0.0.1",
   "description": "homepage of eisolzried fire department",
-  "main": "gulpfile.babel.js",
   "sideEffects": false,
   "scripts": {
     "start": "npm run js:dev && npm run sass:dev && npm run icons && npm run jekyll:dev",
