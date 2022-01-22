@@ -13,7 +13,7 @@
     "js:prod": "webpack --config webpack.prod.js",
     "sass:dev": "sass --update --style=expanded _assets/styles:_site/assets/css",
     "sass:prod": "sass --no-source-map --style=compressed _assets/styles:_site/assets/css",
-    "purge": "purgecss --css _site/assets/css/*.css --content _site/**/*.html _site/assets/js/*.js --output _site/assets/css --safelist /^carousel/ /^modal/",
+    "purge": "purgecss --css _site/**/*.css --content _site/**/*.html _site/**/*.js --output _site/assets/css/ --safelist /^carousel/ /^modal/",
     "test": "standard",
     "fix": "standard --fix"
   },
