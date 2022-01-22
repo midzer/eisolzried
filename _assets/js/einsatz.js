@@ -12,10 +12,10 @@ function goToStage (number) {
     let text
     switch (number) {
         case 0:
-        text = 'Willkommen beim Abenteuer! Möchtest du die Anleitung lesen?'
+        text = 'Willkommen beim Feuerwehr-Abenteuer! Möchtest du die Anleitung lesen?'
         break
         case 1:
-        text = 'Dies ist ein sogenanntes Text Adventure. Mit deinen Eingaben, welche aus zwei bis drei Worten bestehen sollten, reist du durch die Geschichte. Alles verstanden?'
+        text = 'Dies ist ein sogenanntes Text Adventure. Mit deinen Eingaben, welche aus zwei bis drei Worten bestehen sollten, reist du durch die Geschichte. Du kannst GEHE ZU, BENUTZE und NEHME verwenden. Alles verstanden?'
         break
         case 2:
         text = 'Es ist Samstag nachmittag und du bist gerade zuhause. Während du gerade die Wohnung putzt, hörst du auf einmal die Sirene. Als aktives Mitglied der Feuerwehr weißt du was zu tun ist.'
@@ -24,10 +24,10 @@ function goToStage (number) {
         text = 'Du erreichst das Feuerwehrhaus schnell, aber sicher. Andere Feuerwehrleute sind auch schon da. Das Einsatzfaxgerät hat eine Nachricht erhalten.'
         break
         case 4:
-        text = 'Auf dem Fax steht: "Starke Rauchmeldung in der Rübengasse. Person vermisst". Deine Kollegen haben ihre Schutzausrüstung bereits angelegt.'
+        text = 'Auf dem Fax steht: "Starke Rauchmeldung in der Rübengasse. Person vermisst". Deine Kollegen haben ihre Schutzanzüge bereits angelegt.'
         break
         case 5:
-        text = 'Zügig und routiniert legst du deine Schutzausrüstung an. Das Garagentor steht offen und das Fahrzeug (ein MLF) ist bereit zur Abfahrt.'
+        text = 'Zügig und routiniert legst du deinen Schutzanzug an. Das Garagentor steht offen und das Fahrzeug (ein MLF) ist bereit zur Abfahrt.'
         break
         case 6:
         text = 'Du nimmst in der Mannschaftskabine neben deinen Kollegen Platz und der Fahrer lenkt das Feuerwehrfahrzeug aus der Feuerwehrgarage. Während der Einsatzfahrt besprichst du mit deinen Kollegen das weitere Vorgehen am Einsatzort. Ihr erledigt den Einsatz erfolgreich und kehrt im Anschluss wieder in das Feuerwehrhaus zurück. Bravo, du hast das Spiel gelöst!'
@@ -67,7 +67,7 @@ function evaluateMessage (message) {
         break
         case 2:
         switch (message) {
-            case 'gehe feuerwehrhaus':
+            case 'gehe zu feuerwehr':
             case 'gehe zu feuerwehrhaus':
             goToStage(3)
             break
@@ -78,8 +78,8 @@ function evaluateMessage (message) {
         break
         case 3:
         switch (message) {
-            case 'nimm fax':
-            case 'lies fax':
+            case 'nehme fax':
+            case 'lese fax':
             goToStage(4)
             break
             default:
@@ -89,8 +89,8 @@ function evaluateMessage (message) {
         break
         case 4:
         switch (message) {
-            case 'nimm schutzausrüstung':
-            case 'benutze schutzausrüstung':
+            case 'nehme schutzanzug':
+            case 'benutze schutzanzug':
             goToStage(5)
             break
             default:
@@ -100,10 +100,10 @@ function evaluateMessage (message) {
         break
         case 5:
         switch (message) {
-            case 'gehe mlf':
-            case 'gehe fahrzeug':
             case 'gehe zu mlf':
             case 'gehe zu fahrzeug':
+            case 'benutze mlf':
+            case 'benutze fahrzeug':
             goToStage(6)
             break
             default:
