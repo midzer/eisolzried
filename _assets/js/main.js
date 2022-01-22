@@ -3,7 +3,7 @@ import Carousel from 'bootstrap/js/dist/carousel'
 import Collapse from 'bootstrap/js/dist/collapse'
 import Dropdown from 'bootstrap/js/dist/dropdown'
 import Tab from 'bootstrap/js/dist/tab'
-
+import anchorJS from 'anchor-js'
 import { listen } from 'quicklink'
 
 import { load } from './load/load'
@@ -11,8 +11,6 @@ import { loadScript } from './load/loadscript'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
 //import { Christmas } from './helper/christmas'
-
-const anchorJS = require('anchor-js')
 
 // Lazy components
 const observer = new IntersectionObserver(changes => {
