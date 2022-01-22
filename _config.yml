@@ -22,12 +22,11 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
-  - gulpfile.babel.js
-  - yarn.lock
   - babel.config.js
   - webpack.common.js
   - webpack.dev.js
   - webpack.prod.js
+  - sprite.json
 
 keep_files: ['assets']
 

@@ -1,0 +1,42 @@
+{
+    "mode": {
+      "stack": {
+        "dest": "icons",
+        "sprite": "sprite.svg"
+      }
+    },
+    "shape": {
+      "transform": [
+        {
+          "svgo": {
+            "plugins": [
+              {
+                "convertShapeToPath": true
+              },
+              {
+                "removeXMLNS": true
+              },
+              {
+                "removeAttrs": {
+                    "attrs": "(class)"
+                }
+              },
+              {
+                "cleanupNumericValues":
+                {
+                  "floatPrecision": 2
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "svg": {
+      "xmlDeclaration": false,
+      "doctypeDeclaration": false,
+      "namespaceIDs": false,
+      "namespaceClassnames": false,
+      "dimensionAttributes": false
+    }
+}

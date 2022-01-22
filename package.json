@@ -5,8 +5,16 @@
   "main": "gulpfile.babel.js",
   "sideEffects": false,
   "scripts": {
-    "start": "gulp serve",
-    "build": "gulp build",
+    "start": "npm run js:dev && npm run sass:dev && npm run icons && npm run jekyll:dev",
+    "build": "npm run js:prod && npm run sass:prod && npm run purge && npm run icons && npm run jekyll:prod",
+    "icons": "svg-sprite --config sprite.json --dest _site/assets _assets/icons/**/*.svg",
+    "jekyll:dev": "bundle exec jekyll serve",
+    "jekyll:prod": "bundle exec jekyll build",
+    "js:dev": "webpack --config webpack.dev.js",
+    "js:prod": "webpack --config webpack.prod.js",
+    "sass:dev": "sass --update --style=expanded _assets/styles:_site/assets/css",
+    "sass:prod": "sass --no-source-map --style=compressed _assets/styles:_site/assets/css",
+    "purge": "purgecss --css _site/assets/css/*.css --content _site/**/*.html _site/assets/js/*.js --output _site/assets/css --safelist /^carousel/ /^modal/",
     "test": "standard",
     "fix": "standard --fix"
   },
@@ -22,26 +30,16 @@
     "not IE 11"
   ],
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.16.7",
     "babel-loader": "^8.2.3",
-    "csso": "^5.0.2",
-    "fancy-log": "^1.3.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-purgecss": "^4.1.3",
-    "gulp-sass": "^5.1.0",
-    "gulp-svg-sprite": "^1.5.0",
-    "sass": "^1.48.0",
+    "purgecss": "^4.1.3",
+    "sass": "^1.49.0",
     "standard": "^16.0.4",
-    "webpack": "^5.66.0",
-    "webpack-merge": "^5.8.0",
-    "webpack-stream": "^7.0.0",
-    "workbox-build": "^6.4.2"
+    "svg-sprite": "^1.5.3",
+    "webpack-cli": "^4.9.1",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "@joeattardi/emoji-button": "^4.6.2",
@@ -51,8 +49,5 @@
     "frappe-charts": "^1.6.2",
     "ical.js": "^1.5.0",
     "quicklink": "^2.2.0"
-  },
-  "peerDependencies": {
-    "@popperjs/core": "^2.11.2"
   }
 }
