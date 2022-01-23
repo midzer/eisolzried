@@ -1,9 +1,7 @@
-import { createSnackbar } from '../helper/createsnackbar'
 import { loadScript } from '../load/loadscript'
+import { loadStyle } from '../load/loadstyle'
+import { createSnackbar } from '../helper/createsnackbar'
 
-/* Can be import()ed dynamically in the future
- * if browser support is better
- */
 // Markdown
 function removeTags (string) {
   return string.replace(/<(?:.|\n)*?>/gm, '')
@@ -152,12 +150,16 @@ document.getElementById('upload-btn').onclick = () => {
       fileReader.readAsDataURL(imageFile)
     }
     else {
-      const snackbar = createSnackbar(),
+      const promiseCSS = loadStyle('snackbar.css')
+      const promiseJS = loadScript('snackbar.js')
+      Promise.all([promiseCSS, promiseJS]).then(() => {
+        const snackbar = createSnackbar(),
         data = {
           message: 'Upload nicht möglich! Maximale Bildgröße 4.2MB',
           timeout: 5000
         }
-      snackbar.showSnackbar(data)
+        snackbar.showSnackbar(data)
+      })
     }
   }
   imageForm.reset()

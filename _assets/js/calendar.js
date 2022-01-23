@@ -1,6 +1,7 @@
 import Modal from 'bootstrap/js/dist/modal'
 import ICAL from 'ical.js'
 
+import { loadScript } from './load/loadscript'
 import { loadStyle } from './load/loadstyle'
 import { createSnackbar } from './helper/createsnackbar'
 
@@ -96,16 +97,20 @@ function buildCal (data) {
         dayEvent.appendChild(document.createTextNode(ev[i].summary))
         event.detail.element.appendChild(dayEvent)
         if (event.detail.date.toDateString() === new Date().toDateString()) {
-          const snackbar = createSnackbar()
-          const data = {
-            message: 'Heute ist was los!',
-            timeout: 5000,
-            actionHandler: function () {
-              dayEvent.click()
-            },
-            actionText: 'Zeigen'
-          }
-          snackbar.showSnackbar(data)
+          const promiseCSS = loadStyle('snackbar.css')
+          const promiseJS = loadScript('snackbar.js')
+          Promise.all([promiseCSS, promiseJS]).then(() => {
+            const snackbar = createSnackbar()
+            const data = {
+              message: 'Heute ist was los!',
+              timeout: 5000,
+              actionHandler: function () {
+                dayEvent.click()
+              },
+              actionText: 'Zeigen'
+            }
+            snackbar.showSnackbar(data)
+          })
         }
       }
     }

@@ -3,7 +3,6 @@ const path = require('path')
 module.exports = {
   entry: {
     main: [
-      './_assets/js/vendor/snackbar.js',
       './_assets/js/main.js',
       //'./_assets/js/vendor/service-worker-registration.js'
     ],
@@ -43,7 +42,10 @@ module.exports = {
     ],
     feedbox: [
       './_assets/js/modules/feedbox.js'
-    ]
+    ],
+    snackbar: [
+      './_assets/js/vendor/snackbar.js'
+    ],
   },
   output: {
     filename: '[name].js',
