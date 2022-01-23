@@ -1,6 +1,6 @@
-import { loadImage } from './loadimage'
-import { loadVideo } from './loadvideo'
-import { loadSVG } from './loadsvg'
+import { loadImage } from './loadelement'
+import { loadVideo } from './loadelement'
+import { loadSVG } from './loadelement'
 import { loadScript } from './loadscript'
 
 export function load (element) {
@@ -32,7 +32,5 @@ export function load (element) {
           element.appendChild(loader)
         }
       }, 500)
-      /*if (element.hasAttribute('data-type') && navigator.userAgent.indexOf('Chrome') > -1)
-      loadModule(element.getAttribute('data-src'))*/
   }
 }
