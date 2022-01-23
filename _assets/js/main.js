@@ -34,10 +34,10 @@ const anchors = new anchorJS({
 anchors.add('h2[id]')
 
 // Theme switch
-function setTheme (dark) {
-  document.getElementById('theme-link').disabled = dark ? false : true
-  document.getElementById('theme-icon').href.baseVal = `${spritePath}${dark ? 'sun' : 'moon'}`
-  window.localStorage.setItem('dark-theme', dark)
+function setTheme (isDark) {
+  document.getElementById('theme-link').disabled = isDark ? false : true
+  document.getElementById('theme-icon').href.baseVal = `${spritePath}${isDark ? 'sun' : 'moon'}`
+  window.localStorage.setItem('dark-theme', isDark)
 }
 
 let sensor
