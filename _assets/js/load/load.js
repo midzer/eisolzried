@@ -16,21 +16,10 @@ export function load (element) {
       loadSVG(element)
       break;
     default:
-      let scriptLoaded,
-        loader
+      element.classList.add('loading')
       loadScript(element.getAttribute('data-src')).then(() => {
-        scriptLoaded = true
-        if (loader) {
-          element.removeChild(loader)
-        }
+        element.classList.remove('loading')
         element.removeAttribute('data-src')
       })
-      setTimeout(() => {
-        if (!scriptLoaded) {
-          loader = document.createElement('div')
-          loader.className = 'loader'
-          element.appendChild(loader)
-        }
-      }, 500)
   }
 }
