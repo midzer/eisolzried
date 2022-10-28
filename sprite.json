@@ -10,23 +10,7 @@
         {
           "svgo": {
             "plugins": [
-              {
-                "convertShapeToPath": true
-              },
-              {
-                "removeXMLNS": true
-              },
-              {
-                "removeAttrs": {
-                    "attrs": "(class)"
-                }
-              },
-              {
-                "cleanupNumericValues":
-                {
-                  "floatPrecision": 2
-                }
-              }
+              "preset-default"
             ]
           }
         }
