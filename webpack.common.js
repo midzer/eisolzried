@@ -4,7 +4,7 @@ module.exports = {
   entry: {
     main: [
       './_assets/js/main.js',
-      //'./_assets/js/vendor/service-worker-registration.js'
+      './_assets/js/vendor/instantpage.js'
     ],
     lightbox: [
       './_assets/js/lightbox.js'
