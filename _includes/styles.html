@@ -1,7 +1,3 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
 <link disabled id="theme-link" rel="stylesheet" href="{{ '/assets/css/dark-theme.css' | prepend: site.baseurl }}">
-<script>
-if (window.localStorage.getItem('dark-theme') === 'true') {
-  document.getElementById('theme-link').disabled = false;
-}
-</script>
+<script src="{{ '/assets/js/dark.js' | prepend: site.baseurl }}"></script>
