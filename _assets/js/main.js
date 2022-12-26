@@ -11,6 +11,31 @@ import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
 //import { Christmas } from './helper/christmas'
 
+// Theme switch
+const storedTheme = localStorage.getItem('theme')
+
+const getPreferredTheme = () => {
+  if (storedTheme) {
+    return storedTheme
+  }
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+
+const setTheme = (theme) => {
+  console.log(theme)
+  document.documentElement.setAttribute('data-bs-theme', theme)
+  document.getElementById('theme-icon').href.baseVal = `${spritePath}${theme === 'dark' ? 'sun' : 'moon'}`
+}
+
+setTheme(getPreferredTheme())
+
+document.getElementById('theme-switch').onclick = () => {
+  const theme = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'
+  localStorage.setItem('theme', theme)
+  setTheme(theme)
+}
+
 // Lazy components
 const observer = new IntersectionObserver(changes => {
   changes.forEach(change => {
@@ -31,27 +56,6 @@ const anchors = new anchorJS({
   class: 'anchorjs-link'
 })
 anchors.add('h2[id]')
-
-// Theme switch
-function setTheme (isDark) {
-  document.getElementById('theme-link').disabled = isDark ? false : true
-  document.getElementById('theme-icon').href.baseVal = `${spritePath}${isDark ? 'sun' : 'moon'}`
-  window.localStorage.setItem('dark-theme', isDark)
-}
-
-let sensor
-if ('AmbientLightSensor' in window) {
-  sensor = new AmbientLightSensor()
-  sensor.onreading = () => setTheme(sensor.illuminance === 0 ? true : false)
-  sensor.start()
-}
-
-document.getElementById('theme-switch').onclick = () => {
-  if (sensor) {
-    sensor.stop()
-  }
-  setTheme(window.localStorage.getItem('dark-theme') !== 'true' ? true : false )
-}
 
 // Language switch
 document.getElementById('language-btn').onclick = () => {

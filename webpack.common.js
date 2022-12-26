@@ -6,9 +6,6 @@ module.exports = {
       './_assets/js/main.js',
       './_assets/js/vendor/instantpage.js'
     ],
-    dark: [
-      './_assets/js/dark.js'
-    ],
     lightbox: [
       './_assets/js/lightbox.js'
     ],
