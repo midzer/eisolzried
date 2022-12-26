@@ -9,7 +9,7 @@ import { load } from './load/load'
 import { loadScript } from './load/loadscript'
 import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
-//import { Christmas } from './helper/christmas'
+import { Christmas } from './helper/christmas'
 
 // Theme switch
 const storedTheme = localStorage.getItem('theme')
@@ -149,7 +149,7 @@ field.addEventListener('keypress', event => {
 })
 
 // Snow
-//new Christmas()
+new Christmas()
 
 // Show render time
 if (window.PerformanceNavigationTiming) {
