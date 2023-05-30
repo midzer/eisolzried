@@ -23,7 +23,6 @@ const getPreferredTheme = () => {
 }
 
 const setTheme = (theme) => {
-  console.log(theme)
   document.documentElement.setAttribute('data-bs-theme', theme)
   document.getElementById('theme-icon').href.baseVal = `${spritePath}${theme === 'dark' ? 'sun' : 'moon'}`
 }
