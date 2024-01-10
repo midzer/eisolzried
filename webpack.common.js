@@ -3,8 +3,7 @@ const path = require('path')
 module.exports = {
   entry: {
     main: [
-      './_assets/js/main.js',
-      './_assets/js/vendor/instantpage.js'
+      './_assets/js/main.js'
     ],
     lightbox: [
       './_assets/js/lightbox.js'
