@@ -3,7 +3,6 @@ import Carousel from 'bootstrap/js/dist/carousel'
 import Collapse from 'bootstrap/js/dist/collapse'
 import Dropdown from 'bootstrap/js/dist/dropdown'
 import Tab from 'bootstrap/js/dist/tab'
-import anchorJS from 'anchor-js'
 
 import { load } from './load/load'
 import { loadScript } from './load/loadscript'
@@ -50,11 +49,14 @@ const observer = new IntersectionObserver(changes => {
 query('.lazy').forEach(item => observer.observe(item))
 
 // Anchors
-const anchors = new anchorJS({
-  icon: '#',
-  class: 'anchorjs-link'
+query('main > [id]:not(h1)').forEach(element => {
+  const id = element.id
+  const anchor = document.createElement('a')
+  anchor.className = 'anchor-link'
+  anchor.href = window.location.origin + window.location.pathname + '#' + id
+  anchor.textContent = '#'
+  element.append(anchor)
 })
-anchors.add('h2[id]')
 
 // Language switch
 document.getElementById('language-btn').onclick = () => {

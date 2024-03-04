@@ -1,10 +1,12 @@
-.anchorjs-link {
-    font-weight: 400;
-    color: rgba($link-color, .5);
-    @include transition(color .25s ease-in-out);
+[id] {
+    scroll-margin-top: 50px;
 
-    &:hover {
-        color: $link-color;
-        text-decoration: none;
+    &:hover > .anchor-link {
+      opacity: 1;
     }
+  }
+
+.anchor-link {
+    margin-left: 0.25rem;
+    opacity: 0;
 }

@@ -36,14 +36,13 @@
     "purgecss": "^5.0.0",
     "sass": "^1.71.1",
     "standard": "^17.1.0",
-    "svg-sprite": "^2.0.2",
+    "svg-sprite": "^2.0.3",
     "webpack-cli": "^5.1.4",
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
     "@joeattardi/emoji-button": "^4.6.4",
     "@midzer/tobii": "^2.5.0",
-    "anchor-js": "^5.0.0",
     "bootstrap": "^5.3.3",
     "frappe-charts": "^1.6.2",
     "ical.js": "^1.5.0"
