@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Servus
 permalink: /by/
 lang: by
 ---
