@@ -23,12 +23,15 @@ de:
       - title: Statistiken
         url: /statistiken/
         icon: bar-chart-2
-  - title: Media
-    url: /media/
-    icon: tv
-  - title: Spiele
-    url: /spiele/
-    icon: award
+  - title: Fun
+    icon: hash
+    submenu:
+      - title: Media
+        url: /media/
+        icon: tv
+      - title: Spiele
+        url: /spiele/
+        icon: award
   - title: Links
     url: /links/
     icon: link
@@ -60,12 +63,15 @@ by:
       - title: Statistikn
         url: /by/statistiken/
         icon: bar-chart-2
-  - title: Matrial
-    url: /by/media/
-    icon: tv
-  - title: Spui
-    url: /by/spiele/
-    icon: award
+  - title: Gaudi
+    icon: hash
+    submenu:
+      - title: Matrial
+        url: /by/media/
+        icon: tv
+      - title: Spui
+        url: /by/spiele/
+        icon: award
   - title: Links
     url: /by/links/
     icon: link
