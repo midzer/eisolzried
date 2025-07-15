@@ -3,7 +3,7 @@ layout: page
 permalink: /by/
 lang: by
 ---
-{% include pages/fest.html %}
+
 <div class="row">
   <div class="col-md-6 col-lg-5">
     <div class="card">
