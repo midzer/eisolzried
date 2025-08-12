@@ -34,7 +34,7 @@
     "@babel/register": "^7.27.1",
     "babel-loader": "^10.0.0",
     "purgecss": "^7.0.2",
-    "sass": "^1.89.2",
+    "sass": "^1.90.0",
     "standard": "^17.1.2",
     "svg-sprite": "^2.0.4",
     "webpack-cli": "^6.0.1",
@@ -42,9 +42,9 @@
   },
   "dependencies": {
     "@joeattardi/emoji-button": "^4.6.4",
-    "@midzer/tobii": "^2.8.4",
+    "@midzer/tobii": "^2.8.5",
     "bootstrap": "^5.3.7",
     "frappe-charts": "^1.6.2",
-    "ical.js": "^2.2.0"
+    "ical.js": "^2.2.1"
   }
 }
