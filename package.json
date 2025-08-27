@@ -29,12 +29,12 @@
     "not IE 11"
   ],
   "devDependencies": {
-    "@babel/core": "^7.28.0",
-    "@babel/preset-env": "^7.28.0",
-    "@babel/register": "^7.27.1",
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/register": "^7.28.3",
     "babel-loader": "^10.0.0",
     "purgecss": "^7.0.2",
-    "sass": "^1.90.0",
+    "sass": "^1.91.0",
     "standard": "^17.1.2",
     "svg-sprite": "^2.0.4",
     "webpack-cli": "^6.0.1",
@@ -43,7 +43,7 @@
   "dependencies": {
     "@joeattardi/emoji-button": "^4.6.4",
     "@midzer/tobii": "^2.8.5",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.8",
     "frappe-charts": "^1.6.2",
     "ical.js": "^2.2.1"
   }
