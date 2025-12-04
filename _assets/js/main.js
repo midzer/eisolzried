@@ -10,6 +10,13 @@ import { query } from './helper/query'
 import { toggleAudio } from './helper/toggleaudio'
 //import { Christmas } from './helper/christmas'
 
+// Globals
+const spritePath = '/assets/icons/sprite.svg#'
+
+// Locales
+const path = window.location.pathname,
+  isBoarischeUrl = path.indexOf('/by/') !== -1
+
 // Theme switch
 const storedTheme = localStorage.getItem('theme')
 
@@ -96,13 +103,6 @@ const bottomBar = document.getElementById('bottombar')
 let ticking
 
 window.addEventListener('scroll', requestTick)
-
-// Globals
-const spritePath = '/assets/icons/sprite.svg#'
-
-// Locales
-const path = window.location.pathname,
-  isBoarischeUrl = path.indexOf('/by/') !== -1
 
 // Lightbox
 if (document.querySelector('.lightbox')) {
