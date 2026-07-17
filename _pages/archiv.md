@@ -8,7 +8,7 @@ lang: de
 
 ## Geschichte der Ortschaften
 
-Peter Eberl aus Bergkirchen sammelte Zeitungsartikel der Jahre 1875 bis 1995 über Deutenhausen und Eisolzried. Diese Zusammenstellung ist [hier online verfügbar](https://www.bergkirchen.de/media/22667/deutenhausen.pdf).
+Hubert Eberl aus Bergkirchen sammelte Zeitungsartikel der Jahre 1875 bis 1995 über Deutenhausen und Eisolzried. Diese Zusammenstellung ist [hier online verfügbar](https://www.bergkirchen.de/media/22667/deutenhausen.pdf).
 
 ## Kommandanten
 {% include component/leader.html type="commandants" src=site.data.archive.commandants %}
